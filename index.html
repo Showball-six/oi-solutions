@@ -295,39 +295,15 @@ const pageBtns   = document.getElementById('page-btns');
 async function loadRecords() {
   try {
     // 获取solutions目录下所有JSON文件
-    const response = await fetch('solutions/');
+    const response = await fetch('solutions/records.json');
     
     if (!response.ok) {
-      console.error('无法访问solutions目录');
+      console.error('无法加载 records.json');
       showEmptyState();
       return;
     }
 
-    const html = await response.text();
-    
-    // 用简单的正则提取.json文件名（如果服务器支持目录列表）
-    const jsonFiles = Array.from(html.matchAll(/href=["']([^"']+\.json)["']/gi))
-      .map(m => m[1])
-      .filter(f => !f.startsWith('/'));
-
-    if (jsonFiles.length === 0) {
-      console.warn('solutions目录为空或不支持目录列表');
-      showEmptyState();
-      return;
-    }
-
-    // 并行加载所有JSON文件
-    const promises = jsonFiles.map(file =>
-      fetch(`solutions/${file}`)
-        .then(r => r.json())
-        .catch(err => {
-          console.error(`加载 ${file} 失败:`, err);
-          return null;
-        })
-    );
-
-    const results = await Promise.all(promises);
-    records = results.filter(r => r !== null);
+    records = await response.json();
 
     if (records.length === 0) {
       showEmptyState();
