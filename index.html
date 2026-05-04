@@ -3,372 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OI 工具箱 - 做题记录</title>
+  <title>Showball's OI 工具箱 - 做题记录</title>
+  <link rel="icon" href="tx.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    /* ==================== 变量 ==================== */
     :root {
-      --green: #52C41A;
-      --green-light: #f0fbe8;
-      --green-dark: #3da613;
-      --blue: #3498db;
-      --blue-light: #ebf5fb;
-      --orange: #e67e22;
-      --orange-light: #fef5e7;
-      --purple: #9d3dcf;
-      --purple-light: #f5eefa;
-      --red: #e74c3c;
-      --bg: #f4f5f7;
-      --white: #ffffff;
-      --text: #1a1a1a;
-      --text-sub: #8e8e93;
-      --text-light: #b0b0b6;
-      --border: #e8eaed;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
-      --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
-      --radius: 10px;
-      --font: 'Noto Sans SC', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      --mono: 'Menlo', 'Consolas', 'Courier New', monospace;
+      --green:#52C41A; --green-light:#f0fbe8; --green-dark:#3da613;
+      --blue:#3498db;  --blue-light:#ebf5fb;
+      --orange:#e67e22;--orange-light:#fef5e7;
+      --purple:#9d3dcf;--purple-light:#f5eefa;
+      --bg:#f4f5f7; --white:#fff; --text:#1a1a1a;
+      --text-sub:#8e8e93; --text-light:#b0b0b6; --border:#e8eaed;
+      --shadow-sm:0 1px 3px rgba(0,0,0,.04),0 1px 2px rgba(0,0,0,.06);
+      --shadow-md:0 4px 12px rgba(0,0,0,.08);
+      --radius:10px;
+      --font:'Noto Sans SC',-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
+      --mono:'Menlo','Consolas','Courier New',monospace;
     }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:var(--green-dark);text-decoration:none;transition:color .15s}
+    a:hover{color:var(--green)}
 
-    /* ==================== 基础 ==================== */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    /* ── 顶栏 ── */
+    .topbar{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+    .topbar-inner{max-width:1060px;margin:0 auto;padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.1rem;color:var(--text)}
+    .logo:hover{text-decoration:none;color:var(--text)}
+    .logo-icon{width:32px;height:32px;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:#fff;box-shadow:var(--shadow-sm)}
+    .logo-icon img{width:100%;height:100%;object-fit:cover;display:block}
+    .topbar-time{font-size:.78rem;color:var(--text-light);font-family:var(--mono)}
 
-    body {
-      font-family: var(--font);
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
+    /* ── 容器 ── */
+    .container{max-width:1060px;margin:0 auto;padding:28px 24px 60px}
+
+    /* ── 标题 ── */
+    .hero{margin-bottom:24px}
+    .hero h1{font-size:1.55rem;font-weight:700;letter-spacing:-.01em}
+    .hero p{margin-top:6px;color:var(--text-sub);font-size:.88rem}
+
+    /* ── 导航卡片 ── */
+    .nav-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px}
+    .nav-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;display:flex;align-items:center;gap:14px;transition:all .2s;text-decoration:none!important;color:var(--text)!important}
+    .nav-card:hover{box-shadow:var(--shadow-md);border-color:transparent;transform:translateY(-2px)}
+    .nav-card-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .nav-card-icon.green {background:var(--green-light);color:var(--green-dark)}
+    .nav-card-icon.blue  {background:var(--blue-light);color:var(--blue)}
+    .nav-card-icon.orange{background:var(--orange-light);color:var(--orange)}
+    .nav-card-icon.purple{background:var(--purple-light);color:var(--purple)}
+    .nav-card-text{display:flex;flex-direction:column}
+    .nav-card-title{font-weight:600;font-size:.92rem}
+    .nav-card-desc{font-size:.75rem;color:var(--text-sub);margin-top:2px}
+
+    /* ── 表格卡片 ── */
+    .table-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}
+
+    /* ── 工具栏 ── */
+    .table-toolbar{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .toolbar-left{display:flex;align-items:center;gap:12px;flex-shrink:0}
+    .table-title{font-size:1rem;font-weight:700;display:flex;align-items:center;gap:8px}
+    .table-title::before{content:'';width:4px;height:18px;background:var(--green);border-radius:2px;display:inline-block}
+    .count-badge{font-size:.72rem;font-weight:500;background:var(--green-light);color:var(--green-dark);padding:2px 10px;border-radius:20px}
+
+    /* ── 搜索框 ── */
+    .search-wrap{position:relative;flex:1;max-width:320px}
+    .search-icon{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--text-light);pointer-events:none}
+    .search-input{width:100%;padding:8px 12px 8px 34px;border:1px solid var(--border);border-radius:8px;font-size:.85rem;font-family:var(--font);outline:none;transition:border-color .15s,box-shadow .15s;background:#fafbfc;color:var(--text)}
+    .search-input:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(82,196,26,.12);background:var(--white)}
+    .search-input::placeholder{color:var(--text-light)}
+
+    /* ── 表格 ── */
+    .record-table{width:100%;border-collapse:collapse;font-size:.88rem}
+    .record-table thead th{text-align:left;padding:11px 20px;font-weight:600;font-size:.75rem;color:var(--text-sub);text-transform:uppercase;letter-spacing:.05em;background:#fafbfc;border-bottom:1px solid var(--border);white-space:nowrap}
+    .record-table thead th.sortable{cursor:pointer;user-select:none;position:relative;padding-right:32px}
+    .record-table thead th.sortable::after{content:'↕';position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:.75rem;color:var(--text-light);font-family:var(--mono);letter-spacing:0}
+    .record-table thead th.sortable.asc::after{content:'↑';color:var(--green-dark)}
+    .record-table thead th.sortable.desc::after{content:'↓';color:var(--green-dark)}
+    .record-table tbody tr{transition:background .1s}
+    .record-table tbody tr:hover{background:#f7fbf3}
+    .record-table tbody td{padding:13px 20px;border-bottom:1px solid #f0f1f3;vertical-align:middle}
+    .record-table tbody tr:last-child td{border-bottom:none}
+    .col-id{font-family:var(--mono);font-size:.8rem;color:var(--text-light);width:70px}
+    .col-problem a{color:var(--text);font-weight:500}
+    .col-problem a:hover{color:var(--green)}
+    .problem-source{font-size:.73rem;color:var(--text-light);margin-top:2px}
+    .col-solution a{display:inline-flex;align-items:center;gap:4px;color:var(--green-dark);font-weight:500;font-size:.82rem;padding:4px 12px;border-radius:6px;background:var(--green-light);transition:all .15s;white-space:nowrap}
+    .col-solution a:hover{background:var(--green);color:#fff;text-decoration:none}
+
+    /* ── 洛谷标准难度颜色 ── */
+    /* ── 洛谷标准难度颜色 ── */
+.diff-tag{
+  display:inline-block;
+  font-size:.75rem;
+  font-weight:700;
+  padding:3px 10px;
+  border-radius:4px;
+  white-space:nowrap;
+  color:#fff;
+}
+
+.diff-beginner {background:#FE4C61;}          /* 入门 */
+.diff-basic-minus {background:#F39C11;}       /* 普及- */
+.diff-basic-improve-minus {background:#FFC116;}                                             /* 普及/提高- */
+.diff-basic-improve {background:#52C41A;}     /* 普及/提高 */
+.diff-improve-province-minus {background:#3498DB;} /* 提高/省选- */
+.diff-province-noi-minus {background:#9D3DCF;}      /* 省选/NOI- */
+.diff-noi {background:#0E1D69;}               /* NOI */
+.diff-unrated {background:#BFBFBF;}           /* 未评定 */
+
+    /* ── 算法标签 ── */
+    .algo-tags{display:flex;flex-wrap:wrap;gap:5px}
+    .algo-tag{font-size:.72rem;padding:2px 8px;border-radius:4px;background:#f0f2f5;color:#5f6368;white-space:nowrap;transition:background .12s}
+    tr:hover .algo-tag{background:#e6ede0}
+
+    /* ── 无结果 ── */
+    .no-results{text-align:center;padding:40px 20px;color:var(--text-light);font-size:.88rem;display:none}
+    .no-results.show{display:block}
+
+    /* ── 分页 ── */
+    .pagination-wrap{padding:14px 20px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+    .page-info{font-size:.8rem;color:var(--text-sub)}
+    .page-btns{display:flex;gap:4px;align-items:center}
+    .page-btn{min-width:32px;height:32px;padding:0 10px;border:1px solid var(--border);border-radius:6px;background:var(--white);color:var(--text);font-size:.82rem;font-family:var(--font);cursor:pointer;transition:all .15s;display:flex;align-items:center;justify-content:center}
+    .page-btn:hover:not(:disabled){border-color:var(--green);color:var(--green)}
+    .page-btn.active{background:var(--green);color:#fff;border-color:var(--green);font-weight:600}
+    .page-btn:disabled{opacity:.4;cursor:not-allowed}
+    .page-ellipsis{font-size:.82rem;color:var(--text-light);padding:0 4px}
+
+    /* ── 页脚 ── */
+    .site-footer{text-align:center;padding:20px 0 32px;font-size:.78rem;color:var(--text-light)}
+
+    /* ── 动画 ── */
+    @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    .hero      {animation:fadeUp .35s ease both}
+    .nav-cards {animation:fadeUp .35s ease .07s both}
+    .table-card{animation:fadeUp .35s ease .14s both}
+
+    /* ── 响应式 ── */
+    @media(max-width:768px){
+      .nav-cards{grid-template-columns:repeat(2,1fr);gap:10px}
+      .record-table thead th,.record-table tbody td{padding:10px 14px}
+      .record-table{font-size:.82rem}
+      .topbar-time{display:none}
     }
-
-    a { color: var(--green-dark); text-decoration: none; transition: color 0.15s; }
-    a:hover { color: var(--green); }
-
-    /* ==================== 顶栏 ==================== */
-    .topbar {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
+    @media(max-width:480px){
+      .nav-cards{grid-template-columns:1fr}
+      .hero h1{font-size:1.3rem}
+      .container{padding:20px 0 48px}
+      .table-card{border-radius:0;border-left:none;border-right:none}
+      .search-wrap{max-width:100%;flex:unset;width:100%}
+      .table-toolbar{flex-direction:column;align-items:flex-start}
     }
-
-    .topbar-inner {
-      max-width: 1060px;
-      margin: 0 auto;
-      padding: 0 24px;
-      height: 56px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 700;
-      font-size: 1.1rem;
-      color: var(--text);
-    }
-
-    .logo:hover { text-decoration: none; color: var(--text); }
-
-    .logo-icon {
-      width: 32px;
-      height: 32px;
-      background: var(--green);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: 700;
-      font-size: 0.85rem;
-    }
-
-    .topbar-time {
-      font-size: 0.8rem;
-      color: var(--text-light);
-    }
-
-    /* ==================== 容器 ==================== */
-    .container {
-      max-width: 1060px;
-      margin: 0 auto;
-      padding: 28px 24px 60px;
-    }
-
-    /* ==================== 标题区 ==================== */
-    .hero {
-      margin-bottom: 24px;
-    }
-
-    .hero h1 {
-      font-size: 1.55rem;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-      color: var(--text);
-    }
-
-    .hero p {
-      margin-top: 6px;
-      color: var(--text-sub);
-      font-size: 0.88rem;
-    }
-
-    /* ==================== 导航按钮组 ==================== */
-    .nav-cards {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-      margin-bottom: 28px;
-    }
-
-    .nav-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 18px 20px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      transition: all 0.2s ease;
-      cursor: pointer;
-      text-decoration: none !important;
-      color: var(--text) !important;
-    }
-
-    .nav-card:hover {
-      box-shadow: var(--shadow-md);
-      border-color: transparent;
-      transform: translateY(-2px);
-    }
-
-    .nav-card-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      flex-shrink: 0;
-    }
-
-    .nav-card-icon.green  { background: var(--green-light);  color: var(--green-dark); }
-    .nav-card-icon.blue   { background: var(--blue-light);   color: var(--blue); }
-    .nav-card-icon.orange { background: var(--orange-light); color: var(--orange); }
-    .nav-card-icon.purple { background: var(--purple-light); color: var(--purple); }
-
-    .nav-card-text { display: flex; flex-direction: column; min-width: 0; }
-    .nav-card-title { font-weight: 600; font-size: 0.92rem; line-height: 1.3; }
-    .nav-card-desc { font-size: 0.75rem; color: var(--text-sub); margin-top: 2px; }
-
-    /* ==================== 表格卡片 ==================== */
-    .table-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-sm);
-      overflow: hidden;
-    }
-
-    .table-header {
-      padding: 18px 24px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .table-header h2 {
-      font-size: 1rem;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .table-header h2::before {
-      content: '';
-      width: 4px;
-      height: 18px;
-      background: var(--green);
-      border-radius: 2px;
-      display: inline-block;
-    }
-
-    .count-badge {
-      font-size: 0.72rem;
-      font-weight: 500;
-      background: var(--green-light);
-      color: var(--green-dark);
-      padding: 2px 10px;
-      border-radius: 20px;
-    }
-
-    /* ==================== 表格 ==================== */
-    .record-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.88rem;
-    }
-
-    .record-table thead th {
-      text-align: left;
-      padding: 12px 24px;
-      font-weight: 600;
-      font-size: 0.78rem;
-      color: var(--text-sub);
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      background: #fafbfc;
-      border-bottom: 1px solid var(--border);
-      white-space: nowrap;
-    }
-
-    .record-table tbody tr {
-      transition: background 0.12s;
-    }
-
-    .record-table tbody tr:hover {
-      background: #f8faf5;
-    }
-
-    .record-table tbody td {
-      padding: 14px 24px;
-      border-bottom: 1px solid #f0f1f3;
-      vertical-align: middle;
-    }
-
-    .record-table tbody tr:last-child td {
-      border-bottom: none;
-    }
-
-    /* 编号列 */
-    .col-id {
-      font-family: var(--mono);
-      font-size: 0.82rem;
-      color: var(--text-sub);
-      width: 80px;
-    }
-
-    /* 题号列 */
-    .col-problem { font-weight: 500; }
-    .col-problem a { color: var(--text); font-weight: 500; }
-    .col-problem a:hover { color: var(--green); }
-    .problem-source { font-size: 0.75rem; color: var(--text-light); margin-top: 2px; }
-
-    /* 题解链接 */
-    .col-solution a {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      color: var(--green-dark);
-      font-weight: 500;
-      font-size: 0.84rem;
-      padding: 4px 12px;
-      border-radius: 6px;
-      background: var(--green-light);
-      transition: all 0.15s;
-    }
-
-    .col-solution a:hover {
-      background: var(--green);
-      color: white;
-      text-decoration: none;
-    }
-
-    /* 难度标签 */
-    .diff-tag {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 3px 10px;
-      border-radius: 4px;
-      white-space: nowrap;
-    }
-
-    .diff-入门 { background: #e8f5e9; color: #2e7d32; }
-    .diff-普及- { background: #e8f5e9; color: #388e3c; }
-    .diff-普及  { background: #fff8e1; color: #f57f17; }
-    .diff-提高- { background: #fff3e0; color: #e65100; }
-    .diff-提高  { background: #fce4ec; color: #c62828; }
-    .diff-省选  { background: #f3e5f5; color: #7b1fa2; }
-    .diff-NOI   { background: #ede7f6; color: #4527a0; }
-
-    /* 算法标签 */
-    .algo-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-
-    .algo-tag {
-      font-size: 0.73rem;
-      padding: 3px 9px;
-      border-radius: 4px;
-      background: #f0f2f5;
-      color: #5f6368;
-      white-space: nowrap;
-    }
-
-    /* ==================== 页脚 ==================== */
-    .site-footer {
-      text-align: center;
-      padding: 20px 0 32px;
-      font-size: 0.78rem;
-      color: var(--text-light);
-    }
-
-    /* ==================== 响应式 ==================== */
-    @media (max-width: 768px) {
-      .nav-cards { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-      .record-table { font-size: 0.82rem; }
-      .record-table thead th, .record-table tbody td { padding: 10px 14px; }
-      .topbar-time { display: none; }
-    }
-
-    @media (max-width: 480px) {
-      .nav-cards { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 1.3rem; }
-      .table-card { border-radius: 0; border-left: none; border-right: none; }
-      .container { padding: 20px 16px 48px; }
-    }
-
-    /* ==================== 入场动画 ==================== */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(12px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    .hero       { animation: fadeUp 0.4s ease both; }
-    .nav-cards  { animation: fadeUp 0.4s ease 0.08s both; }
-    .table-card { animation: fadeUp 0.4s ease 0.16s both; }
   </style>
 </head>
 <body>
 
-<!-- ========== 顶栏 ========== -->
 <header class="topbar">
   <div class="topbar-inner">
-    <a href="index.html" class="logo">
-      <div class="logo-icon">OI</div>
+    <a href="https://www.luogu.com.cn/user/728487" class="logo">
+      <div class="logo-icon"><img src="tx.jpg" alt="Showball's OI 工具箱"></div>
       <span>Showball's OI 工具箱</span>
     </a>
     <span class="topbar-time" id="clock"></span>
   </div>
 </header>
 
-<!-- ========== 主内容 ========== -->
 <div class="container">
 
-  <!-- 标题 -->
   <div class="hero">
     <h1>OI 工具箱 - 做题记录</h1>
     <p>信息学竞赛题解归档 · 持续更新中</p>
   </div>
 
-  <!-- 导航按钮 -->
   <div class="nav-cards">
     <a href="index.html" class="nav-card">
       <div class="nav-card-icon green">
@@ -408,120 +215,294 @@
     </a>
   </div>
 
-  <!-- 做题记录表格 -->
   <div class="table-card">
-    <div class="table-header">
-      <h2>做题记录</h2>
-      <span class="count-badge">共 5 题</span>
+    <div class="table-toolbar">
+      <div class="toolbar-left">
+        <h2 class="table-title">做题记录</h2>
+        <span class="count-badge" id="count-badge">共 0 题</span>
+      </div>
+      <div class="search-wrap">
+        <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input class="search-input" id="search-input" type="text" placeholder="搜索题号、题名、算法标签…" autocomplete="off">
+      </div>
     </div>
+
     <table class="record-table">
       <thead>
         <tr>
-          <th>编号</th>
-          <th>题号</th>
+          <th class="sortable" data-sort="id">编号</th>
+          <th class="sortable" data-sort="pid">题号 / 题名</th>
           <th>题解 / 代码</th>
-          <th>难度</th>
+          <th class="sortable" data-sort="difficulty">难度</th>
           <th>主要算法</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td class="col-id">#001</td>
-          <td class="col-problem">
-            <a href="https://www.luogu.com.cn/problem/P3372" target="_blank">P3372 线段树 1</a>
-            <div class="problem-source">洛谷</div>
-          </td>
-          <td class="col-solution"><a href="records/lg-p3372.html">查看题解 →</a></td>
-          <td><span class="diff-tag diff-提高-">提高-</span></td>
-          <td>
-            <div class="algo-tags">
-              <span class="algo-tag">线段树</span>
-              <span class="algo-tag">懒标记</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="col-id">#002</td>
-          <td class="col-problem">
-            <a href="https://www.luogu.com.cn/problem/P3373" target="_blank">P3373 线段树 2</a>
-            <div class="problem-source">洛谷</div>
-          </td>
-          <td class="col-solution"><a href="records/lg-p3373.html">查看题解 →</a></td>
-          <td><span class="diff-tag diff-提高">提高</span></td>
-          <td>
-            <div class="algo-tags">
-              <span class="algo-tag">线段树</span>
-              <span class="algo-tag">多重懒标记</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="col-id">#003</td>
-          <td class="col-problem">
-            <a href="https://www.luogu.com.cn/problem/P1048" target="_blank">P1048 采药</a>
-            <div class="problem-source">洛谷</div>
-          </td>
-          <td class="col-solution"><a href="records/lg-p1048.html">查看题解 →</a></td>
-          <td><span class="diff-tag diff-普及-">普及-</span></td>
-          <td>
-            <div class="algo-tags">
-              <span class="algo-tag">01背包</span>
-              <span class="algo-tag">DP</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="col-id">#004</td>
-          <td class="col-problem">
-            <a href="https://www.luogu.com.cn/problem/P3366" target="_blank">P3366 最小生成树</a>
-            <div class="problem-source">洛谷</div>
-          </td>
-          <td class="col-solution"><a href="records/lg-p3366.html">查看题解 →</a></td>
-          <td><span class="diff-tag diff-提高-">提高-</span></td>
-          <td>
-            <div class="algo-tags">
-              <span class="algo-tag">Kruskal</span>
-              <span class="algo-tag">并查集</span>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="col-id">#005</td>
-          <td class="col-problem">
-            <a href="https://codeforces.com/problemset/problem/1234/D" target="_blank">CF1234D Distinct Characters</a>
-            <div class="problem-source">Codeforces</div>
-          </td>
-          <td class="col-solution"><a href="records/cf1234d.html">查看题解 →</a></td>
-          <td><span class="diff-tag diff-普及">普及</span></td>
-          <td>
-            <div class="algo-tags">
-              <span class="algo-tag">树状数组</span>
-            </div>
-          </td>
-        </tr>
-      </tbody>
+      <tbody id="table-body"></tbody>
     </table>
-  </div>
 
+    <div class="no-results" id="no-results">暂无匹配的题目 🔍</div>
+
+    <div class="pagination-wrap">
+      <span class="page-info" id="page-info"></span>
+      <div class="page-btns" id="page-btns"></div>
+    </div>
+  </div>
 </div>
 
-<!-- ========== 页脚 ========== -->
-<footer class="site-footer">
-  Powered by GitHub Pages · OI 工具箱
-</footer>
+<footer class="site-footer">Powered by GitHub Pages · Showball's OI 工具箱</footer>
 
-<!-- ========== 时钟脚本 ========== -->
+
 <script>
-  function updateClock() {
-    const now = new Date();
-    const pad = n => String(n).padStart(2, '0');
-    document.getElementById('clock').textContent =
-      now.getFullYear() + '-' + pad(now.getMonth()+1) + '-' + pad(now.getDate()) + ' ' +
-      pad(now.getHours()) + ':' + pad(now.getMinutes()) + ':' + pad(now.getSeconds());
-  }
-  updateClock();
-  setInterval(updateClock, 1000);
-</script>
+const PAGE_SIZE = 10;
+let records = [];
+let filtered = [];
+let currentPage = 1;
+let sortKey = 'id';
+let sortDir = 'desc';
 
+const difficultyRank = {
+  '入门':      0,
+  '普及-':    1,
+  '普及/提高-': 2,
+  '普及+/提高':  3,
+  '提高+/省选-': 4,
+  '省选/NOI-': 5,
+  'NOI':      6
+};
+
+const difficultyClassMap = {
+  '入门': 'beginner',
+  '普及-': 'basic-minus',
+  '普及/提高-': 'basic-improve-minus',
+  '普及+/提高': 'basic-improve',
+  '提高+/省选-': 'improve-province-minus',
+  '省选/NOI-': 'province-noi-minus',
+  'NOI': 'noi',
+  '未评定': 'unrated'
+};
+
+function getDifficultyClass(diff) {
+  return difficultyClassMap[diff] || 'unrated';
+}
+
+const tbody      = document.getElementById('table-body');
+const noResults  = document.getElementById('no-results');
+const countBadge = document.getElementById('count-badge');
+const pageInfo   = document.getElementById('page-info');
+const pageBtns   = document.getElementById('page-btns');
+
+/* ============ 核心：加载JSON数据 ============ */
+async function loadRecords() {
+  try {
+    // 获取solutions目录下所有JSON文件
+    const response = await fetch('solutions/');
+    
+    if (!response.ok) {
+      console.error('无法访问solutions目录');
+      showEmptyState();
+      return;
+    }
+
+    const html = await response.text();
+    
+    // 用简单的正则提取.json文件名（如果服务器支持目录列表）
+    const jsonFiles = Array.from(html.matchAll(/href=["']([^"']+\.json)["']/gi))
+      .map(m => m[1])
+      .filter(f => !f.startsWith('/'));
+
+    if (jsonFiles.length === 0) {
+      console.warn('solutions目录为空或不支持目录列表');
+      showEmptyState();
+      return;
+    }
+
+    // 并行加载所有JSON文件
+    const promises = jsonFiles.map(file =>
+      fetch(`solutions/${file}`)
+        .then(r => r.json())
+        .catch(err => {
+          console.error(`加载 ${file} 失败:`, err);
+          return null;
+        })
+    );
+
+    const results = await Promise.all(promises);
+    records = results.filter(r => r !== null);
+
+    if (records.length === 0) {
+      showEmptyState();
+      return;
+    }
+
+    filtered = [...records];
+    applySort();
+    render();
+  } catch (err) {
+    console.error('加载记录失败:', err);
+    showEmptyState();
+  }
+}
+
+
+/* 构建一行 HTML */
+function buildRow(r) {
+  // 题目原站链接处理：洛谷 / Codeforces / AtCoder
+  let problemUrl = r.problemUrl || '';
+  let sourceName = r.source;
+
+  if (!problemUrl && r.source === 'CF') {
+    const m = r.pid.replace('CF','').match(/^(\d+)([A-Z]\d*)$/);
+    problemUrl = m
+      ? 'https://codeforces.com/problemset/problem/' + m[1] + '/' + m[2]
+      : 'https://codeforces.com/';
+    sourceName = 'Codeforces';
+  } else if (!problemUrl && r.source === 'AtCoder') {
+    const m = r.pid.match(/^([A-Z]+)(\d+)([A-Z])$/i);
+    if (m) {
+      const contest = (m[1] + m[2]).toLowerCase();
+      problemUrl = 'https://atcoder.jp/contests/' + contest + '/tasks/' + contest + '_' + m[3].toLowerCase();
+    } else {
+      problemUrl = 'https://atcoder.jp/';
+    }
+    sourceName = 'AtCoder';
+  } else if (!problemUrl) {
+    problemUrl = 'https://www.luogu.com.cn/problem/' + r.pid;
+    sourceName = '洛谷';
+  } else if (r.source === 'CF') {
+    sourceName = 'Codeforces';
+  }
+
+  return `<tr>
+    <td class="col-id">#${r.id}</td>
+    <td class="col-problem">
+      <a href="${problemUrl}" target="_blank">${r.pid}&nbsp;&nbsp;${r.title}</a>
+      <div class="problem-source">${sourceName}</div>
+    </td>
+    <td class="col-solution"><a href="${r.href}">查看题解 →</a></td>
+    <td><span class="diff-tag diff-${getDifficultyClass(r.diff)}">${r.diff||'未评定'}</span></td>
+    <td><div class="algo-tags">${r.tags.map(t => `<span class="algo-tag">${t}</span>`).join('')}</div></td>
+  </tr>`;
+}
+
+/* 排序：点击编号 / 题号 / 难度时，对全部匹配记录排序 */
+function compareRecords(a, b, key) {
+  if (key === 'id') {
+    return Number(a.id) - Number(b.id);
+  }
+  if (key === 'pid') {
+    return a.pid.localeCompare(b.pid, undefined, { numeric: true, sensitivity: 'base' });
+  }
+  if (key === 'difficulty') {
+    const ar = difficultyRank[a.diff] ?? 999;
+    const br = difficultyRank[b.diff] ?? 999;
+    return ar === br
+      ? a.pid.localeCompare(b.pid, undefined, { numeric: true, sensitivity: 'base' })
+      : ar - br;
+  }
+  return 0;
+}
+
+function applySort() {
+  filtered.sort((a, b) => {
+    const result = compareRecords(a, b, sortKey);
+    return sortDir === 'asc' ? result : -result;
+  });
+}
+
+function updateSortIndicators() {
+  document.querySelectorAll('.record-table thead th.sortable').forEach(th => {
+    th.classList.remove('asc', 'desc');
+    if (th.dataset.sort === sortKey) th.classList.add(sortDir);
+  });
+}
+
+/* 生成页码数组（超过 7 页折叠中间） */
+function pageRange(cur, total) {
+  if (total <= 7) return Array.from({length: total}, (_, i) => i + 1);
+  if (cur <= 4)        return [1, 2, 3, 4, 5, '…', total];
+  if (cur >= total-3)  return [1, '…', total-4, total-3, total-2, total-1, total];
+  return [1, '…', cur-1, cur, cur+1, '…', total];
+}
+
+/* 渲染表格 + 分页 */
+function render() {
+  const total = filtered.length;
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  if (currentPage > totalPages) currentPage = totalPages;
+  updateSortIndicators();
+
+  const start = (currentPage - 1) * PAGE_SIZE;
+  tbody.innerHTML = filtered.slice(start, start + PAGE_SIZE).map(buildRow).join('');
+
+  countBadge.textContent = '共 ' + total + ' 题';
+  noResults.classList.toggle('show', total === 0);
+
+  if (total === 0) { pageInfo.textContent = ''; pageBtns.innerHTML = ''; return; }
+
+  pageInfo.textContent =
+    '第 ' + (start + 1) + '–' + Math.min(start + PAGE_SIZE, total) + ' 条，共 ' + total + ' 条';
+
+  let html = `<button class="page-btn" id="btn-prev" ${currentPage === 1 ? 'disabled' : ''}>‹</button>`;
+  pageRange(currentPage, totalPages).forEach(p => {
+    html += p === '…'
+      ? `<span class="page-ellipsis">…</span>`
+      : `<button class="page-btn ${p === currentPage ? 'active' : ''}" data-p="${p}">${p}</button>`;
+  });
+  html += `<button class="page-btn" id="btn-next" ${currentPage === totalPages ? 'disabled' : ''}>›</button>`;
+  pageBtns.innerHTML = html;
+
+  pageBtns.querySelectorAll('.page-btn[data-p]').forEach(b =>
+    b.addEventListener('click', () => { currentPage = +b.dataset.p; render(); })
+  );
+  const prev = document.getElementById('btn-prev');
+  const next = document.getElementById('btn-next');
+  if (prev) prev.addEventListener('click', () => { currentPage--; render(); });
+  if (next) next.addEventListener('click', () => { currentPage++; render(); });
+}
+
+/* 表头排序 */
+document.querySelectorAll('.record-table thead th.sortable').forEach(th => {
+  th.addEventListener('click', () => {
+    const key = th.dataset.sort;
+    if (sortKey === key) {
+      sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+    } else {
+      sortKey = key;
+      sortDir = 'asc';
+    }
+    currentPage = 1;
+    applySort();
+    render();
+  });
+});
+
+/* 搜索 */
+document.getElementById('search-input').addEventListener('input', function() {
+  const q = this.value.trim().toLowerCase();
+  filtered = q
+    ? records.filter(r => (r.pid + ' ' + r.title + ' ' + r.tags.join(' ')).toLowerCase().includes(q))
+    : [...records];
+  currentPage = 1;
+  applySort();
+  render();
+});
+
+applySort();
+render();
+
+/* 时钟 */
+(function tick() {
+  const now = new Date();
+  const p = n => String(n).padStart(2, '0');
+  document.getElementById('clock').textContent =
+    now.getFullYear() + '-' + p(now.getMonth()+1) + '-' + p(now.getDate()) +
+    ' ' + p(now.getHours()) + ':' + p(now.getMinutes()) + ':' + p(now.getSeconds());
+  setTimeout(tick, 1000);
+})();
+
+/* 初始化：加载数据 */
+loadRecords();
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"7939e04a4baf43c8b86a560f74aac60e","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
