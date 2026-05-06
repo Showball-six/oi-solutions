@@ -48,7 +48,7 @@ def get_next_id(records):
 
 
 def create_json_record(pid, title, diff, source="洛谷", tags=None, problem_url=None):
-    """创建一条记录（不再生成单独的 xxx.json）"""
+    """创建一条记录"""
     records = load_existing_records()
     next_id = get_next_id(records)
 
@@ -92,22 +92,12 @@ def save_record(record):
     print(f"✅ 已追加到 {RECORDS_FILE}（共 {len(records)} 条记录）")
 
 
-def create_html_template(html_path, pid, title, source="洛谷"):
-    """创建题解HTML模板（保持不变）"""
+def create_html_template(html_path, pid, title, source="洛谷", problem_url="#"):
+    """创建题解HTML模板"""
     path = Path(html_path)
     if path.exists():
         print(f"⚠️ 文件已存在：{html_path}（跳过）")
         return
-
-    # 生成题目链接
-    problem_url = "#"
-    if source == "洛谷" and pid.startswith('P'):
-        problem_url = f"https://www.luogu.com.cn/problem/{pid}"
-    elif source == "CF" and pid.startswith('CF'):
-        cf_pid = pid[2:]
-        problem_url = f"https://codeforces.com/problemset/problem/{cf_pid[:1]}/{cf_pid[1:]}"
-    elif source == "AtCoder":
-        problem_url = "https://atcoder.jp/"
 
     html_content = f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -196,6 +186,11 @@ def interactive_create():
         print("❌ 标题不能为空")
         return
 
+    # 直接询问题目链接
+    problem_url = input("题目链接 (粘贴 URL，留空则为 #): ").strip() or "#"
+
+    source = input("来源 (洛谷/CF/AtCoder，默认洛谷): ").strip() or "洛谷"
+
     print("\n可选难度:")
     difficulties = ["入门", "普及-", "普及/提高-", "普及+/提高",
                     "提高+/省选-", "省选/NOI-", "NOI"]
@@ -205,18 +200,17 @@ def interactive_create():
     diff_choice = input("选择难度 (1-7，默认4): ").strip()
     diff = difficulties[int(diff_choice)-1] if diff_choice.isdigit() and 1 <= int(diff_choice) <= 7 else "普及/提高"
 
-    source = input("来源 (洛谷/CF/AtCoder，默认洛谷): ").strip() or "洛谷"
-
     tags_input = input("标签 (用逗号分隔，可选): ").strip()
     tags = [t.strip() for t in tags_input.split(',')] if tags_input else []
 
     # 创建记录
-    record = create_json_record(pid, title, diff, source, tags)
+    record = create_json_record(pid, title, diff, source, tags, problem_url)
 
     print("\n" + "-"*50)
     print(f"ID: {record['id']}")
     print(f"题号: {pid}")
     print(f"标题: {title}")
+    print(f"链接: {problem_url}")
     print(f"难度: {diff}")
     print(f"标签: {', '.join(tags) if tags else '(无)'}")
     print("-"*50)
@@ -224,8 +218,8 @@ def interactive_create():
     confirm = input("\n确认创建？ (y/n): ").strip().lower()
     if confirm == 'y':
         html_path = record["href"]
-        create_html_template(html_path, pid, title, source)
-        save_record(record)          # ← 直接写入 records.json
+        create_html_template(html_path, pid, title, source, problem_url)
+        save_record(record)
         print("\n✨ 创建成功！")
     else:
         print("\n❌ 已取消")
@@ -243,7 +237,8 @@ def init_examples():
             "source": "洛谷",
             "href": "solutions/lg-p3372.html",
             "diff": "普及/提高",
-            "tags": ["线段树", "数据结构"]
+            "tags": ["线段树", "数据结构"],
+            "problemUrl": "https://www.luogu.com.cn/problem/P3372"
         },
         {
             "id": "002",
@@ -252,7 +247,8 @@ def init_examples():
             "source": "CF",
             "href": "solutions/cf-1a.html",
             "diff": "入门",
-            "tags": ["数学"]
+            "tags": ["数学"],
+            "problemUrl": "https://codeforces.com/problemset/problem/1/A"
         }
     ]
 
@@ -262,9 +258,8 @@ def init_examples():
 
     for example in examples:
         html_path = example["href"]
-        # 创建HTML
-        create_html_template(html_path, example["pid"], example["title"], example["source"])
-        # 追加到 records.json
+        problem_url = example.get("problemUrl", "#")
+        create_html_template(html_path, example["pid"], example["title"], example["source"], problem_url)
         save_record(example)
 
     print("✅ 示例数据初始化完成！")
