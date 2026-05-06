@@ -1,79 +1,130 @@
-## P1966 [NOIP 2013 提高组] 火柴排队
+## [SGU132 Make It Ascending](https://codeforces.com/problemsets/acmsguru/problem/99999/132)
 
- **提高+/省选−**
+**题目**：
+
+> $M\times N$ 的网格，部分格子有障碍物，其余位空格。求出在空格上放置 $1\times 2$ 或 $2\times 1$ 的骨牌，使得放置后 **不存在两个相邻的空格（即放不下任何骨牌）** 的最小骨牌放置数量。
+>
+> **骨牌不能重叠，不能覆盖有障碍物的格子**
+
+**数据范围**：$1\le M \le 70,1\le N\le 7$。`*` 表示障碍，`.` 表示空格。
+
+**样例**：
+
+输入：
+
+```cpp
+5 5
+.*..*
+*....
+..**.
+**.*.
+.**..
+```
+
+输出
+
+```cpp
+4
+```
+
+
 
 **思路**：
 
-求解 $\sum\left(a_i-b_i\right)^2$的最小值。
+状态压缩 $DP$ + $DFS$ 枚举转移。
 
-尝试展开原式：$\sum\left(a_i^2+b_i^2-2\times a_i\times b_i\right)=\sum\left(a_i+b_i\right)^2-2\times\sum\left(a_i\times b_i\right)$。
+观察到每行最多有 $7$ 列，那么我们就可以用二进制数压缩每行的状态，我们在放入 $1\times 2$ 的骨牌时，会影响到下一行，所以转移时需要存储下一行的状态。
 
-显然，$\sum\left(a_i+b_i\right)^2$ 是一个定值，原式的大小由 $\sum\left(a_i\times b_i\right)$ 决定，要求最小值，即考虑最大化 $\sum\left(a_i\times b_i\right)$。
+容易想到令 $f_{i,j,k}$ 表示当前处理第 $i$ 行且第 $i$ 行状态位 $j$，第 $i+1$ 行状态为 $k$ 的最小骨牌数。
 
-根据贪心，我们只需要按照 $a$ 数组的大小关系将 $b$ 数组排序即可。
+通过 $DFS$ 枚举所有放置状态进行转移即可。一共三种选择:不放，放 $1\times 2$ 的骨牌，放 $2\times 1$ 的骨牌（具体参考代码注释）。
 
-具体地，令 $p_i$ 表示 $a$ 数组中第 $i$ 小的数对应的下标，$q_i$ 表示 $b$ 数组中第 $i$ 小的数对应的下标。
-
-那么，最后应该需要保证 $\forall i \in[1,n]$ 满足 $p_i=q_i$。那么我们建立辅助映射数组 $t$，令 $t[p_i]=q_i$。
-
-即 $t$ 数组满足 $\forall i\in[i,n]$ 满足 $t_i=i$。即升序排序。因此，具体次数就是求出辅助映射数组的逆序对即可。
-
-可采用归并排序或树状数组求解。时间复杂度：$O(n\log n)$。  
+**本题空间限制为 4MB**。所以需要滚动数组优化一下。
 
 **参考代码**：
 
-```cpp
+```CPP
 #include<bits/stdc++.h>
 
 using namespace std;
 
 using i64=long long;
 
-const int mod=1e8-3;
+const int p[]={1,2,4,8,16,32,64,128};
+const int inf=0x3f3f3f3f;
+
+int g[75];//表示原来第i行的状态
+int f[2][1<<8][1<<8];
+int n,m;
+int x=1,st1,st2;
+int ans=inf;
+
+//u:当前列号 op1:当前行状态 op2:下一行状态 cnt:已放骨牌数
+void dfs(int u,int op1,int op2,int cnt){
+    //上一行与当前行都是0,能够放下2x1的，不合法
+    if(u>0&&(st1&p[u-1])==0&&(op1&p[u-1])==0) return;
+    //当前行的u-1列和u-2列都是0,能够放下1x2的，不合法
+    if(u>1&&(op1&p[u-1])==0&&(op1&p[u-2])==0) return;
+	
+    //处理完所有列
+    if(u==m){
+        //用上一行的DP值更新该行的DP值
+        if(f[x^1][st1][st2]!=inf){
+            f[x][op1][op2]=min(f[x][op1][op2],f[x^1][st1][st2]+cnt);
+        }
+        return;
+    }
+	
+    //该列不放骨牌，状态不变
+    dfs(u+1,op1,op2,cnt);
+	
+    //该列竖着放2x1的骨牌，占用当前行u列与下一行u列
+    if((op1&p[u])==0&&(op2&p[u])==0){
+        dfs(u+1,op1|p[u],op2|p[u],cnt+1);
+    }
+	
+    //该列横着放1x2的骨牌，占用当前行u列和u+1列
+    if(u<m-1&&(op1&p[u])==0&&(op1&p[u+1])==0){
+        dfs(u+1,op1|p[u+1]|p[u],op2,cnt+1);
+    }
+}
 void Showball(){
-    int n;
-    cin>>n;
-    vector<int> a(n+1),b(n+1);
-
-    for(int i=1;i<=n;i++) cin>>a[i];
-    for(int i=1;i<=n;i++) cin>>b[i];
-
-    vector<i64> tr(n+1);
-    auto add=[&](int x,int v){
-        for(;x<=n;x+=x&-x) tr[x]+=v;
-    };
-
-    auto ask=[&](int x){
-        i64 ret=0;
-        for(;x;x-=x&-x) ret+=tr[x];
-        return ret;
-    };
-
-    vector<int> p(n+1),q(n+1);
-    iota(p.begin(),p.end(),0);
-    iota(q.begin(),q.end(),0);
-
-    sort(p.begin()+1,p.end(),[&](int x,int y){
-        return a[x]<a[y];
-    });
-
-    sort(q.begin()+1,q.end(),[&](int x,int y){
-        return b[x]<b[y];
-    });    
-
-    vector<int> t(n+1);
+    cin>>n>>m;
     for(int i=1;i<=n;i++){
-        t[p[i]]=q[i];
+        string s;
+        cin>>s;
+        for(auto c:s){
+            g[i]=g[i]<<1|(c=='*');//维护每一行的初始状态
+        }
     }
 
-    i64 ans=0;
-    for(int i=n;i;i--){
-        ans=(ans+ask(t[i]-1))%mod;
-        add(t[i],1);
+    memset(f,0x3f,sizeof f);
+	
+    //第0行全部不能放，所以状态为2^m-1,第1行状态为g[1]
+    f[0][p[m]-1][g[1]]=0;
+	
+   	//枚举所有合法的上一行状态，再用DFS枚举当前行的放法
+    for(int k=1;k<=n;k++){
+        for(int i=0;i<p[m];i++){
+            for(int j=0;j<p[m];j++){
+                if(f[x^1][i][j]!=inf){
+                    st1=i,st2=j;
+                    dfs(0,j,g[k+1],0);
+                }
+            }
+        }
+        memset(f[x^1],0x3f,sizeof f[x^1]);
+        x^=1;
     }
+
+    for(int i=0;i<p[m];i++){
+        for(int j=0;j<p[m];j++){
+     		ans=min(ans,f[x^1][i][j]);
+        }
+    }
+
     cout<<ans<<"\n";
 }
-
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -87,4 +138,3 @@ int main(){
     return 0;
 }
 ```
-
