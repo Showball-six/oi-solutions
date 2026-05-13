@@ -1,0 +1,76 @@
+[
+  {
+    "id": "lec-001",
+    "slug": "lec-001",
+    "title": "AC自动机",
+    "tags": [
+      "ACAM"
+    ],
+    "courses": [
+      "algo-improve"
+    ],
+    "topics": [
+      "string"
+    ],
+    "href": "memos/lec-001.html",
+    "created": "2026-05-13"
+  },
+  {
+    "id": "lec-002",
+    "slug": "lec-002",
+    "title": "SAM(后缀自动机)",
+    "tags": [
+      "SAM"
+    ],
+    "courses": [
+      "algo-improve"
+    ],
+    "topics": [
+      "string"
+    ],
+    "href": "memos/lec-002.html",
+    "created": "2026-05-13"
+  },
+  {
+    "id": "lec-003",
+    "slug": "lec-003",
+    "title": "程序设计介绍及环境配置",
+    "tags": [
+      "入门"
+    ],
+    "courses": [
+      "syntax-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-003.html",
+    "created": "2026-05-13"
+  },
+  {
+    "id": "lec-004",
+    "slug": "lec-004",
+    "title": "简单写程序",
+    "tags": [
+      "入门"
+    ],
+    "courses": [
+      "syntax-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-004.html",
+    "created": "2026-05-13"
+  },
+  {
+    "id": "lec-005",
+    "slug": "lec-005",
+    "title": "顺序结构程序设计",
+    "tags": [
+      "入门"
+    ],
+    "courses": [
+      "syntax-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-005.html",
+    "created": "2026-05-13"
+  }
+]

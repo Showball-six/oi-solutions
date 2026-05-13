@@ -1,0 +1,70 @@
+{
+  "updated_at": "2026-05-13T11:17:22Z",
+  "data": {
+    "stu-001": {
+      "luogu": {
+        "P3804": "ac",
+        "P3808": "ac",
+        "B2017": "ac"
+      },
+      "codeforces": {
+        "163E": "ac"
+      },
+      "atcoder": {}
+    },
+    "stu-002": {
+      "luogu": {
+        "P3804": "ac",
+        "P3808": "ac",
+        "B2017": "ac"
+      },
+      "codeforces": {},
+      "atcoder": {}
+    },
+    "stu-003": {
+      "luogu": {
+        "B2017": "ac",
+        "P3808": "ac",
+        "P3804": "ac"
+      },
+      "codeforces": {},
+      "atcoder": {}
+    },
+    "stu-004": {
+      "luogu": {
+        "B2017": "ac",
+        "P3808": "ac",
+        "P3804": "ac"
+      },
+      "codeforces": {},
+      "atcoder": {}
+    },
+    "stu-005": {
+      "luogu": {
+        "B2017": "ac",
+        "P3808": "ac",
+        "P3804": "ac"
+      },
+      "codeforces": {},
+      "atcoder": {}
+    },
+    "stu-006": {
+      "luogu": {
+        "B2017": "ac",
+        "P3808": "ac",
+        "P3804": "ac"
+      },
+      "codeforces": {},
+      "atcoder": {}
+    },
+    "stu-007": {
+      "luogu": {
+        "B2017": "ac",
+        "P3808": "ac",
+        "P3804": "ac"
+      },
+      "codeforces": {},
+      "atcoder": {}
+    }
+  }
+}

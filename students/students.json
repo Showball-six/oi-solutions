@@ -1,0 +1,51 @@
+[
+  {
+    "id": "stu-001",
+    "name": "海老师",
+    "luogu_uid": "728487",
+    "codeforces_handle": "5h0wba11",
+    "atcoder_handle": "Showball"
+  },
+  {
+    "id": "stu-002",
+    "name": "贤卓",
+    "luogu_uid": "1020186",
+    "codeforces_handle": "zhouxianzhuo",
+    "atcoder_handle": "zhouxianzhuo"
+  },
+  {
+    "id": "stu-003",
+    "name": "学成",
+    "luogu_uid": "1161777",
+    "codeforces_handle": null,
+    "atcoder_handle": null
+  },
+  {
+    "id": "stu-004",
+    "name": "俊熙",
+    "luogu_uid": "1498605",
+    "codeforces_handle": null,
+    "atcoder_handle": null
+  },
+  {
+    "id": "stu-005",
+    "name": "逸熹",
+    "luogu_uid": "1676926",
+    "codeforces_handle": null,
+    "atcoder_handle": null
+  },
+  {
+    "id": "stu-006",
+    "name": "智荣",
+    "luogu_uid": "2123434",
+    "codeforces_handle": null,
+    "atcoder_handle": null
+  },
+  {
+    "id": "stu-007",
+    "name": "俊楠",
+    "luogu_uid": "2138791",
+    "codeforces_handle": null,
+    "atcoder_handle": null
+  }
+]

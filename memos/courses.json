@@ -1,0 +1,134 @@
+{
+  "courses": [
+    {
+      "id": "syntax-basics",
+      "title": "语法基础课程",
+      "color": "green",
+      "contents": [
+        {
+          "id": "content-001",
+          "title": "程序设计介绍及环境配置",
+          "lectures": [
+            "lec-003"
+          ],
+          "problems": []
+        },
+        {
+          "id": "content-002",
+          "title": "顺序结构",
+          "lectures": [
+            "lec-004",
+            "lec-005"
+          ],
+          "problems": [
+            {
+              "pid": "B2017",
+              "platform": "luogu",
+              "title": "打印ASCII码"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "algo-basics",
+      "title": "算法基础课程",
+      "color": "blue",
+      "contents": []
+    },
+    {
+      "id": "basics-to-improve",
+      "title": "基础提高衔接课程",
+      "color": "orange",
+      "contents": []
+    },
+    {
+      "id": "algo-improve",
+      "title": "提高算法课程",
+      "color": "purple",
+      "contents": [
+        {
+          "id": "content-001",
+          "title": "AC自动机专题",
+          "lectures": [
+            "lec-001"
+          ],
+          "problems": [
+            {
+              "pid": "P3808",
+              "platform": "luogu",
+              "title": "AC 自动机（简单版）"
+            },
+            {
+              "pid": "163E",
+              "platform": "codeforces",
+              "title": "e-Government"
+            },
+            {
+              "pid": "abc455_c",
+              "platform": "atcoder",
+              "title": "Vanish"
+            }
+          ]
+        },
+        {
+          "id": "content-002",
+          "title": "SAM(后缀自动机)",
+          "lectures": [
+            "lec-002"
+          ],
+          "problems": [
+            {
+              "pid": "P3804",
+              "platform": "luogu",
+              "title": "【模板】后缀自动机（SAM）"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contest-prep",
+      "title": "竞赛备赛专项课程",
+      "color": "green",
+      "contents": []
+    }
+  ],
+  "topics": [
+    {
+      "id": "dp",
+      "title": "动态规划",
+      "color": "blue"
+    },
+    {
+      "id": "basic-algo",
+      "title": "基础算法",
+      "color": "green"
+    },
+    {
+      "id": "ds",
+      "title": "数据结构",
+      "color": "orange"
+    },
+    {
+      "id": "math",
+      "title": "数学",
+      "color": "purple"
+    },
+    {
+      "id": "graph",
+      "title": "图论",
+      "color": "blue"
+    },
+    {
+      "id": "misc",
+      "title": "杂项",
+      "color": "green"
+    },
+    {
+      "id": "string",
+      "title": "字符串",
+      "color": "orange"
+    }
+  ]
+}
