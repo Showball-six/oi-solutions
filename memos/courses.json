@@ -25,6 +25,11 @@
               "pid": "B2017",
               "platform": "luogu",
               "title": "打印ASCII码"
+            },
+            {
+              "pid": "B2018",
+              "platform": "luogu",
+              "title": "打印字符"
             }
           ]
         }

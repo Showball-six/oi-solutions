@@ -569,6 +569,7 @@ def fetch_submissions():
     if not students:
         print("⚠️ 暂无学生数据"); return
 
+    # 收集所有练习题
     luogu_pids, cf_pids, ac_pids = set(), set(), set()
     for course in courses_data.get('courses', []):
         for content in course.get('contents', []):
@@ -577,8 +578,8 @@ def fetch_submissions():
                 elif p['platform'] == 'codeforces': cf_pids.add(p['pid'])
                 elif p['platform'] == 'atcoder':    ac_pids.add(p['pid'])
 
+    # 加载现有数据
     existing_data = load_json(SUBS_FILE, default={}).get('data', {})
-
     result = {}
     for student in students:
         sid = student['id']
@@ -588,93 +589,169 @@ def fetch_submissions():
             "codeforces": dict(prev.get('codeforces', {})),
             "atcoder":    dict(prev.get('atcoder', {})),
         }
-        print(f"\n处理学生: {student['name']} ({sid})")
 
-        if student.get('luogu_uid') and luogu_pids:
+    import re as _re
+
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+
+    # ========== 洛谷：以学生为中心，从 /practice 页面获取全量数据 ==========
+    if luogu_pids:
+        print(f"\n📝 洛谷题目: {len(luogu_pids)} 道")
+        for student in students:
+            if not student.get('luogu_uid'):
+                continue
+            sid = student['id']
             uid = student['luogu_uid']
-            headers = {"User-Agent": "Mozilla/5.0"}
-            for pid in luogu_pids:
-                if result[sid]['luogu'].get(pid) == 'ac':
-                    print(f"  洛谷 {pid}: 已AC，跳过")
-                    continue
-                try:
-                    import re as _re
-                    # AC check (status=2)
-                    r = requests.get(f"https://www.luogu.com.cn/problem/list?uid={uid}&status=2&keyword={pid}",
-                                     headers=headers, timeout=10)
-                    scripts = _re.findall(r'<script[^>]*>(.*?)</script>', r.text, _re.DOTALL)
-                    ac_pids_found = set()
-                    attempted_pids_found = set()
-                    for s in scripts:
-                        if 'instance' in s:
-                            try:
-                                d = json.loads(s)
-                                ac_pids_found = {p['pid'] for p in d.get('data',{}).get('problems',{}).get('result',[])}
-                            except: pass
-                    # attempted check (status=1)
-                    r2 = requests.get(f"https://www.luogu.com.cn/problem/list?uid={uid}&status=1&keyword={pid}",
-                                      headers=headers, timeout=10)
-                    for s in _re.findall(r'<script[^>]*>(.*?)</script>', r2.text, _re.DOTALL):
-                        if 'instance' in s:
-                            try:
-                                d = json.loads(s)
-                                attempted_pids_found = {p['pid'] for p in d.get('data',{}).get('problems',{}).get('result',[])}
-                            except: pass
-                    if pid in ac_pids_found:
-                        result[sid]['luogu'][pid] = 'ac'
-                        print(f"  洛谷 {pid}: AC")
-                    elif pid in attempted_pids_found:
-                        result[sid]['luogu'][pid] = 'attempted'
-                        print(f"  洛谷 {pid}: 尝试")
-                except Exception as e:
-                    print(f"  洛谷 {pid} 错误: {e}")
-                time.sleep(0.5)
 
-        if student.get('codeforces_handle') and cf_pids:
-            pending_cf = {p for p in cf_pids if result[sid]['codeforces'].get(p) != 'ac'}
-            if not pending_cf:
-                print(f"  CF: 所有题目已AC，跳过")
-            else:
+            # 如果该学生所有题目都已 AC，跳过
+            if all(
+                (result[sid]['luogu'].get(p) or {}).get('status') == 'ac'
+                or result[sid]['luogu'].get(p) == 'ac'
+                for p in luogu_pids
+            ):
+                print(f"\n  {student['name']}: 所有题目已AC，跳过")
+                continue
+
+            print(f"\n  {student['name']} (uid={uid}):")
+            try:
+                r = requests.get(f"https://www.luogu.com.cn/user/{uid}/practice",
+                                 headers=headers, timeout=10)
+                if r.status_code != 200:
+                    print(f"    ❌ HTTP {r.status_code}")
+                    continue
+
+                passed_pids = set()
+                submitted_pids = set()
+
+                for s in _re.findall(r'<script[^>]*>(.*?)</script>', r.text, _re.DOTALL):
+                    try:
+                        d = json.loads(s)
+                        if 'data' in d and 'passed' in d['data']:
+                            passed_pids   = {p['pid'] for p in d['data'].get('passed', [])}
+                            submitted_pids = {p['pid'] for p in d['data'].get('submitted', [])}
+                            break
+                    except json.JSONDecodeError:
+                        continue
+
+                for pid in sorted(luogu_pids):
+                    if pid in passed_pids:
+                        result[sid]['luogu'][pid] = {'status': 'ac', 'score': 100}
+                        print(f"    {pid}: ✓ AC")
+                    elif pid in submitted_pids:
+                        result[sid]['luogu'][pid] = {'status': 'attempted', 'score': None}
+                        print(f"    {pid}: ? 尝试")
+                    else:
+                        if pid in result[sid]['luogu']:
+                            del result[sid]['luogu'][pid]
+                        print(f"    {pid}: – 未做")
+
+                time.sleep(0.5)
+            except Exception as e:
+                print(f"    ❌ 错误 ({e})")
+
+    # ========== Codeforces：以题目为中心查询 ==========
+    if cf_pids:
+        print(f"\n📝 Codeforces 题目: {len(cf_pids)} 道")
+        for pid in sorted(cf_pids):
+            print(f"\n  题目 {pid}:")
+            for student in students:
+                if not student.get('codeforces_handle'):
+                    continue
+                sid = student['id']
                 handle = student['codeforces_handle']
+
+                # 如果已经 AC，跳过查询
+                prev_data = result[sid]['codeforces'].get(pid)
+                if isinstance(prev_data, dict) and prev_data.get('status') == 'ac':
+                    print(f"    {student['name']}: 已AC，跳过")
+                    continue
+                elif prev_data == 'ac':  # 兼容旧格式
+                    print(f"    {student['name']}: 已AC，跳过")
+                    continue
+
+                # 查询该学生所有提交（CF API 不支持按题目过滤，需要获取全部）
                 try:
                     r = requests.get(
                         f"https://codeforces.com/api/user.status?handle={handle}&from=1&count=10000",
                         timeout=15)
+                    found_ac = False
+                    found_attempted = False
                     for sub in r.json().get('result', []):
                         prob = sub.get('problem', {})
                         pid_str = str(prob.get('contestId', '')) + prob.get('index', '')
-                        if pid_str in pending_cf:
+                        if pid_str == pid:
                             if sub.get('verdict') == 'OK':
-                                result[sid]['codeforces'][pid_str] = 'ac'
-                            elif pid_str not in result[sid]['codeforces']:
-                                result[sid]['codeforces'][pid_str] = 'attempted'
-                    print(f"  CF {handle}: 完成")
-                except Exception as e:
-                    print(f"  CF {handle} 错误: {e}")
+                                found_ac = True
+                                break
+                            else:
+                                found_attempted = True
 
-        if student.get('atcoder_handle') and ac_pids:
-            pending_ac = {p for p in ac_pids if result[sid]['atcoder'].get(p) != 'ac'}
-            if not pending_ac:
-                print(f"  AtCoder: 所有题目已AC，跳过")
-            else:
+                    if found_ac:
+                        result[sid]['codeforces'][pid] = 'ac'
+                        print(f"    {student['name']}: ✓ AC")
+                    elif found_attempted:
+                        result[sid]['codeforces'][pid] = 'attempted'
+                        print(f"    {student['name']}: ? 尝试")
+                    else:
+                        if pid in result[sid]['codeforces']:
+                            del result[sid]['codeforces'][pid]
+                        print(f"    {student['name']}: – 未做")
+                except Exception as e:
+                    print(f"    {student['name']}: ❌ 错误 ({e})")
+
+    # ========== AtCoder：以题目为中心查询 ==========
+    if ac_pids:
+        print(f"\n📝 AtCoder 题目: {len(ac_pids)} 道")
+        for pid in sorted(ac_pids):
+            print(f"\n  题目 {pid}:")
+            for student in students:
+                if not student.get('atcoder_handle'):
+                    continue
+                sid = student['id']
                 user = student['atcoder_handle']
+
+                # 如果已经 AC，跳过查询
+                prev_data = result[sid]['atcoder'].get(pid)
+                if isinstance(prev_data, dict) and prev_data.get('status') == 'ac':
+                    print(f"    {student['name']}: 已AC，跳过")
+                    continue
+                elif prev_data == 'ac':  # 兼容旧格式
+                    print(f"    {student['name']}: 已AC，跳过")
+                    continue
+
+                # 查询该学生所有提交
                 try:
                     r = requests.get(
                         f"https://kenkoooo.com/atcoder/atcoder-api/v3/user/submissions?user={user}",
                         timeout=15)
                     if r.status_code != 200:
-                        print(f"  AtCoder {user}: API 不可用 (HTTP {r.status_code})")
+                        print(f"    {student['name']}: ❌ API 不可用 (HTTP {r.status_code})")
+                        continue
+
+                    found_ac = False
+                    found_attempted = False
+                    for sub in r.json():
+                        if sub.get('problem_id') == pid:
+                            if sub.get('result') == 'AC':
+                                found_ac = True
+                                break
+                            else:
+                                found_attempted = True
+
+                    if found_ac:
+                        result[sid]['atcoder'][pid] = 'ac'
+                        print(f"    {student['name']}: ✓ AC")
+                    elif found_attempted:
+                        result[sid]['atcoder'][pid] = 'attempted'
+                        print(f"    {student['name']}: ? 尝试")
                     else:
-                        for sub in r.json():
-                            pid_str = sub.get('problem_id', '')
-                            if pid_str in pending_ac:
-                                if sub.get('result') == 'AC':
-                                    result[sid]['atcoder'][pid_str] = 'ac'
-                                elif pid_str not in result[sid]['atcoder']:
-                                    result[sid]['atcoder'][pid_str] = 'attempted'
-                        print(f"  AtCoder {user}: 完成")
+                        if pid in result[sid]['atcoder']:
+                            del result[sid]['atcoder'][pid]
+                        print(f"    {student['name']}: – 未做")
                 except Exception as e:
-                    print(f"  AtCoder {user}: API 错误 ({e})")
+                    print(f"    {student['name']}: ❌ 错误 ({e})")
 
     output = {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),

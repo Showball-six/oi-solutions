@@ -94,9 +94,9 @@
     .matrix-table tbody tr:last-child td{border-bottom:none}
     .matrix-table tbody tr:hover{background:#f7fbf3}
     .matrix-table td.col-problem{text-align:left}
-    .status-ac{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:6px;background:#f0fbe8;color:var(--green-dark);font-size:.8rem;font-weight:700}
-    .status-attempted{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:6px;background:#fef5e7;color:var(--orange);font-size:.8rem;font-weight:700}
-    .status-none{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:6px;background:#f0f2f5;color:var(--text-light);font-size:.8rem}
+    .status-ac{display:inline-block;width:10px;height:10px;border-radius:50%;background:#52c41a;box-shadow:0 0 0 3px #f0fbe8}
+    .status-attempted{display:inline-block;width:10px;height:10px;border-radius:50%;background:#fa8c16;box-shadow:0 0 0 3px #fef5e7}
+    .status-none{display:inline-block;width:10px;height:10px;border-radius:50%;background:#d9d9d9;box-shadow:0 0 0 3px #f0f2f5}
     .empty-state{text-align:center;padding:40px 20px;color:var(--text-light);font-size:.88rem}
     .site-footer{text-align:center;padding:20px 0 32px;font-size:.78rem;color:var(--text-light)}
     @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
@@ -214,10 +214,11 @@ function renderMatrix(problems, students, subs) {
         </tr></thead>
         <tbody>${problems.map(p => {
           const cells = students.map(s => {
-            const status = ((subs[s.id]||{})[p.platform]||{})[p.pid];
-            if (status === 'ac')        return `<td><span class="status-ac" title="AC">✓</span></td>`;
-            if (status === 'attempted') return `<td><span class="status-attempted" title="尝试">?</span></td>`;
-            return `<td><span class="status-none" title="未做">–</span></td>`;
+            const data = ((subs[s.id]||{})[p.platform]||{})[p.pid];
+            const status = typeof data === 'string' ? data : (data?.status ?? null);
+            if (status === 'ac')        return `<td><span class="status-ac" title="已通过"></span></td>`;
+            if (status === 'attempted') return `<td><span class="status-attempted" title="尝试中"></span></td>`;
+            return `<td><span class="status-none" title="未做"></span></td>`;
           }).join('');
           return `<tr>
             <td class="col-problem"><a class="pid-link" href="${problemUrl(p.platform,p.pid)}" target="_blank">${p.pid} ${p.title}</a></td>
