@@ -87,6 +87,65 @@
               "title": "【深基2.习2】三角形面积"
             }
           ]
+        },
+        {
+          "id": "content-003",
+          "title": "分支结构",
+          "lectures": [
+            "lec-006"
+          ],
+          "problems": [
+            {
+              "pid": "B2036",
+              "platform": "luogu",
+              "title": "输出绝对值"
+            },
+            {
+              "pid": "B2037",
+              "platform": "luogu",
+              "title": "奇偶数判断"
+            },
+            {
+              "pid": "B2047",
+              "platform": "luogu",
+              "title": "分段函数"
+            },
+            {
+              "pid": "B2052",
+              "platform": "luogu",
+              "title": "简单计算器"
+            },
+            {
+              "pid": "P5711",
+              "platform": "luogu",
+              "title": "【深基3.例3】闰年判断"
+            },
+            {
+              "pid": "P5710",
+              "platform": "luogu",
+              "title": "【深基3.例2】数的性质"
+            },
+            {
+              "pid": "B2043",
+              "platform": "luogu",
+              "title": "判断能否被 3，5，7 整除"
+            },
+            {
+              "pid": "P5716",
+              "platform": "luogu",
+              "title": "【深基3.例9】月份天数"
+            },
+            {
+              "pid": "P5715",
+              "platform": "luogu",
+              "title": "【深基3.例8】三位数排序"
+            },
+            {
+              "pid": "B2044",
+              "platform": "luogu",
+              "title": "有一门课不及格的学生"
+            }
+          ]
         }
       ]
     },

@@ -72,5 +72,19 @@
     "topics": [],
     "href": "memos/lec-005.html",
     "created": "2026-05-13"
+  },
+  {
+    "id": "lec-006",
+    "slug": "lec-006",
+    "title": "分支结构程序设计",
+    "tags": [
+      "入门"
+    ],
+    "courses": [
+      "syntax-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-006.html",
+    "created": "2026-05-14"
   }
 ]
