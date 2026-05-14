@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-14T06:02:03Z",
+  "updated_at": "2026-05-14T06:41:31Z",
   "data": {
     "stu-001": {
       "luogu": {
@@ -16,8 +16,8 @@
           "score": 100
         },
         "B2018": {
-          "status": "attempted",
-          "score": null
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {
