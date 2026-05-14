@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-14T09:28:19Z",
+  "updated_at": "2026-05-14T11:45:50Z",
   "data": {
     "stu-001": {
       "luogu": {
@@ -52,6 +52,38 @@
           "score": 100
         },
         "P5708": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2036": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2044": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2047": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2052": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5710": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5711": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5715": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5716": {
           "status": "ac",
           "score": 100
         }
@@ -124,6 +156,22 @@
         "P5708": {
           "status": "ac",
           "score": 100
+        },
+        "P5710": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5711": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5715": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5716": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {},
@@ -144,6 +192,22 @@
           "score": 100
         },
         "P5708": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5710": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5711": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5715": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5716": {
           "status": "ac",
           "score": 100
         }
@@ -168,6 +232,10 @@
         "P5708": {
           "status": "ac",
           "score": 100
+        },
+        "P5711": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {},
@@ -190,6 +258,22 @@
         "P5708": {
           "status": "ac",
           "score": 100
+        },
+        "P5710": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5711": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5715": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5716": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {},
@@ -202,6 +286,14 @@
           "score": 100
         },
         "P5708": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5710": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5711": {
           "status": "ac",
           "score": 100
         }
