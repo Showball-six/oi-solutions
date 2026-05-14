@@ -22,6 +22,51 @@
           ],
           "problems": [
             {
+              "pid": "B2002",
+              "platform": "luogu",
+              "title": "Hello,World!"
+            },
+            {
+              "pid": "B2003",
+              "platform": "luogu",
+              "title": "输出第二个整数"
+            },
+            {
+              "pid": "B2005",
+              "platform": "luogu",
+              "title": "字符三角形"
+            },
+            {
+              "pid": "P1001",
+              "platform": "luogu",
+              "title": "A+B Problem"
+            },
+            {
+              "pid": "B2008",
+              "platform": "luogu",
+              "title": "计算 (a+b)×c 的值"
+            },
+            {
+              "pid": "B2009",
+              "platform": "luogu",
+              "title": "计算 (a+b)/c 的值"
+            },
+            {
+              "pid": "B2010",
+              "platform": "luogu",
+              "title": "带余除法"
+            },
+            {
+              "pid": "B2011",
+              "platform": "luogu",
+              "title": "计算分数的浮点数值"
+            },
+            {
+              "pid": "B2013",
+              "platform": "luogu",
+              "title": "温度表达转化"
+            },
+            {
               "pid": "B2017",
               "platform": "luogu",
               "title": "打印ASCII码"
@@ -30,6 +75,16 @@
               "pid": "B2018",
               "platform": "luogu",
               "title": "打印字符"
+            },
+            {
+              "pid": "B2028",
+              "platform": "luogu",
+              "title": "反向输出一个三位数"
+            },
+            {
+              "pid": "P5708",
+              "platform": "luogu",
+              "title": "【深基2.习2】三角形面积"
             }
           ]
         }

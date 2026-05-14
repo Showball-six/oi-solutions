@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-14T03:55:28Z",
+  "updated_at": "2026-05-14T06:34:57Z",
   "data": {
     "stu-001": {
       "luogu": {
@@ -12,6 +12,14 @@
           "score": 100
         },
         "P3808": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2018": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2002": {
           "status": "ac",
           "score": 100
         }
@@ -30,28 +38,52 @@
         "P3808": {
           "status": "ac",
           "score": 100
+        },
+        "B2002": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {},
       "atcoder": {}
     },
     "stu-003": {
-      "luogu": {},
+      "luogu": {
+        "B2002": {
+          "status": "ac",
+          "score": 100
+        }
+      },
       "codeforces": {},
       "atcoder": {}
     },
     "stu-004": {
-      "luogu": {},
+      "luogu": {
+        "B2002": {
+          "status": "ac",
+          "score": 100
+        }
+      },
       "codeforces": {},
       "atcoder": {}
     },
     "stu-005": {
-      "luogu": {},
+      "luogu": {
+        "B2002": {
+          "status": "ac",
+          "score": 100
+        }
+      },
       "codeforces": {},
       "atcoder": {}
     },
     "stu-006": {
-      "luogu": {},
+      "luogu": {
+        "B2002": {
+          "status": "ac",
+          "score": 100
+        }
+      },
       "codeforces": {},
       "atcoder": {}
     },
