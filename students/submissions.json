@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-14T06:34:57Z",
+  "updated_at": "2026-05-14T09:28:19Z",
   "data": {
     "stu-001": {
       "luogu": {
@@ -22,6 +22,38 @@
         "B2002": {
           "status": "ac",
           "score": 100
+        },
+        "B2003": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2005": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2008": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2009": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2010": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2011": {
+          "status": "ac",
+          "score": 100
+        },
+        "P1001": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5708": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {
@@ -42,6 +74,34 @@
         "B2002": {
           "status": "ac",
           "score": 100
+        },
+        "B2003": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2005": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2008": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2009": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2010": {
+          "status": "ac",
+          "score": 100
+        },
+        "P1001": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5708": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {},
@@ -50,6 +110,18 @@
     "stu-003": {
       "luogu": {
         "B2002": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2005": {
+          "status": "ac",
+          "score": 100
+        },
+        "P1001": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5708": {
           "status": "ac",
           "score": 100
         }
@@ -62,6 +134,18 @@
         "B2002": {
           "status": "ac",
           "score": 100
+        },
+        "B2005": {
+          "status": "ac",
+          "score": 100
+        },
+        "P1001": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5708": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {},
@@ -70,6 +154,18 @@
     "stu-005": {
       "luogu": {
         "B2002": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2005": {
+          "status": "ac",
+          "score": 100
+        },
+        "P1001": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5708": {
           "status": "ac",
           "score": 100
         }
@@ -82,13 +178,34 @@
         "B2002": {
           "status": "ac",
           "score": 100
+        },
+        "B2005": {
+          "status": "ac",
+          "score": 100
+        },
+        "P1001": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5708": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {},
       "atcoder": {}
     },
     "stu-007": {
-      "luogu": {},
+      "luogu": {
+        "P1001": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5708": {
+          "status": "ac",
+          "score": 100
+        }
+      },
       "codeforces": {},
       "atcoder": {}
     }
