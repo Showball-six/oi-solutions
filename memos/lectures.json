@@ -86,5 +86,47 @@
     "topics": [],
     "href": "memos/lec-006.html",
     "created": "2026-05-14"
+  },
+  {
+    "id": "lec-007",
+    "slug": "lec-007",
+    "title": "循环结构程序设计",
+    "tags": [
+      "入门"
+    ],
+    "courses": [
+      "syntax-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-007.html",
+    "created": "2026-05-15"
+  },
+  {
+    "id": "lec-008",
+    "slug": "lec-008",
+    "title": "数字拆分技巧",
+    "tags": [
+      "入门"
+    ],
+    "courses": [
+      "syntax-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-008.html",
+    "created": "2026-05-15"
+  },
+  {
+    "id": "lec-009",
+    "slug": "lec-009",
+    "title": "循环嵌套与复杂循环",
+    "tags": [
+      "入门"
+    ],
+    "courses": [
+      "syntax-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-009.html",
+    "created": "2026-05-15"
   }
 ]

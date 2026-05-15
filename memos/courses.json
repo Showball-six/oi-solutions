@@ -146,6 +146,92 @@
               "title": "有一门课不及格的学生"
             }
           ]
+        },
+        {
+          "id": "content-004",
+          "title": "循环结构",
+          "lectures": [
+            "lec-007",
+            "lec-008",
+            "lec-009"
+          ],
+          "problems": [
+            {
+              "pid": "P5722",
+              "platform": "luogu",
+              "title": "【深基4.例11】数列求和"
+            },
+            {
+              "pid": "P5718",
+              "platform": "luogu",
+              "title": "【深基4.例2】找最小值"
+            },
+            {
+              "pid": "B2054",
+              "platform": "luogu",
+              "title": "求平均年龄"
+            },
+            {
+              "pid": "P5719",
+              "platform": "luogu",
+              "title": "【深基4.例3】分类平均"
+            },
+            {
+              "pid": "P5724",
+              "platform": "luogu",
+              "title": "【深基4.习5】求极差 / 最大跨度值 / 最大值和最小值的差"
+            },
+            {
+              "pid": "B2068",
+              "platform": "luogu",
+              "title": "统计满足条件的 4 位数"
+            },
+            {
+              "pid": "P5720",
+              "platform": "luogu",
+              "title": "【深基4.例4】一尺之棰"
+            },
+            {
+              "pid": "B2077",
+              "platform": "luogu",
+              "title": "角谷猜想"
+            },
+            {
+              "pid": "P1307",
+              "platform": "luogu",
+              "title": "[NOIP 2011 普及组] 数字反转"
+            },
+            {
+              "pid": "B2078",
+              "platform": "luogu",
+              "title": "含 k 个 3 的数"
+            },
+            {
+              "pid": "B2081",
+              "platform": "luogu",
+              "title": "与 7 无关的数"
+            },
+            {
+              "pid": "P1980",
+              "platform": "luogu",
+              "title": "[NOIP 2013 普及组] 计数问题"
+            },
+            {
+              "pid": "B2082",
+              "platform": "luogu",
+              "title": "数字统计"
+            },
+            {
+              "pid":"B4036",
+              "platform":"luogu",
+              "title":"[GESP202409 二级] 数位之和"
+            },
+            {
+              "pid": "B3841",
+              "platform": "luogu",
+              "title": "[GESP202306 二级] 自幂数判断"
+            }
+          ]
         }
       ]
     },

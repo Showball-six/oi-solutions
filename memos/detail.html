@@ -57,16 +57,20 @@
     .count-badge.purple{background:var(--purple-light);color:var(--purple)}
     /* 课程内容列表 */
     .content-grid{display:grid;gap:12px}
-    .content-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;transition:all .2s;box-shadow:var(--shadow-sm);text-decoration:none!important;color:var(--text)!important}
-    .content-card:hover{box-shadow:var(--shadow-md);border-color:transparent;transform:translateY(-1px)}
+    .content-card{border-radius:var(--radius);padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;transition:all .2s;box-shadow:var(--shadow-sm);text-decoration:none!important;color:var(--text)!important}
+    .content-card.stripe-blue{background:#ffffff;border:1px solid var(--border)}
+    .content-card.stripe-green{background:#f6fbf2;border:1px solid #d6efc7}
+    .content-card:hover{box-shadow:var(--shadow-md);filter:brightness(.97);transform:translateY(-1px)}
     .content-card-left{display:flex;flex-direction:column;gap:6px}
     .content-card-title{font-weight:600;font-size:1rem}
     .content-card-meta{font-size:.75rem;color:var(--text-sub);display:flex;gap:12px}
     .content-card-arrow{color:var(--text-light);font-size:1.1rem;flex-shrink:0}
     /* 讲义列表 */
     .lecture-list{display:grid;gap:10px}
-    .lecture-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;transition:all .2s;box-shadow:var(--shadow-sm)}
-    .lecture-card:hover{box-shadow:var(--shadow-md);border-color:transparent;transform:translateY(-1px)}
+    .lecture-card{border-radius:var(--radius);padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;transition:all .2s;box-shadow:var(--shadow-sm)}
+    .lecture-card.stripe-blue{background:#ffffff;border:1px solid var(--border)}
+    .lecture-card.stripe-yellow{background:#f6fbf2;border:1px solid #d6efc7}
+    .lecture-card:hover{box-shadow:var(--shadow-md);filter:brightness(.97);transform:translateY(-1px)}
     .lecture-card-left{display:flex;flex-direction:column;gap:4px}
     .lecture-card-title{font-weight:600;font-size:.95rem;color:var(--text)}
     .lecture-card-title:hover{color:var(--green)}
@@ -167,8 +171,8 @@ function breadcrumb(items) {
 
 function renderLectureList(lectures) {
   if (!lectures.length) return `<div class="empty-state">暂无讲义</div>`;
-  return `<div class="lecture-list">${lectures.map(l => `
-    <a class="lecture-card" href="../${l.href}">
+  return `<div class="lecture-list">${lectures.map((l,i) => `
+    <a class="lecture-card ${i%2===0?'stripe-blue':'stripe-yellow'}" href="../${l.href}">
       <div class="lecture-card-left">
         <span class="lecture-card-title">${l.title}</span>
         <div class="lecture-card-meta">
@@ -189,7 +193,7 @@ function renderProblemsTable(problems) {
     </div>
     <table class="record-table">
       <thead><tr><th>#</th><th>题号 / 题名</th><th>平台</th></tr></thead>
-      <tbody>${problems.map((p,i) => `<tr>
+      <tbody>${problems.map((p,i) => `<tr style="background:${i%2===0?'#ffffff':'#f6fbf2'}">
         <td style="color:var(--text-light);font-family:var(--mono);font-size:.8rem">${i+1}</td>
         <td><a class="pid-link" href="${problemUrl(p.platform,p.pid)}" target="_blank">${p.pid}&nbsp;&nbsp;${p.title}</a></td>
         <td>${platformBadge(p.platform)}</td>
@@ -212,7 +216,7 @@ function renderMatrix(problems, students, subs) {
           <th class="col-problem">题目</th>
           ${students.map(s=>`<th>${s.name}</th>`).join('')}
         </tr></thead>
-        <tbody>${problems.map(p => {
+        <tbody>${problems.map((p,i) => {
           const cells = students.map(s => {
             const data = ((subs[s.id]||{})[p.platform]||{})[p.pid];
             const status = typeof data === 'string' ? data : (data?.status ?? null);
@@ -220,7 +224,7 @@ function renderMatrix(problems, students, subs) {
             if (status === 'attempted') return `<td><span class="status-attempted" title="尝试中"></span></td>`;
             return `<td><span class="status-none" title="未做"></span></td>`;
           }).join('');
-          return `<tr>
+          return `<tr style="background:${i%2===0?'#ffffff':'#f6fbf2'}">
             <td class="col-problem"><a class="pid-link" href="${problemUrl(p.platform,p.pid)}" target="_blank">${p.pid} ${p.title}</a></td>
             ${cells}
           </tr>`;
@@ -271,10 +275,11 @@ async function init() {
     }
     document.getElementById('main-content').innerHTML = `
       <div class="section">
-        <div class="content-grid">${contents.map(c => {
+        <div class="content-grid">${contents.map((c, i) => {
           const lecCount = (c.lectures||[]).length;
           const probCount = (c.problems||[]).length;
-          return `<a class="content-card" href="detail.html?type=content&course=${ID}&id=${c.id}">
+          const stripe = i % 2 === 0 ? 'stripe-blue' : 'stripe-green';
+          return `<a class="content-card ${stripe}" href="detail.html?type=content&course=${ID}&id=${c.id}">
             <div class="content-card-left">
               <span class="content-card-title">${c.title}</span>
               <div class="content-card-meta">
