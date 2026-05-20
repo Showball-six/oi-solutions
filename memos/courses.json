@@ -301,7 +301,50 @@
       "id": "contest-prep",
       "title": "竞赛备赛专项课程",
       "color": "green",
-      "contents": []
+      "contents": [
+        {
+          "id": "written-001",
+          "type": "written",
+          "contest": "CSP-J",
+          "title": "CSP 2024 入门级第一轮",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "mock-001",
+          "type": "mock",
+          "contest": "粤港澳大湾区信息学",
+          "title": "粤港澳模拟赛 #1",
+          "problems": [
+            {
+              "pid": "abc458_b",
+              "platform": "atcoder",
+              "title": "Count Adjacent Cells",
+              "full_score": 100
+            },
+            {
+              "pid": "abc084_d",
+              "platform": "atcoder",
+              "title": "2017-like Number",
+              "full_score": 100
+            },
+            {
+              "pid": "abc130_d",
+              "platform": "atcoder",
+              "title": "Enough Array",
+              "full_score": 100
+            },
+            {
+              "pid": "abc280_d",
+              "platform": "atcoder",
+              "title": "Factorial and Multiple",
+              "full_score": 100
+            }
+          ],
+          "scores": {
+          }
+        }
+      ]
     }
   ],
   "topics": [

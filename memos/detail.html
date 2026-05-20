@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>备忘录详情 - OI 工具箱</title>
+  <title>课程详情 - OI 工具箱</title>
   <link rel="icon" href="../tx.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -101,6 +101,24 @@
     .status-ac{display:inline-block;width:10px;height:10px;border-radius:50%;background:#52c41a;box-shadow:0 0 0 3px #f0fbe8}
     .status-attempted{display:inline-block;width:10px;height:10px;border-radius:50%;background:#fa8c16;box-shadow:0 0 0 3px #fef5e7}
     .status-none{display:inline-block;width:10px;height:10px;border-radius:50%;background:#d9d9d9;box-shadow:0 0 0 3px #f0f2f5}
+    .written-problem-row{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid #f0f1f3}
+    .written-problem-row:last-child{border-bottom:none}
+    .written-problem-name{font-weight:500;font-size:.92rem}
+    .btn-explain{font-size:.78rem;padding:5px 14px;border-radius:6px;background:var(--blue-light);color:var(--blue);text-decoration:none;font-weight:500;white-space:nowrap;transition:background .15s}
+    .btn-explain:hover{background:#d0eaf8;color:var(--blue)}
+    .contest-badge{font-size:.7rem;padding:2px 8px;border-radius:4px;background:#f0f2f5;color:#5f6368;margin-left:8px}
+    .rank-table{width:100%;border-collapse:collapse;font-size:.85rem}
+    .rank-table th{padding:9px 14px;font-weight:600;font-size:.72rem;color:var(--text-sub);background:#fafbfc;border-bottom:1px solid var(--border);text-align:center;white-space:nowrap}
+    .rank-table th.col-left{text-align:left}
+    .rank-table td{padding:10px 14px;border-bottom:1px solid #f0f1f3;text-align:center;vertical-align:middle}
+    .rank-table tbody tr:last-child td{border-bottom:none}
+    .rank-table tbody tr:hover{background:#f7fbf3}
+    .rank-table td.col-left{text-align:left}
+    .rank-num{font-weight:700;font-family:var(--mono)}
+    .rank-num.gold{color:#f5a623}.rank-num.silver{color:#9b9b9b}.rank-num.bronze{color:#c47a3a}.rank-num.normal{color:var(--text)}
+    .score-zero{color:var(--text-light)}
+    .score-full{color:var(--green-dark);font-weight:600}
+    .total-score{font-weight:700}
     .empty-state{text-align:center;padding:40px 20px;color:var(--text-light);font-size:.88rem}
     .site-footer{text-align:center;padding:20px 0 32px;font-size:.78rem;color:var(--text-light)}
     @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
@@ -134,9 +152,10 @@
 
 <script>
 const params  = new URLSearchParams(location.search);
-const TYPE    = params.get('type');    // 'course' | 'topic' | 'content'
+const TYPE    = params.get('type');
 const ID      = params.get('id');
-const COURSE  = params.get('course');  // only for type=content
+const COURSE  = params.get('course');
+const SECTION = params.get('section'); // 'written' | 'mock'
 
 function problemUrl(platform, pid) {
   if (platform === 'luogu') return `https://www.luogu.com.cn/problem/${pid}`;
@@ -160,7 +179,7 @@ function breadcrumb(items) {
   const base = [
     `<a href="../index.html">首页</a>`,
     `<span class="breadcrumb-sep">›</span>`,
-    `<a href="../memos.html">备忘录</a>`
+    `<a href="../memos.html">课程</a>`
   ];
   items.forEach(item => {
     base.push(`<span class="breadcrumb-sep">›</span>`);
@@ -184,7 +203,7 @@ function renderLectureList(lectures) {
     </a>`).join('')}</div>`;
 }
 
-function renderProblemsTable(problems) {
+function renderProblemsTable(problems, showSolution=false) {
   if (!problems.length) return `<div class="empty-state">暂无练习题目</div>`;
   return `<div class="table-card">
     <div class="table-toolbar">
@@ -192,12 +211,12 @@ function renderProblemsTable(problems) {
       <span class="count-badge blue">共 ${problems.length} 题</span>
     </div>
     <table class="record-table">
-      <thead><tr><th>#</th><th>题号 / 题名</th><th>平台</th></tr></thead>
+      <thead><tr><th>#</th><th>题号 / 题名</th><th>平台</th>${showSolution?'<th>题解</th>':''}</tr></thead>
       <tbody>${problems.map((p,i) => `<tr style="background:${i%2===0?'#ffffff':'#f6fbf2'}">
         <td style="color:var(--text-light);font-family:var(--mono);font-size:.8rem">${i+1}</td>
         <td><a class="pid-link" href="${problemUrl(p.platform,p.pid)}" target="_blank">${p.pid}&nbsp;&nbsp;${p.title}</a></td>
         <td>${platformBadge(p.platform)}</td>
-      </tr>`).join('')}</tbody>
+        ${showSolution?`<td class="col-solution">${p.href?`<a href="../${p.href}">查看题解 →</a>`:'—'}</td>`:''}`).join('')}</tbody>
     </table>
   </div>`;
 }
@@ -267,6 +286,33 @@ async function init() {
     document.getElementById('hero-badge').textContent = '课程';
     document.getElementById('hero-badge').className = `hero-badge ${course.color||'green'}`;
     document.getElementById('hero-title').textContent = course.title;
+
+    // contest-prep 特殊渲染：只显示「笔试题目」和「上机测试」两个入口
+    if (ID === 'contest-prep') {
+      const contents = course.contents || [];
+      const writtenCount = new Set(contents.filter(c=>c.type==='written').map(c=>c.contest)).size;
+      const mockCount    = new Set(contents.filter(c=>c.type==='mock').map(c=>c.contest)).size;
+      document.getElementById('hero-desc').textContent = '笔试题目 · 上机测试';
+      document.getElementById('main-content').innerHTML = `
+        <div class="section">
+          <div class="content-grid">
+            <a class="content-card stripe-blue" href="detail.html?type=contest-section&section=written">
+              <div class="content-card-left">
+                <span class="content-card-title">笔试题目</span>
+                <div class="content-card-meta"><span>${writtenCount} 个比赛类型</span></div>
+              </div><span class="content-card-arrow">›</span>
+            </a>
+            <a class="content-card stripe-green" href="detail.html?type=contest-section&section=mock">
+              <div class="content-card-left">
+                <span class="content-card-title">上机测试</span>
+                <div class="content-card-meta"><span>${mockCount} 个比赛类型</span></div>
+              </div><span class="content-card-arrow">›</span>
+            </a>
+          </div>
+        </div>`;
+      return;
+    }
+
     const contents = course.contents || [];
     document.getElementById('hero-desc').textContent = `${contents.length} 个课程内容`;
     if (!contents.length) {
@@ -276,21 +322,73 @@ async function init() {
     document.getElementById('main-content').innerHTML = `
       <div class="section">
         <div class="content-grid">${contents.map((c, i) => {
+          const stripe = i % 2 === 0 ? 'stripe-blue' : 'stripe-green';
           const lecCount = (c.lectures||[]).length;
           const probCount = (c.problems||[]).length;
-          const stripe = i % 2 === 0 ? 'stripe-blue' : 'stripe-green';
           return `<a class="content-card ${stripe}" href="detail.html?type=content&course=${ID}&id=${c.id}">
             <div class="content-card-left">
               <span class="content-card-title">${c.title}</span>
-              <div class="content-card-meta">
-                <span>${lecCount} 篇讲义</span>
-                <span>${probCount} 道练习</span>
-              </div>
-            </div>
-            <span class="content-card-arrow">›</span>
-          </a>`;
+              <div class="content-card-meta"><span>${lecCount} 篇讲义</span><span>${probCount} 道练习</span></div>
+            </div><span class="content-card-arrow">›</span></a>`;
         }).join('')}</div>
       </div>`;
+    return;
+  }
+
+  // ── 竞赛备赛分区页：按比赛类型分组显示 ──
+  if (TYPE === 'contest-section') {
+    const course = (coursesData.courses||[]).find(c => c.id === 'contest-prep');
+    const sectionLabel = SECTION === 'written' ? '笔试题目' : '上机测试';
+    document.title = `${sectionLabel} - OI 工具箱`;
+    breadcrumb([
+      {label: '竞赛备赛专项课程', href: `detail.html?type=course&id=contest-prep`},
+      {label: sectionLabel}
+    ]);
+    document.getElementById('hero-badge').textContent = '竞赛备赛';
+    document.getElementById('hero-badge').className = `hero-badge ${course?.color||'green'}`;
+    document.getElementById('hero-title').textContent = sectionLabel;
+
+    const contents = (course?.contents||[]).filter(c => c.type === SECTION);
+    // 按 contest 分组
+    const groups = {};
+    contents.forEach(c => { (groups[c.contest] = groups[c.contest]||[]).push(c); });
+    const contestOrder = ['GESP','CSP-J','CSP-S','NOIP','粤港澳大湾区信息学','南海区信息学'];
+    const sortedContests = Object.keys(groups).sort((a,b) => {
+      const ai = contestOrder.indexOf(a), bi = contestOrder.indexOf(b);
+      return (ai===-1?99:ai) - (bi===-1?99:bi);
+    });
+
+    document.getElementById('hero-desc').textContent = `${sortedContests.length} 个比赛类型`;
+
+    if (!sortedContests.length) {
+      document.getElementById('main-content').innerHTML = `<div class="empty-state">暂无内容</div>`;
+      return;
+    }
+
+    const sectionsHtml = sortedContests.map(contest => {
+      const items = groups[contest];
+      const cards = items.map((c, i) => {
+        const stripe = i % 2 === 0 ? 'stripe-blue' : 'stripe-green';
+        if (SECTION === 'written') {
+          return `<a class="content-card ${stripe}" href="detail.html?type=written&course=contest-prep&id=${c.id}">
+            <div class="content-card-left">
+              <span class="content-card-title">${c.title}</span>
+              <div class="content-card-meta"><span>${(c.lectures||[]).length} 篇讲义</span><span>${(c.problems||[]).length} 套题目</span></div>
+            </div><span class="content-card-arrow">›</span></a>`;
+        }
+        return `<a class="content-card ${stripe}" href="detail.html?type=mock&course=contest-prep&id=${c.id}">
+          <div class="content-card-left">
+            <span class="content-card-title">${c.title}</span>
+            <div class="content-card-meta"><span>${(c.problems||[]).length} 道题目</span></div>
+          </div><span class="content-card-arrow">›</span></a>`;
+      }).join('');
+      return `<div class="section">
+        <div class="section-title">${contest}</div>
+        <div class="content-grid">${cards}</div>
+      </div>`;
+    }).join('');
+
+    document.getElementById('main-content').innerHTML = sectionsHtml;
     return;
   }
 
@@ -324,6 +422,132 @@ async function init() {
     document.getElementById('main-content').innerHTML = `
       <div class="section"><div class="section-title">讲义</div>${renderLectureList(lecs)}</div>
       <div class="section">${renderProblemsTable(problems)}</div>
+      <div class="section">${renderMatrix(problems, students, subs)}</div>`;
+  }
+
+  // ── 笔试专题页：讲义 + 笔试题目列表 + 学生完成情况 ──
+  if (TYPE === 'written') {
+    const course = (coursesData.courses||[]).find(c => c.id === COURSE);
+    const content = (course?.contents||[]).find(c => c.id === ID);
+    if (!content || !course) { document.getElementById('hero-title').textContent = '未找到内容'; return; }
+    document.title = `${content.title} - OI 工具箱`;
+    breadcrumb([
+      {label: '竞赛备赛专项课程', href: `detail.html?type=course&id=contest-prep`},
+      {label: '笔试题目', href: `detail.html?type=contest-section&section=written`},
+      {label: content.title}
+    ]);
+    document.getElementById('hero-badge').textContent = content.contest || '笔试';
+    document.getElementById('hero-badge').className = `hero-badge ${course.color||'green'}`;
+    document.getElementById('hero-title').textContent = content.title;
+    const lecs = allLectures.filter(l => (content.lectures||[]).includes(l.id));
+    const problems = content.problems || [];
+    document.getElementById('hero-desc').textContent = `${lecs.length} 篇讲义 · ${problems.length} 套笔试题目`;
+
+    let students = [], subs = {};
+    try {
+      const [stuRes, subRes] = await Promise.all([
+        fetch('../students/students.json'),
+        fetch('../students/submissions.json')
+      ]);
+      students = await stuRes.json();
+      subs = (await subRes.json()).data || {};
+    } catch(e) {}
+
+    const writtenProblemsHtml = problems.length === 0
+      ? `<div class="empty-state">暂无笔试题目</div>`
+      : `<div class="table-card">
+          <div class="table-toolbar">
+            <span class="section-title" style="margin:0">笔试题目</span>
+            <span class="count-badge blue">共 ${problems.length} 套</span>
+          </div>
+          ${problems.map((p, i) => `
+            <div class="written-problem-row" style="background:${i%2===0?'#ffffff':'#f6fbf2'}">
+              <span class="written-problem-name">${p.name}</span>
+              <a class="btn-explain" href="${p.url}" target="_blank">查看题目 →</a>
+            </div>`).join('')}
+        </div>`;
+
+    // 将笔试题目映射为 matrix 兼容格式（platform=luogu, pid=wp-id）
+    const matrixProblems = problems.map(p => ({pid: p.id, platform: 'luogu', title: p.name}));
+
+    document.getElementById('main-content').innerHTML = `
+      <div class="section"><div class="section-title">讲义</div>${renderLectureList(lecs)}</div>
+      <div class="section">${writtenProblemsHtml}</div>
+      <div class="section">${renderMatrix(matrixProblems, students, subs)}</div>`;
+  }
+
+  // ── 上机模拟赛页：题目列表 + 排名 + 补题矩阵 ──
+  if (TYPE === 'mock') {
+    const course = (coursesData.courses||[]).find(c => c.id === COURSE);
+    const content = (course?.contents||[]).find(c => c.id === ID);
+    if (!content || !course) { document.getElementById('hero-title').textContent = '未找到内容'; return; }
+    document.title = `${content.title} - OI 工具箱`;
+    breadcrumb([
+      {label: '竞赛备赛专项课程', href: `detail.html?type=course&id=contest-prep`},
+      {label: '上机测试', href: `detail.html?type=contest-section&section=mock`},
+      {label: content.title}
+    ]);
+    document.getElementById('hero-badge').textContent = content.contest || '上机';
+    document.getElementById('hero-badge').className = `hero-badge ${course.color||'green'}`;
+    document.getElementById('hero-title').textContent = content.title;
+    const problems = content.problems || [];
+    const scores = content.scores || {};
+    document.getElementById('hero-desc').textContent = `${problems.length} 道题目`;
+
+    let students = [], subs = {};
+    try {
+      const [stuRes, subRes] = await Promise.all([
+        fetch('../students/students.json'),
+        fetch('../students/submissions.json')
+      ]);
+      students = await stuRes.json();
+      subs = (await subRes.json()).data || {};
+    } catch(e) {}
+
+    // 排名表
+    const ranked = students.map(s => {
+      const stuScores = scores[s.id] || {};
+      const total = problems.reduce((sum, p) => sum + (stuScores[p.pid] ?? 0), 0);
+      return {s, stuScores, total};
+    }).sort((a, b) => b.total - a.total);
+
+    const rankHtml = students.length === 0
+      ? `<div class="empty-state">暂无学生数据</div>`
+      : `<div class="table-card">
+          <div class="table-toolbar">
+            <span class="section-title" style="margin:0">排名</span>
+            <span class="count-badge purple">${students.length} 名学生</span>
+          </div>
+          <div class="matrix-wrap">
+            <table class="rank-table">
+              <thead><tr>
+                <th class="col-left">#</th>
+                <th class="col-left">姓名</th>
+                ${problems.map(p => `<th>${p.pid}<br><span style="font-weight:400;color:var(--text-light)">${p.full_score??100}分</span></th>`).join('')}
+                <th>总分</th>
+              </tr></thead>
+              <tbody>${ranked.map(({s, stuScores, total}, i) => {
+                const rankClass = i===0?'gold':i===1?'silver':i===2?'bronze':'normal';
+                const rankDisplay = i===0?'🥇':i===1?'🥈':i===2?'🥉':`<span class="rank-num normal">&nbsp;${i+1}</span>`;
+                const cells = problems.map(p => {
+                  const sc = stuScores[p.pid] ?? null;
+                  if (sc === null) return `<td class="score-zero">—</td>`;
+                  const full = p.full_score ?? 100;
+                  return `<td class="${sc===full?'score-full':sc===0?'score-zero':''}">${sc}</td>`;
+                }).join('');
+                return `<tr style="background:${i%2===0?'#ffffff':'#f6fbf2'}">
+                  <td class="col-left">${rankDisplay}</td>
+                  <td class="col-left">${s.name}</td>
+                  ${cells}
+                  <td><span class="total-score">${total}</span></td>
+                </tr>`;
+              }).join('')}</tbody>
+            </table>
+          </div>
+        </div>`;
+
+    document.getElementById('main-content').innerHTML = `
+      <div class="section">${renderProblemsTable(problems, true)}</div>
       <div class="section">${renderMatrix(problems, students, subs)}</div>`;
   }
 }

@@ -32,6 +32,7 @@ STUDENTS_DIR.mkdir(exist_ok=True)
 
 COURSE_IDS = ["syntax-basics", "algo-basics", "basics-to-improve", "algo-improve", "contest-prep"]
 TOPIC_IDS  = ["dp", "basic-algo", "ds", "math", "graph", "misc", "string"]
+CONTEST_TYPES = ["GESP", "CSP-J", "CSP-S", "NOIP", "粤港澳大湾区信息学", "南海区信息学"]
 
 
 def load_json(path, default=None):
@@ -483,10 +484,47 @@ def interactive_add_content():
 
 
 def interactive_add_problem_to_content():
-    """向课程内容添加练习题"""
+    """向课程内容或模拟赛添加练习题"""
     print("\n" + "="*50)
-    print("➕ 向课程内容添加练习题")
+    print("➕ 添加练习题")
     print("="*50)
+
+    print("目标: 1.课程内容  2.模拟赛")
+    target = input("选择: ").strip()
+
+    if target == '2':
+        data = load_json(COURSES_FILE)
+        course = _get_contest_prep(data)
+        if not course:
+            print("❌ 未找到 contest-prep 课程"); return
+        mock_contents = [c for c in course.get('contents', []) if c.get('type') == 'mock']
+        if not mock_contents:
+            print("❌ 暂无模拟赛，请先用 add-mock 添加"); return
+        print("选择模拟赛:")
+        for i, c in enumerate(mock_contents, 1):
+            print(f"  {i}. {c['title']}")
+        choice = input("编号: ").strip()
+        if not choice.isdigit() or not (1 <= int(choice) <= len(mock_contents)):
+            print("❌ 无效选择"); return
+        content = mock_contents[int(choice) - 1]
+        platforms = ["luogu", "codeforces", "atcoder"]
+        print("平台: 1.洛谷  2.Codeforces  3.AtCoder")
+        plat = input("选择: ").strip()
+        if not plat.isdigit() or not (1 <= int(plat) <= 3):
+            print("❌ 无效选择"); return
+        pid   = input("题号: ").strip()
+        title = input("题目标题: ").strip()
+        if not pid or not title:
+            print("❌ 题号和标题不能为空"); return
+        full_score_input = input("满分 (默认100): ").strip()
+        full_score = int(full_score_input) if full_score_input.isdigit() else 100
+        href = input("题解路径 (如 solutions/p1001.html，留空跳过): ").strip() or None
+        prob = {"pid": pid, "platform": platforms[int(plat)-1], "title": title, "full_score": full_score}
+        if href: prob["href"] = href
+        content.setdefault('problems', []).append(prob)
+        save_json(COURSES_FILE, data)
+        print(f"✅ 已添加 {pid} 到「{content['title']}」")
+        return
 
     data = load_json(COURSES_FILE)
     courses = data.get('courses', [])
@@ -757,6 +795,215 @@ def fetch_submissions():
     print(f"\n✅ submissions.json 已更新（{len(students)} 名学生）")
 
 
+def _get_contest_prep(data):
+    return next((c for c in data.get('courses', []) if c['id'] == 'contest-prep'), None)
+
+
+def _select_contest():
+    print("\n比赛类型:")
+    for i, t in enumerate(CONTEST_TYPES, 1):
+        print(f"  {i}. {t}")
+    choice = input("选择: ").strip()
+    if not choice.isdigit() or not (1 <= int(choice) <= len(CONTEST_TYPES)):
+        print("❌ 无效选择"); return None
+    return CONTEST_TYPES[int(choice) - 1]
+
+
+def interactive_add_written():
+    """添加笔试内容块"""
+    print("\n" + "="*50)
+    print("📝 添加笔试专题")
+    print("="*50)
+
+    data = load_json(COURSES_FILE)
+    course = _get_contest_prep(data)
+    if not course:
+        print("❌ 未找到 contest-prep 课程"); return
+
+    contest = _select_contest()
+    if not contest: return
+
+    title = input("内容标题 (如 CSP-J 笔试专题): ").strip()
+    if not title:
+        print("❌ 标题不能为空"); return
+
+    contents = course.setdefault('contents', [])
+    nums = [int(c['id'].split('-')[1]) for c in contents if c['id'].startswith('written-')]
+    next_num = max(nums, default=0) + 1
+    content_id = f"written-{str(next_num).zfill(3)}"
+
+    # 关联讲义
+    lectures_data = load_json(LECTURES_FILE, default=[])
+    course_lecs = [l for l in lectures_data if 'contest-prep' in l.get('courses', [])]
+    linked_lecs = []
+    if course_lecs:
+        print(f"\n备赛课程下的讲义 (空格分隔编号，直接回车跳过):")
+        for i, l in enumerate(course_lecs, 1):
+            print(f"  {i}. {l['title']}")
+        lec_input = input("选择讲义: ").strip()
+        linked_lecs = [course_lecs[int(x)-1]['id'] for x in lec_input.split()
+                       if x.isdigit() and 1 <= int(x) <= len(course_lecs)]
+
+    # 添加笔试题目
+    problems = []
+    print("\n添加笔试题目 (输入 q 结束):")
+    wp_num = 1
+    while True:
+        name = input(f"  题目名称 (如 2024 CSP-J 初赛，q结束): ").strip()
+        if name.lower() == 'q' or not name: break
+        url = input(f"  比赛链接 (URL): ").strip()
+        wp_id = f"wp-{str(wp_num).zfill(3)}"
+        problems.append({"id": wp_id, "name": name, "url": url})
+        wp_num += 1
+        print(f"  ✓ 已添加 {name}")
+
+    content = {"id": content_id, "type": "written", "contest": contest,
+               "title": title, "lectures": linked_lecs, "problems": problems}
+    contents.append(content)
+    save_json(COURSES_FILE, data)
+    print(f"✅ 已添加笔试专题「{title}」({content_id})")
+
+
+def interactive_add_written_problem():
+    """向已有笔试内容块追加笔试题目"""
+    print("\n" + "="*50)
+    print("➕ 向笔试专题添加题目")
+    print("="*50)
+
+    data = load_json(COURSES_FILE)
+    course = _get_contest_prep(data)
+    if not course:
+        print("❌ 未找到 contest-prep 课程"); return
+
+    written_contents = [c for c in course.get('contents', []) if c.get('type') == 'written']
+    if not written_contents:
+        print("❌ 暂无笔试专题，请先用 add-written 添加"); return
+
+    print("选择笔试专题:")
+    for i, c in enumerate(written_contents, 1):
+        print(f"  {i}. {c['title']}")
+    choice = input("编号: ").strip()
+    if not choice.isdigit() or not (1 <= int(choice) <= len(written_contents)):
+        print("❌ 无效选择"); return
+    content = written_contents[int(choice) - 1]
+
+    existing_nums = [int(p['id'].split('-')[1]) for p in content.get('problems', []) if p.get('id','').startswith('wp-')]
+    wp_num = max(existing_nums, default=0) + 1
+
+    name = input("题目名称 (如 2024 CSP-J 初赛): ").strip()
+    if not name:
+        print("❌ 名称不能为空"); return
+    url = input("比赛链接 (URL): ").strip()
+    wp_id = f"wp-{str(wp_num).zfill(3)}"
+    content.setdefault('problems', []).append({"id": wp_id, "name": name, "url": url})
+    save_json(COURSES_FILE, data)
+    print(f"✅ 已添加「{name}」到「{content['title']}」")
+
+
+def interactive_add_mock():
+    """添加上机模拟赛"""
+    print("\n" + "="*50)
+    print("🏆 添加上机模拟赛")
+    print("="*50)
+
+    data = load_json(COURSES_FILE)
+    course = _get_contest_prep(data)
+    if not course:
+        print("❌ 未找到 contest-prep 课程"); return
+
+    contest = _select_contest()
+    if not contest: return
+
+    title = input("模拟赛标题 (如 CSP-J 模拟赛 #1): ").strip()
+    if not title:
+        print("❌ 标题不能为空"); return
+
+    contents = course.setdefault('contents', [])
+    nums = [int(c['id'].split('-')[1]) for c in contents if c['id'].startswith('mock-')]
+    next_num = max(nums, default=0) + 1
+    content_id = f"mock-{str(next_num).zfill(3)}"
+
+    platforms = ["luogu", "codeforces", "atcoder"]
+    problems = []
+    print("\n添加题目 (输入 q 结束):")
+    while True:
+        pid = input("  题号 (q结束): ").strip()
+        if pid.lower() == 'q' or not pid: break
+        prob_title = input("  题目标题: ").strip()
+        print("  平台: 1.洛谷  2.Codeforces  3.AtCoder")
+        plat = input("  选择: ").strip()
+        if not plat.isdigit() or not (1 <= int(plat) <= 3):
+            print("  ❌ 无效平台，跳过"); continue
+        full_score_input = input("  满分 (默认100): ").strip()
+        full_score = int(full_score_input) if full_score_input.isdigit() else 100
+        href = input("  题解路径 (如 solutions/p1001.html，留空跳过): ").strip() or None
+        prob = {"pid": pid, "platform": platforms[int(plat)-1], "title": prob_title, "full_score": full_score}
+        if href: prob["href"] = href
+        problems.append(prob)
+        print(f"  ✓ 已添加 {pid}")
+
+    content = {"id": content_id, "type": "mock", "contest": contest,
+               "title": title, "problems": problems, "scores": {}}
+    contents.append(content)
+    save_json(COURSES_FILE, data)
+    print(f"✅ 已添加模拟赛「{title}」({content_id})")
+
+
+def interactive_set_scores():
+    """录入模拟赛分数"""
+    print("\n" + "="*50)
+    print("📊 录入模拟赛分数")
+    print("="*50)
+
+    data = load_json(COURSES_FILE)
+    course = _get_contest_prep(data)
+    if not course:
+        print("❌ 未找到 contest-prep 课程"); return
+
+    mock_contents = [c for c in course.get('contents', []) if c.get('type') == 'mock']
+    if not mock_contents:
+        print("❌ 暂无模拟赛，请先用 add-mock 添加"); return
+
+    print("选择模拟赛:")
+    for i, c in enumerate(mock_contents, 1):
+        print(f"  {i}. {c['title']}")
+    choice = input("编号: ").strip()
+    if not choice.isdigit() or not (1 <= int(choice) <= len(mock_contents)):
+        print("❌ 无效选择"); return
+    content = mock_contents[int(choice) - 1]
+
+    problems = content.get('problems', [])
+    if not problems:
+        print("❌ 该模拟赛暂无题目"); return
+
+    students = load_json(STUDENTS_FILE, default=[])
+    if not students:
+        print("❌ 暂无学生数据"); return
+
+    scores = content.setdefault('scores', {})
+    print(f"\n题目: {', '.join(p['pid'] for p in problems)}")
+    print("(直接回车 = 0 分，输入 s 跳过该学生)\n")
+
+    for s in students:
+        print(f"  {s['name']} ({s['id']}):")
+        stu_scores = dict(scores.get(s['id'], {}))
+        skip = False
+        for p in problems:
+            cur = stu_scores.get(p['pid'], 0)
+            val = input(f"    {p['pid']} (满分{p.get('full_score',100)}, 当前{cur}): ").strip()
+            if val.lower() == 's':
+                skip = True; break
+            if val == '':
+                stu_scores[p['pid']] = 0
+            elif val.lstrip('-').isdigit():
+                stu_scores[p['pid']] = int(val)
+        if not skip:
+            scores[s['id']] = stu_scores
+
+    save_json(COURSES_FILE, data)
+    print(f"\n✅ 分数已保存")
+
+
 def show_help():
     """显示帮助信息"""
     print("""
@@ -774,6 +1021,12 @@ OI 工具箱 - 数据管理脚本
   add-problem           向课程内容添加练习题
   add-student           添加学生账号（写入 students/students.json）
   fetch-submissions     爬取提交记录（更新 students/submissions.json）
+
+竞赛备赛命令：
+  add-written           添加笔试专题（含讲义+笔试题目）
+  add-written-problem   向已有笔试专题追加题目
+  add-mock              添加上机模拟赛
+  set-scores            录入模拟赛分数
 
 其他：
   init                  初始化示例数据
@@ -802,6 +1055,14 @@ def main():
         interactive_add_student()
     elif command == "fetch-submissions":
         fetch_submissions()
+    elif command == "add-written":
+        interactive_add_written()
+    elif command == "add-written-problem":
+        interactive_add_written_problem()
+    elif command == "add-mock":
+        interactive_add_mock()
+    elif command == "set-scores":
+        interactive_set_scores()
     elif command == "init":
         init_examples()
     elif command == "help":
