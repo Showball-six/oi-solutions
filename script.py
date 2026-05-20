@@ -701,57 +701,53 @@ def fetch_submissions():
                 except Exception as e:
                     print(f"    {student['name']}: ❌ 错误 ({e})")
 
-    # ========== AtCoder：以题目为中心查询 ==========
+    # ========== AtCoder：以学生为中心，一次性获取全量提交 ==========
     if ac_pids:
         print(f"\n📝 AtCoder 题目: {len(ac_pids)} 道")
-        for pid in sorted(ac_pids):
-            print(f"\n  题目 {pid}:")
-            for student in students:
-                if not student.get('atcoder_handle'):
-                    continue
-                sid = student['id']
-                user = student['atcoder_handle']
+        for student in students:
+            if not student.get('atcoder_handle'):
+                continue
+            sid = student['id']
+            user = student['atcoder_handle']
 
-                # 如果已经 AC，跳过查询
-                prev_data = result[sid]['atcoder'].get(pid)
-                if isinstance(prev_data, dict) and prev_data.get('status') == 'ac':
-                    print(f"    {student['name']}: 已AC，跳过")
-                    continue
-                elif prev_data == 'ac':  # 兼容旧格式
-                    print(f"    {student['name']}: 已AC，跳过")
-                    continue
-
-                # 查询该学生所有提交
-                try:
+            print(f"\n  {student['name']} ({user}):")
+            try:
+                # 分页获取该学生所有提交
+                all_subs = []
+                from_second = 0
+                while True:
                     r = requests.get(
-                        f"https://kenkoooo.com/atcoder/atcoder-api/v3/user/submissions?user={user}",
+                        f"https://kenkoooo.com/atcoder/atcoder-api/v3/user/submissions?user={user}&from_second={from_second}",
                         timeout=15)
                     if r.status_code != 200:
-                        print(f"    {student['name']}: ❌ API 不可用 (HTTP {r.status_code})")
-                        continue
+                        print(f"    ❌ API 不可用 (HTTP {r.status_code})")
+                        break
+                    batch = r.json()
+                    if not batch:
+                        break
+                    all_subs.extend(batch)
+                    if len(batch) < 500:
+                        break
+                    from_second = max(s['epoch_second'] for s in batch) + 1
+                    time.sleep(0.5)
 
-                    found_ac = False
-                    found_attempted = False
-                    for sub in r.json():
-                        if sub.get('problem_id') == pid:
-                            if sub.get('result') == 'AC':
-                                found_ac = True
-                                break
-                            else:
-                                found_attempted = True
+                ac_set       = {s['problem_id'] for s in all_subs if s.get('result') == 'AC'}
+                attempted_set = {s['problem_id'] for s in all_subs if s.get('result') != 'AC'}
 
-                    if found_ac:
+                for pid in sorted(ac_pids):
+                    if pid in ac_set:
                         result[sid]['atcoder'][pid] = 'ac'
-                        print(f"    {student['name']}: ✓ AC")
-                    elif found_attempted:
+                        print(f"    {pid}: ✓ AC")
+                    elif pid in attempted_set:
                         result[sid]['atcoder'][pid] = 'attempted'
-                        print(f"    {student['name']}: ? 尝试")
+                        print(f"    {pid}: ? 尝试")
                     else:
                         if pid in result[sid]['atcoder']:
                             del result[sid]['atcoder'][pid]
-                        print(f"    {student['name']}: – 未做")
-                except Exception as e:
-                    print(f"    {student['name']}: ❌ 错误 ({e})")
+                        print(f"    {pid}: – 未做")
+
+            except Exception as e:
+                print(f"    ❌ 错误 ({e})")
 
     output = {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),

@@ -222,9 +222,9 @@
               "title": "数字统计"
             },
             {
-              "pid":"B4036",
-              "platform":"luogu",
-              "title":"[GESP202409 二级] 数位之和"
+              "pid": "B4036",
+              "platform": "luogu",
+              "title": "[GESP202409 二级] 数位之和"
             },
             {
               "pid": "B3841",
@@ -273,6 +273,11 @@
               "pid": "abc455_c",
               "platform": "atcoder",
               "title": "Vanish"
+            },
+            {
+              "pid": "abc205_d",
+              "platform": "atcoder",
+              "title": "D - Kth Excluded"
             }
           ]
         },

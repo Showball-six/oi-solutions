@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-15T09:46:58Z",
+  "updated_at": "2026-05-20T00:55:01Z",
   "data": {
     "stu-001": {
       "luogu": {
@@ -138,12 +138,31 @@
         "B2078": {
           "status": "ac",
           "score": 100
+        },
+        "B2054": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2068": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2081": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2082": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {
         "163E": "ac"
       },
-      "atcoder": {}
+      "atcoder": {
+        "abc455_c": "ac",
+        "abc205_d": "ac"
+      }
     },
     "stu-002": {
       "luogu": {
@@ -338,6 +357,18 @@
         "P1307": {
           "status": "ac",
           "score": 100
+        },
+        "B2078": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2081": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2082": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {},
@@ -396,6 +427,22 @@
         "P1307": {
           "status": "ac",
           "score": 100
+        },
+        "B2078": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2081": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2082": {
+          "status": "ac",
+          "score": 100
+        },
+        "P1980": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {},
@@ -446,6 +493,26 @@
         "P5724": {
           "status": "ac",
           "score": 100
+        },
+        "B2078": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2082": {
+          "status": "ac",
+          "score": 100
+        },
+        "B4036": {
+          "status": "ac",
+          "score": 100
+        },
+        "P1307": {
+          "status": "ac",
+          "score": 100
+        },
+        "P1980": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {},
@@ -466,6 +533,18 @@
           "score": 100
         },
         "P5711": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2054": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5718": {
+          "status": "ac",
+          "score": 100
+        },
+        "P5722": {
           "status": "ac",
           "score": 100
         }
