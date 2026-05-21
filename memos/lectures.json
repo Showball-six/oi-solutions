@@ -128,5 +128,47 @@
     "topics": [],
     "href": "memos/lec-009.html",
     "created": "2026-05-15"
+  },
+  {
+    "id": "lec-010",
+    "slug": "lec-010",
+    "title": "数组的基本概念",
+    "tags": [
+      "入门"
+    ],
+    "courses": [
+      "syntax-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-010.html",
+    "created": "2026-05-21"
+  },
+  {
+    "id": "lec-011",
+    "slug": "lec-011",
+    "title": "多维数组及应用",
+    "tags": [
+      "入门"
+    ],
+    "courses": [
+      "syntax-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-011.html",
+    "created": "2026-05-21"
+  },
+  {
+    "id": "lec-012",
+    "slug": "lec-012",
+    "title": "数组拓展(下标计数与打标记思想)",
+    "tags": [
+      "入门"
+    ],
+    "courses": [
+      "syntax-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-012.html",
+    "created": "2026-05-21"
   }
 ]

@@ -262,8 +262,28 @@
               "pid": "B3955",
               "platform": "luogu",
               "title": "[GESP202403 二级] 小杨的日字矩阵"
+            },
+            {
+              "pid": "B2086",
+              "platform": "luogu",
+              "title": "不定方程求解"
+            },
+            {
+              "pid": "B4002",
+              "platform": "luogu",
+              "title": "[GESP202406 二级] 平方之和"
             }
           ]
+        },
+        {
+          "id": "content-005",
+          "title": "数组",
+          "lectures": [
+            "lec-010",
+            "lec-011",
+            "lec-012"
+          ],
+          "problems": []
         }
       ]
     },
