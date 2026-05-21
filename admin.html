@@ -158,6 +158,7 @@ async function init() {
     let ac = 0, total = 0;
     for (const ct of (course.contents||[])) {
       for (const p of (ct.problems||[])) {
+        if (p.type === 'divider') continue;
         total++;
         const d = ((subs[p.platform]||{})[p.pid]);
         const status = typeof d === 'string' ? d : d?.status;
@@ -251,6 +252,7 @@ function generateReport() {
     let ac = 0, total = 0;
     for (const ct of (course.contents||[])) {
       for (const p of (ct.problems||[])) {
+        if (p.type === 'divider') continue;
         total++;
         const dd = ((subs[p.platform]||{})[p.pid]);
         const status = typeof dd === 'string' ? dd : dd?.status;

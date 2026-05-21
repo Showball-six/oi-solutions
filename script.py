@@ -652,6 +652,7 @@ def fetch_submissions():
     for course in courses_data.get('courses', []):
         for content in course.get('contents', []):
             for p in content.get('problems', []):
+                if p.get('type') == 'divider': continue
                 if p['platform'] == 'luogu':        luogu_pids.add(p['pid'])
                 elif p['platform'] == 'codeforces': cf_pids.add(p['pid'])
                 elif p['platform'] == 'atcoder':    ac_pids.add(p['pid'])

@@ -78,26 +78,37 @@
     .lecture-tags{display:flex;flex-wrap:wrap;gap:4px}
     .lecture-tag{font-size:.7rem;padding:2px 7px;border-radius:4px;background:#f0f2f5;color:#5f6368}
     .lecture-arrow{color:var(--text-light);font-size:1rem;flex-shrink:0}
+    .table-card .record-table-wrap{max-height:600px;overflow-y:auto;position:relative}
     .record-table{width:100%;border-collapse:collapse;font-size:.88rem}
+    .record-table thead{position:sticky;top:0;z-index:2}
     .record-table thead th{text-align:left;padding:10px 20px;font-weight:600;font-size:.75rem;color:var(--text-sub);text-transform:uppercase;letter-spacing:.05em;background:#fafbfc;border-bottom:1px solid var(--border);white-space:nowrap}
     .record-table tbody tr{transition:background .1s}
     .record-table tbody tr:hover{background:#f7fbf3}
     .record-table tbody td{padding:12px 20px;border-bottom:1px solid #f0f1f3;vertical-align:middle}
     .record-table tbody tr:last-child td{border-bottom:none}
+    .record-table tr.divider-row{background:transparent!important}
+    .record-table tr.divider-row:hover{background:transparent!important}
+    .record-table tr.divider-row td{padding:16px 20px;border-bottom:none}
+    .problem-divider{display:flex;align-items:center;gap:12px;font-size:.85rem;font-weight:600;color:var(--text-sub)}
+    .problem-divider::before,.problem-divider::after{content:'';flex:1;height:1px;background:linear-gradient(to right,var(--border),transparent)}
+    .problem-divider::after{background:linear-gradient(to left,var(--border),transparent)}
+    .problem-divider span{white-space:nowrap}
     .pid-link{color:var(--text);font-weight:500}
     .pid-link:hover{color:var(--green)}
     .platform-badge{font-size:.7rem;padding:2px 7px;border-radius:4px;font-weight:500}
     .platform-luogu{background:#f0fbe8;color:var(--green-dark)}
     .platform-codeforces{background:#ebf5fb;color:var(--blue)}
     .platform-atcoder{background:#fef5e7;color:var(--orange)}
-    .matrix-wrap{overflow-x:auto}
+    .matrix-wrap{overflow-x:auto;max-height:600px;overflow-y:auto;position:relative}
     .matrix-table{width:100%;border-collapse:collapse;font-size:.82rem;min-width:400px}
+    .matrix-table thead{position:sticky;top:0;z-index:3}
     .matrix-table th{padding:9px 14px;font-weight:600;font-size:.72rem;color:var(--text-sub);background:#fafbfc;border-bottom:1px solid var(--border);white-space:nowrap;text-align:center}
-    .matrix-table th.col-problem{text-align:left}
+    .matrix-table th.col-problem{text-align:left;position:sticky;left:0;z-index:4;background:#fafbfc;box-shadow:2px 0 4px rgba(0,0,0,.05)}
     .matrix-table td{padding:10px 14px;border-bottom:1px solid #f0f1f3;text-align:center;vertical-align:middle}
     .matrix-table tbody tr:last-child td{border-bottom:none}
     .matrix-table tbody tr:hover{background:#f7fbf3}
-    .matrix-table td.col-problem{text-align:left}
+    .matrix-table td.col-problem{text-align:left;position:sticky;left:0;z-index:1;background:#fff;box-shadow:2px 0 4px rgba(0,0,0,.05)}
+    .matrix-table tbody tr:hover td.col-problem{background:#f7fbf3}
     .status-ac{display:inline-block;width:10px;height:10px;border-radius:50%;background:#52c41a;box-shadow:0 0 0 3px #f0fbe8}
     .status-attempted{display:inline-block;width:10px;height:10px;border-radius:50%;background:#fa8c16;box-shadow:0 0 0 3px #fef5e7}
     .status-none{display:inline-block;width:10px;height:10px;border-radius:50%;background:#d9d9d9;box-shadow:0 0 0 3px #f0f2f5}
@@ -208,27 +219,46 @@ function renderLectureList(lectures) {
     </a>`).join('')}</div>`;
 }
 
-function renderProblemsTable(problems, showSolution=false) {
+function renderProblemsTable(problems, showSolution=false, lectures=[]) {
   if (!problems.length) return `<div class="empty-state">暂无练习题目</div>`;
+  const lectureMap = {};
+  lectures.forEach(l => lectureMap[l.id] = l.title);
+
+  let rows = [];
+  let idx = 0;
+  problems.forEach(p => {
+    if (p.type === 'divider') {
+      const lecTitle = lectureMap[p.lecture] || p.lecture;
+      rows.push(`<tr class="divider-row"><td colspan="${showSolution?4:3}"><div class="problem-divider"><span>${lecTitle}</span></div></td></tr>`);
+    } else {
+      idx++;
+      rows.push(`<tr style="background:${idx%2===0?'#ffffff':'#f6fbf2'}">
+        <td style="color:var(--text-light);font-family:var(--mono);font-size:.8rem">${idx}</td>
+        <td><a class="pid-link" href="${problemUrl(p.platform,p.pid)}" target="_blank">${p.pid}&nbsp;&nbsp;${p.title}</a></td>
+        <td>${platformBadge(p.platform)}</td>
+        ${showSolution?`<td class="col-solution">${p.href?`<a href="../${p.href}">查看题解 →</a>`:'—'}</td>`:''}</tr>`);
+    }
+  });
+
+  const realCount = problems.filter(p => p.type !== 'divider').length;
   return `<div class="table-card">
     <div class="table-toolbar">
       <span class="section-title" style="margin:0">练习题目</span>
-      <span class="count-badge blue">共 ${problems.length} 题</span>
+      <span class="count-badge blue">共 ${realCount} 题</span>
     </div>
-    <table class="record-table">
-      <thead><tr><th>#</th><th>题号 / 题名</th><th>平台</th>${showSolution?'<th>题解</th>':''}</tr></thead>
-      <tbody>${problems.map((p,i) => `<tr style="background:${i%2===0?'#ffffff':'#f6fbf2'}">
-        <td style="color:var(--text-light);font-family:var(--mono);font-size:.8rem">${i+1}</td>
-        <td><a class="pid-link" href="${problemUrl(p.platform,p.pid)}" target="_blank">${p.pid}&nbsp;&nbsp;${p.title}</a></td>
-        <td>${platformBadge(p.platform)}</td>
-        ${showSolution?`<td class="col-solution">${p.href?`<a href="../${p.href}">查看题解 →</a>`:'—'}</td>`:''}`).join('')}</tbody>
-    </table>
+    <div class="record-table-wrap">
+      <table class="record-table">
+        <thead><tr><th>#</th><th>题号 / 题名</th><th>平台</th>${showSolution?'<th>题解</th>':''}</tr></thead>
+        <tbody>${rows.join('')}</tbody>
+      </table>
+    </div>
   </div>`;
 }
 
 function renderMatrix(problems, students, subs) {
   if (!students.length) return `<div class="empty-state">暂无学生数据</div>`;
-  if (!problems.length) return '';
+  const realProblems = problems.filter(p => p.type !== 'divider');
+  if (!realProblems.length) return '';
   return `<div class="table-card">
     <div class="table-toolbar">
       <span class="section-title" style="margin:0">学生完成情况</span>
@@ -240,7 +270,7 @@ function renderMatrix(problems, students, subs) {
           <th class="col-problem">题目</th>
           ${students.map(s=>`<th>${s.name}</th>`).join('')}
         </tr></thead>
-        <tbody>${problems.map((p,i) => {
+        <tbody>${realProblems.map((p,i) => {
           const cells = students.map(s => {
             const data = ((subs[s.id]||{})[p.platform]||{})[p.pid];
             const status = typeof data === 'string' ? data : (data?.status ?? null);
@@ -495,7 +525,7 @@ async function init() {
 
     document.getElementById('main-content').innerHTML = `
       <div class="section"><div class="section-title">讲义</div>${renderLectureList(lecs)}</div>
-      <div class="section">${renderProblemsTable(problems)}</div>
+      <div class="section">${renderProblemsTable(problems, false, lecs)}</div>
       <div class="section">${renderMatrix(problems, students, subs)}</div>`;
   }
 

@@ -157,6 +157,10 @@
           ],
           "problems": [
             {
+              "type": "divider",
+              "lecture": "lec-007"
+            },
+            {
               "pid": "P5722",
               "platform": "luogu",
               "title": "【深基4.例11】数列求和"
@@ -197,6 +201,10 @@
               "title": "角谷猜想"
             },
             {
+              "type": "divider",
+              "lecture": "lec-008"
+            },
+            {
               "pid": "P1307",
               "platform": "luogu",
               "title": "[NOIP 2011 普及组] 数字反转"
@@ -230,6 +238,30 @@
               "pid": "B3841",
               "platform": "luogu",
               "title": "[GESP202306 二级] 自幂数判断"
+            },
+            {
+              "type": "divider",
+              "lecture": "lec-009"
+            },
+            {
+              "pid": "P5721",
+              "platform": "luogu",
+              "title": "【深基4.例6】数字直角三角形"
+            },
+            {
+              "pid": "B3844",
+              "platform": "luogu",
+              "title": "[GESP样题 二级] 画正方形"
+            },
+            {
+              "pid": "B3924",
+              "platform": "luogu",
+              "title": "[GESP202312 二级] 小杨的 H 字矩阵"
+            },
+            {
+              "pid": "B3955",
+              "platform": "luogu",
+              "title": "[GESP202403 二级] 小杨的日字矩阵"
             }
           ]
         }
