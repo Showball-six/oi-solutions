@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - OI 工具箱</title>
+  <link rel="icon" href="tx.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green:#52C41A; --green-light:#f0fbe8; --green-dark:#3da613;
+      --blue:#3498db;  --blue-light:#ebf5fb;
+      --orange:#e67e22;--orange-light:#fef5e7;
+      --purple:#9d3dcf;--purple-light:#f5eefa;
+      --bg:#f4f5f7; --white:#fff; --text:#1a1a1a;
+      --text-sub:#8e8e93; --text-light:#b0b0b6; --border:#e8eaed;
+      --shadow-sm:0 1px 3px rgba(0,0,0,.04),0 1px 2px rgba(0,0,0,.06);
+      --shadow-md:0 4px 12px rgba(0,0,0,.08);
+      --radius:10px;
+      --font:'Noto Sans SC',-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
+      --mono:'Menlo','Consolas','Courier New',monospace;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:var(--green-dark);text-decoration:none;transition:color .15s}
+    a:hover{color:var(--green)}
+    .topbar{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+    .topbar-inner{max-width:1200px;margin:0 auto;padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.1rem;color:var(--text)}
+    .logo:hover{text-decoration:none;color:var(--text)}
+    .logo-icon{width:32px;height:32px;border-radius:8px;overflow:hidden;flex-shrink:0;background:#fff;box-shadow:var(--shadow-sm)}
+    .logo-icon img{width:100%;height:100%;object-fit:cover;display:block}
+    .admin-badge{font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:4px;background:#fff3cd;color:#856404;border:1px solid #ffc107;margin-left:8px}
+    .topbar-time{font-size:.78rem;color:var(--text-light);font-family:var(--mono)}
+    .container{max-width:1200px;margin:0 auto;padding:28px 24px 60px}
+    .hero{margin-bottom:28px}
+    .hero h1{font-size:1.55rem;font-weight:700;letter-spacing:-.01em}
+    .hero p{margin-top:6px;color:var(--text-sub);font-size:.88rem}
+    .section{margin-bottom:32px}
+    .section-title{font-size:1rem;font-weight:700;display:flex;align-items:center;gap:8px;margin-bottom:16px}
+    .section-title::before{content:'';width:4px;height:18px;background:var(--green);border-radius:2px;display:inline-block}
+    /* 学生卡片网格 */
+    .student-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+    .student-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:20px 22px;transition:box-shadow .2s}
+    .student-card:hover{box-shadow:var(--shadow-md)}
+    .student-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+    .student-name{font-weight:700;font-size:1rem}
+    .student-total{font-size:.82rem;color:var(--text-sub)}
+    .student-total strong{color:var(--green-dark);font-size:.95rem}
+    /* 课程进度行 */
+    .course-row{margin-bottom:10px}
+    .course-row-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
+    .course-label{font-size:.78rem;font-weight:600;color:var(--text-sub)}
+    .course-count{font-size:.75rem;color:var(--text-light);font-family:var(--mono)}
+    .progress-bar{height:7px;background:#f0f2f5;border-radius:4px;overflow:hidden}
+    .progress-fill{height:100%;border-radius:4px;transition:width .4s ease}
+    .fill-green{background:var(--green)}
+    .fill-blue{background:var(--blue)}
+    .fill-orange{background:var(--orange)}
+    .fill-purple{background:var(--purple)}
+    /* 汇总表格 */
+    .table-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}
+    .summary-table{width:100%;border-collapse:collapse;font-size:.85rem}
+    .summary-table th{padding:10px 16px;font-weight:600;font-size:.72rem;color:var(--text-sub);background:#fafbfc;border-bottom:1px solid var(--border);text-align:center;white-space:nowrap}
+    .summary-table th.col-left{text-align:left}
+    .summary-table td{padding:11px 16px;border-bottom:1px solid #f0f1f3;text-align:center;vertical-align:middle}
+    .summary-table tbody tr:last-child td{border-bottom:none}
+    .summary-table tbody tr:hover{background:#f7fbf3}
+    .summary-table td.col-left{text-align:left;font-weight:600}
+    .pct-chip{display:inline-block;font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:10px;font-family:var(--mono)}
+    .pct-high{background:var(--green-light);color:var(--green-dark)}
+    .pct-mid{background:var(--blue-light);color:var(--blue)}
+    .pct-low{background:#f0f2f5;color:var(--text-sub)}
+    .empty-state{text-align:center;padding:40px;color:var(--text-light);font-size:.88rem}
+    .site-footer{text-align:center;padding:20px 0 32px;font-size:.78rem;color:var(--text-light)}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    .student-card{animation:fadeUp .3s ease both}
+    @media(max-width:768px){.topbar-time{display:none}.student-grid{grid-template-columns:1fr}}
+    /* 周报 */
+    .report-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+    .report-controls label{font-size:.82rem;color:var(--text-sub);font-weight:600}
+    .report-controls input[type=date]{font-size:.82rem;padding:5px 10px;border:1px solid var(--border);border-radius:6px;font-family:var(--font);background:var(--white)}
+    .btn{display:inline-flex;align-items:center;gap:6px;padding:7px 16px;border-radius:7px;font-size:.82rem;font-weight:600;cursor:pointer;border:none;transition:background .15s}
+    .btn-primary{background:var(--green);color:#fff}
+    .btn-primary:hover{background:var(--green-dark)}
+    .btn-copy{background:var(--blue-light);color:var(--blue)}
+    .btn-copy:hover{background:#d6eaf8}
+    .report-output{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;font-size:.85rem;line-height:1.9;white-space:pre-wrap;font-family:var(--mono);color:var(--text);min-height:80px;max-height:600px;overflow-y:auto}
+    .report-output.empty{color:var(--text-light);font-family:var(--font)}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"><img src="tx.jpg" alt="logo"></div>
+      <span>Showball's OI 工具箱</span>
+      <span class="admin-badge">ADMIN</span>
+    </a>
+    <span class="topbar-time" id="clock"></span>
+  </div>
+</header>
+
+<div class="container">
+  <div class="hero">
+    <h1>学生进度总览</h1>
+    <p id="hero-desc">加载中…</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">各学生课程完成情况</div>
+    <div class="student-grid" id="student-grid"></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">课程完成率汇总</div>
+    <div class="table-card">
+      <div id="summary-wrap"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">周报生成</div>
+    <div class="report-controls">
+      <label>周报日期</label>
+      <input type="date" id="report-date">
+      <button class="btn btn-primary" onclick="generateReport()">生成周报</button>
+      <button class="btn btn-copy" onclick="copyReport()">复制文字</button>
+    </div>
+    <div class="report-output empty" id="report-output">点击「生成周报」生成本周学情报告</div>
+  </div>
+</div>
+
+<footer class="site-footer">2026 &copy; Showball's OI 工具箱 — Admin</footer>
+
+<script>
+const COLOR_MAP = {green:'fill-green', blue:'fill-blue', orange:'fill-orange', purple:'fill-purple'};
+
+let _appData = null;
+
+async function init() {
+  const [coursesRes, stuRes, subRes] = await Promise.all([
+    fetch('memos/courses.json'),
+    fetch('students/students.json'),
+    fetch('students/submissions.json')
+  ]);
+  const coursesData = await coursesRes.json();
+  const students    = await stuRes.json();
+  const subsData    = (await subRes.json()).data || {};
+
+  const courses = coursesData.courses.filter(c =>
+    (c.contents||[]).some(ct => (ct.problems||[]).length > 0)
+  );
+
+  function courseProgress(student, course) {
+    const subs = subsData[student.id] || {};
+    let ac = 0, total = 0;
+    for (const ct of (course.contents||[])) {
+      for (const p of (ct.problems||[])) {
+        total++;
+        const d = ((subs[p.platform]||{})[p.pid]);
+        const status = typeof d === 'string' ? d : d?.status;
+        if (status === 'ac') ac++;
+      }
+    }
+    return {ac, total};
+  }
+
+  _appData = {students, courses, subsData, allContents: coursesData.courses.flatMap(c => c.contents||[])};
+
+  // 全局统计
+  let globalAc = 0, globalTotal = 0;
+  students.forEach(s => courses.forEach(c => {
+    const {ac, total} = courseProgress(s, c);
+    globalAc += ac; globalTotal += total;
+  }));
+  document.getElementById('hero-desc').textContent =
+    `${students.length} 名学生 · ${courses.length} 门课程 · 全局完成率 ${globalTotal ? Math.round(globalAc/globalTotal*100) : 0}%`;
+
+  // 学生卡片
+  const grid = document.getElementById('student-grid');
+  students.forEach((s, si) => {
+    let totalAc = 0, totalProbs = 0;
+    const rows = courses.map(c => {
+      const {ac, total} = courseProgress(s, c);
+      totalAc += ac; totalProbs += total;
+      const pct = total ? Math.round(ac/total*100) : 0;
+      const fillClass = COLOR_MAP[c.color] || 'fill-green';
+      return `<div class="course-row">
+        <div class="course-row-header">
+          <span class="course-label">${c.title}</span>
+          <span class="course-count">${ac}/${total}</span>
+        </div>
+        <div class="progress-bar"><div class="progress-fill ${fillClass}" style="width:${pct}%"></div></div>
+      </div>`;
+    }).join('');
+    const overallPct = totalProbs ? Math.round(totalAc/totalProbs*100) : 0;
+    const card = document.createElement('div');
+    card.className = 'student-card';
+    card.style.animationDelay = `${si*0.05}s`;
+    card.innerHTML = `
+      <div class="student-header">
+        <span class="student-name">${s.name}</span>
+        <span class="student-total">总完成 <strong>${overallPct}%</strong> (${totalAc}/${totalProbs})</span>
+      </div>
+      ${rows}`;
+    grid.appendChild(card);
+  });
+
+  // 汇总表格
+  const wrap = document.getElementById('summary-wrap');
+  const thead = `<thead><tr>
+    <th class="col-left">课程</th>
+    ${students.map(s=>`<th>${s.name}</th>`).join('')}
+    <th>班级均值</th>
+  </tr></thead>`;
+  const tbody = courses.map(c => {
+    let classAc = 0, classTotal = 0;
+    const cells = students.map(s => {
+      const {ac, total} = courseProgress(s, c);
+      classAc += ac; classTotal += total;
+      const pct = total ? Math.round(ac/total*100) : 0;
+      const cls = pct>=80?'pct-high':pct>=40?'pct-mid':'pct-low';
+      return `<td><span class="pct-chip ${cls}">${pct}%</span></td>`;
+    }).join('');
+    const avgPct = classTotal ? Math.round(classAc/classTotal*100) : 0;
+    const avgCls = avgPct>=80?'pct-high':avgPct>=40?'pct-mid':'pct-low';
+    return `<tr><td class="col-left">${c.title}</td>${cells}<td><span class="pct-chip ${avgCls}">${avgPct}%</span></td></tr>`;
+  }).join('');
+  wrap.innerHTML = `<table class="summary-table">${thead}<tbody>${tbody}</tbody></table>`;
+
+  // 默认周报日期为今天
+  document.getElementById('report-date').value = new Date().toISOString().slice(0,10);
+}
+
+function generateReport() {
+  if (!_appData) return;
+  const {students, courses, subsData, allContents} = _appData;
+  const dateStr = document.getElementById('report-date').value || new Date().toISOString().slice(0,10);
+  const d = new Date(dateStr);
+  // 计算本周一和本周日
+  const day = d.getDay() || 7;
+  const mon = new Date(d); mon.setDate(d.getDate() - day + 1);
+  const sun = new Date(mon); sun.setDate(mon.getDate() + 6);
+  const fmt = d => `${d.getMonth()+1}月${d.getDate()}日`;
+  const weekRange = `${mon.getFullYear()}年${fmt(mon)}—${fmt(sun)}`;
+
+  function courseProgress(student, course) {
+    const subs = subsData[student.id] || {};
+    let ac = 0, total = 0;
+    for (const ct of (course.contents||[])) {
+      for (const p of (ct.problems||[])) {
+        total++;
+        const dd = ((subs[p.platform]||{})[p.pid]);
+        const status = typeof dd === 'string' ? dd : dd?.status;
+        if (status === 'ac') ac++;
+      }
+    }
+    return {ac, total};
+  }
+
+  // 找本周内的模拟赛（用 courses.json 中 contest-prep 的 mock 内容）
+  const mockContents = allContents.filter(c => c.type === 'mock');
+
+  let lines = [];
+  lines.push(`📊 OI 学情周报 · ${weekRange}`);
+  lines.push('');
+
+  // 各学生课程完成情况
+  lines.push('【课程完成情况】');
+  students.forEach(s => {
+    const parts = courses.map(c => {
+      const {ac, total} = courseProgress(s, c);
+      const pct = total ? Math.round(ac/total*100) : 0;
+      return `${c.title} ${ac}/${total}(${pct}%)`;
+    });
+    const totalAc = courses.reduce((sum,c) => sum + courseProgress(s,c).ac, 0);
+    const totalProbs = courses.reduce((sum,c) => sum + courseProgress(s,c).total, 0);
+    const overall = totalProbs ? Math.round(totalAc/totalProbs*100) : 0;
+    lines.push(`${s.name}：总完成率 ${overall}%`);
+    parts.forEach(p => lines.push(`  · ${p}`));
+  });
+  lines.push('');
+
+  // 模拟赛成绩
+  if (mockContents.length > 0) {
+    lines.push('【模拟赛成绩】');
+    mockContents.forEach(mock => {
+      const problems = mock.problems || [];
+      const scores = mock.scores || {};
+      const participants = mock.participants?.length
+        ? students.filter(s => mock.participants.includes(s.id))
+        : students;
+
+      const ranked = participants.map(s => {
+        const total = problems.reduce((sum, p) => sum + ((scores[s.id]||{})[p.pid] || 0), 0);
+        return {name: s.name, total};
+      }).sort((a,b) => b.total - a.total);
+
+      lines.push(`▸ ${mock.title}`);
+      ranked.forEach((r, i) => {
+        lines.push(`  ${i+1}. ${r.name}  ${r.total}分`);
+      });
+    });
+    lines.push('');
+  }
+
+  // 班级整体
+  const classAc = students.reduce((sum,s) => sum + courses.reduce((s2,c) => s2+courseProgress(s,c).ac,0), 0);
+  const classTotal = students.reduce((sum,s) => sum + courses.reduce((s2,c) => s2+courseProgress(s,c).total,0), 0);
+  const classAvg = classTotal ? Math.round(classAc/classTotal*100) : 0;
+  lines.push(`【班级整体】全局完成率 ${classAvg}%，共完成 ${classAc}/${classTotal} 道练习题`);
+
+  const text = lines.join('\n');
+  const el = document.getElementById('report-output');
+  el.textContent = text;
+  el.classList.remove('empty');
+}
+
+function copyReport() {
+  const el = document.getElementById('report-output');
+  if (el.classList.contains('empty')) return;
+  navigator.clipboard.writeText(el.textContent).then(() => {
+    const btn = event.target;
+    btn.textContent = '已复制 ✓';
+    setTimeout(() => btn.textContent = '复制文字', 1500);
+  });
+}
+
+(function tick() {
+  const now = new Date(), p = n => String(n).padStart(2,'0');
+  document.getElementById('clock').textContent =
+    now.getFullYear()+'-'+p(now.getMonth()+1)+'-'+p(now.getDate())+
+    ' '+p(now.getHours())+':'+p(now.getMinutes())+':'+p(now.getSeconds());
+  setTimeout(tick, 1000);
+})();
+
+init();
+</script>
+</body>
+</html>

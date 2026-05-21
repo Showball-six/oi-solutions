@@ -341,8 +341,12 @@
               "full_score": 100
             }
           ],
-          "scores": {
-          }
+          "scores": {},
+          "participants": [
+            "stu-003",
+            "stu-004",
+            "stu-005"
+          ]
         }
       ]
     }

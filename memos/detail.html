@@ -119,6 +119,11 @@
     .score-zero{color:var(--text-light)}
     .score-full{color:var(--green-dark);font-weight:600}
     .total-score{font-weight:700}
+    .chart-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:18px 20px;margin-top:12px}
+    .chart-title{font-size:.85rem;font-weight:700;color:var(--text-sub);margin-bottom:12px}
+    .chart-legend{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .legend-item{display:flex;align-items:center;gap:5px;font-size:.75rem;color:var(--text-sub)}
+    .legend-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
     .empty-state{text-align:center;padding:40px 20px;color:var(--text-light);font-size:.88rem}
     .site-footer{text-align:center;padding:20px 0 32px;font-size:.78rem;color:var(--text-light)}
     @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
@@ -365,6 +370,73 @@ async function init() {
       return;
     }
 
+    // mock 分区需要学生数据用于折线图
+    let students = [];
+    if (SECTION === 'mock') {
+      try { students = await (await fetch('../students/students.json')).json(); } catch(e) {}
+    }
+
+    // 调色板（学生折线颜色）
+    const PALETTE = ['#52c41a','#3498db','#e67e22','#9d3dcf','#e74c3c','#1abc9c','#f39c12'];
+
+    function renderTrendChart(contest, mocks, students) {
+      if (mocks.length < 2 || !students.length) return '';
+      // 计算每场每个学生总分
+      const labels = mocks.map(m => m.title);
+      const series = students.map((s, si) => {
+        const pts = mocks.map(m => {
+          const sc = (m.scores||{})[s.id] || {};
+          return (m.problems||[]).reduce((sum, p) => sum + (sc[p.pid] ?? 0), 0);
+        });
+        return {name: s.name, pts, color: PALETTE[si % PALETTE.length]};
+      });
+
+      const W = 560, H = 160, PL = 36, PR = 16, PT = 16, PB = 32;
+      const cw = W - PL - PR, ch = H - PT - PB;
+      const allVals = series.flatMap(s => s.pts);
+      const maxVal = Math.max(...allVals, 1);
+      const xStep = mocks.length > 1 ? cw / (mocks.length - 1) : cw;
+
+      const x = i => PL + i * xStep;
+      const y = v => PT + ch - (v / maxVal) * ch;
+
+      // 网格线
+      const gridLines = [0, 0.25, 0.5, 0.75, 1].map(r => {
+        const yy = PT + ch - r * ch;
+        return `<line x1="${PL}" y1="${yy}" x2="${W-PR}" y2="${yy}" stroke="#f0f1f3" stroke-width="1"/>
+                 <text x="${PL-4}" y="${yy+4}" text-anchor="end" font-size="9" fill="#b0b0b6">${Math.round(r*maxVal)}</text>`;
+      }).join('');
+
+      // X 轴标签
+      const xLabels = labels.map((l, i) =>
+        `<text x="${x(i)}" y="${H-4}" text-anchor="middle" font-size="9" fill="#8e8e93">${l.replace(/模拟赛\s*/,'#').replace(/.*#/,'#')}</text>`
+      ).join('');
+
+      // 折线 + 点
+      const lines = series.map(s => {
+        const pts = s.pts.map((v, i) => `${x(i)},${y(v)}`).join(' ');
+        const dots = s.pts.map((v, i) =>
+          `<circle cx="${x(i)}" cy="${y(v)}" r="3" fill="${s.color}" stroke="#fff" stroke-width="1.5">
+             <title>${s.name}: ${v}分</title>
+           </circle>`
+        ).join('');
+        return `<polyline points="${pts}" fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" opacity=".85"/>
+                ${dots}`;
+      }).join('');
+
+      const legend = series.map(s =>
+        `<span class="legend-item"><span class="legend-dot" style="background:${s.color}"></span>${s.name}</span>`
+      ).join('');
+
+      return `<div class="chart-card">
+        <div class="chart-title">${contest} — 历次模拟赛总分趋势</div>
+        <svg viewBox="0 0 ${W} ${H}" style="width:100%;max-width:${W}px;display:block">
+          ${gridLines}${xLabels}${lines}
+        </svg>
+        <div class="chart-legend">${legend}</div>
+      </div>`;
+    }
+
     const sectionsHtml = sortedContests.map(contest => {
       const items = groups[contest];
       const cards = items.map((c, i) => {
@@ -382,9 +454,11 @@ async function init() {
             <div class="content-card-meta"><span>${(c.problems||[]).length} 道题目</span></div>
           </div><span class="content-card-arrow">›</span></a>`;
       }).join('');
+      const chart = SECTION === 'mock' ? renderTrendChart(contest, items, students) : '';
       return `<div class="section">
         <div class="section-title">${contest}</div>
         <div class="content-grid">${cards}</div>
+        ${chart}
       </div>`;
     }).join('');
 
@@ -500,8 +574,12 @@ async function init() {
         fetch('../students/students.json'),
         fetch('../students/submissions.json')
       ]);
-      students = await stuRes.json();
+      const allStudents = await stuRes.json();
       subs = (await subRes.json()).data || {};
+      const participants = content.participants || [];
+      students = participants.length
+        ? allStudents.filter(s => participants.includes(s.id))
+        : allStudents;
     } catch(e) {}
 
     // 排名表
@@ -548,6 +626,7 @@ async function init() {
 
     document.getElementById('main-content').innerHTML = `
       <div class="section">${renderProblemsTable(problems, true)}</div>
+      <div class="section">${rankHtml}</div>
       <div class="section">${renderMatrix(problems, students, subs)}</div>`;
   }
 }

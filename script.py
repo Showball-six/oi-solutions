@@ -17,6 +17,59 @@ import time
 from pathlib import Path
 from datetime import datetime, timezone
 
+try:
+    from prompt_toolkit import prompt as _pt_prompt
+    from prompt_toolkit.completion import WordCompleter
+    _PT = True
+except ImportError:
+    _PT = False
+
+
+def ask(msg, completions=None, default=''):
+    """input() with optional Tab completion."""
+    if _PT and completions:
+        c = WordCompleter(completions, ignore_case=True, sentence=True)
+        try:
+            return _pt_prompt(msg, completer=c).strip()
+        except (EOFError, KeyboardInterrupt):
+            raise SystemExit
+    try:
+        return input(msg).strip()
+    except (EOFError, KeyboardInterrupt):
+        raise SystemExit
+
+
+def select(items, prompt_text='选择: ', label_fn=None):
+    """
+    Show numbered list, return chosen item.
+    Accepts a number OR Tab-complete on item labels.
+    Returns None on invalid input.
+    """
+    labels = [label_fn(x) if label_fn else str(x) for x in items]
+    if _PT:
+        completions = [f"{i+1}. {l}" for i, l in enumerate(labels)] + labels
+        c = WordCompleter(completions, ignore_case=True, sentence=True)
+        try:
+            raw = _pt_prompt(prompt_text, completer=c).strip()
+        except (EOFError, KeyboardInterrupt):
+            raise SystemExit
+    else:
+        try:
+            raw = input(prompt_text).strip()
+        except (EOFError, KeyboardInterrupt):
+            raise SystemExit
+
+    # numeric input
+    if raw.isdigit():
+        idx = int(raw) - 1
+        return items[idx] if 0 <= idx < len(items) else None
+    # label match (strip leading "N. " if present)
+    clean = raw.split('. ', 1)[-1].strip() if '. ' in raw else raw
+    for i, l in enumerate(labels):
+        if l == clean:
+            return items[i]
+    return None
+
 SOLUTIONS_DIR = Path("solutions")
 RECORDS_FILE  = SOLUTIONS_DIR / "records.json"
 MEMOS_DIR     = Path("memos")
@@ -207,34 +260,30 @@ def interactive_create():
     print("📝 交互式创建新题目")
     print("="*50)
 
-    pid = input("题号 (如 P3372, CF1A, ABC086A): ").strip().upper()
+    pid = ask("题号 (如 P3372, CF1A, ABC086A): ").upper()
     if not pid:
         print("❌ 题号不能为空")
         return
 
-    title = input("题目标题: ").strip()
+    title = ask("题目标题: ")
     if not title:
         print("❌ 标题不能为空")
         return
 
-    # 直接询问题目链接
-    problem_url = input("题目链接 (粘贴 URL，留空则为 #): ").strip() or "#"
+    problem_url = ask("题目链接 (粘贴 URL，留空则为 #): ") or "#"
 
-    source = input("来源 (洛谷/CF/AtCoder，默认洛谷): ").strip() or "洛谷"
+    source = ask("来源 (洛谷/CF/AtCoder，默认洛谷): ", ["洛谷", "CF", "AtCoder"]) or "洛谷"
 
-    print("\n可选难度:")
     difficulties = ["入门", "普及-", "普及/提高-", "普及+/提高",
                     "提高+/省选-", "省选/NOI-", "NOI"]
+    print("\n可选难度:")
     for i, d in enumerate(difficulties, 1):
         print(f" {i}. {d}")
+    diff = select(difficulties, "选择难度 (1-7，默认4): ") or "普及/提高"
 
-    diff_choice = input("选择难度 (1-7，默认4): ").strip()
-    diff = difficulties[int(diff_choice)-1] if diff_choice.isdigit() and 1 <= int(diff_choice) <= 7 else "普及/提高"
-
-    tags_input = input("标签 (用逗号分隔，可选): ").strip()
+    tags_input = ask("标签 (用逗号分隔，可选): ")
     tags = [t.strip() for t in tags_input.split(',')] if tags_input else []
 
-    # 创建记录
     record = create_json_record(pid, title, diff, source, tags, problem_url)
 
     print("\n" + "-"*50)
@@ -246,7 +295,7 @@ def interactive_create():
     print(f"标签: {', '.join(tags) if tags else '(无)'}")
     print("-"*50)
 
-    confirm = input("\n确认创建？ (y/n): ").strip().lower()
+    confirm = ask("\n确认创建？ (y/n): ", ["y", "n"]).lower()
     if confirm == 'y':
         html_path = record["href"]
         create_html_template(html_path, pid, title, source, problem_url)
@@ -323,7 +372,7 @@ def interactive_add_lecture():
     print("📖 添加讲义")
     print("="*50)
 
-    title = input("讲义标题: ").strip()
+    title = ask("讲义标题: ")
     if not title:
         print("❌ 标题不能为空"); return
 
@@ -331,7 +380,7 @@ def interactive_add_lecture():
     nums_preview = [int(l['id'].split('-')[1]) for l in lectures_preview if '-' in l.get('id', '')]
     next_num_preview = max(nums_preview, default=0) + 1
     auto_slug = f"lec-{str(next_num_preview).zfill(3)}"
-    slug_input = input(f"Slug (回车使用自动生成的 '{auto_slug}'，或输入自定义): ").strip().lower()
+    slug_input = ask(f"Slug (回车使用自动生成的 '{auto_slug}'，或输入自定义): ").lower()
     slug = slug_input if slug_input else auto_slug
 
     courses_data = load_json(COURSES_FILE)
@@ -339,7 +388,7 @@ def interactive_add_lecture():
     print("\n可选课程 (空格分隔编号，可多选，直接回车跳过):")
     for i, name in enumerate(course_names, 1):
         print(f"  {i}. {name}")
-    course_input = input("选择课程: ").strip()
+    course_input = ask("选择课程: ")
     courses = [COURSE_IDS[int(x)-1] for x in course_input.split()
                if x.isdigit() and 1 <= int(x) <= len(COURSE_IDS)]
 
@@ -347,11 +396,11 @@ def interactive_add_lecture():
     print("\n可选知识点 (空格分隔编号，可多选，直接回车跳过):")
     for i, name in enumerate(topic_names, 1):
         print(f"  {i}. {name}")
-    topic_input = input("选择知识点: ").strip()
+    topic_input = ask("选择知识点: ")
     topics = [TOPIC_IDS[int(x)-1] for x in topic_input.split()
               if x.isdigit() and 1 <= int(x) <= len(TOPIC_IDS)]
 
-    tags_input = input("标签 (逗号分隔，可选): ").strip()
+    tags_input = ask("标签 (逗号分隔，可选): ")
     tags = [t.strip() for t in tags_input.split(',') if t.strip()]
 
     lectures = load_json(LECTURES_FILE, default=[])
@@ -370,7 +419,7 @@ def interactive_add_lecture():
     }
 
     print(f"\n将创建讲义: [{lec_id}] {title} → {href}")
-    confirm = input("确认? (y/n): ").strip().lower()
+    confirm = ask("确认? (y/n): ", ["y", "n"]).lower()
     if confirm != 'y':
         print("❌ 已取消"); return
 
@@ -436,12 +485,11 @@ def interactive_add_content():
     print("选择课程:")
     for i, c in enumerate(courses, 1):
         print(f"  {i}. {c['title']}")
-    choice = input("课程编号: ").strip()
-    if not choice.isdigit() or not (1 <= int(choice) <= len(courses)):
+    course = select(courses, "课程编号: ", label_fn=lambda c: c['title'])
+    if not course:
         print("❌ 无效选择"); return
-    course = courses[int(choice) - 1]
 
-    title = input("内容标题 (如 AC自动机专题): ").strip()
+    title = ask("内容标题 (如 AC自动机专题): ")
     if not title:
         print("❌ 标题不能为空"); return
 
@@ -450,7 +498,6 @@ def interactive_add_content():
     next_num = max(nums, default=0) + 1
     content_id = f"content-{str(next_num).zfill(3)}"
 
-    # 关联讲义
     lectures_data = load_json(LECTURES_FILE, default=[])
     course_lecs = [l for l in lectures_data if course['id'] in l.get('courses', [])]
     linked_lecs = []
@@ -458,23 +505,21 @@ def interactive_add_content():
         print(f"\n该课程下的讲义 (空格分隔编号，直接回车跳过):")
         for i, l in enumerate(course_lecs, 1):
             print(f"  {i}. {l['title']}")
-        lec_input = input("选择讲义: ").strip()
+        lec_input = ask("选择讲义: ")
         linked_lecs = [course_lecs[int(x)-1]['id'] for x in lec_input.split()
                        if x.isdigit() and 1 <= int(x) <= len(course_lecs)]
 
-    # 添加练习题
     problems = []
     platforms = ["luogu", "codeforces", "atcoder"]
     print("\n添加练习题 (输入 q 结束):")
     while True:
-        pid = input("  题号 (q结束): ").strip()
+        pid = ask("  题号 (q结束): ")
         if pid.lower() == 'q' or not pid: break
-        prob_title = input("  题目标题: ").strip()
-        print("  平台: 1.洛谷  2.Codeforces  3.AtCoder")
-        plat = input("  选择: ").strip()
-        if not plat.isdigit() or not (1 <= int(plat) <= 3):
+        prob_title = ask("  题目标题: ")
+        plat_item = select(platforms, "  平台 (1.洛谷 2.Codeforces 3.AtCoder): ")
+        if not plat_item:
             print("  ❌ 无效平台，跳过"); continue
-        problems.append({"pid": pid, "platform": platforms[int(plat)-1], "title": prob_title})
+        problems.append({"pid": pid, "platform": plat_item, "title": prob_title})
         print(f"  ✓ 已添加 {pid}")
 
     content = {"id": content_id, "title": title, "lectures": linked_lecs, "problems": problems}
@@ -490,9 +535,9 @@ def interactive_add_problem_to_content():
     print("="*50)
 
     print("目标: 1.课程内容  2.模拟赛")
-    target = input("选择: ").strip()
+    target = select(["课程内容", "模拟赛"], "选择: ")
 
-    if target == '2':
+    if target == "模拟赛":
         data = load_json(COURSES_FILE)
         course = _get_contest_prep(data)
         if not course:
@@ -503,23 +548,21 @@ def interactive_add_problem_to_content():
         print("选择模拟赛:")
         for i, c in enumerate(mock_contents, 1):
             print(f"  {i}. {c['title']}")
-        choice = input("编号: ").strip()
-        if not choice.isdigit() or not (1 <= int(choice) <= len(mock_contents)):
+        content = select(mock_contents, "编号: ", label_fn=lambda c: c['title'])
+        if not content:
             print("❌ 无效选择"); return
-        content = mock_contents[int(choice) - 1]
         platforms = ["luogu", "codeforces", "atcoder"]
-        print("平台: 1.洛谷  2.Codeforces  3.AtCoder")
-        plat = input("选择: ").strip()
-        if not plat.isdigit() or not (1 <= int(plat) <= 3):
+        plat_item = select(platforms, "平台 (1.洛谷 2.Codeforces 3.AtCoder): ")
+        if not plat_item:
             print("❌ 无效选择"); return
-        pid   = input("题号: ").strip()
-        title = input("题目标题: ").strip()
+        pid   = ask("题号: ")
+        title = ask("题目标题: ")
         if not pid or not title:
             print("❌ 题号和标题不能为空"); return
-        full_score_input = input("满分 (默认100): ").strip()
+        full_score_input = ask("满分 (默认100): ")
         full_score = int(full_score_input) if full_score_input.isdigit() else 100
-        href = input("题解路径 (如 solutions/p1001.html，留空跳过): ").strip() or None
-        prob = {"pid": pid, "platform": platforms[int(plat)-1], "title": title, "full_score": full_score}
+        href = ask("题解路径 (如 solutions/p1001.html，留空跳过): ") or None
+        prob = {"pid": pid, "platform": plat_item, "title": title, "full_score": full_score}
         if href: prob["href"] = href
         content.setdefault('problems', []).append(prob)
         save_json(COURSES_FILE, data)
@@ -532,10 +575,9 @@ def interactive_add_problem_to_content():
     print("选择课程:")
     for i, c in enumerate(courses, 1):
         print(f"  {i}. {c['title']}")
-    choice = input("课程编号: ").strip()
-    if not choice.isdigit() or not (1 <= int(choice) <= len(courses)):
+    course = select(courses, "课程编号: ", label_fn=lambda c: c['title'])
+    if not course:
         print("❌ 无效选择"); return
-    course = courses[int(choice) - 1]
 
     contents = course.get('contents', [])
     if not contents:
@@ -544,23 +586,21 @@ def interactive_add_problem_to_content():
     print("选择课程内容:")
     for i, c in enumerate(contents, 1):
         print(f"  {i}. {c['title']}")
-    choice2 = input("内容编号: ").strip()
-    if not choice2.isdigit() or not (1 <= int(choice2) <= len(contents)):
+    content = select(contents, "内容编号: ", label_fn=lambda c: c['title'])
+    if not content:
         print("❌ 无效选择"); return
-    content = contents[int(choice2) - 1]
 
     platforms = ["luogu", "codeforces", "atcoder"]
-    print("平台: 1.洛谷  2.Codeforces  3.AtCoder")
-    plat = input("选择: ").strip()
-    if not plat.isdigit() or not (1 <= int(plat) <= 3):
+    plat_item = select(platforms, "平台 (1.洛谷 2.Codeforces 3.AtCoder): ")
+    if not plat_item:
         print("❌ 无效选择"); return
 
-    pid   = input("题号: ").strip()
-    title = input("题目标题: ").strip()
+    pid   = ask("题号: ")
+    title = ask("题目标题: ")
     if not pid or not title:
         print("❌ 题号和标题不能为空"); return
 
-    content.setdefault('problems', []).append({"pid": pid, "platform": platforms[int(plat)-1], "title": title})
+    content.setdefault('problems', []).append({"pid": pid, "platform": plat_item, "title": title})
     save_json(COURSES_FILE, data)
     print(f"✅ 已添加 {pid} 到「{content['title']}」")
 
@@ -576,13 +616,13 @@ def interactive_add_student():
     next_num = max(nums, default=0) + 1
     stu_id = f"stu-{str(next_num).zfill(3)}"
 
-    name = input("学生姓名: ").strip()
+    name = ask("学生姓名: ")
     if not name:
         print("❌ 姓名不能为空"); return
 
-    lg_uid    = input("洛谷 UID (数字，留空跳过): ").strip() or None
-    cf_handle = input("Codeforces handle (留空跳过): ").strip() or None
-    ac_handle = input("AtCoder handle (留空跳过): ").strip() or None
+    lg_uid    = ask("洛谷 UID (数字，留空跳过): ") or None
+    cf_handle = ask("Codeforces handle (留空跳过): ") or None
+    ac_handle = ask("AtCoder handle (留空跳过): ") or None
 
     record = {
         "id": stu_id, "name": name,
@@ -803,10 +843,10 @@ def _select_contest():
     print("\n比赛类型:")
     for i, t in enumerate(CONTEST_TYPES, 1):
         print(f"  {i}. {t}")
-    choice = input("选择: ").strip()
-    if not choice.isdigit() or not (1 <= int(choice) <= len(CONTEST_TYPES)):
-        print("❌ 无效选择"); return None
-    return CONTEST_TYPES[int(choice) - 1]
+    result = select(CONTEST_TYPES, "选择: ")
+    if not result:
+        print("❌ 无效选择")
+    return result
 
 
 def interactive_add_written():
@@ -823,7 +863,7 @@ def interactive_add_written():
     contest = _select_contest()
     if not contest: return
 
-    title = input("内容标题 (如 CSP-J 笔试专题): ").strip()
+    title = ask("内容标题 (如 CSP-J 笔试专题): ")
     if not title:
         print("❌ 标题不能为空"); return
 
@@ -832,7 +872,6 @@ def interactive_add_written():
     next_num = max(nums, default=0) + 1
     content_id = f"written-{str(next_num).zfill(3)}"
 
-    # 关联讲义
     lectures_data = load_json(LECTURES_FILE, default=[])
     course_lecs = [l for l in lectures_data if 'contest-prep' in l.get('courses', [])]
     linked_lecs = []
@@ -840,18 +879,17 @@ def interactive_add_written():
         print(f"\n备赛课程下的讲义 (空格分隔编号，直接回车跳过):")
         for i, l in enumerate(course_lecs, 1):
             print(f"  {i}. {l['title']}")
-        lec_input = input("选择讲义: ").strip()
+        lec_input = ask("选择讲义: ")
         linked_lecs = [course_lecs[int(x)-1]['id'] for x in lec_input.split()
                        if x.isdigit() and 1 <= int(x) <= len(course_lecs)]
 
-    # 添加笔试题目
     problems = []
     print("\n添加笔试题目 (输入 q 结束):")
     wp_num = 1
     while True:
-        name = input(f"  题目名称 (如 2024 CSP-J 初赛，q结束): ").strip()
+        name = ask("  题目名称 (如 2024 CSP-J 初赛，q结束): ")
         if name.lower() == 'q' or not name: break
-        url = input(f"  比赛链接 (URL): ").strip()
+        url = ask("  比赛链接 (URL): ")
         wp_id = f"wp-{str(wp_num).zfill(3)}"
         problems.append({"id": wp_id, "name": name, "url": url})
         wp_num += 1
@@ -882,18 +920,17 @@ def interactive_add_written_problem():
     print("选择笔试专题:")
     for i, c in enumerate(written_contents, 1):
         print(f"  {i}. {c['title']}")
-    choice = input("编号: ").strip()
-    if not choice.isdigit() or not (1 <= int(choice) <= len(written_contents)):
+    content = select(written_contents, "编号: ", label_fn=lambda c: c['title'])
+    if not content:
         print("❌ 无效选择"); return
-    content = written_contents[int(choice) - 1]
 
     existing_nums = [int(p['id'].split('-')[1]) for p in content.get('problems', []) if p.get('id','').startswith('wp-')]
     wp_num = max(existing_nums, default=0) + 1
 
-    name = input("题目名称 (如 2024 CSP-J 初赛): ").strip()
+    name = ask("题目名称 (如 2024 CSP-J 初赛): ")
     if not name:
         print("❌ 名称不能为空"); return
-    url = input("比赛链接 (URL): ").strip()
+    url = ask("比赛链接 (URL): ")
     wp_id = f"wp-{str(wp_num).zfill(3)}"
     content.setdefault('problems', []).append({"id": wp_id, "name": name, "url": url})
     save_json(COURSES_FILE, data)
@@ -914,7 +951,7 @@ def interactive_add_mock():
     contest = _select_contest()
     if not contest: return
 
-    title = input("模拟赛标题 (如 CSP-J 模拟赛 #1): ").strip()
+    title = ask("模拟赛标题 (如 CSP-J 模拟赛 #1): ")
     if not title:
         print("❌ 标题不能为空"); return
 
@@ -927,23 +964,31 @@ def interactive_add_mock():
     problems = []
     print("\n添加题目 (输入 q 结束):")
     while True:
-        pid = input("  题号 (q结束): ").strip()
+        pid = ask("  题号 (q结束): ")
         if pid.lower() == 'q' or not pid: break
-        prob_title = input("  题目标题: ").strip()
-        print("  平台: 1.洛谷  2.Codeforces  3.AtCoder")
-        plat = input("  选择: ").strip()
-        if not plat.isdigit() or not (1 <= int(plat) <= 3):
+        prob_title = ask("  题目标题: ")
+        plat_item = select(platforms, "  平台 (1.洛谷 2.Codeforces 3.AtCoder): ")
+        if not plat_item:
             print("  ❌ 无效平台，跳过"); continue
-        full_score_input = input("  满分 (默认100): ").strip()
+        full_score_input = ask("  满分 (默认100): ")
         full_score = int(full_score_input) if full_score_input.isdigit() else 100
-        href = input("  题解路径 (如 solutions/p1001.html，留空跳过): ").strip() or None
-        prob = {"pid": pid, "platform": platforms[int(plat)-1], "title": prob_title, "full_score": full_score}
+        href = ask("  题解路径 (如 solutions/p1001.html，留空跳过): ") or None
+        prob = {"pid": pid, "platform": plat_item, "title": prob_title, "full_score": full_score}
         if href: prob["href"] = href
         problems.append(prob)
         print(f"  ✓ 已添加 {pid}")
 
     content = {"id": content_id, "type": "mock", "contest": contest,
-               "title": title, "problems": problems, "scores": {}}
+               "title": title, "problems": problems, "scores": {}, "participants": []}
+    students = load_json(STUDENTS_FILE, default=[])
+    if students:
+        print("\n选择参与学生 (空格分隔编号，直接回车=全员参与):")
+        for i, s in enumerate(students, 1):
+            print(f"  {i}. {s['name']}")
+        sel = ask("选择: ")
+        if sel:
+            content["participants"] = [students[int(x)-1]['id'] for x in sel.split()
+                                        if x.isdigit() and 1 <= int(x) <= len(students)]
     contents.append(content)
     save_json(COURSES_FILE, data)
     print(f"✅ 已添加模拟赛「{title}」({content_id})")
@@ -967,10 +1012,9 @@ def interactive_set_scores():
     print("选择模拟赛:")
     for i, c in enumerate(mock_contents, 1):
         print(f"  {i}. {c['title']}")
-    choice = input("编号: ").strip()
-    if not choice.isdigit() or not (1 <= int(choice) <= len(mock_contents)):
+    content = select(mock_contents, "编号: ", label_fn=lambda c: c['title'])
+    if not content:
         print("❌ 无效选择"); return
-    content = mock_contents[int(choice) - 1]
 
     problems = content.get('problems', [])
     if not problems:
@@ -990,7 +1034,7 @@ def interactive_set_scores():
         skip = False
         for p in problems:
             cur = stu_scores.get(p['pid'], 0)
-            val = input(f"    {p['pid']} (满分{p.get('full_score',100)}, 当前{cur}): ").strip()
+            val = ask(f"    {p['pid']} (满分{p.get('full_score',100)}, 当前{cur}): ")
             if val.lower() == 's':
                 skip = True; break
             if val == '':
@@ -1002,6 +1046,43 @@ def interactive_set_scores():
 
     save_json(COURSES_FILE, data)
     print(f"\n✅ 分数已保存")
+
+
+def interactive_set_participants():
+    """设置模拟赛参与学生"""
+    print("\n" + "="*50)
+    print("👥 设置模拟赛参与学生")
+    print("="*50)
+
+    data = load_json(COURSES_FILE)
+    course = _get_contest_prep(data)
+    if not course:
+        print("❌ 未找到 contest-prep 课程"); return
+
+    mock_contents = [c for c in course.get('contents', []) if c.get('type') == 'mock']
+    if not mock_contents:
+        print("❌ 暂无模拟赛，请先用 add-mock 添加"); return
+
+    print("选择模拟赛:")
+    for i, c in enumerate(mock_contents, 1):
+        cur = c.get('participants', [])
+        print(f"  {i}. {c['title']} (当前: {'全员' if not cur else str(len(cur))+'人'})")
+    content = select(mock_contents, "编号: ", label_fn=lambda c: c['title'])
+    if not content:
+        print("❌ 无效选择"); return
+
+    students = load_json(STUDENTS_FILE, default=[])
+    cur_ids = content.get('participants', [])
+    print("\n选择参与学生 (空格分隔编号，直接回车=全员参与):")
+    for i, s in enumerate(students, 1):
+        mark = "✓" if s['id'] in cur_ids else " "
+        print(f"  {i}. [{mark}] {s['name']}")
+    sel = ask("选择: ")
+    content['participants'] = [students[int(x)-1]['id'] for x in sel.split()
+                                if x.isdigit() and 1 <= int(x) <= len(students)] if sel else []
+    save_json(COURSES_FILE, data)
+    result = '全员参与' if not content['participants'] else f"{len(content['participants'])} 名学生"
+    print(f"✅ 已更新「{content['title']}」参与学生：{result}")
 
 
 def show_help():
@@ -1027,6 +1108,7 @@ OI 工具箱 - 数据管理脚本
   add-written-problem   向已有笔试专题追加题目
   add-mock              添加上机模拟赛
   set-scores            录入模拟赛分数
+  set-participants      设置模拟赛参与学生
 
 其他：
   init                  初始化示例数据
@@ -1035,11 +1117,22 @@ OI 工具箱 - 数据管理脚本
 
 
 def main():
-    if len(sys.argv) < 2:
-        show_help()
-        return
+    COMMANDS = [
+        "create", "list", "add-lecture", "add-content", "add-problem",
+        "add-student", "fetch-submissions", "add-written", "add-written-problem",
+        "add-mock", "set-scores", "set-participants", "init", "help"
+    ]
 
-    command = sys.argv[1].lower()
+    if len(sys.argv) < 2:
+        if not _PT:
+            show_help()
+            print("\n💡 安装 prompt_toolkit 可启用 Tab 补全: pip install prompt_toolkit")
+            return
+        command = ask("命令 (Tab 补全): ", COMMANDS).lower()
+        if not command:
+            show_help(); return
+    else:
+        command = sys.argv[1].lower()
 
     if command == "create":
         interactive_create()
@@ -1063,6 +1156,8 @@ def main():
         interactive_add_mock()
     elif command == "set-scores":
         interactive_set_scores()
+    elif command == "set-participants":
+        interactive_set_participants()
     elif command == "init":
         init_examples()
     elif command == "help":
