@@ -34,5 +34,17 @@
       "字符串，状压DP，AC自动机"
     ],
     "problemUrl": "https://www.luogu.com.cn/problem/P2322"
+  },
+  {
+    "id": "004",
+    "pid": "ABC198_D",
+    "title": "Send More Money",
+    "source": "AtCoder",
+    "href": "solutions/abc198_d.html",
+    "diff": "普及/提高-",
+    "tags": [
+      "全排列"
+    ],
+    "problemUrl": "https://atcoder.jp/contests/abc198/tasks/abc198_d?lang=en"
   }
 ]

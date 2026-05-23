@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-21T06:46:21Z",
+  "updated_at": "2026-05-23T02:43:46Z",
   "data": {
     "stu-001": {
       "luogu": {
@@ -170,6 +170,14 @@
         "P5721": {
           "status": "ac",
           "score": 100
+        },
+        "B2086": {
+          "status": "ac",
+          "score": 100
+        },
+        "B4002": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {
@@ -319,10 +327,16 @@
         "P5721": {
           "status": "ac",
           "score": 100
+        },
+        "B4002": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {},
-      "atcoder": {}
+      "atcoder": {
+        "abc455_c": "ac"
+      }
     },
     "stu-004": {
       "luogu": {
@@ -417,6 +431,10 @@
         "P5721": {
           "status": "ac",
           "score": 100
+        },
+        "B2086": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {},
@@ -505,6 +523,10 @@
           "score": 100
         },
         "P5721": {
+          "status": "ac",
+          "score": 100
+        },
+        "B4002": {
           "status": "ac",
           "score": 100
         }

@@ -393,7 +393,14 @@
               "full_score": 100
             }
           ],
-          "scores": {},
+          "scores": {
+            "stu-005": {
+              "abc458_b": 100,
+              "abc084_d": 30,
+              "abc130_d": 60,
+              "abc280_d": 15
+            }
+          },
           "participants": [
             "stu-003",
             "stu-004",
