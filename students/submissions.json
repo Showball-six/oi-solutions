@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23T04:24:38Z",
+  "updated_at": "2026-05-23T07:50:12Z",
   "data": {
     "stu-001": {
       "luogu": {
@@ -337,7 +337,8 @@
       "atcoder": {
         "abc455_c": "ac",
         "abc084_d": "ac",
-        "abc458_b": "ac"
+        "abc458_b": "ac",
+        "abc280_d": "attempted"
       }
     },
     "stu-004": {
@@ -440,7 +441,9 @@
         }
       },
       "codeforces": {},
-      "atcoder": {}
+      "atcoder": {
+        "abc458_b": "ac"
+      }
     },
     "stu-005": {
       "luogu": {
