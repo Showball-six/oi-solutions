@@ -283,6 +283,64 @@
             "lec-011",
             "lec-012"
           ],
+          "problems": [
+            {
+              "type": "divider",
+              "lecture": "lec-010"
+            },
+            {
+              "pid": "B2089",
+              "platform": "luogu",
+              "title": "数组逆序重存放"
+            },
+            {
+              "pid": "B2087",
+              "platform": "luogu",
+              "title": "与指定数字相同的数的个数"
+            },
+            {
+              "pid": "P1428",
+              "platform": "luogu",
+              "title": "小鱼比可爱"
+            },
+            {
+              "pid": "P5727",
+              "platform": "luogu",
+              "title": "【深基5.例3】冰雹猜想"
+            },
+            {
+              "pid": "B2091",
+              "platform": "luogu",
+              "title": "向量点积计算"
+            },
+            {
+              "pid": "B2094",
+              "platform": "luogu",
+              "title": "不与最大数相同的数字之和"
+            },
+            {
+              "pid": "P1177",
+              "platform": "luogu",
+              "title": "【模板】排序"
+            }
+          ]
+        },
+        {
+          "id": "content-006",
+          "title": "字符串",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-007",
+          "title": "函数",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-008",
+          "title": "结构体、指针与引用",
+          "lectures": [],
           "problems": []
         }
       ]
@@ -291,13 +349,147 @@
       "id": "algo-basics",
       "title": "算法基础课程",
       "color": "blue",
-      "contents": []
+      "contents": [
+        {
+          "id": "content-001",
+          "title": "枚举法",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-002",
+          "title": "模拟法",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-003",
+          "title": "递归与递推",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-004",
+          "title": "排序",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-005",
+          "title": "进制转换",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-006",
+          "title": "双指针算法(尺取法)",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-007",
+          "title": "前缀和与差分",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-08",
+          "title": "数学",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-09",
+          "title": "离散与组合数学",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-010",
+          "title": "贪心策略",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-011",
+          "title": "高精度",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-012",
+          "title": "二分",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-013",
+          "title": "数据结构",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-014",
+          "title": "搜索",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-015",
+          "title": "图论",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-016",
+          "title": "动态规划",
+          "lectures": [],
+          "problems": []
+        }
+      ]
     },
     {
       "id": "basics-to-improve",
       "title": "基础提高衔接课程",
       "color": "orange",
-      "contents": []
+      "contents": [
+        {
+          "id": "content-001",
+          "title": "并查集",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-002",
+          "title": "最短路",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-003",
+          "title": "最小生成树",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-004",
+          "title": "常见优化技巧",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-005",
+          "title": "动态规划进阶",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-006",
+          "title": "数学",
+          "lectures": [],
+          "problems": []
+        }
+      ]
     },
     {
       "id": "algo-improve",
@@ -346,6 +538,42 @@
               "title": "【模板】后缀自动机（SAM）"
             }
           ]
+        },
+        {
+          "id": "content-003",
+          "title": "数据结构",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-004",
+          "title": "字符串算法",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-005",
+          "title": "搜索",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-006",
+          "title": "图论",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-007",
+          "title": "动态规划",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-008",
+          "title": "数论与组合数学",
+          "lectures": [],
+          "problems": []
         }
       ]
     },
@@ -400,13 +628,13 @@
               "abc130_d": 60,
               "abc280_d": 15
             },
-            "stu-003":{
+            "stu-003": {
               "abc458_b": 100,
               "abc084_d": 60,
               "abc130_d": 60,
               "abc280_d": 17
             },
-            "stu-004":{
+            "stu-004": {
               "abc458_b": 100,
               "abc084_d": 60,
               "abc130_d": 83,

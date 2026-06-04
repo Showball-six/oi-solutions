@@ -46,5 +46,17 @@
       "全排列"
     ],
     "problemUrl": "https://atcoder.jp/contests/abc198/tasks/abc198_d?lang=en"
+  },
+  {
+    "id": "005",
+    "pid": "CF1324E",
+    "title": "Sleeping Schedule",
+    "source": "CF",
+    "href": "solutions/cf1324e.html",
+    "diff": "普及+/提高",
+    "tags": [
+      "动态规划(DP)"
+    ],
+    "problemUrl": "https://codeforces.com/problemset/problem/1324/E"
   }
 ]
