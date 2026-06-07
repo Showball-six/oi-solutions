@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07T02:42:45Z",
+  "updated_at": "2026-06-07T07:00:00Z",
   "data": {
     "stu-001": {
       "luogu": {
@@ -711,6 +711,14 @@
         "P5722": {
           "status": "ac",
           "score": 100
+        },
+        "B2089": {
+          "status": "ac",
+          "score": 100
+        },
+        "P1428": {
+          "status": "ac",
+          "score": 100
         }
       },
       "codeforces": {},
@@ -763,6 +771,10 @@
           "score": 100
         },
         "P5724": {
+          "status": "ac",
+          "score": 100
+        },
+        "P1307": {
           "status": "ac",
           "score": 100
         }
