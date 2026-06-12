@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-12T02:43:06Z",
+  "updated_at": "2026-06-12T07:15:19Z",
   "data": {
     "stu-001": {
       "luogu": {
@@ -192,6 +192,14 @@
           "score": 100
         },
         "P1177": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2013": {
+          "status": "ac",
+          "score": 100
+        },
+        "B2028": {
           "status": "ac",
           "score": 100
         }
