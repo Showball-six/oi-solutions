@@ -353,7 +353,7 @@
         {
           "id": "content-001",
           "title": "枚举法",
-          "lectures": [],
+          "lectures": ["lec-013"],
           "problems": []
         },
         {
