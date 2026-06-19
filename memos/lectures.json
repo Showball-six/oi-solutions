@@ -186,5 +186,19 @@
     ],
     "href": "memos/lec-013.html",
     "created": "2026-06-17"
+  },
+  {
+    "id": "lec-014",
+    "slug": "lec-014",
+    "title": "枚举法",
+    "tags": [
+      "算法基础课程"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-014.html",
+    "created": "2026-06-19"
   }
 ]
