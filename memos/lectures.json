@@ -200,5 +200,61 @@
     "topics": [],
     "href": "memos/lec-014.html",
     "created": "2026-06-19"
+  },
+  {
+    "id": "lec-015",
+    "slug": "lec-015",
+    "title": "字符串的基本概念",
+    "tags": [
+      "语法基础课程"
+    ],
+    "courses": [
+      "syntax-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-015.html",
+    "created": "2026-06-25"
+  },
+  {
+    "id": "lec-016",
+    "slug": "lec-016",
+    "title": "函数的基本概念",
+    "tags": [
+      "语法基础课程"
+    ],
+    "courses": [
+      "syntax-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-016.html",
+    "created": "2026-06-25"
+  },
+  {
+    "id": "lec-017",
+    "slug": "lec-017",
+    "title": "结构体",
+    "tags": [
+      "语法基础课程"
+    ],
+    "courses": [
+      "syntax-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-017.html",
+    "created": "2026-06-25"
+  },
+  {
+    "id": "lec-018",
+    "slug": "lec-018",
+    "title": "指针与引用",
+    "tags": [
+      "语法入门"
+    ],
+    "courses": [
+      "syntax-basics"
+    ],
+    "topics": [],
+    "href": "memos/lec-018.html",
+    "created": "2026-06-25"
   }
 ]

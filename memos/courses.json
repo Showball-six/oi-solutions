@@ -328,19 +328,19 @@
         {
           "id": "content-006",
           "title": "字符串",
-          "lectures": [],
+          "lectures": ["lec-015"],
           "problems": []
         },
         {
           "id": "content-007",
           "title": "函数",
-          "lectures": [],
+          "lectures": ["lec-016"],
           "problems": []
         },
         {
           "id": "content-008",
           "title": "结构体、指针与引用",
-          "lectures": [],
+          "lectures": ["lec-017","lec-018"],
           "problems": []
         }
       ]
