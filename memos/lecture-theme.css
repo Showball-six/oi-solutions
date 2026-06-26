@@ -47,49 +47,38 @@
 #write blockquote.lec-warn { border-left: 4px solid #e67e22 !important; background: #fef5e7; }
 #write blockquote.lec-key  { border-left: 4px solid #9d3dcf !important; background: #f5eefa; }
 
-/* ── 代码块 ── */
-#write pre {
-  position: relative;
-  border-radius: 8px !important;
-  overflow: hidden !important;
+/* ── 代码块 wrapper + header bar ── */
+.lec-code-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1em 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
-.lec-lang-badge {
-  position: absolute; top: 7px; right: 52px;
-  font-size: 11px; color: #aaa;
-  font-family: 'Fira Code', monospace;
-  user-select: none;
+.lec-code-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 7px 12px;
+  background: #1e2d1e;
+  cursor: default;
 }
-.lec-copy-btn {
-  position: absolute; top: 5px; right: 8px;
-  padding: 2px 9px; font-size: 11px;
-  background: #3a3a3a; color: #ccc;
+.lec-lang-name {
+  font-size: 11px; color: #5a9e5a;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  text-transform: uppercase; letter-spacing: .05em;
+}
+.lec-header-actions { display: flex; gap: 6px; }
+.lec-header-btn {
+  padding: 2px 10px; font-size: 11px;
+  background: #2d4a2d; color: #a8d5a8;
   border: none; border-radius: 4px; cursor: pointer;
-  transition: background .2s, color .2s;
+  transition: background .15s, color .15s;
   font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
-.lec-copy-btn:hover { background: #52c41a; color: #fff; }
-.lec-copy-btn.copied { background: #52c41a; color: #fff; }
+.lec-header-btn:hover { background: #52c41a; color: #fff; }
 
-/* ── 代码块收缩/展开 ── */
-.lec-code-wrap { position: relative; }
-.lec-code-wrap.lec-collapsed { max-height: 220px; overflow: hidden; }
-.lec-code-wrap.lec-collapsed::after {
-  content: '';
-  position: absolute; bottom: 30px; left: 0; right: 0;
-  height: 60px;
-  background: linear-gradient(transparent, #f8f8f8);
-  pointer-events: none;
-}
-.lec-toggle-btn {
-  display: block; width: 100%;
-  padding: 5px 0; text-align: center;
-  background: #f0f0f0; color: #666;
-  border: none; border-top: 1px solid #e8eaed;
-  cursor: pointer; font-size: 12px;
-  border-radius: 0 0 8px 8px;
-  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
-}
-.lec-toggle-btn:hover { color: #52c41a; }
+/* 折叠区域：默认 max-height:0 完全隐藏 */
+.lec-code-inner { overflow: hidden; transition: max-height .25s ease; }
+.lec-code-inner.lec-collapsed { max-height: 0; }
+.lec-code-inner.lec-expanded  { max-height: 9999px; }
 
 /* ── 表格美化 ── */
 #write table {

@@ -8,7 +8,7 @@
     bar.style.width = Math.min(pct, 100) + '%';
   });
 
-  // 2. Callout 检测：blockquote 首字符匹配
+  // 2. Callout 检测
   const CALLOUT_MAP = [
     [/^(📌|重点|关键)/, 'lec-key'],
     [/^(💡|提示|tip)/i, 'lec-tip'],
@@ -20,48 +20,75 @@
     for (const [re, cls] of CALLOUT_MAP) {
       if (re.test(text)) { bq.classList.add(cls); return; }
     }
-    bq.classList.add('lec-tip'); // 默认
+    bq.classList.add('lec-tip');
   });
 
-  // 3. 代码块：语言 badge + 复制按钮
+  // 3. 代码块：header bar（语言 + 展开 + 复制）
   document.querySelectorAll('#write pre, .typora-export pre').forEach(function (pre) {
+    if (pre.closest('.CodeMirror')) return;
+
+    const cmLines = pre.querySelectorAll('.CodeMirror-line');
+    const cmCodeLines = pre.querySelectorAll('.CodeMirror-code pre');
+    const isCM = cmLines.length > 0;
     const code = pre.querySelector('code');
-    if (!code) return;
+    if (!isCM && !code) return;
 
-    const lang = Array.from(code.classList).find(function (c) { return c.startsWith('language-'); });
-    if (lang) {
-      const badge = document.createElement('span');
-      badge.className = 'lec-lang-badge';
-      badge.textContent = lang.slice(9);
-      pre.appendChild(badge);
-    }
+    const langAttr = pre.getAttribute('lang');
+    const langCls = code && Array.from(code.classList).find(function (c) { return c.startsWith('language-'); });
+    const lang = langAttr || (langCls ? langCls.slice(9) : 'code');
 
-    const btn = document.createElement('button');
-    btn.className = 'lec-copy-btn';
-    btn.textContent = '复制';
-    btn.addEventListener('click', function () {
-      navigator.clipboard.writeText(code.innerText).then(function () {
-        btn.textContent = '已复制';
-        btn.classList.add('copied');
-        setTimeout(function () { btn.textContent = '复制'; btn.classList.remove('copied'); }, 2000);
+    // Header bar
+    const header = document.createElement('div');
+    header.className = 'lec-code-header';
+
+    const langLabel = document.createElement('span');
+    langLabel.className = 'lec-lang-name';
+    langLabel.textContent = lang;
+    header.appendChild(langLabel);
+
+    const actions = document.createElement('div');
+    actions.className = 'lec-header-actions';
+
+    const toggleBtn = document.createElement('button');
+    toggleBtn.className = 'lec-header-btn';
+    toggleBtn.textContent = '▶ 展开代码';
+
+    const copyBtn = document.createElement('button');
+    copyBtn.className = 'lec-header-btn';
+    copyBtn.textContent = '复制';
+    copyBtn.addEventListener('click', function () {
+      const src = isCM ? cmCodeLines : null;
+      const text = src && src.length
+        ? Array.from(src).map(function (l) { return l.textContent.replace(/\u200b/g, '').replace(/\u00a0/g, ' '); }).join('\n')
+        : code ? code.textContent : '';
+      navigator.clipboard.writeText(text).then(function () {
+        copyBtn.textContent = '已复制';
+        setTimeout(function () { copyBtn.textContent = '复制'; }, 2000);
       });
     });
-    pre.appendChild(btn);
 
-    // 收缩/展开：超过 15 行才折叠
-    if (code.textContent.split('\n').length > 15) {
-      const wrap = document.createElement('div');
-      wrap.className = 'lec-code-wrap lec-collapsed';
-      pre.parentNode.insertBefore(wrap, pre);
-      wrap.appendChild(pre);
-      const toggleBtn = document.createElement('button');
-      toggleBtn.className = 'lec-toggle-btn';
-      toggleBtn.textContent = '▼ 展开代码';
-      toggleBtn.addEventListener('click', function () {
-        const collapsed = wrap.classList.toggle('lec-collapsed');
-        toggleBtn.textContent = collapsed ? '▼ 展开代码' : '▲ 收起代码';
-      });
-      wrap.appendChild(toggleBtn);
-    }
+    actions.appendChild(toggleBtn);
+    actions.appendChild(copyBtn);
+    header.appendChild(actions);
+
+    // 折叠容器（默认折叠）
+    const inner = document.createElement('div');
+    inner.className = 'lec-code-inner lec-collapsed';
+
+    toggleBtn.addEventListener('click', function () {
+      const isCollapsed = inner.classList.contains('lec-collapsed');
+      inner.classList.toggle('lec-collapsed', !isCollapsed);
+      inner.classList.toggle('lec-expanded', isCollapsed);
+      toggleBtn.textContent = isCollapsed ? '▼ 收起代码' : '▶ 展开代码';
+    });
+
+    // 组装：先把 wrap 插入正确位置，再移动 pre
+    const wrap = document.createElement('div');
+    wrap.className = 'lec-code-wrap';
+    wrap.appendChild(header);
+    const parent = pre.parentNode;
+    parent.insertBefore(wrap, pre); // wrap 占位（pre 仍在 parent 中）
+    inner.appendChild(pre);         // pre 从 parent 移入 inner
+    wrap.appendChild(inner);
   });
 })();
