@@ -377,7 +377,7 @@
         {
           "id": "content-005",
           "title": "进制转换",
-          "lectures": [],
+          "lectures": ["lec-019","lec-020"],
           "problems": []
         },
         {

@@ -1086,6 +1086,30 @@ def interactive_set_participants():
     print(f"✅ 已更新「{content['title']}」参与学生：{result}")
 
 
+def polish_html(target=None):
+    """后处理 Typora 导出的讲义 HTML，注入增强样式和功能"""
+    if target and target != 'all':
+        files = [MEMOS_DIR / target] if not target.startswith('memos/') else [Path(target)]
+    else:
+        files = sorted(MEMOS_DIR.glob('lec-*.html'))
+
+    if not files:
+        print("❌ 未找到讲义 HTML 文件"); return
+
+    for path in files:
+        if not path.exists():
+            print(f"❌ 文件不存在: {path}"); continue
+        with open(path, 'r', encoding='utf-8') as f:
+            html = f.read()
+        if 'lecture-theme.css' in html:
+            print(f"⚠️  已处理过: {path.name}（跳过）"); continue
+        html = html.replace('</head>', '<link rel="stylesheet" href="lecture-theme.css">\n</head>', 1)
+        html = html.replace('</body>', '<script src="lecture-enhance.js"></script>\n</body>', 1)
+        with open(path, 'w', encoding='utf-8') as f:
+            f.write(html)
+        print(f"✅ 已增强: {path.name}")
+
+
 def show_help():
     """显示帮助信息"""
     print("""
@@ -1121,7 +1145,7 @@ def main():
     COMMANDS = [
         "create", "list", "add-lecture", "add-content", "add-problem",
         "add-student", "fetch-submissions", "add-written", "add-written-problem",
-        "add-mock", "set-scores", "set-participants", "init", "help"
+        "add-mock", "set-scores", "set-participants", "polish", "init", "help"
     ]
 
     if len(sys.argv) < 2:
@@ -1159,6 +1183,9 @@ def main():
         interactive_set_scores()
     elif command == "set-participants":
         interactive_set_participants()
+    elif command == "polish":
+        target = sys.argv[2] if len(sys.argv) > 2 else 'all'
+        polish_html(target)
     elif command == "init":
         init_examples()
     elif command == "help":

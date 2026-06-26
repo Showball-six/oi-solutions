@@ -256,5 +256,37 @@
     "topics": [],
     "href": "memos/lec-018.html",
     "created": "2026-06-25"
+  },
+  {
+    "id": "lec-019",
+    "slug": "lec-019",
+    "title": "进制转换",
+    "tags": [
+      "算法基础课程"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "basic-algo"
+    ],
+    "href": "memos/lec-019.html",
+    "created": "2026-06-25"
+  },
+  {
+    "id": "lec-020",
+    "slug": "lec-020",
+    "title": "位运算",
+    "tags": [
+      "基础算法课程"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "basic-algo"
+    ],
+    "href": "memos/lec-020.html",
+    "created": "2026-06-25"
   }
 ]
