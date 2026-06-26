@@ -1101,8 +1101,9 @@ def polish_html(target=None):
             print(f"❌ 文件不存在: {path}"); continue
         with open(path, 'r', encoding='utf-8') as f:
             html = f.read()
-        if 'lecture-theme.css' in html:
-            print(f"⚠️  已处理过: {path.name}（跳过）"); continue
+        # 先剥离旧注入，再重注入（幂等）
+        html = html.replace('<link rel="stylesheet" href="lecture-theme.css">\n', '')
+        html = html.replace('<script src="lecture-enhance.js"></script>\n', '')
         html = html.replace('</head>', '<link rel="stylesheet" href="lecture-theme.css">\n</head>', 1)
         html = html.replace('</body>', '<script src="lecture-enhance.js"></script>\n</body>', 1)
         with open(path, 'w', encoding='utf-8') as f:

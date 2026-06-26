@@ -47,5 +47,21 @@
       });
     });
     pre.appendChild(btn);
+
+    // 收缩/展开：超过 15 行才折叠
+    if (code.textContent.split('\n').length > 15) {
+      const wrap = document.createElement('div');
+      wrap.className = 'lec-code-wrap lec-collapsed';
+      pre.parentNode.insertBefore(wrap, pre);
+      wrap.appendChild(pre);
+      const toggleBtn = document.createElement('button');
+      toggleBtn.className = 'lec-toggle-btn';
+      toggleBtn.textContent = '▼ 展开代码';
+      toggleBtn.addEventListener('click', function () {
+        const collapsed = wrap.classList.toggle('lec-collapsed');
+        toggleBtn.textContent = collapsed ? '▼ 展开代码' : '▲ 收起代码';
+      });
+      wrap.appendChild(toggleBtn);
+    }
   });
 })();

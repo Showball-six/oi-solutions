@@ -70,6 +70,27 @@
 .lec-copy-btn:hover { background: #52c41a; color: #fff; }
 .lec-copy-btn.copied { background: #52c41a; color: #fff; }
 
+/* ── 代码块收缩/展开 ── */
+.lec-code-wrap { position: relative; }
+.lec-code-wrap.lec-collapsed { max-height: 220px; overflow: hidden; }
+.lec-code-wrap.lec-collapsed::after {
+  content: '';
+  position: absolute; bottom: 30px; left: 0; right: 0;
+  height: 60px;
+  background: linear-gradient(transparent, #f8f8f8);
+  pointer-events: none;
+}
+.lec-toggle-btn {
+  display: block; width: 100%;
+  padding: 5px 0; text-align: center;
+  background: #f0f0f0; color: #666;
+  border: none; border-top: 1px solid #e8eaed;
+  cursor: pointer; font-size: 12px;
+  border-radius: 0 0 8px 8px;
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+.lec-toggle-btn:hover { color: #52c41a; }
+
 /* ── 表格美化 ── */
 #write table {
   border-radius: 8px;
