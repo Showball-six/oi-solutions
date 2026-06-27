@@ -53,12 +53,13 @@ oi-solutions/
 
 - `id`: 三位零填充顺序编号，递增
 - `source`: 平台标识，值为 `"CF"` / `"洛谷"` / `"AtCoder"`
-- `diff`: 严格使用洛谷难度标签（见下方列表）
-- `tags`: 字符串数组，每项用顿号分隔多个标签
+- `diff`: 严格使用洛谷难度标签（见下方列表），否则前端 `difficultyClassMap` 匹配不到颜色 class，会回退为「未评定」灰色
+- `tags`: 字符串数组（注意：现有数据里每个元素内部用中文顿号「，」把多个标签拼在一个字符串里，而非拆成多个数组项）
 - `href`: 相对路径，指向 `solutions/` 下的 HTML 文件
+- `problemUrl`: 可选。若缺省，前端 `buildRow`（index.html）会根据 `source`/`pid` 自动推导洛谷/CF/AtCoder 链接
 
-**洛谷难度标签（有序）**:
-入门 / 普及- / 普及/提高- / 普及+/提高 / 提高+/省选- / 省选/NOI- / NOI/NOI+/CTSC
+**洛谷难度标签（有序，需与 index.html 的 `difficultyRank` / `difficultyClassMap` 完全一致）**:
+入门 / 普及- / 普及/提高- / 普及+/提高 / 提高+/省选- / 省选/NOI- / NOI（另有「未评定」作为兜底）
 
 ### memos/lectures.json
 
@@ -66,16 +67,22 @@ oi-solutions/
 [
   {
     "id": "lec-001",
+    "slug": "lec-001",
     "title": "AC自动机",
-    "date": "2026-05-13",
-    "topics": ["字符串"],
-    "file": "memos/lec-001.html"
+    "tags": ["ACAM"],
+    "courses": ["algo-improve"],
+    "topics": ["string"],
+    "href": "memos/lec-001.html",
+    "created": "2026-05-13"
   }
 ]
 ```
 
-- `id`: 格式 `lec-NNN`（三位零填充）
-- `topics`: 对应 courses.json 中的 topic id 数组
+- `id` / `slug`: 格式 `lec-NNN`（三位零填充），由 script.py 自动生成；slug 决定 HTML 文件名
+- `courses`: 所属课程 id 数组（对应 courses.json 中的 course id）
+- `topics`: 所属知识点 id 数组（对应 courses.json 中的 topic id，如 `dp/string/math`）
+- `href`: 相对项目根目录的 HTML 路径
+- `created`: 创建日期 `YYYY-MM-DD`
 
 ### students/students.json
 
@@ -83,16 +90,16 @@ oi-solutions/
 [
   {
     "id": "stu-001",
-    "name": "Showball",
+    "name": "海老师",
     "luogu_uid": "728487",
-    "codeforces_handle": "Showball",
+    "codeforces_handle": "5h0wba11",
     "atcoder_handle": "Showball"
   }
 ]
 ```
 
 - `id`: 格式 `stu-NNN`（三位零填充）
-- 未注册的平台留空字符串 `""`
+- 未注册的平台字段值为 `null`（script.py 用 `input() or None` 生成），fetch-submissions 会跳过为 null 的平台
 
 ---
 
@@ -136,13 +143,13 @@ python script.py <command>
   "title": "CSP-J 笔试专题",
   "lectures": ["lec-010"],
   "problems": [
-    { "id": "wp-001", "name": "2024 CSP-J 初赛", "href": "memos/written-cspj-2024.html" }
+    { "id": "wp-001", "name": "2024 CSP-J 初赛", "url": "https://..." }
   ]
 }
 ```
 - `problems[].id`：格式 `wp-NNN`，由 script.py 自动生成
-- `problems[].href`：相对于项目根目录的讲解 HTML 路径
-- 页面展示：讲义列表 + 笔试题目列表（含「详细讲解」按钮）+ 学生完成情况矩阵
+- `problems[].url`：外部比赛/题目链接（detail.html 读取的是 `p.url`，以 `target="_blank"` 打开，**不是** `href`）
+- 页面展示：讲义列表 + 笔试题目列表（含「查看题目 →」按钮）+ 学生完成情况矩阵
 
 **上机模拟赛**（`type: "mock"`）：
 ```json
@@ -157,11 +164,14 @@ python script.py <command>
   "scores": {
     "stu-001": { "P1001": 100 },
     "stu-002": { "P1001": 80 }
-  }
+  },
+  "participants": ["stu-003", "stu-004"]
 }
 ```
-- `scores`：手动录入，key 为 student id，value 为 `{pid: 分数}` 映射
-- 页面展示：题目列表 + 按总分降序排名表 + 补题情况矩阵（从 submissions.json 读取）
+- `scores`：由 `set-scores` 手动录入，key 为 student id，value 为 `{pid: 分数}` 映射
+- `participants`：参赛学生 id 数组；**为空数组时表示全员参与**（detail.html 据此过滤排名表）
+- `problems[].href`：可选，指向本地题解 HTML
+- 页面展示：题目列表 + 按总分降序排名表（含奖牌）+ 补题情况矩阵（从 submissions.json 读取）；同一 contest 下有多场 mock 时，分区页还会用手写 SVG 画总分趋势折线图
 
 ### 支持的比赛类型
 
@@ -174,101 +184,68 @@ python script.py <command>
 ### 整体风格
 
 - **纯原生 HTML + CSS + JS**，无任何前端框架（无 Vue/React/Tailwind）
-- 所有页面共享同一套内联样式（`<style>` 块直接写在 `<head>` 内）
-- 字体：`'PingFang SC', 'Microsoft YaHei', sans-serif`
-- 背景色：`#f5f7fa`（浅灰）；卡片/容器背景：`#ffffff`
+- 每个页面在 `<head>` 内内联自己的 `<style>`，**没有共享样式表**——设计 token 通过一组 CSS 变量在各页面间复制粘贴，改主题需逐页同步
+- 字体变量 `--font: 'Noto Sans SC', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif`（从 Google Fonts 引入 Noto Sans SC）
+- 等宽字体变量 `--mono: 'Menlo','Consolas','Courier New', monospace`
 
-### 页面结构（每个主页面都有）
+### 核心 CSS 变量（绿色主题）
 
-```html
-<!-- 顶栏 -->
-<div class="topbar">
-  <div class="topbar-left">
-    <a href="..."><img src="tx.jpg" ...></a>  <!-- logo -->
-    <span class="site-title">...</span>
-  </div>
-  <div class="topbar-right">
-    <span id="clock"></span>  <!-- 实时时钟 -->
-  </div>
-</div>
-
-<!-- 导航卡片组 -->
-<div class="nav-cards">
-  <a class="nav-card active" href="index.html">做题记录</a>
-  <a class="nav-card" href="memos.html">课程</a>
-  <a class="nav-card" href="templates.html">模板</a>
-  <a class="nav-card" href="tools.html">小工具</a>
-</div>
-
-<!-- 主内容 -->
-<div class="container">...</div>
-
-<!-- 页脚 -->
-<div class="footer">2026 © Showball's OI 工具箱</div>
+```css
+--green:#52C41A; --green-light:#f0fbe8; --green-dark:#3da613;  /* 主色 */
+--blue:#3498db;  --blue-light:#ebf5fb;
+--orange:#e67e22;--orange-light:#fef5e7;
+--purple:#9d3dcf;--purple-light:#f5eefa;
+--bg:#f4f5f7; --white:#fff; --text:#1a1a1a;
+--text-sub:#8e8e93; --text-light:#b0b0b6; --border:#e8eaed;
+--radius:10px;
+--shadow-sm:0 1px 3px rgba(0,0,0,.04),0 1px 2px rgba(0,0,0,.06);
+--shadow-md:0 4px 12px rgba(0,0,0,.08);
 ```
 
-### 颜色系统
+### 页面骨架（index.html / memos.html / detail.html 共用）
 
-**难度颜色**（对应洛谷配色）：
+```html
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="logo"><div class="logo-icon"><img src="tx.jpg"></div><span>Showball's OI 工具箱</span></a>
+    <span class="topbar-time" id="clock"></span>   <!-- 实时时钟 -->
+  </div>
+</header>
+<div class="container">
+  <div class="nav-cards"> … 四个 .nav-card：做题记录/课程/模板/小工具 … </div>
+  …主内容…
+</div>
+<footer class="site-footer">2026 &copy; Showball's OI 工具箱</footer>
+```
+
+> 注意：实际类名是 `.topbar/.topbar-inner/.logo/.nav-cards/.nav-card/.site-footer`，导航卡片**没有** `.active` 高亮态。
+
+### 难度颜色（index.html 中的 `.diff-*` class，对应洛谷配色）
 
 | 难度 | CSS 类 | 颜色 |
 |---|---|---|
-| 入门 | `.diff-intro` | `#fe4c61` |
-| 普及- | `.diff-easy` | `#f39c11` |
-| 普及/提高- | `.diff-normal` | `#ffc116` |
-| 普及+/提高 | `.diff-hard` | `#52c41a` |
-| 提高+/省选- | `.diff-harder` | `#3498db` |
-| 省选/NOI- | `.diff-expert` | `#9d3dcf` |
-| NOI/NOI+/CTSC | `.diff-master` | `#0e1d69` |
+| 入门 | `.diff-beginner` | `#FE4C61` |
+| 普及- | `.diff-basic-minus` | `#F39C11` |
+| 普及/提高- | `.diff-basic-improve-minus` | `#FFC116` |
+| 普及+/提高 | `.diff-basic-improve` | `#52C41A` |
+| 提高+/省选- | `.diff-improve-province-minus` | `#3498DB` |
+| 省选/NOI- | `.diff-province-noi-minus` | `#9D3DCF` |
+| NOI | `.diff-noi` | `#0E1D69` |
+| 未评定（兜底） | `.diff-unrated` | `#BFBFBF` |
 
-**学生提交状态点**（detail.html 矩阵）：
+难度名 → class 的映射写在 index.html 的 `difficultyClassMap` 中；新增难度需同时更新 CSS、`difficultyClassMap`、`difficultyRank`。
 
-| 状态 | 颜色 |
-|---|---|
-| AC（通过） | `#52c41a`（绿） |
-| 已尝试（未AC） | `#f39c11`（橙） |
-| 未提交 | `#e0e0e0`（灰） |
+### 学生提交状态点（detail.html 完成矩阵）
 
-### 组件样式规范
-
-**卡片**：
-```css
-border-radius: 12px;
-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-padding: 20px 24px;
-```
-
-**按钮/导航卡片激活状态**：
-```css
-background: #4a9eff;
-color: white;
-border-radius: 8px;
-```
-
-**表格**：无边框，行 hover 背景 `#f0f7ff`，`border-radius: 12px` 包裹容器
-
-**标签（tag）**：
-```css
-background: #eef2ff;
-color: #4a6fa5;
-border-radius: 4px;
-font-size: 12px;
-padding: 2px 8px;
-```
+| 状态 | class | 颜色 |
+|---|---|---|
+| AC（通过） | `.status-ac` | `#52c41a`（绿） |
+| 已尝试（未AC） | `.status-attempted` | `#fa8c16`（橙） |
+| 未提交 | `.status-none` | `#d9d9d9`（灰） |
 
 ### 实时时钟
 
-每个主页面的顶栏右侧都有实时时钟，固定格式：
-
-```js
-function tick() {
-  const now = new Date();
-  document.getElementById('clock').textContent =
-    now.toLocaleTimeString('zh-CN', { hour12: false });
-}
-setInterval(tick, 1000);
-tick();
-```
+各主页面顶栏右侧 `#clock`，用自调用的 `tick()` 每秒刷新，格式 `YYYY-MM-DD HH:MM:SS`（手动 zero-pad，非 `toLocaleTimeString`）。
 
 ---
 

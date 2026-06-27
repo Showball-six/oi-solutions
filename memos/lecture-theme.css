@@ -89,6 +89,6 @@
   width: 100%;
 }
 #write thead tr { background: #52c41a !important; }
-#write thead th { color: #fff !important; border: none !important; padding: 10px 14px !important; }
+#write thead th { background: #52c41a !important; color: #fff !important; border: none !important; padding: 10px 14px !important; }
 #write tbody tr:hover { background: #f0fbe8 !important; }
 #write tbody td { border-color: #e8eaed !important; padding: 8px 14px !important; }
