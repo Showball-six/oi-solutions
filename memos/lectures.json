@@ -288,5 +288,17 @@
     ],
     "href": "memos/lec-020.html",
     "created": "2026-06-25"
+  },
+  {
+    "id": "lec-021",
+    "slug": "lec-021",
+    "title": "信息学述职",
+    "tags": [
+      "笔记"
+    ],
+    "courses": [],
+    "topics": [],
+    "href": "memos/lec-021.html",
+    "created": "2026-07-01"
   }
 ]
