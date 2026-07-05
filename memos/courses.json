@@ -359,7 +359,7 @@
         {
           "id": "content-002",
           "title": "模拟法",
-          "lectures": [],
+          "lectures": ["lec-022"],
           "problems": []
         },
         {

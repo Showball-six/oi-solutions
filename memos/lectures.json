@@ -300,5 +300,21 @@
     "topics": [],
     "href": "memos/lec-021.html",
     "created": "2026-07-01"
+  },
+  {
+    "id": "lec-022",
+    "slug": "lec-022",
+    "title": "模拟法",
+    "tags": [
+      "算法基础"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "basic-algo"
+    ],
+    "href": "memos/lec-022.html",
+    "created": "2026-07-04"
   }
 ]
