@@ -316,5 +316,21 @@
     ],
     "href": "memos/lec-022.html",
     "created": "2026-07-04"
+  },
+  {
+    "id": "lec-023",
+    "slug": "lec-023",
+    "title": "递推与递归",
+    "tags": [
+      "基础算法课程"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "basic-algo"
+    ],
+    "href": "memos/lec-023.html",
+    "created": "2026-07-08"
   }
 ]

@@ -365,7 +365,7 @@
         {
           "id": "content-003",
           "title": "递归与递推",
-          "lectures": [],
+          "lectures": ["lec-023"],
           "problems": []
         },
         {
