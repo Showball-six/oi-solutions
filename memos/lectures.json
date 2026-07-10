@@ -332,5 +332,21 @@
     ],
     "href": "memos/lec-023.html",
     "created": "2026-07-08"
+  },
+  {
+    "id": "lec-024",
+    "slug": "lec-024",
+    "title": "排序算法",
+    "tags": [
+      "基础算法课程"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "dp"
+    ],
+    "href": "memos/lec-024.html",
+    "created": "2026-07-10"
   }
 ]

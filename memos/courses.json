@@ -371,7 +371,7 @@
         {
           "id": "content-004",
           "title": "排序",
-          "lectures": [],
+          "lectures": ["lec-024"],
           "problems": []
         },
         {
