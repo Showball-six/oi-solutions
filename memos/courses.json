@@ -389,7 +389,7 @@
         {
           "id": "content-007",
           "title": "前缀和与差分",
-          "lectures": [],
+          "lectures": ["lec-025"],
           "problems": []
         },
         {

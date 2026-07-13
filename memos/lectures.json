@@ -344,9 +344,25 @@
       "algo-basics"
     ],
     "topics": [
-      "dp"
+      "basic-algo"
     ],
     "href": "memos/lec-024.html",
     "created": "2026-07-10"
+  },
+  {
+    "id": "lec-025",
+    "slug": "lec-025",
+    "title": "一维前缀和与差分",
+    "tags": [
+      "基础算法"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "basic-algo"
+    ],
+    "href": "memos/lec-025.html",
+    "created": "2026-07-13"
   }
 ]
