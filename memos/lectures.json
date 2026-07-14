@@ -364,5 +364,85 @@
     ],
     "href": "memos/lec-025.html",
     "created": "2026-07-13"
+  },
+  {
+    "id": "lec-026",
+    "slug": "lec-026",
+    "title": "二维前缀和与差分",
+    "tags": [
+      "基础算法"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "basic-algo"
+    ],
+    "href": "memos/lec-026.html",
+    "created": "2026-07-13"
+  },
+  {
+    "id": "lec-027",
+    "slug": "lec-027",
+    "title": "前缀和与差分的拓展应用",
+    "tags": [
+      "基础算法"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "basic-algo"
+    ],
+    "href": "memos/lec-027.html",
+    "created": "2026-07-13"
+  },
+  {
+    "id": "lec-028",
+    "slug": "lec-028",
+    "title": "“好区间”问题",
+    "tags": [
+      "基础算法"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "basic-algo"
+    ],
+    "href": "memos/lec-028.html",
+    "created": "2026-07-13"
+  },
+  {
+    "id": "lec-029",
+    "slug": "lec-029",
+    "title": "双指针算法(尺取法)",
+    "tags": [
+      "基础算法"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "basic-algo"
+    ],
+    "href": "memos/lec-029.html",
+    "created": "2026-07-14"
+  },
+  {
+    "id": "lec-030",
+    "slug": "lec-030",
+    "title": "常用STL",
+    "tags": [
+      "基础算法"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "basic-algo"
+    ],
+    "href": "memos/lec-030.html",
+    "created": "2026-07-14"
   }
 ]

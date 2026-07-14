@@ -352,54 +352,55 @@
       "contents": [
         {
           "id": "content-001",
+          "title": "进制与编码",
+          "lectures": ["lec-019","lec-020"],
+          "problems": []
+        },
+        {
+          "id": "content-002",
           "title": "枚举法",
           "lectures": ["lec-013","lec-014"],
           "problems": []
         },
         {
-          "id": "content-002",
+          "id": "content-003",
           "title": "模拟法",
           "lectures": ["lec-022"],
           "problems": []
         },
         {
-          "id": "content-003",
+          "id": "content-004",
           "title": "递归与递推",
           "lectures": ["lec-023"],
           "problems": []
         },
         {
-          "id": "content-004",
-          "title": "排序",
-          "lectures": ["lec-024"],
-          "problems": []
-        },
-        {
           "id": "content-005",
-          "title": "进制转换",
-          "lectures": ["lec-019","lec-020"],
+          "title": "排序及常用STL",
+          "lectures": ["lec-024","lec-030"],
           "problems": []
         },
         {
           "id": "content-006",
-          "title": "双指针算法(尺取法)",
-          "lectures": [],
+          "title": "前缀和与差分",
+          "lectures": ["lec-025","lec-026","lec-027","lec-028"],
           "problems": []
         },
         {
           "id": "content-007",
-          "title": "前缀和与差分",
-          "lectures": ["lec-025"],
+          "title": "双指针算法(尺取法)",
+          "lectures": ["lec-029"],
           "problems": []
         },
+        
         {
-          "id": "content-08",
+          "id": "content-008",
           "title": "数学",
           "lectures": [],
           "problems": []
         },
         {
-          "id": "content-09",
+          "id": "content-009",
           "title": "离散与组合数学",
           "lectures": [],
           "problems": []
@@ -434,15 +435,16 @@
           "lectures": [],
           "problems": []
         },
+        
         {
           "id": "content-015",
-          "title": "图论",
+          "title": "动态规划",
           "lectures": [],
           "problems": []
         },
         {
           "id": "content-016",
-          "title": "动态规划",
+          "title": "图论",
           "lectures": [],
           "problems": []
         }
