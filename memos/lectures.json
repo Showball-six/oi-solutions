@@ -444,5 +444,19 @@
     ],
     "href": "memos/lec-030.html",
     "created": "2026-07-14"
+  },
+  {
+    "id": "lec-031",
+    "slug": "lec-031",
+    "title": "数论基本知识",
+    "tags": [],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "math"
+    ],
+    "href": "memos/lec-031.html",
+    "created": "2026-07-26"
   }
 ]
