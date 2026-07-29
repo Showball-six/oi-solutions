@@ -396,7 +396,7 @@
         {
           "id": "content-008",
           "title": "数学",
-          "lectures": ["lec-031"],
+          "lectures": ["lec-031,lec-032"],
           "problems": []
         },
         {

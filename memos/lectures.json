@@ -458,5 +458,21 @@
     ],
     "href": "memos/lec-031.html",
     "created": "2026-07-26"
+  },
+  {
+    "id": "lec-032",
+    "slug": "lec-032",
+    "title": "素数筛法",
+    "tags": [
+      "基础算法"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "math"
+    ],
+    "href": "memos/lec-032.html",
+    "created": "2026-07-29"
   }
 ]
