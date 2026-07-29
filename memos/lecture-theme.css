@@ -92,3 +92,51 @@
 #write thead th { background: #52c41a !important; color: #fff !important; border: none !important; padding: 10px 14px !important; }
 #write tbody tr:hover { background: #f0fbe8 !important; }
 #write tbody td { border-color: #e8eaed !important; padding: 8px 14px !important; }
+
+/* ── 动画演示卡片（assets/*.html iframe 嵌入） ── */
+.lec-demo {
+  margin: 1.6em 0;
+  border: 1px solid #e8eaed;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+.lec-demo-head {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 14px;
+  background: linear-gradient(to right, #f0fbe8, #fff);
+  border-bottom: 1px solid #e8eaed;
+}
+.lec-demo-badge {
+  flex: none;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: #52c41a; color: #fff;
+  font-size: 11px; font-weight: 700; letter-spacing: .04em;
+}
+.lec-demo-title {
+  flex: 1 1 auto;
+  font-size: 14px; font-weight: 600; color: #1a1a1a;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.lec-demo-open {
+  flex: none;
+  font-size: 12px; color: #3da613 !important;
+  text-decoration: none !important;
+  border: 1px solid #b7e59a; border-radius: 6px;
+  padding: 2px 9px;
+  transition: background .15s, color .15s;
+}
+.lec-demo-open:hover { background: #52c41a; color: #fff !important; border-color: #52c41a; }
+.lec-demo iframe {
+  display: block;
+  width: 100% !important;
+  border: none !important;
+  margin: 0 !important;
+  background: #f7f9fc;
+}
+@media print {
+  .lec-demo iframe { display: none; }
+  .lec-demo-head { border-bottom: none; }
+}

@@ -91,4 +91,45 @@
     inner.appendChild(pre);         // pre 从 parent 移入 inner
     wrap.appendChild(inner);
   });
+
+  // 4. 动画演示卡片 iframe：撑开内部高度上限并自适应
+  document.querySelectorAll('.lec-demo iframe').forEach(function (frame) {
+    const fallback = parseInt(frame.getAttribute('data-height'), 10) || 640;
+    frame.style.height = fallback + 'px';
+
+    function fit() {
+      // 同源才能读 contentDocument；file:// 下 Chrome 会抛错，保持 fallback 高度
+      let doc;
+      try {
+        doc = frame.contentDocument;
+        if (!doc || !doc.body) return;
+      } catch (e) { return; }
+
+      const app = doc.querySelector('.app') || doc.body;
+      // 解除演示页自身的 60vh / max-height 限制，让内容完整展开
+      app.style.height = 'auto';
+      app.style.maxHeight = 'none';
+      app.style.minHeight = '0';
+      app.style.overflowY = 'visible';
+      doc.documentElement.style.minHeight = '0';
+      doc.body.style.minHeight = '0';
+
+      const h = Math.ceil(app.getBoundingClientRect().height) + 24;
+      if (Math.abs(h - parseInt(frame.style.height, 10)) > 2) {
+        frame.style.height = h + 'px';
+      }
+    }
+
+    frame.addEventListener('load', function () {
+      fit();
+      let doc;
+      try { doc = frame.contentDocument; } catch (e) { return; }
+      if (!doc || !doc.body || typeof ResizeObserver === 'undefined') return;
+      // 演示过程中素数列表会变长 → 跟随重算
+      new ResizeObserver(fit).observe(doc.querySelector('.app') || doc.body);
+    });
+
+    if (frame.contentDocument && frame.contentDocument.readyState === 'complete') fit();
+    window.addEventListener('resize', fit);
+  });
 })();
