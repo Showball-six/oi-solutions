@@ -474,5 +474,21 @@
     ],
     "href": "memos/lec-032.html",
     "created": "2026-07-29"
+  },
+  {
+    "id": "lec-033",
+    "slug": "lec-033",
+    "title": "贪心策略",
+    "tags": [
+      "基础算法课程"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "basic-algo"
+    ],
+    "href": "memos/lec-033.html",
+    "created": "2026-08-01"
   }
 ]
