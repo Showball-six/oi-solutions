@@ -490,5 +490,21 @@
     ],
     "href": "memos/lec-033.html",
     "created": "2026-08-01"
+  },
+  {
+    "id": "lec-034",
+    "slug": "lec-034",
+    "title": "二分查找",
+    "tags": [
+      "基础算法"
+    ],
+    "courses": [
+      "algo-basics"
+    ],
+    "topics": [
+      "basic-algo"
+    ],
+    "href": "memos/lec-034.html",
+    "created": "2026-08-03"
   }
 ]

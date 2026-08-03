@@ -1086,6 +1086,532 @@ def interactive_set_participants():
     print(f"✅ 已更新「{content['title']}」参与学生：{result}")
 
 
+# ─────────────────────────────────────────────────────────────
+# 讲义主题：polish 命令会把下面两段常量写出为
+#   memos/lecture-theme.css / memos/lecture-enhance.js
+# 改样式只需改这里，然后重新跑 python script.py polish
+# ─────────────────────────────────────────────────────────────
+
+LECTURE_THEME_CSS = r"""/* 本文件由 script.py polish 自动生成，请勿手改（改 script.py 里的 LECTURE_THEME_CSS） */
+
+/* ── 设计 token ── */
+:root {
+  --lec-green:#52c41a;  --lec-green-bg:#f2fbe9;  --lec-green-line:#a5e07a;
+  --lec-blue:#3498db;   --lec-blue-bg:#eef6fd;   --lec-blue-line:#9dcdf0;
+  --lec-orange:#e67e22; --lec-orange-bg:#fef6ea; --lec-orange-line:#f3c18a;
+  --lec-purple:#9d3dcf; --lec-purple-bg:#f7effb; --lec-purple-line:#d4a5ea;
+  --lec-indigo:#5b6ee1; --lec-indigo-bg:#eef0fc; --lec-indigo-line:#aeb7f0;
+  --lec-red:#e5484d;    --lec-red-bg:#fdeff0;    --lec-red-line:#f2a7aa;
+  --lec-text:#2f3437;
+}
+
+/* ── 阅读进度条 ── */
+#lec-progress {
+  position: fixed; top: 0; left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #52c41a, #3498db);
+  width: 0%; z-index: 9999;
+  transition: width .12s ease;
+}
+
+/* ── h2 自动编号 + 彩色圆圈 ── */
+#write { counter-reset: h2c egc; }
+#write h2 {
+  counter-increment: h2c;
+  border-bottom: none !important;
+  padding: 8px 14px 8px 48px !important;
+  background: linear-gradient(to right, #f0fbe8, transparent);
+  border-radius: 8px;
+  margin-top: 2em !important;
+  position: relative;
+}
+#write h2::before {
+  content: counter(h2c);
+  position: absolute; left: 8px; top: 50%; transform: translateY(-50%);
+  width: 28px; height: 28px;
+  background: #52c41a; color: #fff;
+  border-radius: 50%;
+  font-size: .82rem; font-weight: 700;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+
+/* ── h3 左边框 ── */
+#write h3 {
+  border-left: 4px solid #3498db !important;
+  padding-left: 12px !important;
+  background: linear-gradient(to right, #ebf5fb 0%, transparent 80%);
+  border-radius: 0 6px 6px 0;
+}
+
+/* ── h4 小节标题：比 h3 更轻，靛蓝菱形标记 ── */
+#write h4 {
+  position: relative;
+  font-size: 1.05rem !important;
+  font-weight: 600;
+  color: #33383d;
+  margin: 1.7em 0 .7em !important;
+  padding: 0 0 5px 16px !important;
+  border-bottom: 1px solid #edeff2;
+}
+#write h4::before {
+  content: '';
+  position: absolute;
+  left: 1px; top: .62em;
+  width: 7px; height: 7px;
+  background: var(--lec-indigo);
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+/* 「例题：」标题 → 自动编号的靛蓝徽标（例题 1、例题 2 …） */
+#write h4.lec-eg {
+  counter-increment: egc;
+  padding-left: 0 !important;
+  border-bottom: none;
+}
+#write h4.lec-eg::before {
+  content: '例题 ' counter(egc);
+  position: static;
+  display: inline-block;
+  width: auto; height: auto;
+  margin-right: 9px;
+  padding: 2px 11px;
+  transform: none;
+  border-radius: 6px;
+  background: var(--lec-indigo);
+  color: #fff;
+  font-size: 12.5px; font-weight: 700;
+  letter-spacing: .02em;
+  vertical-align: 2px;
+}
+
+/* 例题 h4 作为引用的首行时，收掉多余上间距 */
+#write blockquote > h4:first-child { margin-top: .1em !important; }
+
+/* h4 里的题目链接：去掉刺眼的下划线蓝，hover 才提示可点 */
+#write h4 a {
+  color: #2f3437 !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed var(--lec-indigo-line);
+  transition: color .15s, border-color .15s;
+}
+#write h4 a:hover {
+  color: var(--lec-indigo) !important;
+  border-bottom-color: var(--lec-indigo);
+}
+
+/* ── 引用 / Callout 卡片 ──
+   默认（无前缀标记）= 淡蓝「定义卡」，讲义里大量的概念定义走这一档  */
+#write blockquote,
+.typora-export blockquote {
+  position: relative;
+  margin: 1.35em 0 !important;
+  padding: 12px 16px 12px 18px !important;
+  border: 1px solid var(--lec-blue-line) !important;
+  border-left: 4px solid var(--lec-blue) !important;
+  border-radius: 4px 9px 9px 4px !important;
+  background: var(--lec-blue-bg) !important;
+  color: var(--lec-text) !important;      /* 盖掉 Typora 的 color:#777 */
+  box-shadow: 0 1px 3px rgba(24,60,92,.05);
+  transition: box-shadow .18s ease;
+}
+#write blockquote:hover { box-shadow: 0 3px 12px rgba(24,60,92,.09); }
+
+/* 引用内部排版细节 */
+#write blockquote > :first-child { margin-top: 0 !important; }
+#write blockquote > :last-child  { margin-bottom: 0 !important; }
+#write blockquote p { line-height: 1.75; }
+#write blockquote code {
+  background: rgba(255,255,255,.75) !important;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+#write blockquote blockquote {      /* 嵌套引用收窄一点 */
+  margin: .8em 0 !important;
+  box-shadow: none;
+}
+#write li blockquote { margin: .7em 0 !important; }
+
+/* 类型标签（由 lecture-enhance.js 加 class 后显示） */
+#write blockquote[data-lec-label]::before {
+  content: attr(data-lec-label);
+  display: inline-block;
+  margin: 0 0 7px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 11.5px; font-weight: 700;
+  letter-spacing: .03em;
+  line-height: 1.6;
+  color: #fff;
+  background: var(--lec-blue);
+}
+
+/* 各类型配色 */
+#write blockquote.lec-tip {
+  border-color: var(--lec-green-line) !important;
+  border-left-color: var(--lec-green) !important;
+  background: var(--lec-green-bg) !important;
+}
+#write blockquote.lec-tip::before { background: var(--lec-green); }
+
+#write blockquote.lec-warn {
+  border-color: var(--lec-orange-line) !important;
+  border-left-color: var(--lec-orange) !important;
+  background: var(--lec-orange-bg) !important;
+}
+#write blockquote.lec-warn::before { background: var(--lec-orange); }
+
+#write blockquote.lec-key {
+  border-color: var(--lec-purple-line) !important;
+  border-left-color: var(--lec-purple) !important;
+  background: var(--lec-purple-bg) !important;
+}
+#write blockquote.lec-key::before { background: var(--lec-purple); }
+
+#write blockquote.lec-example {
+  border-color: var(--lec-indigo-line) !important;
+  border-left-color: var(--lec-indigo) !important;
+  background: var(--lec-indigo-bg) !important;
+}
+#write blockquote.lec-example::before { background: var(--lec-indigo); }
+
+#write blockquote.lec-pitfall {
+  border-color: var(--lec-red-line) !important;
+  border-left-color: var(--lec-red) !important;
+  background: var(--lec-red-bg) !important;
+}
+#write blockquote.lec-pitfall::before { background: var(--lec-red); }
+
+/* 引用里的公式不要溢出卡片 */
+#write blockquote mjx-container[display="true"],
+#write blockquote .MathJax_Display {
+  overflow-x: auto; overflow-y: hidden;
+  max-width: 100%;
+}
+
+/* ── 代码块 wrapper + header bar ── */
+.lec-code-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1em 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+.lec-code-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 7px 12px;
+  background: #1e2d1e;
+  cursor: default;
+}
+.lec-lang-name {
+  font-size: 11px; color: #5a9e5a;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  text-transform: uppercase; letter-spacing: .05em;
+}
+.lec-header-actions { display: flex; gap: 6px; }
+.lec-header-btn {
+  padding: 2px 10px; font-size: 11px;
+  background: #2d4a2d; color: #a8d5a8;
+  border: none; border-radius: 4px; cursor: pointer;
+  transition: background .15s, color .15s;
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+.lec-header-btn:hover { background: #52c41a; color: #fff; }
+
+/* 折叠区域：默认 max-height:0 完全隐藏 */
+.lec-code-inner { overflow: hidden; transition: max-height .25s ease; }
+.lec-code-inner.lec-collapsed { max-height: 0; }
+.lec-code-inner.lec-expanded  { max-height: 9999px; }
+
+/* ── 表格美化 ── */
+#write table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0,0,0,.08);
+  border-collapse: collapse;
+  width: 100%;
+}
+#write thead tr { background: #52c41a !important; }
+#write thead th { background: #52c41a !important; color: #fff !important; border: none !important; padding: 10px 14px !important; }
+#write tbody tr:hover { background: #f0fbe8 !important; }
+#write tbody td { border-color: #e8eaed !important; padding: 8px 14px !important; }
+
+/* ── 动画演示卡片（assets/*.html iframe 嵌入） ── */
+.lec-demo {
+  margin: 1.6em 0;
+  border: 1px solid #e8eaed;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+.lec-demo-head {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 14px;
+  background: linear-gradient(to right, #f0fbe8, #fff);
+  border-bottom: 1px solid #e8eaed;
+}
+.lec-demo-badge {
+  flex: none;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: #52c41a; color: #fff;
+  font-size: 11px; font-weight: 700; letter-spacing: .04em;
+}
+.lec-demo-title {
+  flex: 1 1 auto;
+  font-size: 14px; font-weight: 600; color: #1a1a1a;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.lec-demo-open {
+  flex: none;
+  font-size: 12px; color: #3da613 !important;
+  text-decoration: none !important;
+  border: 1px solid #b7e59a; border-radius: 6px;
+  padding: 2px 9px;
+  transition: background .15s, color .15s;
+}
+.lec-demo-open:hover { background: #52c41a; color: #fff !important; border-color: #52c41a; }
+.lec-demo iframe {
+  display: block;
+  width: 100% !important;
+  border: none !important;
+  margin: 0 !important;
+  background: #f7f9fc;
+}
+
+/* ── 打印 ── */
+@media print {
+  #lec-progress { display: none; }
+  #write blockquote { box-shadow: none; break-inside: avoid; }
+  .lec-demo iframe { display: none; }
+  .lec-demo-head { border-bottom: none; }
+}
+"""
+
+# 引用类型识别规则：(emoji 标记, 关键词, class, 标签文字)
+# 顺序即优先级，第一条命中即停；全部不命中 → 默认淡蓝定义卡（无标签）
+# class 为空 = 沿用默认淡蓝配色，只加标签
+LECTURE_CALLOUTS = [
+    (['📌'], ['重点', '核心', '结论'],           'lec-key',     '重点'),
+    (['💡'], ['提示', '技巧', '小贴士', 'tip'],  'lec-tip',     '提示'),
+    (['⚠️', '⚠'], ['注意', '警告', 'warn'],      'lec-warn',    '注意'),
+    (['❌'], ['易错', '坑点', '误区'],            'lec-pitfall', '易错'),
+    (['📝'], ['例题', '举例', '例如', '例'],      'lec-example', '例题'),
+    (['🔍'], ['证明', '分析', '推导'],            'lec-example', '证明'),
+    (['📖'], ['定义', '定理', '性质'],            '',            '定义'),
+]
+
+
+def _callout_regex(emojis, keywords):
+    """
+    构造前缀正则：必须有显式标记才算 callout，避免误吃正文
+      - 有 emoji：后面的关键词和冒号都可省略        「📌 xxx」「📌重点：xxx」
+      - 无 emoji：关键词后必须跟冒号或逗号          「注意：xxx」「注意，xxx」
+    所以「定义域是…」不会被识别成「定义」卡而被截断
+    """
+    e = '|'.join(emojis)
+    k = '|'.join(keywords)
+    return r'^(?:(?:%s)\s*(?:(?:%s)\s*[:：，]?)?|(?:%s)\s*[:：，])\s*' % (e, k, k)
+
+
+def _build_enhance_js():
+    """生成 lecture-enhance.js（callout 规则由 LECTURE_CALLOUTS 编译进去）"""
+    rules = ',\n    '.join(
+        '[/%s/i, %s, %s]' % (_callout_regex(emojis, kws), json.dumps(cls), json.dumps(label))
+        for emojis, kws, cls, label in LECTURE_CALLOUTS
+    )
+    return _ENHANCE_JS_TEMPLATE.replace('/*__CALLOUT_RULES__*/', rules)
+
+
+_ENHANCE_JS_TEMPLATE = r"""// 本文件由 script.py polish 自动生成，请勿手改（改 script.py 里的 _ENHANCE_JS_TEMPLATE）
+(function () {
+  // 1. 阅读进度条
+  const bar = document.createElement('div');
+  bar.id = 'lec-progress';
+  document.body.prepend(bar);
+  window.addEventListener('scroll', function () {
+    const pct = window.scrollY / (document.body.scrollHeight - innerHeight) * 100;
+    bar.style.width = Math.min(pct, 100) + '%';
+  });
+
+  // 从开头的文本节点里删掉已变成标签/徽标的前缀，避免「注意」出现两次。
+  // 前缀可能被 <span>/<strong>/<a> 拆成多个文本节点，所以要跨节点删。
+  function stripPrefix(root, prefix) {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    let node, left = prefix.length, leading = true;
+    while (left > 0 && (node = walker.nextNode())) {
+      const raw = node.nodeValue;
+      let from = 0;
+      if (leading) {
+        // prefix 来自 textContent.trim()，开头的空白只跳过一次，不计入 left
+        from = raw.length - raw.trimStart().length;
+        if (from >= raw.length) continue;   // 整个节点都是空白 → 原样保留
+        leading = false;
+      }
+      const take = Math.min(left, raw.length - from);
+      node.nodeValue = raw.slice(0, from) + raw.slice(from + take);
+      left -= take;
+    }
+    // 清掉残留的空白 / 冒号
+    const w2 = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    let n2;
+    while ((n2 = w2.nextNode())) {
+      const cleaned = n2.nodeValue.replace(/^[\s:：，]+/, '');
+      n2.nodeValue = cleaned;
+      if (cleaned) break;   // 命中第一个有内容的文本节点即停
+    }
+  }
+
+  // 2. h4「例题：xxx」→ 自动编号徽标（编号由 CSS counter 生成）
+  //    必须在 blockquote 之前跑：有些例题 h4 被包在引用里，
+  //    否则前缀会先被 callout 吃掉，h4 就认不出来了
+  const EG_RE = /^(?:例题|例)\s*[:：]\s*/;
+  document.querySelectorAll('#write h4').forEach(function (h) {
+    const m = h.textContent.trim().match(EG_RE);
+    if (!m) return;
+    h.classList.add('lec-eg');
+    stripPrefix(h, m[0]);
+  });
+
+  // 3. Callout 识别：命中前缀 → 上色 + 加标签并吃掉正文前缀；
+  //    没命中 → 保持默认淡蓝定义卡，不加标签
+  const CALLOUT_RULES = [
+    /*__CALLOUT_RULES__*/
+  ];
+  document.querySelectorAll('#write blockquote, .typora-export blockquote').forEach(function (bq) {
+    // 引用整体就是一道例题（首个子元素是例题 h4）→ 只上靛蓝色，
+    // 标签交给 h4 徽标，避免「例题」出现两次
+    const firstEl = bq.firstElementChild;
+    if (firstEl && firstEl.tagName === 'H4' && firstEl.classList.contains('lec-eg')) {
+      bq.classList.add('lec-example');
+      return;
+    }
+    const text = bq.textContent.trim();
+    for (let i = 0; i < CALLOUT_RULES.length; i++) {
+      const re = CALLOUT_RULES[i][0], cls = CALLOUT_RULES[i][1], label = CALLOUT_RULES[i][2];
+      const m = text.match(re);
+      if (!m) continue;
+      if (cls) bq.classList.add(cls);
+      bq.setAttribute('data-lec-label', label);
+      stripPrefix(bq, m[0]);
+      return;
+    }
+  });
+
+  // 4. 代码块：header bar（语言 + 展开 + 复制）
+  document.querySelectorAll('#write pre, .typora-export pre').forEach(function (pre) {
+    if (pre.closest('.CodeMirror')) return;
+
+    const cmLines = pre.querySelectorAll('.CodeMirror-line');
+    const cmCodeLines = pre.querySelectorAll('.CodeMirror-code pre');
+    const isCM = cmLines.length > 0;
+    const code = pre.querySelector('code');
+    if (!isCM && !code) return;
+
+    const langAttr = pre.getAttribute('lang');
+    const langCls = code && Array.from(code.classList).find(function (c) { return c.startsWith('language-'); });
+    const lang = langAttr || (langCls ? langCls.slice(9) : 'code');
+
+    // Header bar
+    const header = document.createElement('div');
+    header.className = 'lec-code-header';
+
+    const langLabel = document.createElement('span');
+    langLabel.className = 'lec-lang-name';
+    langLabel.textContent = lang;
+    header.appendChild(langLabel);
+
+    const actions = document.createElement('div');
+    actions.className = 'lec-header-actions';
+
+    const toggleBtn = document.createElement('button');
+    toggleBtn.className = 'lec-header-btn';
+    toggleBtn.textContent = '▶ 展开代码';
+
+    const copyBtn = document.createElement('button');
+    copyBtn.className = 'lec-header-btn';
+    copyBtn.textContent = '复制';
+    copyBtn.addEventListener('click', function () {
+      const src = isCM ? cmCodeLines : null;
+      const text = src && src.length
+        ? Array.from(src).map(function (l) { return l.textContent.replace(/​/g, '').replace(/ /g, ' '); }).join('\n')
+        : code ? code.textContent : '';
+      navigator.clipboard.writeText(text).then(function () {
+        copyBtn.textContent = '已复制';
+        setTimeout(function () { copyBtn.textContent = '复制'; }, 2000);
+      });
+    });
+
+    actions.appendChild(toggleBtn);
+    actions.appendChild(copyBtn);
+    header.appendChild(actions);
+
+    // 折叠容器（默认折叠）
+    const inner = document.createElement('div');
+    inner.className = 'lec-code-inner lec-collapsed';
+
+    toggleBtn.addEventListener('click', function () {
+      const isCollapsed = inner.classList.contains('lec-collapsed');
+      inner.classList.toggle('lec-collapsed', !isCollapsed);
+      inner.classList.toggle('lec-expanded', isCollapsed);
+      toggleBtn.textContent = isCollapsed ? '▼ 收起代码' : '▶ 展开代码';
+    });
+
+    // 组装：先把 wrap 插入正确位置，再移动 pre
+    const wrap = document.createElement('div');
+    wrap.className = 'lec-code-wrap';
+    wrap.appendChild(header);
+    const parent = pre.parentNode;
+    parent.insertBefore(wrap, pre); // wrap 占位（pre 仍在 parent 中）
+    inner.appendChild(pre);         // pre 从 parent 移入 inner
+    wrap.appendChild(inner);
+  });
+
+  // 4. 动画演示卡片 iframe：撑开内部高度上限并自适应
+  document.querySelectorAll('.lec-demo iframe').forEach(function (frame) {
+    const fallback = parseInt(frame.getAttribute('data-height'), 10) || 640;
+    frame.style.height = fallback + 'px';
+
+    function fit() {
+      // 同源才能读 contentDocument；file:// 下 Chrome 会抛错，保持 fallback 高度
+      let doc;
+      try {
+        doc = frame.contentDocument;
+        if (!doc || !doc.body) return;
+      } catch (e) { return; }
+
+      const app = doc.querySelector('.app') || doc.body;
+      // 解除演示页自身的 60vh / max-height 限制，让内容完整展开
+      app.style.height = 'auto';
+      app.style.maxHeight = 'none';
+      app.style.minHeight = '0';
+      app.style.overflowY = 'visible';
+      doc.documentElement.style.minHeight = '0';
+      doc.body.style.minHeight = '0';
+
+      const h = Math.ceil(app.getBoundingClientRect().height) + 24;
+      if (Math.abs(h - parseInt(frame.style.height, 10)) > 2) {
+        frame.style.height = h + 'px';
+      }
+    }
+
+    frame.addEventListener('load', function () {
+      fit();
+      let doc;
+      try { doc = frame.contentDocument; } catch (e) { return; }
+      if (!doc || !doc.body || typeof ResizeObserver === 'undefined') return;
+      // 演示过程中素数列表会变长 → 跟随重算
+      new ResizeObserver(fit).observe(doc.querySelector('.app') || doc.body);
+    });
+
+    if (frame.contentDocument && frame.contentDocument.readyState === 'complete') fit();
+    window.addEventListener('resize', fit);
+  });
+})();
+"""
+
+
 def polish_html(target=None):
     """后处理 Typora 导出的讲义 HTML，注入增强样式和功能"""
     if target and target != 'all':
@@ -1095,6 +1621,11 @@ def polish_html(target=None):
 
     if not files:
         print("❌ 未找到讲义 HTML 文件"); return
+
+    # 每次 polish 都从脚本常量重写主题文件，保证样式只有一份来源
+    (MEMOS_DIR / 'lecture-theme.css').write_text(LECTURE_THEME_CSS, encoding='utf-8')
+    (MEMOS_DIR / 'lecture-enhance.js').write_text(_build_enhance_js(), encoding='utf-8')
+    print("🎨 已生成 lecture-theme.css / lecture-enhance.js")
 
     for path in files:
         if not path.exists():
@@ -1135,6 +1666,28 @@ OI 工具箱 - 数据管理脚本
   add-mock              添加上机模拟赛
   set-scores            录入模拟赛分数
   set-participants      设置模拟赛参与学生
+
+讲义样式：
+  polish [文件名|all]    重写 lecture-theme.css / lecture-enhance.js 并注入讲义 HTML
+
+  Markdown 引用写法（> 开头）→ 自动配色：
+    > 直接写内容              淡蓝「定义卡」（默认，无标签）
+    > 定义：xxx / 📖 xxx      淡蓝 + 「定义」标签
+    > 注意：xxx / ⚠️ xxx      橙色「注意」
+    > 提示：xxx / 💡 xxx      绿色「提示」
+    > 重点：xxx / 📌 xxx      紫色「重点」
+    > 易错：xxx / ❌ xxx      红色「易错」
+    > 例题：xxx / 📝 xxx      靛蓝「例题」
+    > 证明：xxx / 🔍 xxx      靛蓝「证明」
+  注：不带 emoji 时关键词后必须跟「：」或「，」才识别，
+      所以「定义域是…」这类正文不会被误判。
+
+  标题样式：
+    ## 二级标题             绿色圆圈自动编号
+    ### 三级标题            蓝色左边框
+    #### 四级标题           靛蓝菱形标记 + 淡灰下划线
+    #### 例题：P1001 xxx    靛蓝「例题 N」徽标（全文自动连续编号）
+                            标题里的题目链接改为虚线下划线，hover 变靛蓝
 
 其他：
   init                  初始化示例数据

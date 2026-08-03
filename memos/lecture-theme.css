@@ -1,3 +1,16 @@
+/* 本文件由 script.py polish 自动生成，请勿手改（改 script.py 里的 LECTURE_THEME_CSS） */
+
+/* ── 设计 token ── */
+:root {
+  --lec-green:#52c41a;  --lec-green-bg:#f2fbe9;  --lec-green-line:#a5e07a;
+  --lec-blue:#3498db;   --lec-blue-bg:#eef6fd;   --lec-blue-line:#9dcdf0;
+  --lec-orange:#e67e22; --lec-orange-bg:#fef6ea; --lec-orange-line:#f3c18a;
+  --lec-purple:#9d3dcf; --lec-purple-bg:#f7effb; --lec-purple-line:#d4a5ea;
+  --lec-indigo:#5b6ee1; --lec-indigo-bg:#eef0fc; --lec-indigo-line:#aeb7f0;
+  --lec-red:#e5484d;    --lec-red-bg:#fdeff0;    --lec-red-line:#f2a7aa;
+  --lec-text:#2f3437;
+}
+
 /* ── 阅读进度条 ── */
 #lec-progress {
   position: fixed; top: 0; left: 0;
@@ -8,7 +21,7 @@
 }
 
 /* ── h2 自动编号 + 彩色圆圈 ── */
-#write { counter-reset: h2c; }
+#write { counter-reset: h2c egc; }
 #write h2 {
   counter-increment: h2c;
   border-bottom: none !important;
@@ -36,16 +49,152 @@
   border-radius: 0 6px 6px 0;
 }
 
-/* ── Callout 卡片 ── */
-#write blockquote {
-  border-radius: 8px;
-  padding: 10px 16px !important;
-  margin: 1.2em 0 !important;
+/* ── h4 小节标题：比 h3 更轻，靛蓝菱形标记 ── */
+#write h4 {
+  position: relative;
+  font-size: 1.05rem !important;
+  font-weight: 600;
+  color: #33383d;
+  margin: 1.7em 0 .7em !important;
+  padding: 0 0 5px 16px !important;
+  border-bottom: 1px solid #edeff2;
 }
-#write blockquote.lec-tip  { border-left: 4px solid #52c41a !important; background: #f0fbe8; }
-#write blockquote.lec-note { border-left: 4px solid #3498db !important; background: #ebf5fb; }
-#write blockquote.lec-warn { border-left: 4px solid #e67e22 !important; background: #fef5e7; }
-#write blockquote.lec-key  { border-left: 4px solid #9d3dcf !important; background: #f5eefa; }
+#write h4::before {
+  content: '';
+  position: absolute;
+  left: 1px; top: .62em;
+  width: 7px; height: 7px;
+  background: var(--lec-indigo);
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+/* 「例题：」标题 → 自动编号的靛蓝徽标（例题 1、例题 2 …） */
+#write h4.lec-eg {
+  counter-increment: egc;
+  padding-left: 0 !important;
+  border-bottom: none;
+}
+#write h4.lec-eg::before {
+  content: '例题 ' counter(egc);
+  position: static;
+  display: inline-block;
+  width: auto; height: auto;
+  margin-right: 9px;
+  padding: 2px 11px;
+  transform: none;
+  border-radius: 6px;
+  background: var(--lec-indigo);
+  color: #fff;
+  font-size: 12.5px; font-weight: 700;
+  letter-spacing: .02em;
+  vertical-align: 2px;
+}
+
+/* 例题 h4 作为引用的首行时，收掉多余上间距 */
+#write blockquote > h4:first-child { margin-top: .1em !important; }
+
+/* h4 里的题目链接：去掉刺眼的下划线蓝，hover 才提示可点 */
+#write h4 a {
+  color: #2f3437 !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed var(--lec-indigo-line);
+  transition: color .15s, border-color .15s;
+}
+#write h4 a:hover {
+  color: var(--lec-indigo) !important;
+  border-bottom-color: var(--lec-indigo);
+}
+
+/* ── 引用 / Callout 卡片 ──
+   默认（无前缀标记）= 淡蓝「定义卡」，讲义里大量的概念定义走这一档  */
+#write blockquote,
+.typora-export blockquote {
+  position: relative;
+  margin: 1.35em 0 !important;
+  padding: 12px 16px 12px 18px !important;
+  border: 1px solid var(--lec-blue-line) !important;
+  border-left: 4px solid var(--lec-blue) !important;
+  border-radius: 4px 9px 9px 4px !important;
+  background: var(--lec-blue-bg) !important;
+  color: var(--lec-text) !important;      /* 盖掉 Typora 的 color:#777 */
+  box-shadow: 0 1px 3px rgba(24,60,92,.05);
+  transition: box-shadow .18s ease;
+}
+#write blockquote:hover { box-shadow: 0 3px 12px rgba(24,60,92,.09); }
+
+/* 引用内部排版细节 */
+#write blockquote > :first-child { margin-top: 0 !important; }
+#write blockquote > :last-child  { margin-bottom: 0 !important; }
+#write blockquote p { line-height: 1.75; }
+#write blockquote code {
+  background: rgba(255,255,255,.75) !important;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+#write blockquote blockquote {      /* 嵌套引用收窄一点 */
+  margin: .8em 0 !important;
+  box-shadow: none;
+}
+#write li blockquote { margin: .7em 0 !important; }
+
+/* 类型标签（由 lecture-enhance.js 加 class 后显示） */
+#write blockquote[data-lec-label]::before {
+  content: attr(data-lec-label);
+  display: inline-block;
+  margin: 0 0 7px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 11.5px; font-weight: 700;
+  letter-spacing: .03em;
+  line-height: 1.6;
+  color: #fff;
+  background: var(--lec-blue);
+}
+
+/* 各类型配色 */
+#write blockquote.lec-tip {
+  border-color: var(--lec-green-line) !important;
+  border-left-color: var(--lec-green) !important;
+  background: var(--lec-green-bg) !important;
+}
+#write blockquote.lec-tip::before { background: var(--lec-green); }
+
+#write blockquote.lec-warn {
+  border-color: var(--lec-orange-line) !important;
+  border-left-color: var(--lec-orange) !important;
+  background: var(--lec-orange-bg) !important;
+}
+#write blockquote.lec-warn::before { background: var(--lec-orange); }
+
+#write blockquote.lec-key {
+  border-color: var(--lec-purple-line) !important;
+  border-left-color: var(--lec-purple) !important;
+  background: var(--lec-purple-bg) !important;
+}
+#write blockquote.lec-key::before { background: var(--lec-purple); }
+
+#write blockquote.lec-example {
+  border-color: var(--lec-indigo-line) !important;
+  border-left-color: var(--lec-indigo) !important;
+  background: var(--lec-indigo-bg) !important;
+}
+#write blockquote.lec-example::before { background: var(--lec-indigo); }
+
+#write blockquote.lec-pitfall {
+  border-color: var(--lec-red-line) !important;
+  border-left-color: var(--lec-red) !important;
+  background: var(--lec-red-bg) !important;
+}
+#write blockquote.lec-pitfall::before { background: var(--lec-red); }
+
+/* 引用里的公式不要溢出卡片 */
+#write blockquote mjx-container[display="true"],
+#write blockquote .MathJax_Display {
+  overflow-x: auto; overflow-y: hidden;
+  max-width: 100%;
+}
 
 /* ── 代码块 wrapper + header bar ── */
 .lec-code-wrap {
@@ -136,7 +285,11 @@
   margin: 0 !important;
   background: #f7f9fc;
 }
+
+/* ── 打印 ── */
 @media print {
+  #lec-progress { display: none; }
+  #write blockquote { box-shadow: none; break-inside: avoid; }
   .lec-demo iframe { display: none; }
   .lec-demo-head { border-bottom: none; }
 }
