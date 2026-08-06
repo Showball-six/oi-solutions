@@ -408,7 +408,7 @@
         {
           "id": "content-010",
           "title": "贪心策略",
-          "lectures": [],
+          "lectures": ["lec-033"],
           "problems": []
         },
         {
@@ -420,7 +420,7 @@
         {
           "id": "content-012",
           "title": "二分",
-          "lectures": [],
+          "lectures": ["lec-034","lec-035"],
           "problems": []
         },
         {

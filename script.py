@@ -1103,6 +1103,10 @@ LECTURE_THEME_CSS = r"""/* 本文件由 script.py polish 自动生成，请勿�
   --lec-indigo:#5b6ee1; --lec-indigo-bg:#eef0fc; --lec-indigo-line:#aeb7f0;
   --lec-red:#e5484d;    --lec-red-bg:#fdeff0;    --lec-red-line:#f2a7aa;
   --lec-text:#2f3437;
+  /* 代码块：浅色中性调，和站点主色只在 hover / 强调处相遇 */
+  --lec-code-bg:#fbfcfd;  --lec-code-head:#f6f8fa;  --lec-code-border:#e5e8ec;
+  --lec-code-sub:#6b7280;
+  --lec-mono:'Fira Code','JetBrains Mono','Menlo','Consolas',monospace;
 }
 
 /* ── 阅读进度条 ── */
@@ -1292,36 +1296,109 @@ LECTURE_THEME_CSS = r"""/* 本文件由 script.py polish 自动生成，请勿�
 
 /* ── 代码块 wrapper + header bar ── */
 .lec-code-wrap {
-  border-radius: 8px;
+  margin: 1.4em 0;
+  border: 1px solid var(--lec-code-border);
+  border-radius: 10px;
   overflow: hidden;
-  margin: 1em 0;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  background: var(--lec-code-bg);
+  box-shadow: 0 1px 3px rgba(24,60,92,.05);
+  transition: box-shadow .18s ease, border-color .18s ease;
 }
+.lec-code-wrap:hover {
+  border-color: #d6dbe2;
+  box-shadow: 0 4px 14px rgba(24,60,92,.08);
+}
+
 .lec-code-header {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 7px 12px;
-  background: #1e2d1e;
-  cursor: default;
+  display: flex; align-items: center; gap: 9px;
+  padding: 7px 10px 7px 12px;
+  background: var(--lec-code-head);
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  user-select: none;
+  transition: background .15s, border-color .15s;
 }
+.lec-code-wrap.is-open .lec-code-header { border-bottom-color: var(--lec-code-border); }
+.lec-code-header:hover { background: #f0f3f6; }
+
+/* 语言徽标：左侧小圆点 + 语言名 */
 .lec-lang-name {
-  font-size: 11px; color: #5a9e5a;
-  font-family: 'Fira Code', 'Consolas', monospace;
-  text-transform: uppercase; letter-spacing: .05em;
+  display: inline-flex; align-items: center; gap: 6px;
+  flex: none;
+  font-size: 11px; font-weight: 600;
+  color: var(--lec-code-sub);
+  font-family: var(--lec-mono);
+  text-transform: uppercase; letter-spacing: .06em;
 }
-.lec-header-actions { display: flex; gap: 6px; }
+.lec-lang-name::before {
+  content: '';
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--lec-green);
+  box-shadow: 0 0 0 2px rgba(82,196,26,.16);
+}
+
+/* 可选标题：`// @open 快速幂` 里的「快速幂」 */
+.lec-code-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 12.5px; font-weight: 600; color: #3f4650;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.lec-code-title:empty { display: none; }
+.lec-code-title:empty + .lec-code-lines { margin-left: auto; }
+
+/* 行数提示 */
+.lec-code-lines {
+  flex: none;
+  font-size: 11px; color: var(--lec-text-light, #a3a9b3);
+  font-family: var(--lec-mono);
+}
+.lec-lang-name + .lec-code-lines { margin-left: auto; }
+
+.lec-header-actions { flex: none; display: flex; gap: 6px; margin-left: 4px; }
 .lec-header-btn {
-  padding: 2px 10px; font-size: 11px;
-  background: #2d4a2d; color: #a8d5a8;
-  border: none; border-radius: 4px; cursor: pointer;
-  transition: background .15s, color .15s;
+  padding: 3px 10px; font-size: 11px; line-height: 1.5;
+  background: #fff; color: #5b6270;
+  border: 1px solid var(--lec-code-border); border-radius: 6px;
+  cursor: pointer;
+  transition: background .15s, color .15s, border-color .15s;
   font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
-.lec-header-btn:hover { background: #52c41a; color: #fff; }
+.lec-header-btn:hover {
+  background: var(--lec-green); color: #fff;
+  border-color: var(--lec-green);
+}
+.lec-header-btn.is-done {
+  background: var(--lec-green-bg); color: var(--lec-green-dark, #3da613);
+  border-color: var(--lec-green-line);
+}
 
-/* 折叠区域：默认 max-height:0 完全隐藏 */
-.lec-code-inner { overflow: hidden; transition: max-height .25s ease; }
-.lec-code-inner.lec-collapsed { max-height: 0; }
-.lec-code-inner.lec-expanded  { max-height: 9999px; }
+/* 折叠区域：max-height 由 JS 精确设置，动画不再跳 */
+.lec-code-inner {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .28s cubic-bezier(.4,0,.2,1);
+}
+/* 展开动画结束后解除裁剪，交回 CodeMirror 自己的横向滚动 */
+.lec-code-inner.is-settled { overflow: visible; }
+
+/* pre 交给 wrapper 管圆角和外边距 */
+.lec-code-inner > pre.md-fences,
+.lec-code-inner > pre {
+  margin: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: var(--lec-code-bg) !important;
+}
+.lec-code-inner .CodeMirror,
+.lec-code-inner .CodeMirror-scroll { background: var(--lec-code-bg) !important; }
+/* 行号列：淡一点，别抢代码的注意力 */
+.lec-code-inner .CodeMirror-linenumber { color: #c2c8d0 !important; }
+.lec-code-inner .CodeMirror-gutters {
+  background: var(--lec-code-bg) !important;
+  border-right: 1px solid #eef1f4 !important;
+}
 
 /* ── 表格美化 ── */
 #write table {
@@ -1386,6 +1463,10 @@ LECTURE_THEME_CSS = r"""/* 本文件由 script.py polish 自动生成，请勿�
   #write blockquote { box-shadow: none; break-inside: avoid; }
   .lec-demo iframe { display: none; }
   .lec-demo-head { border-bottom: none; }
+  /* 折叠的代码也要打出来 */
+  .lec-code-inner { max-height: none !important; overflow: visible !important; }
+  .lec-header-actions { display: none; }
+  .lec-code-wrap { box-shadow: none; break-inside: avoid; }
 }
 """
 
@@ -1393,7 +1474,7 @@ LECTURE_THEME_CSS = r"""/* 本文件由 script.py polish 自动生成，请勿�
 # 顺序即优先级，第一条命中即停；全部不命中 → 默认淡蓝定义卡（无标签）
 # class 为空 = 沿用默认淡蓝配色，只加标签
 LECTURE_CALLOUTS = [
-    (['📌'], ['重点', '核心', '结论'],           'lec-key',     '重点'),
+    (['📌'], ['重点', '核心', '结论','总结'],           'lec-key',     '总结'),
     (['💡'], ['提示', '技巧', '小贴士', 'tip'],  'lec-tip',     '提示'),
     (['⚠️', '⚠'], ['注意', '警告', 'warn'],      'lec-warn',    '注意'),
     (['❌'], ['易错', '坑点', '误区'],            'lec-pitfall', '易错'),
@@ -1415,13 +1496,19 @@ def _callout_regex(emojis, keywords):
     return r'^(?:(?:%s)\s*(?:(?:%s)\s*[:：，]?)?|(?:%s)\s*[:：，])\s*' % (e, k, k)
 
 
+# 没写标记时：不超过这个行数的代码块默认展开，更长的默认折叠
+AUTO_OPEN_MAX_LINES = 18
+
+
 def _build_enhance_js():
     """生成 lecture-enhance.js（callout 规则由 LECTURE_CALLOUTS 编译进去）"""
     rules = ',\n    '.join(
         '[/%s/i, %s, %s]' % (_callout_regex(emojis, kws), json.dumps(cls), json.dumps(label))
         for emojis, kws, cls, label in LECTURE_CALLOUTS
     )
-    return _ENHANCE_JS_TEMPLATE.replace('/*__CALLOUT_RULES__*/', rules)
+    return (_ENHANCE_JS_TEMPLATE
+            .replace('/*__CALLOUT_RULES__*/', rules)
+            .replace('/*__AUTO_OPEN_MAX_LINES__*/', str(AUTO_OPEN_MAX_LINES)))
 
 
 _ENHANCE_JS_TEMPLATE = r"""// 本文件由 script.py polish 自动生成，请勿手改（改 script.py 里的 _ENHANCE_JS_TEMPLATE）
@@ -1500,6 +1587,91 @@ _ENHANCE_JS_TEMPLATE = r"""// 本文件由 script.py polish 自动生成，请�
   });
 
   // 4. 代码块：header bar（语言 + 展开 + 复制）
+  //
+  // 展开策略标记（写在 Markdown 里，导出后都不显示）：
+  //   ① 代码块首行注释   // @open        / # @fold  / -- @open 标题
+  //   ② 代码块前一行     <!-- @open -->
+  //   ③ 文档任意位置     <!-- @open-all -->  改变整篇默认
+  // 没有任何标记时：行数 <= AUTO_OPEN_MAX_LINES 自动展开，更长的仍折叠。
+  const AUTO_OPEN_MAX_LINES = /*__AUTO_OPEN_MAX_LINES__*/;
+
+  // @open / @fold（含别名）+ 可选标题；前面允许各语言的行注释符
+  const MARK_RE = /^\s*(?:\/\/+|#+|--|;+|%|\/\*|<!--)?\s*@(open|expand|show|展开|fold|close|collapse|hide|折叠)(?![A-Za-z0-9_])\s*[:：]?\s*(.*?)\s*(?:\*\/|-->)?\s*$/i;
+  const OPEN_WORDS = /^(open|expand|show|展开)$/i;
+
+  function parseMark(text) {
+    const m = (text || '').replace(/[​﻿]/g, '').match(MARK_RE);
+    if (!m) return null;
+    return { open: OPEN_WORDS.test(m[1]), title: m[2] || '' };
+  }
+
+  // ③ 文档级默认：扫全文 HTML 注释
+  let docDefault = null;
+  (function () {
+    const w = document.createTreeWalker(document.body, NodeFilter.SHOW_COMMENT);
+    let c;
+    while ((c = w.nextNode())) {
+      const m = c.nodeValue.trim().match(/^@(open|fold|展开|折叠)-all$/i);
+      if (m) { docDefault = /^(open|展开)$/i.test(m[1]); break; }
+    }
+  })();
+
+  // ② 代码块前的 HTML 注释标记；命中就把注释（和只装着它的空段落）一起删掉
+  function markFromSiblings(pre) {
+    let node = pre.previousSibling, hops = 0;
+    while (node && hops++ < 3) {
+      if (node.nodeType === 8) {                      // 注释节点
+        const mk = parseMark(node.nodeValue);
+        if (mk) { node.remove(); return mk; }
+      } else if (node.nodeType === 1) {               // 只含注释的 <p>
+        if (node.textContent.trim() === '') {
+          for (const child of Array.from(node.childNodes)) {
+            if (child.nodeType !== 8) continue;
+            const mk = parseMark(child.nodeValue);
+            if (mk) { node.remove(); return mk; }
+          }
+        } else break;
+      } else if (node.nodeType === 3 && node.nodeValue.trim() !== '') {
+        break;
+      }
+      node = node.previousSibling;
+    }
+    return null;
+  }
+
+  // ① 首行标记：从 CodeMirror 渲染结果里摘掉那一行，并把容器高度收回去
+  function stripCMFirstLine(pre, lineEl) {
+    const row = lineEl.closest('.CodeMirror-code > div') || lineEl.parentNode;
+    const h = row.getBoundingClientRect().height || 0;
+    row.remove();
+    if (!h) return;
+    const shrink = function (el, prop) {
+      if (!el) return;
+      const v = parseFloat(el.style[prop]);
+      if (!isNaN(v)) el.style[prop] = Math.max(0, v - h) + 'px';
+    };
+    shrink(pre.querySelector('.CodeMirror'), 'height');
+    shrink(pre.querySelector('.CodeMirror-gutters'), 'height');
+    shrink(pre.querySelector('.CodeMirror-sizer'), 'minHeight');
+    const spacer = pre.querySelector('.CodeMirror-sizer > div[style*="top"]');
+    shrink(spacer, 'top');
+    // 行号重新排一遍，删掉首行后不留空号
+    pre.querySelectorAll('.CodeMirror-linenumber').forEach(function (n, i) {
+      n.textContent = String(i + 1);
+    });
+  }
+
+  // 首行标记：<code> 版（非 CodeMirror 导出）直接删掉第一行文本
+  function stripCodeFirstLine(code) {
+    const walker = document.createTreeWalker(code, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) {
+      const i = node.nodeValue.indexOf('\n');
+      if (i >= 0) { node.nodeValue = node.nodeValue.slice(i + 1); return; }
+      node.nodeValue = '';
+    }
+  }
+
   document.querySelectorAll('#write pre, .typora-export pre').forEach(function (pre) {
     if (pre.closest('.CodeMirror')) return;
 
@@ -1511,7 +1683,27 @@ _ENHANCE_JS_TEMPLATE = r"""// 本文件由 script.py polish 自动生成，请�
 
     const langAttr = pre.getAttribute('lang');
     const langCls = code && Array.from(code.classList).find(function (c) { return c.startsWith('language-'); });
-    const lang = langAttr || (langCls ? langCls.slice(9) : 'code');
+    const lang = (langAttr || (langCls ? langCls.slice(9) : 'code')).trim().split(/\s+/)[0] || 'code';
+
+    // ── 解析展开策略 ──
+    let mark = markFromSiblings(pre);
+    if (isCM) {
+      const first = cmLines[0];
+      const mk = first && parseMark(first.textContent);
+      if (mk) { mark = mk; stripCMFirstLine(pre, first); }
+    } else {
+      const firstLine = code.textContent.split('\n', 1)[0];
+      const mk = parseMark(firstLine);
+      if (mk) { mark = mk; stripCodeFirstLine(code); }
+    }
+
+    const lineCount = isCM
+      ? pre.querySelectorAll('.CodeMirror-line').length
+      : code.textContent.replace(/\n+$/, '').split('\n').length;
+
+    const shouldOpen = mark ? mark.open
+      : docDefault !== null ? docDefault
+      : lineCount <= AUTO_OPEN_MAX_LINES;
 
     // Header bar
     const header = document.createElement('div');
@@ -1522,24 +1714,39 @@ _ENHANCE_JS_TEMPLATE = r"""// 本文件由 script.py polish 自动生成，请�
     langLabel.textContent = lang;
     header.appendChild(langLabel);
 
+    const titleEl = document.createElement('span');
+    titleEl.className = 'lec-code-title';
+    titleEl.textContent = mark && mark.title ? mark.title : '';
+    header.appendChild(titleEl);
+
+    const linesEl = document.createElement('span');
+    linesEl.className = 'lec-code-lines';
+    linesEl.textContent = lineCount + ' 行';
+    header.appendChild(linesEl);
+
     const actions = document.createElement('div');
     actions.className = 'lec-header-actions';
 
     const toggleBtn = document.createElement('button');
     toggleBtn.className = 'lec-header-btn';
-    toggleBtn.textContent = '▶ 展开代码';
 
     const copyBtn = document.createElement('button');
     copyBtn.className = 'lec-header-btn';
     copyBtn.textContent = '复制';
-    copyBtn.addEventListener('click', function () {
-      const src = isCM ? cmCodeLines : null;
+    copyBtn.addEventListener('click', function (e) {
+      e.stopPropagation();                  // 别连带触发 header 的折叠
+      // 首行标记可能已被删掉 → 复制时重新取一次当前 DOM
+      const src = isCM ? pre.querySelectorAll('.CodeMirror-code pre') : null;
       const text = src && src.length
         ? Array.from(src).map(function (l) { return l.textContent.replace(/​/g, '').replace(/ /g, ' '); }).join('\n')
         : code ? code.textContent : '';
       navigator.clipboard.writeText(text).then(function () {
         copyBtn.textContent = '已复制';
-        setTimeout(function () { copyBtn.textContent = '复制'; }, 2000);
+        copyBtn.classList.add('is-done');
+        setTimeout(function () {
+          copyBtn.textContent = '复制';
+          copyBtn.classList.remove('is-done');
+        }, 2000);
       });
     });
 
@@ -1547,16 +1754,8 @@ _ENHANCE_JS_TEMPLATE = r"""// 本文件由 script.py polish 自动生成，请�
     actions.appendChild(copyBtn);
     header.appendChild(actions);
 
-    // 折叠容器（默认折叠）
     const inner = document.createElement('div');
-    inner.className = 'lec-code-inner lec-collapsed';
-
-    toggleBtn.addEventListener('click', function () {
-      const isCollapsed = inner.classList.contains('lec-collapsed');
-      inner.classList.toggle('lec-collapsed', !isCollapsed);
-      inner.classList.toggle('lec-expanded', isCollapsed);
-      toggleBtn.textContent = isCollapsed ? '▼ 收起代码' : '▶ 展开代码';
-    });
+    inner.className = 'lec-code-inner';
 
     // 组装：先把 wrap 插入正确位置，再移动 pre
     const wrap = document.createElement('div');
@@ -1566,6 +1765,37 @@ _ENHANCE_JS_TEMPLATE = r"""// 本文件由 script.py polish 自动生成，请�
     parent.insertBefore(wrap, pre); // wrap 占位（pre 仍在 parent 中）
     inner.appendChild(pre);         // pre 从 parent 移入 inner
     wrap.appendChild(inner);
+
+    function setOpen(open, animate) {
+      wrap.classList.toggle('is-open', open);
+      toggleBtn.textContent = open ? '▲ 收起' : '▼ 展开';
+      if (!open) {
+        // 收起：先钉住当前高度再回 0，否则 none → 0 不过渡
+        inner.classList.remove('is-settled');
+        if (animate) {
+          inner.style.maxHeight = inner.scrollHeight + 'px';
+          void inner.offsetHeight;
+        }
+        inner.style.maxHeight = '0px';
+        return;
+      }
+      const settle = function () {
+        if (!wrap.classList.contains('is-open')) return;
+        inner.style.maxHeight = 'none';
+        inner.classList.add('is-settled');
+      };
+      if (!animate) { settle(); return; }
+      inner.style.maxHeight = inner.scrollHeight + 'px';
+      // 动画结束后解除限制，让内容（长行/公式）自然撑开
+      setTimeout(settle, 320);
+    }
+
+    // 整条 header 都能点，按钮只是视觉提示
+    header.addEventListener('click', function () {
+      setOpen(!wrap.classList.contains('is-open'), true);
+    });
+
+    setOpen(shouldOpen, false);
   });
 
   // 4. 动画演示卡片 iframe：撑开内部高度上限并自适应
@@ -1688,6 +1918,26 @@ OI 工具箱 - 数据管理脚本
     #### 四级标题           靛蓝菱形标记 + 淡灰下划线
     #### 例题：P1001 xxx    靛蓝「例题 N」徽标（全文自动连续编号）
                             标题里的题目链接改为虚线下划线，hover 变靛蓝
+
+  代码块展开策略（标记在导出的 HTML 里都不显示）：
+    ① 写在代码块首行注释里（最常用）
+         ```cpp
+         // @open              这块默认展开
+         // @open 快速幂        展开，并在标题栏显示「快速幂」
+         // @fold              这块默认折叠
+         ```
+       注释符按语言写即可：// # -- ; % 都认，@ 号不能省。
+    ② 写在代码块前一行的 HTML 注释里
+         <!-- @open -->
+         ```cpp
+    ③ 整篇默认（放文档任意位置，一次生效全篇）
+         <!-- @open-all -->    /    <!-- @fold-all -->
+
+    别名：@open = @expand = @show = @展开；@fold = @close = @collapse = @hide = @折叠
+    优先级：块内标记 > 文档级 @*-all > 自动判断
+    自动判断：代码不超过 """ + str(AUTO_OPEN_MAX_LINES) + """ 行默认展开，更长的默认折叠
+              （阈值改 script.py 里的 AUTO_OPEN_MAX_LINES）
+    标题栏显示行数，整条标题栏可点击折叠/展开。
 
 其他：
   init                  初始化示例数据
