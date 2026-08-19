@@ -166,8 +166,9 @@
       .side-card{border-radius:18px;padding:13px}
       .side-card:nth-child(1){order:1}
       .side-card:nth-child(2){order:2}
-      .side-card:nth-child(3){order:3;position:sticky;bottom:8px;z-index:5;box-shadow:0 14px 35px rgba(88,66,32,.16)}
-      .side-card:nth-child(4){order:4}
+      .side-card:nth-child(3){order:3}
+      .side-card:nth-child(4){order:4;position:sticky;bottom:8px;z-index:5;box-shadow:0 14px 35px rgba(88,66,32,.16)}
+      .side-card:nth-child(5){order:5}
       .players{grid-template-columns:1fr 1fr}
       .player{padding:10px}
       .stone{width:23px;height:23px}
@@ -185,6 +186,39 @@
       .secondary,.primary{min-height:44px}
       .conn-note{display:none}
       .log{height:82px}
+    }
+
+  
+    .scoreboard{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;padding:10px 0 2px}
+    .score-side{text-align:center}
+    .score-side b{display:block;font-size:28px;line-height:1;font-variant-numeric:tabular-nums}
+    .score-side span{display:block;font-size:10px;color:var(--muted);margin-top:5px}
+    .score-mid{text-align:center;color:var(--muted);font-size:11px}
+    .draw-count{margin-top:8px;text-align:center;font-size:11px;color:var(--muted)}
+    .end-banner{position:absolute;inset:0;z-index:5;pointer-events:none;display:grid;place-items:center;overflow:hidden}
+    .end-banner.hidden{display:none}
+    .end-card{min-width:220px;max-width:72%;text-align:center;padding:20px 24px;border-radius:22px;
+      background:rgba(255,255,255,.90);border:1px solid rgba(120,90,45,.14);box-shadow:0 20px 60px rgba(80,55,25,.18);
+      transform:scale(.7) translateY(18px);opacity:0;animation:endPop .68s cubic-bezier(.2,.9,.2,1) forwards}
+    .end-card .emoji{font-size:34px;display:block;margin-bottom:8px;animation:floaty 1.7s ease-in-out infinite}
+    .end-card h3{margin:0;font-size:26px;letter-spacing:-.03em}
+    .end-card p{margin:7px 0 0;font-size:12px;color:var(--muted)}
+    .confetti{position:absolute;width:9px;height:14px;border-radius:3px;opacity:.9;animation:confettiFall 1.6s ease-out forwards}
+    .ripple{position:absolute;border:2px solid rgba(201,154,79,.35);border-radius:50%;animation:rippleOut 1.3s ease-out forwards}
+    .board-wrap.end-win canvas{animation:boardGlow 1.1s ease-out}
+    .board-wrap.end-lose canvas{animation:boardDim .8s ease-out}
+    .board-wrap.end-draw canvas{animation:boardDraw .9s ease-out}
+    @keyframes endPop{to{transform:scale(1) translateY(0);opacity:1}}
+    @keyframes floaty{50%{transform:translateY(-5px) rotate(2deg)}}
+    @keyframes confettiFall{0%{transform:translateY(-30px) rotate(0deg);opacity:0}10%{opacity:1}100%{transform:translateY(220px) rotate(460deg);opacity:0}}
+    @keyframes rippleOut{0%{width:20px;height:20px;opacity:.7}100%{width:380px;height:380px;opacity:0}}
+    @keyframes boardGlow{0%{filter:brightness(1)}45%{filter:brightness(1.18) saturate(1.12)}100%{filter:brightness(1)}}
+    @keyframes boardDim{0%{filter:brightness(1)}45%{filter:brightness(.76) saturate(.75)}100%{filter:brightness(1)}}
+    @keyframes boardDraw{0%{transform:scale(1)}45%{transform:scale(.992)}100%{transform:scale(1)}}
+    @media(max-width:620px){
+      .end-card{max-width:82%;padding:18px 20px}
+      .end-card h3{font-size:22px}
+      .score-side b{font-size:24px}
     }
 
   </style>
@@ -275,6 +309,7 @@
       </div>
       <div class="board-wrap">
         <canvas id="board"></canvas>
+        <div id="endBanner" class="end-banner hidden"></div>
         <div id="boardOverlay" class="board-overlay">
           <div class="overlay-card">
             <h3 id="overlayTitle">等待对手</h3>
@@ -318,6 +353,23 @@
           <button class="choice" data-choice="first">选择先手 · 黑</button>
           <button class="choice" data-choice="second">选择后手 · 白</button>
         </div>
+      </section>
+
+
+      <section class="side-card panel">
+        <div class="side-title">本房间比分</div>
+        <div class="scoreboard">
+          <div class="score-side">
+            <b id="hostScore">0</b>
+            <span>房主</span>
+          </div>
+          <div class="score-mid">VS</div>
+          <div class="score-side">
+            <b id="guestScore">0</b>
+            <span>加入方</span>
+          </div>
+        </div>
+        <div class="draw-count">平局 <b id="drawScore">0</b> 场</div>
       </section>
 
       <section class="side-card panel">
@@ -369,6 +421,8 @@
   let localRolled = false;
   let pendingUndoFrom = null;
   let raf = null;
+  let pendingPreview = null;
+  let lastAnimatedResultKey = null;
 
   let game = baseState();
 
@@ -385,6 +439,9 @@
       winner:null,
       reason:null,
       rematch:{host:false,guest:false},
+      scores:{host:0,guest:0,draws:0},
+      round:1,
+      scoredRound:0,
       settings:{turnSeconds:30,undoAllowed:true}
     };
   }
@@ -506,6 +563,10 @@
     if(type==='state'){
       if(isHost) return;
       game=structuredClone(data);
+      game.scores=game.scores||{host:0,guest:0,draws:0};
+      game.round=game.round||1;
+      game.scoredRound=game.scoredRound||0;
+      pendingPreview=null;
       turnSeconds=game.settings.turnSeconds;
       undoAllowed=game.settings.undoAllowed;
       $('#ruleTimeTag').textContent=`${turnSeconds} 秒/回合`;
@@ -627,6 +688,7 @@
     if(game.board[y][x]!==0) return;
     if(roleForColor(game.turn)!==role) return;
 
+    pendingPreview=null;
     game.board[y][x]=game.turn;
     game.moves.push({x,y,color:game.turn,at:Date.now()});
     const played=game.turn;
@@ -636,6 +698,7 @@
     }
     if(game.moves.length===BOARD_SIZE*BOARD_SIZE){
       game.phase='over'; game.reason='和棋'; game.winner='draw'; game.rematch={host:false,guest:false}; game.turnStartedAt=null;
+      scoreCurrentRound();
       broadcastState(); render(); return;
     }
     game.turn=played===1?2:1;
@@ -648,8 +711,16 @@
     if(game.phase!=='playing') return;
     const role=isHost?'host':'guest';
     if(roleForColor(game.turn)!==role) return toast('还没轮到你');
-    if(isHost) attemptMove('host',x,y);
-    else send('move',{x,y});
+    if(game.board[y][x]!==0) return;
+
+    if(pendingPreview && pendingPreview.x===x && pendingPreview.y===y){
+      pendingPreview=null;
+      if(isHost) attemptMove('host',x,y);
+      else send('move',{x,y});
+    }else{
+      pendingPreview={x,y,color:game.turn};
+      drawBoard();
+    }
   }
 
   function checkWin(x,y,color){
@@ -666,13 +737,81 @@
     });
   }
 
+
+  function scoreCurrentRound(){
+    if(!isHost) return;
+    game.scores = game.scores || {host:0,guest:0,draws:0};
+    game.round = game.round || 1;
+    if(game.scoredRound===game.round) return;
+    if(game.winner==='draw') game.scores.draws++;
+    else if(game.winner==='host') game.scores.host++;
+    else if(game.winner==='guest') game.scores.guest++;
+    game.scoredRound=game.round;
+  }
+
+  function animateEndIfNeeded(){
+    if(game.phase!=='over') return;
+    const myRole=isHost?'host':'guest';
+    const key=`${game.round||1}:${game.winner}:${game.reason||''}`;
+    if(lastAnimatedResultKey===key) return;
+    lastAnimatedResultKey=key;
+
+    const wrap=document.querySelector('.board-wrap');
+    const banner=$('#endBanner');
+    wrap.classList.remove('end-win','end-lose','end-draw');
+    banner.innerHTML='';
+    banner.classList.remove('hidden');
+
+    let cls='end-draw', emoji='🤝', title='和棋', desc=game.reason||'势均力敌';
+    if(game.winner!=='draw'){
+      if(game.winner===myRole){ cls='end-win'; emoji='🏆'; title='胜利'; desc=game.reason||'漂亮的一局'; }
+      else { cls='end-lose'; emoji='⚔️'; title='惜败'; desc=game.reason||'再来一局'; }
+    }
+    wrap.classList.add(cls);
+
+    const card=document.createElement('div');
+    card.className='end-card';
+    card.innerHTML=`<span class="emoji">${emoji}</span><h3>${title}</h3><p>${desc}</p>`;
+    banner.appendChild(card);
+
+    // ripple
+    for(let i=0;i<3;i++){
+      const r=document.createElement('div');
+      r.className='ripple';
+      r.style.animationDelay=`${i*.16}s`;
+      banner.appendChild(r);
+    }
+
+    // celebratory particles on win/draw
+    if(game.winner===myRole || game.winner==='draw'){
+      for(let i=0;i<18;i++){
+        const c=document.createElement('div');
+        c.className='confetti';
+        c.style.left=`${8+Math.random()*84}%`;
+        c.style.top=`${-8-Math.random()*12}%`;
+        c.style.transform=`rotate(${Math.random()*180}deg)`;
+        c.style.background = i%3===0 ? '#c89a4f' : (i%3===1 ? '#e2bd73' : '#8fb89f');
+        c.style.animationDelay=`${Math.random()*.28}s`;
+        banner.appendChild(c);
+      }
+    }
+
+    setTimeout(()=>{
+      banner.classList.add('hidden');
+      banner.innerHTML='';
+      wrap.classList.remove('end-win','end-lose','end-draw');
+    },2200);
+  }
+
   function finishGame(winnerRole,reason){
     if(!isHost) return;
+    pendingPreview=null;
     game.phase='over';
     game.winner=winnerRole;
     game.reason=reason;
     game.rematch={host:false,guest:false};
     game.turnStartedAt=null;
+    scoreCurrentRound();
     broadcastState();
     render();
   }
@@ -699,8 +838,14 @@
   function resetForRematch(){
     if(!isHost) return;
     const settings={...game.settings};
+    const scores={...(game.scores||{host:0,guest:0,draws:0})};
+    const nextRound=(game.round||1)+1;
     game=baseState();
+    pendingPreview=null;
     game.settings=settings;
+    game.scores=scores;
+    game.round=nextRound;
+    game.scoredRound=0;
     game.phase='dice';
     localRolled=false;
     pendingUndoFrom=null;
@@ -750,6 +895,7 @@
 
   function performUndo(){
     if(!isHost || !game.moves.length) return;
+    pendingPreview=null;
     const last=game.moves.pop();
     game.board[last.y][last.x]=0;
     game.turn=last.color;
@@ -780,6 +926,10 @@
     checkTimeout();
     const myRole=isHost?'host':'guest';
     const oppRole=isHost?'guest':'host';
+    game.scores = game.scores || {host:0,guest:0,draws:0};
+    $('#hostScore').textContent=game.scores.host;
+    $('#guestScore').textContent=game.scores.guest;
+    $('#drawScore').textContent=game.scores.draws;
     const myColor=game.colors[myRole];
     const oppColor=game.colors[oppRole];
 
@@ -818,7 +968,9 @@
       overlay.classList.add('hidden');
       const mine=roleForColor(game.turn)===myRole;
       $('#phaseTitle').textContent=mine?'轮到你落子':'等待对方落子';
-      $('#phaseText').textContent=`你执${myColor===1?'黑':'白'}，${game.turn===1?'黑':'白'}方回合。`;
+      const threatInfo=threatCellsForOpponent();
+      const warning=threatInfo.four.length?' · 对方出现四连威胁':(threatInfo.three.length?' · 对方出现活三':'');
+      $('#phaseText').textContent=mine ? `你执${myColor===1?'黑':'白'}，点击空位预览，再点一次确认落子${warning}。` : `你执${myColor===1?'黑':'白'}，等待${game.turn===1?'黑':'白'}方落子${warning}。`;
     }else if(game.phase==='over'){
       overlay.classList.remove('hidden');
       let title='对局结束', text=game.reason||'';
@@ -842,6 +994,107 @@
       rematchBtn.textContent = mine ? (theirsReady?'正在开始新一局…':'已准备，等待对方') : (theirsReady?'对方已准备 · 再来一局':'再来一局');
     }
     drawBoard();
+    animateEndIfNeeded();
+  }
+
+
+
+  function detectThreats(color){
+    const liveThreeGroups=[];
+    const fourGroups=[];
+    const seen3=new Set(), seen4=new Set();
+    const dirs=[[1,0],[0,1],[1,1],[1,-1]];
+
+    function cell(x,y){
+      if(x<0||y<0||x>=BOARD_SIZE||y>=BOARD_SIZE) return -1;
+      return game.board[y][x];
+    }
+    function keyOf(coords){
+      return coords.map(([x,y])=>`${x},${y}`).sort().join('|');
+    }
+    function pushUnique(list,seen,coords){
+      const k=keyOf(coords);
+      if(!seen.has(k)){seen.add(k);list.push(coords);}
+    }
+
+    for(const [dx,dy] of dirs){
+      for(let sy=-BOARD_SIZE; sy<BOARD_SIZE*2; sy++){
+        // We scan every board-origin cell along each direction via all x/y below,
+        // which is slightly redundant but small for a 15x15 board.
+      }
+      for(let y=0;y<BOARD_SIZE;y++){
+        for(let x=0;x<BOARD_SIZE;x++){
+          // Straight open three: 0 XXX 0
+          const vals5=[], cs5=[];
+          for(let i=0;i<5;i++){
+            vals5.push(cell(x+i*dx,y+i*dy));
+            cs5.push([x+i*dx,y+i*dy]);
+          }
+          if(vals5[0]===0 && vals5[4]===0 &&
+             vals5[1]===color && vals5[2]===color && vals5[3]===color){
+            pushUnique(liveThreeGroups,seen3,cs5.slice(1,4));
+          }
+
+          // Any 5-cell window containing exactly four of opponent and one empty
+          // is a "four" threat (open four or blocked/rushing four).
+          const countColor5=vals5.filter(v=>v===color).length;
+          const countEmpty5=vals5.filter(v=>v===0).length;
+          if(countColor5===4 && countEmpty5===1){
+            const stones=cs5.filter(([cx,cy])=>cell(cx,cy)===color);
+            pushUnique(fourGroups,seen4,stones);
+          }
+
+          // 6-cell windows allow open-four detection and broken live-three patterns.
+          const vals6=[], cs6=[];
+          for(let i=0;i<6;i++){
+            vals6.push(cell(x+i*dx,y+i*dy));
+            cs6.push([x+i*dx,y+i*dy]);
+          }
+          if(vals6[0]===0 && vals6[5]===0){
+            const mid=vals6.slice(1,5);
+            const colorCount=mid.filter(v=>v===color).length;
+            const emptyCount=mid.filter(v=>v===0).length;
+
+            if(colorCount===4){
+              const stones=cs6.slice(1,5);
+              pushUnique(fourGroups,seen4,stones);
+            }else if(colorCount===3 && emptyCount===1){
+              // Broken live three, e.g. 0 XX_X 0 or 0 X_XX 0.
+              // We only flag it when filling the internal gap creates four in a row.
+              const s=mid.map(v=>v===color?'X':'_').join('');
+              if(['XXX_','XX_X','X_XX','_XXX'].includes(s)){
+                const gap=s.indexOf('_');
+                const filled=s.slice(0,gap)+'X'+s.slice(gap+1);
+                if(filled==='XXXX'){
+                  const stones=cs6.slice(1,5).filter(([cx,cy])=>cell(cx,cy)===color);
+                  pushUnique(liveThreeGroups,seen3,stones);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return {liveThreeGroups,fourGroups};
+  }
+
+  function threatCellsForOpponent(){
+    if(game.phase!=='playing') return {three:[],four:[]};
+    const me=mySide();
+    if(!me) return {three:[],four:[]};
+    const opponent=me===1?2:1;
+    const {liveThreeGroups,fourGroups}=detectThreats(opponent);
+
+    const threeMap=new Map(), fourMap=new Map();
+    for(const group of liveThreeGroups){
+      for(const [x,y] of group) threeMap.set(`${x},${y}`,[x,y]);
+    }
+    for(const group of fourGroups){
+      for(const [x,y] of group) fourMap.set(`${x},${y}`,[x,y]);
+    }
+    // A four is more urgent; don't double-render the same stone as a three.
+    for(const k of fourMap.keys()) threeMap.delete(k);
+    return {three:[...threeMap.values()],four:[...fourMap.values()]};
   }
 
   function drawBoard(){
@@ -895,6 +1148,82 @@
       }
     }
 
+
+    // 设计化落点预览：外环 + 内环 + 四向定位刻度
+    if(pendingPreview && game.phase==='playing' && game.board[pendingPreview.y][pendingPreview.x]===0){
+      const cx=pad+pendingPreview.x*cell, cy=pad+pendingPreview.y*cell;
+      const r=cell*.39;
+      const t=Date.now()/280;
+      const breathe=.92+.06*Math.sin(t);
+      const dark=pendingPreview.color===1;
+      ctx.save();
+      ctx.translate(cx,cy);
+      ctx.scale(breathe,breathe);
+
+      // soft halo
+      ctx.strokeStyle=dark?'rgba(45,47,43,.18)':'rgba(255,255,255,.28)';
+      ctx.lineWidth=Math.max(5,size/120);
+      ctx.beginPath();ctx.arc(0,0,r*.95,0,Math.PI*2);ctx.stroke();
+
+      // primary ring
+      ctx.strokeStyle=dark?'rgba(42,43,39,.86)':'rgba(255,255,255,.98)';
+      ctx.lineWidth=Math.max(2.4,size/250);
+      ctx.beginPath();ctx.arc(0,0,r*.82,0,Math.PI*2);ctx.stroke();
+
+      // inner ring
+      ctx.strokeStyle=dark?'rgba(42,43,39,.42)':'rgba(255,255,255,.56)';
+      ctx.lineWidth=Math.max(1.2,size/420);
+      ctx.beginPath();ctx.arc(0,0,r*.52,0,Math.PI*2);ctx.stroke();
+
+      // four directional ticks
+      ctx.lineWidth=Math.max(2,size/320);
+      ctx.lineCap='round';
+      const a=r*1.03,b=r*1.25;
+      ctx.beginPath();
+      ctx.moveTo(-b,0);ctx.lineTo(-a,0);
+      ctx.moveTo(b,0);ctx.lineTo(a,0);
+      ctx.moveTo(0,-b);ctx.lineTo(0,-a);
+      ctx.moveTo(0,b);ctx.lineTo(0,a);
+      ctx.stroke();
+
+      // center dot
+      ctx.fillStyle=dark?'rgba(42,43,39,.72)':'rgba(255,255,255,.9)';
+      ctx.beginPath();ctx.arc(0,0,Math.max(1.8,size/360),0,Math.PI*2);ctx.fill();
+      ctx.restore();
+    }
+
+    // 对方威胁提醒：活三为橙红色，四连/冲四为更强的红色双环
+    const threats=threatCellsForOpponent();
+    if(threats.three.length || threats.four.length){
+      const pulse3=.50+.28*Math.sin(Date.now()/190);
+      const pulse4=.72+.24*Math.sin(Date.now()/125);
+      ctx.save();
+
+      for(const [tx,ty] of threats.three){
+        const cx=pad+tx*cell, cy=pad+ty*cell, r=cell*.49;
+        ctx.lineWidth=Math.max(2.2,size/235);
+        ctx.strokeStyle=`rgba(221,125,66,${pulse3})`;
+        ctx.shadowColor='rgba(221,125,66,.34)';
+        ctx.shadowBlur=cell*.28;
+        ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.stroke();
+      }
+
+      for(const [tx,ty] of threats.four){
+        const cx=pad+tx*cell, cy=pad+ty*cell;
+        const r=cell*.50;
+        ctx.lineWidth=Math.max(2.8,size/205);
+        ctx.strokeStyle=`rgba(211,62,57,${pulse4})`;
+        ctx.shadowColor='rgba(211,62,57,.55)';
+        ctx.shadowBlur=cell*.42;
+        ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.stroke();
+
+        ctx.lineWidth=Math.max(1.2,size/420);
+        ctx.strokeStyle=`rgba(211,62,57,${Math.min(1,pulse4+.12)})`;
+        ctx.beginPath();ctx.arc(cx,cy,r*.68,0,Math.PI*2);ctx.stroke();
+      }
+      ctx.restore();
+    }
+
     const last=game.moves.at(-1);
     if(last){
       const cx=pad+last.x*cell,cy=pad+last.y*cell;
@@ -917,6 +1246,7 @@
   function tick(){
     if(game.phase==='playing'){
       const b=timeLeft(1),w=timeLeft(2);
+      drawBoard();
       const bt=$('#blackTimer'),wt=$('#whiteTimer');
       bt.textContent=game.turn===1?`${Math.ceil(b)}s`:`${turnSeconds}s`;
       wt.textContent=game.turn===2?`${Math.ceil(w)}s`:`${turnSeconds}s`;
