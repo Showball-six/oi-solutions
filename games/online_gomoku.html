@@ -7,26 +7,26 @@
   <title>弈境 · 在线五子棋</title>
   <style>
     :root{
-      --bg:#0b0f0e;
-      --panel:rgba(22,28,26,.78);
-      --panel-2:rgba(255,255,255,.045);
-      --line:rgba(255,255,255,.10);
-      --text:#eef3ef;
-      --muted:#9aa7a0;
-      --accent:#d7b56d;
-      --accent-2:#f1d99a;
-      --danger:#e47777;
-      --ok:#7fd3a7;
+      --bg:#f4efe6;
+      --panel:rgba(255,255,255,.88);
+      --panel-2:rgba(80,62,34,.045);
+      --line:rgba(86,67,38,.13);
+      --text:#2c271f;
+      --muted:#7f776b;
+      --accent:#c89a4f;
+      --accent-2:#b98332;
+      --danger:#d56767;
+      --ok:#69b68e;
       --board:#d6ad69;
       --board-dark:#a9793f;
-      --shadow:0 24px 70px rgba(0,0,0,.42);
+      --shadow:0 18px 55px rgba(88,66,32,.14);
       --radius:24px;
     }
     *{box-sizing:border-box}
     html,body{margin:0;min-height:100%;background:
-      radial-gradient(circle at 12% 12%, rgba(215,181,109,.09), transparent 28%),
-      radial-gradient(circle at 88% 18%, rgba(127,211,167,.06), transparent 24%),
-      linear-gradient(145deg,#090c0b,#111815 55%,#0a0e0d);
+      radial-gradient(circle at 12% 12%, rgba(215,181,109,.20), transparent 28%),
+      radial-gradient(circle at 88% 18%, rgba(127,211,167,.10), transparent 24%),
+      linear-gradient(145deg,#fbf8f2,#f1eadf 55%,#f7f3ec);
       color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
     body{min-height:100vh;overflow-x:hidden}
     button,input,select{font:inherit}
@@ -35,11 +35,11 @@
     .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
     .brand{display:flex;align-items:center;gap:12px}
     .brand-mark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;
-      background:linear-gradient(145deg,#e3c37e,#a8793c);color:#17130d;font-weight:900;
+      background:linear-gradient(145deg,#e2bd73,#b9833c);color:#fffaf1;font-weight:900;
       box-shadow:0 10px 26px rgba(215,181,109,.22)}
     .brand h1{font-size:18px;margin:0;letter-spacing:.12em}
     .brand p{margin:2px 0 0;color:var(--muted);font-size:12px}
-    .status-pill{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:rgba(255,255,255,.035);
+    .status-pill{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:rgba(255,255,255,.72);
       border-radius:999px;padding:9px 13px;color:var(--muted);font-size:12px}
     .dot{width:8px;height:8px;border-radius:50%;background:#718078;box-shadow:0 0 0 4px rgba(113,128,120,.12)}
     .dot.online{background:var(--ok);box-shadow:0 0 0 4px rgba(127,211,167,.12)}
@@ -49,32 +49,32 @@
     /* Entry */
     .entry{display:grid;grid-template-columns:1.05fr .95fr;min-height:670px;overflow:hidden}
     .hero{padding:56px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;
-      background:linear-gradient(160deg,rgba(215,181,109,.08),rgba(255,255,255,.01))}
+      background:linear-gradient(160deg,rgba(215,181,109,.16),rgba(255,255,255,.48))}
     .hero:after{content:"";position:absolute;right:-100px;bottom:-140px;width:480px;height:480px;border-radius:50%;
       border:1px solid rgba(215,181,109,.11);box-shadow:0 0 0 55px rgba(215,181,109,.025),0 0 0 110px rgba(215,181,109,.018)}
     .hero-copy{position:relative;z-index:1}
     .eyebrow{color:var(--accent-2);font-size:12px;letter-spacing:.28em;text-transform:uppercase;margin-bottom:18px}
     .hero h2{font-size:clamp(38px,5.6vw,72px);line-height:1.05;letter-spacing:-.045em;margin:0 0 20px;max-width:650px}
-    .hero p{max-width:570px;color:#b1bbb6;line-height:1.8;font-size:15px}
+    .hero p{max-width:570px;color:#746d62;line-height:1.8;font-size:15px}
     .feature-row{display:flex;gap:10px;flex-wrap:wrap;position:relative;z-index:1}
-    .feature{padding:9px 12px;border:1px solid rgba(255,255,255,.08);border-radius:999px;background:rgba(255,255,255,.025);font-size:12px;color:#c4ccc8}
+    .feature{padding:9px 12px;border:1px solid rgba(255,255,255,.08);border-radius:999px;background:rgba(255,255,255,.56);font-size:12px;color:#6d665c}
     .entry-side{padding:34px;display:flex;align-items:center}
     .entry-card{width:100%}
-    .tabs{display:grid;grid-template-columns:1fr 1fr;background:rgba(255,255,255,.045);padding:4px;border-radius:14px;margin-bottom:26px}
+    .tabs{display:grid;grid-template-columns:1fr 1fr;background:rgba(255,255,255,.66);padding:4px;border-radius:14px;margin-bottom:26px}
     .tab{border:0;background:transparent;color:var(--muted);padding:12px;border-radius:11px;font-weight:700}
-    .tab.active{background:#e9eee9;color:#121613;box-shadow:0 6px 20px rgba(0,0,0,.18)}
+    .tab.active{background:#fff;color:#2f2921;box-shadow:0 6px 20px rgba(0,0,0,.18)}
     .section-title{font-size:25px;margin:0 0 7px;letter-spacing:-.02em}
     .section-sub{color:var(--muted);font-size:13px;margin:0 0 24px;line-height:1.6}
     .field{margin-bottom:17px}
-    .field label{display:block;font-size:12px;color:#aeb8b2;margin-bottom:8px}
-    .input,select{width:100%;border:1px solid var(--line);background:rgba(255,255,255,.045);color:var(--text);
+    .field label{display:block;font-size:12px;color:#746d62;margin-bottom:8px}
+    .input,select{width:100%;border:1px solid var(--line);background:rgba(255,255,255,.70);color:var(--text);
       outline:none;padding:14px 15px;border-radius:13px;transition:.2s}
     .input:focus,select:focus{border-color:rgba(215,181,109,.55);box-shadow:0 0 0 3px rgba(215,181,109,.08)}
-    select option{color:#111}
+    select option{color:#2c271f}
     .room-input{font-size:22px;letter-spacing:.24em;text-align:center;font-weight:800}
     .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
     .switch-row{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--line);
-      padding:13px 14px;border-radius:13px;background:rgba(255,255,255,.028);margin-bottom:20px}
+      padding:13px 14px;border-radius:13px;background:rgba(255,255,255,.58);margin-bottom:20px}
     .switch-row b{display:block;font-size:13px}.switch-row span{display:block;font-size:11px;color:var(--muted);margin-top:3px}
     .switch{width:46px;height:27px;border-radius:999px;border:0;background:#39413d;padding:3px;transition:.2s}
     .switch i{display:block;width:21px;height:21px;border-radius:50%;background:white;transition:.2s}
@@ -82,8 +82,8 @@
     .primary{width:100%;border:0;border-radius:14px;padding:14px 18px;font-weight:900;color:#17130d;
       background:linear-gradient(135deg,var(--accent-2),#c99b4d);box-shadow:0 12px 25px rgba(201,155,77,.18)}
     .primary:disabled{opacity:.45;cursor:not-allowed}
-    .secondary{border:1px solid var(--line);border-radius:12px;padding:10px 14px;color:var(--text);background:rgba(255,255,255,.045)}
-    .hint{font-size:11px;color:#748078;line-height:1.6;margin-top:12px}
+    .secondary{border:1px solid var(--line);border-radius:12px;padding:10px 14px;color:var(--text);background:rgba(255,255,255,.66)}
+    .hint{font-size:11px;color:#8b8174;line-height:1.6;margin-top:12px}
 
     /* Game */
     .game{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:18px}
@@ -95,14 +95,14 @@
     .board-wrap{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:1/1;max-height:calc(100vh - 150px);
       margin:auto;background:linear-gradient(145deg,var(--board),#c89352);box-shadow:inset 0 0 0 1px rgba(0,0,0,.2),0 18px 45px rgba(0,0,0,.28)}
     #board{display:block;width:100%;height:100%;touch-action:none}
-    .board-overlay{position:absolute;inset:0;display:grid;place-items:center;background:rgba(10,14,12,.56);backdrop-filter:blur(5px);z-index:3}
-    .overlay-card{max-width:420px;width:calc(100% - 34px);padding:26px;border-radius:20px;background:rgba(18,23,21,.92);border:1px solid rgba(255,255,255,.11);text-align:center;box-shadow:var(--shadow)}
+    .board-overlay{position:absolute;inset:0;display:grid;place-items:center;background:rgba(251,247,239,.72);backdrop-filter:blur(5px);z-index:3}
+    .overlay-card{max-width:420px;width:calc(100% - 34px);padding:26px;border-radius:20px;background:rgba(255,255,255,.96);border:1px solid rgba(255,255,255,.11);text-align:center;box-shadow:var(--shadow)}
     .overlay-card h3{margin:0 0 8px;font-size:24px}.overlay-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
     .side{display:flex;flex-direction:column;gap:14px}
     .side-card{padding:18px}
     .players{display:grid;gap:10px}
-    .player{border:1px solid var(--line);border-radius:16px;padding:14px;background:rgba(255,255,255,.025);transition:.25s}
-    .player.active{border-color:rgba(215,181,109,.5);background:rgba(215,181,109,.055);box-shadow:0 0 0 1px rgba(215,181,109,.08) inset}
+    .player{border:1px solid var(--line);border-radius:16px;padding:14px;background:rgba(255,255,255,.58);transition:.25s}
+    .player.active{border-color:rgba(215,181,109,.5);background:rgba(215,181,109,.14);box-shadow:0 0 0 1px rgba(215,181,109,.08) inset}
     .player-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
     .p-id{display:flex;align-items:center;gap:10px}
     .stone{width:28px;height:28px;border-radius:50%}
@@ -115,7 +115,7 @@
     .phase-main{text-align:center;padding:7px 0 3px}
     .phase-main h3{font-size:21px;margin:0 0 6px}.phase-main p{color:var(--muted);font-size:12px;margin:0;line-height:1.55}
     .dice-area{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
-    .die-box{border:1px solid var(--line);border-radius:15px;padding:12px;text-align:center;background:rgba(255,255,255,.025)}
+    .die-box{border:1px solid var(--line);border-radius:15px;padding:12px;text-align:center;background:rgba(255,255,255,.52)}
     .die{font-size:34px;line-height:1.1;margin-bottom:5px}.die-box small{color:var(--muted)}
     .choice-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
     .choice{border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);border-radius:13px;padding:11px}
@@ -123,13 +123,13 @@
     .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
     .danger{border-color:rgba(228,119,119,.28);color:#f2b2b2}
     .log{height:110px;overflow:auto;display:flex;flex-direction:column;gap:7px;scrollbar-width:thin}
-    .log div{font-size:11px;color:#929e97;line-height:1.45}.log b{color:#c9d1cc;font-weight:700}
+    .log div{font-size:11px;color:#929e97;line-height:1.45}.log b{color:#514a40;font-weight:700}
     .conn-note{font-size:11px;color:var(--muted);line-height:1.5;margin-top:10px}
-    .toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,16px);background:#f1f4f1;color:#101411;padding:11px 15px;border-radius:12px;
+    .toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,16px);background:#f1f4f1;color:#2b261f;padding:11px 15px;border-radius:12px;
       font-size:12px;font-weight:800;opacity:0;pointer-events:none;transition:.25s;z-index:20;box-shadow:0 14px 35px rgba(0,0,0,.35)}
     .toast.show{opacity:1;transform:translate(-50%,0)}
     .modal{position:fixed;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.55);backdrop-filter:blur(5px);z-index:30;padding:20px}
-    .modal-card{width:min(420px,100%);background:#161c19;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow)}
+    .modal-card{width:min(420px,100%);background:#fffdf9;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow)}
     .modal-card h3{margin:0 0 7px}.modal-card p{color:var(--muted);line-height:1.6;font-size:13px;margin:0 0 18px}
     .modal-buttons{display:grid;grid-template-columns:1fr 1fr;gap:10px}
     @media(max-width:900px){
@@ -141,6 +141,52 @@
       .board-panel{padding:10px}.board-head{padding:4px 2px 10px}.side{grid-template-columns:1fr}
       .row{grid-template-columns:1fr}.entry-side{padding:18px}.side-card{padding:15px}
     }
+  
+    @media(max-width:620px){
+      body{background:linear-gradient(180deg,#fbf7ef,#f3ecdf)}
+      .shell{width:100%;padding:8px 10px 18px}
+      .topbar{margin-bottom:8px;padding:0 2px}
+      .brand-mark{width:36px;height:36px;border-radius:12px}
+      .brand h1{font-size:16px}
+      .status-pill{font-size:11px;background:rgba(255,255,255,.78)}
+      .entry{min-height:calc(100vh - 58px);border-radius:20px}
+      .entry-side{padding:20px 16px;align-items:flex-start}
+      .tabs{margin-bottom:20px}
+      .section-title{font-size:23px}
+      .section-sub{font-size:12px;margin-bottom:20px}
+      .room-input{font-size:21px}
+      .game{display:flex;flex-direction:column;gap:10px}
+      .board-panel{order:1;padding:8px;border-radius:18px}
+      .board-head{align-items:flex-start}
+      .room-meta{gap:6px;font-size:12px}
+      .tag{font-size:10px;padding:5px 7px}
+      #copyRoom{padding:7px 9px;font-size:11px;white-space:nowrap}
+      .board-wrap{width:100%;aspect-ratio:1/1;border-radius:16px}
+      .side{order:2;display:flex;flex-direction:column;gap:10px}
+      .side-card{border-radius:18px;padding:13px}
+      .side-card:nth-child(1){order:1}
+      .side-card:nth-child(2){order:2}
+      .side-card:nth-child(3){order:3;position:sticky;bottom:8px;z-index:5;box-shadow:0 14px 35px rgba(88,66,32,.16)}
+      .side-card:nth-child(4){order:4}
+      .players{grid-template-columns:1fr 1fr}
+      .player{padding:10px}
+      .stone{width:23px;height:23px}
+      .player b{font-size:12px}
+      .player small{font-size:9px}
+      .timer{font-size:18px}
+      .side-title{margin-bottom:8px;font-size:10px}
+      .phase-main{padding:2px 0}
+      .phase-main h3{font-size:18px}
+      .dice-area{margin-top:10px}
+      .die{font-size:28px}
+      .overlay-card{padding:20px 16px}
+      .overlay-card h3{font-size:20px}
+      .actions{grid-template-columns:1fr 1fr}
+      .secondary,.primary{min-height:44px}
+      .conn-note{display:none}
+      .log{height:82px}
+    }
+
   </style>
 </head>
 <body>
@@ -200,7 +246,7 @@
             <button id="undoSwitch" class="switch on" aria-label="允许悔棋"><i></i></button>
           </div>
           <button id="createBtn" class="primary">创建房间</button>
-          <p class="hint">使用 WebRTC 点对点连接。建议将此文件部署到 HTTPS 静态站点后使用；部分网络环境可能限制 P2P 连接。</p>
+          
         </div>
 
         <div id="joinPane" class="hidden">
@@ -211,7 +257,7 @@
             <input id="joinCode" class="input room-input" inputmode="numeric" maxlength="6" placeholder="000000" />
           </div>
           <button id="joinBtn" class="primary">加入房间</button>
-          <p class="hint">一个房间仅支持两位玩家。若长时间无法连接，可检查双方网络或换一个房间码重试。</p>
+          
         </div>
       </div>
     </section>
@@ -280,6 +326,7 @@
           <button id="undoBtn" class="secondary">申请悔棋</button>
           <button id="resignBtn" class="secondary danger">认输</button>
         </div>
+        <button id="rematchBtn" class="primary hidden" style="margin-top:10px">再来一局</button>
         <div id="connNote" class="conn-note">等待连接…</div>
       </section>
 
@@ -337,6 +384,7 @@
       turnStartedAt:null,
       winner:null,
       reason:null,
+      rematch:{host:false,guest:false},
       settings:{turnSeconds:30,undoAllowed:true}
     };
   }
@@ -490,9 +538,14 @@
         pendingUndoFrom=null;
       }else if(type==='resign'){
         if(game.phase==='playing') finishGame('host','对方认输');
+      }else if(type==='rematch'){
+        requestRematch('guest');
       }
     }else{
       if(type==='undo-request') openUndoModal('host');
+      else if(type==='rematch-reset'){
+        localRolled=false;
+      }
       else if(type==='undo-response'){
         if(pendingUndoFrom!=='guest') return;
         if(!data.accept) addLog('对方拒绝了你的悔棋请求。');
@@ -582,7 +635,7 @@
       return;
     }
     if(game.moves.length===BOARD_SIZE*BOARD_SIZE){
-      game.phase='over'; game.reason='和棋'; game.winner='draw'; game.turnStartedAt=null;
+      game.phase='over'; game.reason='和棋'; game.winner='draw'; game.rematch={host:false,guest:false}; game.turnStartedAt=null;
       broadcastState(); render(); return;
     }
     game.turn=played===1?2:1;
@@ -618,8 +671,42 @@
     game.phase='over';
     game.winner=winnerRole;
     game.reason=reason;
+    game.rematch={host:false,guest:false};
     game.turnStartedAt=null;
     broadcastState();
+    render();
+  }
+
+
+  function requestRematch(role){
+    if(game.phase!=='over') return;
+    game.rematch = game.rematch || {host:false,guest:false};
+    if(isHost){
+      game.rematch[role]=true;
+      if(game.rematch.host && game.rematch.guest){
+        resetForRematch();
+      }else{
+        broadcastState();
+        render();
+      }
+    }else if(role==='guest'){
+      game.rematch.guest=true;
+      send('rematch');
+      render();
+    }
+  }
+
+  function resetForRematch(){
+    if(!isHost) return;
+    const settings={...game.settings};
+    game=baseState();
+    game.settings=settings;
+    game.phase='dice';
+    localRolled=false;
+    pendingUndoFrom=null;
+    send('rematch-reset');
+    broadcastState();
+    addLog('<b>新一局开始，重新掷骰决定选择权。</b>');
     render();
   }
 
@@ -744,6 +831,16 @@
 
     $('#undoBtn').disabled=!undoAllowed||game.phase!=='playing'||!game.moves.length;
     $('#resignBtn').disabled=game.phase!=='playing';
+
+    const rematchBtn=$('#rematchBtn');
+    rematchBtn.classList.toggle('hidden',game.phase!=='over');
+    if(game.phase==='over'){
+      game.rematch = game.rematch || {host:false,guest:false};
+      const mine = game.rematch[myRole];
+      const theirsReady = game.rematch[oppRole];
+      rematchBtn.disabled = mine;
+      rematchBtn.textContent = mine ? (theirsReady?'正在开始新一局…':'已准备，等待对方') : (theirsReady?'对方已准备 · 再来一局':'再来一局');
+    }
     drawBoard();
   }
 
@@ -866,6 +963,7 @@
   document.querySelectorAll('[data-choice]').forEach(b=>b.onclick=()=>choose(b.dataset.choice));
   $('#undoBtn').onclick=requestUndo;
   $('#resignBtn').onclick=resign;
+  $('#rematchBtn').onclick=()=>requestRematch(isHost?'host':'guest');
   $('#modalAccept').onclick=()=>answerUndo(true);
   $('#modalReject').onclick=()=>answerUndo(false);
   $('#copyRoom').onclick=async()=>{
