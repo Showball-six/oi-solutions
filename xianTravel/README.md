@@ -50,3 +50,7 @@ SQL 文件不用上传到网页目录也可以。
 
 ## v7 准备清单
 先在 Supabase SQL Editor 运行 `preparation_items_migration.sql`，再部署新版前端。准备清单支持新增、编辑、删除、勾选完成、分类筛选、完成进度和 Realtime 同步。
+
+
+## v7.1 登录页优化
+删除登录页上的 Supabase、匿名登录、Magic Link 等技术提示；默认只展示旅行密码输入框和进入按钮，验证或失败时才显示必要提示。

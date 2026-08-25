@@ -93,7 +93,7 @@ $('passwordForm').onsubmit=async e=>{
   }catch(x){
     console.error('Trip unlock failed:',x);
     const msg=x?.message||x?.error_description||String(x);
-    $('passwordHint').textContent='登录失败：'+msg;
+    $('passwordHint').classList.remove('hidden');$('passwordHint').textContent='登录失败：'+msg;
     toast('登录失败：'+msg,true);
   }
 }
