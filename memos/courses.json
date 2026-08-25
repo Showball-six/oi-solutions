@@ -395,20 +395,20 @@
         
         {
           "id": "content-008",
-          "title": "数学",
-          "lectures": ["lec-031,lec-032"],
+          "title": "基础数论",
+          "lectures": ["lec-031","lec-032"],
           "problems": []
         },
         {
           "id": "content-009",
-          "title": "离散与组合数学",
-          "lectures": [],
+          "title": "贪心策略",
+          "lectures": ["lec-033"],
           "problems": []
         },
         {
           "id": "content-010",
-          "title": "贪心策略",
-          "lectures": ["lec-033"],
+          "title": "高精度",
+          "lectures": [],
           "problems": []
         },
         {

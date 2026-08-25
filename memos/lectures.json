@@ -56,7 +56,7 @@
       "syntax-basics"
     ],
     "topics": [],
-    "href": "memos/lec-004.html",
+    "href": "memos/Lec-basic-programming.html",
     "created": "2026-05-13"
   },
   {
@@ -70,7 +70,7 @@
       "syntax-basics"
     ],
     "topics": [],
-    "href": "memos/lec-005.html",
+    "href": "memos/Lec-sequential-programming.html",
     "created": "2026-05-13"
   },
   {
@@ -84,7 +84,7 @@
       "syntax-basics"
     ],
     "topics": [],
-    "href": "memos/lec-006.html",
+    "href": "memos/Lec-conditional-programming.html",
     "created": "2026-05-14"
   },
   {
@@ -98,7 +98,7 @@
       "syntax-basics"
     ],
     "topics": [],
-    "href": "memos/lec-007.html",
+    "href": "memos/Lec-loop-programming.html",
     "created": "2026-05-15"
   },
   {
@@ -112,7 +112,7 @@
       "syntax-basics"
     ],
     "topics": [],
-    "href": "memos/lec-008.html",
+    "href": "memos/Lec-digit-decomposition.html",
     "created": "2026-05-15"
   },
   {
@@ -126,7 +126,7 @@
       "syntax-basics"
     ],
     "topics": [],
-    "href": "memos/lec-009.html",
+    "href": "memos/Lec-nested-and-complex-loops.html",
     "created": "2026-05-15"
   },
   {
@@ -140,7 +140,7 @@
       "syntax-basics"
     ],
     "topics": [],
-    "href": "memos/lec-010.html",
+    "href": "memos/Lec-array-basics.html",
     "created": "2026-05-21"
   },
   {
@@ -154,7 +154,7 @@
       "syntax-basics"
     ],
     "topics": [],
-    "href": "memos/lec-011.html",
+    "href": "memos/Lec-multidimensional-arrays.html",
     "created": "2026-05-21"
   },
   {
@@ -168,7 +168,7 @@
       "syntax-basics"
     ],
     "topics": [],
-    "href": "memos/lec-012.html",
+    "href": "memos/Lec-array-techniques-index-counting-and-marking.html",
     "created": "2026-05-21"
   },
   {
@@ -184,7 +184,7 @@
     "topics": [
       "misc"
     ],
-    "href": "memos/lec-013.html",
+    "href": "memos/Lec-time-complexity.html",
     "created": "2026-06-17"
   },
   {
@@ -198,7 +198,7 @@
       "algo-basics"
     ],
     "topics": [],
-    "href": "memos/lec-014.html",
+    "href": "memos/Lec-enumeration.html",
     "created": "2026-06-19"
   },
   {
@@ -212,7 +212,7 @@
       "syntax-basics"
     ],
     "topics": [],
-    "href": "memos/lec-015.html",
+    "href": "memos/Lec-string-basics.html",
     "created": "2026-06-25"
   },
   {
@@ -226,7 +226,7 @@
       "syntax-basics"
     ],
     "topics": [],
-    "href": "memos/lec-016.html",
+    "href": "memos/Lec-function-basics.html",
     "created": "2026-06-25"
   },
   {
@@ -240,7 +240,7 @@
       "syntax-basics"
     ],
     "topics": [],
-    "href": "memos/lec-017.html",
+    "href": "memos/Lec-structs.html",
     "created": "2026-06-25"
   },
   {
@@ -254,7 +254,7 @@
       "syntax-basics"
     ],
     "topics": [],
-    "href": "memos/lec-018.html",
+    "href": "memos/Lec-pointers-and-references.html",
     "created": "2026-06-25"
   },
   {
@@ -270,13 +270,13 @@
     "topics": [
       "basic-algo"
     ],
-    "href": "memos/lec-019.html",
+    "href": "memos/Lec-base-conversion.html",
     "created": "2026-06-25"
   },
   {
     "id": "lec-020",
     "slug": "lec-020",
-    "title": "位运算",
+    "title": "编码与位运算",
     "tags": [
       "基础算法课程"
     ],
@@ -286,7 +286,7 @@
     "topics": [
       "basic-algo"
     ],
-    "href": "memos/lec-020.html",
+    "href": "memos/Lec-encoding-and-bitwise-operations.html",
     "created": "2026-06-25"
   },
   {
@@ -314,7 +314,7 @@
     "topics": [
       "basic-algo"
     ],
-    "href": "memos/lec-022.html",
+    "href": "memos/Lec-simulation.html",
     "created": "2026-07-04"
   },
   {
@@ -330,7 +330,7 @@
     "topics": [
       "basic-algo"
     ],
-    "href": "memos/lec-023.html",
+    "href": "memos/Lec-recursion-and-recurrence.html",
     "created": "2026-07-08"
   },
   {
@@ -346,7 +346,7 @@
     "topics": [
       "basic-algo"
     ],
-    "href": "memos/lec-024.html",
+    "href": "memos/Lec-sorting-algorithms.html",
     "created": "2026-07-10"
   },
   {
@@ -362,7 +362,7 @@
     "topics": [
       "basic-algo"
     ],
-    "href": "memos/lec-025.html",
+    "href": "memos/Lec-1d-prefix-sums-and-difference-arrays.html",
     "created": "2026-07-13"
   },
   {
@@ -378,7 +378,7 @@
     "topics": [
       "basic-algo"
     ],
-    "href": "memos/lec-026.html",
+    "href": "memos/Lec-2d-prefix-sums-and-difference-arrays.html",
     "created": "2026-07-13"
   },
   {
@@ -394,7 +394,7 @@
     "topics": [
       "basic-algo"
     ],
-    "href": "memos/lec-027.html",
+    "href": "memos/Lec-advanced-prefix-sums-and-difference-arrays.html",
     "created": "2026-07-13"
   },
   {
@@ -410,7 +410,7 @@
     "topics": [
       "basic-algo"
     ],
-    "href": "memos/lec-028.html",
+    "href": "memos/Lec-good-interval-problems.html",
     "created": "2026-07-13"
   },
   {
@@ -426,7 +426,7 @@
     "topics": [
       "basic-algo"
     ],
-    "href": "memos/lec-029.html",
+    "href": "memos/Lec-two-pointers.html",
     "created": "2026-07-14"
   },
   {
@@ -442,13 +442,13 @@
     "topics": [
       "basic-algo"
     ],
-    "href": "memos/lec-030.html",
+    "href": "memos/Lec-common-stl.html",
     "created": "2026-07-14"
   },
   {
     "id": "lec-031",
     "slug": "lec-031",
-    "title": "数论基本知识",
+    "title": "数学符号与基本知识",
     "tags": [],
     "courses": [
       "algo-basics"
@@ -456,7 +456,7 @@
     "topics": [
       "math"
     ],
-    "href": "memos/lec-031.html",
+    "href": "memos/Lec-mathematical-notation-and-basics.html",
     "created": "2026-07-26"
   },
   {
@@ -472,7 +472,7 @@
     "topics": [
       "math"
     ],
-    "href": "memos/lec-032.html",
+    "href": "memos/Lec-prime-sieve.html",
     "created": "2026-07-29"
   },
   {
@@ -488,7 +488,7 @@
     "topics": [
       "basic-algo"
     ],
-    "href": "memos/lec-033.html",
+    "href": "memos/Lec-greedy-strategies.html",
     "created": "2026-08-01"
   },
   {
@@ -504,7 +504,7 @@
     "topics": [
       "basic-algo"
     ],
-    "href": "memos/lec-034.html",
+    "href": "memos/Lec-binary-search.html",
     "created": "2026-08-03"
   },
   {
@@ -520,7 +520,7 @@
     "topics": [
       "basic-algo"
     ],
-    "href": "memos/lec-035.html",
+    "href": "memos/Lec-binary-search-on-answer.html",
     "created": "2026-08-06"
   }
 ]
