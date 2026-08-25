@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>西安之行 · 2026</title><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="toast" class="toast" aria-live="polite"></div>
+
+<section id="passwordScreen" class="auth-screen">
+  <form id="passwordForm" class="auth-card">
+    <div class="eyebrow">XI'AN · 2026</div><h1>西安之行</h1>
+    <p class="auth-copy">输入旅行密码后进入。无需邮箱，无需 Magic Link。</p>
+    <label>旅行密码<input id="tripPassword" type="password" autocomplete="current-password" required></label>
+    <button class="btn primary wide" type="submit">进入行程</button>
+    <p id="passwordHint" class="hint">密码在 Supabase 数据库端验证，不会明文写进网页。</p>
+  </form>
+</section>
+
+<main id="app" class="page hidden">
+<header class="top">
+ <div><div class="eyebrow">XI'AN · 2026</div><h1>西安之行</h1><div class="subtitle">9月4日 — 9月9日 · 深圳 ⇄ 西安 · 两人同行</div></div>
+ <div class="header-actions"><div class="sync-pill"><span id="syncDot" class="sync-dot"></span><span id="syncText">云端已连接</span></div><button id="lockBtn" class="btn ghost" type="button">锁定页面</button></div>
+</header>
+
+<section class="flights">
+ <article class="flight"><div class="flight-icon">↗</div><div><small>去程 · 南航 CZ3793</small><div class="route"><strong>22:15</strong><span>深圳</span><span class="arrow">→</span><span>西安</span><strong>01:00</strong></div></div><div class="flight-date"><b>09.04</b><span>周五</span></div></article>
+ <article class="flight"><div class="flight-icon">↙</div><div><small>返程 · 南航 CZ6622</small><div class="route"><strong>14:05</strong><span>西安</span><span class="arrow">→</span><span>深圳</span><strong>16:55</strong></div></div><div class="flight-date"><b>09.09</b><span>周三</span></div></article>
+</section>
+
+<section class="section">
+ <div class="section-title"><div><h2>预约中心</h2><p>新增、编辑、删除并追踪预约状态。</p></div><button id="addReservationBtn" class="btn primary" type="button">＋ 新增预约</button></div>
+ <div id="reservationGrid" class="reserve-grid"></div>
+</section>
+
+<section class="section">
+ <div class="section-title">
+  <div><h2>准备清单</h2><p>出发前逐项确认；支持新增、编辑、删除和勾选完成。</p></div>
+  <button id="addPreparationBtn" class="btn primary" type="button">＋ 添加物品</button>
+ </div>
+ <div class="prep-summary">
+  <div class="prep-progress"><span id="prepProgressText">0 / 0 已准备</span><div class="prep-progress-bar"><i id="prepProgressBar"></i></div></div>
+  <div id="prepFilters" class="food-filters"></div>
+ </div>
+ <div id="preparationGrid" class="prep-grid"></div>
+</section>
+
+<section class="section">
+ <div class="section-title"><div><h2>4 日行程</h2><p>按开始时间自动排序；冲突会即时标红。</p></div><button id="addScheduleBtn" class="btn" type="button">＋ 添加日程</button></div>
+ <div class="workspace"><div id="board" class="board"></div>
+ <aside class="food-panel"><div class="food-head"><div><h3>西安美食大合集</h3><p>可新增、编辑、删除，并拖到任意一天。</p></div><button id="addFoodBtn" class="btn primary compact" type="button">＋ 美食</button></div><div id="foodFilters" class="food-filters"></div><div id="foodList" class="food-list"></div><div class="food-tip">拖入后自动按时间排序，并检查时间冲突；手机可选择日期后点“加入”。</div></aside>
+ </div>
+</section>
+<footer class="footer"><span id="live">Supabase 为主数据源；浏览器仅保留最近缓存。</span><span>红色边框 = 时间冲突</span></footer>
+</main>
+
+<div id="reservationModal" class="modal-backdrop"><div class="modal"><div class="modal-head"><h3 id="reservationModalTitle">预约项目</h3><button class="close" data-close="reservationModal" type="button">×</button></div><form id="reservationForm"><input id="reservationId" type="hidden"><div class="form-grid"><label>预约项目<input id="reservationName" required></label><label>状态<select id="reservationStatus"><option value="todo">待预约</option><option value="watch">待关注</option><option value="done">已预约</option></select></label><label>参观日期<input id="reservationVisit"></label><label>放票 / 操作时间<input id="reservationDeadline"></label><label class="full">预约方式<input id="reservationMethod"></label><label class="full">备注<textarea id="reservationNote"></textarea></label></div><div class="modal-actions"><button class="btn" data-close="reservationModal" type="button">取消</button><button class="btn primary">保存预约</button></div></form></div></div>
+
+<div id="scheduleModal" class="modal-backdrop"><div class="modal"><div class="modal-head"><h3 id="scheduleModalTitle">日程项目</h3><button class="close" data-close="scheduleModal" type="button">×</button></div><form id="scheduleForm"><input id="scheduleId" type="hidden"><div class="form-grid"><label>日期<select id="scheduleDay"></select></label><label>开始时间<input id="scheduleStart" type="time" required></label><label>时长（分钟）<input id="scheduleDuration" type="number" min="15" max="960" step="15" required></label><label>类型<select id="scheduleType"><option value="normal">普通行程</option><option value="food">美食</option></select></label><label class="full">行程名称<input id="scheduleTitle" required></label><label class="full">备注<textarea id="scheduleNote"></textarea></label></div><div class="modal-actions"><button class="btn" data-close="scheduleModal" type="button">取消</button><button class="btn primary">保存日程</button></div></form></div></div>
+
+<div id="preparationModal" class="modal-backdrop">
+ <div class="modal">
+  <div class="modal-head"><h3 id="preparationModalTitle">准备物品</h3><button class="close" data-close="preparationModal" type="button">×</button></div>
+  <form id="preparationForm">
+   <input id="preparationId" type="hidden">
+   <div class="form-grid">
+    <label>物品名称<input id="preparationName" maxlength="60" required></label>
+    <label>分类<input id="preparationCategory" maxlength="30" required placeholder="证件 / 电子 / 日用"></label>
+    <label class="full">备注<textarea id="preparationNote" maxlength="200"></textarea></label>
+    <label class="full prep-check-label"><input id="preparationDone" type="checkbox"> 已经准备好</label>
+   </div>
+   <div class="modal-actions"><button class="btn" data-close="preparationModal" type="button">取消</button><button class="btn primary">保存</button></div>
+  </form>
+ </div>
+</div>
+
+<div id="foodModal" class="modal-backdrop"><div class="modal"><div class="modal-head"><h3 id="foodModalTitle">美食项目</h3><button class="close" data-close="foodModal" type="button">×</button></div><form id="foodForm"><input id="foodId" type="hidden"><div class="form-grid"><label>美食名称<input id="foodName" required></label><label>分类<input id="foodCategory" required></label><label>默认开始时间<input id="foodDefaultTime" type="time" required></label><label>默认时长（分钟）<input id="foodDuration" type="number" min="15" max="300" step="15" required></label><label class="full">备注<textarea id="foodNote"></textarea></label></div><div class="modal-actions"><button class="btn" data-close="foodModal" type="button">取消</button><button class="btn primary">保存美食</button></div></form></div></div>
+<script type="module" src="./app.js"></script>
+</body></html>
