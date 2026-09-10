@@ -328,19 +328,26 @@
         {
           "id": "content-006",
           "title": "字符串",
-          "lectures": ["lec-015"],
+          "lectures": [
+            "lec-015"
+          ],
           "problems": []
         },
         {
           "id": "content-007",
           "title": "函数",
-          "lectures": ["lec-016"],
+          "lectures": [
+            "lec-016"
+          ],
           "problems": []
         },
         {
           "id": "content-008",
           "title": "结构体、指针与引用",
-          "lectures": ["lec-017","lec-018"],
+          "lectures": [
+            "lec-017",
+            "lec-018"
+          ],
           "problems": []
         }
       ]
@@ -353,56 +360,80 @@
         {
           "id": "content-001",
           "title": "进制与编码",
-          "lectures": ["lec-019","lec-020"],
+          "lectures": [
+            "lec-019",
+            "lec-020"
+          ],
           "problems": []
         },
         {
           "id": "content-002",
           "title": "枚举法",
-          "lectures": ["lec-013","lec-014"],
+          "lectures": [
+            "lec-013",
+            "lec-014"
+          ],
           "problems": []
         },
         {
           "id": "content-003",
           "title": "模拟法",
-          "lectures": ["lec-022"],
+          "lectures": [
+            "lec-022"
+          ],
           "problems": []
         },
         {
           "id": "content-004",
           "title": "递归与递推",
-          "lectures": ["lec-023"],
+          "lectures": [
+            "lec-023"
+          ],
           "problems": []
         },
         {
           "id": "content-005",
           "title": "排序及常用STL",
-          "lectures": ["lec-024","lec-030"],
+          "lectures": [
+            "lec-024",
+            "lec-030"
+          ],
           "problems": []
         },
         {
           "id": "content-006",
           "title": "前缀和与差分",
-          "lectures": ["lec-025","lec-026","lec-027","lec-028"],
+          "lectures": [
+            "lec-025",
+            "lec-026",
+            "lec-027",
+            "lec-028"
+          ],
           "problems": []
         },
         {
           "id": "content-007",
           "title": "双指针算法(尺取法)",
-          "lectures": ["lec-029"],
+          "lectures": [
+            "lec-029"
+          ],
           "problems": []
         },
-        
         {
           "id": "content-008",
           "title": "基础数论",
-          "lectures": ["lec-031","lec-032"],
+          "lectures": [
+            "lec-031",
+            "lec-032"
+          ],
           "problems": []
         },
         {
           "id": "content-009",
           "title": "贪心策略",
-          "lectures": ["lec-033"],
+          "lectures": [
+            "lec-033"
+          ],
           "problems": []
         },
         {
@@ -420,7 +451,10 @@
         {
           "id": "content-012",
           "title": "二分",
-          "lectures": ["lec-034","lec-035"],
+          "lectures": [
+            "lec-034",
+            "lec-035"
+          ],
           "problems": []
         },
         {
@@ -435,7 +469,6 @@
           "lectures": [],
           "problems": []
         },
-        
         {
           "id": "content-015",
           "title": "动态规划",
@@ -580,76 +613,65 @@
       ]
     },
     {
-      "id": "contest-prep",
-      "title": "竞赛备赛专项课程",
+      "id": "contest-gesp",
+      "title": "GESP",
       "color": "green",
       "contents": [
         {
-          "id": "written-001",
-          "type": "written",
-          "contest": "CSP-J",
-          "title": "CSP 2024 入门级第一轮",
+          "id": "content-001",
+          "title": "GESP 一级",
+          "lectures": ["lec-036","lec-037"],
+          "problems": []
+        },
+        {
+          "id": "content-002",
+          "title": "GESP 二级",
+          "lectures": ["lec-038","lec-039"],
+          "problems": []
+        },
+        {
+          "id": "content-003",
+          "title": "GESP 三级",
+          "lectures": ["lec-040","lec-041"],
+          "problems": []
+        },
+        {
+          "id": "content-004",
+          "title": "GESP 四级",
+          "lectures": ["lec-042","lec-043"],
+          "problems": []
+        },
+        {
+          "id": "content-005",
+          "title": "GESP 五级",
           "lectures": [],
           "problems": []
         },
         {
-          "id": "mock-001",
-          "type": "mock",
-          "contest": "粤港澳大湾区信息学",
-          "title": "粤港澳模拟赛 #1",
-          "problems": [
-            {
-              "pid": "abc458_b",
-              "platform": "atcoder",
-              "title": "Count Adjacent Cells",
-              "full_score": 100
-            },
-            {
-              "pid": "abc084_d",
-              "platform": "atcoder",
-              "title": "2017-like Number",
-              "full_score": 100
-            },
-            {
-              "pid": "abc130_d",
-              "platform": "atcoder",
-              "title": "Enough Array",
-              "full_score": 100
-            },
-            {
-              "pid": "abc280_d",
-              "platform": "atcoder",
-              "title": "Factorial and Multiple",
-              "full_score": 100
-            }
-          ],
-          "scores": {
-            "stu-005": {
-              "abc458_b": 100,
-              "abc084_d": 30,
-              "abc130_d": 60,
-              "abc280_d": 15
-            },
-            "stu-003": {
-              "abc458_b": 100,
-              "abc084_d": 60,
-              "abc130_d": 60,
-              "abc280_d": 17
-            },
-            "stu-004": {
-              "abc458_b": 100,
-              "abc084_d": 60,
-              "abc130_d": 83,
-              "abc280_d": 17
-            }
-          },
-          "participants": [
-            "stu-003",
-            "stu-004",
-            "stu-005"
-          ]
+          "id": "content-006",
+          "title": "GESP 六级",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-007",
+          "title": "GESP 七级",
+          "lectures": [],
+          "problems": []
+        },
+        {
+          "id": "content-008",
+          "title": "GESP 八级",
+          "lectures": [],
+          "problems": []
         }
       ]
+    },
+    {
+      "id": "contest-csp",
+      "title": "CSP",
+      "color": "green",
+      "contents": []
     }
   ],
   "topics": [

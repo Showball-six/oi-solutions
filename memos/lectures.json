@@ -522,5 +522,117 @@
     ],
     "href": "memos/Lec-binary-search-on-answer.html",
     "created": "2026-08-06"
+  },
+  {
+    "id": "lec-036",
+    "slug": "lec-036",
+    "title": "GESP 一级知识点",
+    "tags": [
+      "GESP 一级"
+    ],
+    "courses": [
+      "contest-prep"
+    ],
+    "topics": [],
+    "href": "memos/lec-036.html",
+    "created": "2026-09-10"
+  },
+  {
+    "id": "lec-037",
+    "slug": "lec-037",
+    "title": "GESP 一级上机题型",
+    "tags": [
+      "GESP 一级"
+    ],
+    "courses": [
+      "contest-prep"
+    ],
+    "topics": [],
+    "href": "memos/lec-037.html",
+    "created": "2026-09-10"
+  },
+  {
+    "id": "lec-038",
+    "slug": "lec-038",
+    "title": "GESP 二级知识点",
+    "tags": [
+      "GESP 二级"
+    ],
+    "courses": [
+      "contest-prep"
+    ],
+    "topics": [],
+    "href": "memos/lec-038.html",
+    "created": "2026-09-10"
+  },
+  {
+    "id": "lec-039",
+    "slug": "lec-039",
+    "title": "GESP 二级上机题型",
+    "tags": [
+      "GESP 二级"
+    ],
+    "courses": [
+      "contest-prep"
+    ],
+    "topics": [],
+    "href": "memos/lec-039.html",
+    "created": "2026-09-10"
+  },
+  {
+    "id": "lec-040",
+    "slug": "lec-040",
+    "title": "GESP 三级知识点",
+    "tags": [
+      "GESP 三级"
+    ],
+    "courses": [
+      "contest-prep"
+    ],
+    "topics": [],
+    "href": "memos/lec-040.html",
+    "created": "2026-09-10"
+  },
+  {
+    "id": "lec-041",
+    "slug": "lec-041",
+    "title": "GESP 三级上机题型",
+    "tags": [
+      "GESP 三级"
+    ],
+    "courses": [
+      "contest-prep"
+    ],
+    "topics": [],
+    "href": "memos/lec-041.html",
+    "created": "2026-09-10"
+  },
+  {
+    "id": "lec-042",
+    "slug": "lec-042",
+    "title": "GESP 四级知识点",
+    "tags": [
+      "GESP 四级"
+    ],
+    "courses": [
+      "contest-prep"
+    ],
+    "topics": [],
+    "href": "memos/lec-042.html",
+    "created": "2026-09-10"
+  },
+  {
+    "id": "lec-043",
+    "slug": "lec-043",
+    "title": "GESP 四级上机题型",
+    "tags": [
+      "GESP 四级"
+    ],
+    "courses": [
+      "contest-prep"
+    ],
+    "topics": [],
+    "href": "memos/lec-043.html",
+    "created": "2026-09-10"
   }
 ]
