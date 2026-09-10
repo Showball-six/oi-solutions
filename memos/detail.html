@@ -9,21 +9,156 @@
   <link rel="stylesheet" href="../assets/theme.css">
   <script defer src="../assets/app.js"></script>
   <style>
-    .lecture-group{margin-bottom:28px}
-    .lecture-group:last-child{margin-bottom:0}
-    .lecture-group-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:10px}
-    .lecture-group-title{margin:0;font-size:15px;font-weight:720;letter-spacing:-.01em}
-    .lecture-group-count{font-size:11px;color:var(--text-3);white-space:nowrap}
-    .lecture-card{position:relative}
+    /* ── Course detail / learning path ───────────────────────────── */
+    .detail-hero{
+      position:relative;
+      overflow:hidden;
+      margin-bottom:34px;
+      padding:28px 30px;
+      border:1px solid var(--border);
+      border-radius:18px;
+      background:
+        radial-gradient(circle at 92% 12%,rgba(56,189,248,.18),transparent 28%),
+        linear-gradient(135deg,var(--surface) 0%,var(--brand-50) 100%);
+      box-shadow:var(--shadow);
+    }
+    .detail-hero::after{
+      content:"";
+      position:absolute;
+      width:150px;height:150px;
+      right:-54px;bottom:-82px;
+      border:24px solid rgba(14,165,233,.08);
+      border-radius:50%;
+      pointer-events:none;
+    }
+    .detail-hero .hero-badge{position:relative;z-index:1;margin-bottom:12px}
+    .detail-hero h1{position:relative;z-index:1;font-size:34px}
+    .detail-hero p{position:relative;z-index:1;max-width:680px;font-size:14px}
+    .course-summary{position:relative;z-index:1;display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:16px}
+    .summary-chip{
+      display:inline-flex;align-items:center;gap:6px;
+      min-height:28px;padding:4px 10px;
+      border:1px solid var(--brand-100);border-radius:999px;
+      background:rgba(255,255,255,.72);color:var(--brand-700);
+      font-family:var(--mono);font-size:11px;font-weight:700;
+      backdrop-filter:blur(8px);
+    }
+    .summary-chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--brand-400);box-shadow:0 0 0 4px rgba(56,189,248,.12)}
+
+    .catalog-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:0 0 15px}
+    .catalog-heading-main{display:flex;align-items:center;gap:10px}
+    .catalog-heading-icon{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:var(--brand-50);border:1px solid var(--brand-100);color:var(--brand-600)}
+    .catalog-heading-icon svg{width:15px;height:15px;stroke-width:1.9}
+    .catalog-heading h2{margin:0;font-size:15px;font-weight:760;letter-spacing:-.01em}
+    .catalog-heading p{margin:1px 0 0;font-size:10px;color:var(--text-3)}
+
+    .lecture-groups{display:grid;gap:16px}
+    .lecture-group{
+      position:relative;
+      display:grid;
+      grid-template-columns:minmax(170px,220px) minmax(0,1fr);
+      gap:22px;
+      margin:0;
+      padding:20px;
+      border:1px solid var(--border);
+      border-radius:15px;
+      background:var(--surface);
+      box-shadow:0 1px 2px rgba(15,23,42,.025);
+      transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease;
+      overflow:hidden;
+    }
+    .lecture-group::before{
+      content:"";position:absolute;left:0;top:18px;bottom:18px;width:3px;
+      border-radius:0 4px 4px 0;background:linear-gradient(180deg,var(--brand-300),var(--brand-600));
+    }
+    .lecture-group:hover{border-color:var(--brand-200);box-shadow:var(--shadow)}
+    .lecture-group-head{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:0;margin:0;padding:4px 2px 4px 7px}
+    .lecture-group-step{
+      display:inline-flex;align-items:center;gap:7px;
+      margin-bottom:18px;color:var(--brand-600);
+      font-family:var(--mono);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+    }
+    .lecture-group-step::after{content:"";width:24px;height:1px;background:var(--brand-200)}
+    .lecture-group-title{margin:0;font-size:17px;font-weight:780;letter-spacing:-.02em;line-height:1.35}
+    .lecture-group-count{display:inline-flex;align-items:center;margin-top:8px;padding:3px 8px;border-radius:999px;background:var(--surface-soft);border:1px solid var(--border);font-size:10px;color:var(--text-3);white-space:nowrap}
+    .lecture-group-note{margin-top:auto;padding-top:18px;font-size:10px;line-height:1.6;color:var(--text-3)}
+
+    .lecture-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-content:start}
+    .lecture-card{
+      position:relative;
+      min-height:88px;
+      padding:14px 14px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:var(--surface-soft);
+      display:grid;
+      grid-template-columns:34px minmax(0,1fr) 30px;
+      align-items:center;
+      gap:11px;
+      transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease;
+    }
+    .lecture-card::before{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 1px 0 rgba(255,255,255,.38);pointer-events:none}
+    .lecture-card:hover{
+      transform:translateY(-2px);
+      border-color:var(--brand-200);
+      background:var(--surface);
+      box-shadow:0 10px 24px rgba(14,165,233,.08);
+    }
+    .lecture-card-icon{
+      width:34px;height:34px;border-radius:10px;
+      display:grid;place-items:center;
+      background:var(--brand-50);border:1px solid var(--brand-100);color:var(--brand-600);
+      transition:background .18s ease,color .18s ease,transform .18s ease;
+    }
+    .lecture-card-icon svg{width:16px;height:16px;stroke-width:1.8}
+    .lecture-card:hover .lecture-card-icon{background:var(--brand-500);border-color:var(--brand-500);color:#fff;transform:scale(1.04)}
     .lecture-card-main{min-width:0}
-    .lecture-card-title{display:block}
-    .lecture-card-meta{margin-top:5px}
-    .lecture-card-meta .tag{font-size:10px;padding:2px 7px;border-radius:999px;background:var(--surface-subtle);border:1px solid var(--border);color:var(--text-2)}
-    .lecture-arrow{font-size:18px;transition:transform .15s,color .15s}
-    .lecture-card:hover .lecture-arrow{transform:translateX(3px);color:var(--brand-500)}
-    .course-summary{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px}
-    .summary-chip{font-size:11px;color:var(--text-2);padding:4px 9px;border:1px solid var(--border);border-radius:999px;background:var(--surface)}
+    .lecture-card-title{display:block;color:var(--text);font-size:13px;font-weight:720;line-height:1.45;transition:color .15s}
+    .lecture-card:hover .lecture-card-title{color:var(--brand-700)}
+    .lecture-card-meta{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:6px;color:var(--text-3);font-size:10px}
+    .lecture-date{display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
+    .lecture-date svg{width:11px;height:11px;stroke-width:1.8}
+    .lecture-card-meta .tag{display:inline-flex;align-items:center;font-size:9px;padding:2px 7px;border-radius:999px;background:var(--surface);border:1px solid var(--border);color:var(--text-2)}
+    .lecture-arrow{
+      width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
+      color:var(--text-3);background:var(--surface);border:1px solid var(--border);
+      transition:transform .18s ease,color .18s ease,border-color .18s ease,background .18s ease;
+    }
+    .lecture-arrow svg{width:13px;height:13px;stroke-width:2}
+    .lecture-card:hover .lecture-arrow{transform:translateX(2px);color:#fff;border-color:var(--brand-500);background:var(--brand-500)}
+
+    .single-list-wrap{padding:18px;border:1px solid var(--border);border-radius:15px;background:var(--surface);box-shadow:var(--shadow)}
+    .single-list-wrap .lecture-list{grid-template-columns:repeat(2,minmax(0,1fr))}
     .load-note{margin-top:18px;font-size:11px;color:var(--text-3)}
+
+    html[data-theme="dark"] .detail-hero{
+      background:radial-gradient(circle at 92% 12%,rgba(14,165,233,.16),transparent 30%),linear-gradient(135deg,var(--surface) 0%,rgba(14,165,233,.055) 100%);
+    }
+    html[data-theme="dark"] .summary-chip{background:rgba(15,23,42,.62);border-color:rgba(56,189,248,.18);color:var(--brand-300)}
+    html[data-theme="dark"] .lecture-card::before{box-shadow:inset 0 1px 0 rgba(255,255,255,.025)}
+    html[data-theme="dark"] .lecture-card:hover{box-shadow:0 12px 26px rgba(0,0,0,.20),0 0 0 1px rgba(56,189,248,.04)}
+    html[data-theme="dark"] .lecture-card:hover .lecture-card-title{color:var(--brand-300)}
+
+    @media(max-width:980px){
+      .lecture-group{grid-template-columns:150px minmax(0,1fr);gap:16px}
+      .lecture-list{grid-template-columns:1fr}
+    }
+    @media(max-width:700px){
+      .detail-hero{padding:22px 20px;border-radius:14px;margin-bottom:26px}
+      .detail-hero h1{font-size:28px}
+      .lecture-group{grid-template-columns:1fr;gap:14px;padding:16px}
+      .lecture-group-head{padding:1px 2px 0 7px}
+      .lecture-group-step{margin-bottom:8px}
+      .lecture-group-note{display:none}
+      .lecture-group-count{margin-top:6px}
+      .single-list-wrap{padding:12px}
+      .single-list-wrap .lecture-list{grid-template-columns:1fr}
+    }
+    @media(max-width:430px){
+      .lecture-card{grid-template-columns:32px minmax(0,1fr) 26px;padding:12px 11px;gap:9px}
+      .lecture-card-icon{width:32px;height:32px}
+      .lecture-arrow{width:26px;height:26px}
+    }
   </style>
 </head>
 <body data-page="courses">
@@ -37,7 +172,6 @@
     <a class="side-link" data-page="courses" href="../memos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg><span>课程</span></a>
     <a class="side-link" data-page="templates" href="../templates.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6M14 4l-4 16"/></svg><span>代码模板</span></a>
     <a class="side-link" data-page="tools" href="../tools.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 15.5A3.5 3.5 0 1 0 12 8a3.5 3.5 0 0 0 0 7.5Z"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.83 2.83-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 1.55V21h-4v-.05a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.88.34l-.06.06-2.83-2.83.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.55-1H3v-4h.05A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.88l-.06-.06 2.83-2.83.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.55V3h4v.05a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.88-.34l.06-.06 2.83 2.83-.06.06A1.7 1.7 0 0 0 19.4 9a1.7 1.7 0 0 0 1.55 1H21v4h-.05A1.7 1.7 0 0 0 19.4 15Z"/></svg><span>小工具</span></a>
-    <a class="side-link" href="http://8.166.131.225" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 5h16v11H4z"/><path d="M8 20h8M12 16v4"/><path d="m8.5 10 2 2 4-4"/></svg><span>Dawn OJ <small style="opacity:.62;font-weight:500">在线测评</small></span></a>
   </nav>
   <div class="sidebar-spacer"></div>
   <div class="sidebar-note"><strong>Showball OI</strong>好题、课程、模板与算法工具。</div>
@@ -55,7 +189,7 @@
 
   <div class="page">
     <div class="breadcrumb" id="breadcrumb"></div>
-    <div class="hero">
+    <div class="hero detail-hero">
       <div class="hero-badge" id="hero-badge">课程</div>
       <h1 id="hero-title">加载中…</h1>
       <p id="hero-desc"></p>
@@ -142,37 +276,72 @@ function renderLectureCards(lectures){
   if(!lectures.length) return '<div class="empty-state">暂无讲义</div>';
   return `<div class="lecture-list">${lectures.map(l=>`
     <a class="lecture-card" href="${escapeHtml(lectureHref(l.href))}">
+      <span class="lecture-card-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 3h9l3 3v15H6z"/><path d="M15 3v4h4M9 11h6M9 15h6"/></svg>
+      </span>
       <div class="lecture-card-main">
         <span class="lecture-card-title">${escapeHtml(l.title)}</span>
         <div class="lecture-card-meta">
-          ${l.created ? `<span>${escapeHtml(l.created)}</span>` : ''}
+          ${l.created ? `<span class="lecture-date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7 3v3M17 3v3M4 9h16"/><rect x="4" y="5" width="16" height="15" rx="2"/></svg>${escapeHtml(l.created)}</span>` : ''}
           ${(l.tags||[]).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join('')}
         </div>
       </div>
-      <span class="lecture-arrow">→</span>
+      <span class="lecture-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>`).join('')}</div>`;
 }
 
-function renderGroupedCourse(course,lectureMap){
-  const groups=(course.contents||[]).map(content=>({
-    content,
-    lectures:uniqueLectures(content.lectures,lectureMap)
-  })).filter(group=>group.lectures.length);
+function courseLectures(course,allLectures,lectureMap){
+  // 同时支持两种归属方式：
+  // 1. courses.json 的 content.lectures 显式关联；
+  // 2. lectures.json 的 lecture.courses 直接声明所属课程。
+  // 这样新增 GESP 等课程讲义时，只更新 lectures.json 也能立即同步。
+  const ids=new Set((course.contents||[]).flatMap(c=>c.lectures||[]));
+  allLectures.forEach(lecture=>{
+    if((lecture.courses||[]).includes(course.id)) ids.add(lecture.id);
+  });
+  return [...ids].map(id=>lectureMap.get(id)).filter(Boolean);
+}
+
+function renderGroupedCourse(course,lectureMap,allLectures){
+  const usedIds=new Set();
+  const groups=(course.contents||[]).map(content=>{
+    const lectures=uniqueLectures(content.lectures,lectureMap);
+    lectures.forEach(l=>usedIds.add(l.id));
+    return {content,lectures};
+  }).filter(group=>group.lectures.length);
+
+  // lectures.json 中已经归属于课程、但尚未写入具体章节的讲义，也要展示出来。
+  const ungrouped=allLectures.filter(l=>(l.courses||[]).includes(course.id) && !usedIds.has(l.id));
+  if(ungrouped.length){
+    groups.push({content:{title:'课程讲义'},lectures:ungrouped});
+  }
 
   if(!groups.length) return '<div class="empty-state">该课程暂时还没有讲义</div>';
 
-  return groups.map(({content,lectures})=>`
-    <section class="lecture-group">
-      <div class="lecture-group-head">
-        <h2 class="lecture-group-title">${escapeHtml(content.title)}</h2>
-        <span class="lecture-group-count">${lectures.length} 篇讲义</span>
+  const total=groups.reduce((sum,g)=>sum+g.lectures.length,0);
+  return `
+    <div class="catalog-heading">
+      <div class="catalog-heading-main">
+        <span class="catalog-heading-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 0 4 22.5z"/><path d="M4 5.5v17M8 7h8M8 11h6"/></svg></span>
+        <div><h2>课程目录</h2><p>${groups.length} 个章节 · ${total} 篇讲义</p></div>
       </div>
-      ${renderLectureCards(lectures)}
-    </section>`).join('');
+    </div>
+    <div class="lecture-groups">
+      ${groups.map(({content,lectures},index)=>`
+        <section class="lecture-group">
+          <div class="lecture-group-head">
+            <span class="lecture-group-step">Chapter ${String(index+1).padStart(2,'0')}</span>
+            <h2 class="lecture-group-title">${escapeHtml(content.title)}</h2>
+            <span class="lecture-group-count">${lectures.length} 篇讲义</span>
+            <div class="lecture-group-note">按课程顺序阅读<br>点击右侧讲义进入内容</div>
+          </div>
+          ${renderLectureCards(lectures)}
+        </section>`).join('')}
+    </div>`;
 }
 
-function courseLectureCount(course){
-  return new Set((course.contents||[]).flatMap(c=>c.lectures||[])).size;
+function courseLectureCount(course,allLectures,lectureMap){
+  return courseLectures(course,allLectures,lectureMap).length;
 }
 
 function setHero(badge,title,desc,count){
@@ -204,9 +373,9 @@ async function init(){
     if(!course) throw new Error('未找到课程');
     document.title=`${course.title} · Showball OI`;
     setBreadcrumb([{label:course.title}]);
-    const count=courseLectureCount(course);
+    const count=courseLectureCount(course,allLectures,lectureMap);
     setHero('课程',course.title,'按课程章节整理的讲义，点击即可进入阅读。',count);
-    document.getElementById('main-content').innerHTML=renderGroupedCourse(course,lectureMap);
+    document.getElementById('main-content').innerHTML=renderGroupedCourse(course,lectureMap,allLectures);
     return;
   }
 
@@ -217,7 +386,7 @@ async function init(){
     document.title=`${topic.title} · Showball OI`;
     setBreadcrumb([{label:topic.title}]);
     setHero('知识点',topic.title,'该知识点下整理的全部讲义。',lectures.length);
-    document.getElementById('main-content').innerHTML=renderLectureCards(lectures);
+    document.getElementById('main-content').innerHTML=`<div class="single-list-wrap">${renderLectureCards(lectures)}</div>`;
     return;
   }
 
@@ -232,7 +401,7 @@ async function init(){
       {label:content.title}
     ]);
     setHero(course.title,content.title,'本章节讲义，点击即可进入阅读。',lectures.length);
-    document.getElementById('main-content').innerHTML=renderLectureCards(lectures);
+    document.getElementById('main-content').innerHTML=`<div class="single-list-wrap">${renderLectureCards(lectures)}</div>`;
     return;
   }
 
@@ -245,7 +414,7 @@ async function init(){
     setBreadcrumb([{label:course?.title||'竞赛备赛',href:'detail.html?type=course&id=contest-prep'},{label}]);
     setHero('竞赛备赛',label,'这里只保留与课程关联的讲义。',groups.reduce((s,g)=>s+g.lectures.length,0));
     document.getElementById('main-content').innerHTML=groups.length
-      ? groups.map(g=>`<section class="lecture-group"><div class="lecture-group-head"><h2 class="lecture-group-title">${escapeHtml(g.content.title)}</h2><span class="lecture-group-count">${g.lectures.length} 篇讲义</span></div>${renderLectureCards(g.lectures)}</section>`).join('')
+      ? groups.map((g,i)=>`<section class="lecture-group"><div class="lecture-group-head"><span class="lecture-group-step">Chapter ${String(i+1).padStart(2,'0')}</span><h2 class="lecture-group-title">${escapeHtml(g.content.title)}</h2><span class="lecture-group-count">${g.lectures.length} 篇讲义</span></div>${renderLectureCards(g.lectures)}</section>`).join('')
       : '<div class="empty-state">暂无关联讲义</div>';
     return;
   }
@@ -257,7 +426,7 @@ async function init(){
     const lectures=uniqueLectures(content.lectures,lectureMap);
     setBreadcrumb([{label:course.title,href:`detail.html?type=course&id=${encodeURIComponent(course.id)}`},{label:content.title}]);
     setHero(course.title,content.title,'这里只保留与该内容关联的讲义。',lectures.length);
-    document.getElementById('main-content').innerHTML=renderLectureCards(lectures);
+    document.getElementById('main-content').innerHTML=`<div class="single-list-wrap">${renderLectureCards(lectures)}</div>`;
     return;
   }
 
