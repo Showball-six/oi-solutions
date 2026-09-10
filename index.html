@@ -3,484 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Showball's OI 工具箱 - 做题记录</title>
-  <link rel="icon" href="tx.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --green:#52C41A; --green-light:#f0fbe8; --green-dark:#3da613;
-      --blue:#3498db;  --blue-light:#ebf5fb;
-      --orange:#e67e22;--orange-light:#fef5e7;
-      --purple:#9d3dcf;--purple-light:#f5eefa;
-      --bg:#f4f5f7; --white:#fff; --text:#1a1a1a;
-      --text-sub:#8e8e93; --text-light:#b0b0b6; --border:#e8eaed;
-      --shadow-sm:0 1px 3px rgba(0,0,0,.04),0 1px 2px rgba(0,0,0,.06);
-      --shadow-md:0 4px 12px rgba(0,0,0,.08);
-      --radius:10px;
-      --font:'Noto Sans SC',-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
-      --mono:'Menlo','Consolas','Courier New',monospace;
-    }
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
-    a{color:var(--green-dark);text-decoration:none;transition:color .15s}
-    a:hover{color:var(--green)}
-
-    /* ── 顶栏 ── */
-    .topbar{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
-    .topbar-inner{max-width:1060px;margin:0 auto;padding:0 24px;height:56px;display:flex;align-items:center;justify-content:space-between}
-    .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.1rem;color:var(--text)}
-    .logo:hover{text-decoration:none;color:var(--text)}
-    .logo-icon{width:32px;height:32px;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:#fff;box-shadow:var(--shadow-sm)}
-    .logo-icon img{width:100%;height:100%;object-fit:cover;display:block}
-    .topbar-time{font-size:.78rem;color:var(--text-light);font-family:var(--mono)}
-
-    /* ── 容器 ── */
-    .container{max-width:1060px;margin:0 auto;padding:28px 24px 60px}
-
-    /* ── 标题 ── */
-    .hero{margin-bottom:24px}
-    .hero h1{font-size:1.55rem;font-weight:700;letter-spacing:-.01em}
-    .hero p{margin-top:6px;color:var(--text-sub);font-size:.88rem}
-
-    /* ── 导航卡片 ── */
-    .nav-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px}
-    .nav-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;display:flex;align-items:center;gap:14px;transition:all .2s;text-decoration:none!important;color:var(--text)!important}
-    .nav-card:hover{box-shadow:var(--shadow-md);border-color:transparent;transform:translateY(-2px)}
-    .nav-card-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-    .nav-card-icon.green {background:var(--green-light);color:var(--green-dark)}
-    .nav-card-icon.blue  {background:var(--blue-light);color:var(--blue)}
-    .nav-card-icon.orange{background:var(--orange-light);color:var(--orange)}
-    .nav-card-icon.purple{background:var(--purple-light);color:var(--purple)}
-    .nav-card-text{display:flex;flex-direction:column}
-    .nav-card-title{font-weight:600;font-size:.92rem}
-    .nav-card-desc{font-size:.75rem;color:var(--text-sub);margin-top:2px}
-
-    /* ── 表格卡片 ── */
-    .table-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}
-
-    /* ── 工具栏 ── */
-    .table-toolbar{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    .toolbar-left{display:flex;align-items:center;gap:12px;flex-shrink:0}
-    .table-title{font-size:1rem;font-weight:700;display:flex;align-items:center;gap:8px}
-    .table-title::before{content:'';width:4px;height:18px;background:var(--green);border-radius:2px;display:inline-block}
-    .count-badge{font-size:.72rem;font-weight:500;background:var(--green-light);color:var(--green-dark);padding:2px 10px;border-radius:20px}
-
-    /* ── 搜索框 ── */
-    .search-wrap{position:relative;flex:1;max-width:320px}
-    .search-icon{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--text-light);pointer-events:none}
-    .search-input{width:100%;padding:8px 12px 8px 34px;border:1px solid var(--border);border-radius:8px;font-size:.85rem;font-family:var(--font);outline:none;transition:border-color .15s,box-shadow .15s;background:#fafbfc;color:var(--text)}
-    .search-input:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(82,196,26,.12);background:var(--white)}
-    .search-input::placeholder{color:var(--text-light)}
-
-    /* ── 表格 ── */
-    .record-table{width:100%;border-collapse:collapse;font-size:.88rem}
-    .record-table thead th{text-align:left;padding:11px 20px;font-weight:600;font-size:.75rem;color:var(--text-sub);text-transform:uppercase;letter-spacing:.05em;background:#fafbfc;border-bottom:1px solid var(--border);white-space:nowrap}
-    .record-table thead th.sortable{cursor:pointer;user-select:none;position:relative;padding-right:32px}
-    .record-table thead th.sortable::after{content:'↕';position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:.75rem;color:var(--text-light);font-family:var(--mono);letter-spacing:0}
-    .record-table thead th.sortable.asc::after{content:'↑';color:var(--green-dark)}
-    .record-table thead th.sortable.desc::after{content:'↓';color:var(--green-dark)}
-    .record-table tbody tr{transition:background .1s}
-    .record-table tbody tr:hover{background:#f7fbf3}
-    .record-table tbody td{padding:13px 20px;border-bottom:1px solid #f0f1f3;vertical-align:middle}
-    .record-table tbody tr:last-child td{border-bottom:none}
-    .col-id{font-family:var(--mono);font-size:.8rem;color:var(--text-light);width:70px}
-    .col-problem a{color:var(--text);font-weight:500}
-    .col-problem a:hover{color:var(--green)}
-    .problem-source{font-size:.73rem;color:var(--text-light);margin-top:2px}
-    .col-solution a{display:inline-flex;align-items:center;gap:4px;color:var(--green-dark);font-weight:500;font-size:.82rem;padding:4px 12px;border-radius:6px;background:var(--green-light);transition:all .15s;white-space:nowrap}
-    .col-solution a:hover{background:var(--green);color:#fff;text-decoration:none}
-
-    /* ── 洛谷标准难度颜色 ── */
-    /* ── 洛谷标准难度颜色 ── */
-.diff-tag{
-  display:inline-block;
-  font-size:.75rem;
-  font-weight:700;
-  padding:3px 10px;
-  border-radius:4px;
-  white-space:nowrap;
-  color:#fff;
-}
-
-.diff-beginner {background:#FE4C61;}          /* 入门 */
-.diff-basic-minus {background:#F39C11;}       /* 普及- */
-.diff-basic-improve-minus {background:#FFC116;}                                             /* 普及/提高- */
-.diff-basic-improve {background:#52C41A;}     /* 普及/提高 */
-.diff-improve-province-minus {background:#3498DB;} /* 提高/省选- */
-.diff-province-noi-minus {background:#9D3DCF;}      /* 省选/NOI- */
-.diff-noi {background:#0E1D69;}               /* NOI */
-.diff-unrated {background:#BFBFBF;}           /* 未评定 */
-
-    /* ── 算法标签 ── */
-    .algo-tags{display:flex;flex-wrap:wrap;gap:5px}
-    .algo-tag{font-size:.72rem;padding:2px 8px;border-radius:4px;background:#f0f2f5;color:#5f6368;white-space:nowrap;transition:background .12s}
-    tr:hover .algo-tag{background:#e6ede0}
-
-    /* ── 无结果 ── */
-    .no-results{text-align:center;padding:40px 20px;color:var(--text-light);font-size:.88rem;display:none}
-    .no-results.show{display:block}
-
-    /* ── 分页 ── */
-    .pagination-wrap{padding:14px 20px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-    .page-info{font-size:.8rem;color:var(--text-sub)}
-    .page-btns{display:flex;gap:4px;align-items:center}
-    .page-btn{min-width:32px;height:32px;padding:0 10px;border:1px solid var(--border);border-radius:6px;background:var(--white);color:var(--text);font-size:.82rem;font-family:var(--font);cursor:pointer;transition:all .15s;display:flex;align-items:center;justify-content:center}
-    .page-btn:hover:not(:disabled){border-color:var(--green);color:var(--green)}
-    .page-btn.active{background:var(--green);color:#fff;border-color:var(--green);font-weight:600}
-    .page-btn:disabled{opacity:.4;cursor:not-allowed}
-    .page-ellipsis{font-size:.82rem;color:var(--text-light);padding:0 4px}
-
-    /* ── 页脚 ── */
-    .site-footer{text-align:center;padding:20px 0 32px;font-size:.78rem;color:var(--text-light)}
-
-    /* ── 动画 ── */
-    @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-    .hero      {animation:fadeUp .35s ease both}
-    .nav-cards {animation:fadeUp .35s ease .07s both}
-    .table-card{animation:fadeUp .35s ease .14s both}
-
-    /* ── 响应式 ── */
-    @media(max-width:768px){
-      .nav-cards{grid-template-columns:repeat(2,1fr);gap:10px}
-      .record-table thead th,.record-table tbody td{padding:10px 14px}
-      .record-table{font-size:.82rem}
-      .topbar-time{display:none}
-    }
-    @media(max-width:480px){
-      .nav-cards{grid-template-columns:1fr}
-      .hero h1{font-size:1.3rem}
-      .container{padding:20px 0 48px}
-      .table-card{border-radius:0;border-left:none;border-right:none}
-      .search-wrap{max-width:100%;flex:unset;width:100%}
-      .table-toolbar{flex-direction:column;align-items:flex-start}
-    }
-  </style>
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Showball OI — 好题、课程、代码模板与算法工具组成的 OI 知识工作台。">
+  <title>Showball OI</title>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('showball-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){}</script>
+  <link rel="stylesheet" href="assets/theme.css">
+  <script defer src="assets/app.js"></script>
 </head>
-<body>
+<body data-page="home">
+<div class="sidebar-overlay" data-nav-close></div>
+<aside class="app-sidebar" aria-label="主导航">
+  <a class="brand" href="index.html"><span class="brand-mark">S</span><span class="brand-name">Showball <span>OI</span></span></a>
+  <div class="nav-label">Workspace</div>
+  <nav class="side-nav">
+    <a class="side-link" data-page="home" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10.5V20h14v-9.5M9 20v-6h6v6"/></svg><span>首页</span></a>
+    <a class="side-link" data-page="favorites" href="favorite.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2 7.5 14 3 9.6l6.2-.9L12 3Z"/></svg><span>好题收藏</span></a>
+    <a class="side-link" data-page="courses" href="memos.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg><span>课程</span></a>
+    <a class="side-link" data-page="templates" href="templates.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6M14 4l-4 16"/></svg><span>代码模板</span></a>
+    <a class="side-link" data-page="tools" href="tools.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 15.5A3.5 3.5 0 1 0 12 8a3.5 3.5 0 0 0 0 7.5Z"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.83 2.83-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 1.55V21h-4v-.05a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.88.34l-.06.06-2.83-2.83.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.55-1H3v-4h.05A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.88l-.06-.06 2.83-2.83.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.55V3h4v.05a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.88-.34l.06-.06 2.83-2.83.06.06A1.7 1.7 0 0 0 19.4 9a1.7 1.7 0 0 0 1.55 1H21v4h-.05A1.7 1.7 0 0 0 19.4 15Z"/></svg><span>小工具</span></a>
+  </nav>
+  <div class="sidebar-spacer"></div>
+  <div class="sidebar-note"><strong>Showball OI</strong>把好题、知识与代码沉淀下来。</div>
+</aside>
 
-<header class="topbar">
-  <div class="topbar-inner">
-    <a href="https://www.luogu.com.cn/user/728487" class="logo">
-      <div class="logo-icon"><img src="tx.jpg" alt="Showball's OI 工具箱"></div>
-      <span>Showball's OI 工具箱</span>
-    </a>
-    <span class="topbar-time" id="clock"></span>
-  </div>
-</header>
-
-<div class="container">
-
-  <div class="hero">
-    <h1>OI 工具箱 - 做题记录</h1>
-    <p>信息学竞赛题解归档 · 持续更新中</p>
-  </div>
-
-  <div class="nav-cards">
-    <a href="index.html" class="nav-card">
-      <div class="nav-card-icon green">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-      </div>
-      <div class="nav-card-text">
-        <span class="nav-card-title">做题记录</span>
-        <span class="nav-card-desc">题解与代码归档</span>
-      </div>
-    </a>
-     <a href="memos.html" class="nav-card">
-      <div class="nav-card-icon purple">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-      </div>
-      <div class="nav-card-text">
-        <span class="nav-card-title">课程</span>
-        <span class="nav-card-desc">知识点与笔记</span>
-      </div>
-    </a>
-    <a href="templates.html" class="nav-card">
-      <div class="nav-card-icon orange">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-      </div>
-      <div class="nav-card-text">
-        <span class="nav-card-title">模板</span>
-        <span class="nav-card-desc">常用代码模板</span>
-      </div>
-    </a>
-    <a href="tools.html" class="nav-card">
-      <div class="nav-card-icon blue">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-      </div>
-      <div class="nav-card-text">
-        <span class="nav-card-title">小工具</span>
-        <span class="nav-card-desc">实用辅助工具</span>
-      </div>
-    </a>
-    
-   
-  </div>
-
-  <div class="table-card">
-    <div class="table-toolbar">
-      <div class="toolbar-left">
-        <h2 class="table-title">做题记录</h2>
-        <span class="count-badge" id="count-badge">共 0 题</span>
-      </div>
-      <div class="search-wrap">
-        <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input class="search-input" id="search-input" type="text" placeholder="搜索题号、题名、算法标签…" autocomplete="off">
-      </div>
+<main class="app-main home-main">
+  <header class="app-topbar home-topbar">
+    <div class="topbar-left">
+      <button class="icon-btn menu-btn" data-menu-toggle aria-label="打开导航"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <a class="mobile-brand" href="index.html"><span class="brand-mark">S</span><span>Showball OI</span></a>
+      <span class="topbar-title">首页</span>
     </div>
+    <div class="topbar-actions"><button class="icon-btn" data-theme-toggle aria-label="切换主题"></button></div>
+  </header>
 
-    <table class="record-table">
-      <thead>
-        <tr>
-          <th class="sortable" data-sort="id">编号</th>
-          <th class="sortable" data-sort="pid">题号 / 题名</th>
-          <th>题解 / 代码</th>
-          <th class="sortable" data-sort="difficulty">难度</th>
-          <th>主要算法</th>
-        </tr>
-      </thead>
-      <tbody id="table-body"></tbody>
-    </table>
+  <div class="home-page">
+    <section class="home-hero">
+      <div class="home-kicker"><span class="home-kicker-dot"></span> Competitive Programming Workspace</div>
+      <h1>把好题、知识与代码，<br><span>沉淀成自己的 OI 知识库。</span></h1>
+      <p>Showball OI 用来收藏值得复盘的题目、组织竞赛课程、沉淀代码模板，并把常用算法工具放在触手可及的位置。</p>
 
-    <div class="no-results" id="no-results">暂无匹配的题目 🔍</div>
+      <div class="global-search" id="global-search">
+        <svg class="global-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="global-search-input" type="search" autocomplete="off" placeholder="搜索好题、算法、课程、知识点、讲义…" aria-label="搜索 Showball OI 内容">
+        <kbd>/</kbd>
+        <div class="search-panel" id="search-panel" hidden>
+          <div class="search-panel-head"><span id="search-status">搜索内容</span><span>Enter 打开</span></div>
+          <div class="search-results" id="search-results"></div>
+        </div>
+      </div>
+      <div class="search-hints"><span>试试：</span><button data-search-suggestion="动态规划">动态规划</button><button data-search-suggestion="图论">图论</button><button data-search-suggestion="CSP">CSP</button></div>
+    </section>
 
-    <div class="pagination-wrap">
-      <span class="page-info" id="page-info"></span>
-      <div class="page-btns" id="page-btns"></div>
-    </div>
+    <section class="home-section" aria-labelledby="explore-title">
+      <div class="home-section-head"><h2 id="explore-title">开始探索</h2><span>Explore Showball OI</span></div>
+      <div class="home-entry-grid">
+        <a class="home-entry" href="favorite.html">
+          <div class="home-entry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3 6.4 20.2 7.5 14 3 9.6l6.2-.9L12 3Z"/></svg></div>
+          <div><h3>好题收藏</h3><p>值得讲、值得练、值得反复复盘的题目与题解。</p></div><span class="home-entry-arrow">↗</span>
+        </a>
+        <a class="home-entry" href="memos.html">
+          <div class="home-entry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></div>
+          <div><h3>竞赛课程</h3><p>按学习路径组织讲义、练习与学生完成情况。</p></div><span class="home-entry-arrow">↗</span>
+        </a>
+        <a class="home-entry" href="templates.html">
+          <div class="home-entry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6M14 4l-4 16"/></svg></div>
+          <div><h3>代码模板</h3><p>比赛时真正会复用的算法实现与代码片段。</p></div><span class="home-entry-arrow">↗</span>
+        </a>
+        <a class="home-entry" href="tools.html">
+          <div class="home-entry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 15.5A3.5 3.5 0 1 0 12 8a3.5 3.5 0 0 0 0 7.5Z"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.83 2.83-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 1.55V21h-4v-.05a1.7 1.7 0 0 0-1-1.55 1.7 1.7 0 0 0-1.88.34l-.06.06-2.83-2.83.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.55-1H3v-4h.05A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.88l-.06-.06 2.83-2.83.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.55V3h4v.05a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.88-.34l.06-.06 2.83 2.83-.06.06A1.7 1.7 0 0 0 19.4 9a1.7 1.7 0 0 0 1.55 1H21v4h-.05A1.7 1.7 0 0 0 19.4 15Z"/></svg></div>
+          <div><h3>算法工具</h3><p>日常出题、验证、转换与竞赛辅助的小工具。</p></div><span class="home-entry-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="home-overview" aria-label="内容概览">
+      <div class="home-overview-copy"><div class="eyebrow">Knowledge Base</div><h2>持续积累，而不是用完即走。</h2><p>每一道值得留下的题、每一份讲义和每一个模板，都会成为下一次教学与训练可以直接复用的知识资产。</p></div>
+      <div class="home-metrics">
+        <div class="home-metric"><strong id="home-problem-count">—</strong><span>好题收藏</span></div>
+        <div class="home-metric"><strong id="home-lecture-count">—</strong><span>课程讲义</span></div>
+        <div class="home-metric"><strong id="home-topic-count">—</strong><span>算法主题</span></div>
+      </div>
+    </section>
   </div>
-</div>
-
-<footer class="site-footer">2026 &copy; Showball's OI 工具箱</footer>
-
+  <footer class="site-footer">© 2026 Showball OI · Learn · Solve · Build</footer>
+</main>
 
 <script>
-const PAGE_SIZE = 10;
-let records = [];
-let filtered = [];
-let currentPage = 1;
-let sortKey = 'id';
-let sortDir = 'desc';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const input=document.getElementById('global-search-input');
+const panel=document.getElementById('search-panel');
+const resultsEl=document.getElementById('search-results');
+const statusEl=document.getElementById('search-status');
+let searchIndex=[];
+let activeIndex=-1;
 
-const difficultyRank = {
-  '入门':      0,
-  '普及-':    1,
-  '普及/提高-': 2,
-  '普及+/提高':  3,
-  '提高+/省选-': 4,
-  '省选/NOI-': 5,
-  'NOI':      6
-};
-
-const difficultyClassMap = {
-  '入门': 'beginner',
-  '普及-': 'basic-minus',
-  '普及/提高-': 'basic-improve-minus',
-  '普及+/提高': 'basic-improve',
-  '提高+/省选-': 'improve-province-minus',
-  '省选/NOI-': 'province-noi-minus',
-  'NOI': 'noi',
-  '未评定': 'unrated'
-};
-
-function getDifficultyClass(diff) {
-  return difficultyClassMap[diff] || 'unrated';
+function addSearchItem(type,title,meta,href,keywords=''){
+  if(!title||!href)return;
+  searchIndex.push({type,title:String(title),meta:String(meta||''),href,haystack:`${title} ${meta} ${keywords}`.toLowerCase()});
 }
-
-const tbody      = document.getElementById('table-body');
-const noResults  = document.getElementById('no-results');
-const countBadge = document.getElementById('count-badge');
-const pageInfo   = document.getElementById('page-info');
-const pageBtns   = document.getElementById('page-btns');
-
-/* ============ 核心：加载JSON数据 ============ */
-async function loadRecords() {
-  try {
-    // 获取solutions目录下所有JSON文件
-    const response = await fetch('solutions/records.json');
-    
-    if (!response.ok) {
-      console.error('无法加载 records.json');
-      showEmptyState();
-      return;
-    }
-
-    records = await response.json();
-
-    if (records.length === 0) {
-      showEmptyState();
-      return;
-    }
-
-    filtered = [...records];
-    applySort();
-    render();
-  } catch (err) {
-    console.error('加载记录失败:', err);
-    showEmptyState();
-  }
-}
-
-
-/* 构建一行 HTML */
-function buildRow(r) {
-  // 题目原站链接处理：洛谷 / Codeforces / AtCoder
-  let problemUrl = r.problemUrl || '';
-  let sourceName = r.source;
-
-  if (!problemUrl && r.source === 'CF') {
-    const m = r.pid.replace('CF','').match(/^(\d+)([A-Z]\d*)$/);
-    problemUrl = m
-      ? 'https://codeforces.com/problemset/problem/' + m[1] + '/' + m[2]
-      : 'https://codeforces.com/';
-    sourceName = 'Codeforces';
-  } else if (!problemUrl && r.source === 'AtCoder') {
-    const m = r.pid.match(/^([A-Z]+)(\d+)([A-Z])$/i);
-    if (m) {
-      const contest = (m[1] + m[2]).toLowerCase();
-      problemUrl = 'https://atcoder.jp/contests/' + contest + '/tasks/' + contest + '_' + m[3].toLowerCase();
-    } else {
-      problemUrl = 'https://atcoder.jp/';
-    }
-    sourceName = 'AtCoder';
-  } else if (!problemUrl) {
-    problemUrl = 'https://www.luogu.com.cn/problem/' + r.pid;
-    sourceName = '洛谷';
-  } else if (r.source === 'CF') {
-    sourceName = 'Codeforces';
-  }
-
-  return `<tr>
-    <td class="col-id">#${r.id}</td>
-    <td class="col-problem">
-      <a href="${problemUrl}" target="_blank">${r.pid}&nbsp;&nbsp;${r.title}</a>
-      <div class="problem-source">${sourceName}</div>
-    </td>
-    <td class="col-solution"><a href="${r.href}">查看题解 →</a></td>
-    <td><span class="diff-tag diff-${getDifficultyClass(r.diff)}">${r.diff||'未评定'}</span></td>
-    <td><div class="algo-tags">${r.tags.map(t => `<span class="algo-tag">${t}</span>`).join('')}</div></td>
-  </tr>`;
-}
-
-/* 排序：点击编号 / 题号 / 难度时，对全部匹配记录排序 */
-function compareRecords(a, b, key) {
-  if (key === 'id') {
-    return Number(a.id) - Number(b.id);
-  }
-  if (key === 'pid') {
-    return a.pid.localeCompare(b.pid, undefined, { numeric: true, sensitivity: 'base' });
-  }
-  if (key === 'difficulty') {
-    const ar = difficultyRank[a.diff] ?? 999;
-    const br = difficultyRank[b.diff] ?? 999;
-    return ar === br
-      ? a.pid.localeCompare(b.pid, undefined, { numeric: true, sensitivity: 'base' })
-      : ar - br;
-  }
-  return 0;
-}
-
-function applySort() {
-  filtered.sort((a, b) => {
-    const result = compareRecords(a, b, sortKey);
-    return sortDir === 'asc' ? result : -result;
+function buildSearchIndex(records,coursesData,lectures){
+  addSearchItem('入口','代码模板','常用算法实现与代码片段','templates.html','模板 template code');
+  addSearchItem('入口','算法工具','竞赛与教学辅助工具','tools.html','工具 tools utility');
+  (records||[]).forEach(r=>addSearchItem('好题',`${r.pid} ${r.title}`,`${r.diff||'未评定'} · ${(r.tags||[]).join(' · ')}`,r.href||'favorite.html',`${r.source||''} ${(r.tags||[]).join(' ')}`));
+  (coursesData.courses||[]).forEach(c=>{
+    addSearchItem('课程',c.title,c.description||c.desc||'课程路径',`memos/detail.html?type=course&id=${encodeURIComponent(c.id)}`);
+    (c.contents||[]).forEach(ct=>{const kind=ct.type==='written'?'written':ct.type==='mock'?'mock':'content';addSearchItem('课程内容',ct.title,c.title,`memos/detail.html?type=${kind}&course=${encodeURIComponent(c.id)}&id=${encodeURIComponent(ct.id)}`)});
   });
+  (coursesData.topics||[]).forEach(t=>addSearchItem('知识点',t.title,'算法主题',`memos/detail.html?type=topic&id=${encodeURIComponent(t.id)}`));
+  (lectures||[]).forEach(l=>addSearchItem('讲义',l.title,(l.tags||[]).join(' · ')||l.created||'课程讲义',l.href||'memos.html',(l.tags||[]).join(' ')));
 }
-
-function updateSortIndicators() {
-  document.querySelectorAll('.record-table thead th.sortable').forEach(th => {
-    th.classList.remove('asc', 'desc');
-    if (th.dataset.sort === sortKey) th.classList.add(sortDir);
-  });
+function renderSearch(){
+  const q=input.value.trim().toLowerCase();activeIndex=-1;
+  if(!q){panel.hidden=true;resultsEl.innerHTML='';return}
+  const terms=q.split(/\s+/).filter(Boolean);
+  const matches=searchIndex.filter(x=>terms.every(t=>x.haystack.includes(t))).slice(0,10);
+  panel.hidden=false;statusEl.textContent=matches.length?`找到 ${matches.length} 条结果`:'没有找到匹配内容';
+  resultsEl.innerHTML=matches.length?matches.map((x,i)=>`<a class="search-result" data-search-result="${i}" href="${esc(x.href)}"><span class="search-result-type">${esc(x.type)}</span><span class="search-result-main"><strong>${esc(x.title)}</strong><small>${esc(x.meta)}</small></span><span class="search-result-arrow">↗</span></a>`).join(''):'<div class="search-empty">换一个关键词试试，例如「DP」「图论」「CSP」或具体题号。</div>';
 }
-
-/* 生成页码数组（超过 7 页折叠中间） */
-function pageRange(cur, total) {
-  if (total <= 7) return Array.from({length: total}, (_, i) => i + 1);
-  if (cur <= 4)        return [1, 2, 3, 4, 5, '…', total];
-  if (cur >= total-3)  return [1, '…', total-4, total-3, total-2, total-1, total];
-  return [1, '…', cur-1, cur, cur+1, '…', total];
+function setActive(next){
+  const items=[...resultsEl.querySelectorAll('.search-result')];if(!items.length)return;
+  activeIndex=(next+items.length)%items.length;items.forEach((el,i)=>el.classList.toggle('active',i===activeIndex));items[activeIndex].scrollIntoView({block:'nearest'});
 }
+input.addEventListener('input',renderSearch);
+input.addEventListener('focus',()=>{if(input.value.trim())renderSearch()});
+input.addEventListener('keydown',e=>{if(e.key==='ArrowDown'){e.preventDefault();setActive(activeIndex+1)}else if(e.key==='ArrowUp'){e.preventDefault();setActive(activeIndex-1)}else if(e.key==='Enter'){const item=resultsEl.querySelectorAll('.search-result')[activeIndex>=0?activeIndex:0];if(item&&input.value.trim()){e.preventDefault();item.click()}}else if(e.key==='Escape'){panel.hidden=true;input.blur()}});
+document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)){e.preventDefault();input.focus()}});
+document.addEventListener('click',e=>{if(!e.target.closest('#global-search'))panel.hidden=true;const s=e.target.closest('[data-search-suggestion]');if(s){input.value=s.dataset.searchSuggestion;input.focus();renderSearch()}});
 
-/* 渲染表格 + 分页 */
-function render() {
-  const total = filtered.length;
-  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
-  if (currentPage > totalPages) currentPage = totalPages;
-  updateSortIndicators();
-
-  const start = (currentPage - 1) * PAGE_SIZE;
-  tbody.innerHTML = filtered.slice(start, start + PAGE_SIZE).map(buildRow).join('');
-
-  countBadge.textContent = '共 ' + total + ' 题';
-  noResults.classList.toggle('show', total === 0);
-
-  if (total === 0) { pageInfo.textContent = ''; pageBtns.innerHTML = ''; return; }
-
-  pageInfo.textContent =
-    '第 ' + (start + 1) + '–' + Math.min(start + PAGE_SIZE, total) + ' 条，共 ' + total + ' 条';
-
-  let html = `<button class="page-btn" id="btn-prev" ${currentPage === 1 ? 'disabled' : ''}>‹</button>`;
-  pageRange(currentPage, totalPages).forEach(p => {
-    html += p === '…'
-      ? `<span class="page-ellipsis">…</span>`
-      : `<button class="page-btn ${p === currentPage ? 'active' : ''}" data-p="${p}">${p}</button>`;
-  });
-  html += `<button class="page-btn" id="btn-next" ${currentPage === totalPages ? 'disabled' : ''}>›</button>`;
-  pageBtns.innerHTML = html;
-
-  pageBtns.querySelectorAll('.page-btn[data-p]').forEach(b =>
-    b.addEventListener('click', () => { currentPage = +b.dataset.p; render(); })
-  );
-  const prev = document.getElementById('btn-prev');
-  const next = document.getElementById('btn-next');
-  if (prev) prev.addEventListener('click', () => { currentPage--; render(); });
-  if (next) next.addEventListener('click', () => { currentPage++; render(); });
+async function initHome(){
+  let records=[],coursesData={courses:[],topics:[]},lectures=[];
+  const [recordsRes,coursesRes,lecturesRes]=await Promise.allSettled([fetch('solutions/record.json'),fetch('memos/courses.json'),fetch('memos/lectures.json')]);
+  try{if(recordsRes.status==='fulfilled'&&recordsRes.value.ok)records=await recordsRes.value.json()}catch(e){}
+  try{if(coursesRes.status==='fulfilled'&&coursesRes.value.ok)coursesData=await coursesRes.value.json()}catch(e){}
+  try{if(lecturesRes.status==='fulfilled'&&lecturesRes.value.ok)lectures=await lecturesRes.value.json()}catch(e){}
+  buildSearchIndex(records,coursesData,lectures);
+  document.getElementById('home-problem-count').textContent=records.length||'—';
+  document.getElementById('home-lecture-count').textContent=lectures.length||'—';
+  document.getElementById('home-topic-count').textContent=(coursesData.topics||[]).length||'—';
 }
-
-/* 表头排序 */
-document.querySelectorAll('.record-table thead th.sortable').forEach(th => {
-  th.addEventListener('click', () => {
-    const key = th.dataset.sort;
-    if (sortKey === key) {
-      sortDir = sortDir === 'asc' ? 'desc' : 'asc';
-    } else {
-      sortKey = key;
-      sortDir = 'asc';
-    }
-    currentPage = 1;
-    applySort();
-    render();
-  });
-});
-
-/* 搜索 */
-document.getElementById('search-input').addEventListener('input', function() {
-  const q = this.value.trim().toLowerCase();
-  filtered = q
-    ? records.filter(r => (r.pid + ' ' + r.title + ' ' + r.tags.join(' ')).toLowerCase().includes(q))
-    : [...records];
-  currentPage = 1;
-  applySort();
-  render();
-});
-
-applySort();
-render();
-
-/* 时钟 */
-(function tick() {
-  const now = new Date();
-  const p = n => String(n).padStart(2, '0');
-  document.getElementById('clock').textContent =
-    now.getFullYear() + '-' + p(now.getMonth()+1) + '-' + p(now.getDate()) +
-    ' ' + p(now.getHours()) + ':' + p(now.getMinutes()) + ':' + p(now.getSeconds());
-  setTimeout(tick, 1000);
-})();
-
-/* 初始化：加载数据 */
-loadRecords();
+initHome();
 </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"7939e04a4baf43c8b86a560f74aac60e","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
