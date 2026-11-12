@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="790" height="320" viewBox="0 0 790 320" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, sans-serif" dominant-baseline="central">
+  <title id="title">阶段、状态与决策</title>
+  <desc id="desc">从状态 S 出发，先到 P 或 Q，再到 X。边上的数字是所得分数，比较两个前驱可得 f[X]=10。</desc>
+  <rect x="0" y="0" width="790" height="320" rx="0" fill="#fff" stroke="none"/>
+  <rect x="28" y="50" width="224" height="185" rx="7" fill="#f9fbfd" stroke="#c5d2de"/>
+  <text x="140" y="28" font-size="18" fill="#25394c" text-anchor="middle" font-weight="700">第 1 阶段</text>
+  <rect x="283" y="50" width="224" height="185" rx="7" fill="#f9fbfd" stroke="#c5d2de"/>
+  <text x="395" y="28" font-size="18" fill="#25394c" text-anchor="middle" font-weight="700">第 2 阶段</text>
+  <rect x="538" y="50" width="224" height="185" rx="7" fill="#f9fbfd" stroke="#c5d2de"/>
+  <text x="650" y="28" font-size="18" fill="#25394c" text-anchor="middle" font-weight="700">第 3 阶段</text>
+  <line x1="194" y1="144" x2="335" y2="106" stroke="#285d92" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="335" y1="106" x2="327.3509296858655" y2="112.20416983402498" stroke="#285d92" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="335" y1="106" x2="325.26917733537584" y2="104.47977295457667" stroke="#285d92" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="194" y1="151" x2="335" y2="191" stroke="#276647" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="335" y1="191" x2="325.2499917935861" y2="192.39188360679387" stroke="#276647" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="335" y1="191" x2="327.4333386277725" y2="184.69558601628663" stroke="#276647" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="449" y1="106" x2="590" y2="144" stroke="#285d92" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="590" y1="144" x2="580.2691773353758" y2="145.52022704542333" stroke="#285d92" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="590" y1="144" x2="582.3509296858654" y2="137.79583016597502" stroke="#285d92" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="449" y1="191" x2="590" y2="151" stroke="#276647" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="590" y1="151" x2="582.4333386277726" y2="157.30441398371337" stroke="#276647" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="590" y1="151" x2="580.2499917935861" y2="149.60811639320613" stroke="#276647" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="244" y="93" width="42" height="26" rx="4" fill="#fff" stroke="none"/>
+  <text x="265" y="106" font-size="16" fill="#285d92" text-anchor="middle" font-weight="700">+7</text>
+  <rect x="244" y="178" width="42" height="26" rx="4" fill="#fff" stroke="none"/>
+  <text x="265" y="191" font-size="16" fill="#276647" text-anchor="middle" font-weight="700">+5</text>
+  <rect x="499" y="93" width="42" height="26" rx="4" fill="#fff" stroke="none"/>
+  <text x="520" y="106" font-size="16" fill="#285d92" text-anchor="middle" font-weight="700">+2</text>
+  <rect x="499" y="178" width="42" height="26" rx="4" fill="#fff" stroke="none"/>
+  <text x="520" y="191" font-size="16" fill="#276647" text-anchor="middle" font-weight="700">+5</text>
+  <rect x="88" y="126.5" width="104" height="43" rx="6" fill="#f2f5f8" stroke="#c5d2de"/>
+  <text x="140" y="148" font-size="18" fill="#25394c" text-anchor="middle" font-weight="700">S · 0</text>
+  <rect x="340" y="84.5" width="104" height="43" rx="6" fill="#e8f2fc" stroke="#c5d2de"/>
+  <text x="392" y="106" font-size="18" fill="#285d92" text-anchor="middle" font-weight="700">P · 7</text>
+  <rect x="340" y="169.5" width="104" height="43" rx="6" fill="#e5f4eb" stroke="#c5d2de"/>
+  <text x="392" y="191" font-size="18" fill="#276647" text-anchor="middle" font-weight="700">Q · 5</text>
+  <rect x="596" y="126.5" width="104" height="43" rx="6" fill="#fff1dc" stroke="#c5d2de"/>
+  <text x="648" y="148" font-size="18" fill="#945418" text-anchor="middle" font-weight="700">X · 10</text>
+  <text x="28" y="261" font-size="17" fill="#25394c" text-anchor="start" font-weight="400">每列对应一个阶段，框内标出状态与到达它的最大累计分。</text>
+  <text x="28" y="291" font-size="17" fill="#25394c" text-anchor="start" font-weight="700">选择一条边就是一次决策。f[X] = max(7 + 2, 5 + 5) = 10</text>
+</svg>

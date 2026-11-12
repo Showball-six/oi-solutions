@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="318" viewBox="0 0 840 318" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, sans-serif" dominant-baseline="central">
+  <title id="title">数字三角形的两条路线在同一格汇合</title>
+  <desc id="desc">到第三行第二列的两条路线分别得 10 和 16。顺推状态保留 16，后续可从此格向下走。</desc>
+  <rect x="0" y="0" width="840" height="318" rx="0" fill="#fff" stroke="none"/>
+  <line x1="214" y1="63" x2="163.5" y2="93" stroke="#285d92" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="163.5" y1="93" x2="169.1946998648085" y2="84.96442948822238" stroke="#285d92" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="163.5" y1="93" x2="173.28058317588187" y2="91.84233306186255" stroke="#285d92" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="214" y1="63" x2="264.5" y2="93" stroke="#945418" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="264.5" y1="93" x2="254.71941682411816" y2="91.84233306186255" stroke="#945418" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="264.5" y1="93" x2="258.80530013519154" y2="84.96442948822238" stroke="#945418" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="163.5" y1="137" x2="113" y2="169" stroke="#c5d2de" stroke-width="2" stroke-linecap="round"/>
+  <line x1="163.5" y1="137" x2="214" y2="167" stroke="#285d92" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="214" y1="167" x2="204.21941682411813" y2="165.84233306186255" stroke="#285d92" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="214" y1="167" x2="208.3053001351915" y2="158.9644294882224" stroke="#285d92" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="264.5" y1="137" x2="214" y2="167" stroke="#945418" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="214" y1="167" x2="219.6946998648085" y2="158.9644294882224" stroke="#945418" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="214" y1="167" x2="223.78058317588187" y2="165.84233306186255" stroke="#945418" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="264.5" y1="137" x2="315" y2="169" stroke="#c5d2de" stroke-width="2" stroke-linecap="round"/>
+  <line x1="113" y1="211" x2="62.5" y2="243" stroke="#c5d2de" stroke-width="2" stroke-linecap="round"/>
+  <line x1="113" y1="211" x2="163.5" y2="243" stroke="#c5d2de" stroke-width="2" stroke-linecap="round"/>
+  <line x1="214" y1="211" x2="163.5" y2="241" stroke="#276647" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="163.5" y1="241" x2="169.1946998648085" y2="232.9644294882224" stroke="#276647" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="163.5" y1="241" x2="173.28058317588187" y2="239.84233306186255" stroke="#276647" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="214" y1="211" x2="264.5" y2="241" stroke="#276647" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="264.5" y1="241" x2="254.71941682411816" y2="239.84233306186255" stroke="#276647" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="264.5" y1="241" x2="258.80530013519154" y2="232.9644294882224" stroke="#276647" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="315" y1="211" x2="264.5" y2="243" stroke="#c5d2de" stroke-width="2" stroke-linecap="round"/>
+  <line x1="315" y1="211" x2="365.5" y2="243" stroke="#c5d2de" stroke-width="2" stroke-linecap="round"/>
+  <rect x="188.5" y="21.5" width="51" height="41" rx="6" fill="#f2f5f8" stroke="#c5d2de"/>
+  <text x="214" y="42" font-size="18" fill="#25394c" text-anchor="middle" font-weight="700">5</text>
+  <rect x="138" y="95.5" width="51" height="41" rx="6" fill="#e8f2fc" stroke="#c5d2de"/>
+  <text x="163.5" y="116" font-size="18" fill="#285d92" text-anchor="middle" font-weight="700">2</text>
+  <rect x="239" y="95.5" width="51" height="41" rx="6" fill="#fff1dc" stroke="#c5d2de"/>
+  <text x="264.5" y="116" font-size="18" fill="#945418" text-anchor="middle" font-weight="700">8</text>
+  <rect x="87.5" y="169.5" width="51" height="41" rx="6" fill="#f2f5f8" stroke="#c5d2de"/>
+  <text x="113" y="190" font-size="18" fill="#25394c" text-anchor="middle" font-weight="700">4</text>
+  <rect x="188.5" y="169.5" width="51" height="41" rx="6" fill="#e5f4eb" stroke="#c5d2de"/>
+  <text x="214" y="190" font-size="18" fill="#276647" text-anchor="middle" font-weight="700">3</text>
+  <rect x="289.5" y="169.5" width="51" height="41" rx="6" fill="#f2f5f8" stroke="#c5d2de"/>
+  <text x="315" y="190" font-size="18" fill="#25394c" text-anchor="middle" font-weight="700">1</text>
+  <rect x="37" y="243.5" width="51" height="41" rx="6" fill="#f2f5f8" stroke="#c5d2de"/>
+  <text x="62.5" y="264" font-size="18" fill="#25394c" text-anchor="middle" font-weight="700">6</text>
+  <rect x="138" y="243.5" width="51" height="41" rx="6" fill="#f2f5f8" stroke="#c5d2de"/>
+  <text x="163.5" y="264" font-size="18" fill="#25394c" text-anchor="middle" font-weight="700">2</text>
+  <rect x="239" y="243.5" width="51" height="41" rx="6" fill="#f2f5f8" stroke="#c5d2de"/>
+  <text x="264.5" y="264" font-size="18" fill="#25394c" text-anchor="middle" font-weight="700">9</text>
+  <rect x="340" y="243.5" width="51" height="41" rx="6" fill="#f2f5f8" stroke="#c5d2de"/>
+  <text x="365.5" y="264" font-size="18" fill="#25394c" text-anchor="middle" font-weight="700">4</text>
+  <text x="414" y="52" font-size="19" fill="#25394c" text-anchor="start" font-weight="700">两条路线都到达第 3 行第 2 列</text>
+  <text x="414" y="101" font-size="18" fill="#285d92" text-anchor="start" font-weight="400">5 → 2 → 3，累计得分 10</text>
+  <text x="414" y="140" font-size="18" fill="#945418" text-anchor="start" font-weight="400">5 → 8 → 3，累计得分 16</text>
+  <text x="414" y="181" font-size="16" fill="#50667a" text-anchor="start" font-weight="400">从这一格继续向下，两条路线可选的后续相同。</text>
+  <rect x="413" y="210" width="398" height="62" rx="7" fill="#e5f4eb" stroke="#c5d2de"/>
+  <text x="430" y="232" font-size="17" fill="#276647" text-anchor="start" font-weight="700">顺推时保留更大的到达分数</text>
+  <text x="430" y="254" font-size="17" fill="#276647" text-anchor="start" font-weight="400">f[3][2] = max(7, 13) + 3 = 16</text>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="392" viewBox="0 0 880 392" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, sans-serif" dominant-baseline="central">
+  <title id="title">数字三角形的顺推转移</title>
+  <desc id="desc">箭头从上一行指向下一行。第三行第二列由 7 或 13 转移，加上当前格的 3 得到 16。最后一行最大值为 25。</desc>
+  <rect x="0" y="0" width="880" height="392" rx="0" fill="#fff" stroke="none"/>
+  <line x1="245" y1="87" x2="198" y2="120" stroke="#bac8d4" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="198" y1="120" x2="203.06719553483336" y2="111.55467410861104" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="198" y1="120" x2="207.66423890664097" y2="118.10197830482187" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="245" y1="87" x2="292" y2="120" stroke="#bac8d4" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="292" y1="120" x2="282.33576109335905" y2="118.10197830482187" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="292" y1="120" x2="286.9328044651666" y2="111.55467410861104" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="198" y1="179" x2="151" y2="212" stroke="#bac8d4" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="151" y1="212" x2="156.06719553483336" y2="203.55467410861104" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="151" y1="212" x2="160.66423890664097" y2="210.10197830482184" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="198" y1="179" x2="245" y2="212" stroke="#285d92" stroke-width="2.8" stroke-linecap="round"/>
+  <line x1="245" y1="212" x2="235.33576109335903" y2="210.10197830482184" stroke="#285d92" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="245" y1="212" x2="239.93280446516664" y2="203.55467410861104" stroke="#285d92" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="292" y1="179" x2="245" y2="212" stroke="#276647" stroke-width="2.8" stroke-linecap="round"/>
+  <line x1="245" y1="212" x2="250.06719553483336" y2="203.55467410861104" stroke="#276647" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="245" y1="212" x2="254.66423890664097" y2="210.10197830482184" stroke="#276647" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="292" y1="179" x2="339" y2="212" stroke="#bac8d4" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="339" y1="212" x2="329.33576109335905" y2="210.10197830482184" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="339" y1="212" x2="333.9328044651666" y2="203.55467410861104" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="151" y1="271" x2="104" y2="304" stroke="#bac8d4" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="104" y1="304" x2="109.06719553483337" y2="295.55467410861104" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="104" y1="304" x2="113.66423890664096" y2="302.10197830482184" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="151" y1="271" x2="198" y2="304" stroke="#bac8d4" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="198" y1="304" x2="188.33576109335903" y2="302.10197830482184" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="198" y1="304" x2="192.93280446516664" y2="295.55467410861104" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="245" y1="271" x2="198" y2="304" stroke="#bac8d4" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="198" y1="304" x2="203.06719553483336" y2="295.55467410861104" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="198" y1="304" x2="207.66423890664097" y2="302.10197830482184" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="245" y1="271" x2="292" y2="304" stroke="#bac8d4" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="292" y1="304" x2="282.33576109335905" y2="302.10197830482184" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="292" y1="304" x2="286.9328044651666" y2="295.55467410861104" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="339" y1="271" x2="292" y2="304" stroke="#bac8d4" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="292" y1="304" x2="297.0671955348334" y2="295.55467410861104" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="292" y1="304" x2="301.66423890664095" y2="302.10197830482184" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="339" y1="271" x2="386" y2="304" stroke="#bac8d4" stroke-width="1.7" stroke-linecap="round"/>
+  <line x1="386" y1="304" x2="376.33576109335905" y2="302.10197830482184" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="386" y1="304" x2="380.9328044651666" y2="295.55467410861104" stroke="#bac8d4" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="14" y="59" font-size="15" fill="#50667a" text-anchor="start" font-weight="400">第 1 行</text>
+  <rect x="205" y="33" width="80" height="52" rx="9" fill="#f3f6f9" stroke="#bac8d4"/>
+  <text x="245" y="50.16" font-size="15" fill="#25394c" text-anchor="middle" font-weight="700">a = 5</text>
+  <text x="245" y="70.96000000000001" font-size="14" fill="#25394c" text-anchor="middle" font-weight="400">f = 5</text>
+  <text x="14" y="151" font-size="15" fill="#50667a" text-anchor="start" font-weight="400">第 2 行</text>
+  <rect x="158" y="125" width="80" height="52" rx="9" fill="#e5f4eb" stroke="#bac8d4"/>
+  <text x="198" y="142.16" font-size="15" fill="#276647" text-anchor="middle" font-weight="700">a = 2</text>
+  <text x="198" y="162.96" font-size="14" fill="#276647" text-anchor="middle" font-weight="400">f = 7</text>
+  <rect x="252" y="125" width="80" height="52" rx="9" fill="#e5f4eb" stroke="#bac8d4"/>
+  <text x="292" y="142.16" font-size="15" fill="#276647" text-anchor="middle" font-weight="700">a = 8</text>
+  <text x="292" y="162.96" font-size="14" fill="#276647" text-anchor="middle" font-weight="400">f = 13</text>
+  <text x="14" y="243" font-size="15" fill="#50667a" text-anchor="start" font-weight="400">第 3 行</text>
+  <rect x="111" y="217" width="80" height="52" rx="9" fill="#f3f6f9" stroke="#bac8d4"/>
+  <text x="151" y="234.16" font-size="15" fill="#25394c" text-anchor="middle" font-weight="700">a = 4</text>
+  <text x="151" y="254.96" font-size="14" fill="#25394c" text-anchor="middle" font-weight="400">f = 11</text>
+  <rect x="205" y="217" width="80" height="52" rx="9" fill="#e8f2fc" stroke="#bac8d4"/>
+  <text x="245" y="234.16" font-size="15" fill="#285d92" text-anchor="middle" font-weight="700">a = 3</text>
+  <text x="245" y="254.96" font-size="14" fill="#285d92" text-anchor="middle" font-weight="400">f = 16</text>
+  <rect x="299" y="217" width="80" height="52" rx="9" fill="#f3f6f9" stroke="#bac8d4"/>
+  <text x="339" y="234.16" font-size="15" fill="#25394c" text-anchor="middle" font-weight="700">a = 1</text>
+  <text x="339" y="254.96" font-size="14" fill="#25394c" text-anchor="middle" font-weight="400">f = 14</text>
+  <text x="14" y="335" font-size="15" fill="#50667a" text-anchor="start" font-weight="400">第 4 行</text>
+  <rect x="64" y="309" width="80" height="52" rx="9" fill="#f3f6f9" stroke="#bac8d4"/>
+  <text x="104" y="326.16" font-size="15" fill="#25394c" text-anchor="middle" font-weight="700">a = 6</text>
+  <text x="104" y="346.96" font-size="14" fill="#25394c" text-anchor="middle" font-weight="400">f = 17</text>
+  <rect x="158" y="309" width="80" height="52" rx="9" fill="#f3f6f9" stroke="#bac8d4"/>
+  <text x="198" y="326.16" font-size="15" fill="#25394c" text-anchor="middle" font-weight="700">a = 2</text>
+  <text x="198" y="346.96" font-size="14" fill="#25394c" text-anchor="middle" font-weight="400">f = 18</text>
+  <rect x="252" y="309" width="80" height="52" rx="9" fill="#fff1dc" stroke="#bac8d4"/>
+  <text x="292" y="326.16" font-size="15" fill="#945418" text-anchor="middle" font-weight="700">a = 9</text>
+  <text x="292" y="346.96" font-size="14" fill="#945418" text-anchor="middle" font-weight="400">f = 25</text>
+  <rect x="346" y="309" width="80" height="52" rx="9" fill="#f3f6f9" stroke="#bac8d4"/>
+  <text x="386" y="326.16" font-size="15" fill="#25394c" text-anchor="middle" font-weight="700">a = 4</text>
+  <text x="386" y="346.96" font-size="14" fill="#25394c" text-anchor="middle" font-weight="400">f = 18</text>
+  <text x="462" y="48" font-size="20" fill="#25394c" text-anchor="start" font-weight="700">计算第 3 行第 2 列</text>
+  <text x="462" y="87" font-size="17" fill="#285d92" text-anchor="start" font-weight="400">左上格累计和为 7，加 3 得到 10。</text>
+  <text x="462" y="120" font-size="17" fill="#276647" text-anchor="start" font-weight="400">正上格累计和为 13，加 3 得到 16。</text>
+  <rect x="462" y="148" width="386" height="56" rx="9" fill="#e8f2fc" stroke="#bac8d4"/>
+  <text x="478" y="176" font-size="17" fill="#285d92" text-anchor="start" font-weight="700">f[3][2] = max(7 + 3, 13 + 3) = 16</text>
+  <text x="462" y="242" font-size="17" fill="#25394c" text-anchor="start" font-weight="400">沿箭头继续向下，逐行求出各格的 f。</text>
+  <text x="462" y="278" font-size="17" fill="#25394c" text-anchor="start" font-weight="400">走到最后一行时，终点可任选。</text>
+  <text x="462" y="322" font-size="17" fill="#945418" text-anchor="start" font-weight="700">答案 = max(17, 18, 25, 18) = 25</text>
+</svg>

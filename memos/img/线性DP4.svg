@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="839" height="325" viewBox="0 0 839 325" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, sans-serif" dominant-baseline="central">
+  <title id="title">Vacation 从昨天转移到今天</title>
+  <desc id="desc">第三天选活动 B 时，可从第二天选 A 或 C 的状态转移。两个累计总分为 150 和 180，取 180。连续选择 B 不合法。</desc>
+  <rect x="0" y="0" width="839" height="325" rx="0" fill="#fff" stroke="none"/>
+  <text x="128" y="30" font-size="19" fill="#25394c" text-anchor="middle" font-weight="700">第 2 天结束时</text>
+  <text x="699" y="30" font-size="19" fill="#25394c" text-anchor="middle" font-weight="700">第 3 天选择 B</text>
+  <line x1="236" y1="89" x2="577" y2="124" stroke="#285d92" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="577" y1="124" x2="567.6386238564729" y2="127.06016939063879" stroke="#285d92" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="577" y1="124" x2="568.4554469540695" y2="119.1019786397688" stroke="#285d92" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="236" y1="155" x2="535" y2="155" stroke="#bac8d4" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 6"/>
+  <line x1="236" y1="221" x2="577" y2="185" stroke="#276647" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="577" y1="185" x2="568.4696925765134" y2="189.92278937806685" stroke="#276647" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="577" y1="185" x2="567.629785384047" y2="181.9670018049825" stroke="#276647" stroke-width="2.4" stroke-linecap="round"/>
+  <rect x="27" y="60" width="201" height="57" rx="9" fill="#e8f2fc" stroke="#bac8d4"/>
+  <text x="127.5" y="78.81" font-size="17" fill="#285d92" text-anchor="middle" font-weight="700">昨天选 A</text>
+  <text x="127.5" y="101.61" font-size="16" fill="#285d92" text-anchor="middle" font-weight="400">累计 90 分</text>
+  <rect x="27" y="126" width="201" height="57" rx="9" fill="#f3f6f9" stroke="#bac8d4"/>
+  <text x="127.5" y="144.81" font-size="17" fill="#25394c" text-anchor="middle" font-weight="700">昨天选 B</text>
+  <text x="127.5" y="167.61" font-size="16" fill="#25394c" text-anchor="middle" font-weight="400">累计 120 分</text>
+  <rect x="27" y="192" width="201" height="57" rx="9" fill="#e5f4eb" stroke="#bac8d4"/>
+  <text x="127.5" y="210.81" font-size="17" fill="#276647" text-anchor="middle" font-weight="700">昨天选 C</text>
+  <text x="127.5" y="233.61" font-size="16" fill="#276647" text-anchor="middle" font-weight="400">累计 120 分</text>
+  <rect x="278" y="70" width="245" height="28" rx="4" fill="#fff" stroke="none"/>
+  <text x="400.5" y="84" font-size="16" fill="#285d92" text-anchor="middle" font-weight="700">今天选 B 加 60，得到 150</text>
+  <rect x="285" y="135" width="222" height="28" rx="4" fill="#fff" stroke="none"/>
+  <text x="396" y="149" font-size="16" fill="#50667a" text-anchor="middle" font-weight="700">连续两天选 B，不合法</text>
+  <text x="545" y="155" font-size="23" fill="#50667a" text-anchor="start" font-weight="700">×</text>
+  <rect x="278" y="215" width="245" height="28" rx="4" fill="#fff" stroke="none"/>
+  <text x="400.5" y="229" font-size="16" fill="#276647" text-anchor="middle" font-weight="700">今天选 B 加 60，得到 180</text>
+  <rect x="588" y="108" width="224" height="92" rx="9" fill="#e5f4eb" stroke="#bac8d4"/>
+  <text x="700" y="138.36" font-size="17" fill="#276647" text-anchor="middle" font-weight="700">两个合法来源取最大值</text>
+  <text x="700" y="175.16" font-size="16" fill="#276647" text-anchor="middle" font-weight="400">f[3][1] = 180</text>
+  <text x="27" y="284" font-size="16" fill="#50667a" text-anchor="start" font-weight="400">下标 0、1、2 分别表示活动 A、B、C。</text>
+</svg>

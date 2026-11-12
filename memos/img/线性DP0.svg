@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="300" viewBox="0 0 700 300" role="img" aria-labelledby="title desc">
+  <title id="title">数字三角形中的重复子问题</title>
+  <desc id="desc">5、2、3 和 5、8、3 两条路线在第三行第二列汇合。从该格出发，最后一行的候选为 2 和 9。</desc>
+  <rect width="700" height="300" fill="#fff"/>
+  <g fill="none" stroke="#b6c2cc" stroke-width="2">
+    <path d="M155 110L105 176 M255 110L305 176 M105 176L55 242 M105 176L155 242 M305 176L255 242 M305 176L355 242"/>
+  </g>
+  <path d="M205 44L155 110L205 176" fill="none" stroke="#397bc0" stroke-width="4"/>
+  <path d="M205 44L255 110L205 176" fill="none" stroke="#bf752b" stroke-width="4"/>
+  <path d="M155 242L205 176L255 242" fill="none" stroke="#448863" stroke-width="4"/>
+  <g stroke="#c3cdd7" fill="#f3f6f9">
+    <circle cx="205" cy="44" r="20"/>
+    <circle cx="155" cy="110" r="20" fill="#e8f1fc" stroke="#397bc0"/>
+    <circle cx="255" cy="110" r="20" fill="#fff2e4" stroke="#bf752b"/>
+    <circle cx="105" cy="176" r="20"/>
+    <circle cx="205" cy="176" r="20" fill="#e4f4eb" stroke="#448863" stroke-width="2"/>
+    <circle cx="305" cy="176" r="20"/>
+    <circle cx="55" cy="242" r="20"/>
+    <circle cx="155" cy="242" r="20" fill="#e4f4eb" stroke="#448863"/>
+    <circle cx="255" cy="242" r="20" fill="#e4f4eb" stroke="#448863"/>
+    <circle cx="355" cy="242" r="20"/>
+  </g>
+  <g text-anchor="middle" dominant-baseline="central" font-family="Arial, sans-serif" font-size="19" fill="#25394c">
+    <text x="205" y="44">5</text>
+    <text x="155" y="110">2</text>
+    <text x="255" y="110">8</text>
+    <text x="105" y="176">4</text>
+    <text x="205" y="176">3</text>
+    <text x="305" y="176">1</text>
+    <text x="55" y="242">6</text>
+    <text x="155" y="242">2</text>
+    <text x="255" y="242">9</text>
+    <text x="355" y="242">4</text>
+  </g>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#25394c">
+    <text x="400" y="58" font-size="20" font-weight="bold">两条路线，同一个子问题</text>
+    <text x="400" y="106" fill="#326aa4">路线 1　5 → 2 → 3</text>
+    <text x="400" y="142" fill="#9e591c">路线 2　5 → 8 → 3</text>
+    <text x="400" y="190">从第 3 行第 2 列往下</text>
+    <text x="400" y="226">f[3][2] = 3 + max(2, 9) = 12</text>
+  </g>
+</svg>
