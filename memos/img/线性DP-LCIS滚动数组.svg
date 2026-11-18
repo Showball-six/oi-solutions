@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="475" viewBox="0 0 920 475" role="img" aria-labelledby="title desc" font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+  <title id="title">LCIS 双行滚动数组：两行交替读写</title>
+  <desc id="desc">a 为 (1,2,5,4,5)，b 为 (1,2,4,4,5)。计算第 4 行时，从 f[1] 读取第 3 行，用第 4 行覆盖 f[0] 中的第 2 行。计算第 5 行时，改从 f[0] 读取第 4 行，用第 5 行覆盖 f[1] 中的第 3 行。两行交替做上一行和当前行，DP 只保存 2m 个状态。</desc>
+  <defs>
+    <marker id="turn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0 L10 5 L0 10Z" fill="#285d92"/>
+    </marker>
+  </defs>
+  <rect width="920" height="475" fill="#fff"/>
+  <g fill="#25394c">
+    <text x="32" y="40" font-size="26" font-weight="700">LCIS 双行滚动数组：两行交替读写</text>
+    <text x="32" y="74" font-size="17">a = (1, 2, 5, 4, 5)　 b = (1, 2, 4, 4, 5)</text>
+    <text x="32" y="102" font-size="16" fill="#50667a">第 i 行只依赖第 i−1 行，因此可以把更早的那一行覆盖掉。</text>
+  </g>
+  <path d="M32 122 H888" stroke="#d0dae4"/>
+
+  <g aria-label="第 4 轮：从右读，向左写">
+    <g fill="#25394c">
+      <text x="32" y="169" font-size="19" font-weight="700">第 4 轮</text>
+      <text x="32" y="200" font-size="16" fill="#50667a">a[4] = 4</text>
+    </g>
+    <rect x="176" y="138" width="260" height="104" rx="13" fill="#e8f2fc" stroke="#83a8ca"/>
+    <rect x="628" y="138" width="260" height="104" rx="13" fill="#e5f4eb" stroke="#86af99"/>
+    <g fill="#25394c">
+      <text x="196" y="167" font-size="21" font-weight="700">f[0]</text>
+      <text x="648" y="167" font-size="21" font-weight="700">f[1]</text>
+      <text x="196" y="194" font-size="16">用第 4 行覆盖第 2 行</text>
+      <text x="648" y="194" font-size="16">第 3 行保持不变</text>
+      <text x="196" y="224" font-size="19" font-weight="700" fill="#285d92">[1, 2, 3, 3, 3]</text>
+      <text x="648" y="224" font-size="19" font-weight="700" fill="#276647">[1, 2, 0, 0, 3]</text>
+    </g>
+    <g font-weight="700" font-size="15" text-anchor="middle">
+      <rect x="345" y="149" width="76" height="27" rx="13" fill="#fff"/>
+      <text x="383" y="168" fill="#285d92">写当前行</text>
+      <rect x="797" y="149" width="76" height="27" rx="13" fill="#fff"/>
+      <text x="835" y="168" fill="#276647">读上一行</text>
+    </g>
+    <text x="532" y="184" text-anchor="middle" fill="#285d92" font-size="16" font-weight="700">由第 3 行推第 4 行</text>
+    <path d="M612 200 H452" fill="none" stroke="#285d92" stroke-width="2.4" marker-end="url(#turn)"/>
+  </g>
+
+  <g aria-label="第 5 轮：从左读，向右写">
+    <g fill="#25394c">
+      <text x="32" y="308" font-size="19" font-weight="700">第 5 轮</text>
+      <text x="32" y="339" font-size="16" fill="#50667a">a[5] = 5</text>
+    </g>
+    <rect x="176" y="277" width="260" height="104" rx="13" fill="#e5f4eb" stroke="#86af99"/>
+    <rect x="628" y="277" width="260" height="104" rx="13" fill="#e8f2fc" stroke="#83a8ca"/>
+    <g fill="#25394c">
+      <text x="196" y="306" font-size="21" font-weight="700">f[0]</text>
+      <text x="648" y="306" font-size="21" font-weight="700">f[1]</text>
+      <text x="196" y="333" font-size="16">第 4 行保持不变</text>
+      <text x="648" y="333" font-size="16">用第 5 行覆盖第 3 行</text>
+      <text x="196" y="363" font-size="19" font-weight="700" fill="#276647">[1, 2, 3, 3, 3]</text>
+      <text x="648" y="363" font-size="19" font-weight="700" fill="#285d92">[1, 2, 3, 3, 4]</text>
+    </g>
+    <g font-weight="700" font-size="15" text-anchor="middle">
+      <rect x="345" y="288" width="76" height="27" rx="13" fill="#fff"/>
+      <text x="383" y="307" fill="#276647">读上一行</text>
+      <rect x="797" y="288" width="76" height="27" rx="13" fill="#fff"/>
+      <text x="835" y="307" fill="#285d92">写当前行</text>
+    </g>
+    <text x="532" y="323" text-anchor="middle" fill="#285d92" font-size="16" font-weight="700">由第 4 行推第 5 行</text>
+    <path d="M452 339 H612" fill="none" stroke="#285d92" stroke-width="2.4" marker-end="url(#turn)"/>
+  </g>
+
+  <rect x="32" y="406" width="856" height="46" rx="10" fill="#f4f7fa"/>
+  <text x="51" y="435" fill="#25394c" font-size="17">第 i 轮：读 f[(i−1) &amp; 1]，写 f[i &amp; 1]</text>
+  <text x="869" y="435" text-anchor="end" fill="#50667a" font-size="16">DP 只存 2m 个状态：O(m)</text>
+</svg>
