@@ -770,27 +770,45 @@ html[data-theme=dark] .lec-code-inner .cm-variable,html[data-theme=dark] .lec-co
   :root,html[data-theme=dark] {
     color-scheme:light;
     --lec-bg:#fff;
-    --lec-dot:transparent;
-    --lec-highlight:transparent;
     --lec-paper:#fff;
-    --lec-ink:#111;
-    --lec-muted:#555;
-    --lec-line:#ccc;
-    --lec-accent:#233e56;
-    --lec-accent-soft:#f1f3f5;
-    --lec-code-bg:#f7f7f7;
-    --lec-code-head:#f1f1f1;
-    --lec-code-border:#ccc;
-    --lec-code-sub:#555;
-    --lec-blue-bg:#f5f7f9;
-    --lec-green-bg:#f5f7f5;
-    --lec-orange-bg:#faf8f4;
-    --lec-purple-bg:#f7f5f8;
-    --lec-indigo-bg:#f5f6f9;
-    --lec-red-bg:#faf6f6;
+    --lec-ink:#23344a;
+    --lec-muted:#64748b;
+    --lec-line:#dfe5ec;
+    --lec-accent:#3569bd;
+    --lec-accent-soft:#eaf2ff;
+    --lec-code-bg:#f7f9fc;
+    --lec-code-head:#f0f4f8;
+    --lec-code-border:#dce4ed;
+    --lec-code-sub:#687b91;
+    --lec-green:#257762;
+    --lec-green-bg:#edf8f2;
+    --lec-green-line:#c9dfd3;
+    --lec-blue:#3569bd;
+    --lec-blue-bg:#edf4ff;
+    --lec-blue-line:#c5d8f6;
+    --lec-orange:#9b641e;
+    --lec-orange-bg:#fff8df;
+    --lec-orange-line:#f0d694;
+    --lec-purple:#73568c;
+    --lec-purple-bg:#f5f1f8;
+    --lec-purple-line:#dfd2e9;
+    --lec-indigo:#b45a46;
+    --lec-indigo-bg:#fff1eb;
+    --lec-indigo-line:#ecc6b8;
+    --lec-red:#ad4652;
+    --lec-red-bg:#fbf1f2;
+    --lec-red-line:#eccfd3;
+    --lec-dot:transparent;
+    --lec-highlight:#ffedaa;
+    --lec-text:var(--lec-ink);
+    --lec-font:'Noto Sans SC',-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
+    --lec-mono:'SFMono-Regular','Menlo','Consolas','Courier New',monospace;
   }
-  #write h1::after,#write h2::after,.lec-page #write::before,#write blockquote[data-lec-label]::after {display:none!important;}
-  .lec-title-ink {background:none;}
+  .lec-page #write::before {display:none!important;}
+  html,body.lec-page {
+    -webkit-print-color-adjust:exact!important;
+    print-color-adjust:exact!important;
+  }
   .lec-outline,#lec-progress,.lec-header-actions {
     display:none!important;
   }

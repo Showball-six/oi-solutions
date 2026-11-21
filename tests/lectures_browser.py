@@ -47,6 +47,12 @@ def main():
         page.emulate_media(media='print')
         assert not page.locator('.lec-toolbar').is_visible()
         assert page.locator('.lec-code-inner').nth(1).evaluate('(el)=>getComputedStyle(el).maxHeight')=='none'
+        assert page.locator('.lec-title-ink').evaluate('(el)=>getComputedStyle(el).backgroundImage')!='none', '打印不能丢失标题高亮'
+        assert page.locator('#write h1').evaluate('(el)=>getComputedStyle(el,"::after").display')!='none', '打印保留代码标题签'
+        assert page.locator('#write').evaluate('(el)=>getComputedStyle(el).getPropertyValue("--lec-highlight").trim()')=='#ffedaa'
+        assert page.locator('blockquote').first.evaluate('(el)=>getComputedStyle(el).backgroundColor')=='rgb(255, 248, 223)'
+        assert page.locator('#write').evaluate('(el)=>getComputedStyle(el).printColorAdjust')=='exact'
+        page.pdf(path=str(folder/'lecture-print-sample.pdf'),print_background=False,prefer_css_page_size=True)
         page.emulate_media(media='screen')
         for filename in ['lec-001.html','Lec-array-basics.html','Lec-prime-sieve.html']:
             page.goto(ORIGIN+'/memos/'+filename);page.wait_for_selector('.lec-outline')
