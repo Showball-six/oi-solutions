@@ -1,0 +1,693 @@
+{
+  "title": "NCT C++ 2级 C2模拟卷1",
+  "category": "NCT-C++",
+  "level": "2",
+  "date": "2026-04",
+  "time_limit": 90,
+  "total_score": 100,
+  "description": "NCT 全国青少年编程能力等级测试",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "A",
+      "content": "在 C++ 中，选项中能够准确定义多维数组的语句是（）",
+      "options": [
+        {
+          "key": "A",
+          "text": "int rc[3][4];",
+          "html": "<p>int rc[3][4];</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "int rc{3}{4};",
+          "html": "<p>int rc{3}{4};</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "int rc(3)(4);",
+          "html": "<p>int rc(3)(4);</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "int rc = [3][4];",
+          "html": "<p>int rc = [3][4];</p>\n"
+        }
+      ],
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>在 C++ 中，选项中能够准确定义多维数组的语句是（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "B",
+      "content": "运行代码，输出的结果是（）![img](../assets/images/nct/16375727560428684.png)\n\n![img](../assets/images/nct/16375727560428684.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "3",
+          "html": "<p>3</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "4",
+          "html": "<p>4</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "5",
+          "html": "<p>5</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "6",
+          "html": "<p>6</p>\n"
+        }
+      ],
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>运行代码，输出的结果是（）<img src=\"assets/images/nct/16375727560428684.png\" alt=\"\" loading=\"lazy\" /></p>\n<p><img src=\"assets/images/nct/16375727560428684.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "A",
+      "content": "在 C++ 中，下列定义一个整型指针的语句是（）",
+      "options": [
+        {
+          "key": "A",
+          "text": "int *ip;",
+          "html": "<p>int *ip;</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "int **ip;",
+          "html": "<p>int **ip;</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "int ip;",
+          "html": "<p>int ip;</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "int ip*;",
+          "html": "<p>int ip*;</p>\n"
+        }
+      ],
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>在 C++ 中，下列定义一个整型指针的语句是（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "A",
+      "content": "在 C++ 中，指针内存放的是（）",
+      "options": [
+        {
+          "key": "A",
+          "text": "地址",
+          "html": "<p>地址</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "数组的下标",
+          "html": "<p>数组的下标</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "数据的类型",
+          "html": "<p>数据的类型</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "数据的长度",
+          "html": "<p>数据的长度</p>\n"
+        }
+      ],
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>在 C++ 中，指针内存放的是（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "A",
+      "content": "在 C++ 中，已知定义了一个整型的指针*p，另外一个指针**pt指向*p，那么**pt的存放是（）",
+      "options": [
+        {
+          "key": "A",
+          "text": "*p指针的地址",
+          "html": "<p>*p指针的地址</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "p的值",
+          "html": "<p>p的值</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "*p指针指向的值",
+          "html": "<p>*p指针指向的值</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "没有这个用法",
+          "html": "<p>没有这个用法</p>\n"
+        }
+      ],
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>在 C++ 中，已知定义了一个整型的指针<em>p，另外一个指针**pt指向</em>p，那么**pt的存放是（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 4.0,
+      "answer": "A",
+      "content": "在 C++ 中，返回字符串长度的方法是（）",
+      "options": [
+        {
+          "key": "A",
+          "text": "str.size()",
+          "html": "<p>str.size()</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "str.len()",
+          "html": "<p>str.len()</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "str.sizeof()",
+          "html": "<p>str.sizeof()</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "length(str)",
+          "html": "<p>length(str)</p>\n"
+        }
+      ],
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>在 C++ 中，返回字符串长度的方法是（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 4.0,
+      "answer": "B",
+      "content": "在选项中，正确的标准输出流用法的是（）",
+      "options": [
+        {
+          "key": "A",
+          "text": "cout >> abc;",
+          "html": "<p>cout &gt;&gt; abc;</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "cout",
+          "html": "<p>cout</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "cin",
+          "html": "<p>cin</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "cin >> abc;",
+          "html": "<p>cin &gt;&gt; abc;</p>\n"
+        }
+      ],
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>在选项中，正确的标准输出流用法的是（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 4.0,
+      "answer": "A",
+      "content": "程序中定义了一个C风格字符串，则它的末尾存储是（）",
+      "options": [
+        {
+          "key": "A",
+          "text": "‘\\0’",
+          "html": "<p>‘\\0’</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "'/0'",
+          "html": "<p>'/0'</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "'0/'",
+          "html": "<p>'0/'</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "' '",
+          "html": "<p>' '</p>\n"
+        }
+      ],
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>程序中定义了一个C风格字符串，则它的末尾存储是（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 4.0,
+      "answer": "D",
+      "content": "运行程序可以得到的结果是（）![img](../assets/images/nct/16375722269832024.png)\n\n![img](../assets/images/nct/16375722269832024.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "helloworld",
+          "html": "<p>helloworld</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "ellow",
+          "html": "<p>ellow</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "world",
+          "html": "<p>world</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "hello",
+          "html": "<p>hello</p>\n"
+        }
+      ],
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>运行程序可以得到的结果是（）<img src=\"assets/images/nct/16375722269832024.png\" alt=\"\" loading=\"lazy\" /></p>\n<p><img src=\"assets/images/nct/16375722269832024.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 4.0,
+      "answer": "A",
+      "content": "getline和cin的区别是（）",
+      "options": [
+        {
+          "key": "A",
+          "text": "如果输入过程中有空格，getline能读取空格前后的内容，但是cin不可以",
+          "html": "<p>如果输入过程中有空格，getline能读取空格前后的内容，但是cin不可以</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "getline接收换行，cin不接受",
+          "html": "<p>getline接收换行，cin不接受</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "getline接收字符串数据，cin不接受",
+          "html": "<p>getline接收字符串数据，cin不接受</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "getline不会对输入字符串转义，但是cin会",
+          "html": "<p>getline不会对输入字符串转义，但是cin会</p>\n"
+        }
+      ],
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>getline和cin的区别是（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 4.0,
+      "answer": "A",
+      "content": "运行下列程序，如果输入：A，则输出的结果是（）![img](../assets/images/nct/16375720165309446.png)\n\n![img](../assets/images/nct/16375720165309446.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "cat",
+          "html": "<p>cat</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "dog",
+          "html": "<p>dog</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "bird",
+          "html": "<p>bird</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "null",
+          "html": "<p>null</p>\n"
+        }
+      ],
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>运行下列程序，如果输入：A，则输出的结果是（）<img src=\"assets/images/nct/16375720165309446.png\" alt=\"\" loading=\"lazy\" /></p>\n<p><img src=\"assets/images/nct/16375720165309446.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 4.0,
+      "answer": "A",
+      "content": "运行下列程序，输出的结果是（）![img](../assets/images/nct/16375719010448657.png)\n\n![img](../assets/images/nct/16375719010448657.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "233445",
+          "html": "<p>233445</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "234567",
+          "html": "<p>234567</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "223344",
+          "html": "<p>223344</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "222333",
+          "html": "<p>222333</p>\n"
+        }
+      ],
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>运行下列程序，输出的结果是（）<img src=\"assets/images/nct/16375719010448657.png\" alt=\"\" loading=\"lazy\" /></p>\n<p><img src=\"assets/images/nct/16375719010448657.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 4.0,
+      "answer": "C",
+      "content": "程序中定义了max函数用来判断两个数字中哪一个比较大，但是在这个自定义函数中有一处地方写错了，请问具体的错误是（）![img](../assets/images/nct/17016738966001318.png)\n\n![img](../assets/images/nct/17016738966001318.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "函数没有定义返回值类型",
+          "html": "<p>函数没有定义返回值类型</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "函数中返回值没有覆盖所有情况，会出现没有返回值的情况",
+          "html": "<p>函数中返回值没有覆盖所有情况，会出现没有返回值的情况</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "函数中实际返回值类型与定义的返回值类型不符",
+          "html": "<p>函数中实际返回值类型与定义的返回值类型不符</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "函数没有定义参数类型",
+          "html": "<p>函数没有定义参数类型</p>\n"
+        }
+      ],
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>程序中定义了max函数用来判断两个数字中哪一个比较大，但是在这个自定义函数中有一处地方写错了，请问具体的错误是（）<img src=\"assets/images/nct/17016738966001318.png\" alt=\"\" loading=\"lazy\" /></p>\n<p><img src=\"assets/images/nct/17016738966001318.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 4.0,
+      "answer": "A",
+      "content": "当函数返回值类型定义为void 的时候，那么代表（）",
+      "options": [
+        {
+          "key": "A",
+          "text": "函数没有返回值",
+          "html": "<p>函数没有返回值</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "函数允许返回不同类型的值",
+          "html": "<p>函数允许返回不同类型的值</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "代表函数允许任意类型的值",
+          "html": "<p>代表函数允许任意类型的值</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "代表函数可以返回多个值",
+          "html": "<p>代表函数可以返回多个值</p>\n"
+        }
+      ],
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>当函数返回值类型定义为void 的时候，那么代表（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 4.0,
+      "answer": "D",
+      "content": "运行程序输出的结果是（）![img](../assets/images/nct/16582128435730232.png)\n\n![img](../assets/images/nct/16582128435730232.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "1221",
+          "html": "<p>1221</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "1212",
+          "html": "<p>1212</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "2121",
+          "html": "<p>2121</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "2112",
+          "html": "<p>2112</p>\n"
+        }
+      ],
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>运行程序输出的结果是（）<img src=\"assets/images/nct/16582128435730232.png\" alt=\"\" loading=\"lazy\" /></p>\n<p><img src=\"assets/images/nct/16582128435730232.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 16,
+      "score": 4.0,
+      "answer": "C",
+      "content": "func函数用于交换两个变量的值，那么选项中正确的调用方式是（）![img](../assets/images/nct/16375713771875659.png)\n\n![img](../assets/images/nct/16375713771875659.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "func(*x,*y);",
+          "html": "<p>func(*x,*y);</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "func(x,y);",
+          "html": "<p>func(x,y);</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "func(&x,&y);",
+          "html": "<p>func(&amp;x,&amp;y);</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "func(*x,&y);",
+          "html": "<p>func(*x,&amp;y);</p>\n"
+        }
+      ],
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>func函数用于交换两个变量的值，那么选项中正确的调用方式是（）<img src=\"assets/images/nct/16375713771875659.png\" alt=\"\" loading=\"lazy\" /></p>\n<p><img src=\"assets/images/nct/16375713771875659.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 17,
+      "score": 4.0,
+      "answer": "A",
+      "content": "运行程序输出的结果是（）![img](../assets/images/nct/16375712733006927.png)\n\n![img](../assets/images/nct/16375712733006927.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "55",
+          "html": "<p>55</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "3628800",
+          "html": "<p>3628800</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "56",
+          "html": "<p>56</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "10",
+          "html": "<p>10</p>\n"
+        }
+      ],
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>运行程序输出的结果是（）<img src=\"assets/images/nct/16375712733006927.png\" alt=\"\" loading=\"lazy\" /></p>\n<p><img src=\"assets/images/nct/16375712733006927.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 18,
+      "score": 4.0,
+      "answer": "A",
+      "content": "下列程序运行后，输出的结果是（）![img](../assets/images/nct/16375711550306929.png)\n\n![img](../assets/images/nct/16375711550306929.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "6YES",
+          "html": "<p>6YES</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "6NO",
+          "html": "<p>6NO</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "4YES",
+          "html": "<p>4YES</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "4NO",
+          "html": "<p>4NO</p>\n"
+        }
+      ],
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>下列程序运行后，输出的结果是（）<img src=\"assets/images/nct/16375711550306929.png\" alt=\"\" loading=\"lazy\" /></p>\n<p><img src=\"assets/images/nct/16375711550306929.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 19,
+      "score": 4.0,
+      "answer": "A",
+      "content": "运行下列程序，输出的结果是（）![img](../assets/images/nct/16375710398213360.png)\n\n![img](../assets/images/nct/16375710398213360.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "4\n5",
+          "html": "<p>4<br />\n5</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "1\n0",
+          "html": "<p>1<br />\n0</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "4\n0",
+          "html": "<p>4<br />\n0</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "7",
+          "html": "<p>7</p>\n"
+        }
+      ],
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>运行下列程序，输出的结果是（）<img src=\"assets/images/nct/16375710398213360.png\" alt=\"\" loading=\"lazy\" /></p>\n<p><img src=\"assets/images/nct/16375710398213360.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 20,
+      "score": 4.0,
+      "answer": "B",
+      "content": "运行程序输出的结果是（）![img](../assets/images/nct/16375707917398787.png)\n\n![img](../assets/images/nct/16375707917398787.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "![img](../assets/images/nct/16376539126621789.png)",
+          "html": "<p><img src=\"assets/images/nct/16376539126621789.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "![img](../assets/images/nct/16377364958550931.png)",
+          "html": "<p><img src=\"assets/images/nct/16377364958550931.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "![img](../assets/images/nct/16375708936815295.png)",
+          "html": "<p><img src=\"assets/images/nct/16375708936815295.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "![img](../assets/images/nct/16375709085419709.png)",
+          "html": "<p><img src=\"assets/images/nct/16375709085419709.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>运行程序输出的结果是（）<img src=\"assets/images/nct/16375707917398787.png\" alt=\"\" loading=\"lazy\" /></p>\n<p><img src=\"assets/images/nct/16375707917398787.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "program",
+      "id": 21,
+      "score": 10.0,
+      "answer": "",
+      "content": "请按照下列要求继续编写程序，完成函数 change 的代码：（1）函数通过指针的方式设置三个参数 a b c；（2）change() 函数可以让 a 的值变成 b 的值，让 b 的值变成 c 的值，让 c 的值变成 a 的值；（3）函数无返回值。输入格式：一行输入三个整数，分别对应题干中的 a，b，c，数字之间以空格隔开输出格式：输出共三行第一行输出一个整数（表示 a 的值）第二行输出一个整数（表示 b 的值）第三行输出一个整数（表示 c 的值）【注： 程序输出必须严格匹配题目要求，禁止出现题目要求以外的多余字符（如\"请输入一个整数：\"），否则不得分。 】输入输出示例：![img](../assets/images/nct/17700891278443247.png)数据范围：-100 ≤ a,b,c ≤ 100\n\n![img](../assets/images/nct/17700891278443247.png)",
+      "section": "C++ 编程操作题",
+      "uid": "q21",
+      "gradable": false,
+      "html": "<p>请按照下列要求继续编写程序，完成函数 change 的代码：（1）函数通过指针的方式设置三个参数 a b c；（2）change() 函数可以让 a 的值变成 b 的值，让 b 的值变成 c 的值，让 c 的值变成 a 的值；（3）函数无返回值。输入格式：一行输入三个整数，分别对应题干中的 a，b，c，数字之间以空格隔开输出格式：输出共三行第一行输出一个整数（表示 a 的值）第二行输出一个整数（表示 b 的值）第三行输出一个整数（表示 c 的值）【注： 程序输出必须严格匹配题目要求，禁止出现题目要求以外的多余字符（如&quot;请输入一个整数：&quot;），否则不得分。 】输入输出示例：<img src=\"assets/images/nct/17700891278443247.png\" alt=\"\" loading=\"lazy\" />数据范围：-100 ≤ a,b,c ≤ 100</p>\n<p><img src=\"assets/images/nct/17700891278443247.png\" alt=\"\" loading=\"lazy\" /></p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 22,
+      "score": 10.0,
+      "answer": "",
+      "content": "请编写一个程序，具体要求如下：（1）用户输入一个整数，利用递归计算该数字阶乘的值；（2）当输入的数字大于等于 0 时，输出该数字阶乘的值；（2）当输入的数字小于 0 时，输出 -1。（提示：例如 5 的阶乘 = 1×2×3×4×5，值为 120；0 和 1的阶乘的值均为 1。）输入格式：输入一个整数输出格式：输出一个整数【注： 程序输出必须严格匹配题目要求，禁止出现题目要求以外的多余字符（如\"请输入一个整数：\"），否则不得分。 】输入输出示例：![img](../assets/images/nct/17591392179650186.png)数据范围：-10 ≤ 输入的整数 ≤ 10\n\n![img](../assets/images/nct/17591392179650186.png)",
+      "section": "C++ 编程操作题",
+      "uid": "q22",
+      "gradable": false,
+      "html": "<p>请编写一个程序，具体要求如下：（1）用户输入一个整数，利用递归计算该数字阶乘的值；（2）当输入的数字大于等于 0 时，输出该数字阶乘的值；（2）当输入的数字小于 0 时，输出 -1。（提示：例如 5 的阶乘 = 1×2×3×4×5，值为 120；0 和 1的阶乘的值均为 1。）输入格式：输入一个整数输出格式：输出一个整数【注： 程序输出必须严格匹配题目要求，禁止出现题目要求以外的多余字符（如&quot;请输入一个整数：&quot;），否则不得分。 】输入输出示例：<img src=\"assets/images/nct/17591392179650186.png\" alt=\"\" loading=\"lazy\" />数据范围：-10 ≤ 输入的整数 ≤ 10</p>\n<p><img src=\"assets/images/nct/17591392179650186.png\" alt=\"\" loading=\"lazy\" /></p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 23,
+      "score": 10.0,
+      "answer": "",
+      "content": "请根据下列要求编写一段程序：（1）用户输入一个整数 n；（2）统计从 1 到 n （包括 1 和 n）的整数中，个位和十位数字之和能被 5 整除的个数；（3）输出符合条件的整数个数。（注：1 到 9 这九个数的十位数字为 0）输入格式：输入一个整数输出格式：输出一个整数【注： 程序输出必须严格匹配题目要求，禁止出现题目要求以外的多余字符（如\"请输入一个整数：\"），否则不得分。 】输入输出示例：![img](../assets/images/nct/17591390266554145.png)数据范围： 1 ≤ n ＜ 100\n\n![img](../assets/images/nct/17591390266554145.png)",
+      "section": "C++ 编程操作题",
+      "uid": "q23",
+      "gradable": false,
+      "html": "<p>请根据下列要求编写一段程序：（1）用户输入一个整数 n；（2）统计从 1 到 n （包括 1 和 n）的整数中，个位和十位数字之和能被 5 整除的个数；（3）输出符合条件的整数个数。（注：1 到 9 这九个数的十位数字为 0）输入格式：输入一个整数输出格式：输出一个整数【注： 程序输出必须严格匹配题目要求，禁止出现题目要求以外的多余字符（如&quot;请输入一个整数：&quot;），否则不得分。 】输入输出示例：<img src=\"assets/images/nct/17591390266554145.png\" alt=\"\" loading=\"lazy\" />数据范围： 1 ≤ n ＜ 100</p>\n<p><img src=\"assets/images/nct/17591390266554145.png\" alt=\"\" loading=\"lazy\" /></p>\n",
+      "options": []
+    }
+  ],
+  "id": "nct-cpp-2-C2模拟卷1",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/nct-cpp-2-C2模拟卷1",
+  "version": "fe1b4d711aee47ff",
+  "warnings": [],
+  "objective_score": 70.0
+}

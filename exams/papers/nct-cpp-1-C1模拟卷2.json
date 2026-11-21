@@ -1,0 +1,693 @@
+{
+  "title": "NCT C++ 1级 C1模拟卷2",
+  "category": "NCT-C++",
+  "level": "1",
+  "date": "2026-04",
+  "time_limit": 90,
+  "total_score": 100,
+  "description": "NCT 全国青少年编程能力等级测试",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "B",
+      "content": "在 C++ 中，下列变量名不合法的是（）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "CPP",
+          "html": "<p>CPP</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "3a",
+          "html": "<p>3a</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "apple",
+          "html": "<p>apple</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "J_S_P",
+          "html": "<p>J_S_P</p>\n"
+        }
+      ],
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>在 C++ 中，下列变量名不合法的是（）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "B",
+      "content": "在 C++ 中，关键字 char 用来定义的数据类型是（）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "整型",
+          "html": "<p>整型</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "字符型",
+          "html": "<p>字符型</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "浮点型",
+          "html": "<p>浮点型</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "双精度浮点型",
+          "html": "<p>双精度浮点型</p>\n"
+        }
+      ],
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>在 C++ 中，关键字 char 用来定义的数据类型是（）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "A",
+      "content": "下列关于 C++ 常量描述正确的是（）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "定义常量的关键字是 const",
+          "html": "<p>定义常量的关键字是 const</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "定义常量的关键字是 conster",
+          "html": "<p>定义常量的关键字是 conster</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "常量可以先定义后赋值",
+          "html": "<p>常量可以先定义后赋值</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "可以在程序的任意位置，修改常量的值",
+          "html": "<p>可以在程序的任意位置，修改常量的值</p>\n"
+        }
+      ],
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下列关于 C++ 常量描述正确的是（）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "C",
+      "content": "在 C++ 中，能改变循环的流程，使跳过后面的语句开始下一轮循环的语句是（）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "break",
+          "html": "<p>break</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "go",
+          "html": "<p>go</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "continue",
+          "html": "<p>continue</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "pass",
+          "html": "<p>pass</p>\n"
+        }
+      ],
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>在 C++ 中，能改变循环的流程，使跳过后面的语句开始下一轮循环的语句是（）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "D",
+      "content": "下列不属于 C++ 中字符串常量的是（）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "\"hello\"",
+          "html": "<p>&quot;hello&quot;</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "\"good\"",
+          "html": "<p>&quot;good&quot;</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "\"vitory\"",
+          "html": "<p>&quot;vitory&quot;</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "'a'",
+          "html": "<p>'a'</p>\n"
+        }
+      ],
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>下列不属于 C++ 中字符串常量的是（）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 4.0,
+      "answer": "B",
+      "content": "下列不属于常见调试程序的方法的是（）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "断点调试",
+          "html": "<p>断点调试</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "重启",
+          "html": "<p>重启</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "变量监察",
+          "html": "<p>变量监察</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "单步调试",
+          "html": "<p>单步调试</p>\n"
+        }
+      ],
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>下列不属于常见调试程序的方法的是（）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 4.0,
+      "answer": "C",
+      "content": "在C++中，能正确表达“整型变量 a 小于等于 10 或整型变量 a 大于等于 100 ”的条件表达式是（）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "a=100",
+          "html": "<p>a=100</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "a=100",
+          "html": "<p>a=100</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "a=100",
+          "html": "<p>a=100</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "a=100",
+          "html": "<p>a=100</p>\n"
+        }
+      ],
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>在C++中，能正确表达“整型变量 a 小于等于 10 或整型变量 a 大于等于 100 ”的条件表达式是（）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 4.0,
+      "answer": "D",
+      "content": "运行下列程序，输出的结果是（）。 ![img](../assets/images/nct/rkHvPcdsd.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "![img](../assets/images/nct/Bkjsv9do_.png)",
+          "html": "<p><img src=\"assets/images/nct/Bkjsv9do_.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "![img](../assets/images/nct/HyRjDq_od.png)",
+          "html": "<p><img src=\"assets/images/nct/HyRjDq_od.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "![img](../assets/images/nct/Hy73vcdid.png)",
+          "html": "<p><img src=\"assets/images/nct/Hy73vcdid.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "![img](../assets/images/nct/HJgLhPcuo_.png)",
+          "html": "<p><img src=\"assets/images/nct/HJgLhPcuo_.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>运行下列程序，输出的结果是（）。 <img src=\"assets/images/nct/rkHvPcdsd.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 4.0,
+      "answer": "C",
+      "content": "运行下列程序，在运行终端中输入一个整数，输出的结果是“高处不胜寒”，则输入的这个整数是（）。![img](../assets/images/nct/r1Bldcdju.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "0",
+          "html": "<p>0</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "60",
+          "html": "<p>60</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "100",
+          "html": "<p>100</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "59",
+          "html": "<p>59</p>\n"
+        }
+      ],
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>运行下列程序，在运行终端中输入一个整数，输出的结果是“高处不胜寒”，则输入的这个整数是（）。<img src=\"assets/images/nct/r1Bldcdju.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 4.0,
+      "answer": "A",
+      "content": "运行下列程序，输出的结果是（）。![img](../assets/images/nct/Sk_SuqdjO.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "8.35",
+          "html": "<p>8.35</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "8.34",
+          "html": "<p>8.34</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "8.346",
+          "html": "<p>8.346</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "8.340",
+          "html": "<p>8.340</p>\n"
+        }
+      ],
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>运行下列程序，输出的结果是（）。<img src=\"assets/images/nct/Sk_SuqdjO.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 4.0,
+      "answer": "B",
+      "content": "在 C++ 中，设 int x=6, y=3, z=2; 则表达式 x/y%z 的值是（）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "0.0",
+          "html": "<p>0.0</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "0",
+          "html": "<p>0</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "1",
+          "html": "<p>1</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "1.0",
+          "html": "<p>1.0</p>\n"
+        }
+      ],
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>在 C++ 中，设 int x=6, y=3, z=2; 则表达式 x/y%z 的值是（）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 4.0,
+      "answer": "D",
+      "content": "运行下列程序，输出的结果是（）。![img](../assets/images/nct/B1lZCOcdjd.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "3",
+          "html": "<p>3</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "6",
+          "html": "<p>6</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "9.0",
+          "html": "<p>9.0</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "9",
+          "html": "<p>9</p>\n"
+        }
+      ],
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>运行下列程序，输出的结果是（）。<img src=\"assets/images/nct/B1lZCOcdjd.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 4.0,
+      "answer": "B",
+      "content": "在C++中，设 int x=2,y=3; 则表达式 x + y++ 的值是（）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "6",
+          "html": "<p>6</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "5",
+          "html": "<p>5</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "4",
+          "html": "<p>4</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "3",
+          "html": "<p>3</p>\n"
+        }
+      ],
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>在C++中，设 int x=2,y=3; 则表达式 x + y++ 的值是（）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 4.0,
+      "answer": "D",
+      "content": "运行下列程序，输出的结果是（）。![img](../assets/images/nct/SygIFcdsd.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "泰国",
+          "html": "<p>泰国</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "新加坡",
+          "html": "<p>新加坡</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "印度尼西亚",
+          "html": "<p>印度尼西亚</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "中国",
+          "html": "<p>中国</p>\n"
+        }
+      ],
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>运行下列程序，输出的结果是（）。<img src=\"assets/images/nct/SygIFcdsd.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 4.0,
+      "answer": "A",
+      "content": "要使程序能实现 1+2+3+4 的功能并运行输出结果10，则 ① 和 ② 处应填写的分别是（）。  ![img](../assets/images/nct/SyesF5Oou.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "i < 5; i++",
+          "html": "<p>i &lt; 5; i++</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "i<=5;++i",
+          "html": "<p>i&lt;=5;++i</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "i<5; i--",
+          "html": "<p>i&lt;5; i--</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "i<=5;i--",
+          "html": "<p>i&lt;=5;i--</p>\n"
+        }
+      ],
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>要使程序能实现 1+2+3+4 的功能并运行输出结果10，则 ① 和 ② 处应填写的分别是（）。  <img src=\"assets/images/nct/SyesF5Oou.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 16,
+      "score": 4.0,
+      "answer": "C",
+      "content": "下列代码段中，能够使语句 cout",
+      "options": [
+        {
+          "key": "A",
+          "text": "![img](../assets/images/nct/Bk5GJj_iu.png)",
+          "html": "<p><img src=\"assets/images/nct/Bk5GJj_iu.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "![img](../assets/images/nct/Bk6fkjdiu.png)",
+          "html": "<p><img src=\"assets/images/nct/Bk6fkjdiu.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "![img](../assets/images/nct/ByZQJjuo_.png)",
+          "html": "<p><img src=\"assets/images/nct/ByZQJjuo_.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "![img](../assets/images/nct/HJEQ1sOiu.png)",
+          "html": "<p><img src=\"assets/images/nct/HJEQ1sOiu.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>下列代码段中，能够使语句 cout</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 17,
+      "score": 4.0,
+      "answer": "C",
+      "content": "设 char a[]=\"China\"; 执行语句 cout",
+      "options": [
+        {
+          "key": "A",
+          "text": "C",
+          "html": "<p>C</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "'C'",
+          "html": "<p>'C'</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "h",
+          "html": "<p>h</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "'h'",
+          "html": "<p>'h'</p>\n"
+        }
+      ],
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>设 char a[]=&quot;China&quot;; 执行语句 cout</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 18,
+      "score": 4.0,
+      "answer": "B",
+      "content": "运行下列程序，输出的结果是（）。 ![img](../assets/images/nct/BJ55kousO.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "123",
+          "html": "<p>123</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "012",
+          "html": "<p>012</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "1234",
+          "html": "<p>1234</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "0123",
+          "html": "<p>0123</p>\n"
+        }
+      ],
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>运行下列程序，输出的结果是（）。 <img src=\"assets/images/nct/BJ55kousO.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 19,
+      "score": 4.0,
+      "answer": "A",
+      "content": "运行下列程序，输出结果中 hello 的个数是（）。 ![img](../assets/images/nct/SJr-xiOod.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "7",
+          "html": "<p>7</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "6",
+          "html": "<p>6</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "5",
+          "html": "<p>5</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "4",
+          "html": "<p>4</p>\n"
+        }
+      ],
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>运行下列程序，输出结果中 hello 的个数是（）。 <img src=\"assets/images/nct/SJr-xiOod.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 20,
+      "score": 4.0,
+      "answer": "B",
+      "content": "运行下列程序后，输出结果为 135 的是（）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "![img](../assets/images/nct/S1RE-j_ou.png)",
+          "html": "<p><img src=\"assets/images/nct/S1RE-j_ou.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "![img](../assets/images/nct/S1ZS-s_od.png)",
+          "html": "<p><img src=\"assets/images/nct/S1ZS-s_od.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "![img](../assets/images/nct/BkEHZjuoO.png)",
+          "html": "<p><img src=\"assets/images/nct/BkEHZjuoO.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "![img](../assets/images/nct/ByOSZsuoO.png)",
+          "html": "<p><img src=\"assets/images/nct/ByOSZsuoO.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>运行下列程序后，输出结果为 135 的是（）。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 21,
+      "score": 10.0,
+      "answer": "",
+      "content": "现在有一台电梯，承重为 1000kg，请你编写一个程序判断用户输入的重量w，是否会导致电梯超载。\n输入格式：一行内输入一个整数，表示电梯的重量w。\n输出格式：\n（1）当输入的重量大于 1000kg 时，输出\"no\"。\n（2）当输入的重量等于 1000kg 时，输出\"ok\"。\n（3）当输入的重量小于 1000kg 时，输出\"safe\"。【注：程序输出必须严格匹配题目要求，禁止出现题目要求以外的多余字符（如\"请输入一个整数：\"），否则不得分。】\n输入输出示例：![img](../assets/images/nct/17590279632762920.png)数据范围：1 ≤ 输入的重量 ≤ 10000",
+      "section": "C++ 编程操作题",
+      "uid": "q21",
+      "gradable": false,
+      "html": "<p>现在有一台电梯，承重为 1000kg，请你编写一个程序判断用户输入的重量w，是否会导致电梯超载。<br />\n输入格式：一行内输入一个整数，表示电梯的重量w。<br />\n输出格式：<br />\n（1）当输入的重量大于 1000kg 时，输出&quot;no&quot;。<br />\n（2）当输入的重量等于 1000kg 时，输出&quot;ok&quot;。<br />\n（3）当输入的重量小于 1000kg 时，输出&quot;safe&quot;。【注：程序输出必须严格匹配题目要求，禁止出现题目要求以外的多余字符（如&quot;请输入一个整数：&quot;），否则不得分。】<br />\n输入输出示例：<img src=\"assets/images/nct/17590279632762920.png\" alt=\"\" loading=\"lazy\" />数据范围：1 ≤ 输入的重量 ≤ 10000</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 22,
+      "score": 10.0,
+      "answer": "",
+      "content": "现有两个整型变量分别存储 123 和 321，请你编写程序，判断用户输入的两个数值a与b，是否与现有的两个变量的数值相等，若都相等，则输出 \"end\" 并结束程序；若有一个不相等，则继续重新输入。\n输入格式：一行内输入两个整数，以空格隔开，分别表示题目中的a和b。\n输出格式：\n①若输入的数值分别与 123 和 321 相等且输入顺序正确，则输出 \"end\"。\n②若输入的两个数值中有一个不相等，则输出“Error”并换行。【注：程序输出必须严格匹配题目要求，禁止出现题目要求以外的多余字符（如\"请输入一个整数：\"），否则不得分。】\n输入输出示例：![img](../assets/images/nct/17617217924108530.png)数据范围：1≤ a, b ≤ 1000，并且均无前导零",
+      "section": "C++ 编程操作题",
+      "uid": "q22",
+      "gradable": false,
+      "html": "<p>现有两个整型变量分别存储 123 和 321，请你编写程序，判断用户输入的两个数值a与b，是否与现有的两个变量的数值相等，若都相等，则输出 &quot;end&quot; 并结束程序；若有一个不相等，则继续重新输入。<br />\n输入格式：一行内输入两个整数，以空格隔开，分别表示题目中的a和b。<br />\n输出格式：<br />\n①若输入的数值分别与 123 和 321 相等且输入顺序正确，则输出 &quot;end&quot;。<br />\n②若输入的两个数值中有一个不相等，则输出“Error”并换行。【注：程序输出必须严格匹配题目要求，禁止出现题目要求以外的多余字符（如&quot;请输入一个整数：&quot;），否则不得分。】<br />\n输入输出示例：<img src=\"assets/images/nct/17617217924108530.png\" alt=\"\" loading=\"lazy\" />数据范围：1≤ a, b ≤ 1000，并且均无前导零</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 23,
+      "score": 10.0,
+      "answer": "",
+      "content": "已知十位同学的数学成绩，分别是90.5, 20, 60.7, 100, 80, 70.5, 15, 95.2, 10, 50。现在请你使用循环结构和分支结构编写程序，将十位同学的成绩存储在一维数组中。并分别输入两个数minS与maxS，统计并输出成绩小于等于minS的人数x，和成绩大于等于maxS的人数y。\n输入格式：一行内输入两个整数，数字之间以空格隔开，分别表示题目中的minS，maxS。\n输出格式：共输出两行。第一行表示小于等于minS的人数x。第二行表示大于等于maxS的人数y。【注：程序输出必须严格匹配题目要求，禁止出现题目要求以外的多余字符（如\"请输入一个整数：\"），否则不得分。】\n输入输出示例：![img](../assets/images/nct/17590292192990470.png)数据范围：1 ≤ minS ≤ maxS ≤ 1000",
+      "section": "C++ 编程操作题",
+      "uid": "q23",
+      "gradable": false,
+      "html": "<p>已知十位同学的数学成绩，分别是90.5, 20, 60.7, 100, 80, 70.5, 15, 95.2, 10, 50。现在请你使用循环结构和分支结构编写程序，将十位同学的成绩存储在一维数组中。并分别输入两个数minS与maxS，统计并输出成绩小于等于minS的人数x，和成绩大于等于maxS的人数y。<br />\n输入格式：一行内输入两个整数，数字之间以空格隔开，分别表示题目中的minS，maxS。<br />\n输出格式：共输出两行。第一行表示小于等于minS的人数x。第二行表示大于等于maxS的人数y。【注：程序输出必须严格匹配题目要求，禁止出现题目要求以外的多余字符（如&quot;请输入一个整数：&quot;），否则不得分。】<br />\n输入输出示例：<img src=\"assets/images/nct/17590292192990470.png\" alt=\"\" loading=\"lazy\" />数据范围：1 ≤ minS ≤ maxS ≤ 1000</p>\n",
+      "options": []
+    }
+  ],
+  "id": "nct-cpp-1-C1模拟卷2",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/nct-cpp-1-C1模拟卷2",
+  "version": "1cf85210c7be0842",
+  "warnings": [],
+  "objective_score": 70.0
+}

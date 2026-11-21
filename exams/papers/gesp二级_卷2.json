@@ -1,0 +1,631 @@
+{
+  "title": "GESP C++ 二级 模拟卷2",
+  "category": "GESP",
+  "level": "2",
+  "date": "2026-06",
+  "time_limit": 90,
+  "total_score": 100,
+  "description": "GESP C++ 二级模拟卷2（ASCII编码、流程图符号、多层分支与循环嵌套、计算机基础知识）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "D",
+      "content": "已知字符 `'A'` 的 ASCII 码为 65，则字符 `'E'` 的 ASCII 码是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "66",
+          "html": "<p>66</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "67",
+          "html": "<p>67</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "68",
+          "html": "<p>68</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "69",
+          "html": "<p>69</p>\n"
+        }
+      ],
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>已知字符 <code>'A'</code> 的 ASCII 码为 65，则字符 <code>'E'</code> 的 ASCII 码是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "D",
+      "content": "在程序流程图中，平行四边形框通常用于表示（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "程序的开始和结束",
+          "html": "<p>程序的开始和结束</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "条件判断",
+          "html": "<p>条件判断</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "数据处理",
+          "html": "<p>数据处理</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "输入输出",
+          "html": "<p>输入输出</p>\n"
+        }
+      ],
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>在程序流程图中，平行四边形框通常用于表示（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "C",
+      "content": "表达式 `5 + 3 * 4 % 5` 的值是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "2",
+          "html": "<p>2</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "5",
+          "html": "<p>5</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "7",
+          "html": "<p>7</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "8",
+          "html": "<p>8</p>\n"
+        }
+      ],
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>表达式 <code>5 + 3 * 4 % 5</code> 的值是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "D",
+      "content": "执行以下代码后，变量 `s` 的值是（ ）\n\n```cpp\nint i = 5, s = 0;\nwhile (i > 0) {\n    s += i;\n    i--;\n}\ncout << s;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "10",
+          "html": "<p>10</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "12",
+          "html": "<p>12</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "14",
+          "html": "<p>14</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "15",
+          "html": "<p>15</p>\n"
+        }
+      ],
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>执行以下代码后，变量 <code>s</code> 的值是（ ）</p>\n<pre><code class=\"language-cpp\">int i = 5, s = 0;\nwhile (i &gt; 0) {\n    s += i;\n    i--;\n}\ncout &lt;&lt; s;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "A",
+      "content": "执行以下代码后，变量 `cnt` 的值是（ ）\n\n```cpp\nint cnt = 0;\nfor (int i = 2; i <= 4; i++) {\n    for (int j = 1; j <= i; j++) {\n        cnt++;\n    }\n}\ncout << cnt;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "9",
+          "html": "<p>9</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "10",
+          "html": "<p>10</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "12",
+          "html": "<p>12</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "6",
+          "html": "<p>6</p>\n"
+        }
+      ],
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>执行以下代码后，变量 <code>cnt</code> 的值是（ ）</p>\n<pre><code class=\"language-cpp\">int cnt = 0;\nfor (int i = 2; i &lt;= 4; i++) {\n    for (int j = 1; j &lt;= i; j++) {\n        cnt++;\n    }\n}\ncout &lt;&lt; cnt;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "content": "执行以下代码后，变量 `s` 的值是（ ）\n\n```cpp\nint s = 0;\nfor (int i = 1; i <= 6; i++) {\n    if (i % 2 == 0) continue;\n    s += i;\n}\ncout << s;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "6",
+          "html": "<p>6</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "9",
+          "html": "<p>9</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "12",
+          "html": "<p>12</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "21",
+          "html": "<p>21</p>\n"
+        }
+      ],
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>执行以下代码后，变量 <code>s</code> 的值是（ ）</p>\n<pre><code class=\"language-cpp\">int s = 0;\nfor (int i = 1; i &lt;= 6; i++) {\n    if (i % 2 == 0) continue;\n    s += i;\n}\ncout &lt;&lt; s;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "C",
+      "content": "执行以下代码后，变量 `x` 的值是（ ）\n\n```cpp\nint x = 7;\nif (x > 10) {\n    x += 1;\n} else if (x > 5) {\n    x += 2;\n} else {\n    x += 3;\n}\ncout << x;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "7",
+          "html": "<p>7</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "8",
+          "html": "<p>8</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "9",
+          "html": "<p>9</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "10",
+          "html": "<p>10</p>\n"
+        }
+      ],
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>执行以下代码后，变量 <code>x</code> 的值是（ ）</p>\n<pre><code class=\"language-cpp\">int x = 7;\nif (x &gt; 10) {\n    x += 1;\n} else if (x &gt; 5) {\n    x += 2;\n} else {\n    x += 3;\n}\ncout &lt;&lt; x;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "content": "执行以下代码后，输出的结果是（ ）\n\n```cpp\nint s = 0;\nfor (int i = 1; i <= 3; i++) {\n    for (int j = 1; j <= i; j++) {\n        s += j;\n    }\n}\ncout << s;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "6",
+          "html": "<p>6</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "10",
+          "html": "<p>10</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "15",
+          "html": "<p>15</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "21",
+          "html": "<p>21</p>\n"
+        }
+      ],
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">int s = 0;\nfor (int i = 1; i &lt;= 3; i++) {\n    for (int j = 1; j &lt;= i; j++) {\n        s += j;\n    }\n}\ncout &lt;&lt; s;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "B",
+      "content": "执行以下代码后，输出的结果是（ ）\n\n```cpp\nint x = 2;\nswitch (x) {\n    case 1: cout << 'A'; break;\n    case 2: cout << 'B';\n    case 3: cout << 'C'; break;\n    default: cout << 'D';\n}\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "B",
+          "html": "<p>B</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "BC",
+          "html": "<p>BC</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "ABC",
+          "html": "<p>ABC</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "BCD",
+          "html": "<p>BCD</p>\n"
+        }
+      ],
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">int x = 2;\nswitch (x) {\n    case 1: cout &lt;&lt; 'A'; break;\n    case 2: cout &lt;&lt; 'B';\n    case 3: cout &lt;&lt; 'C'; break;\n    default: cout &lt;&lt; 'D';\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "A",
+      "content": "执行以下代码后，输出的结果是（ ）\n\n```cpp\nint s = 0;\nfor (int i = 1; i <= 10; i++) {\n    if (i % 3 == 0) break;\n    if (i % 2 == 0) continue;\n    s += i;\n}\ncout << s;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "1",
+          "html": "<p>1</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "4",
+          "html": "<p>4</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "9",
+          "html": "<p>9</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "0",
+          "html": "<p>0</p>\n"
+        }
+      ],
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">int s = 0;\nfor (int i = 1; i &lt;= 10; i++) {\n    if (i % 3 == 0) break;\n    if (i % 2 == 0) continue;\n    s += i;\n}\ncout &lt;&lt; s;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "content": "执行以下代码后，变量 `rev` 的值是（ ）\n\n```cpp\nint n = 123, rev = 0;\nwhile (n > 0) {\n    rev = rev * 10 + n % 10;\n    n /= 10;\n}\ncout << rev;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "123",
+          "html": "<p>123</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "12",
+          "html": "<p>12</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "321",
+          "html": "<p>321</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "6",
+          "html": "<p>6</p>\n"
+        }
+      ],
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>执行以下代码后，变量 <code>rev</code> 的值是（ ）</p>\n<pre><code class=\"language-cpp\">int n = 123, rev = 0;\nwhile (n &gt; 0) {\n    rev = rev * 10 + n % 10;\n    n /= 10;\n}\ncout &lt;&lt; rev;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "D",
+      "content": "执行以下代码后，变量 `c` 的值是（ ）\n\n```cpp\nint a = 1, b = 1, c;\nfor (int i = 3; i <= 6; i++) {\n    c = a + b;\n    a = b;\n    b = c;\n}\ncout << c;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "5",
+          "html": "<p>5</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "6",
+          "html": "<p>6</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "7",
+          "html": "<p>7</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "8",
+          "html": "<p>8</p>\n"
+        }
+      ],
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>执行以下代码后，变量 <code>c</code> 的值是（ ）</p>\n<pre><code class=\"language-cpp\">int a = 1, b = 1, c;\nfor (int i = 3; i &lt;= 6; i++) {\n    c = a + b;\n    a = b;\n    b = c;\n}\ncout &lt;&lt; c;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "C",
+      "content": "以下关于计算机存储的描述，正确的是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "1KB = 1000Byte",
+          "html": "<p>1KB = 1000Byte</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "1MB = 1000KB",
+          "html": "<p>1MB = 1000KB</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "1GB = 1024MB",
+          "html": "<p>1GB = 1024MB</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "1TB = 1000GB",
+          "html": "<p>1TB = 1000GB</p>\n"
+        }
+      ],
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>以下关于计算机存储的描述，正确的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "content": "在程序流程图中，菱形框通常用于表示（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "程序的开始和结束",
+          "html": "<p>程序的开始和结束</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "条件判断",
+          "html": "<p>条件判断</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "数据处理",
+          "html": "<p>数据处理</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "输入输出",
+          "html": "<p>输入输出</p>\n"
+        }
+      ],
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>在程序流程图中，菱形框通常用于表示（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "C",
+      "content": "以下代码用于判断 n 是否为回文数，横线处应填入（ ）\n\n```cpp\nint n, rev = 0, tmp;\ncin >> n;\ntmp = n;\nwhile (tmp > 0) {\n    rev = rev * 10 + tmp % 10;\n    tmp /= 10;\n}\nif (______) cout << \"Yes\";\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "rev == 0",
+          "html": "<p>rev == 0</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "n == tmp",
+          "html": "<p>n == tmp</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "rev == n",
+          "html": "<p>rev == n</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "tmp != 0",
+          "html": "<p>tmp != 0</p>\n"
+        }
+      ],
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>以下代码用于判断 n 是否为回文数，横线处应填入（ ）</p>\n<pre><code class=\"language-cpp\">int n, rev = 0, tmp;\ncin &gt;&gt; n;\ntmp = n;\nwhile (tmp &gt; 0) {\n    rev = rev * 10 + tmp % 10;\n    tmp /= 10;\n}\nif (______) cout &lt;&lt; &quot;Yes&quot;;\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "使用 `cin` 读取字符串时，如果输入包含空格，`cin` 只会读取空格之前的部分。（ ）",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>使用 <code>cin</code> 读取字符串时，如果输入包含空格，<code>cin</code> 只会读取空格之前的部分。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "`int arr[5] = {1, 2, 3};` 这行代码中，未被显式初始化的数组元素的值是随机的。（ ）",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p><code>int arr[5] = {1, 2, 3};</code> 这行代码中，未被显式初始化的数组元素的值是随机的。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在C++中，整数 `0` 表示逻辑值 `true`。（ ）",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>在C++中，整数 <code>0</code> 表示逻辑值 <code>true</code>。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "`break` 语句可以用在 `switch` 语句中。（ ）",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p><code>break</code> 语句可以用在 <code>switch</code> 语句中。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "函数调用时，实参的名称必须与形参的名称相同。（ ）",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>函数调用时，实参的名称必须与形参的名称相同。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "`for (int i = 0; i < 5; i++)` 的循环体会执行 5 次。（ ）",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p><code>for (int i = 0; i &lt; 5; i++)</code> 的循环体会执行 5 次。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "`switch` 语句中的 `default` 子句是必须的。（ ）",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p><code>switch</code> 语句中的 <code>default</code> 子句是必须的。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "字符串 `\"hello\"` 的长度是 5。（ ）",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>字符串 <code>&quot;hello&quot;</code> 的长度是 5。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "`int x = 3.14;` 执行后变量 `x` 的值为 3.14。（ ）",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p><code>int x = 3.14;</code> 执行后变量 <code>x</code> 的值为 3.14。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在C++中，数组名表示数组首元素的地址。（ ）",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>在C++中，数组名表示数组首元素的地址。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：递推数列**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n已知一个数列的前两项为 a₁ = 1，a₂ = 2。从第三项开始，每一项等于前两项之和：aₙ = aₙ₋₁ + aₙ₋₂。给定一个正整数 N，请输出该数列的第 N 项的值。\n\n**输入格式**\n一行，一个正整数 N（1 ≤ N ≤ 30）。\n\n**输出格式**\n一行，一个整数，表示数列第 N 项的值。\n\n**样例输入 #1**\n```\n5\n```\n\n**样例输出 #1**\n```\n8\n```\n\n**说明/提示**\n数列前5项：1, 2, 3, 5, 8。第5项为8。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：递推数列</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p>已知一个数列的前两项为 a₁ = 1，a₂ = 2。从第三项开始，每一项等于前两项之和：aₙ = aₙ₋₁ + aₙ₋₂。给定一个正整数 N，请输出该数列的第 N 项的值。</p>\n<p><strong>输入格式</strong><br />\n一行，一个正整数 N（1 ≤ N ≤ 30）。</p>\n<p><strong>输出格式</strong><br />\n一行，一个整数，表示数列第 N 项的值。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>8\n</code></pre>\n<p><strong>说明/提示</strong><br />\n数列前5项：1, 2, 3, 5, 8。第5项为8。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：数字三角形**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n给定一个正整数 N，输出一个 N 行的数字三角形。第 i 行输出从 1 到 i 的连续整数，数字之间用一个空格分隔。\n\n**输入格式**\n一行，一个正整数 N（1 ≤ N ≤ 20）。\n\n**输出格式**\nN 行，每行输出从 1 开始的连续整数，数字之间用一个空格分隔。\n\n**样例输入 #1**\n```\n4\n```\n\n**样例输出 #1**\n```\n1\n1 2\n1 2 3\n1 2 3 4\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：数字三角形</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p>给定一个正整数 N，输出一个 N 行的数字三角形。第 i 行输出从 1 到 i 的连续整数，数字之间用一个空格分隔。</p>\n<p><strong>输入格式</strong><br />\n一行，一个正整数 N（1 ≤ N ≤ 20）。</p>\n<p><strong>输出格式</strong><br />\nN 行，每行输出从 1 开始的连续整数，数字之间用一个空格分隔。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>1\n1 2\n1 2 3\n1 2 3 4\n</code></pre>\n"
+    }
+  ],
+  "id": "gesp二级_卷2",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/gesp二级_卷2",
+  "version": "5bf0791715ff2576",
+  "warnings": [],
+  "objective_score": 50.0
+}

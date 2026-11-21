@@ -1,0 +1,631 @@
+{
+  "title": "2025年12月 GESP C++ 6级",
+  "category": "GESP",
+  "level": "6",
+  "date": "2025-12",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年12月 GESP C++ 6级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "虚函数用于支持运行时多态",
+          "html": "<p>虚函数用于支持运行时多态</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "通过基类指针调用虚函数时，会根据对象实际类型决定调用版本",
+          "html": "<p>通过基类指针调用虚函数时，会根据对象实际类型决定调用版本</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "构造函数可以声明为虚函数以支持多态",
+          "html": "<p>构造函数可以声明为虚函数以支持多态</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "基类析构函数常声明为虚函数以避免资源泄漏",
+          "html": "<p>基类析构函数常声明为虚函数以避免资源泄漏</p>\n"
+        }
+      ],
+      "content": "在面向对象编程中，下列关于虚函数的描述中，错误的是（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>在面向对象编程中，下列关于虚函数的描述中，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "继承",
+          "html": "<p>继承</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "封装",
+          "html": "<p>封装</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "多态",
+          "html": "<p>多态</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "链接",
+          "html": "<p>链接</p>\n"
+        }
+      ],
+      "content": "执行如下代码，会输出 钢琴：叮咚叮咚 和 吉他：咚咚当当。这体现了面向对象编程的（ ）特性。\n\n```cpp\nclass Instrument {\n    public:\n    virtual void play() {\n        cout << \"乐器在演奏声音\" << endl;\n    }\n    virtual ~Instrument() {}\n};\nclass Piano : public Instrument {\n    public:\n    void play() override {\n        cout << \"钢琴：叮咚叮咚\" << endl;\n    }\n};\nclass Guitar : public Instrument {\n    public:\n    void play() override {\n        cout << \"吉他：咚咚当当\" << endl;\n    }\n};\nint main() {\n    Instrument* instruments[2];\n    instruments[0] = new Piano();\n    instruments[1] = new Guitar();\n    for (int i = 0; i < 2; ++i) {\n        instruments[i]->play();\n    }\n    for (int i = 0; i < 2; ++i) {\n        delete instruments[i];\n    }\n    return 0;\n}\n```",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>执行如下代码，会输出 钢琴：叮咚叮咚 和 吉他：咚咚当当。这体现了面向对象编程的（ ）特性。</p>\n<pre><code class=\"language-cpp\">class Instrument {\n    public:\n    virtual void play() {\n        cout &lt;&lt; &quot;乐器在演奏声音&quot; &lt;&lt; endl;\n    }\n    virtual ~Instrument() {}\n};\nclass Piano : public Instrument {\n    public:\n    void play() override {\n        cout &lt;&lt; &quot;钢琴：叮咚叮咚&quot; &lt;&lt; endl;\n    }\n};\nclass Guitar : public Instrument {\n    public:\n    void play() override {\n        cout &lt;&lt; &quot;吉他：咚咚当当&quot; &lt;&lt; endl;\n    }\n};\nint main() {\n    Instrument* instruments[2];\n    instruments[0] = new Piano();\n    instruments[1] = new Guitar();\n    for (int i = 0; i &lt; 2; ++i) {\n        instruments[i]-&gt;play();\n    }\n    for (int i = 0; i &lt; 2; ++i) {\n        delete instruments[i];\n    }\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "执行代码会输出两行，内容分别为：钢琴：叮咚叮咚 和 吉他：咚咚当当",
+          "html": "<p>执行代码会输出两行，内容分别为：钢琴：叮咚叮咚 和 吉他：咚咚当当</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "执行代码会输出两行，内容分别为：乐器在演奏声音 和 乐器在演奏声音",
+          "html": "<p>执行代码会输出两行，内容分别为：乐器在演奏声音 和 乐器在演奏声音</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "代码编译出现错误",
+          "html": "<p>代码编译出现错误</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "代码运行出现错误",
+          "html": "<p>代码运行出现错误</p>\n"
+        }
+      ],
+      "content": "关于以下代码，说法正确的是（ ）。\n\n```cpp\nclass Instrument {\n    public:\n    void play() {\n        cout << \"乐器在演奏声音\" << endl;\n    }\n    virtual ~Instrument() {}\n};\nclass Piano : public Instrument {\n    public:\n    void play() override {\n        cout << \"钢琴：叮咚叮咚\" << endl;\n    }\n};\nclass Guitar : public Instrument {\n    public:\n    void play() override {\n        cout << \"吉他：咚咚当当\" << endl;\n    }\n};\nint main() {\n    Instrument* instruments[2];\n    instruments[0] = new Piano();\n    instruments[1] = new Guitar();\n    for (int i = 0; i < 2; ++i) {\n        instruments[i]->play();\n    }\n    for (int i = 0; i < 2; ++i) {\n        delete instruments[i];\n    }\n    return 0;\n}\n```",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>关于以下代码，说法正确的是（ ）。</p>\n<pre><code class=\"language-cpp\">class Instrument {\n    public:\n    void play() {\n        cout &lt;&lt; &quot;乐器在演奏声音&quot; &lt;&lt; endl;\n    }\n    virtual ~Instrument() {}\n};\nclass Piano : public Instrument {\n    public:\n    void play() override {\n        cout &lt;&lt; &quot;钢琴：叮咚叮咚&quot; &lt;&lt; endl;\n    }\n};\nclass Guitar : public Instrument {\n    public:\n    void play() override {\n        cout &lt;&lt; &quot;吉他：咚咚当当&quot; &lt;&lt; endl;\n    }\n};\nint main() {\n    Instrument* instruments[2];\n    instruments[0] = new Piano();\n    instruments[1] = new Guitar();\n    for (int i = 0; i &lt; 2; ++i) {\n        instruments[i]-&gt;play();\n    }\n    for (int i = 0; i &lt; 2; ++i) {\n        delete instruments[i];\n    }\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$A$ $B$",
+          "html": "<p>$A$ $B$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$A$ $B$ $C$",
+          "html": "<p>$A$ $B$ $C$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$A$ $B$ $D$",
+          "html": "<p>$A$ $B$ $D$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$B$ $C$",
+          "html": "<p>$B$ $C$</p>\n"
+        }
+      ],
+      "content": "某文本编辑器把用户输入的字符依次压入栈 $S$。用户依次输入 $A$, $B$, $C$, $D$ 后，用户按了两次撤销（每次撤销，弹出栈顶一个字符）。此时栈从栈底到栈顶的内容是：（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>某文本编辑器把用户输入的字符依次压入栈 $S$。用户依次输入 $A$, $B$, $C$, $D$ 后，用户按了两次撤销（每次撤销，弹出栈顶一个字符）。此时栈从栈底到栈顶的内容是：（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(2, 5)`",
+          "html": "<p><code>(2, 5)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(2, 0)`",
+          "html": "<p><code>(2, 0)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(3, 5)`",
+          "html": "<p><code>(3, 5)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`(3, 0)`",
+          "html": "<p><code>(3, 0)</code></p>\n"
+        }
+      ],
+      "content": "假设循环队列数组长度为 $N$，其中队空判断条件为：`front == rear`，队满判断条件为：`(rear + 1) % N == front`，出队对应的操作为：`front = (front + 1) % N`，入队对应的操作为：`rear = (rear + 1) % N`。循环队列长度 $N = 6$，初始 `front = 1`, `rear = 1`，执行操作序列为：入队, 入队, 入队, 出队, 入队, 入队，则最终 `(front, rear)` 的值是（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>假设循环队列数组长度为 $N$，其中队空判断条件为：<code>front == rear</code>，队满判断条件为：<code>(rear + 1) % N == front</code>，出队对应的操作为：<code>front = (front + 1) % N</code>，入队对应的操作为：<code>rear = (rear + 1) % N</code>。循环队列长度 $N = 6$，初始 <code>front = 1</code>, <code>rear = 1</code>，执行操作序列为：入队, 入队, 入队, 出队, 入队, 入队，则最终 <code>(front, rear)</code> 的值是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "满二叉树",
+          "html": "<p>满二叉树</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "完全二叉树",
+          "html": "<p>完全二叉树</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "二叉搜索树",
+          "html": "<p>二叉搜索树</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "平衡二叉树",
+          "html": "<p>平衡二叉树</p>\n"
+        }
+      ],
+      "content": "以下函数 `check()` 用于判断一棵二叉树是否为（ ）。\n\n```cpp\nbool check(TreeNode* root) {\n    if (!root) return true;\n    queue<TreeNode*> q;\n    q.push(root);\n    bool hasNull = false;\n    while (!q.empty()) {\n        TreeNode* cur = q.front(); q.pop();\n        if (!cur) {\n            hasNull = true;\n        } else {\n            if (hasNull) return false;\n            q.push(cur->left);\n            q.push(cur->right);\n        }\n    }\n    return true;\n}\n```",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>以下函数 <code>check()</code> 用于判断一棵二叉树是否为（ ）。</p>\n<pre><code class=\"language-cpp\">bool check(TreeNode* root) {\n    if (!root) return true;\n    queue&lt;TreeNode*&gt; q;\n    q.push(root);\n    bool hasNull = false;\n    while (!q.empty()) {\n        TreeNode* cur = q.front(); q.pop();\n        if (!cur) {\n            hasNull = true;\n        } else {\n            if (hasNull) return false;\n            q.push(cur-&gt;left);\n            q.push(cur-&gt;right);\n        }\n    }\n    return true;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "前序遍历",
+          "html": "<p>前序遍历</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "中序遍历",
+          "html": "<p>中序遍历</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "后序遍历",
+          "html": "<p>后序遍历</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "层序遍历",
+          "html": "<p>层序遍历</p>\n"
+        }
+      ],
+      "content": "以下代码实现了二叉树的（ ）。\n\n```cpp\nvoid traverse(TreeNode* root) {\n    if (!root) return;\n    traverse(root->left);\n    traverse(root->right);\n    cout << root->val << \" \";\n}\n```",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>以下代码实现了二叉树的（ ）。</p>\n<pre><code class=\"language-cpp\">void traverse(TreeNode* root) {\n    if (!root) return;\n    traverse(root-&gt;left);\n    traverse(root-&gt;right);\n    cout &lt;&lt; root-&gt;val &lt;&lt; &quot; &quot;;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nnodes.push_back(Node(nodes[x].w + nodes[y].w, x, y, -1));\ninternalIdx.push_back(z);\n```",
+          "html": "<pre><code class=\"language-cpp\">nodes.push_back(Node(nodes[x].w + nodes[y].w, x, y, -1));\ninternalIdx.push_back(z);\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\nnodes.push_back(Node(nodes[x].w + nodes[y].w, x, y, -1));\nleafIdx.push_back(z);\n```",
+          "html": "<pre><code class=\"language-cpp\">nodes.push_back(Node(nodes[x].w + nodes[y].w, x, y, -1));\nleafIdx.push_back(z);\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\ninternalIdx.push_back(z);\nnodes.push_back(Node(nodes[x].w + nodes[y].w, x, y, x+y));\n```",
+          "html": "<pre><code class=\"language-cpp\">internalIdx.push_back(z);\nnodes.push_back(Node(nodes[x].w + nodes[y].w, x, y, x+y));\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nnodes.push_back(Node(nodes[x].w + nodes[y].w, x, y, x+y));\nleafIdx.push_back(z);\n```",
+          "html": "<pre><code class=\"language-cpp\">nodes.push_back(Node(nodes[x].w + nodes[y].w, x, y, x+y));\nleafIdx.push_back(z);\n</code></pre>\n"
+        }
+      ],
+      "content": "下面代码实现了哈夫曼编码，则横线处应填写的代码是（ ）。\n\n```cpp\nstruct Symbol {\n    char ch; // 字符\n    long long freq; // 频率\n    string code; // 哈夫曼编码\n};\nstruct Node {\n    long long w; // 权值\n    int l, r; // 左右孩子（节点下标），-1 表示空\n    int sym; // 叶子对应符号下标；内部节点为 -1\n    Node(long long _w=0, int _l=-1, int _r=-1, int _sym=-1)\n    : w(_w), l(_l), r(_r), sym(_sym) {}\n};\n// 从 A(leafIdx) 和 B(internalIdx) 的队首取最小的一个节点下标\nstatic int PopMinNode(const vector<Node>& nodes,\nconst vector<int>& leafIdx, int n, int& pA,\nconst vector<int>& internalIdx, int& pB) {\n    if (pA < n && (pB >= (int)internalIdx.size() ||\n    nodes[leafIdx[pA]].w <= nodes[internalIdx[pB]].w)) {\n        return leafIdx[pA++];\n    }\n    else {\n        return internalIdx[pB++];\n    }\n}\n// DFS 生成编码（左 0，右 1）\nstatic void DFSBuildCodes(int u, const vector<Node>& nodes, Symbol sym[], string& path) {\n    if (u == -1) return;\n    if (nodes[u].sym != -1) { // 叶子\n        sym[nodes[u].sym].code = path;\n        return;\n    }\n    path.push_back('0');\n    DFSBuildCodes(nodes[u].l, nodes, sym, path);\n    path.pop_back();\n    path.push_back('1');\n    DFSBuildCodes(nodes[u].r, nodes, sym, path);\n    path.pop_back();\n}\nint BuildHuffmanCodes(Symbol sym[], int n) {\n    for (int i = 0; i < n; i++) sym[i].code.clear();\n    if (n <= 0) return -1;\n    // 只有一个字符：约定编码为 \"0\"\n    if (n == 1) {\n        sym[0].code = \"0\";\n        return 0;\n    }\n    vector<Node> nodes;\n    nodes.reserve(2 * n);\n    // 1) 建立叶子节点\n    vector<int> leafIdx(n);\n    for (int i = 0; i < n; i++) {\n        leafIdx[i] = (int)nodes.size();\n        nodes.push_back(Node(sym[i].freq, -1, -1, i));\n    }\n```\n\n```cpp\n// 2) 叶子按权值排序（A 队列）\nsort(leafIdx.begin(), leafIdx.end(),\n[&](int a, int b) {\n    if (nodes[a].w != nodes[b].w) return nodes[a].w < nodes[b].w;\n    return nodes[a].sym < nodes[b].sym; // 稳定一下\n});\n// B 队列（内部节点下标队列）\nvector<int> internalIdx;\ninternalIdx.reserve(n);\nint pA = 0, pB = 0;\n// 3) 合并 n-1 次\nfor (int k = 1; k < n; k++) {\n    int x = PopMinNode(nodes, leafIdx, n, pA, internalIdx, pB);\n    int y = PopMinNode(nodes, leafIdx, n, pA, internalIdx, pB);\n    int z = (int)nodes.size();\n    ________________________ // 在此处填写代码\n}\nint root = internalIdx.back();\n// 4) DFS 生成编码\nstring path;\nDFSBuildCodes(root, nodes, sym, path);\nreturn root;\n}\n```",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下面代码实现了哈夫曼编码，则横线处应填写的代码是（ ）。</p>\n<pre><code class=\"language-cpp\">struct Symbol {\n    char ch; // 字符\n    long long freq; // 频率\n    string code; // 哈夫曼编码\n};\nstruct Node {\n    long long w; // 权值\n    int l, r; // 左右孩子（节点下标），-1 表示空\n    int sym; // 叶子对应符号下标；内部节点为 -1\n    Node(long long _w=0, int _l=-1, int _r=-1, int _sym=-1)\n    : w(_w), l(_l), r(_r), sym(_sym) {}\n};\n// 从 A(leafIdx) 和 B(internalIdx) 的队首取最小的一个节点下标\nstatic int PopMinNode(const vector&lt;Node&gt;&amp; nodes,\nconst vector&lt;int&gt;&amp; leafIdx, int n, int&amp; pA,\nconst vector&lt;int&gt;&amp; internalIdx, int&amp; pB) {\n    if (pA &lt; n &amp;&amp; (pB &gt;= (int)internalIdx.size() ||\n    nodes[leafIdx[pA]].w &lt;= nodes[internalIdx[pB]].w)) {\n        return leafIdx[pA++];\n    }\n    else {\n        return internalIdx[pB++];\n    }\n}\n// DFS 生成编码（左 0，右 1）\nstatic void DFSBuildCodes(int u, const vector&lt;Node&gt;&amp; nodes, Symbol sym[], string&amp; path) {\n    if (u == -1) return;\n    if (nodes[u].sym != -1) { // 叶子\n        sym[nodes[u].sym].code = path;\n        return;\n    }\n    path.push_back('0');\n    DFSBuildCodes(nodes[u].l, nodes, sym, path);\n    path.pop_back();\n    path.push_back('1');\n    DFSBuildCodes(nodes[u].r, nodes, sym, path);\n    path.pop_back();\n}\nint BuildHuffmanCodes(Symbol sym[], int n) {\n    for (int i = 0; i &lt; n; i++) sym[i].code.clear();\n    if (n &lt;= 0) return -1;\n    // 只有一个字符：约定编码为 &quot;0&quot;\n    if (n == 1) {\n        sym[0].code = &quot;0&quot;;\n        return 0;\n    }\n    vector&lt;Node&gt; nodes;\n    nodes.reserve(2 * n);\n    // 1) 建立叶子节点\n    vector&lt;int&gt; leafIdx(n);\n    for (int i = 0; i &lt; n; i++) {\n        leafIdx[i] = (int)nodes.size();\n        nodes.push_back(Node(sym[i].freq, -1, -1, i));\n    }\n</code></pre>\n<pre><code class=\"language-cpp\">// 2) 叶子按权值排序（A 队列）\nsort(leafIdx.begin(), leafIdx.end(),\n[&amp;](int a, int b) {\n    if (nodes[a].w != nodes[b].w) return nodes[a].w &lt; nodes[b].w;\n    return nodes[a].sym &lt; nodes[b].sym; // 稳定一下\n});\n// B 队列（内部节点下标队列）\nvector&lt;int&gt; internalIdx;\ninternalIdx.reserve(n);\nint pA = 0, pB = 0;\n// 3) 合并 n-1 次\nfor (int k = 1; k &lt; n; k++) {\n    int x = PopMinNode(nodes, leafIdx, n, pA, internalIdx, pB);\n    int y = PopMinNode(nodes, leafIdx, n, pA, internalIdx, pB);\n    int z = (int)nodes.size();\n    ________________________ // 在此处填写代码\n}\nint root = internalIdx.back();\n// 4) DFS 生成编码\nstring path;\nDFSBuildCodes(root, nodes, sym, path);\nreturn root;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "哈夫曼编码是定长编码",
+          "html": "<p>哈夫曼编码是定长编码</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "哈夫曼编码中，没有任何一个字符的编码是另一个字符编码的前缀",
+          "html": "<p>哈夫曼编码中，没有任何一个字符的编码是另一个字符编码的前缀</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "哈夫曼编码一定唯一",
+          "html": "<p>哈夫曼编码一定唯一</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "哈夫曼编码不能用于数据压缩",
+          "html": "<p>哈夫曼编码不能用于数据压缩</p>\n"
+        }
+      ],
+      "content": "以下关于哈夫曼编码的说法，正确的是（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>以下关于哈夫曼编码的说法，正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "查找",
+          "html": "<p>查找</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "插入",
+          "html": "<p>插入</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "删除",
+          "html": "<p>删除</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "遍历",
+          "html": "<p>遍历</p>\n"
+        }
+      ],
+      "content": "以下函数实现了二叉排序树（BST）的（ ）操作。\n\n```cpp\nTreeNode* op(TreeNode* root, int x) {\n    if (!root) return new TreeNode(x);\n    if (x < root->val)\n        root->left = op(root->left, x);\n    else\n        root->right = op(root->right, x);\n    return root;\n}\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>以下函数实现了二叉排序树（BST）的（ ）操作。</p>\n<pre><code class=\"language-cpp\">TreeNode* op(TreeNode* root, int x) {\n    if (!root) return new TreeNode(x);\n    if (x &lt; root-&gt;val)\n        root-&gt;left = op(root-&gt;left, x);\n    else\n        root-&gt;right = op(root-&gt;right, x);\n    return root;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`if (node->left) st.push(node->left);`",
+          "html": "<p><code>if (node-&gt;left) st.push(node-&gt;left);</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`if (node->left) st.pop(node->left);`",
+          "html": "<p><code>if (node-&gt;left) st.pop(node-&gt;left);</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`if (node->left) st.front(node->left);`",
+          "html": "<p><code>if (node-&gt;left) st.front(node-&gt;left);</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`if (node->left) st.push(node->right);`",
+          "html": "<p><code>if (node-&gt;left) st.push(node-&gt;right);</code></p>\n"
+        }
+      ],
+      "content": "下列代码实现了树的深度优先遍历，则横线处应填入（ ）。\n\n```cpp\nstruct TreeNode {\n    int val;\n    TreeNode* left;\n    TreeNode* right;\n    TreeNode(int x): val(x), left(nullptr), right(nullptr) {}\n};\nvoid dfs(TreeNode* root) {\n    if (!root) return;\n    stack<TreeNode*> st;\n    st.push(root);\n    while (!st.empty()) {\n        TreeNode* node = st.top(); st.pop();\n        cout << node->val << \" \";\n        if (node->right) st.push(node->right);\n        ________________________\n    }\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下列代码实现了树的深度优先遍历，则横线处应填入（ ）。</p>\n<pre><code class=\"language-cpp\">struct TreeNode {\n    int val;\n    TreeNode* left;\n    TreeNode* right;\n    TreeNode(int x): val(x), left(nullptr), right(nullptr) {}\n};\nvoid dfs(TreeNode* root) {\n    if (!root) return;\n    stack&lt;TreeNode*&gt; st;\n    st.push(root);\n    while (!st.empty()) {\n        TreeNode* node = st.top(); st.pop();\n        cout &lt;&lt; node-&gt;val &lt;&lt; &quot; &quot;;\n        if (node-&gt;right) st.push(node-&gt;right);\n        ________________________\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`q.push(cur);`",
+          "html": "<p><code>q.push(cur);</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`if (cur->right) q.push(cur->right);`",
+          "html": "<p><code>if (cur-&gt;right) q.push(cur-&gt;right);</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\nif (cur->left)\n    q.push(cur->left);\nif (cur->right)\n    q.push(cur->right);\n```",
+          "html": "<pre><code class=\"language-cpp\">if (cur-&gt;left)\n    q.push(cur-&gt;left);\nif (cur-&gt;right)\n    q.push(cur-&gt;right);\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nq.push(cur->left);\nq.push(cur->right);\n```",
+          "html": "<pre><code class=\"language-cpp\">q.push(cur-&gt;left);\nq.push(cur-&gt;right);\n</code></pre>\n"
+        }
+      ],
+      "content": "给定一棵普通二叉树（节点值没有大小规律），下面代码判断是否存在值为 $x$ 的结点，则横线处应填入（ ）。\n\n```cpp\nstruct TreeNode {\n    int val;\n    TreeNode* left;\n    TreeNode* right;\n    TreeNode(int x): val(x), left(nullptr), right(nullptr) {}\n};\nTreeNode* bfsFind(TreeNode* root, int x) {\n    if (!root) return nullptr;\n    queue<TreeNode*> q;\n    q.push(root);\n    while (!q.empty()) {\n        TreeNode* cur = q.front(); q.pop();\n        if (cur->val == x) return cur;\n        ________________________\n    }\n    return nullptr;\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>给定一棵普通二叉树（节点值没有大小规律），下面代码判断是否存在值为 $x$ 的结点，则横线处应填入（ ）。</p>\n<pre><code class=\"language-cpp\">struct TreeNode {\n    int val;\n    TreeNode* left;\n    TreeNode* right;\n    TreeNode(int x): val(x), left(nullptr), right(nullptr) {}\n};\nTreeNode* bfsFind(TreeNode* root, int x) {\n    if (!root) return nullptr;\n    queue&lt;TreeNode*&gt; q;\n    q.push(root);\n    while (!q.empty()) {\n        TreeNode* cur = q.front(); q.pop();\n        if (cur-&gt;val == x) return cur;\n        ________________________\n    }\n    return nullptr;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "最坏情况下，访问结点数是 $O(\\log n)$",
+          "html": "<p>最坏情况下，访问结点数是 $O(\\log n)$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "最坏情况下，访问结点数是 $O(n)$",
+          "html": "<p>最坏情况下，访问结点数是 $O(n)$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "无论如何，访问结点数都不超过树高的一半",
+          "html": "<p>无论如何，访问结点数都不超过树高的一半</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "一定比在普通二叉树中搜索快",
+          "html": "<p>一定比在普通二叉树中搜索快</p>\n"
+        }
+      ],
+      "content": "在二叉排序树（Binary Search Tree, BST）中，假设节点值互不相同。给定如下搜索函数，以下说法一定正确的是（ ）。\n\n```cpp\nbool find(Node* root, int x) {\n    while (root) {\n        if (root->val == x) return true;\n        root = (x < root->val) ? root->left : root->right;\n    }\n    return false;\n}\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>在二叉排序树（Binary Search Tree, BST）中，假设节点值互不相同。给定如下搜索函数，以下说法一定正确的是（ ）。</p>\n<pre><code class=\"language-cpp\">bool find(Node* root, int x) {\n    while (root) {\n        if (root-&gt;val == x) return true;\n        root = (x &lt; root-&gt;val) ? root-&gt;left : root-&gt;right;\n    }\n    return false;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "内层 $j$ 必须从小到大，否则会漏解",
+          "html": "<p>内层 $j$ 必须从小到大，否则会漏解</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "内层 $j$ 必须从大到小，否则同一件物品会被用多次",
+          "html": "<p>内层 $j$ 必须从大到小，否则同一件物品会被用多次</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$j$ 从大到小或从小到大都一样",
+          "html": "<p>$j$ 从大到小或从小到大都一样</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "只要 `dp` 初始为 $0$，方向无所谓",
+          "html": "<p>只要 <code>dp</code> 初始为 $0$，方向无所谓</p>\n"
+        }
+      ],
+      "content": "$0/1$ 背包（每件物品最多选一次）问题通常可用一维动态规划求解，核心代码如下。则下面说法正确的是（ ）。\n\n```cpp\nfor each item (w, v):\n    for (int j = W; j >= w; --j)\n        dp[j] = max(dp[j], dp[j-w] + v);\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>$0/1$ 背包（每件物品最多选一次）问题通常可用一维动态规划求解，核心代码如下。则下面说法正确的是（ ）。</p>\n<pre><code class=\"language-cpp\">for each item (w, v):\n    for (int j = W; j &gt;= w; --j)\n        dp[j] = max(dp[j], dp[j-w] + v);\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "动态规划方法通常能够列出递推公式。",
+          "html": "<p>动态规划方法通常能够列出递推公式。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "动态规划方法的时间复杂度通常为状态的个数。",
+          "html": "<p>动态规划方法的时间复杂度通常为状态的个数。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "动态规划方法有递推和递归两种实现形式。",
+          "html": "<p>动态规划方法有递推和递归两种实现形式。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "对很多问题，递推实现和递归实现动态规划方法的时间复杂度相当。",
+          "html": "<p>对很多问题，递推实现和递归实现动态规划方法的时间复杂度相当。</p>\n"
+        }
+      ],
+      "content": "以下关于动态规划的说法中，错误的是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>以下关于动态规划的说法中，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "以下代码中，构造函数被调用的次数是 $1$ 次。\n\n```cpp\nclass Test {\n    public:\n    Test() { cout << \"T \"; }\n};\nint main() {\n    Test a;\n    Test b = a;\n}\n```",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>以下代码中，构造函数被调用的次数是 $1$ 次。</p>\n<pre><code class=\"language-cpp\">class Test {\n    public:\n    Test() { cout &lt;&lt; &quot;T &quot;; }\n};\nint main() {\n    Test a;\n    Test b = a;\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "面向对象编程中，封装是指将数据和操作数据的方法绑定在一起，并对外隐藏实现细节。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>面向对象编程中，封装是指将数据和操作数据的方法绑定在一起，并对外隐藏实现细节。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "以下代码能够正确统计二叉树中叶⼦结点的数量。\n\n```cpp\nint countLeaf(TreeNode* root) {\n    if (!root) return 0;\n    if (!root->left && !root->right) return 1;\n    return countLeaf(root->left) + countLeaf(root->right);\n}\n```",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>以下代码能够正确统计二叉树中叶⼦结点的数量。</p>\n<pre><code class=\"language-cpp\">int countLeaf(TreeNode* root) {\n    if (!root) return 0;\n    if (!root-&gt;left &amp;&amp; !root-&gt;right) return 1;\n    return countLeaf(root-&gt;left) + countLeaf(root-&gt;right);\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "广度优先遍历二叉树可用栈来实现。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>广度优先遍历二叉树可用栈来实现。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "函数调用管理可用栈来管理。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>函数调用管理可用栈来管理。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在二叉排序树（BST）中，若某结点的左子树为空，则该结点一定是整棵树中的最小值结点。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>在二叉排序树（BST）中，若某结点的左子树为空，则该结点一定是整棵树中的最小值结点。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下面的函数能正确判断一棵树是不是二叉排序树（左边的数字要比当前数字小，右边的数字要比当前数字大）。\n\n```cpp\nbool isBST(TreeNode* root, int minVal, int maxVal) {\n    if (!root) return true;\n    if (root->val <= minVal || root->val >= maxVal)\n        return false;\n    return isBST(root->left, minVal, root->val) &&\n           isBST(root->right, root->val, maxVal);\n}\n```",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>下面的函数能正确判断一棵树是不是二叉排序树（左边的数字要比当前数字小，右边的数字要比当前数字大）。</p>\n<pre><code class=\"language-cpp\">bool isBST(TreeNode* root, int minVal, int maxVal) {\n    if (!root) return true;\n    if (root-&gt;val &lt;= minVal || root-&gt;val &gt;= maxVal)\n        return false;\n    return isBST(root-&gt;left, minVal, root-&gt;val) &amp;&amp;\n           isBST(root-&gt;right, root-&gt;val, maxVal);\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "格雷编码相邻两个编码之间必须有多位不同，以避免数据传输错误。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>格雷编码相邻两个编码之间必须有多位不同，以避免数据传输错误。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "小杨在玩一个闯关游戏，从第 $1$ 关走到第 $4$ 关。每一关的体力消耗如下（下标表示关卡编号）：`cost = [0, 3, 5, 2, 4]`，其中 `cost[i]` 表示到达第 $i$ 关需要消耗的体力，`cost[0]=0` 表示在开始状态，体力消耗为 $0$。小杨每次可以从当前关卡前进 $1$ 步或 $2$ 步。按照上述规则，从第 $1$ 关到第 $4$ 关所需消耗的最小体力为 $7$。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>小杨在玩一个闯关游戏，从第 $1$ 关走到第 $4$ 关。每一关的体力消耗如下（下标表示关卡编号）：<code>cost = [0, 3, 5, 2, 4]</code>，其中 <code>cost[i]</code> 表示到达第 $i$ 关需要消耗的体力，<code>cost[0]=0</code> 表示在开始状态，体力消耗为 $0$。小杨每次可以从当前关卡前进 $1$ 步或 $2$ 步。按照上述规则，从第 $1$ 关到第 $4$ 关所需消耗的最小体力为 $7$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "假定只有一个根节点的树的深度为 $1$，则一棵有 $n$ 个节点的完全二叉树，则树的深度为 $\\lfloor \\log_2 n \\rfloor + 1$。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>假定只有一个根节点的树的深度为 $1$，则一棵有 $n$ 个节点的完全二叉树，则树的深度为 $\\lfloor \\log_2 n \\rfloor + 1$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：路径覆盖**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n给定一棵有 $n$ 结点的有根树 $T$，结点依次以 $1,2,\\ldots,n$ 编号，根结点编号为 $1$。方便起见，编号为 $i$ 的结点称为结点 $i$。\n\n初始时 $T$ 中的结点均为白色。你需要将 $T$ 中的若干个结点染为黑色，使得所有叶子到根的路径上至少有一个黑色结点。将结点 $i$ 染为黑色需要代价 $c_i$，你需要在满足以上条件的情况下，最小化染色代价之和。\n\n叶子是指 $T$ 中没有子结点的结点。\n\n**输入格式**\n\n第一行，一个正整数 $n$，表示结点数量。\n\n第二行，$n-1$ 个正整数 $f_2,f_3,\\ldots,f_n$，其中 $f_i$ 表示结点 $i$ 的父结点的编号，保证 $f_i<i$。\n\n第三行，$n$ 个正整数 $c_1,c_2,\\ldots,c_n$，其中 $c_i$ 表示将结点 $i$ 染为黑色所需的代价。\n\n**输出格式**\n\n一行，一个整数，表示在满足所有叶子到根的路径上至少有一个黑色结点的前提下，染色代价之和的最小值。\n\n**样例输入 #1**\n```\n4\n1 2 3\n5 6 2 3\n```\n\n**样例输出 #1**\n```\n2\n```\n\n**样例输入 #2**\n```\n7\n1 1 2 2 3 3\n64 16 15 4 3 2 1\n```\n\n**样例输出 #2**\n```\n10\n```\n\n**说明/提示**\n\n对于 $40\\%$ 的测试点，保证 $2\\le n\\le 16$。\n\n对于另外 $20\\%$ 的测试点，保证 $f_i=i-1$。\n\n对于所有测试点，保证 $2\\le n\\le 10^5$，$1\\le c_i\\le 10^9$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：路径覆盖</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>给定一棵有 $n$ 结点的有根树 $T$，结点依次以 $1,2,\\ldots,n$ 编号，根结点编号为 $1$。方便起见，编号为 $i$ 的结点称为结点 $i$。</p>\n<p>初始时 $T$ 中的结点均为白色。你需要将 $T$ 中的若干个结点染为黑色，使得所有叶子到根的路径上至少有一个黑色结点。将结点 $i$ 染为黑色需要代价 $c_i$，你需要在满足以上条件的情况下，最小化染色代价之和。</p>\n<p>叶子是指 $T$ 中没有子结点的结点。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，一个正整数 $n$，表示结点数量。</p>\n<p>第二行，$n-1$ 个正整数 $f_2,f_3,\\ldots,f_n$，其中 $f_i$ 表示结点 $i$ 的父结点的编号，保证 $f_i&lt;i$。</p>\n<p>第三行，$n$ 个正整数 $c_1,c_2,\\ldots,c_n$，其中 $c_i$ 表示将结点 $i$ 染为黑色所需的代价。</p>\n<p><strong>输出格式</strong></p>\n<p>一行，一个整数，表示在满足所有叶子到根的路径上至少有一个黑色结点的前提下，染色代价之和的最小值。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4\n1 2 3\n5 6 2 3\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>2\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>7\n1 1 2 2 3 3\n64 16 15 4 3 2 1\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>10\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $40\\%$ 的测试点，保证 $2\\le n\\le 16$。</p>\n<p>对于另外 $20\\%$ 的测试点，保证 $f_i=i-1$。</p>\n<p>对于所有测试点，保证 $2\\le n\\le 10^5$，$1\\le c_i\\le 10^9$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：道具商店**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n道具商店里有 $n$ 件道具可供挑选。第 $i$ 件道具可为玩家提升 $a_i$ 点攻击力，需要 $c_i$ 枚金币才能购买，每件道具只能购买一次。现在你有 $k$ 枚金币，请问你最多可以提升多少点攻击力？\n\n**输入格式**\n\n第一行，两个正整数 $n,k$，表示道具数量以及你所拥有的金币数量。\n\n接下来 $n$ 行，每行两个正整数 $a_i,c_i$，表示道具所提升的攻击力点数，以及购买所需的金币数量。\n\n**输出格式**\n\n输出一行，一个整数，表示最多可以提升的攻击力点数。\n\n**样例输入 #1**\n```\n3 5\n99 1\n33 2\n11 3\n```\n\n**样例输出 #1**\n```\n132\n```\n\n**样例输入 #2**\n```\n4 100\n10 1\n20 11\n40 33\n100 99\n```\n\n**样例输出 #2**\n```\n110\n```\n\n**说明/提示**\n\n对于 $60\\%$ 的测试点，保证 $1\\le k\\le 500$，$1\\le c_i\\le 500$。\n\n对于所有测试点，保证 $1\\le n\\le 500$，$1\n\\le k\\le 10^9$，$1\\le a_i\\le 500$，$1\\le c_i\\le 10^9$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：道具商店</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>道具商店里有 $n$ 件道具可供挑选。第 $i$ 件道具可为玩家提升 $a_i$ 点攻击力，需要 $c_i$ 枚金币才能购买，每件道具只能购买一次。现在你有 $k$ 枚金币，请问你最多可以提升多少点攻击力？</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，两个正整数 $n,k$，表示道具数量以及你所拥有的金币数量。</p>\n<p>接下来 $n$ 行，每行两个正整数 $a_i,c_i$，表示道具所提升的攻击力点数，以及购买所需的金币数量。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，一个整数，表示最多可以提升的攻击力点数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3 5\n99 1\n33 2\n11 3\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>132\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>4 100\n10 1\n20 11\n40 33\n100 99\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>110\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $60\\%$ 的测试点，保证 $1\\le k\\le 500$，$1\\le c_i\\le 500$。</p>\n<p>对于所有测试点，保证 $1\\le n\\le 500$，$1\n\\le k\\le 10^9$，$1\\le a_i\\le 500$，$1\\le c_i\\le 10^9$。</p>\n"
+    }
+  ],
+  "id": "2025-12-gesp-6",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-12-gesp-6",
+  "version": "a8d27f03eb1c113c",
+  "warnings": [],
+  "objective_score": 50.0
+}

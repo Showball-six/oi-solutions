@@ -1,0 +1,631 @@
+{
+  "title": "2023年6月 GESP C++ 3级",
+  "category": "GESP",
+  "level": "3",
+  "date": "2023-06",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2023年6月 GESP C++ 3级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "编辑",
+          "html": "<p>编辑</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "保存",
+          "html": "<p>保存</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "调试",
+          "html": "<p>调试</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "编译",
+          "html": "<p>编译</p>\n"
+        }
+      ],
+      "content": "高级语言编写的程序需要经过以下（ ）操作，可以生成在计算机上运行的可执行代码。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>高级语言编写的程序需要经过以下（ ）操作，可以生成在计算机上运行的可执行代码。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$3.01$",
+          "html": "<p>$3.01$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$3.05$",
+          "html": "<p>$3.05$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$3.125$",
+          "html": "<p>$3.125$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3.25$",
+          "html": "<p>$3.25$</p>\n"
+        }
+      ],
+      "content": "二进制数 $11.01$ 在十进制下是（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>二进制数 $11.01$ 在十进制下是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`46`",
+          "html": "<p><code>46</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`47`",
+          "html": "<p><code>47</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`48`",
+          "html": "<p><code>48</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`49`",
+          "html": "<p><code>49</code></p>\n"
+        }
+      ],
+      "content": "已知大写字符 'A' 的 ASCII 编码的十六进制表示为 `0x41`，则字符 'F' 的 ASCII 编码的十六进制表示为（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>已知大写字符 'A' 的 ASCII 编码的十六进制表示为 <code>0x41</code>，则字符 'F' 的 ASCII 编码的十六进制表示为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`&`",
+          "html": "<p><code>&amp;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`&&`",
+          "html": "<p><code>&amp;&amp;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`*`",
+          "html": "<p><code>*</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`**`",
+          "html": "<p><code>**</code></p>\n"
+        }
+      ],
+      "content": "以下哪个不是 C++ 语言中的运算符？（ ）",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>以下哪个不是 C++ 语言中的运算符？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$7$",
+          "html": "<p>$7$</p>\n"
+        }
+      ],
+      "content": "如果字符串定义为 `char str[] = \"Hello\";`，则字符数组 `str` 的长度为（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>如果字符串定义为 <code>char str[] = &quot;Hello&quot;;</code>，则字符数组 <code>str</code> 的长度为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$24$",
+          "html": "<p>$24$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$12$",
+          "html": "<p>$12$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        }
+      ],
+      "content": "一个数组定义为 `double array[3];`，则这个数组占用内存的大小为（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>一个数组定义为 <code>double array[3];</code>，则这个数组占用内存的大小为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`int a[];`",
+          "html": "<p><code>int a[];</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`int b['3'];`",
+          "html": "<p><code>int b['3'];</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`int c[3.0];`",
+          "html": "<p><code>int c[3.0];</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`int[3] d;`",
+          "html": "<p><code>int[3] d;</code></p>\n"
+        }
+      ],
+      "content": "以下数组定义，符合 C++ 语言语法的是（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>以下数组定义，符合 C++ 语言语法的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "正整数的二进制表示中只会出现 $0$ 和 $1$ 。",
+          "html": "<p>正整数的二进制表示中只会出现 $0$ 和 $1$ 。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$10$ 不是 $2$ 的整数次幂，所以十进制数无法转换为二进制数。",
+          "html": "<p>$10$ 不是 $2$ 的整数次幂，所以十进制数无法转换为二进制数。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "从二进制转换为 $8$ 进制时，可以很方便地由低到高将每 $3$ 位二进制位转换为对应的一位 $8$ 进制位。",
+          "html": "<p>从二进制转换为 $8$ 进制时，可以很方便地由低到高将每 $3$ 位二进制位转换为对应的一位 $8$ 进制位。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "从二进制转换为 $16$ 进制时，可以很方便地由低到高将每 $4$ 位二进制位转换为对应的一位 $16$ 进制位。",
+          "html": "<p>从二进制转换为 $16$ 进制时，可以很方便地由低到高将每 $4$ 位二进制位转换为对应的一位 $16$ 进制位。</p>\n"
+        }
+      ],
+      "content": "下列关于进制的叙述，不正确的是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下列关于进制的叙述，不正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "数组必须先定义后使用。",
+          "html": "<p>数组必须先定义后使用。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "数组的所有元素在内存中是连续存放的。",
+          "html": "<p>数组的所有元素在内存中是连续存放的。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "除了字符数组，在定义数组时 `[]` 内必须有常数。",
+          "html": "<p>除了字符数组，在定义数组时 <code>[]</code> 内必须有常数。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "不能对数组赋值，但可以对数组的每个基础类型的元素赋值。",
+          "html": "<p>不能对数组赋值，但可以对数组的每个基础类型的元素赋值。</p>\n"
+        }
+      ],
+      "content": "下列关于 C++ 语言中数组的叙述，不正确的是（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>下列关于 C++ 语言中数组的叙述，不正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "左移 $3$ 位，再右移 $3$ 位。",
+          "html": "<p>左移 $3$ 位，再右移 $3$ 位。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "右移 $3$ 位，再左移 $3$ 位。",
+          "html": "<p>右移 $3$ 位，再左移 $3$ 位。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "按位或 $7$ ，再按位与 $-8$ 。",
+          "html": "<p>按位或 $7$ ，再按位与 $-8$ 。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "按位异或 $7$ ，再按位异或 $7$ 。",
+          "html": "<p>按位异或 $7$ ，再按位异或 $7$ 。</p>\n"
+        }
+      ],
+      "content": "一个 `int` 类型的值，做以下哪个操作，一定会变回原来的值？（ ）",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>一个 <code>int</code> 类型的值，做以下哪个操作，一定会变回原来的值？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`((a / b) == 1)`",
+          "html": "<p><code>((a / b) == 1)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`((a & b) == a)`",
+          "html": "<p><code>((a &amp; b) == a)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`((a ^ b) == 0)`",
+          "html": "<p><code>((a ^ b) == 0)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`((a | b) == b)`",
+          "html": "<p><code>((a | b) == b)</code></p>\n"
+        }
+      ],
+      "content": "如果 $a$ 和 $b$ 均为 `int` 类型的变量，下列表达式能正确判断“$a$ 等于 $b$”的是（ ）。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>如果 $a$ 和 $b$ 均为 <code>int</code> 类型的变量，下列表达式能正确判断“$a$ 等于 $b$”的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(a & (~3))`",
+          "html": "<p><code>(a &amp; (~3))</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`((a << 2) >> 2)`",
+          "html": "<p><code>((a &lt;&lt; 2) &gt;&gt; 2)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(a ^ 3)`",
+          "html": "<p><code>(a ^ 3)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`((a - 1) | 3) + 1`",
+          "html": "<p><code>((a - 1) | 3) + 1</code></p>\n"
+        }
+      ],
+      "content": "如果 $a$ 为 `int` 类型的变量，下列哪个表达式可以正确求出满足“小于等于 $a$ 且是 $4$ 的倍数”的整数中最大的？（ ）",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>如果 $a$ 为 <code>int</code> 类型的变量，下列哪个表达式可以正确求出满足“小于等于 $a$ 且是 $4$ 的倍数”的整数中最大的？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`a = a ^ b`",
+          "html": "<p><code>a = a ^ b</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`b = a ^ b`",
+          "html": "<p><code>b = a ^ b</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`a = a + b`",
+          "html": "<p><code>a = a + b</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`b = a + b`",
+          "html": "<p><code>b = a + b</code></p>\n"
+        }
+      ],
+      "content": "在下列代码的横线处填写（ ），可以使得输出是“24 12”。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>在下列代码的横线处填写（ ），可以使得输出是“24 12”。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`min > array[i]`",
+          "html": "<p><code>min &gt; array[i]</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`min < array[i]`",
+          "html": "<p><code>min &lt; array[i]</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`min = array[i]`",
+          "html": "<p><code>min = array[i]</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "以上均不对。",
+          "html": "<p>以上均不对。</p>\n"
+        }
+      ],
+      "content": "在下列代码的横线处填写（ ），可以使得输出是“2”。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>在下列代码的横线处填写（ ），可以使得输出是“2”。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`res = res + array[i]`",
+          "html": "<p><code>res = res + array[i]</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`res = res & array[i]`",
+          "html": "<p><code>res = res &amp; array[i]</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`res = res | array[i]`",
+          "html": "<p><code>res = res | array[i]</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`res = res ^ array[i]`",
+          "html": "<p><code>res = res ^ array[i]</code></p>\n"
+        }
+      ],
+      "content": "在下列代码的横线处填写（ ），可以使得输出不是“31”。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>在下列代码的横线处填写（ ），可以使得输出不是“31”。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "一个算法可以用不同的形式来描述，但要求描述比较规范，因此不能用自然语言描述。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>一个算法可以用不同的形式来描述，但要求描述比较规范，因此不能用自然语言描述。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "域名是由一串用点分隔的名字来标识互联网上一个计算机或计算机组的名称，CCF 编程能力等级认证官方网站的域名是 gesp.ccf.org.cn，其中顶级域名是 gesp。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>域名是由一串用点分隔的名字来标识互联网上一个计算机或计算机组的名称，CCF 编程能力等级认证官方网站的域名是 gesp.ccf.org.cn，其中顶级域名是 gesp。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "数据编码方式只有原码、反码、补码三种。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>数据编码方式只有原码、反码、补码三种。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 语言中，长度为 $n$ 的数组，合理的下标范围是从 $0$ 到 $n$，包括 $0$ 和 $n$。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，长度为 $n$ 的数组，合理的下标范围是从 $0$ 到 $n$，包括 $0$ 和 $n$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "字符常量 `'\\0'` 常用来表示字符串结束，它和字符常量 `'0'` 是不同的。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>字符常量 <code>'\\0'</code> 常用来表示字符串结束，它和字符常量 <code>'0'</code> 是不同的。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 语言中，可以使用字符（如 `'0'`）作为数组下标。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，可以使用字符（如 <code>'0'</code>）作为数组下标。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 语言中，数组被定义时，它的大小就确定了。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，数组被定义时，它的大小就确定了。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "计算机中存储的数据都是二进制形式。因此，在使用 C++ 语言编写程序时，将所有十进制数改写为相同数值的二进制数，会使得程序运行效率更高。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>计算机中存储的数据都是二进制形式。因此，在使用 C++ 语言编写程序时，将所有十进制数改写为相同数值的二进制数，会使得程序运行效率更高。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 语言中，表达式 `(0xf == 015)` 的值为 `true`。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，表达式 <code>(0xf == 015)</code> 的值为 <code>true</code>。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "如果 $a$ 为 `int` 类型的变量，且表达式 `((a | 3) == 3)` 的值为 `true`，则说明 $a$ 在从 $0$ 到 $3$ 之间（可能为 $0$、可能为 $3$）。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>如果 $a$ 为 <code>int</code> 类型的变量，且表达式 <code>((a | 3) == 3)</code> 的值为 <code>true</code>，则说明 $a$ 在从 $0$ 到 $3$ 之间（可能为 $0$、可能为 $3$）。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：春游**\n\n> 时间限制：1.0 s | 内存限制：128.0 MB\n\n**题目描述**\n\n老师带领同学们春游。已知班上有 $N$ 位同学，每位同学有从 $0$ 到 $N-1$ 的唯一编号。到了集合时间，老师确认是否所有同学都到达了集合地点，就让同学们报出自己的编号。到达的同学都会报出自己的编号，不会报出别人的编号，但有的同学很顽皮，会多次报出。你能帮老师找出有哪些同学没有到达吗 ?。\n\n**输入格式**\n\n输入包含 $2$ 行。第一行包含两个整数 $N$ 和 $M$，表示班级有 $N$ 位同学，同学们共有 $M$ 次报出编号。约定 $2 \\le N,M \\le 1000$。  \n第二行包含 $M$ 个整数，分别为 $M$ 次报出的编号。约定所有编号是小于 $N$ 的非负整数。\n\n**输出格式**\n\n输出一行。如果所有同学都到达，则输出 $N$；否则由小到大输出所有未到达的同学编号，空格分隔。\n\n**样例输入 #1**\n```\n3 3\n0 2 1\n```\n\n**样例输出 #1**\n```\n3\n```\n\n**样例输入 #2**\n```\n3 5\n0 0 0 0 0\n```\n\n**样例输出 #2**\n```\n1 2\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：春游</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：128.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>老师带领同学们春游。已知班上有 $N$ 位同学，每位同学有从 $0$ 到 $N-1$ 的唯一编号。到了集合时间，老师确认是否所有同学都到达了集合地点，就让同学们报出自己的编号。到达的同学都会报出自己的编号，不会报出别人的编号，但有的同学很顽皮，会多次报出。你能帮老师找出有哪些同学没有到达吗 ?。</p>\n<p><strong>输入格式</strong></p>\n<p>输入包含 $2$ 行。第一行包含两个整数 $N$ 和 $M$，表示班级有 $N$ 位同学，同学们共有 $M$ 次报出编号。约定 $2 \\le N,M \\le 1000$。<br />\n第二行包含 $M$ 个整数，分别为 $M$ 次报出的编号。约定所有编号是小于 $N$ 的非负整数。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行。如果所有同学都到达，则输出 $N$；否则由小到大输出所有未到达的同学编号，空格分隔。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3 3\n0 2 1\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>3\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>3 5\n0 0 0 0 0\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>1 2\n</code></pre>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：密码合规**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n网站注册需要有用户名和密码，编写程序以检查用户输入密码的有效性。合规的密码应满足以下要求 :\n\n1. 只能由 $\\texttt a \\sim \\texttt z$ 之间 $26$ 个小写字母、$\\texttt A \\sim \\texttt Z$ 之间 $26$ 个大写字母、$0 \\sim 9$ 之间 $10$ 个数字以及 `!@#$` 四个特殊字符构成。\n\n2. 密码最短长度 $:6$ 个字符，密码最大长度 $:12$ 个字符。\n\n3. 大写字母，小写字母和数字必须至少有其中两种，以及至少有四个特殊字符中的一个。\n\n**输入格式**\n\n输入一行不含空格的字符串。约定长度不超过 $100$。该字符串被英文逗号分隔为多段，作为多组被检测密码。\n\n**输出格式**\n\n输出若干行，每行输出一组合规的密码。输出顺序以输入先后为序，即先输入则先输出。\n\n**样例输入 #1**\n```\nseHJ12!@,sjdkffH$123,sdf!@&12HDHa!,123&^YUhg@!\n```\n\n**样例输出 #1**\n```\nseHJ12!@\nsjdkffH$123\n```\n\n**说明/提示**\n\n【样例 1 解释】\n\n输入被英文逗号分为了四组被检测密码：`seHJ12!@`、`sjdkffH$123`、`sdf!@&12HDHa!`、`123&^YUhg@!`。其中 `sdf!@&12HDHa!` 长度超过 12 个字符，不合规；`123&^YUhg@!` 包含四个特殊字符之外的字符不合规。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：密码合规</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>网站注册需要有用户名和密码，编写程序以检查用户输入密码的有效性。合规的密码应满足以下要求 :</p>\n<ol>\n<li>\n<p>只能由 $\\texttt a \\sim \\texttt z$ 之间 $26$ 个小写字母、$\\texttt A \\sim \\texttt Z$ 之间 $26$ 个大写字母、$0 \\sim 9$ 之间 $10$ 个数字以及 <code>!@#$</code> 四个特殊字符构成。</p>\n</li>\n<li>\n<p>密码最短长度 $:6$ 个字符，密码最大长度 $:12$ 个字符。</p>\n</li>\n<li>\n<p>大写字母，小写字母和数字必须至少有其中两种，以及至少有四个特殊字符中的一个。</p>\n</li>\n</ol>\n<p><strong>输入格式</strong></p>\n<p>输入一行不含空格的字符串。约定长度不超过 $100$。该字符串被英文逗号分隔为多段，作为多组被检测密码。</p>\n<p><strong>输出格式</strong></p>\n<p>输出若干行，每行输出一组合规的密码。输出顺序以输入先后为序，即先输入则先输出。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>seHJ12!@,sjdkffH$123,sdf!@&amp;12HDHa!,123&amp;^YUhg@!\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>seHJ12!@\nsjdkffH$123\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>【样例 1 解释】</p>\n<p>输入被英文逗号分为了四组被检测密码：<code>seHJ12!@</code>、<code>sjdkffH$123</code>、<code>sdf!@&amp;12HDHa!</code>、<code>123&amp;^YUhg@!</code>。其中 <code>sdf!@&amp;12HDHa!</code> 长度超过 12 个字符，不合规；<code>123&amp;^YUhg@!</code> 包含四个特殊字符之外的字符不合规。</p>\n"
+    }
+  ],
+  "id": "2023-06-gesp-3",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2023-06-gesp-3",
+  "version": "fcceefcf806f346b",
+  "warnings": [],
+  "objective_score": 50.0
+}

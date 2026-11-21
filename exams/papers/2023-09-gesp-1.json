@@ -1,0 +1,631 @@
+{
+  "title": "2023年9月 GESP C++ 1级",
+  "category": "GESP",
+  "level": "1",
+  "date": "2023-09",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2023年9月 GESP C++ 1级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "输出设备",
+          "html": "<p>输出设备</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "输入设备",
+          "html": "<p>输入设备</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "存储设备",
+          "html": "<p>存储设备</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "打印设备",
+          "html": "<p>打印设备</p>\n"
+        }
+      ],
+      "content": "我们通常说的“内存”属于计算机中的（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>我们通常说的“内存”属于计算机中的（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`redStar`",
+          "html": "<p><code>redStar</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`RedStar`",
+          "html": "<p><code>RedStar</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`red_star`",
+          "html": "<p><code>red_star</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`red star`",
+          "html": "<p><code>red star</code></p>\n"
+        }
+      ],
+      "content": "以下 C++ 不可以作为变量的名称的是（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>以下 C++ 不可以作为变量的名称的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        }
+      ],
+      "content": "C++ 表达式 `2 - 1 && 2 % 10` 的值是（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>C++ 表达式 <code>2 - 1 &amp;&amp; 2 % 10</code> 的值是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`3+4= 7`",
+          "html": "<p><code>3+4= 7</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`3+4=7`",
+          "html": "<p><code>3+4=7</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`a+b=7`",
+          "html": "<p><code>a+b=7</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`a+b=a+b`",
+          "html": "<p><code>a+b=a+b</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码段执行后的输出是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码段执行后的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`x > y || x > z`",
+          "html": "<p><code>x &gt; y || x &gt; z</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`x != z - y`",
+          "html": "<p><code>x != z - y</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`z > y + x`",
+          "html": "<p><code>z &gt; y + x</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`x < y || !x < z`",
+          "html": "<p><code>x &lt; y || !x &lt; z</code></p>\n"
+        }
+      ],
+      "content": "在 C++ 语言中，`int` 类型的变量 $x$ 、$y$ 、$z$ 的值分别为 $2$ 、$4$ 、$6$ ，以下表达式的值为真的是（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，<code>int</code> 类型的变量 $x$ 、$y$ 、$z$ 的值分别为 $2$ 、$4$ 、$6$ ，以下表达式的值为真的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`c += 5;`",
+          "html": "<p><code>c += 5;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`b = c % 2.5;`",
+          "html": "<p><code>b = c % 2.5;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`a = (b = 3, c = 4, b + c);`",
+          "html": "<p><code>a = (b = 3, c = 4, b + c);</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`a -= a = (b = 6) / (c = 2);`",
+          "html": "<p><code>a -= a = (b = 6) / (c = 2);</code></p>\n"
+        }
+      ],
+      "content": "对 `int` 类型的变量 $a$ 、$b$ 、$c$ ，下列语句不符合 C++ 语法是（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>对 <code>int</code> 类型的变量 $a$ 、$b$ 、$c$ ，下列语句不符合 C++ 语法是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "都是偶数",
+          "html": "<p>都是偶数</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "都是奇数",
+          "html": "<p>都是奇数</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "不都是偶数或奇数",
+          "html": "<p>不都是偶数或奇数</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "以上说法都不正确",
+          "html": "<p>以上说法都不正确</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后的输出是（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "都是偶数",
+          "html": "<p>都是偶数</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "都是奇数",
+          "html": "<p>都是奇数</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "不都是偶数或奇数",
+          "html": "<p>不都是偶数或奇数</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "以上说法都不正确",
+          "html": "<p>以上说法都不正确</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后的输出是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后的输出是（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码段执行后的输出是（ ）。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码段执行后的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$9$",
+          "html": "<p>$9$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后的输出是（ ）。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$7$",
+          "html": "<p>$7$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后的输出是（ ）。",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`int i = 1; i < n; i + 1`",
+          "html": "<p><code>int i = 1; i &lt; n; i + 1</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`int i = 1; i < n + 1; i + 1`",
+          "html": "<p><code>int i = 1; i &lt; n + 1; i + 1</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`int i = 1; i < n; i++`",
+          "html": "<p><code>int i = 1; i &lt; n; i++</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`int i = 1; i < n + 1; i++`",
+          "html": "<p><code>int i = 1; i &lt; n + 1; i++</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码用于求正整数的所有因数，即输出所有能整除一个正整数的数。如，输入 $10$ ，则输出为 $1$ 、$2$ 、$5$ 、$10$ ；输入 $12$ ，则输出为 $1$ 、$2$ 、$3$ 、$4$ 、$6$ 、$12$ ；输入 $17$ ，则输出为 $1$ 、$17$ 。在横线处应填入代码是（ ）。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码用于求正整数的所有因数，即输出所有能整除一个正整数的数。如，输入 $10$ ，则输出为 $1$ 、$2$ 、$5$ 、$10$ ；输入 $12$ ，则输出为 $1$ 、$2$ 、$3$ 、$4$ 、$6$ 、$12$ ；输入 $17$ ，则输出为 $1$ 、$17$ 。在横线处应填入代码是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`n / 10`",
+          "html": "<p><code>n / 10</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(n / 10) * (n / 10)`",
+          "html": "<p><code>(n / 10) * (n / 10)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`n % 10`",
+          "html": "<p><code>n % 10</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`(n % 10) * (n % 10)`",
+          "html": "<p><code>(n % 10) * (n % 10)</code></p>\n"
+        }
+      ],
+      "content": "在下列代码的横线处填写（ ），可以使得输出是正整数 $1234$ 各位数字的平方和。\n",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>在下列代码的横线处填写（ ），可以使得输出是正整数 $1234$ 各位数字的平方和。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$120$",
+          "html": "<p>$120$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "无法确定",
+          "html": "<p>无法确定</p>\n"
+        }
+      ],
+      "content": "执行以下 C++ 语言程序后，输出结果是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>执行以下 C++ 语言程序后，输出结果是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "早期计算机内存不够大，可以将字库固化在一个包含只读存储器的扩展卡中插入计算机主板帮助处理汉字。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>早期计算机内存不够大，可以将字库固化在一个包含只读存储器的扩展卡中插入计算机主板帮助处理汉字。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "神威·太湖之光超级计算机是中国自主研制的超级计算机，在全球超级计算机 TOP500 排行榜中多次荣膺榜首。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>神威·太湖之光超级计算机是中国自主研制的超级计算机，在全球超级计算机 TOP500 排行榜中多次荣膺榜首。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "C++ 表达式 `int(3.14)` 的值为 $3$。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>C++ 表达式 <code>int(3.14)</code> 的值为 $3$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 语句 `cout << (2, 3, \"23\")` 的输出为 2, 3, 23。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>C++ 语句 <code>cout &lt;&lt; (2, 3, &quot;23&quot;)</code> 的输出为 2, 3, 23。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "C++ 的循环语句 `for (int i = 0; i < 10; i += 2)` 表示 $i$ 从 $0$ 开始到 $10$ 结束但不包含 $10$，间隔为 $2$。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>C++ 的循环语句 <code>for (int i = 0; i &lt; 10; i += 2)</code> 表示 $i$ 从 $0$ 开始到 $10$ 结束但不包含 $10$，间隔为 $2$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 表达式 `('1' + '1')` 的值为 `'2'`。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>C++ 表达式 <code>('1' + '1')</code> 的值为 <code>'2'</code>。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 语言中，`do-while` 循环不可能导致死循环，但 `while` 有可能。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，<code>do-while</code> 循环不可能导致死循环，但 <code>while</code> 有可能。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在下面的 C++ 代码中，由于循环中的 `continue` 是无条件被执行，因此将导致死循环。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>在下面的 C++ 代码中，由于循环中的 <code>continue</code> 是无条件被执行，因此将导致死循环。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 代码中，不可以将变量命名为 `cout`，因为 `cout` 是 C++ 的关键字。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>在 C++ 代码中，不可以将变量命名为 <code>cout</code>，因为 <code>cout</code> 是 C++ 的关键字。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "C++ 是一种高级程序设计语言。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>C++ 是一种高级程序设计语言。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：买文具**\n\n> 时间限制：1.0 s | 内存限制：128.0 MB\n\n**题目描述**\n\n开学了，小明来到文具店选购文具。签字笔 $2$ 元一支，他需要 $X$ 支；记事本 $5$ 元一本，他需要 $Y$ 本；直尺 $3$ 元一把，他需要 $Z$ 把。小明手里有 $Q$ 元钱。请你通过编程帮小明算算，他手里的钱是否够买他需要的文具。\n\n**输入格式**\n\n第一行包含一个正整数，是小明购买签字笔的数量。约定 $1 \\le X \\le 10$。\n\n第二行包含一个正整数，是小明购买记事本的数量。约定 $1 \\le Y \\le 10$。\n\n第三行包含一个正整数，是小明购买直尺的数量。约定 $1 \\le Z \\le 10$。\n\n第四行包含一个正整数 $Q$，是小明手里的钱数（单位：元）。\n\n**输出格式**\n\n输出 $2$ 行。如果小明手里的钱够买他需要的文具，则第一行输出 `Yes`，第二行输出小明会剩下的钱数（单位：元）；否则，第一行输出 `No`，第二行输出小明缺少的钱数（单位：元）。\n\n**样例输入 #1**\n```\n1\n1\n1\n20\n```\n\n**样例输出 #1**\n```\nYes\n10\n```\n\n**样例输入 #2**\n```\n1\n1\n1\n5\n```\n\n**样例输出 #2**\n```\nNo\n5\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：买文具</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：128.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>开学了，小明来到文具店选购文具。签字笔 $2$ 元一支，他需要 $X$ 支；记事本 $5$ 元一本，他需要 $Y$ 本；直尺 $3$ 元一把，他需要 $Z$ 把。小明手里有 $Q$ 元钱。请你通过编程帮小明算算，他手里的钱是否够买他需要的文具。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含一个正整数，是小明购买签字笔的数量。约定 $1 \\le X \\le 10$。</p>\n<p>第二行包含一个正整数，是小明购买记事本的数量。约定 $1 \\le Y \\le 10$。</p>\n<p>第三行包含一个正整数，是小明购买直尺的数量。约定 $1 \\le Z \\le 10$。</p>\n<p>第四行包含一个正整数 $Q$，是小明手里的钱数（单位：元）。</p>\n<p><strong>输出格式</strong></p>\n<p>输出 $2$ 行。如果小明手里的钱够买他需要的文具，则第一行输出 <code>Yes</code>，第二行输出小明会剩下的钱数（单位：元）；否则，第一行输出 <code>No</code>，第二行输出小明缺少的钱数（单位：元）。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>1\n1\n1\n20\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>Yes\n10\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>1\n1\n1\n5\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>No\n5\n</code></pre>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：小明的幸运数**\n\n> 时间限制：1.0 s | 内存限制：128.0 MB\n\n**题目描述**\n\n所有个位数为 $k$ 的正整数，以及所有 $k$ 的倍数，都被小明称为“ $k$ 幸运数”。小明想知道正整数 $L$ 和 $R$ 之间（包括 $L$ 和 $R$）所有 $k$ 幸运数的和，你能帮帮他吗？\n\n**输入格式**\n\n输入 $3$ 行。第一行包含一个正整数 $k$，第二行包含一个正整数 $L$，第三行包含一个正整数 $R$。约定 $2 \\le k \\le 9$，$1 \\le L \\le R \\le 1000$。\n\n**输出格式**\n\n输出 $1$ 行，符合题意的幸运数之和。\n\n**样例输入 #1**\n```\n7\n1\n10\n```\n\n**样例输出 #1**\n```\n7\n```\n\n**样例输入 #2**\n```\n7\n10\n20\n```\n\n**样例输出 #2**\n```\n31\n```\n\n**说明/提示**\n\n**样例解释 1**\n\n$1$ 和 $10$ 之间共有 $1$ 个 $7$ 幸运数：$7$。因为 $7$ 既是 $7$ 的倍数，个位数又为 $7$。因此，结果为 $7$。\n\n**样例解释 2**\n\n$10$ 和 $20$ 之间共有 $2$ 个 $7$ 幸运数：$14$ 和 $17$。$14$ 是 $7$ 的倍数，$17$ 的个位数为 $7$。因此，结果为 $31$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：小明的幸运数</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：128.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>所有个位数为 $k$ 的正整数，以及所有 $k$ 的倍数，都被小明称为“ $k$ 幸运数”。小明想知道正整数 $L$ 和 $R$ 之间（包括 $L$ 和 $R$）所有 $k$ 幸运数的和，你能帮帮他吗？</p>\n<p><strong>输入格式</strong></p>\n<p>输入 $3$ 行。第一行包含一个正整数 $k$，第二行包含一个正整数 $L$，第三行包含一个正整数 $R$。约定 $2 \\le k \\le 9$，$1 \\le L \\le R \\le 1000$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出 $1$ 行，符合题意的幸运数之和。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>7\n1\n10\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>7\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>7\n10\n20\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>31\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p><strong>样例解释 1</strong></p>\n<p>$1$ 和 $10$ 之间共有 $1$ 个 $7$ 幸运数：$7$。因为 $7$ 既是 $7$ 的倍数，个位数又为 $7$。因此，结果为 $7$。</p>\n<p><strong>样例解释 2</strong></p>\n<p>$10$ 和 $20$ 之间共有 $2$ 个 $7$ 幸运数：$14$ 和 $17$。$14$ 是 $7$ 的倍数，$17$ 的个位数为 $7$。因此，结果为 $31$。</p>\n"
+    }
+  ],
+  "id": "2023-09-gesp-1",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2023-09-gesp-1",
+  "version": "3b5e79a56ff1bfd0",
+  "warnings": [],
+  "objective_score": 50.0
+}

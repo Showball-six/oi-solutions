@@ -1,0 +1,631 @@
+{
+  "title": "2025年6月 GESP C++ 2级",
+  "category": "GESP",
+  "level": "2",
+  "date": "2025-06",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年6月 GESP C++ 2级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "处理器",
+          "html": "<p>处理器</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "存储器",
+          "html": "<p>存储器</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "输入设备",
+          "html": "<p>输入设备</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "输出设备",
+          "html": "<p>输出设备</p>\n"
+        }
+      ],
+      "content": "2025年4月19日在北京举行了一场颇为瞩目的人形机器人半程马拉松赛。比赛期间，跑动着的机器人会利用身上安装的多个传感器所反馈的数据来调整姿态、保持平衡等，那么这类传感器类似于计算机的( )。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>2025年4月19日在北京举行了一场颇为瞩目的人形机器人半程马拉松赛。比赛期间，跑动着的机器人会利用身上安装的多个传感器所反馈的数据来调整姿态、保持平衡等，那么这类传感器类似于计算机的( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "RAM",
+          "html": "<p>RAM</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "ROM",
+          "html": "<p>ROM</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "CACHE",
+          "html": "<p>CACHE</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "EPROM",
+          "html": "<p>EPROM</p>\n"
+        }
+      ],
+      "content": "小明购置的计算机使用一年后觉得内存不够用了，想购置一个容量更大的内存条，这时他需要的内存条是（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>小明购置的计算机使用一年后觉得内存不够用了，想购置一个容量更大的内存条，这时他需要的内存条是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$3.5$",
+          "html": "<p>$3.5$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$11$",
+          "html": "<p>$11$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后的输出是（ ）。\n\n```cpp\nint a=3;\nfloat b = 3.5;\ncout << (a *= b);\n```",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出是（ ）。</p>\n<pre><code class=\"language-cpp\">int a=3;\nfloat b = 3.5;\ncout &lt;&lt; (a *= b);\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`N % 1000 / 100`",
+          "html": "<p><code>N % 1000 / 100</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`N / 1000 % 100`",
+          "html": "<p><code>N / 1000 % 100</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`N / 1000 / 100`",
+          "html": "<p><code>N / 1000 / 100</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`N % 100 / 100`",
+          "html": "<p><code>N % 100 / 100</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码用于获得正整数的第 3 位数，如 $1234$ 则输出 $2$。如果是一位数或两位数，则输出 $0$。横线处应填入的代码是( )。\n\n```cpp\nint N, remainder;\ncout << \"请输入正整数:\";\ncin >> N;\ncout << _________________;\n```",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码用于获得正整数的第 3 位数，如 $1234$ 则输出 $2$。如果是一位数或两位数，则输出 $0$。横线处应填入的代码是( )。</p>\n<pre><code class=\"language-cpp\">int N, remainder;\ncout &lt;&lt; &quot;请输入正整数:&quot;;\ncin &gt;&gt; N;\ncout &lt;&lt; _________________;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$6$ $28$",
+          "html": "<p>$6$ $28$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$6$ $6$",
+          "html": "<p>$6$ $6$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$28$ $6$",
+          "html": "<p>$28$ $6$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$28$ $28$",
+          "html": "<p>$28$ $28$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行，其输出是( )。\n\n```cpp\nint a, b = (6, 28);\nb == a;\na = b;\ncout << a << ' ' << b;\n```",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行，其输出是( )。</p>\n<pre><code class=\"language-cpp\">int a, b = (6, 28);\nb == a;\na = b;\ncout &lt;&lt; a &lt;&lt; ' ' &lt;&lt; b;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(N + 6) / 7`",
+          "html": "<p><code>(N + 6) / 7</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(N + 6) // 7`",
+          "html": "<p><code>(N + 6) // 7</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`N % 7`",
+          "html": "<p><code>N % 7</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`(N + 6) % 7`",
+          "html": "<p><code>(N + 6) % 7</code></p>\n"
+        }
+      ],
+      "content": "今天星期六，其后第 $N$ 天星期几？如果是星期一到星期六输出形如：星期 $1$ 、星期 $2$ 等，星期天则输出星期天。下面的 C++ 代码用于完成上述要求，横线处应填上的代码是( )。\n\n```cpp\nint N, remainder;\ncin >> N;\nremainder = _____________;\nif(remainder == 0)\n    printf(\"星期六后第%d天是星期天\\n\", N);\nelse\n    printf(\"星期六后第%d天是星期%d\\n\", N, remainder);\n```",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>今天星期六，其后第 $N$ 天星期几？如果是星期一到星期六输出形如：星期 $1$ 、星期 $2$ 等，星期天则输出星期天。下面的 C++ 代码用于完成上述要求，横线处应填上的代码是( )。</p>\n<pre><code class=\"language-cpp\">int N, remainder;\ncin &gt;&gt; N;\nremainder = _____________;\nif(remainder == 0)\n    printf(&quot;星期六后第%d天是星期天\\n&quot;, N);\nelse\n    printf(&quot;星期六后第%d天是星期%d\\n&quot;, N, remainder);\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$45$",
+          "html": "<p>$45$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$28$",
+          "html": "<p>$28$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        }
+      ],
+      "content": "下面的 C++ 代码执行后其输出是( )。\n\n```cpp\nint i, Sum = 0;\nfor (i = 1; i < 10; i++){\n    Sum += i;\n    if(i % 2) continue;\n    if(i % 7) break;\n}\ncout << Sum;\n```",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码执行后其输出是( )。</p>\n<pre><code class=\"language-cpp\">int i, Sum = 0;\nfor (i = 1; i &lt; 10; i++){\n    Sum += i;\n    if(i % 2) continue;\n    if(i % 7) break;\n}\ncout &lt;&lt; Sum;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$110$",
+          "html": "<p>$110$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$22$",
+          "html": "<p>$22$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$12$",
+          "html": "<p>$12$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后其输出是( )。\n\n```cpp\nint i, j;\nfor(i = 1; i < 12; i++)\n    for(j = 1; j < i; j++)\n        if(i * j % 2 == 1)\n            break;\ncout << i * j;\n```",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后其输出是( )。</p>\n<pre><code class=\"language-cpp\">int i, j;\nfor(i = 1; i &lt; 12; i++)\n    for(j = 1; j &lt; i; j++)\n        if(i * j % 2 == 1)\n            break;\ncout &lt;&lt; i * j;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$101$",
+          "html": "<p>$101$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$100$",
+          "html": "<p>$100$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$99$",
+          "html": "<p>$99$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$98$",
+          "html": "<p>$98$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后输出是( )。\n\n```cpp\nint i, cnt = 0;\nfor(i = -99; i < 100; i += 2)\n    cnt = 1 + cnt;\ncout << cnt;\n```",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后输出是( )。</p>\n<pre><code class=\"language-cpp\">int i, cnt = 0;\nfor(i = -99; i &lt; 100; i += 2)\n    cnt = 1 + cnt;\ncout &lt;&lt; cnt;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`A#A#`",
+          "html": "<p><code>A#A#</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`A#0#A#0`",
+          "html": "<p><code>A#0#A#0</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`A#A#1`",
+          "html": "<p><code>A#A#1</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`A#0#A#0#1`",
+          "html": "<p><code>A#0#A#0#1</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后输出是（ ）。\n\n```cpp\nint i;\nfor(i = 1; i < 10; i++){\n    if(i % 3 != 0){\n        printf(\"A#\");\n        continue;\n    }\n    else\n        break;\n    printf(\"0#\");\n}\nif(i == 10) cout << \"1\";\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后输出是（ ）。</p>\n<pre><code class=\"language-cpp\">int i;\nfor(i = 1; i &lt; 10; i++){\n    if(i % 3 != 0){\n        printf(&quot;A#&quot;);\n        continue;\n    }\n    else\n        break;\n    printf(&quot;0#&quot;);\n}\nif(i == 10) cout &lt;&lt; &quot;1&quot;;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`0#0-1#0-2#0-2#1-END`",
+          "html": "<p><code>0#0-1#0-2#0-2#1-END</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`0#0-1#0-1#1-2#0-2#1-2#2-3#0-3#1-3#2-END`",
+          "html": "<p><code>0#0-1#0-1#1-2#0-2#1-2#2-3#0-3#1-3#2-END</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`0#0-1#0-1#1-2#0-2#1-2#2-END`",
+          "html": "<p><code>0#0-1#0-1#1-2#0-2#1-2#2-END</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`1#0-2#0-2#1-END`",
+          "html": "<p><code>1#0-2#0-2#1-END</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后的输出是（ ）。\n\n```cpp\nint i,j;\nfor(i = 0; i < 3; i++)\n    for(j = 0; j < i; j++)\n        printf(\"%d#%d-\", i, j);\nprintf(\"END\");\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出是（ ）。</p>\n<pre><code class=\"language-cpp\">int i,j;\nfor(i = 0; i &lt; 3; i++)\n    for(j = 0; j &lt; i; j++)\n        printf(&quot;%d#%d-&quot;, i, j);\nprintf(&quot;END&quot;);\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(i % 3 != 0) && (i % 5 == 2)`",
+          "html": "<p><code>(i % 3 != 0) &amp;&amp; (i % 5 == 2)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(i % 3) && (i % 5 == 2)`",
+          "html": "<p><code>(i % 3) &amp;&amp; (i % 5 == 2)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(i % 3) && !(i % 5 != 2)`",
+          "html": "<p><code>(i % 3) &amp;&amp; !(i % 5 != 2)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`!(i % 3) && (i % 5 == 2)`",
+          "html": "<p><code>!(i % 3) &amp;&amp; (i % 5 == 2)</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后，将输出不能被 $3$ 整除且除以 $5$ 余数为 $2$ 的数。下列选项不能实现的是（ ）。\n\n```cpp\nint i,j;\nfor(i = 0; i < 100; i++)\n    if(______________________)\n        cout << i << endl;\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后，将输出不能被 $3$ 整除且除以 $5$ 余数为 $2$ 的数。下列选项不能实现的是（ ）。</p>\n<pre><code class=\"language-cpp\">int i,j;\nfor(i = 0; i &lt; 100; i++)\n    if(______________________)\n        cout &lt;&lt; i &lt;&lt; endl;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nN > 1\nN = N / 10\n```",
+          "html": "<pre><code class=\"language-cpp\">N &gt; 1\nN = N / 10\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\nN > 1\nN /= 10\n```",
+          "html": "<pre><code class=\"language-cpp\">N &gt; 1\nN /= 10\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\nN == 0\nN /= 10\n```",
+          "html": "<pre><code class=\"language-cpp\">N == 0\nN /= 10\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nN > 0\nN /= 10\n```",
+          "html": "<pre><code class=\"language-cpp\">N &gt; 0\nN /= 10\n</code></pre>\n"
+        }
+      ],
+      "content": "下面 C++ 代码用于判断一个大于 $0$ 的正整数是几位数，横线处应填入代码先后是（ ）。\n\n```cpp\nint N, cnt;\ncout << \"请输入大于0的正整数：\";\ncin >> N;\ncnt = 0;\nwhile (_________){\n    cnt += 1;\n    ______________;\n}\ncout << cnt;\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码用于判断一个大于 $0$ 的正整数是几位数，横线处应填入代码先后是（ ）。</p>\n<pre><code class=\"language-cpp\">int N, cnt;\ncout &lt;&lt; &quot;请输入大于0的正整数：&quot;;\ncin &gt;&gt; N;\ncnt = 0;\nwhile (_________){\n    cnt += 1;\n    ______________;\n}\ncout &lt;&lt; cnt;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "如果 `Flag` 在循环中不被改为 `false`，则说明该数是自守数",
+          "html": "<p>如果 <code>Flag</code> 在循环中不被改为 <code>false</code>，则说明该数是自守数</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "代码 `if (N1 % 10 != M1 % 10)` 用于判断其个位数是否相等，如果不等，则表明不是自守数",
+          "html": "<p>代码 <code>if (N1 % 10 != M1 % 10)</code> 用于判断其个位数是否相等，如果不等，则表明不是自守数</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "代码 `N1 = N1 / 10, M1 = M1 / 10` 将个位数去掉",
+          "html": "<p>代码 <code>N1 = N1 / 10, M1 = M1 / 10</code> 将个位数去掉</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "将 `N1 > 0` 改为 `N > 0` 效果相同",
+          "html": "<p>将 <code>N1 &gt; 0</code> 改为 <code>N &gt; 0</code> 效果相同</p>\n"
+        }
+      ],
+      "content": "判断一个数是否为自守数。自守数的定义是如果一个数的平方其尾数与该数相同，则为自守数，如 $25$ 的平方是 $625$，其尾数是 $25$，所以 $25$ 是自守数。相关说法错误的是（ ）。\n\n```cpp\nint N, N1, M1;\ncout << \"输入一个正整数：\";\ncin >> N;\nN1 = N, M1 = N * N;\nbool Flag = true;\nwhile (N1 > 0){\n    if (N1 % 10 != M1 % 10){\n        Flag = false;\n        break;\n    }\n    else{\n        N1 = N1 / 10, M1 = M1 / 10;\n    }\n}\nif (Flag == true)\n    printf(\"%d的平方是%d,是自守数\", N, N * N);\nelse\n    printf(\"%d的平方是%d,不是自守数\", N, N * N);\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>判断一个数是否为自守数。自守数的定义是如果一个数的平方其尾数与该数相同，则为自守数，如 $25$ 的平方是 $625$，其尾数是 $25$，所以 $25$ 是自守数。相关说法错误的是（ ）。</p>\n<pre><code class=\"language-cpp\">int N, N1, M1;\ncout &lt;&lt; &quot;输入一个正整数：&quot;;\ncin &gt;&gt; N;\nN1 = N, M1 = N * N;\nbool Flag = true;\nwhile (N1 &gt; 0){\n    if (N1 % 10 != M1 % 10){\n        Flag = false;\n        break;\n    }\n    else{\n        N1 = N1 / 10, M1 = M1 / 10;\n    }\n}\nif (Flag == true)\n    printf(&quot;%d的平方是%d,是自守数&quot;, N, N * N);\nelse\n    printf(&quot;%d的平方是%d,不是自守数&quot;, N, N * N);\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "代码 `now_number = 0` 移动到 L1 和 L2 标记的两行代码之间，效果维持不变",
+          "html": "<p>代码 <code>now_number = 0</code> 移动到 L1 和 L2 标记的两行代码之间，效果维持不变</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "代码 `now_number += 1` 修改为 `now_number = 1 + now_number` 效果维持不变",
+          "html": "<p>代码 <code>now_number += 1</code> 修改为 <code>now_number = 1 + now_number</code> 效果维持不变</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "将代码 `now_number == 10` 调整为 `now_number > 9` 效果维持不变",
+          "html": "<p>将代码 <code>now_number == 10</code> 调整为 <code>now_number &gt; 9</code> 效果维持不变</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "将最后一行的 `cout << endl` 修改为 `cout << \"\\n\"` ，效果维持不变",
+          "html": "<p>将最后一行的 <code>cout &lt;&lt; endl</code> 修改为 <code>cout &lt;&lt; &quot;\\n&quot;</code> ，效果维持不变</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码实现输出如下图形，相关说法错误的是（ ）。\n\n```cpp\n请输入层数: 10\n0\n12\n345\n6789\n01234\n567890\n1234567\n89012345\n678901234\n5678901234\nint line_number, now_number;\nint i,row;\ncout << \"请输入行数: \";\ncin >> line_number;\nnow_number = 0;\nfor (row = 1; row < line_number + 1; row++){ // L1\n    for (i = 0; i < row; i++){ // L2\n        cout << now_number;\n        now_number += 1;\n        if (now_number == 10) now_number = 0; // L3\n    }\n    cout << endl;\n}\n```",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码实现输出如下图形，相关说法错误的是（ ）。</p>\n<pre><code class=\"language-cpp\">请输入层数: 10\n0\n12\n345\n6789\n01234\n567890\n1234567\n89012345\n678901234\n5678901234\nint line_number, now_number;\nint i,row;\ncout &lt;&lt; &quot;请输入行数: &quot;;\ncin &gt;&gt; line_number;\nnow_number = 0;\nfor (row = 1; row &lt; line_number + 1; row++){ // L1\n    for (i = 0; i &lt; row; i++){ // L2\n        cout &lt;&lt; now_number;\n        now_number += 1;\n        if (now_number == 10) now_number = 0; // L3\n    }\n    cout &lt;&lt; endl;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "人们现在参加很多闭卷考试时通常都不允许带智能手机、平板电脑等，此外很多种智能手表同样因为具有嵌入操作系统及通信等功能，所以也不允许随身携带。（ ）",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>人们现在参加很多闭卷考试时通常都不允许带智能手机、平板电脑等，此外很多种智能手表同样因为具有嵌入操作系统及通信等功能，所以也不允许随身携带。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 代码中，假设 $N$ 为正整数，则 `N / 10` 舍弃个位数。如果 $N$ 小于 $10$，则其值为 $0$，大于 $10$ 则是舍弃个位数的数。( )",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>在 C++ 代码中，假设 $N$ 为正整数，则 <code>N / 10</code> 舍弃个位数。如果 $N$ 小于 $10$，则其值为 $0$，大于 $10$ 则是舍弃个位数的数。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下列 C++ 代码执行后，其输出为 10 20，即 `a == b` 和 `b == a` 对 $a$ 和 $b$ 的值没有任何影响。( )\n\n```cpp\nint a = 10, b = 20;\na == b;\nb == a;\ncout << (a, b);\n```",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>下列 C++ 代码执行后，其输出为 10 20，即 <code>a == b</code> 和 <code>b == a</code> 对 $a$ 和 $b$ 的值没有任何影响。( )</p>\n<pre><code class=\"language-cpp\">int a = 10, b = 20;\na == b;\nb == a;\ncout &lt;&lt; (a, b);\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "$a$ 和 $b$ 分别是 C++ 的整型变量，如果表达式 `max(a, b) == min(a, b)` 的值为真，则说明 $a$ 和 $b$ 相等。\n（ ）",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>$a$ 和 $b$ 分别是 C++ 的整型变量，如果表达式 <code>max(a, b) == min(a, b)</code> 的值为真，则说明 $a$ 和 $b$ 相等。<br />\n（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下面 C++ 代码编译时将报错，因为字符变量 $a$ 被赋值了浮点值。 ( )\n\n```cpp\nchar a = '1';\na = 45.6;\ncout << a;\n```",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码编译时将报错，因为字符变量 $a$ 被赋值了浮点值。 ( )</p>\n<pre><code class=\"language-cpp\">char a = '1';\na = 45.6;\ncout &lt;&lt; a;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "下面 C++ 代码执行时如输入 $59.99$ ，将输出及格两个汉字。（ ）\n\n```cpp\nint score;\ncout << \"请输入学生成绩: \";\ncin >> score;\nif (score < 60)\n    cout << \"不及格\";\nelse\n    cout << \"及格\";\n```",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行时如输入 $59.99$ ，将输出及格两个汉字。（ ）</p>\n<pre><code class=\"language-cpp\">int score;\ncout &lt;&lt; &quot;请输入学生成绩: &quot;;\ncin &gt;&gt; score;\nif (score &lt; 60)\n    cout &lt;&lt; &quot;不及格&quot;;\nelse\n    cout &lt;&lt; &quot;及格&quot;;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在下面的 C++ 代码中，因为 `continue` 将被执行，因此不会有输出。（ ）\n\n```cpp\nint i;\nfor (i = 1; i < 10; i++)\n    if (i % 2 == 0)\n        continue;\nif (i == 10)\n    cout << \"END\";\n```",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>在下面的 C++ 代码中，因为 <code>continue</code> 将被执行，因此不会有输出。（ ）</p>\n<pre><code class=\"language-cpp\">int i;\nfor (i = 1; i &lt; 10; i++)\n    if (i % 2 == 0)\n        continue;\nif (i == 10)\n    cout &lt;&lt; &quot;END&quot;;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "下面的 C++ 代码执行后将输出 $15$。（ ）\n\n```cpp\nint Sum = 0;\nfor (int i = 0; i < 5; i++)\n    Sum += i;\ncout << Sum;\n```",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码执行后将输出 $15$。（ ）</p>\n<pre><code class=\"language-cpp\">int Sum = 0;\nfor (int i = 0; i &lt; 5; i++)\n    Sum += i;\ncout &lt;&lt; Sum;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "将下面 C++ 代码中的 `(int i = 5; i > 1; i--)` 调整为 `(int i = 1; i < 5; i++)` 输出结果相同，因为 $5$ 到 $1$ 与 $1$ 到 $5$ 的求和相同。（ ）\n\n```cpp\nint tnt;\ntnt = 0;\nfor (int i = 5; i > 1; i--)\n    tnt += i;\ncout << tnt;\ncout << endl;\n```",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>将下面 C++ 代码中的 <code>(int i = 5; i &gt; 1; i--)</code> 调整为 <code>(int i = 1; i &lt; 5; i++)</code> 输出结果相同，因为 $5$ 到 $1$ 与 $1$ 到 $5$ 的求和相同。（ ）</p>\n<pre><code class=\"language-cpp\">int tnt;\ntnt = 0;\nfor (int i = 5; i &gt; 1; i--)\n    tnt += i;\ncout &lt;&lt; tnt;\ncout &lt;&lt; endl;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "为实现如下效果，即 $N$ 行 $N$ 列字符。当输入是奇数时，中间列为 `*`，其他是 `-`；当输入是偶数时，则中间两列是 `*`，其他是 `-`。字符阵列后的代码能实现其效果。（ ）\n\n```cpp\n/*\n5\n--*--\n--*--\n--*--\n--*--\n--*--\n*/\nint N;\ncin >> N;\nint i,j;\nfor (i = 0; i < N; i++){\n    for (j = 0; j < N; j++)\n        if ((j == N / 2) || (j == (N-1) / 2))\n            cout << \"*\";\n        else\n            cout << \"-\";\n    cout << endl;\n}\n```",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>为实现如下效果，即 $N$ 行 $N$ 列字符。当输入是奇数时，中间列为 <code>*</code>，其他是 <code>-</code>；当输入是偶数时，则中间两列是 <code>*</code>，其他是 <code>-</code>。字符阵列后的代码能实现其效果。（ ）</p>\n<pre><code class=\"language-cpp\">/*\n5\n--*--\n--*--\n--*--\n--*--\n--*--\n*/\nint N;\ncin &gt;&gt; N;\nint i,j;\nfor (i = 0; i &lt; N; i++){\n    for (j = 0; j &lt; N; j++)\n        if ((j == N / 2) || (j == (N-1) / 2))\n            cout &lt;&lt; &quot;*&quot;;\n        else\n            cout &lt;&lt; &quot;-&quot;;\n    cout &lt;&lt; endl;\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：数三角形**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n直角三角形有两条直角边与一条斜边，设两条直角边的长度分别为 $a, b$，则直角三角形的面积为 $\\frac{ab}{2}$。\n\n请你计算当直角边长 $a, b$ 均取不超过 $n$ 的正整数时，有多少个不同的面积为整数的直角三角形。直角边长分别为 $a, b$ 和 $a', b'$ 的两个直角三角形相同，当且仅当 $a = a'$, $b = b'$ 或者 $a = b'$, $b = a'$。\n\n**输入格式**\n\n一行，一个整数 $n$，表示直角边长的最大值。\n\n\n**输出格式**\n\n输出一行，一个整数，表示不同的直角三角形数量。\n\n**样例输入 #1**\n```\n3\n```\n\n**样例输出 #1**\n```\n3\n```\n\n**样例输入 #2**\n```\n5\n```\n\n**样例输出 #2**\n```\n9\n```\n\n**说明/提示**\n\n对于所有测试点，保证 $1 \\leq n \\leq 1000$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：数三角形</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>直角三角形有两条直角边与一条斜边，设两条直角边的长度分别为 $a, b$，则直角三角形的面积为 $\\frac{ab}{2}$。</p>\n<p>请你计算当直角边长 $a, b$ 均取不超过 $n$ 的正整数时，有多少个不同的面积为整数的直角三角形。直角边长分别为 $a, b$ 和 $a&#x27;, b&#x27;$ 的两个直角三角形相同，当且仅当 $a = a&#x27;$, $b = b&#x27;$ 或者 $a = b&#x27;$, $b = a&#x27;$。</p>\n<p><strong>输入格式</strong></p>\n<p>一行，一个整数 $n$，表示直角边长的最大值。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，一个整数，表示不同的直角三角形数量。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>3\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>5\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>9\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于所有测试点，保证 $1 \\leq n \\leq 1000$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：幂和数**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n对于正整数 $n$，如果 $n$ 可以表为两个 $2$ 的次幂之和，即 $n = 2^x + 2^y$（$x, y$ 均为非负整数），那么称 $n$ 为幂和数。\n\n给定正整数 $l, r$，请你求出满足 $l \\leq n \\leq r$ 的整数 $n$ 中有多少个幂和数。\n\n**输入格式**\n\n一行，两个正整数 $l, r$，含义如上。\n\n**输出格式**\n\n输出一行，一个整数，表示 $l, r$ 之间幂和数的数量。\n\n**样例输入 #1**\n```\n2 8\n```\n\n**样例输出 #1**\n```\n6\n```\n\n**样例输入 #2**\n```\n10 100\n```\n\n**样例输出 #2**\n```\n20\n```\n\n**说明/提示**\n\n对于所有测试点，保证 $1 \\leq l \\leq r \\leq 10^4$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：幂和数</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>对于正整数 $n$，如果 $n$ 可以表为两个 $2$ 的次幂之和，即 $n = 2^x + 2^y$（$x, y$ 均为非负整数），那么称 $n$ 为幂和数。</p>\n<p>给定正整数 $l, r$，请你求出满足 $l \\leq n \\leq r$ 的整数 $n$ 中有多少个幂和数。</p>\n<p><strong>输入格式</strong></p>\n<p>一行，两个正整数 $l, r$，含义如上。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，一个整数，表示 $l, r$ 之间幂和数的数量。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>2 8\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>6\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>10 100\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>20\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于所有测试点，保证 $1 \\leq l \\leq r \\leq 10^4$。</p>\n"
+    }
+  ],
+  "id": "2025-06-gesp-2",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-06-gesp-2",
+  "version": "eed2457323023c9c",
+  "warnings": [],
+  "objective_score": 50.0
+}

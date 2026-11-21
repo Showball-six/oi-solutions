@@ -1,0 +1,817 @@
+{
+  "title": "智能创意主题赛模拟卷（二）- 1-3年级组",
+  "category": "其他赛事",
+  "level": "青少年素养大赛-智能创意主题",
+  "date": "2026-04",
+  "time_limit": 30,
+  "total_score": 100,
+  "description": "侧重AI的工作原理(IPO)、隐私红线、社会影响及具像化认知。",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 4.0,
+      "answer": "B",
+      "content": "人工智能（AI）程序最喜欢吃的“食物”是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "汉堡包",
+          "html": "<p>汉堡包</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "海量的数据",
+          "html": "<p>海量的数据</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "新鲜的空气",
+          "html": "<p>新鲜的空气</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "五彩的画笔",
+          "html": "<p>五彩的画笔</p>\n"
+        }
+      ],
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>人工智能（AI）程序最喜欢吃的“食物”是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 4.0,
+      "answer": "A",
+      "content": "AI 识别一张图片的过程通常是：①摄像头拍摄（输入）②电脑分析（处理）③告诉你是猫（输出）。这三个步骤的顺序是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "①②③",
+          "html": "<p>①②③</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "③②①",
+          "html": "<p>③②①</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "②①③",
+          "html": "<p>②①③</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "①③②",
+          "html": "<p>①③②</p>\n"
+        }
+      ],
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>AI 识别一张图片的过程通常是：①摄像头拍摄（输入）②电脑分析（处理）③告诉你是猫（输出）。这三个步骤的顺序是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 4.0,
+      "answer": "C",
+      "content": "在自动驾驶汽车中，车顶上的雷达和摄像头相当于汽车的（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "嘴巴",
+          "html": "<p>嘴巴</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "肚子",
+          "html": "<p>肚子</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "眼睛（感知器官）",
+          "html": "<p>眼睛（感知器官）</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "脚",
+          "html": "<p>脚</p>\n"
+        }
+      ],
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>在自动驾驶汽车中，车顶上的雷达和摄像头相当于汽车的（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 4.0,
+      "answer": "D",
+      "content": "关于AI工具，下列做法不正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "利用AI生成精美的PPT背景图",
+          "html": "<p>利用AI生成精美的PPT背景图</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "请AI帮我列出周末旅行的计划",
+          "html": "<p>请AI帮我列出周末旅行的计划</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "和AI交流时使用文明语言",
+          "html": "<p>和AI交流时使用文明语言</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "把同学的个人秘密告诉大模型AI",
+          "html": "<p>把同学的个人秘密告诉大模型AI</p>\n"
+        }
+      ],
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>关于AI工具，下列做法不正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 4.0,
+      "answer": "A",
+      "content": "“扫码支付”时，机器能认出我们的二维码，这体现了AI的（ ）能力。",
+      "options": [
+        {
+          "key": "A",
+          "text": "识别",
+          "html": "<p>识别</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "奔跑",
+          "html": "<p>奔跑</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "煮饭",
+          "html": "<p>煮饭</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "感冒",
+          "html": "<p>感冒</p>\n"
+        }
+      ],
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>“扫码支付”时，机器能认出我们的二维码，这体现了AI的（ ）能力。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 4.0,
+      "answer": "C",
+      "content": "当我们感觉不舒服时，AI医生辅助诊断能提高效率，但最终的决定权应在（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "机器",
+          "html": "<p>机器</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "电脑屏幕",
+          "html": "<p>电脑屏幕</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "真实的医生",
+          "html": "<p>真实的医生</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "手机电池",
+          "html": "<p>手机电池</p>\n"
+        }
+      ],
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>当我们感觉不舒服时，AI医生辅助诊断能提高效率，但最终的决定权应在（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 4.0,
+      "answer": "B",
+      "content": "如果AI生成了一张非常真实的照片，说“外星人占领了地球”，我们应该（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "立刻吓哭",
+          "html": "<p>立刻吓哭</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "怀疑其真实性，向大人确认",
+          "html": "<p>怀疑其真实性，向大人确认</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "转发到所有群里",
+          "html": "<p>转发到所有群里</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "立刻搬家",
+          "html": "<p>立刻搬家</p>\n"
+        }
+      ],
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>如果AI生成了一张非常真实的照片，说“外星人占领了地球”，我们应该（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 4.0,
+      "answer": "D",
+      "content": "下列哪种行为体现了“科技应服务于人类”？（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "开发会偷人钱财的机器人",
+          "html": "<p>开发会偷人钱财的机器人</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "制作专门骂人的软件",
+          "html": "<p>制作专门骂人的软件</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "让AI替学生完成所有的期末闭卷考",
+          "html": "<p>让AI替学生完成所有的期末闭卷考</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "研发能帮残疾人走路的智能假肢",
+          "html": "<p>研发能帮残疾人走路的智能假肢</p>\n"
+        }
+      ],
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下列哪种行为体现了“科技应服务于人类”？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 4.0,
+      "answer": "A",
+      "content": "为什么AI现在越来越“聪明”？（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "因为它学习了非常多的人类知识数据",
+          "html": "<p>因为它学习了非常多的人类知识数据</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "因为它长出了真实的脑袋",
+          "html": "<p>因为它长出了真实的脑袋</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "因为它每天吃很多汉堡",
+          "html": "<p>因为它每天吃很多汉堡</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "因为它拥有魔法",
+          "html": "<p>因为它拥有魔法</p>\n"
+        }
+      ],
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>为什么AI现在越来越“聪明”？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 4.0,
+      "answer": "C",
+      "content": "在智慧教室里，空调能根据学生人数自动调节温度，这属于AI的（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "输入过程",
+          "html": "<p>输入过程</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "输出过程",
+          "html": "<p>输出过程</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "智能调节（处理与执行）",
+          "html": "<p>智能调节（处理与执行）</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "关机过程",
+          "html": "<p>关机过程</p>\n"
+        }
+      ],
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>在智慧教室里，空调能根据学生人数自动调节温度，这属于AI的（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 4.0,
+      "answer": "B",
+      "content": "我们使用语音输入法写作文，这时“输入”的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "图片",
+          "html": "<p>图片</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "声音",
+          "html": "<p>声音</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "气味",
+          "html": "<p>气味</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "温度",
+          "html": "<p>温度</p>\n"
+        }
+      ],
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>我们使用语音输入法写作文，这时“输入”的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 4.0,
+      "answer": "D",
+      "content": "为了让AI写出一首好诗，我们的要求（提示词）应该（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "越短越好",
+          "html": "<p>越短越好</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "随便乱写",
+          "html": "<p>随便乱写</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "不给它看例子",
+          "html": "<p>不给它看例子</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "清晰、准确且有描述性",
+          "html": "<p>清晰、准确且有描述性</p>\n"
+        }
+      ],
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>为了让AI写出一首好诗，我们的要求（提示词）应该（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 4.0,
+      "answer": "A",
+      "content": "下列哪种行为是保护隐私的好习惯？（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "不在不安全的网站上传照片",
+          "html": "<p>不在不安全的网站上传照片</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "把全家人的照片发给陌生网友",
+          "html": "<p>把全家人的照片发给陌生网友</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "用自己的真实姓名作为密码",
+          "html": "<p>用自己的真实姓名作为密码</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "随便扫描路边不知名的二维码",
+          "html": "<p>随便扫描路边不知名的二维码</p>\n"
+        }
+      ],
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>下列哪种行为是保护隐私的好习惯？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 4.0,
+      "answer": "C",
+      "content": "“具像化认知”人工智能，你可以把它看作是一个（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "有生命的小怪兽",
+          "html": "<p>有生命的小怪兽</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "永远不会错的上帝",
+          "html": "<p>永远不会错的上帝</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "能帮我们处理信息的“聪明助手”",
+          "html": "<p>能帮我们处理信息的“聪明助手”</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "一台普通的电视机",
+          "html": "<p>一台普通的电视机</p>\n"
+        }
+      ],
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>“具像化认知”人工智能，你可以把它看作是一个（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 4.0,
+      "answer": "B",
+      "content": "在刷脸支付时，AI将你的脸和数据库里的信息对比，这属于（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "输入",
+          "html": "<p>输入</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "处理（比对）",
+          "html": "<p>处理（比对）</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "输出",
+          "html": "<p>输出</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "充电",
+          "html": "<p>充电</p>\n"
+        }
+      ],
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>在刷脸支付时，AI将你的脸和数据库里的信息对比，这属于（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 16,
+      "score": 4.0,
+      "answer": "D",
+      "content": "学习AI知识可以帮助我们（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "更有力气跑步",
+          "html": "<p>更有力气跑步</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "不用再背古诗",
+          "html": "<p>不用再背古诗</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "让电脑替我们睡觉",
+          "html": "<p>让电脑替我们睡觉</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "激发对科学探索的兴趣",
+          "html": "<p>激发对科学探索的兴趣</p>\n"
+        }
+      ],
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>学习AI知识可以帮助我们（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 17,
+      "score": 4.0,
+      "answer": "A",
+      "content": "下列哪个是AI能够做到的“基础互动”？（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "回答你提出的简单问题",
+          "html": "<p>回答你提出的简单问题</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "陪你到公园捉迷藏",
+          "html": "<p>陪你到公园捉迷藏</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "帮你把家里的地扫一遍（实物操作）",
+          "html": "<p>帮你把家里的地扫一遍（实物操作）</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "替你感受冰淇淋的甜味",
+          "html": "<p>替你感受冰淇淋的甜味</p>\n"
+        }
+      ],
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>下列哪个是AI能够做到的“基础互动”？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 18,
+      "score": 4.0,
+      "answer": "B",
+      "content": "当我们给AI很多错的数据时，AI产生的结果（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "依然是正确的",
+          "html": "<p>依然是正确的</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "也会是错误的",
+          "html": "<p>也会是错误的</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "会自动变正确",
+          "html": "<p>会自动变正确</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "会变成五彩色",
+          "html": "<p>会变成五彩色</p>\n"
+        }
+      ],
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>当我们给AI很多错的数据时，AI产生的结果（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 19,
+      "score": 4.0,
+      "answer": "C",
+      "content": "使用AI工具时，如果不小心泄露了密码，应该（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "不管它",
+          "html": "<p>不管它</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "大哭一场",
+          "html": "<p>大哭一场</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "立刻请家长或老师帮忙修改密码",
+          "html": "<p>立刻请家长或老师帮忙修改密码</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "告诉更多人",
+          "html": "<p>告诉更多人</p>\n"
+        }
+      ],
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>使用AI工具时，如果不小心泄露了密码，应该（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 20,
+      "score": 4.0,
+      "answer": "A",
+      "content": "智能客服机器人的回复通常是（ ）的。",
+      "options": [
+        {
+          "key": "A",
+          "text": "根据预设规则和学习数据生成",
+          "html": "<p>根据预设规则和学习数据生成</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "机器人自己想出来的真心话",
+          "html": "<p>机器人自己想出来的真心话</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "随便乱蹦出来的字",
+          "html": "<p>随便乱蹦出来的字</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "人类躲在屏幕后打出来的",
+          "html": "<p>人类躲在屏幕后打出来的</p>\n"
+        }
+      ],
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>智能客服机器人的回复通常是（ ）的。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 21,
+      "score": 4.0,
+      "answer": "D",
+      "content": "对于AI，我们应该持有的科学态度是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "因为它太强了，所以我们什么都听它的",
+          "html": "<p>因为它太强了，所以我们什么都听它的</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "因为它可能会错，所以我们完全不用它",
+          "html": "<p>因为它可能会错，所以我们完全不用它</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "把它当成唯一的玩伴",
+          "html": "<p>把它当成唯一的玩伴</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "既要善于利用它，也要懂得分辨它给出的信息",
+          "html": "<p>既要善于利用它，也要懂得分辨它给出的信息</p>\n"
+        }
+      ],
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>对于AI，我们应该持有的科学态度是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 22,
+      "score": 4.0,
+      "answer": "B",
+      "content": "AI绘画工具生成的图片（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "可以直接拿去参加比赛说是自己画的",
+          "html": "<p>可以直接拿去参加比赛说是自己画的</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "可以辅助我们完成创意创作",
+          "html": "<p>可以辅助我们完成创意创作</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "没有任何用处",
+          "html": "<p>没有任何用处</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "是真实的摄影照片",
+          "html": "<p>是真实的摄影照片</p>\n"
+        }
+      ],
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>AI绘画工具生成的图片（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 23,
+      "score": 4.0,
+      "answer": "C",
+      "content": "“算法偏见”是指AI可能会因为数据不全而产生（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "飞快地运行",
+          "html": "<p>飞快地运行</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "自动充电",
+          "html": "<p>自动充电</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "不公平的判断",
+          "html": "<p>不公平的判断</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "开心地唱歌",
+          "html": "<p>开心地唱歌</p>\n"
+        }
+      ],
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>“算法偏见”是指AI可能会因为数据不全而产生（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 24,
+      "score": 4.0,
+      "answer": "A",
+      "content": "如果你想让AI帮你画一张画，你向它描述要求的过程在IPO模型中属于（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "输入（Input）",
+          "html": "<p>输入（Input）</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "处理（Process）",
+          "html": "<p>处理（Process）</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "输出（Output）",
+          "html": "<p>输出（Output）</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "关机（Off）",
+          "html": "<p>关机（Off）</p>\n"
+        }
+      ],
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>如果你想让AI帮你画一张画，你向它描述要求的过程在IPO模型中属于（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 25,
+      "score": 4.0,
+      "answer": "C",
+      "content": "学习人工智能，最重要的是培养我们的（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "打游戏速度",
+          "html": "<p>打游戏速度</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "写字力量",
+          "html": "<p>写字力量</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "创新思维和科技探索兴趣",
+          "html": "<p>创新思维和科技探索兴趣</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "看电视的时长",
+          "html": "<p>看电视的时长</p>\n"
+        }
+      ],
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>学习人工智能，最重要的是培养我们的（ ）。</p>\n"
+    }
+  ],
+  "id": "2026-04-ai-creative-13-2",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2026-04-ai-creative-13-2",
+  "version": "6fa394c8930fa9a8",
+  "warnings": [],
+  "objective_score": 100.0
+}

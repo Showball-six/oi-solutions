@@ -1,0 +1,631 @@
+{
+  "title": "2026年3月 GESP C++ 8级",
+  "category": "GESP",
+  "level": "8",
+  "date": "2026-03",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2026年3月 GESP C++ 8级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$112$",
+          "html": "<p>$112$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$168$",
+          "html": "<p>$168$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$224$",
+          "html": "<p>$224$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$288$",
+          "html": "<p>$288$</p>\n"
+        }
+      ],
+      "content": "某班级有 $8$ 名男生和 $6$ 名女生，现要选出 $3$ 人组成学习小组，要求小组中至少有 $1$ 名男生和 $1$ 名女生，则不同的选法共有（ ）种。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>某班级有 $8$ 名男生和 $6$ 名女生，现要选出 $3$ 人组成学习小组，要求小组中至少有 $1$ 名男生和 $1$ 名女生，则不同的选法共有（ ）种。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$512$",
+          "html": "<p>$512$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1024$",
+          "html": "<p>$1024$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$2048$",
+          "html": "<p>$2048$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$4096$",
+          "html": "<p>$4096$</p>\n"
+        }
+      ],
+      "content": "在杨辉三角中，从第 $0$ 行开始计数，第 $10$ 行的所有数之和为（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>在杨辉三角中，从第 $0$ 行开始计数，第 $10$ 行的所有数之和为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下列代码实现了快速幂算法，其时间复杂度为（ ）。\n\n```cpp\nlong long fastPow(long long b, long long e, long long mod) {\n    long long result = 1;\n    while (e > 0) {\n        if (e & 1)\n            result = result * b % mod;\n        b = b * b % mod;\n        e >>= 1;\n    }\n    return result;\n}\n```",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下列代码实现了快速幂算法，其时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">long long fastPow(long long b, long long e, long long mod) {\n    long long result = 1;\n    while (e &gt; 0) {\n        if (e &amp; 1)\n            result = result * b % mod;\n        b = b * b % mod;\n        e &gt;&gt;= 1;\n    }\n    return result;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$60$",
+          "html": "<p>$60$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$74$",
+          "html": "<p>$74$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$80$",
+          "html": "<p>$80$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$84$",
+          "html": "<p>$84$</p>\n"
+        }
+      ],
+      "content": "从 $5$ 本不同的数学书和 $4$ 本不同的物理书中选取 $3$ 本书，要求至少包含 $1$ 本数学书，则不同的选法有（ ）种。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>从 $5$ 本不同的数学书和 $4$ 本不同的物理书中选取 $3$ 本书，要求至少包含 $1$ 本数学书，则不同的选法有（ ）种。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "该树一定是一棵完全二叉树",
+          "html": "<p>该树一定是一棵完全二叉树</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "元素4和5不可能是兄弟节点",
+          "html": "<p>元素4和5不可能是兄弟节点</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "元素1所在节点的深度可能大于3（根节点深度为1）",
+          "html": "<p>元素1所在节点的深度可能大于3（根节点深度为1）</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "元素2一定是元素1的⽗节点",
+          "html": "<p>元素2一定是元素1的⽗节点</p>\n"
+        }
+      ],
+      "content": "在二叉搜索树（BST）中，若中序遍历的序列为 $\\{1, 2, 3, 4, 5\\}$，且先序遍历的第一个序列元素为 $3$，则下列说法正确的是（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>在二叉搜索树（BST）中，若中序遍历的序列为 $\\{1, 2, 3, 4, 5\\}$，且先序遍历的第一个序列元素为 $3$，则下列说法正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "在一个有向带权图中，使用 Dijkstra 算法求单源最短路时，若使用优先队列（小根堆）优化，其时间复杂度为（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>在一个有向带权图中，使用 Dijkstra 算法求单源最短路时，若使用优先队列（小根堆）优化，其时间复杂度为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "无法确定，取决于图的具体边数",
+          "html": "<p>无法确定，取决于图的具体边数</p>\n"
+        }
+      ],
+      "content": "对于含 $n$ 个顶点（$n \\geq 1$）的连通加权有向图，若图中不存在负权环，则任意两点之间的最短路径（简单路径）最多包含（ ）条边。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>对于含 $n$ 个顶点（$n \\geq 1$）的连通加权有向图，若图中不存在负权环，则任意两点之间的最短路径（简单路径）最多包含（ ）条边。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "会发生改变，因为 Floyd 又做了一次松弛",
+          "html": "<p>会发生改变，因为 Floyd 又做了一次松弛</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "不会发生改变",
+          "html": "<p>不会发生改变</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "可能变大，因为未针对已有最短路优化",
+          "html": "<p>可能变大，因为未针对已有最短路优化</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "可能在某些负权图中陷入死循环",
+          "html": "<p>可能在某些负权图中陷入死循环</p>\n"
+        }
+      ],
+      "content": "在使用 Floyd 算法求任意两点间最短路径时，时间复杂度为 $O(n^3)$ 。若在某次算法执行前，已经用 Dijkstra 算法正确求出了所有点对的最短路并存入了 `dist` 数组。如果此时继续对该 `dist` 数组执行一次完整的 Floyd 算法过程（无任何提前终止），执行完毕后 `dist` 数组内的值（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>在使用 Floyd 算法求任意两点间最短路径时，时间复杂度为 $O(n^3)$ 。若在某次算法执行前，已经用 Dijkstra 算法正确求出了所有点对的最短路并存入了 <code>dist</code> 数组。如果此时继续对该 <code>dist</code> 数组执行一次完整的 Floyd 算法过程（无任何提前终止），执行完毕后 <code>dist</code> 数组内的值（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dijkstra 算法能够高效处理包含负权边的有向图。",
+          "html": "<p>Dijkstra 算法能够高效处理包含负权边的有向图。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "Floyd 算法可以求出任意两点间的最短路径，且允许图中存在负权边（但不能有负权环）。",
+          "html": "<p>Floyd 算法可以求出任意两点间的最短路径，且允许图中存在负权边（但不能有负权环）。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "单源最短路径算法无法用于无向图，无向图只能通过 BFS 求解。",
+          "html": "<p>单源最短路径算法无法用于无向图，无向图只能通过 BFS 求解。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "Dijkstra 算法的每一步必定从当前未访问的节点中，选取距离起始点最远的节点进行松弛操作。",
+          "html": "<p>Dijkstra 算法的每一步必定从当前未访问的节点中，选取距离起始点最远的节点进行松弛操作。</p>\n"
+        }
+      ],
+      "content": "关于图论中的最短路径算法，下列说法中严格正确的是（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>关于图论中的最短路径算法，下列说法中严格正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$120$",
+          "html": "<p>$120$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$144$",
+          "html": "<p>$144$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$192$",
+          "html": "<p>$192$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$240$",
+          "html": "<p>$240$</p>\n"
+        }
+      ],
+      "content": "有 $6$ 个人排成一排照相，其中甲、乙两人必须相邻，且丙不能站在排头的不同排法有（ ）种。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>有 $6$ 个人排成一排照相，其中甲、乙两人必须相邻，且丙不能站在排头的不同排法有（ ）种。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`dist[i][k] + dist[k][j] < dist[i][j]`",
+          "html": "<p><code>dist[i][k] + dist[k][j] &lt; dist[i][j]</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`dist[i][k] != INF && dist[k][j] != INF`",
+          "html": "<p><code>dist[i][k] != INF &amp;&amp; dist[k][j] != INF</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`dist[i][k] != INF && dist[k][j] != INF && dist[i][k] + dist[k][j] < dist[i][j]`",
+          "html": "<p><code>dist[i][k] != INF &amp;&amp; dist[k][j] != INF &amp;&amp; dist[i][k] + dist[k][j] &lt; dist[i][j]</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`dist[i][j] == INF`",
+          "html": "<p><code>dist[i][j] == INF</code></p>\n"
+        }
+      ],
+      "content": "下列代码试图实现 Floyd 算法求所有点对之间的最短路径，横线处应填入（ ）。\n\n```cpp\nvoid floyd(int n, int dist[][MAXN]) {\n    for (int k = 0; k < n; k++)\n        for (int i = 0; i < n; i++)\n            for (int j = 0; j < n; j++)\n                if (__________) // 在此处填入选项\n                    dist[i][j] = dist[i][k] + dist[k][j];\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下列代码试图实现 Floyd 算法求所有点对之间的最短路径，横线处应填入（ ）。</p>\n<pre><code class=\"language-cpp\">void floyd(int n, int dist[][MAXN]) {\n    for (int k = 0; k &lt; n; k++)\n        for (int i = 0; i &lt; n; i++)\n            for (int j = 0; j &lt; n; j++)\n                if (__________) // 在此处填入选项\n                    dist[i][j] = dist[i][k] + dist[k][j];\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$48$",
+          "html": "<p>$48$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$60$",
+          "html": "<p>$60$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$72$",
+          "html": "<p>$72$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$96$",
+          "html": "<p>$96$</p>\n"
+        }
+      ],
+      "content": "用数字 $0$ 、 $1$ 、 $2$ 、 $3$ 、 $4$ 组成无重复数字的五位偶数，共有（ ）个。",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>用数字 $0$ 、 $1$ 、 $2$ 、 $3$ 、 $4$ 组成无重复数字的五位偶数，共有（ ）个。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`graph[u][v] && !inMST[v] && graph[u][v] < minEdge[v]`",
+          "html": "<p><code>graph[u][v] &amp;&amp; !inMST[v] &amp;&amp; graph[u][v] &lt; minEdge[v]</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`!inMST[v] && graph[u][v] < minEdge[v]`",
+          "html": "<p><code>!inMST[v] &amp;&amp; graph[u][v] &lt; minEdge[v]</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`graph[u][v] > 0 && !inMST[v]`",
+          "html": "<p><code>graph[u][v] &gt; 0 &amp;&amp; !inMST[v]</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`!inMST[v] && minEdge[v] > 0`",
+          "html": "<p><code>!inMST[v] &amp;&amp; minEdge[v] &gt; 0</code></p>\n"
+        }
+      ],
+      "content": "在一个无向带权图中，若使用 Prim 算法从顶点 $0$ 开始构造最小生成树（边权均为正整数，且 `graph[u][v] == 0` 表示无边），下列代码中横线处应填入（ ）。\n\n```cpp\nint prim(vector<vector<int>>& graph, int n) {\n    vector<bool> inMST(n, false);\n    vector<int> minEdge(n, INT_MAX);\n    minEdge[0] = 0;\n    int result = 0;\n    for (int i = 0; i < n; i++) {\n        int u = -1;\n        for (int j = 0; j < n; j++)\n            if (!inMST[j] && (u == -1 || minEdge[j] < minEdge[u]))\n                u = j;\n        inMST[u] = true;\n        result += minEdge[u];\n        for (int v = 0; v < n; v++)\n            if (__________) // 在此处填入选项\n                minEdge[v] = graph[u][v];\n    }\n    return result;\n}\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>在一个无向带权图中，若使用 Prim 算法从顶点 $0$ 开始构造最小生成树（边权均为正整数，且 <code>graph[u][v] == 0</code> 表示无边），下列代码中横线处应填入（ ）。</p>\n<pre><code class=\"language-cpp\">int prim(vector&lt;vector&lt;int&gt;&gt;&amp; graph, int n) {\n    vector&lt;bool&gt; inMST(n, false);\n    vector&lt;int&gt; minEdge(n, INT_MAX);\n    minEdge[0] = 0;\n    int result = 0;\n    for (int i = 0; i &lt; n; i++) {\n        int u = -1;\n        for (int j = 0; j &lt; n; j++)\n            if (!inMST[j] &amp;&amp; (u == -1 || minEdge[j] &lt; minEdge[u]))\n                u = j;\n        inMST[u] = true;\n        result += minEdge[u];\n        for (int v = 0; v &lt; n; v++)\n            if (__________) // 在此处填入选项\n                minEdge[v] = graph[u][v];\n    }\n    return result;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(x2-x1)/(y2-y1) == (x3-x1)/(y3-y1)`",
+          "html": "<p><code>(x2-x1)/(y2-y1) == (x3-x1)/(y3-y1)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(x2-x1)*(y3-y1)-(x3-x1)*(y2-y1) == 0`",
+          "html": "<p><code>(x2-x1)*(y3-y1)-(x3-x1)*(y2-y1) == 0</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`fabs((x2-x1)*(y3-y1)-(x3-x1)*(y2-y1)) < 1e-8`",
+          "html": "<p><code>fabs((x2-x1)*(y3-y1)-(x3-x1)*(y2-y1)) &lt; 1e-8</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`fabs((x2-x1)/(y2-y1)-(x3-x1)/(y3-y1)) < 1e-8`",
+          "html": "<p><code>fabs((x2-x1)/(y2-y1)-(x3-x1)/(y3-y1)) &lt; 1e-8</code></p>\n"
+        }
+      ],
+      "content": "已知三个点在平面直角坐标系中的坐标。下列 C++ 表达式中，在精度误差范围 $1e-8$ 内能正确计算判断这三个点是三点共线的表达式是（ ）。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>已知三个点在平面直角坐标系中的坐标。下列 C++ 表达式中，在精度误差范围 $1e-8$ 内能正确计算判断这三个点是三点共线的表达式是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$16$ $8$ $8$ $8$ $1$ $1$",
+          "html": "<p>$16$ $8$ $8$ $8$ $1$ $1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$16$ $8$ $16$ $8$ $1$ $1$",
+          "html": "<p>$16$ $8$ $16$ $8$ $1$ $1$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$16$ $8$ $8$ $4$ $4$ $1$",
+          "html": "<p>$16$ $8$ $8$ $4$ $4$ $1$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$16$ $8$ $8$ $8$ $4$ $1$",
+          "html": "<p>$16$ $8$ $8$ $8$ $4$ $1$</p>\n"
+        }
+      ],
+      "content": "在 $64$ 位操作系统下（LP64 / LLP64 模型），下面代码的输出结果是（）。\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int a[4] = {1, 2, 3, 4};\n    int (*p)[4] = &a;\n    int *q = a;\n    cout << sizeof(a) << \" \";\n    cout << sizeof(p) << \" \";\n    cout << sizeof(p + 1) << \" \";\n    cout << sizeof(q + 1) << \" \";\n    cout << (p + 1) - p << \" \";\n    cout << (q + 1) - q << endl;\n}\n```",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>在 $64$ 位操作系统下（LP64 / LLP64 模型），下面代码的输出结果是（）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint main() {\n    int a[4] = {1, 2, 3, 4};\n    int (*p)[4] = &amp;a;\n    int *q = a;\n    cout &lt;&lt; sizeof(a) &lt;&lt; &quot; &quot;;\n    cout &lt;&lt; sizeof(p) &lt;&lt; &quot; &quot;;\n    cout &lt;&lt; sizeof(p + 1) &lt;&lt; &quot; &quot;;\n    cout &lt;&lt; sizeof(q + 1) &lt;&lt; &quot; &quot;;\n    cout &lt;&lt; (p + 1) - p &lt;&lt; &quot; &quot;;\n    cout &lt;&lt; (q + 1) - q &lt;&lt; endl;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 中，若结构体中包含一个 `static` 成员变量，则该变量的存储空间属于结构体对象的一部分。（ ）",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>在 C++ 中，若结构体中包含一个 <code>static</code> 成员变量，则该变量的存储空间属于结构体对象的一部分。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "对于任意正整数 $n$ ，二项式 $(a+b)^n$ 展开式中各项的二项式系数之和等于 $2^n$ 。（ ）",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>对于任意正整数 $n$ ，二项式 $(a+b)^n$ 展开式中各项的二项式系数之和等于 $2^n$ 。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 中，若函数参数类型为 `const int &`，则该参数既可以绑定左值，也可以绑定右值。（ ）",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>在 C++ 中，若函数参数类型为 <code>const int &amp;</code>，则该参数既可以绑定左值，也可以绑定右值。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "若一个无向图的最小生成树唯一，则图中所有边权必定各不相同。（ ）",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>若一个无向图的最小生成树唯一，则图中所有边权必定各不相同。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "使用快速排序对 $n$ 个元素进行排序时，无论最好、最坏还是平均情况，时间复杂度均为 $O(n \\log n)$。（ ）",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>使用快速排序对 $n$ 个元素进行排序时，无论最好、最坏还是平均情况，时间复杂度均为 $O(n \\log n)$。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "若一个图中所有顶点的度数为偶数，则一定存在欧拉回路。（ ）",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>若一个图中所有顶点的度数为偶数，则一定存在欧拉回路。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "使用倍增法预处理区间最值问题时，预处理的时间复杂度为 $O(n \\log n)$，查询的时间复杂度为 $O(1)$。（ ）",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>使用倍增法预处理区间最值问题时，预处理的时间复杂度为 $O(n \\log n)$，查询的时间复杂度为 $O(1)$。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "如果将一个连通无向图 $G$ 中所有边的权值都统一增加同一个正整数常数 $c$，形成图 $G'$。则 $G$ 的最小生成树中每条边在 $G'$ 中对应的边组成的树，一定是 $G'$ 的最小生成树。（ ）",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>如果将一个连通无向图 $G$ 中所有边的权值都统一增加同一个正整数常数 $c$，形成图 $G&#x27;$。则 $G$ 的最小生成树中每条边在 $G&#x27;$ 中对应的边组成的树，一定是 $G&#x27;$ 的最小生成树。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在图论算法中，Kruskal 算法和 Prim 算法都可以用来求解最小生成树，且这两者的贪心策略无论在任何连通无向图上求得的最小生成树总边权和必定相同。（ ）",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>在图论算法中，Kruskal 算法和 Prim 算法都可以用来求解最小生成树，且这两者的贪心策略无论在任何连通无向图上求得的最小生成树总边权和必定相同。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在动态规划问题中，“状态转移方程+递推”和“递归+记忆化搜索”通常是解决同一问题的两种不同实现方式，它们的时间复杂度总是相同的。（ ）",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>在动态规划问题中，“状态转移方程+递推”和“递归+记忆化搜索”通常是解决同一问题的两种不同实现方式，它们的时间复杂度总是相同的。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：消息查找**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小 A 的消息记录中有 $n$ 条消息，依次以 $1, 2, \\dots, n$ 编号。编号小的消息发送时间早于编号大的消息。\n\n一条消息可以引用一条编号小于它的消息，也可以不引用消息。小 A 注意到消息记录里有引用的消息数量不会非常多。消息记录的一个例子是：\n\n- 【消息 1】小 A：有人做了今天的第一题吗？\n- 【消息 2】小 A：我第一题 WA 了，可能是什么原因？\n- 【消息 3：引用消息 1】小 B：我我我\n- 【消息 4：引用消息 2】小 C：我也 WA 了\n- 【消息 5：引用消息 2】小 B：是不是没开 long long？\n- 【消息 6：引用消息 5】小 A：改了就 AC 了，太厉害了！\n\n对于消息 $i$ ($1 \\le i \\le n$)，小 A 以 $r_i$ 标记消息 $i$ 是否有引用，以及所引用的消息编号。如果 $r_i > 0$，则消息 $i$ 为引用了消息 $r_i$；如果 $r_i = 0$，则消息 $i$ 没有引用消息。\n\n消息记录里有非常多条消息。为了快速查找所需要的消息，小 A 准备实现一个简单的消息查找工具。消息查找工具任意时刻只能定位恰好一条消息，如果当前位于消息 $i$ ($1 < i \\le n$)，那么接下来可以选择以下两种操作之一：\n\n- 定位到消息 $i - 1$；\n- 如果消息 $i$ 引用了消息 $r_i$，定位到消息 $r_i$。\n\n以上操作可以执行任意次（包括零次）。\n\n小 A 有 $q$ 次询问。在第 $k$ ($1 \\le k \\le q$) 次询问中，小 A 给出消息编号 $x_k, y_k$ ($y_k < x_k$)。小 A 想知道，如果当前消息查找工具位于 $x_k$，至少需要多少次操作才能定位到消息 $y_k$。\n\n\n**输入格式**\n\n\n第一行，两个正整数 $n, q$，分别表示消息条数与询问次数。\n\n第二行，$n$ 个非负整数 $r_1, r_2, \\dots, r_n$，表示消息的引用关系，具体含义见题目描述。\n\n接下来 $q$ 行中的第 $k$ 行 ($1 \\le k \\le q$) 包含两个正整数 $x_k, y_k$，表示一次询问。\n\n保证至多只有 1000 条引用消息。\n\n\n**输出格式**\n\n\n输出 $q$ 行，每行一个整数，表示将界面从消息 $x_k$ 切换到消息 $y_k$ 所需的最少操作次数。\n\n\n**样例输入 #1**\n```\n6 3\n0 0 1 2 2 5\n4 1\n6 2\n6 3\n```\n\n**样例输出 #1**\n```\n2\n2\n3\n```\n\n**样例输入 #2**\n```\n5 5\n0 0 0 1 3\n4 1\n4 2\n5 1\n5 2\n5 3\n```\n\n**样例输出 #2**\n```\n1\n2\n2\n2\n1\n```\n\n**说明/提示**\n\n### 数据范围\n\n\n对于 40% 的测试点，保证 $1 \\le n \\le 2000$，$1 \\le q \\le 2000$。\n\n对于所有测试点，保证 $1 \\le n \\le 10^5$，$1 \\le q \\le 10^5$，$0 \\le r_i < i$，$1 \\le y_k < x_k \\le n$，保证至多有 1000 条引用消息。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：消息查找</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小 A 的消息记录中有 $n$ 条消息，依次以 $1, 2, \\dots, n$ 编号。编号小的消息发送时间早于编号大的消息。</p>\n<p>一条消息可以引用一条编号小于它的消息，也可以不引用消息。小 A 注意到消息记录里有引用的消息数量不会非常多。消息记录的一个例子是：</p>\n<ul>\n<li>【消息 1】小 A：有人做了今天的第一题吗？</li>\n<li>【消息 2】小 A：我第一题 WA 了，可能是什么原因？</li>\n<li>【消息 3：引用消息 1】小 B：我我我</li>\n<li>【消息 4：引用消息 2】小 C：我也 WA 了</li>\n<li>【消息 5：引用消息 2】小 B：是不是没开 long long？</li>\n<li>【消息 6：引用消息 5】小 A：改了就 AC 了，太厉害了！</li>\n</ul>\n<p>对于消息 $i$ ($1 \\le i \\le n$)，小 A 以 $r_i$ 标记消息 $i$ 是否有引用，以及所引用的消息编号。如果 $r_i &gt; 0$，则消息 $i$ 为引用了消息 $r_i$；如果 $r_i = 0$，则消息 $i$ 没有引用消息。</p>\n<p>消息记录里有非常多条消息。为了快速查找所需要的消息，小 A 准备实现一个简单的消息查找工具。消息查找工具任意时刻只能定位恰好一条消息，如果当前位于消息 $i$ ($1 &lt; i \\le n$)，那么接下来可以选择以下两种操作之一：</p>\n<ul>\n<li>定位到消息 $i - 1$；</li>\n<li>如果消息 $i$ 引用了消息 $r_i$，定位到消息 $r_i$。</li>\n</ul>\n<p>以上操作可以执行任意次（包括零次）。</p>\n<p>小 A 有 $q$ 次询问。在第 $k$ ($1 \\le k \\le q$) 次询问中，小 A 给出消息编号 $x_k, y_k$ ($y_k &lt; x_k$)。小 A 想知道，如果当前消息查找工具位于 $x_k$，至少需要多少次操作才能定位到消息 $y_k$。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，两个正整数 $n, q$，分别表示消息条数与询问次数。</p>\n<p>第二行，$n$ 个非负整数 $r_1, r_2, \\dots, r_n$，表示消息的引用关系，具体含义见题目描述。</p>\n<p>接下来 $q$ 行中的第 $k$ 行 ($1 \\le k \\le q$) 包含两个正整数 $x_k, y_k$，表示一次询问。</p>\n<p>保证至多只有 1000 条引用消息。</p>\n<p><strong>输出格式</strong></p>\n<p>输出 $q$ 行，每行一个整数，表示将界面从消息 $x_k$ 切换到消息 $y_k$ 所需的最少操作次数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>6 3\n0 0 1 2 2 5\n4 1\n6 2\n6 3\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>2\n2\n3\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>5 5\n0 0 0 1 3\n4 1\n4 2\n5 1\n5 2\n5 3\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>1\n2\n2\n2\n1\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<h3>数据范围</h3>\n<p>对于 40% 的测试点，保证 $1 \\le n \\le 2000$，$1 \\le q \\le 2000$。</p>\n<p>对于所有测试点，保证 $1 \\le n \\le 10^5$，$1 \\le q \\le 10^5$，$0 \\le r_i &lt; i$，$1 \\le y_k &lt; x_k \\le n$，保证至多有 1000 条引用消息。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：子图最短路**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n\n给定包含 $n$ 个结点 $m$ 条边的**带权无向图** $G$，结点依次以 $1, 2, \\dots, n$ 编号。第 $i$ ($1 \\le i \\le m$) 条边连接编号为 $u_i$ 与 $v_i$ 的两个结点，权值为 $w_i$。\n\n对于指定的 $1 \\le \\ell \\le r \\le n$，按以下方式构造图 $G$ 的子图 $G(\\ell, r)$：\n\n- 保留 $G$ 中编号在区间 $[\\ell, r]$ 中的结点。删去其它编号不在 $[\\ell, r]$ 中的结点以及与之相连的边。剩余的结点和边构成子图 $G(\\ell, r)$。\n\n对于 $G(\\ell, r)$ 中的任意结点 $u, v$ 应有 $\\ell \\le u, v \\le r$。记 $u, v$ 在子图 $G(\\ell, r)$ 上的最短距离为 $d(\\ell, r, u, v)$。特殊地，若 $u, v$ 在子图 $G(\\ell, r)$ 上不连通，则认为 $d(\\ell, r, u, v) = 0$。\n\n你需要求出 $\\sum_{\\ell=1}^{n} \\sum_{r=\\ell}^{n} \\sum_{u=\\ell}^{r} \\sum_{v=u}^{r} d(\\ell, r, u, v)$ 对 $10^9$ 取模的结果。\n\n- 题目中的英文字母 $l$ 使用了特殊写法 $\\ell$，以避免英文字母 $l$ 与数字 $1$ 混淆。\n\n\n**输入格式**\n\n\n第一行，两个正整数 $n, m$，表示结点数与边数。\n\n接下来 $m$ 行，第 $i$ ($1 \\le i \\le m$) 行包含三个正整数 $u_i, v_i, w_i$，表示一条连接结点 $u_i, v_i$ 的权值为 $w_i$ 的边。\n\n**输出格式**\n\n\n输出一行，一个整数，表示 $\\sum_{\\ell=1}^{n} \\sum_{r=\\ell}^{n} \\sum_{u=\\ell}^{r} \\sum_{v=u}^{r} d(\\ell, r, u, v)$ 对 $10^9$ 取模的结果。\n\n\n**样例输入 #1**\n```\n3 2\n1 2 1\n2 3 2\n```\n\n**样例输出 #1**\n```\n9\n```\n\n**样例输入 #2**\n```\n4 6\n1 2 100\n2 3 100\n3 4 100\n1 3 10\n2 4 10\n1 4 1\n```\n\n**样例输出 #2**\n```\n784\n```\n\n**说明/提示**\n\n\n对于 $40\\%$ 的测试点，保证 $2 \\le n \\le 20$。\n\n对于所有测试点，保证 $2 \\le n \\le 100$，$2 \\le m \\le \\frac{n(n-1)}{2}$，$1 \\le u_i, v_i \\le n$，$1 \\le w_i \\le 10^6$。图中可能存在重边。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：子图最短路</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>给定包含 $n$ 个结点 $m$ 条边的<strong>带权无向图</strong> $G$，结点依次以 $1, 2, \\dots, n$ 编号。第 $i$ ($1 \\le i \\le m$) 条边连接编号为 $u_i$ 与 $v_i$ 的两个结点，权值为 $w_i$。</p>\n<p>对于指定的 $1 \\le \\ell \\le r \\le n$，按以下方式构造图 $G$ 的子图 $G(\\ell, r)$：</p>\n<ul>\n<li>保留 $G$ 中编号在区间 $[\\ell, r]$ 中的结点。删去其它编号不在 $[\\ell, r]$ 中的结点以及与之相连的边。剩余的结点和边构成子图 $G(\\ell, r)$。</li>\n</ul>\n<p>对于 $G(\\ell, r)$ 中的任意结点 $u, v$ 应有 $\\ell \\le u, v \\le r$。记 $u, v$ 在子图 $G(\\ell, r)$ 上的最短距离为 $d(\\ell, r, u, v)$。特殊地，若 $u, v$ 在子图 $G(\\ell, r)$ 上不连通，则认为 $d(\\ell, r, u, v) = 0$。</p>\n<p>你需要求出 $\\sum_{\\ell=1}^{n} \\sum_{r=\\ell}^{n} \\sum_{u=\\ell}^{r} \\sum_{v=u}^{r} d(\\ell, r, u, v)$ 对 $10^9$ 取模的结果。</p>\n<ul>\n<li>题目中的英文字母 $l$ 使用了特殊写法 $\\ell$，以避免英文字母 $l$ 与数字 $1$ 混淆。</li>\n</ul>\n<p><strong>输入格式</strong></p>\n<p>第一行，两个正整数 $n, m$，表示结点数与边数。</p>\n<p>接下来 $m$ 行，第 $i$ ($1 \\le i \\le m$) 行包含三个正整数 $u_i, v_i, w_i$，表示一条连接结点 $u_i, v_i$ 的权值为 $w_i$ 的边。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，一个整数，表示 $\\sum_{\\ell=1}^{n} \\sum_{r=\\ell}^{n} \\sum_{u=\\ell}^{r} \\sum_{v=u}^{r} d(\\ell, r, u, v)$ 对 $10^9$ 取模的结果。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3 2\n1 2 1\n2 3 2\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>9\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>4 6\n1 2 100\n2 3 100\n3 4 100\n1 3 10\n2 4 10\n1 4 1\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>784\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $40\\%$ 的测试点，保证 $2 \\le n \\le 20$。</p>\n<p>对于所有测试点，保证 $2 \\le n \\le 100$，$2 \\le m \\le \\frac{n(n-1)}{2}$，$1 \\le u_i, v_i \\le n$，$1 \\le w_i \\le 10^6$。图中可能存在重边。</p>\n"
+    }
+  ],
+  "id": "2026-03-gesp-8",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2026-03-gesp-8",
+  "version": "10666d15b1a0a455",
+  "warnings": [],
+  "objective_score": 50.0
+}

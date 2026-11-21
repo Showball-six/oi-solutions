@@ -1,0 +1,631 @@
+{
+  "title": "2023年12月 GESP C++ 3级",
+  "category": "GESP",
+  "level": "3",
+  "date": "2023-12",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2023年12月 GESP C++ 3级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`char dict_key[] = {'p','t','o'};`",
+          "html": "<p><code>char dict_key[] = {'p','t','o'};</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`int dict_value[] = {33,22,11};`",
+          "html": "<p><code>int dict_value[] = {33,22,11};</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`char dict_name[]={'chen','wang','zhou'};`",
+          "html": "<p><code>char dict_name[]={'chen','wang','zhou'};</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`float dict_value[]={3,2,1};`",
+          "html": "<p><code>float dict_value[]={3,2,1};</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 数组的定义中，会丢失数据的是( )。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>下面 C++ 数组的定义中，会丢失数据的是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "（$221$）$10$ 进制",
+          "html": "<p>（$221$）$10$ 进制</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "（$335$）$8$ 进制",
+          "html": "<p>（$335$）$8$ 进制</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "（`dd`）$16$ 进制",
+          "html": "<p>（<code>dd</code>）$16$ 进制</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "（`5d`）$16$ 进制",
+          "html": "<p>（<code>5d</code>）$16$ 进制</p>\n"
+        }
+      ],
+      "content": "在下列编码中，不能够和二进制 \"1101 1101\" 相等的是( )。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>在下列编码中，不能够和二进制 &quot;1101 1101&quot; 相等的是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`string str(\"GESP\"); cout << str << endl;`",
+          "html": "<p><code>string str(&quot;GESP&quot;); cout &lt;&lt; str &lt;&lt; endl;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`string str = \"GESP\"; cout << str << endl;`",
+          "html": "<p><code>string str = &quot;GESP&quot;; cout &lt;&lt; str &lt;&lt; endl;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`string str(\"GESP\"); cout << str[1] << str[2] << str[3] << str[4] << endl;`",
+          "html": "<p><code>string str(&quot;GESP&quot;); cout &lt;&lt; str[1] &lt;&lt; str[2] &lt;&lt; str[3] &lt;&lt; str[4] &lt;&lt; endl;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`string str{\"GESP\"}; cout << str << endl;`",
+          "html": "<p><code>string str{&quot;GESP&quot;}; cout &lt;&lt; str &lt;&lt; endl;</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后不能输出 \"GESP\" 的是( )。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后不能输出 &quot;GESP&quot; 的是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$8$",
+          "html": "<p>$8$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        }
+      ],
+      "content": "执行下面 C++ 代码输出是（ ）。\nA 10\n",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>执行下面 C++ 代码输出是（ ）。<br />\nA 10</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        }
+      ],
+      "content": "执行下面 C++ 代码后，输出是（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>执行下面 C++ 代码后，输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        }
+      ],
+      "content": "执行下面 C++ 代码后输出的是（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>执行下面 C++ 代码后输出的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "输出未知的数",
+          "html": "<p>输出未知的数</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "输出 `'n'`",
+          "html": "<p>输出 <code>'n'</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "输出 `'\\0'`",
+          "html": "<p>输出 <code>'\\0'</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "输出空格",
+          "html": "<p>输出空格</p>\n"
+        }
+      ],
+      "content": "执行下面 C++ 代码后输出的是（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>执行下面 C++ 代码后输出的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "输出空格",
+          "html": "<p>输出空格</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "什么也不输出",
+          "html": "<p>什么也不输出</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后的输出是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`str[i] == 'o'`",
+          "html": "<p><code>str[i] == 'o'</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`str[i] == 'a' + 14`",
+          "html": "<p><code>str[i] == 'a' + 14</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`str[i] == 115`",
+          "html": "<p><code>str[i] == 115</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`str[i] == 111`",
+          "html": "<p><code>str[i] == 111</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码用于统计每种字符出现的次数，当输出为 $3$ 时，横线上不能填入的代码是（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码用于统计每种字符出现的次数，当输出为 $3$ 时，横线上不能填入的代码是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$2^{31} \\sim (2^{31}) - 1$",
+          "html": "<p>$2^{31} \\sim (2^{31}) - 1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$2^{32}$",
+          "html": "<p>$2^{32}$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$-2^{31} \\sim +(2^{31}) - 1$",
+          "html": "<p>$-2^{31} \\sim +(2^{31}) - 1$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$-(2^{31}) + 1 \\sim 2^{31}$",
+          "html": "<p>$-(2^{31}) + 1 \\sim 2^{31}$</p>\n"
+        }
+      ],
+      "content": "32 位计算机中，C++ 的整型变量 `int` 能够表示的数据范围是（ ）。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>32 位计算机中，C++ 的整型变量 <code>int</code> 能够表示的数据范围是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 程序执行的结果是（ ）。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面 C++ 程序执行的结果是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1.5$",
+          "html": "<p>$1.5$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$1.50$",
+          "html": "<p>$1.50$</p>\n"
+        }
+      ],
+      "content": "C++ 的数据类型转换让人很难琢磨透，下列代码输出的值是（ ）。",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>C++ 的数据类型转换让人很难琢磨透，下列代码输出的值是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "代码将换行输出各个含有数字的电话号码。",
+          "html": "<p>代码将换行输出各个含有数字的电话号码。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "代码将不换行输出各个含有数字的电话号码，号码中间没有分隔。",
+          "html": "<p>代码将不换行输出各个含有数字的电话号码，号码中间没有分隔。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "代码将不换行输出各个含有数字的电话号码，号码中间有分隔。",
+          "html": "<p>代码将不换行输出各个含有数字的电话号码，号码中间有分隔。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "不能够输出数字电话号码。",
+          "html": "<p>不能够输出数字电话号码。</p>\n"
+        }
+      ],
+      "content": "C++ 代码用于抽取字符串中的电话号码。约定：电话号码全部是数字，数字之间没有其他符号如连字符或空格等。代码中变量 `strSrc` 仅仅是示例，可以包含更多字符。下面有关代码说法，正确的说法是（ ）。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>C++ 代码用于抽取字符串中的电话号码。约定：电话号码全部是数字，数字之间没有其他符号如连字符或空格等。代码中变量 <code>strSrc</code> 仅仅是示例，可以包含更多字符。下面有关代码说法，正确的说法是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "麦克风",
+          "html": "<p>麦克风</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "扬声器",
+          "html": "<p>扬声器</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "油量表",
+          "html": "<p>油量表</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "传感器",
+          "html": "<p>传感器</p>\n"
+        }
+      ],
+      "content": "某公司新出了一款无人驾驶的小汽车，通过声控智能驾驶系统，乘客只要告诉汽车目的地，车子就能自动选择一条优化路线，告诉乘客后驶达那里。请问下面哪项不是驾驶系统完成选路所必须的。（ ）",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>某公司新出了一款无人驾驶的小汽车，通过声控智能驾驶系统，乘客只要告诉汽车目的地，车子就能自动选择一条优化路线，告诉乘客后驶达那里。请问下面哪项不是驾驶系统完成选路所必须的。（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "艾伦·图灵",
+          "html": "<p>艾伦·图灵</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "冯·诺依曼",
+          "html": "<p>冯·诺依曼</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "阿塔纳索夫",
+          "html": "<p>阿塔纳索夫</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "埃克特-莫克利",
+          "html": "<p>埃克特-莫克利</p>\n"
+        }
+      ],
+      "content": "现代计算机是指电子计算机，它所基于的是（ ）体系结构。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>现代计算机是指电子计算机，它所基于的是（ ）体系结构。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "执行 C++ 代码 `cout << (5 && 2) << endl;` 后将输出 $1$。( )",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>执行 C++ 代码 <code>cout &lt;&lt; (5 &amp;&amp; 2) &lt;&lt; endl;</code> 后将输出 $1$。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "C++ 程序执行后，输入 `chen a dai` 输出应该为：`chen`。（ ）",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>C++ 程序执行后，输入 <code>chen a dai</code> 输出应该为：<code>chen</code>。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "执行 C++ 代码 `cout << (5 || 2);` 后将输出 $1$。（ ）",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>执行 C++ 代码 <code>cout &lt;&lt; (5 || 2);</code> 后将输出 $1$。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "执行下面 C++ 代码后将输出 \"China\"。（ ）",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>执行下面 C++ 代码后将输出 &quot;China&quot;。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "执行 C++ 代码将输出 `0 5`，`5` 之后还有一个空格。（ ）",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>执行 C++ 代码将输出 <code>0 5</code>，<code>5</code> 之后还有一个空格。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下面 C++ 代码将输出 1（ ）",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码将输出 1（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "下面 C++ 程序将输出 $1$。（ ）",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>下面 C++ 程序将输出 $1$。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "执行 C++ 代码，将输出 1 3 5 7 9，9 之后还有一个空格。（ ）",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>执行 C++ 代码，将输出 1 3 5 7 9，9 之后还有一个空格。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "小杨最近在准备考 GESP，他用的 Dev C++ 来练习和运行程序，所以 Dev C++ 也是一个小型操作系统。（ ）",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>小杨最近在准备考 GESP，他用的 Dev C++ 来练习和运行程序，所以 Dev C++ 也是一个小型操作系统。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "任何一个 `while` 循环都可以转化为等价的 `for` 循环（ ）。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>任何一个 <code>while</code> 循环都可以转化为等价的 <code>for</code> 循环（ ）。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：小猫分鱼**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n海滩上有一堆鱼，$N$ 只小猫来分。第一只小猫把这堆鱼平均分为 $N$ 份，多了 $i<N$ 个，这只小猫把多的 $i$ 个扔入海中，拿走了一份。第二只小猫接着把剩下的鱼平均分成 $N$ 份，又多了 $i$ 个，小猫同样把多的 $i$ 个扔入海中，拿走了一份。第三、第四、……，第 $N$ 只小猫仍是最终剩下的鱼分成 $N$ 份，扔掉多了的 $i$ 个，并拿走一份。\n\n编写程序，输入小猫的数量 $N$ 以及每次扔到海里的鱼的数量 $i$，输出海滩上最少的鱼数，使得每只小猫都可吃到鱼。\n\n例如：两只小猫来分鱼 $N=2$，每次扔掉鱼的数量为 $i=1$，为了每只小猫都可吃到鱼，可令第二只小猫需要拿走 $1$ 条鱼，则此时待分配的有 $3$ 条鱼。第一只小猫待分配的鱼有  $3\\times 2+1=7$ 条。\n\n**输入格式**\n\n总共 $2$ 行。第一行一个整数 $N$，第二行一个整数 $i$。\n\n保证 $0<N<10$；$i<N$ 。\n\n**输出格式**\n\n一行一个整数，表示满足要求的海滩上最少的鱼数。\n\n**样例输入 #1**\n```\n2\n1\n```\n\n**样例输出 #1**\n```\n7\n```\n\n**样例输入 #2**\n```\n3\n1\n```\n\n**样例输出 #2**\n```\n25\n```\n\n**说明/提示**\n\n**样例解释 2**\n\n三只小猫来分鱼 $N=3$，每次扔掉鱼的数量为 $i=1$，为了每只小猫都可吃到鱼，可令第三只小猫需要拿走 $3$ 条鱼（拿走 $1$ 条和 $2$ 条不满足要求），则此时待分配的有 $10$ 条鱼。第二只小猫待分配的鱼有 $10×3/2+1 = 16$ 条。第一只小猫待分配的鱼有 $16×3/2+1 = 25$ 条。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：小猫分鱼</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>海滩上有一堆鱼，$N$ 只小猫来分。第一只小猫把这堆鱼平均分为 $N$ 份，多了 $i&lt;N$ 个，这只小猫把多的 $i$ 个扔入海中，拿走了一份。第二只小猫接着把剩下的鱼平均分成 $N$ 份，又多了 $i$ 个，小猫同样把多的 $i$ 个扔入海中，拿走了一份。第三、第四、……，第 $N$ 只小猫仍是最终剩下的鱼分成 $N$ 份，扔掉多了的 $i$ 个，并拿走一份。</p>\n<p>编写程序，输入小猫的数量 $N$ 以及每次扔到海里的鱼的数量 $i$，输出海滩上最少的鱼数，使得每只小猫都可吃到鱼。</p>\n<p>例如：两只小猫来分鱼 $N=2$，每次扔掉鱼的数量为 $i=1$，为了每只小猫都可吃到鱼，可令第二只小猫需要拿走 $1$ 条鱼，则此时待分配的有 $3$ 条鱼。第一只小猫待分配的鱼有  $3\\times 2+1=7$ 条。</p>\n<p><strong>输入格式</strong></p>\n<p>总共 $2$ 行。第一行一个整数 $N$，第二行一个整数 $i$。</p>\n<p>保证 $0&lt;N&lt;10$；$i&lt;N$ 。</p>\n<p><strong>输出格式</strong></p>\n<p>一行一个整数，表示满足要求的海滩上最少的鱼数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>2\n1\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>7\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>3\n1\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>25\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p><strong>样例解释 2</strong></p>\n<p>三只小猫来分鱼 $N=3$，每次扔掉鱼的数量为 $i=1$，为了每只小猫都可吃到鱼，可令第三只小猫需要拿走 $3$ 条鱼（拿走 $1$ 条和 $2$ 条不满足要求），则此时待分配的有 $10$ 条鱼。第二只小猫待分配的鱼有 $10×3/2+1 = 16$ 条。第一只小猫待分配的鱼有 $16×3/2+1 = 25$ 条。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：单位转换**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨这周的数学作业是做单位转换，喜欢编程的小杨决定编程帮他解决这些问题。\n\n小杨只学了长度单位和重量单位，具体来说：\n\n- 长度单位包括千米（`km`）、米（`m`）、毫米（`mm`），它们之间的关系是：$1\\text{km} = 1000\\text{m} = 1000000\\text{mm}$。\n\n- 重量单位包括千克（`kg`）、克（`g`）、毫克（`mg`），它们之间的关系是：$1\\text{kg} = 1000\\text{g} = 1000000\\text{mg}$。\n\n小杨的作业只涉及将更大的单位转换为更小的单位，也就是说，小杨的作业只会包含如下题型：米转换为毫米，千米转换为毫米，千米转换为米，克转换为毫克，千克转换为毫克，千克转换为克。\n\n现在，请你帮忙完成单位转换的程序。\n\n**输入格式**\n\n输入的第一行为一个整数，表示题目数量。\n\n接下来 $N$ 行，每行一个字符串，表示转换单位的题目，格式为 $x$ 单位 $1 = ?$ 单位 $2$。其中，$x$ 为一个不超过 $1000$ 的非负整数， 单位 $1$ 和 单位 $2$ 分别为两个单位的英文缩写，保证它们都是长度单位或都是重量单位，且 **单位 1** 比 **单位 2** 更大。\n\n例如，如果题目需要你将 $1\\text{km}$ 转换为 $\\text{mm}$，则输入为 `1 km = ? mm`。\n\n保证 $1\\le N \\le 1000$。\n\n**输出格式**\n\n输出 $N$ 行，依次输出所有题目的答案，输出时，只需要将输入中的 $?$ 代入答案，其余部分一字不差地输出即可。由于小杨的题目只涉及将更大的单位转换为更小的单位，并且输入的 $x$ 是整数，因此答案一定也是整数。\n\n例如，如果题目需要你将 $1\\text{km}$ 转换为 $\\text{mm}$，则输入为 `1 km = ? mm`。则你需要输出 `1 km = 1000000 mm`。\n\n**样例输入 #1**\n```\n2\n1 km = ? mm\n1 m = ? mm\n```\n\n**样例输出 #1**\n```\n1 km = 1000000 mm\n1 m = 1000 mm\n```\n\n**样例输入 #2**\n```\n5\n100 m = ? mm\n1000 km = ? m\n20 kg = ? g\n200 g = ? mg\n0 kg = ? mg\n```\n\n**样例输出 #2**\n```\n100 m = 100000 mm\n1000 km = 1000000 m\n20 kg = 20000 g\n200 g = 200000 mg\n0 kg = 0 mg\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：单位转换</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨这周的数学作业是做单位转换，喜欢编程的小杨决定编程帮他解决这些问题。</p>\n<p>小杨只学了长度单位和重量单位，具体来说：</p>\n<ul>\n<li>\n<p>长度单位包括千米（<code>km</code>）、米（<code>m</code>）、毫米（<code>mm</code>），它们之间的关系是：$1\\text{km} = 1000\\text{m} = 1000000\\text{mm}$。</p>\n</li>\n<li>\n<p>重量单位包括千克（<code>kg</code>）、克（<code>g</code>）、毫克（<code>mg</code>），它们之间的关系是：$1\\text{kg} = 1000\\text{g} = 1000000\\text{mg}$。</p>\n</li>\n</ul>\n<p>小杨的作业只涉及将更大的单位转换为更小的单位，也就是说，小杨的作业只会包含如下题型：米转换为毫米，千米转换为毫米，千米转换为米，克转换为毫克，千克转换为毫克，千克转换为克。</p>\n<p>现在，请你帮忙完成单位转换的程序。</p>\n<p><strong>输入格式</strong></p>\n<p>输入的第一行为一个整数，表示题目数量。</p>\n<p>接下来 $N$ 行，每行一个字符串，表示转换单位的题目，格式为 $x$ 单位 $1 = ?$ 单位 $2$。其中，$x$ 为一个不超过 $1000$ 的非负整数， 单位 $1$ 和 单位 $2$ 分别为两个单位的英文缩写，保证它们都是长度单位或都是重量单位，且 <strong>单位 1</strong> 比 <strong>单位 2</strong> 更大。</p>\n<p>例如，如果题目需要你将 $1\\text{km}$ 转换为 $\\text{mm}$，则输入为 <code>1 km = ? mm</code>。</p>\n<p>保证 $1\\le N \\le 1000$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出 $N$ 行，依次输出所有题目的答案，输出时，只需要将输入中的 $?$ 代入答案，其余部分一字不差地输出即可。由于小杨的题目只涉及将更大的单位转换为更小的单位，并且输入的 $x$ 是整数，因此答案一定也是整数。</p>\n<p>例如，如果题目需要你将 $1\\text{km}$ 转换为 $\\text{mm}$，则输入为 <code>1 km = ? mm</code>。则你需要输出 <code>1 km = 1000000 mm</code>。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>2\n1 km = ? mm\n1 m = ? mm\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>1 km = 1000000 mm\n1 m = 1000 mm\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>5\n100 m = ? mm\n1000 km = ? m\n20 kg = ? g\n200 g = ? mg\n0 kg = ? mg\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>100 m = 100000 mm\n1000 km = 1000000 m\n20 kg = 20000 g\n200 g = 200000 mg\n0 kg = 0 mg\n</code></pre>\n"
+    }
+  ],
+  "id": "2023-12-gesp-3",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2023-12-gesp-3",
+  "version": "2d7f81220726a2ae",
+  "warnings": [],
+  "objective_score": 50.0
+}

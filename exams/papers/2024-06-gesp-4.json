@@ -1,0 +1,631 @@
+{
+  "title": "2024年6月 GESP C++ 4级",
+  "category": "GESP",
+  "level": "4",
+  "date": "2024-06",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2024年6月 GESP C++ 4级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "12 24 24 12",
+          "html": "<p>12 24 24 12</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "24 12 12 24",
+          "html": "<p>24 12 12 24</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "12 12 24 24",
+          "html": "<p>12 12 24 24</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "24 24 12 12",
+          "html": "<p>24 24 12 12</p>\n"
+        }
+      ],
+      "content": "下列代码中，输出结果是（ ）",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>下列代码中，输出结果是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面函数不能正常执行的是（）",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>下面函数不能正常执行的是（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "2 2 3 9",
+          "html": "<p>2 2 3 9</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "2 10 3 9",
+          "html": "<p>2 10 3 9</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "2 10 11 121",
+          "html": "<p>2 10 11 121</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "2 10 3 100",
+          "html": "<p>2 10 3 100</p>\n"
+        }
+      ],
+      "content": "下面程序输出的是（）",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下面程序输出的是（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`0x6ffe14`",
+          "html": "<p><code>0x6ffe14</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`0x6ffe15`",
+          "html": "<p><code>0x6ffe15</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`0x6ffe18`",
+          "html": "<p><code>0x6ffe18</code></p>\n"
+        }
+      ],
+      "content": "假设变量 $a$ 的地址是 `0x6ffe14`，下面程序的输出是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>假设变量 $a$ 的地址是 <code>0x6ffe14</code>，下面程序的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0x6ffe04$",
+          "html": "<p>$0x6ffe04$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$0x6ffe0C$",
+          "html": "<p>$0x6ffe0C$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$0x6ffe08$",
+          "html": "<p>$0x6ffe08$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$0x6ffe00$",
+          "html": "<p>$0x6ffe00$</p>\n"
+        }
+      ],
+      "content": "如果下列程序输出的地址是 $0x6ffe00$，则 `cout << a + 1 << endl;` 输出的是（ ）",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>如果下列程序输出的地址是 $0x6ffe00$，则 <code>cout &lt;&lt; a + 1 &lt;&lt; endl;</code> 输出的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "\"GESP.txt\"：指定与当前工作目录中的程序文件相同目录中的 GESP.txt 文件",
+          "html": "<p>&quot;GESP.txt&quot;：指定与当前工作目录中的程序文件相同目录中的 GESP.txt 文件</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "\"../data/GESP.txt\"：指定与当前工作目录中的程序文件上一级目录下的 data 目录中的 GESP.txt 文件",
+          "html": "<p>&quot;../data/GESP.txt&quot;：指定与当前工作目录中的程序文件上一级目录下的 data 目录中的 GESP.txt 文件</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "\"./data/GESP.txt\"：指定与当前工作目录中的程序文件同级目录下的 data 目录中的 GESP.txt 文件",
+          "html": "<p>&quot;./data/GESP.txt&quot;：指定与当前工作目录中的程序文件同级目录下的 data 目录中的 GESP.txt 文件</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "\"GESP.txt\" 是绝对路径",
+          "html": "<p>&quot;GESP.txt&quot; 是绝对路径</p>\n"
+        }
+      ],
+      "content": "C++ 中，关于文件路径说法错误的是（）",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>C++ 中，关于文件路径说法错误的是（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "插入排序的最好情况是数组已经有序，此时只需要进行 $n$ 次比较，时间复杂度为 $O(n)$",
+          "html": "<p>插入排序的最好情况是数组已经有序，此时只需要进行 $n$ 次比较，时间复杂度为 $O(n)$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "最坏情况是数组逆序排序，此时需要进行 $\\frac{n(n-1)}{2}$ 次比较以及 $\\frac{n(n-1)}{2}$ 次赋值操作（插入）",
+          "html": "<p>最坏情况是数组逆序排序，此时需要进行 $\\frac{n(n-1)}{2}$ 次比较以及 $\\frac{n(n-1)}{2}$ 次赋值操作（插入）</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "平均来说插入排序算法的复杂度为 $O(n^2)$",
+          "html": "<p>平均来说插入排序算法的复杂度为 $O(n^2)$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "空间复杂度上，直接插入法是就地排序，空间复杂度为 $O(1)$",
+          "html": "<p>空间复杂度上，直接插入法是就地排序，空间复杂度为 $O(1)$</p>\n"
+        }
+      ],
+      "content": "关于直接插入排序，下列说法错误的是（）",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>关于直接插入排序，下列说法错误的是（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`swap(a[j], a[j+1]);`",
+          "html": "<p><code>swap(a[j], a[j+1]);</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`swap(a[j-1], a[j]);`",
+          "html": "<p><code>swap(a[j-1], a[j]);</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`swap(a[j-1], a[j+1]);`",
+          "html": "<p><code>swap(a[j-1], a[j+1]);</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`swap(&a[j-1], &a[j+1]);`",
+          "html": "<p><code>swap(&amp;a[j-1], &amp;a[j+1]);</code></p>\n"
+        }
+      ],
+      "content": "下列程序横线处，应该输入的是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下列程序横线处，应该输入的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "递推表现为自己调用自己",
+          "html": "<p>递推表现为自己调用自己</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "递推是从简单问题出发，一步步的向前发展，最终求得问题。是正向的",
+          "html": "<p>递推是从简单问题出发，一步步的向前发展，最终求得问题。是正向的</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "递推中，问题的 $n$ 要求是在计算中确定，不要求计算前就知道 $n$",
+          "html": "<p>递推中，问题的 $n$ 要求是在计算中确定，不要求计算前就知道 $n$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "斐波那契数列可以用递推实现求解",
+          "html": "<p>斐波那契数列可以用递推实现求解</p>\n"
+        }
+      ],
+      "content": "下面关于递推的说法不正确的是（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>下面关于递推的说法不正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "选择排序不是一个稳定的排序算法",
+          "html": "<p>选择排序不是一个稳定的排序算法</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "冒泡排序算法不是一种稳定的排序算法",
+          "html": "<p>冒泡排序算法不是一种稳定的排序算法</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "插入排序是一种稳定的排序算法",
+          "html": "<p>插入排序是一种稳定的排序算法</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "如果排序前 $2$ 个相等的数在序列中的前后位置顺序和排序后它们 $2$ 个的前后位置顺序相同，则称为一种稳定的排序算法",
+          "html": "<p>如果排序前 $2$ 个相等的数在序列中的前后位置顺序和排序后它们 $2$ 个的前后位置顺序相同，则称为一种稳定的排序算法</p>\n"
+        }
+      ],
+      "content": "关于几种排序算法的说法，下面说法错误的是（ ）。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>关于几种排序算法的说法，下面说法错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "{45,23,1,10,66,52,88,5,33,97}",
+          "html": "<p>{45,23,1,10,66,52,88,5,33,97}</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "{45,66,1,23,10,97,52,88,5,33}",
+          "html": "<p>{45,66,1,23,10,97,52,88,5,33}</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "{45,66,23,1,10,52,88,5,33,97}",
+          "html": "<p>{45,66,23,1,10,52,88,5,33,97}</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "{45,66,23,1,10,97,52,88,33,5}",
+          "html": "<p>{45,66,23,1,10,97,52,88,33,5}</p>\n"
+        }
+      ],
+      "content": "数组 {45,66,23,1,10,97,52,88,5,33} 进行从小到大冒泡排序过程中，第一遍冒泡过后的序列是（ ）。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>数组 {45,66,23,1,10,97,52,88,5,33} 进行从小到大冒泡排序过程中，第一遍冒泡过后的序列是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`a[j]=a[j-1];`",
+          "html": "<p><code>a[j]=a[j-1];</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`a[j]=a[j+1];`",
+          "html": "<p><code>a[j]=a[j+1];</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`a[j+1]=a[j-1];`",
+          "html": "<p><code>a[j+1]=a[j-1];</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`a[j+1]=a[j];`",
+          "html": "<p><code>a[j+1]=a[j];</code></p>\n"
+        }
+      ],
+      "content": "下面的排序算法程序中，横线处应该填入的是（ ）。\n\n```cpp\nint a[8]={ 2,3, 4, 5, 6,2,3,1};\nfor (int i=1;i<8;i++)\n{\n    int key = a[i];\n    int j=i-1;\n    while(a[j]>key && j>=0)\n    {\n        ________;\n        j -= 1;\n    }\n    a[j + 1]= key;\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下面的排序算法程序中，横线处应该填入的是（ ）。</p>\n<pre><code class=\"language-cpp\">int a[8]={ 2,3, 4, 5, 6,2,3,1};\nfor (int i=1;i&lt;8;i++)\n{\n    int key = a[i];\n    int j=i-1;\n    while(a[j]&gt;key &amp;&amp; j&gt;=0)\n    {\n        ________;\n        j -= 1;\n    }\n    a[j + 1]= key;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "Division by zero condition!",
+          "html": "<p>Division by zero condition!</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$100$",
+          "html": "<p>$100$</p>\n"
+        }
+      ],
+      "content": "下面的程序中，如果输入 $10$ $0$ ，会输出（ ）。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>下面的程序中，如果输入 $10$ $0$ ，会输出（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$55$",
+          "html": "<p>$55$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$56$",
+          "html": "<p>$56$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$54$",
+          "html": "<p>$54$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$58$",
+          "html": "<p>$58$</p>\n"
+        }
+      ],
+      "content": "$10$ 条直线，最多可以把平面分为多少个区域（ ）。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>$10$ 条直线，最多可以把平面分为多少个区域（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`0x6ffe0c`",
+          "html": "<p><code>0x6ffe0c</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`0x6ffe09`",
+          "html": "<p><code>0x6ffe09</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`0x6ffe06`",
+          "html": "<p><code>0x6ffe06</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`0x6ffe04`",
+          "html": "<p><code>0x6ffe04</code></p>\n"
+        }
+      ],
+      "content": "下面程序中，如果语句 `cout << p << endl;` 输出的是 `0x6ffe00`，则 `cout << ++p << endl;` 输出的是（ ）\n\n```cpp\nint x[10][10][10] = {{0}};\nint *p;\np = &x[0][0][0];\ncout << p << endl;\ncout << ++p << endl;\n```",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>下面程序中，如果语句 <code>cout &lt;&lt; p &lt;&lt; endl;</code> 输出的是 <code>0x6ffe00</code>，则 <code>cout &lt;&lt; ++p &lt;&lt; endl;</code> 输出的是（ ）</p>\n<pre><code class=\"language-cpp\">int x[10][10][10] = {{0}};\nint *p;\np = &amp;x[0][0][0];\ncout &lt;&lt; p &lt;&lt; endl;\ncout &lt;&lt; ++p &lt;&lt; endl;\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "`int& a` 和 `&a` 是一样的，都是取 $a$ 的地址。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p><code>int&amp; a</code> 和 <code>&amp;a</code> 是一样的，都是取 $a$ 的地址。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "以下代码不能够正确执行。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>以下代码不能够正确执行。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "引用是一个指针常量。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>引用是一个指针常量。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "下面程序两个输出结果是一样的。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>下面程序两个输出结果是一样的。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "函数不可以调用自己。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>函数不可以调用自己。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "函数参数传递过程中，如果传常量值、常量引用和常量指针都是不能被修改的，它们可以防止函数对实参的值或地址进行修改。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>函数参数传递过程中，如果传常量值、常量引用和常量指针都是不能被修改的，它们可以防止函数对实参的值或地址进行修改。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "下面代码输出的值等于 $0$。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>下面代码输出的值等于 $0$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在下面这个程序里，`a[i][j]` 和一个普通的整型变量一样使用。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>在下面这个程序里，<code>a[i][j]</code> 和一个普通的整型变量一样使用。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "一个一维数组，至少含有一个自然数 $N$，是一个合法的数列。可以在一维数组末尾加入一个自然数 $M$，$M$ 不能超过一维数组末尾元素的一半，形成一个新的合法的一维数组，如果 $N = 6$，那么可以有 $6$ 个不同的合法数组。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>一个一维数组，至少含有一个自然数 $N$，是一个合法的数列。可以在一维数组末尾加入一个自然数 $M$，$M$ 不能超过一维数组末尾元素的一半，形成一个新的合法的一维数组，如果 $N = 6$，那么可以有 $6$ 个不同的合法数组。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "插入排序算法中，平均时间复杂度是 $O(n^2)$，最坏的情况逆序情况下，达到最大时间复杂度 $O(n^2)$。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>插入排序算法中，平均时间复杂度是 $O(n^2)$，最坏的情况逆序情况下，达到最大时间复杂度 $O(n^2)$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：黑白方块**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨有一个 $n$ 行 $m$ 列的网格图，其中每个格子要么是白色，要么是黑色。对于网格图中的一个子矩形，小杨认为它是平衡的当且仅当其中黑色格子与白色格子数量相同。小杨想知道最大的平衡子矩形包含了多少个格子。\n\n**输入格式**\n\n第一行包含两个正整数 $n,m$，含义如题面所示。\n\n之后 $n$ 行，每行一个长度为 $m$ 的 $01$ 串，代表网格图第 $i$ 行格子的颜色，如果为 $0$，则对应格子为白色，否则为黑色。\n\n**输出格式**\n\n输出一个整数，代表最大的平衡子矩形包含格子的数量，如果不存在则输出 $0$。\n\n**样例输入 #1**\n```\n4 5\n00000\n01111\n00011\n00011\n```\n\n**样例输出 #1**\n```\n16\n```\n\n**说明/提示**\n\n**【样例解释】**\n\n对于样例 $1$，假设 $(i,j)$ 代表第 $i$ 行第 $j$ 列，最大的平衡子矩形的四个顶点分别为 $(1,2),(1,5),(4,2),(4,5)$。\n\n**【数据范围】**\n\n对于全部数据，保证有 $1\\leq n,m\\leq 10$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：黑白方块</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨有一个 $n$ 行 $m$ 列的网格图，其中每个格子要么是白色，要么是黑色。对于网格图中的一个子矩形，小杨认为它是平衡的当且仅当其中黑色格子与白色格子数量相同。小杨想知道最大的平衡子矩形包含了多少个格子。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含两个正整数 $n,m$，含义如题面所示。</p>\n<p>之后 $n$ 行，每行一个长度为 $m$ 的 $01$ 串，代表网格图第 $i$ 行格子的颜色，如果为 $0$，则对应格子为白色，否则为黑色。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一个整数，代表最大的平衡子矩形包含格子的数量，如果不存在则输出 $0$。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4 5\n00000\n01111\n00011\n00011\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>16\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p><strong>【样例解释】</strong></p>\n<p>对于样例 $1$，假设 $(i,j)$ 代表第 $i$ 行第 $j$ 列，最大的平衡子矩形的四个顶点分别为 $(1,2),(1,5),(4,2),(4,5)$。</p>\n<p><strong>【数据范围】</strong></p>\n<p>对于全部数据，保证有 $1\\leq n,m\\leq 10$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：宝箱**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨发现了 $n$ 个宝箱，其中第 $i$ 个宝箱的价值是 $a_i$。\n\n小杨可以选择一些宝箱放入背包并带走，但是小杨的背包比较特殊，假设小杨选择的宝箱中最大价值为 $x$，最小价值为 $y$，小杨需要保证 $x-y\\leq k$，否则小杨的背包会损坏。\n\n小杨想知道背包不损坏的情况下，自己能够带走宝箱的总价值最大是多少。\n\n**输入格式**\n\n第一行包含两个正整数 $n,k$，含义如题面所示。\n\n第二行包含 $n$ 个正整数 $a_1,a_2,\\dots,a_n$，代表宝箱的价值。\n\n**输出格式**\n\n输出一个整数，代表带走宝箱的最大总价值。\n\n**样例输入 #1**\n```\n5 1\n1 2 3 1 2\n```\n\n**样例输出 #1**\n```\n7\n```\n\n**说明/提示**\n\n**【样例解释】**\n\n在背包不损坏的情况下，小杨可以拿走两个价值为 $2$ 的宝箱和一个价值为 $3$ 的宝箱。\n\n**【数据范围】**\n\n对于全部数据，保证有 $1\\leq n\\leq 1000$，$0\\leq k\\leq 1000$，$1\\leq a_i\\leq 1000$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：宝箱</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨发现了 $n$ 个宝箱，其中第 $i$ 个宝箱的价值是 $a_i$。</p>\n<p>小杨可以选择一些宝箱放入背包并带走，但是小杨的背包比较特殊，假设小杨选择的宝箱中最大价值为 $x$，最小价值为 $y$，小杨需要保证 $x-y\\leq k$，否则小杨的背包会损坏。</p>\n<p>小杨想知道背包不损坏的情况下，自己能够带走宝箱的总价值最大是多少。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含两个正整数 $n,k$，含义如题面所示。</p>\n<p>第二行包含 $n$ 个正整数 $a_1,a_2,\\dots,a_n$，代表宝箱的价值。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一个整数，代表带走宝箱的最大总价值。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5 1\n1 2 3 1 2\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>7\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p><strong>【样例解释】</strong></p>\n<p>在背包不损坏的情况下，小杨可以拿走两个价值为 $2$ 的宝箱和一个价值为 $3$ 的宝箱。</p>\n<p><strong>【数据范围】</strong></p>\n<p>对于全部数据，保证有 $1\\leq n\\leq 1000$，$0\\leq k\\leq 1000$，$1\\leq a_i\\leq 1000$。</p>\n"
+    }
+  ],
+  "id": "2024-06-gesp-4",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2024-06-gesp-4",
+  "version": "968a744bf2fbeed2",
+  "warnings": [],
+  "objective_score": 50.0
+}

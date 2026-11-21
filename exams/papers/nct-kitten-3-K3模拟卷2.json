@@ -1,0 +1,421 @@
+{
+  "title": "NCT KITTEN 3级 K3模拟卷2",
+  "category": "NCT-KITTEN",
+  "level": "3",
+  "date": "2026-04",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "NCT 全国青少年编程能力等级测试",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 5.0,
+      "answer": "C",
+      "content": "下列选项中，符合互联网信息安全规范并且合法的是（    ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "下载并使用盗版软件",
+          "html": "<p>下载并使用盗版软件</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "网络社区与现实社区之间没有关联，因此我们无需为自己在网络社区的行为负责",
+          "html": "<p>网络社区与现实社区之间没有关联，因此我们无需为自己在网络社区的行为负责</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "严格保护自己的个人信息，不向他人透露",
+          "html": "<p>严格保护自己的个人信息，不向他人透露</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "制造并散布谣言",
+          "html": "<p>制造并散布谣言</p>\n"
+        }
+      ],
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>下列选项中，符合互联网信息安全规范并且合法的是（    ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 5.0,
+      "answer": "B",
+      "content": "下列产品中，使用到了人工智能技术的是（   ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "喷墨打印机",
+          "html": "<p>喷墨打印机</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "语音助手",
+          "html": "<p>语音助手</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "烤面包机",
+          "html": "<p>烤面包机</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "普通洗衣机",
+          "html": "<p>普通洗衣机</p>\n"
+        }
+      ],
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>下列产品中，使用到了人工智能技术的是（   ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 5.0,
+      "answer": "D",
+      "content": "如果需要设计一个自动导航程序，对于用户来说，下列需求中非必需的是（   ）。①查看目标地点附近的信息  ②可以通过选择不同交通方式，产生不同的路线③可以提供租房服务④可以提供机票火车票订购服务",
+      "options": [
+        {
+          "key": "A",
+          "text": "①②",
+          "html": "<p>①②</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "②③",
+          "html": "<p>②③</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "①④",
+          "html": "<p>①④</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "③④",
+          "html": "<p>③④</p>\n"
+        }
+      ],
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>如果需要设计一个自动导航程序，对于用户来说，下列需求中非必需的是（   ）。①查看目标地点附近的信息  ②可以通过选择不同交通方式，产生不同的路线③可以提供租房服务④可以提供机票火车票订购服务</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 5.0,
+      "answer": "C",
+      "content": "小短使用画笔积木绘制了一个图形，如下图所示。小可说这个图形是由8个正方形和16个菱形组成的，小加说这个图形是由8个正八边形组成的。关于使用程序绘制此图形，小加和小可说法分析合理的是（）。![img](../assets/images/nct/daa33f53d2f2.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "小可和小加说的都对，实现的积木复杂程度和块数相等",
+          "html": "<p>小可和小加说的都对，实现的积木复杂程度和块数相等</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "小可说的正确，要画成题干中的图形必须要画8个正方形和16个菱形",
+          "html": "<p>小可说的正确，要画成题干中的图形必须要画8个正方形和16个菱形</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "小加说的对，用8个正八边形就能画出图中的图形",
+          "html": "<p>小加说的对，用8个正八边形就能画出图中的图形</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "题干中的图片没有规律可循",
+          "html": "<p>题干中的图片没有规律可循</p>\n"
+        }
+      ],
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>小短使用画笔积木绘制了一个图形，如下图所示。小可说这个图形是由8个正方形和16个菱形组成的，小加说这个图形是由8个正八边形组成的。关于使用程序绘制此图形，小加和小可说法分析合理的是（）。<img src=\"assets/images/nct/daa33f53d2f2.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 5.0,
+      "answer": "B",
+      "content": "角色“星星”初始为隐藏状态，下图为“星星”脚本。运行脚本，下列关于舞台效果描述正确的是（  ）。![img](../assets/images/nct/d3969bb566c4.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "所有星星一直隐藏",
+          "html": "<p>所有星星一直隐藏</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "图中最多可以看到20个星星同时显示",
+          "html": "<p>图中最多可以看到20个星星同时显示</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "所有星星同时隐藏和显示",
+          "html": "<p>所有星星同时隐藏和显示</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "所有星星一直显示",
+          "html": "<p>所有星星一直显示</p>\n"
+        }
+      ],
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>角色“星星”初始为隐藏状态，下图为“星星”脚本。运行脚本，下列关于舞台效果描述正确的是（  ）。<img src=\"assets/images/nct/d3969bb566c4.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 5.0,
+      "answer": "C",
+      "content": "如图所示的脚本，使用列表实现了栈的数据结构，已知列表“栈”初始为空列表。运行脚本后，列表“栈”中的数据是（    ）。![img](../assets/images/nct/1acce75d15b3.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "1,2,3,4",
+          "html": "<p>1,2,3,4</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "4,3,2,1",
+          "html": "<p>4,3,2,1</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "4,2,1",
+          "html": "<p>4,2,1</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "4,3,2",
+          "html": "<p>4,3,2</p>\n"
+        }
+      ],
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>如图所示的脚本，使用列表实现了栈的数据结构，已知列表“栈”初始为空列表。运行脚本后，列表“栈”中的数据是（    ）。<img src=\"assets/images/nct/1acce75d15b3.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 5.0,
+      "answer": "B",
+      "content": "界面设计一般需要遵循以下的原则：（1）色彩搭配合理（2）具有引导性（3）符合操作习惯（4）布局合理，容易操作下列选项中，最合理的搜索界面设计是（     ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "![img](../assets/images/nct/057d69211dd0.png)",
+          "html": "<p><img src=\"assets/images/nct/057d69211dd0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "![img](../assets/images/nct/b7e5128797dd.png)",
+          "html": "<p><img src=\"assets/images/nct/b7e5128797dd.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "![img](../assets/images/nct/8e0b6c3caa45.png)",
+          "html": "<p><img src=\"assets/images/nct/8e0b6c3caa45.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "![img](../assets/images/nct/0febbe5e0bd8.png)",
+          "html": "<p><img src=\"assets/images/nct/0febbe5e0bd8.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>界面设计一般需要遵循以下的原则：（1）色彩搭配合理（2）具有引导性（3）符合操作习惯（4）布局合理，容易操作下列选项中，最合理的搜索界面设计是（     ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 5.0,
+      "answer": "D",
+      "content": "下列两组脚本均可以绘制出下图中的图案，关于两组脚本的对比说法正确的是（    ）。![img](../assets/images/nct/809355dd9c90.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "第二组程序更简化",
+          "html": "<p>第二组程序更简化</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "第一组程序的积木颜色太单调",
+          "html": "<p>第一组程序的积木颜色太单调</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "第二组积木不能使用函数优化",
+          "html": "<p>第二组积木不能使用函数优化</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "第一组积木运用函数功能减少了积木量",
+          "html": "<p>第一组积木运用函数功能减少了积木量</p>\n"
+        }
+      ],
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下列两组脚本均可以绘制出下图中的图案，关于两组脚本的对比说法正确的是（    ）。<img src=\"assets/images/nct/809355dd9c90.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 5.0,
+      "answer": "D",
+      "content": "观察下面流程图，若输入：-5，则输出的值为（   ）。![img](../assets/images/nct/46a78cd60bb8.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "-10",
+          "html": "<p>-10</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "-3",
+          "html": "<p>-3</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "1",
+          "html": "<p>1</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "2",
+          "html": "<p>2</p>\n"
+        }
+      ],
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>观察下面流程图，若输入：-5，则输出的值为（   ）。<img src=\"assets/images/nct/46a78cd60bb8.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 5.0,
+      "answer": "D",
+      "content": "运行下图脚本，新建对话框输出的内容是（    ）。![img](../assets/images/nct/f4bb868dedd2.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "6",
+          "html": "<p>6</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "24",
+          "html": "<p>24</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "120",
+          "html": "<p>120</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "720",
+          "html": "<p>720</p>\n"
+        }
+      ],
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>运行下图脚本，新建对话框输出的内容是（    ）。<img src=\"assets/images/nct/f4bb868dedd2.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "fill",
+      "id": 11,
+      "score": 3.0,
+      "answer": "2",
+      "content": "下图是列表“名单”的初始值。运行图示的脚本，新建对话框输出的是________。![img](../assets/images/nct/7ea9c230ca0e.png)![img](../assets/images/nct/71ef5f48ab30.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "2",
+          "html": "<p>2</p>\n"
+        }
+      ],
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下图是列表“名单”的初始值。运行图示的脚本，新建对话框输出的是________。<img src=\"assets/images/nct/7ea9c230ca0e.png\" alt=\"\" loading=\"lazy\" /><img src=\"assets/images/nct/71ef5f48ab30.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "fill",
+      "id": 12,
+      "score": 3.0,
+      "answer": "628",
+      "content": "运行下图脚本，新建对话框输出的值是_________。\n![img](../assets/images/nct/6c44fc7e40e1.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "628",
+          "html": "<p>628</p>\n"
+        }
+      ],
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>运行下图脚本，新建对话框输出的值是_________。<br />\n<img src=\"assets/images/nct/6c44fc7e40e1.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "fill",
+      "id": 13,
+      "score": 3.0,
+      "answer": "3",
+      "content": "列表1和列表2的初始数据如下图左边所示。运行下图脚本，则新建对话框输出的内容为___________。![img](../assets/images/nct/313373f8793d.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "3",
+          "html": "<p>3</p>\n"
+        }
+      ],
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>列表1和列表2的初始数据如下图左边所示。运行下图脚本，则新建对话框输出的内容为___________。<img src=\"assets/images/nct/313373f8793d.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "program",
+      "id": 14,
+      "score": 13.0,
+      "answer": "",
+      "content": "斐波那契数列，又称黄金分割数列，指的是这样一个数列：0、1、1、2、3、5、8、13、21、34……在数学上，斐波那契数列以如下形式被定义：F(0)=0，F(1)=1，F(2)=1, F(n)=F(n-1)+F(n-2)，简而言之，从第三项开始，每一项的值都等于前两项值的和。根据以下要求完善程序：\n(1)请你根据描述，将角色“雷电猴”中散开的积木正确拼接到“斐波那契数列”函数中；\n(2)角色“查询”脚本中存在错误，请你进行修改以实现“点击查询，输入一个整数后，在查找数列中按顺序显示斐波那契数列的前几项”的功能。![img](../assets/images/nct/a6f6776f51be.png)",
+      "options": [],
+      "uid": "q14",
+      "gradable": false,
+      "html": "<p>斐波那契数列，又称黄金分割数列，指的是这样一个数列：0、1、1、2、3、5、8、13、21、34……在数学上，斐波那契数列以如下形式被定义：F(0)=0，F(1)=1，F(2)=1, F(n)=F(n-1)+F(n-2)，简而言之，从第三项开始，每一项的值都等于前两项值的和。根据以下要求完善程序：<br />\n(1)请你根据描述，将角色“雷电猴”中散开的积木正确拼接到“斐波那契数列”函数中；<br />\n(2)角色“查询”脚本中存在错误，请你进行修改以实现“点击查询，输入一个整数后，在查找数列中按顺序显示斐波那契数列的前几项”的功能。<img src=\"assets/images/nct/a6f6776f51be.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "program",
+      "id": 15,
+      "score": 13.0,
+      "answer": "",
+      "content": "柱状图常用来比较各组数据之间的差别。请你根据以下要求，编写一个程序用以绘制简单的柱状图：\n（1）提示输入数据，并可分5次输入，每次输入一个数据；输入的数据用列表实时显示在舞台区域；\n（2）绘制出有5个数据的柱状图：按照数据输入顺序，从左往右绘制柱子，所有柱子宽度一致，在给定的横轴上均匀分布且颜色各不相同；\n（3）图形无多余线条，且完整显示在舞台区域；图形绘制完毕，画笔隐藏。下图为数据600、200、500、300、200绘制出的例子：![img](../assets/images/nct/73e273da6ab9.png)",
+      "options": [],
+      "uid": "q15",
+      "gradable": false,
+      "html": "<p>柱状图常用来比较各组数据之间的差别。请你根据以下要求，编写一个程序用以绘制简单的柱状图：<br />\n（1）提示输入数据，并可分5次输入，每次输入一个数据；输入的数据用列表实时显示在舞台区域；<br />\n（2）绘制出有5个数据的柱状图：按照数据输入顺序，从左往右绘制柱子，所有柱子宽度一致，在给定的横轴上均匀分布且颜色各不相同；<br />\n（3）图形无多余线条，且完整显示在舞台区域；图形绘制完毕，画笔隐藏。下图为数据600、200、500、300、200绘制出的例子：<img src=\"assets/images/nct/73e273da6ab9.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "program",
+      "id": 16,
+      "score": 15.0,
+      "answer": "",
+      "content": "请你根据要求，使用给定素材设计一个程序。程序要求：\n（1）点击“录入”按钮，提示“输出图书名称”并可以输入；\n（2）输入完毕，询问“请问该图书的类别为：文学  历史”，若选择“文学”，则将图书存储到“文学”列表中；若选择“历史”，则将图书存储到“历史”列表中；\n（3）点击“查询”按钮，提示“输入需要查询的图书名称”，并可输入；\n（4）输入完毕，若图书在“历史”列表，在输出“该图书在历史类书架”；若图书在“文学”列表，在输出“该图书在文学类书架”；否则，输出“该图书不在书架中”。",
+      "options": [],
+      "uid": "q16",
+      "gradable": false,
+      "html": "<p>请你根据要求，使用给定素材设计一个程序。程序要求：<br />\n（1）点击“录入”按钮，提示“输出图书名称”并可以输入；<br />\n（2）输入完毕，询问“请问该图书的类别为：文学  历史”，若选择“文学”，则将图书存储到“文学”列表中；若选择“历史”，则将图书存储到“历史”列表中；<br />\n（3）点击“查询”按钮，提示“输入需要查询的图书名称”，并可输入；<br />\n（4）输入完毕，若图书在“历史”列表，在输出“该图书在历史类书架”；若图书在“文学”列表，在输出“该图书在文学类书架”；否则，输出“该图书不在书架中”。</p>\n"
+    }
+  ],
+  "id": "nct-kitten-3-K3模拟卷2",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/nct-kitten-3-K3模拟卷2",
+  "version": "731bf9c67a672d23",
+  "warnings": [],
+  "objective_score": 59.0
+}

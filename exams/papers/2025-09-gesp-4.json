@@ -1,0 +1,631 @@
+{
+  "title": "2025年9月 GESP C++ 4级",
+  "category": "GESP",
+  "level": "4",
+  "date": "2025-09",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年9月 GESP C++ 4级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$42$",
+          "html": "<p>$42$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$43$",
+          "html": "<p>$43$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "编译错误",
+          "html": "<p>编译错误</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "不确定",
+          "html": "<p>不确定</p>\n"
+        }
+      ],
+      "content": "运行下面程序后变量 $a$ 的值是（ ）。\n\n```cpp\nint a = 42;\nint* p = &a;\n*p = *p + 1;\n```",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>运行下面程序后变量 $a$ 的值是（ ）。</p>\n<pre><code class=\"language-cpp\">int a = 42;\nint* p = &amp;a;\n*p = *p + 1;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "数组名是一个指针常量",
+          "html": "<p>数组名是一个指针常量</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "随机访问数组的元素方便快捷",
+          "html": "<p>随机访问数组的元素方便快捷</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "数组可以像指针一样进行自增操作",
+          "html": "<p>数组可以像指针一样进行自增操作</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`sizeof(arr)` 返回的是整个数组 `arr` 占用的字节数",
+          "html": "<p><code>sizeof(arr)</code> 返回的是整个数组 <code>arr</code> 占用的字节数</p>\n"
+        }
+      ],
+      "content": "以下关于数组的描述中，（ ）是错误的。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>以下关于数组的描述中，（ ）是错误的。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        }
+      ],
+      "content": "给定如下定义的数组 `arr`，则 `*(*(arr + 1) + 2)` 的值是（ ）。\n\n```cpp\nint arr[2][3] = {{1, 2, 3}, {4, 5, 6}};\n```",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>给定如下定义的数组 <code>arr</code>，则 <code>*(*(arr + 1) + 2)</code> 的值是（ ）。</p>\n<pre><code class=\"language-cpp\">int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$3$ $5$",
+          "html": "<p>$3$ $5$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "编译失败：定义处少了默认参数",
+          "html": "<p>编译失败：定义处少了默认参数</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "运行错误",
+          "html": "<p>运行错误</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "链接失败：未定义引用",
+          "html": "<p>链接失败：未定义引用</p>\n"
+        }
+      ],
+      "content": "下面这段代码会输出（ ）。\n\n```cpp\nint add(int a, int b = 1); // 函数声明\nint main() {\n    cout << add(2) << \" \" << add(2, 3);\n    return 0;\n}\nint add(int a, int b) { // 函数定义\n    return a + b;\n}\n```",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>下面这段代码会输出（ ）。</p>\n<pre><code class=\"language-cpp\">int add(int a, int b = 1); // 函数声明\nint main() {\n    cout &lt;&lt; add(2) &lt;&lt; &quot; &quot; &lt;&lt; add(2, 3);\n    return 0;\n}\nint add(int a, int b) { // 函数定义\n    return a + b;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$5$ $5$",
+          "html": "<p>$5$ $5$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$10$ $10$",
+          "html": "<p>$10$ $10$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$5$ $10$",
+          "html": "<p>$5$ $10$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$10$ $5$",
+          "html": "<p>$10$ $5$</p>\n"
+        }
+      ],
+      "content": "下面这段代码会输出（ ）。\n\n```cpp\nint x = 5;\nvoid foo() {\n    int x = 10;\n    cout << x << \" \";\n}\nvoid bar() {\n    cout << x << \" \";\n}\nint main() {\n    foo();\n    bar();\n}\n```",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>下面这段代码会输出（ ）。</p>\n<pre><code class=\"language-cpp\">int x = 5;\nvoid foo() {\n    int x = 10;\n    cout &lt;&lt; x &lt;&lt; &quot; &quot;;\n}\nvoid bar() {\n    cout &lt;&lt; x &lt;&lt; &quot; &quot;;\n}\nint main() {\n    foo();\n    bar();\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$6$ $7$",
+          "html": "<p>$6$ $7$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$6$ $6$",
+          "html": "<p>$6$ $6$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$5$ $6$",
+          "html": "<p>$5$ $6$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$5$ $5$",
+          "html": "<p>$5$ $5$</p>\n"
+        }
+      ],
+      "content": "下面程序运行的结果是（ ）。\n\n```cpp\nvoid increaseA(int x) {\n    x++;\n}\nvoid increaseB(int* p) {\n    (*p)++;\n}\nint main() {\n    int a = 5;\n    increaseA(a);\n    cout << a << \" \";\n    increaseB(&a);\n    cout << a;\n}\n```",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>下面程序运行的结果是（ ）。</p>\n<pre><code class=\"language-cpp\">void increaseA(int x) {\n    x++;\n}\nvoid increaseB(int* p) {\n    (*p)++;\n}\nint main() {\n    int a = 5;\n    increaseA(a);\n    cout &lt;&lt; a &lt;&lt; &quot; &quot;;\n    increaseB(&amp;a);\n    cout &lt;&lt; a;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`Point p = (1,2);`",
+          "html": "<p><code>Point p = (1,2);</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`Point p = {1,2};`",
+          "html": "<p><code>Point p = {1,2};</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`Point p = new {1,2};`",
+          "html": "<p><code>Point p = new {1,2};</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`Point p = <1,2>;`",
+          "html": "<p><code>Point p = &lt;1,2&gt;;</code></p>\n"
+        }
+      ],
+      "content": "关于结构体初始化，以下哪个选项中正确的是（ ）。\n\n```cpp\nstruct Point {int x,y;};\n```",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>关于结构体初始化，以下哪个选项中正确的是（ ）。</p>\n<pre><code class=\"language-cpp\">struct Point {int x,y;};\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mimi 2",
+          "html": "<p>Mimi 2</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "Mimi 3",
+          "html": "<p>Mimi 3</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "kitty 3",
+          "html": "<p>kitty 3</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "kitty 2",
+          "html": "<p>kitty 2</p>\n"
+        }
+      ],
+      "content": "运行如下代码会输出（ ）。\n\n```cpp\nstruct Cat {\n    string name;\n    int age;\n};\nvoid birthday(Cat& c) {\n    c.age++;\n}\nint main() {\n    Cat kitty{\"Mimi\", 2};\n    birthday(kitty);\n    cout << kitty.name << \" \" << kitty.age;\n}\n```",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>运行如下代码会输出（ ）。</p>\n<pre><code class=\"language-cpp\">struct Cat {\n    string name;\n    int age;\n};\nvoid birthday(Cat&amp; c) {\n    c.age++;\n}\nint main() {\n    Cat kitty{&quot;Mimi&quot;, 2};\n    birthday(kitty);\n    cout &lt;&lt; kitty.name &lt;&lt; &quot; &quot; &lt;&lt; kitty.age;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "稳定的排序算法不改变相等元素的相对位置",
+          "html": "<p>稳定的排序算法不改变相等元素的相对位置</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "冒泡排序是稳定的排序算法",
+          "html": "<p>冒泡排序是稳定的排序算法</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "选择排序是稳定的排序算法",
+          "html": "<p>选择排序是稳定的排序算法</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "插入排序是稳定的排序算法",
+          "html": "<p>插入排序是稳定的排序算法</p>\n"
+        }
+      ],
+      "content": "关于排序算法的稳定性，以下说法错误的是（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>关于排序算法的稳定性，以下说法错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nnums[j] < nums[minIndex]\nswap(nums[i], nums[minIndex])\n```",
+          "html": "<pre><code class=\"language-cpp\">nums[j] &lt; nums[minIndex]\nswap(nums[i], nums[minIndex])\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\nnums[j] > nums[minIndex]\nswap(nums[i], nums[minIndex])\n```",
+          "html": "<pre><code class=\"language-cpp\">nums[j] &gt; nums[minIndex]\nswap(nums[i], nums[minIndex])\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\nnums[j] <= nums[minIndex]\nswap(nums[j], nums[minIndex])\n```",
+          "html": "<pre><code class=\"language-cpp\">nums[j] &lt;= nums[minIndex]\nswap(nums[j], nums[minIndex])\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nnums[j] <= nums[minIndex]\nswap(nums[i], nums[j])\n```",
+          "html": "<pre><code class=\"language-cpp\">nums[j] &lt;= nums[minIndex]\nswap(nums[i], nums[j])\n</code></pre>\n"
+        }
+      ],
+      "content": "下面代码试图实现选择排序，使其能对数组 $nums$ 排序为升序，则横线上应分别填写（ ）。\n\n```cpp\nvoid selectionSort(vector<int>& nums) {\n    int n = nums.size();\n    for (int i = 0; i < n - 1; ++i) {\n        int minIndex = i;\n        for (int j = i + 1; j < n; ++j) {\n            if ( __________ ) { // 在此处填入代码\n                minIndex = j;\n            }\n        }\n        ____________________; // 在此处填入代码\n    }\n}\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面代码试图实现选择排序，使其能对数组 $nums$ 排序为升序，则横线上应分别填写（ ）。</p>\n<pre><code class=\"language-cpp\">void selectionSort(vector&lt;int&gt;&amp; nums) {\n    int n = nums.size();\n    for (int i = 0; i &lt; n - 1; ++i) {\n        int minIndex = i;\n        for (int j = i + 1; j &lt; n; ++j) {\n            if ( __________ ) { // 在此处填入代码\n                minIndex = j;\n            }\n        }\n        ____________________; // 在此处填入代码\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\narr[j] > key\narr[j + 1] = key\n```",
+          "html": "<pre><code class=\"language-cpp\">arr[j] &gt; key\narr[j + 1] = key\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\narr[j] < key\narr[j + 1] = key\n```",
+          "html": "<pre><code class=\"language-cpp\">arr[j] &lt; key\narr[j + 1] = key\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\narr[j] > key\narr[j] = key\n```",
+          "html": "<pre><code class=\"language-cpp\">arr[j] &gt; key\narr[j] = key\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\narr[j] < key\narr[j] = key\n```",
+          "html": "<pre><code class=\"language-cpp\">arr[j] &lt; key\narr[j] = key\n</code></pre>\n"
+        }
+      ],
+      "content": "下面程序实现插入排序（升序排序），则横线上应分别填写（ ）。\n\n```cpp\nvoid insertionSort(int arr[], int n) {\n    for (int i = 1; i < n; i++) {\n        int key = arr[i];\n        int j = i - 1;\n        while (j >= 0 && ____________________) { // 在此处填入代码\n            arr[j + 1] = arr[j];\n            j--;\n        }\n        ____________________; // 在此处填入代码\n    }\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面程序实现插入排序（升序排序），则横线上应分别填写（ ）。</p>\n<pre><code class=\"language-cpp\">void insertionSort(int arr[], int n) {\n    for (int i = 1; i &lt; n; i++) {\n        int key = arr[i];\n        int j = i - 1;\n        while (j &gt;= 0 &amp;&amp; ____________________) { // 在此处填入代码\n            arr[j + 1] = arr[j];\n            j--;\n        }\n        ____________________; // 在此处填入代码\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "最好情况和最坏情况的时间复杂度都是 $O(n^2)$",
+          "html": "<p>最好情况和最坏情况的时间复杂度都是 $O(n^2)$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "最好情况是 $O(n)$ ，最坏情况是 $O(n^2)$",
+          "html": "<p>最好情况是 $O(n)$ ，最坏情况是 $O(n^2)$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "最好情况是 $O(n \\log n)$ ，最坏情况是 $O(n^2)$",
+          "html": "<p>最好情况是 $O(n \\log n)$ ，最坏情况是 $O(n^2)$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "最好情况是 $O(n)$ ，最坏情况是 $O(n \\log n)$",
+          "html": "<p>最好情况是 $O(n)$ ，最坏情况是 $O(n \\log n)$</p>\n"
+        }
+      ],
+      "content": "关于插入排序的时间复杂度，下列说法正确的是（ ）。",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>关于插入排序的时间复杂度，下列说法正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nprev2 = prev1;\nprev1 = current;\ncurrent = prev1 + prev2;\n```",
+          "html": "<pre><code class=\"language-cpp\">prev2 = prev1;\nprev1 = current;\ncurrent = prev1 + prev2;\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\ncurrent = prev1 + prev2;\nprev2 = prev1;\nprev1 = current;\n```",
+          "html": "<pre><code class=\"language-cpp\">current = prev1 + prev2;\nprev2 = prev1;\nprev1 = current;\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\ncurrent = prev1 + prev2;\nprev1 = current;\nprev2 = prev1;\n```",
+          "html": "<pre><code class=\"language-cpp\">current = prev1 + prev2;\nprev1 = current;\nprev2 = prev1;\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nprev1 = current;\nprev2 = prev1;\ncurrent = prev1 + prev2;\n```",
+          "html": "<pre><code class=\"language-cpp\">prev1 = current;\nprev2 = prev1;\ncurrent = prev1 + prev2;\n</code></pre>\n"
+        }
+      ],
+      "content": "小杨正在爬楼梯，需要 $n$ 阶才能到达楼顶，每次可以爬 $1$ 阶或 $2$ 阶，求小杨有多少种不同的方法可以爬到楼顶，横线上应填写（ ）。\n\n```cpp\nint climbStairs(int n) {\n    if (n <= 2) return n;\n    int prev2 = 1;\n    int prev1 = 2;\n    int current = 0;\n    for (int i = 3; i <= n; ++i) {\n        ________________ // 在此处填入代码\n    }\n    return current;\n}\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>小杨正在爬楼梯，需要 $n$ 阶才能到达楼顶，每次可以爬 $1$ 阶或 $2$ 阶，求小杨有多少种不同的方法可以爬到楼顶，横线上应填写（ ）。</p>\n<pre><code class=\"language-cpp\">int climbStairs(int n) {\n    if (n &lt;= 2) return n;\n    int prev2 = 1;\n    int prev1 = 2;\n    int current = 0;\n    for (int i = 3; i &lt;= n; ++i) {\n        ________________ // 在此处填入代码\n    }\n    return current;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "假设有一个班级的成绩单，存储在一个长度为 $n$ 的数组 `scores` 中，每个元素是一个学生的分数。老师想要找出所有满足 `scores[i] + scores[j] + scores[k] == 300` 的三元组，其中 $i < j < k$。下面代码实现该功能，请问其时间复杂度是（ ）。\n\n```cpp\nint cnt = 0;\nfor (int i = 0; i < n; i++) {\n    for (int j = i + 1; j < n; j++) {\n        for (int k = j + 1; k < n; k++) {\n            if (scores[i] + scores[j] + scores[k] == 300) {\n                cnt++;\n            }\n        }\n    }\n}\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>假设有一个班级的成绩单，存储在一个长度为 $n$ 的数组 <code>scores</code> 中，每个元素是一个学生的分数。老师想要找出所有满足 <code>scores[i] + scores[j] + scores[k] == 300</code> 的三元组，其中 $i &lt; j &lt; k$。下面代码实现该功能，请问其时间复杂度是（ ）。</p>\n<pre><code class=\"language-cpp\">int cnt = 0;\nfor (int i = 0; i &lt; n; i++) {\n    for (int j = i + 1; j &lt; n; j++) {\n        for (int k = j + 1; k &lt; n; k++) {\n            if (scores[i] + scores[j] + scores[k] == 300) {\n                cnt++;\n            }\n        }\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`try` 块中的代码可能会抛出异常",
+          "html": "<p><code>try</code> 块中的代码可能会抛出异常</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`catch` 块可以有多个，处理不同类型的异常",
+          "html": "<p><code>catch</code> 块可以有多个，处理不同类型的异常</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`throw` 语句用于抛出异常",
+          "html": "<p><code>throw</code> 语句用于抛出异常</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "所有异常都必须被捕获，否则程序会崩溃",
+          "html": "<p>所有异常都必须被捕获，否则程序会崩溃</p>\n"
+        }
+      ],
+      "content": "关于异常处理，以下说法错误的是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>关于异常处理，以下说法错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "以下代码能正确初始化指针。\n\n```cpp\nint a = 5;\nint *p = a;\n```",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>以下代码能正确初始化指针。</p>\n<pre><code class=\"language-cpp\">int a = 5;\nint *p = a;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "执行下面 C++ 代码将输出 $11$。\n\n```cpp\nint x = 10;\nvoid f() {\n    int x = x + 1;\n    cout << x << endl;\n}\nint main() {\n    f();\n}\n```",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>执行下面 C++ 代码将输出 $11$。</p>\n<pre><code class=\"language-cpp\">int x = 10;\nvoid f() {\n    int x = x + 1;\n    cout &lt;&lt; x &lt;&lt; endl;\n}\nint main() {\n    f();\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "以下 C++ 代码合法。\n\n```cpp\nstruct Student {\n    string name;\n    int age;\n    float score;\n};\nStudent* students = new Student[20];\n```",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>以下 C++ 代码合法。</p>\n<pre><code class=\"language-cpp\">struct Student {\n    string name;\n    int age;\n    float score;\n};\nStudent* students = new Student[20];\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "执行下面 C++ 代码将输出 $10$。\n\n```cpp\nvoid func(int* p) {\n    *p = 10;\n}\nint main() {\n    int a = 5;\n    func(&a);\n    cout << a << endl;\n    return 0;\n}\n```",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>执行下面 C++ 代码将输出 $10$。</p>\n<pre><code class=\"language-cpp\">void func(int* p) {\n    *p = 10;\n}\nint main() {\n    int a = 5;\n    func(&amp;a);\n    cout &lt;&lt; a &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "下面代码将二维数组 `arr` 传递给函数 `f`，函数内部用 `arr[i][j]` 访问元素，函数参数声明为 `int arr[][4]` 是错误的。\n\n```cpp\nvoid f(int arr[][4], int rows) {\n    // 访问 arr[i][j]\n}\nint main() {\n    int arr[3][4] = { /* 初始化 */ };\n    f(arr, 3);\n}\n```",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>下面代码将二维数组 <code>arr</code> 传递给函数 <code>f</code>，函数内部用 <code>arr[i][j]</code> 访问元素，函数参数声明为 <code>int arr[][4]</code> 是错误的。</p>\n<pre><code class=\"language-cpp\">void f(int arr[][4], int rows) {\n    // 访问 arr[i][j]\n}\nint main() {\n    int arr[3][4] = { /* 初始化 */ };\n    f(arr, 3);\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "递推是在给定初始条件下，已知前一项（或前几项）求后一项的过程。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>递推是在给定初始条件下，已知前一项（或前几项）求后一项的过程。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "虽然插入排序的时间复杂度为 $O(n^2)$，但由于单元操作相对较少，因此在小数据量的排序任务中非常受欢迎。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>虽然插入排序的时间复杂度为 $O(n^2)$，但由于单元操作相对较少，因此在小数据量的排序任务中非常受欢迎。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "对整数数组 {$4$, $1$, $3$, $1$, $5$, $2$} 进行冒泡排序（将最大元素放到最后），执行一轮之后是 {$4$, $1$, $3$, $1$, $2$, $5$}。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>对整数数组 {$4$, $1$, $3$, $1$, $5$, $2$} 进行冒泡排序（将最大元素放到最后），执行一轮之后是 {$4$, $1$, $3$, $1$, $2$, $5$}。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "以下代码只能捕获 `int` 类型异常。\n\n```cpp\nint main() {\n    try {\n        throw 42;\n    } catch (...) {\n        cout << \"Caught\" << endl;\n    }\n    return 0;\n}\n```",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>以下代码只能捕获 <code>int</code> 类型异常。</p>\n<pre><code class=\"language-cpp\">int main() {\n    try {\n        throw 42;\n    } catch (...) {\n        cout &lt;&lt; &quot;Caught&quot; &lt;&lt; endl;\n    }\n    return 0;\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "以下代码将 Hello 写入文件 data.txt。\n\n```cpp\nofstream file(\"data.txt\");\ncout << \"Hello\" << endl;\nfile.close();\n```",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>以下代码将 Hello 写入文件 data.txt。</p>\n<pre><code class=\"language-cpp\">ofstream file(&quot;data.txt&quot;);\ncout &lt;&lt; &quot;Hello&quot; &lt;&lt; endl;\nfile.close();\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：排兵布阵**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n作为将军，你自然需要合理地排兵布阵。地图可以视为 $n$ 行 $m$ 列的网格，适合排兵的网格以 1 标注，不适合排兵的网格以 0 标注。现在你需要在地图上选择一个矩形区域排兵，这个矩形区域内不能包含不适合排兵的网格。请问可选择的矩形区域最多能包含多少网格？\n\n\n**输入格式**\n\n第一行，两个正整数 $n, m$，分别表示地图网格的行数与列数。\n\n接下来 $n$ 行，每行 $m$ 个整数 $a_{i,1}, a_{i,2}, \\ldots, a_{i,m}$，表示各行中的网格是否适合排兵。\n\n\n**输出格式**\n\n一行，一个整数，表示适合排兵的矩形区域包含的最大网格数。\n\n**样例输入 #1**\n```\n4 3\n0 1 1\n1 0 1\n0 1 1\n1 1 1\n```\n\n**样例输出 #1**\n```\n4\n```\n\n**样例输入 #2**\n```\n3 5\n1 0 1 0 1\n0 1 0 1 0\n0 1 1 1 0\n```\n\n**样例输出 #2**\n```\n3\n```\n\n**说明/提示**\n\n对于所有测试点，保证 $1 \\leq n, m \\leq 12$，$0 \\leq a_{i,j} \\leq 1$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：排兵布阵</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>作为将军，你自然需要合理地排兵布阵。地图可以视为 $n$ 行 $m$ 列的网格，适合排兵的网格以 1 标注，不适合排兵的网格以 0 标注。现在你需要在地图上选择一个矩形区域排兵，这个矩形区域内不能包含不适合排兵的网格。请问可选择的矩形区域最多能包含多少网格？</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，两个正整数 $n, m$，分别表示地图网格的行数与列数。</p>\n<p>接下来 $n$ 行，每行 $m$ 个整数 $a_{i,1}, a_{i,2}, \\ldots, a_{i,m}$，表示各行中的网格是否适合排兵。</p>\n<p><strong>输出格式</strong></p>\n<p>一行，一个整数，表示适合排兵的矩形区域包含的最大网格数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4 3\n0 1 1\n1 0 1\n0 1 1\n1 1 1\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>4\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>3 5\n1 0 1 0 1\n0 1 0 1 0\n0 1 1 1 0\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>3\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于所有测试点，保证 $1 \\leq n, m \\leq 12$，$0 \\leq a_{i,j} \\leq 1$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：最长连续段**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n对于 $k$ 个整数构成的数组 $[b_1, b_2, \\ldots, b_k]$，如果对 $1 \\leq i < k$ 都有 $b_{i+1} = b_i + 1$，那么称数组 $b$ 是一个连续段。\n\n给定由 $n$ 个整数构成的数组 $[a_1, a_2, \\ldots, a_n]$，你可以任意重排数组 $a$ 中元素顺序。请问在重排顺序之后，$a$ 所有是连续段的子数组中，最长的子数组长度是多少？\n\n例如，对于数组 $[1, 0, 2, 4]$，可以将其重排为 $[4, 0, 1, 2]$，有以下 $10$ 个子数组：\n\n$$[4], [0], [1], [2], [4, 0], [0, 1], [1, 2], [4, 0, 1], [0, 1, 2], [4, 0, 1, 2]$$\n\n其中除 $[4, 0], [4, 0, 1], [4, 0, 1, 2]$ 以外的子数组均是连续段，因此是连续段的子数组中，最长子数组长度为 3。\n\n\n**输入格式**\n\n第一行，一个正整数 $n$，表示数组长度。\n\n第二行，$n$ 个整数 $a_1, a_2, \\ldots, a_n$，表示数组中的整数。\n\n\n**输出格式**\n\n一行，一个整数，表示数组 $a$ 重排顺序后，所有是连续段的子数组的最长长度。\n\n**样例输入 #1**\n```\n4\n1 0 2 4\n```\n\n**样例输出 #1**\n```\n3\n```\n\n**样例输入 #2**\n```\n9\n9 9 8 2 4 4 3 5 3\n```\n\n**样例输出 #2**\n```\n4\n```\n\n**说明/提示**\n\n对于 $40\\%$ 的测试点，保证 $1 \\leq n \\leq 8$。\n\n对于所有测试点，保证 $1 \\leq n \\leq 10^5$，$-10^9 \\leq a_i \\leq 10^9$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：最长连续段</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>对于 $k$ 个整数构成的数组 $[b_1, b_2, \\ldots, b_k]$，如果对 $1 \\leq i &lt; k$ 都有 $b_{i+1} = b_i + 1$，那么称数组 $b$ 是一个连续段。</p>\n<p>给定由 $n$ 个整数构成的数组 $[a_1, a_2, \\ldots, a_n]$，你可以任意重排数组 $a$ 中元素顺序。请问在重排顺序之后，$a$ 所有是连续段的子数组中，最长的子数组长度是多少？</p>\n<p>例如，对于数组 $[1, 0, 2, 4]$，可以将其重排为 $[4, 0, 1, 2]$，有以下 $10$ 个子数组：</p>\n<p>$$[4], [0], [1], [2], [4, 0], [0, 1], [1, 2], [4, 0, 1], [0, 1, 2], [4, 0, 1, 2]$$</p>\n<p>其中除 $[4, 0], [4, 0, 1], [4, 0, 1, 2]$ 以外的子数组均是连续段，因此是连续段的子数组中，最长子数组长度为 3。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，一个正整数 $n$，表示数组长度。</p>\n<p>第二行，$n$ 个整数 $a_1, a_2, \\ldots, a_n$，表示数组中的整数。</p>\n<p><strong>输出格式</strong></p>\n<p>一行，一个整数，表示数组 $a$ 重排顺序后，所有是连续段的子数组的最长长度。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4\n1 0 2 4\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>3\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>9\n9 9 8 2 4 4 3 5 3\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>4\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $40\\%$ 的测试点，保证 $1 \\leq n \\leq 8$。</p>\n<p>对于所有测试点，保证 $1 \\leq n \\leq 10^5$，$-10^9 \\leq a_i \\leq 10^9$。</p>\n"
+    }
+  ],
+  "id": "2025-09-gesp-4",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-09-gesp-4",
+  "version": "791ab0b51a1a3277",
+  "warnings": [],
+  "objective_score": 50.0
+}

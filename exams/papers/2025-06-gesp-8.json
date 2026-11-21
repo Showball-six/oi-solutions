@@ -1,0 +1,631 @@
+{
+  "title": "2025年6月 GESP C++ 8级",
+  "category": "GESP",
+  "level": "8",
+  "date": "2025-06",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年6月 GESP C++ 8级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$720$",
+          "html": "<p>$720$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$90$",
+          "html": "<p>$90$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$48$",
+          "html": "<p>$48$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$15$",
+          "html": "<p>$15$</p>\n"
+        }
+      ],
+      "content": "一间的机房要安排 $6$ 名同学进行上机考试，座位共 $2$ 行 $3$ 列。考虑到在座位上很容易看到同一行的左右两侧的屏幕，安排中间一列的同学做 A 卷，左右两列的同学做 B 卷。请问共有多少种排座位的方案？（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>一间的机房要安排 $6$ 名同学进行上机考试，座位共 $2$ 行 $3$ 列。考虑到在座位上很容易看到同一行的左右两侧的屏幕，安排中间一列的同学做 A 卷，左右两列的同学做 B 卷。请问共有多少种排座位的方案？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$720$",
+          "html": "<p>$720$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$72$",
+          "html": "<p>$72$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$36$",
+          "html": "<p>$36$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        }
+      ],
+      "content": "⼜到了毕业季，学长学姐们都在开心地拍毕业照。现在有 $3$ 位学长、$3$ 位学姐希望排成一排拍照，要求男生不相邻、⼥生不相邻。请问共有多少种拍照方案？（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>⼜到了毕业季，学长学姐们都在开心地拍毕业照。现在有 $3$ 位学长、$3$ 位学姐希望排成一排拍照，要求男生不相邻、⼥生不相邻。请问共有多少种拍照方案？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "通过语句 `const int x = 5;` 定义了一个对象 $x$ 。",
+          "html": "<p>通过语句 <code>const int x = 5;</code> 定义了一个对象 $x$ 。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "通过语句 `std::string t = \"12345\";` 定义了一个对象 $t$ 。",
+          "html": "<p>通过语句 <code>std::string t = &quot;12345&quot;;</code> 定义了一个对象 $t$ 。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "通过语句 `void (*fp)() = NULL;` 定义了一个对象 $fp$ 。",
+          "html": "<p>通过语句 <code>void (*fp)() = NULL;</code> 定义了一个对象 $fp$ 。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "通过语句 `class MyClass;` 定义了一个类 `MyClass` 。",
+          "html": "<p>通过语句 <code>class MyClass;</code> 定义了一个类 <code>MyClass</code> 。</p>\n"
+        }
+      ],
+      "content": "下列关于 C++ 类和对象的说法，错误的是（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下列关于 C++ 类和对象的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "一个无向连通图，一定有生成树。",
+          "html": "<p>一个无向连通图，一定有生成树。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$n$ 个顶点的无向图，其生成树要么不存在，要么一定包含 $n-1$ 条边。",
+          "html": "<p>$n$ 个顶点的无向图，其生成树要么不存在，要么一定包含 $n-1$ 条边。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$n$ 个顶点、$m$ 条边的无向图，不可能有多颗生成树。",
+          "html": "<p>$n$ 个顶点、$m$ 条边的无向图，不可能有多颗生成树。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$n$ 个顶点、$n-1$ 条边的无向图，它本身就是自己的生成树。",
+          "html": "<p>$n$ 个顶点、$n-1$ 条边的无向图，它本身就是自己的生成树。</p>\n"
+        }
+      ],
+      "content": "关于生成树的说法，错误的是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>关于生成树的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "一对夫妻生男生女的概率相同。这对夫妻希望儿女双全。请问这对夫妻生下两个孩子时，实现儿女双全的概率是多少？（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>一对夫妻生男生女的概率相同。这对夫妻希望儿女双全。请问这对夫妻生下两个孩子时，实现儿女双全的概率是多少？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`4 * b - a * a < 0`",
+          "html": "<p><code>4 * b - a * a &lt; 0</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`4 * b <= a * a`",
+          "html": "<p><code>4 * b &lt;= a * a</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`a * a - 4 * b`",
+          "html": "<p><code>a * a - 4 * b</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`b * 4 - a * a`",
+          "html": "<p><code>b * 4 - a * a</code></p>\n"
+        }
+      ],
+      "content": "已定义变量 `double a, b;`，下列哪个表达式可以用来判断一元二次方程是否有实根？（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>已定义变量 <code>double a, b;</code>，下列哪个表达式可以用来判断一元二次方程是否有实根？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "个结点的二叉树，执行广度优先搜索的平均时间复杂度是（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>个结点的二叉树，执行广度优先搜索的平均时间复杂度是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "动态规划方法通常能够列出递推公式。",
+          "html": "<p>动态规划方法通常能够列出递推公式。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "动态规划方法的时间复杂度通常为状态的个数。",
+          "html": "<p>动态规划方法的时间复杂度通常为状态的个数。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "动态规划方法有递推和递归两种实现形式。",
+          "html": "<p>动态规划方法有递推和递归两种实现形式。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "对很多问题，递推实现和递归实现动态规划方法的时间复杂度相当。",
+          "html": "<p>对很多问题，递推实现和递归实现动态规划方法的时间复杂度相当。</p>\n"
+        }
+      ],
+      "content": "以下关于动态规划的说法中，错误的是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>以下关于动态规划的说法中，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面的 `sum_digit` 函数试图求出从 $1$ 到 $n$（包含 $1$ 和 $n$）的数中，包含数字 $d$ 的个数。该函数的时间复杂度为（ ）。\n\n```cpp\n#include <string>\nint count_digit(int n, char d) {\n    int cnt = 0;\n    std::string s = std::to_string(n);\n    for (int i = 0; i < s.length(); i++)\n        if (s[i] == d)\n            cnt++;\n    return cnt;\n}\nint sum_digit(int n, char d) {\n    int sum = 0;\n    for (int i = 1; i <= n; i++)\n        sum += count_digit(i, d);\n    return sum;\n}\n```",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>下面的 <code>sum_digit</code> 函数试图求出从 $1$ 到 $n$（包含 $1$ 和 $n$）的数中，包含数字 $d$ 的个数。该函数的时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;string&gt;\nint count_digit(int n, char d) {\n    int cnt = 0;\n    std::string s = std::to_string(n);\n    for (int i = 0; i &lt; s.length(); i++)\n        if (s[i] == d)\n            cnt++;\n    return cnt;\n}\nint sum_digit(int n, char d) {\n    int sum = 0;\n    for (int i = 1; i &lt;= n; i++)\n        sum += count_digit(i, d);\n    return sum;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$60$",
+          "html": "<p>$60$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$20$",
+          "html": "<p>$20$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$15$",
+          "html": "<p>$15$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        }
+      ],
+      "content": "下面程序的输出为（ ）。\n\n```cpp\n#include <iostream>\nconst int N = 10;\nint ch[N][N][N];\nint main() {\n    for (int x = 0; x < N; x++)\n        for (int y = 0; y < N; y++)\n            for (int z = 0; z < N; z++)\n                if (x == 0 && y == 0 && z == 0)\n                    ch[x][y][z] = 1;\n                else {\n                    if (x > 0)\n                        ch[x][y][z] += ch[x - 1][y][z];\n                    if (y > 0)\n                        ch[x][y][z] += ch[x][y - 1][z];\n                    if (z > 0)\n                        ch[x][y][z] += ch[x][y][z - 1];\n                }\n    std::cout << ch[1][2][3] << std::endl;\n    return 0;\n}\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面程序的输出为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nconst int N = 10;\nint ch[N][N][N];\nint main() {\n    for (int x = 0; x &lt; N; x++)\n        for (int y = 0; y &lt; N; y++)\n            for (int z = 0; z &lt; N; z++)\n                if (x == 0 &amp;&amp; y == 0 &amp;&amp; z == 0)\n                    ch[x][y][z] = 1;\n                else {\n                    if (x &gt; 0)\n                        ch[x][y][z] += ch[x - 1][y][z];\n                    if (y &gt; 0)\n                        ch[x][y][z] += ch[x][y - 1][z];\n                    if (z &gt; 0)\n                        ch[x][y][z] += ch[x][y][z - 1];\n                }\n    std::cout &lt;&lt; ch[1][2][3] &lt;&lt; std::endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面 `count_triple` 函数的时间复杂度为( )。\n\n```cpp\nint gcd(int a, int b) {\n    if (a == 0)\n        return b;\n    return gcd(b % a, a);\n}\nint count_triple(int n) {\n    int cnt = 0;\n    for (int v = 1; v * v * 4 <= n; v++)\n        for (int u = v + 1; u * (u + v) * 2 <= n; u += 2)\n            if (gcd(u, v) == 1) {\n                int a = u * u - v * v;\n                int b = u * v * 2;\n                int c = u * u + v * v;\n                cnt += n / (a + b + c);\n            }\n    return cnt;\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面 <code>count_triple</code> 函数的时间复杂度为( )。</p>\n<pre><code class=\"language-cpp\">int gcd(int a, int b) {\n    if (a == 0)\n        return b;\n    return gcd(b % a, a);\n}\nint count_triple(int n) {\n    int cnt = 0;\n    for (int v = 1; v * v * 4 &lt;= n; v++)\n        for (int u = v + 1; u * (u + v) * 2 &lt;= n; u += 2)\n            if (gcd(u, v) == 1) {\n                int a = u * u - v * v;\n                int b = u * v * 2;\n                int c = u * u + v * v;\n                cnt += n / (a + b + c);\n            }\n    return cnt;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nswap(a[l], a[i])\ni\n```",
+          "html": "<pre><code class=\"language-cpp\">swap(a[l], a[i])\ni\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\nswap(a[l], a[j])\ni\n```",
+          "html": "<pre><code class=\"language-cpp\">swap(a[l], a[j])\ni\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\nswap(a[l], a[i])\nj\n```",
+          "html": "<pre><code class=\"language-cpp\">swap(a[l], a[i])\nj\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nswap(a[l], a[j])\nj\n```",
+          "html": "<pre><code class=\"language-cpp\">swap(a[l], a[j])\nj\n</code></pre>\n"
+        }
+      ],
+      "content": "下面 `quick_sort` 函数试图实现快速排序算法，两处横线处分别应该填入的是（ ）。\n\n```cpp\nvoid swap(int & a, int & b) {\n    int temp = a; a = b; b = temp;\n}\nint partition(int a[], int l, int r) {\n    int pivot = a[l], i = l + 1, j = r;\n    while (i <= j) {\n        while (i <= j && a[j] >= pivot)\n            j--;\n        while (i <= j && a[i] <= pivot)\n            i++;\n        if (i < j)\n            swap(a[i], a[j]);\n    }\n    ________; // 在此处填入选项\n    return ________; // 在此处填入选项\n}\nvoid quick_sort(int a[], int l, int r) {\n    if (l < r) {\n        int pivot = partition(a, l, r);\n        quick_sort(a, l, pivot - 1);\n        quick_sort(a, pivot + 1, r);\n    }\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下面 <code>quick_sort</code> 函数试图实现快速排序算法，两处横线处分别应该填入的是（ ）。</p>\n<pre><code class=\"language-cpp\">void swap(int &amp; a, int &amp; b) {\n    int temp = a; a = b; b = temp;\n}\nint partition(int a[], int l, int r) {\n    int pivot = a[l], i = l + 1, j = r;\n    while (i &lt;= j) {\n        while (i &lt;= j &amp;&amp; a[j] &gt;= pivot)\n            j--;\n        while (i &lt;= j &amp;&amp; a[i] &lt;= pivot)\n            i++;\n        if (i &lt; j)\n            swap(a[i], a[j]);\n    }\n    ________; // 在此处填入选项\n    return ________; // 在此处填入选项\n}\nvoid quick_sort(int a[], int l, int r) {\n    if (l &lt; r) {\n        int pivot = partition(a, l, r);\n        quick_sort(a, l, pivot - 1);\n        quick_sort(a, pivot + 1, r);\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`dp[j] = max(dp[j] + 1, dp[i])`",
+          "html": "<p><code>dp[j] = max(dp[j] + 1, dp[i])</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`dp[j] = max(dp[j], dp[i] + 1)`",
+          "html": "<p><code>dp[j] = max(dp[j], dp[i] + 1)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`dp[i] = max(dp[i] + 1, dp[j])`",
+          "html": "<p><code>dp[i] = max(dp[i] + 1, dp[j])</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`dp[i] = max(dp[i], dp[j] + 1)`",
+          "html": "<p><code>dp[i] = max(dp[i], dp[j] + 1)</code></p>\n"
+        }
+      ],
+      "content": "下面 LIS 函数试图求出最长上升子序列的长度，横线处应该填入的是（ ）。\n\n```cpp\nint max(int a, int b) {\n    return (a > b) ? a : b;\n}\nint LIS(vector<int> & nums) {\n    int n = nums.size();\n    if (n == 0)\n        return 0;\n    vector<int> dp(n, 1);\n    int maxLen = 1;\n    for (int i = 1; i < n; i++) {\n        for (int j = 0; j < i; j++)\n            if (nums[j] < nums[i])\n                ________; // 在此处填入选项\n        maxLen = max(maxLen, dp[i]);\n    }\n    return maxLen;\n}\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>下面 LIS 函数试图求出最长上升子序列的长度，横线处应该填入的是（ ）。</p>\n<pre><code class=\"language-cpp\">int max(int a, int b) {\n    return (a &gt; b) ? a : b;\n}\nint LIS(vector&lt;int&gt; &amp; nums) {\n    int n = nums.size();\n    if (n == 0)\n        return 0;\n    vector&lt;int&gt; dp(n, 1);\n    int maxLen = 1;\n    for (int i = 1; i &lt; n; i++) {\n        for (int j = 0; j &lt; i; j++)\n            if (nums[j] &lt; nums[i])\n                ________; // 在此处填入选项\n        maxLen = max(maxLen, dp[i]);\n    }\n    return maxLen;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面 `LIS` 函数试图求出最长上升子序列的长度，其时间复杂度为（ ）。\n\n```cpp\n#define INT_MIN (-1000)\nint LIS(vector<int> & nums) {\n    int n = nums.size();\n    vector<int> tail;\n    tail.push_back(INT_MIN);\n    for (int i = 0; i < n; i++) {\n        int x = nums[i], l = 0, r = tail.size();\n        while (l < r) {\n            int mid = (l + r) / 2;\n            if (tail[mid] < x)\n                l = mid + 1;\n            else\n                r = mid;\n        }\n        if (r == tail.size())\n            tail.push_back(x);\n        else\n            tail[r] = x;\n    }\n    return tail.size() - 1;\n}\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>下面 <code>LIS</code> 函数试图求出最长上升子序列的长度，其时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">#define INT_MIN (-1000)\nint LIS(vector&lt;int&gt; &amp; nums) {\n    int n = nums.size();\n    vector&lt;int&gt; tail;\n    tail.push_back(INT_MIN);\n    for (int i = 0; i &lt; n; i++) {\n        int x = nums[i], l = 0, r = tail.size();\n        while (l &lt; r) {\n            int mid = (l + r) / 2;\n            if (tail[mid] &lt; x)\n                l = mid + 1;\n            else\n                r = mid;\n        }\n        if (r == tail.size())\n            tail.push_back(x);\n        else\n            tail[r] = x;\n    }\n    return tail.size() - 1;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$9$",
+          "html": "<p>$9$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$11$",
+          "html": "<p>$11$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面的程序使用邻接矩阵表达的带权无向图，则从顶点 $0$ 到顶点 $3$ 的最短距离为（ ）。\n\n```cpp\nint weight[4][4] = {\n    { 0, 5, 8, 10},\n    { 5, 0, 1, 7},\n    { 8, 1, 0, 3},\n    {10, 7, 3, 0}};\n```",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>下面的程序使用邻接矩阵表达的带权无向图，则从顶点 $0$ 到顶点 $3$ 的最短距离为（ ）。</p>\n<pre><code class=\"language-cpp\">int weight[4][4] = {\n    { 0, 5, 8, 10},\n    { 5, 0, 1, 7},\n    { 8, 1, 0, 3},\n    {10, 7, 3, 0}};\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "C++ 语言中，表达式 `9 | 12` 的结果类型为 `int`、值为 $13$。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>C++ 语言中，表达式 <code>9 | 12</code> 的结果类型为 <code>int</code>、值为 $13$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 语言中，访问数据发生下标越界时，总是会产生运行时错误，从而使程序异常退出。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>C++ 语言中，访问数据发生下标越界时，总是会产生运行时错误，从而使程序异常退出。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "对 $n$ 个元素的数组进行归并排序，最差情况的时间复杂度为 $O(n \\log n)$。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>对 $n$ 个元素的数组进行归并排序，最差情况的时间复杂度为 $O(n \\log n)$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "$5$ 个相同的红球和 $4$ 个相同的蓝球排成一排，要求每个蓝球的两侧都必须至少有一个红球，则一共有 $15$ 种排列方案。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>$5$ 个相同的红球和 $4$ 个相同的蓝球排成一排，要求每个蓝球的两侧都必须至少有一个红球，则一共有 $15$ 种排列方案。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "使用 `math.h` 或 `cmath` 头文件中的函数，表达式 `log(8)` 的结果类型为 `double`、值约为 $3$。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>使用 <code>math.h</code> 或 <code>cmath</code> 头文件中的函数，表达式 <code>log(8)</code> 的结果类型为 <code>double</code>、值约为 $3$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 是一种面向对象编程语言，C 则不是。继承是面向对象三大特性之一，因此，使用 C 语言无法实现继承。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>C++ 是一种面向对象编程语言，C 则不是。继承是面向对象三大特性之一，因此，使用 C 语言无法实现继承。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "$n$ 个顶点的无向完全图，有 $n^{n-2}$ 棵生成树。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>$n$ 个顶点的无向完全图，有 $n^{n-2}$ 棵生成树。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "已知三个 `double` 类型的变量 $a$ 、 $b$ 和 $\\text{theta}$ 分别表示一个三角形的两条边长及二者的夹角（弧度），则三角形的周长可以通过表达式 $\\sqrt{a \\times a + b \\times b - 2 \\times a \\times b \\times \\cos(\\text{theta})}$ 求得。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>已知三个 <code>double</code> 类型的变量 $a$ 、 $b$ 和 $\\text{theta}$ 分别表示一个三角形的两条边长及二者的夹角（弧度），则三角形的周长可以通过表达式 $\\sqrt{a \\times a + b \\times b - 2 \\times a \\times b \\times \\cos(\\text{theta})}$ 求得。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "有 $n$ 个顶点、 $m$ 条边的图的深度优先搜索遍历时间复杂度为 $O(n + m)$ 。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>有 $n$ 个顶点、 $m$ 条边的图的深度优先搜索遍历时间复杂度为 $O(n + m)$ 。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "从 $32$ 名学生中选出 $4$ 人分别担任班长、副班长、学习委员和组织委员，老师要求班级综合成绩排名最后的 $4$ 名学生不得参选班长或学习委员（仍可以参选副班长和组织委员），则共有 种不同的选法。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>从 $32$ 名学生中选出 $4$ 人分别担任班长、副班长、学习委员和组织委员，老师要求班级综合成绩排名最后的 $4$ 名学生不得参选班长或学习委员（仍可以参选副班长和组织委员），则共有 种不同的选法。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：树上旅行**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n\n\n给定一棵有 $ n $ 个结点的 **有根树**，结点依次以 $1,2,\\dots,n$ 编号，其中根结点的编号为 $1$。\n\n小 A 计划在这棵有根树上进行 $q$ 次旅行。在第 $i$ 次旅行中，小 A 首先选定结点 $s_i$ 作为起点，并移动若干次。移动分为以下两种：\n\n1. 移动至当前结点的父结点。特殊地，如果当前位于根结点，则不进行移动。\n2. 移动至当前结点的所有子结点中**编号最小**的结点。特殊地，如果当前位于叶子结点，则不进行移动。\n\n由于移动次数可能很大，对于第 $i$ 次旅行，旅行中的移动以 $k_i$ 个不为零的整数构成的序列 $a_{i,1}, a_{i,2}, \\dots, a_{i,k_i}$ 表示。对 $a_{i,j}$，若 $a_{i,j} > 0$ 则代表进行 $a_{i,j}$ 次第一种移动；若 $a_{i,j} < 0$ 则代表进行 $-a_{i,j}$ 次第二种移动。根据给出的序列从左至右完成所有移动后，小 A 所在的结点即是旅行的**终点**。\n\n给定每次旅行的起点与移动序列，请你求出旅行终点的结点编号。\n\n\n**输入格式**\n\n\n\n第一行，两个正整数 $n, q$，分别表示有根树的结点数量，以及旅行次数。\n\n第二行，$n-1$ 个整数 $p_2, p_3, \\dots, p_n$，其中 $p_i$ 表示结点 $i$ 的父结点编号。\n\n接下来 $2q$ 行中的第 $2i-1$ 行（$1 \\leq i \\leq q$）包含两个正整数 $s_i, k_i$，分别表示第 $i$ 次旅行的起点编号，以及移动序列的长度。第 $2i$ 行包含 $k_i$ 个整数 $a_{i,1}, a_{i,2}, \\dots, a_{i,k_i}$，表示移动序列。\n\n**输出格式**\n\n\n输出共 $q$ 行，第 $i$ 行包含一个整数，表示第 $i$ 次旅行终点的结点编号。\n\n**样例输入 #1**\n```\n5 4\n1 1 2 2\n3 3\n1 -1 -1\n2 5\n1 -1 1 -1 1\n5 8\n1 1 1 -1 -1 -1 -1 -1\n5 3\n-1 -1 1\n```\n\n**样例输出 #1**\n```\n4\n1\n4\n2\n```\n\n**样例输入 #2**\n```\n8 3\n5 4 2 1 3 6 6\n8 1\n8\n8 2\n8 -8\n8 3\n8 -8 8\n```\n\n**样例输出 #2**\n```\n1\n7\n1\n```\n\n**说明/提示**\n\n\n\n| 子任务编号 | 测试点占比 | $n$ | $q$ | $\\sum k_i$ | 特殊性质 |\n|:-:|:-:|:-:|:-:|:-:|:-:|\n| $1$          | $20\\%$         | $\\leq 100$ | $\\leq 100$ | $\\leq 1000$ | 保证 $a_{i,j}$ 为 $1$ 或 $-1$ |\n| $2$          | $20\\%$         | $\\leq 10^4$ | $\\leq 10^4$ | $\\leq 4 \\times 10^4$ | 仅包含第一种移动 |\n| $3$          | $20\\%$         | $\\leq 10^4$ | $\\leq 10^4$ | $\\leq 4 \\times 10^4$ | 仅包含第二种移动 |\n| $4$          | $40\\%$         | $\\leq 10^5$ | $\\leq 2 \\times 10^4$ | $\\leq 10^5$ | - |\n\n对于所有测试点，保证：\n\n- $1 \\leq n \\leq 10^5$\n- $1 \\leq q \\leq 2 \\times 10^4$\n- $1 \\leq p_i \\leq n$\n- $1 \\leq s_i \\leq n$\n- $k_i \\geq 1$ 且 $\\sum k_i \\leq 10^5$\n- $1 \\leq |a_{i,j}| \\leq n$",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：树上旅行</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>给定一棵有 $ n $ 个结点的 <strong>有根树</strong>，结点依次以 $1,2,\\dots,n$ 编号，其中根结点的编号为 $1$。</p>\n<p>小 A 计划在这棵有根树上进行 $q$ 次旅行。在第 $i$ 次旅行中，小 A 首先选定结点 $s_i$ 作为起点，并移动若干次。移动分为以下两种：</p>\n<ol>\n<li>移动至当前结点的父结点。特殊地，如果当前位于根结点，则不进行移动。</li>\n<li>移动至当前结点的所有子结点中<strong>编号最小</strong>的结点。特殊地，如果当前位于叶子结点，则不进行移动。</li>\n</ol>\n<p>由于移动次数可能很大，对于第 $i$ 次旅行，旅行中的移动以 $k_i$ 个不为零的整数构成的序列 $a_{i,1}, a_{i,2}, \\dots, a_{i,k_i}$ 表示。对 $a_{i,j}$，若 $a_{i,j} &gt; 0$ 则代表进行 $a_{i,j}$ 次第一种移动；若 $a_{i,j} &lt; 0$ 则代表进行 $-a_{i,j}$ 次第二种移动。根据给出的序列从左至右完成所有移动后，小 A 所在的结点即是旅行的<strong>终点</strong>。</p>\n<p>给定每次旅行的起点与移动序列，请你求出旅行终点的结点编号。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，两个正整数 $n, q$，分别表示有根树的结点数量，以及旅行次数。</p>\n<p>第二行，$n-1$ 个整数 $p_2, p_3, \\dots, p_n$，其中 $p_i$ 表示结点 $i$ 的父结点编号。</p>\n<p>接下来 $2q$ 行中的第 $2i-1$ 行（$1 \\leq i \\leq q$）包含两个正整数 $s_i, k_i$，分别表示第 $i$ 次旅行的起点编号，以及移动序列的长度。第 $2i$ 行包含 $k_i$ 个整数 $a_{i,1}, a_{i,2}, \\dots, a_{i,k_i}$，表示移动序列。</p>\n<p><strong>输出格式</strong></p>\n<p>输出共 $q$ 行，第 $i$ 行包含一个整数，表示第 $i$ 次旅行终点的结点编号。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5 4\n1 1 2 2\n3 3\n1 -1 -1\n2 5\n1 -1 1 -1 1\n5 8\n1 1 1 -1 -1 -1 -1 -1\n5 3\n-1 -1 1\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>4\n1\n4\n2\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>8 3\n5 4 2 1 3 6 6\n8 1\n8\n8 2\n8 -8\n8 3\n8 -8 8\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>1\n7\n1\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\">子任务编号</th>\n<th style=\"text-align:center\">测试点占比</th>\n<th style=\"text-align:center\">$n$</th>\n<th style=\"text-align:center\">$q$</th>\n<th style=\"text-align:center\">$\\sum k_i$</th>\n<th style=\"text-align:center\">特殊性质</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">$1$</td>\n<td style=\"text-align:center\">$20\\%$</td>\n<td style=\"text-align:center\">$\\leq 100$</td>\n<td style=\"text-align:center\">$\\leq 100$</td>\n<td style=\"text-align:center\">$\\leq 1000$</td>\n<td style=\"text-align:center\">保证 $a_{i,j}$ 为 $1$ 或 $-1$</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$2$</td>\n<td style=\"text-align:center\">$20\\%$</td>\n<td style=\"text-align:center\">$\\leq 10^4$</td>\n<td style=\"text-align:center\">$\\leq 10^4$</td>\n<td style=\"text-align:center\">$\\leq 4 \\times 10^4$</td>\n<td style=\"text-align:center\">仅包含第一种移动</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$3$</td>\n<td style=\"text-align:center\">$20\\%$</td>\n<td style=\"text-align:center\">$\\leq 10^4$</td>\n<td style=\"text-align:center\">$\\leq 10^4$</td>\n<td style=\"text-align:center\">$\\leq 4 \\times 10^4$</td>\n<td style=\"text-align:center\">仅包含第二种移动</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$4$</td>\n<td style=\"text-align:center\">$40\\%$</td>\n<td style=\"text-align:center\">$\\leq 10^5$</td>\n<td style=\"text-align:center\">$\\leq 2 \\times 10^4$</td>\n<td style=\"text-align:center\">$\\leq 10^5$</td>\n<td style=\"text-align:center\">-</td>\n</tr>\n</tbody>\n</table>\n<p>对于所有测试点，保证：</p>\n<ul>\n<li>$1 \\leq n \\leq 10^5$</li>\n<li>$1 \\leq q \\leq 2 \\times 10^4$</li>\n<li>$1 \\leq p_i \\leq n$</li>\n<li>$1 \\leq s_i \\leq n$</li>\n<li>$k_i \\geq 1$ 且 $\\sum k_i \\leq 10^5$</li>\n<li>$1 \\leq |a_{i,j}| \\leq n$</li>\n</ul>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：遍历计数**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n给定一棵有 $n$ 个结点的树 $T$，结点依次以 $1,2,\\dots,n$ 标号。树 $T$ 的深度优先遍历序可由以下过程得到：\n\n1. 选定深度优先遍历的起点 $s$（$1 \\leq s \\leq n$），当前位置结点即是起点。\n2. 若当前结点存在未被遍历的相邻结点 $u$ 则遍历 $u$，也即令当前位置结点为 $u$ 并重复这一步；否则回溯。\n3. 按照遍历结点的顺序依次写下结点编号，即可得到一组深度优先遍历序。\n\n第一步中起点的选择是任意的，并且第二步中遍历相邻结点的顺序也是任意的，因此对于同一棵树 $T$ 可能有多组不同的深度优先遍历序。请你求出树 $T$ 有多少组不同的深度优先遍历序。由于答案可能很大，你只需要求出答案对 $10^9$ 取模之后的结果。\n\n**输入格式**\n\n第一行，一个整数 $n$，表示树 $T$ 的结点数。\n\n接下来 $n-1$ 行，每行两个正整数 $u_i, v_i$，表示树 $T$ 中的一条连接结点 $u_i, v_i$ 的边。\n\n**输出格式**\n\n输出一行，一个整数，表示树 $T$ 的不同的深度优先遍历序数量对 $10^9$ 取模的结果。\n\n**样例输入 #1**\n```\n4\n1 2\n2 3\n3 4\n```\n\n**样例输出 #1**\n```\n6\n```\n\n**样例输入 #2**\n```\n8\n1 2\n1 3\n1 4\n2 5\n2 6\n3 7\n3 8\n```\n\n**样例输出 #2**\n```\n112\n```\n\n**说明/提示**\n\n对于 $40\\%$ 的测试点，保证 $1 \\leq n \\leq 8$。\n\n对于另外 $20\\%$ 的测试点，保证给定的树是一条链。\n\n对于所有测试点，保证 $1 \\leq n \\leq 10^5$。\n\n在洛谷上，只有通过了 Subtask0、Subtask1 和 Subtask2 后，才能获得第三个 Subtask 的分数。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：遍历计数</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>给定一棵有 $n$ 个结点的树 $T$，结点依次以 $1,2,\\dots,n$ 标号。树 $T$ 的深度优先遍历序可由以下过程得到：</p>\n<ol>\n<li>选定深度优先遍历的起点 $s$（$1 \\leq s \\leq n$），当前位置结点即是起点。</li>\n<li>若当前结点存在未被遍历的相邻结点 $u$ 则遍历 $u$，也即令当前位置结点为 $u$ 并重复这一步；否则回溯。</li>\n<li>按照遍历结点的顺序依次写下结点编号，即可得到一组深度优先遍历序。</li>\n</ol>\n<p>第一步中起点的选择是任意的，并且第二步中遍历相邻结点的顺序也是任意的，因此对于同一棵树 $T$ 可能有多组不同的深度优先遍历序。请你求出树 $T$ 有多少组不同的深度优先遍历序。由于答案可能很大，你只需要求出答案对 $10^9$ 取模之后的结果。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，一个整数 $n$，表示树 $T$ 的结点数。</p>\n<p>接下来 $n-1$ 行，每行两个正整数 $u_i, v_i$，表示树 $T$ 中的一条连接结点 $u_i, v_i$ 的边。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，一个整数，表示树 $T$ 的不同的深度优先遍历序数量对 $10^9$ 取模的结果。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4\n1 2\n2 3\n3 4\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>6\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>8\n1 2\n1 3\n1 4\n2 5\n2 6\n3 7\n3 8\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>112\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $40\\%$ 的测试点，保证 $1 \\leq n \\leq 8$。</p>\n<p>对于另外 $20\\%$ 的测试点，保证给定的树是一条链。</p>\n<p>对于所有测试点，保证 $1 \\leq n \\leq 10^5$。</p>\n<p>在洛谷上，只有通过了 Subtask0、Subtask1 和 Subtask2 后，才能获得第三个 Subtask 的分数。</p>\n"
+    }
+  ],
+  "id": "2025-06-gesp-8",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-06-gesp-8",
+  "version": "0fe69a6749034225",
+  "warnings": [],
+  "objective_score": 50.0
+}

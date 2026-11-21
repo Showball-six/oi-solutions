@@ -1,0 +1,631 @@
+{
+  "title": "2023年12月 GESP C++ 5级",
+  "category": "GESP",
+  "level": "5",
+  "date": "2023-12",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2023年12月 GESP C++ 5级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`fiboA()` 用递归方式，`fiboB()` 循环方式",
+          "html": "<p><code>fiboA()</code> 用递归方式，<code>fiboB()</code> 循环方式</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`fiboA()` 更加符合斐波那契数列的数学定义，直观易于理解，而 `fiboB()` 需要将数学定义转换为计算机程序实现",
+          "html": "<p><code>fiboA()</code> 更加符合斐波那契数列的数学定义，直观易于理解，而 <code>fiboB()</code> 需要将数学定义转换为计算机程序实现</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`fiboA()` 不仅仅更加符合数学定义，直观易于理解，且因代码量较少执行效率更高",
+          "html": "<p><code>fiboA()</code> 不仅仅更加符合数学定义，直观易于理解，且因代码量较少执行效率更高</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`fiboB()` 虽然代码量有所增加，但其执行效率更高",
+          "html": "<p><code>fiboB()</code> 虽然代码量有所增加，但其执行效率更高</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码用于求斐波那契数列，该数列第 $1$、$2$ 项为 $1$，以后各项均是前两项之和。下面有关说法错误的是( )。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码用于求斐波那契数列，该数列第 $1$、$2$ 项为 $1$，以后各项均是前两项之和。下面有关说法错误的是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`mergeSort(SList, T2, s, m, len)`, `mergeSort(SList, T2, m, t, len)`",
+          "html": "<p><code>mergeSort(SList, T2, s, m, len)</code>, <code>mergeSort(SList, T2, m, t, len)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`mergeSort(SList, T2, s, m-1, len)`, `mergeSort(SList, T2, m+1, t, len)`",
+          "html": "<p><code>mergeSort(SList, T2, s, m-1, len)</code>, <code>mergeSort(SList, T2, m+1, t, len)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`mergeSort(SList, T2, s, m, len)`, `mergeSort(SList, T2, m+1, t, len)`",
+          "html": "<p><code>mergeSort(SList, T2, s, m, len)</code>, <code>mergeSort(SList, T2, m+1, t, len)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`mergeSort(SList, T2, s, m-1, len)`, `mergeSort(SList, T2, m-1, t, len)`",
+          "html": "<p><code>mergeSort(SList, T2, s, m-1, len)</code>, <code>mergeSort(SList, T2, m-1, t, len)</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码以递归方式实现合并排序，并假设 `merge(int T[], int R[], int s, int m, int t)` 函数将有序（同样排序规则）的 `T[s..m]` 和 `T[m+1..t]` 归并到 `R[s..t]` 中。横线处应填上代码是( )。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码以递归方式实现合并排序，并假设 <code>merge(int T[], int R[], int s, int m, int t)</code> 函数将有序（同样排序规则）的 <code>T[s..m]</code> 和 <code>T[m+1..t]</code> 归并到 <code>R[s..t]</code> 中。横线处应填上代码是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "1->120<===>2->120",
+          "html": "<p>1-&gt;120&lt;===&gt;2-&gt;120</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "1->120<===>1->120",
+          "html": "<p>1-&gt;120&lt;===&gt;1-&gt;120</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "1->120<===>1->2->3->4->5->120",
+          "html": "<p>1-&gt;120&lt;===&gt;1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;120</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "1->120<===>2->3->4->5->6->120",
+          "html": "<p>1-&gt;120&lt;===&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;120</p>\n"
+        }
+      ],
+      "content": "阅读下面的 C++ 代码，执行后其输出是( )。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>阅读下面的 C++ 代码，执行后其输出是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`!isEven(lstA[j]) && isEven(lstA[j+1])`",
+          "html": "<p><code>!isEven(lstA[j]) &amp;&amp; isEven(lstA[j+1])</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`isEven(lstA[j]) && !isEven(lstA[j+1])`",
+          "html": "<p><code>isEven(lstA[j]) &amp;&amp; !isEven(lstA[j+1])</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`lstA[j] > lstA[j+1]`",
+          "html": "<p><code>lstA[j] &gt; lstA[j+1]</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`lstA[j] < lstA[j+1]`",
+          "html": "<p><code>lstA[j] &lt; lstA[j+1]</code></p>\n"
+        }
+      ],
+      "content": "下面的 C++ 用于对 `lstA` 排序，使得偶数在前奇数在后，横线处应填入( )。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>下面的 C++ 用于对 <code>lstA</code> 排序，使得偶数在前奇数在后，横线处应填入( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`if(pHead) {p->next = pHead->next, pHead->next->prev = p;}`",
+          "html": "<p><code>if(pHead) {p-&gt;next = pHead-&gt;next, pHead-&gt;next-&gt;prev = p;}</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`if(pHead->next) {p->next = pHead->next, pHead->next->prev = p;}`",
+          "html": "<p><code>if(pHead-&gt;next) {p-&gt;next = pHead-&gt;next, pHead-&gt;next-&gt;prev = p;}</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`p->next = pHead->next, pHead->next->prev = p;`",
+          "html": "<p><code>p-&gt;next = pHead-&gt;next, pHead-&gt;next-&gt;prev = p;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "触发异常，不能对空指针进行操作。",
+          "html": "<p>触发异常，不能对空指针进行操作。</p>\n"
+        }
+      ],
+      "content": "下面的 C++ 代码用于将字符串保存到带头节点的双向链表中，并对重复的串计数，然后将最新访问的串的节点放在链头便于查找。横线处应填入代码是（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码用于将字符串保存到带头节点的双向链表中，并对重复的串计数，然后将最新访问的串的节点放在链头便于查找。横线处应填入代码是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "如果 $x$ 小于 $10$ ，`rc` 值也不会超过 $20$",
+          "html": "<p>如果 $x$ 小于 $10$ ，<code>rc</code> 值也不会超过 $20$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`foo` 可能无限递归",
+          "html": "<p><code>foo</code> 可能无限递归</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`foo` 可以求出 $x$ 和 $y$ 的最大公共质因子",
+          "html": "<p><code>foo</code> 可以求出 $x$ 和 $y$ 的最大公共质因子</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`foo` 能够求出 $x$ 和 $y$ 的最小公倍数",
+          "html": "<p><code>foo</code> 能够求出 $x$ 和 $y$ 的最小公倍数</p>\n"
+        }
+      ],
+      "content": "有关下面 C++ 代码说法正确的是（ ）。\n",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>有关下面 C++ 代码说法正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`qSort(less) + qSort(greater) + (vector<int>)pivot`",
+          "html": "<p><code>qSort(less) + qSort(greater) + (vector&lt;int&gt;)pivot</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(vector<int>)pivot + (qSort(less) + qSort(greater))`",
+          "html": "<p><code>(vector&lt;int&gt;)pivot + (qSort(less) + qSort(greater))</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(qSort(less) + (vector<int>)pivot + qSort(greater))`",
+          "html": "<p><code>(qSort(less) + (vector&lt;int&gt;)pivot + qSort(greater))</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`qSort(less) + pivot + qSort(greater)`",
+          "html": "<p><code>qSort(less) + pivot + qSort(greater)</code></p>\n"
+        }
+      ],
+      "content": "下面的 C++ 代码实现对 `list` 的快速排序，有关说法，错误的是（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码实现对 <code>list</code> 的快速排序，有关说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`isPrimeA()` 的最坏时间复杂度是 $O(N)$ ，`isPrimeB()` 的最坏时间复杂度是 $O(\\sqrt{N})$ ，`isPrimeA()` 优于 `isPrimeB()`",
+          "html": "<p><code>isPrimeA()</code> 的最坏时间复杂度是 $O(N)$ ，<code>isPrimeB()</code> 的最坏时间复杂度是 $O(\\sqrt{N})$ ，<code>isPrimeA()</code> 优于 <code>isPrimeB()</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`isPrimeA()` 的最坏时间复杂度是 $O(N)$ ，`isPrimeB()` 的最坏时间复杂度是 $O(\\sqrt{N})$ ，`isPrimeB()` 绝大多数情况下优于 `isPrimeA()`",
+          "html": "<p><code>isPrimeA()</code> 的最坏时间复杂度是 $O(N)$ ，<code>isPrimeB()</code> 的最坏时间复杂度是 $O(\\sqrt{N})$ ，<code>isPrimeB()</code> 绝大多数情况下优于 <code>isPrimeA()</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`isPrimeA()` 的最坏时间复杂度是 $O(\\sqrt{N})$ ，`isPrimeB()` 的最坏时间复杂度是 $O(N)$ ，`isPrimeA()` 优于 `isPrimeB()`",
+          "html": "<p><code>isPrimeA()</code> 的最坏时间复杂度是 $O(\\sqrt{N})$ ，<code>isPrimeB()</code> 的最坏时间复杂度是 $O(N)$ ，<code>isPrimeA()</code> 优于 <code>isPrimeB()</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`isPrimeA()` 的最坏时间复杂度是 $O(\\sqrt{N})$ ，`isPrimeB()` 的最坏时间复杂度是 $O(N)$ ，`isPrimeA()` 优于 `isPrimeB()`",
+          "html": "<p><code>isPrimeA()</code> 的最坏时间复杂度是 $O(\\sqrt{N})$ ，<code>isPrimeB()</code> 的最坏时间复杂度是 $O(N)$ ，<code>isPrimeA()</code> 优于 <code>isPrimeB()</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码中的 `isPrimeA()` 和 `isPrimeB()` 都用于判断参数 $N$ 是否素数，有关其时间复杂度的正确说法是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码中的 <code>isPrimeA()</code> 和 <code>isPrimeB()</code> 都用于判断参数 $N$ 是否素数，有关其时间复杂度的正确说法是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "代码采用二分法实现有序 `list` 的查找",
+          "html": "<p>代码采用二分法实现有序 <code>list</code> 的查找</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "代码采用分治算法实现有序 `list` 的查找",
+          "html": "<p>代码采用分治算法实现有序 <code>list</code> 的查找</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "代码采用递归方式实现有序 `list` 的查找",
+          "html": "<p>代码采用递归方式实现有序 <code>list</code> 的查找</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "代码采用动态规划算法实现有序 `list` 的查找",
+          "html": "<p>代码采用动态规划算法实现有序 <code>list</code> 的查找</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码用于有序 `list` 的二分查找，有关说法错误的是（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码用于有序 <code>list</code> 的二分查找，有关说法错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "在上题的 `_binarySearch` 算法中，如果 `lst` 中有 $N$ 个元素，其时间复杂度是（ ）。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>在上题的 <code>_binarySearch</code> 算法中，如果 <code>lst</code> 中有 $N$ 个元素，其时间复杂度是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`c.push_back(t % 10)`, `t = t % 10`;",
+          "html": "<p><code>c.push_back(t % 10)</code>, <code>t = t % 10</code>;</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`c.push_back(t / 10)`, `t = t % 10`;",
+          "html": "<p><code>c.push_back(t / 10)</code>, <code>t = t % 10</code>;</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`c.push_back(t / 10)`, `t = t / 10`;",
+          "html": "<p><code>c.push_back(t / 10)</code>, <code>t = t / 10</code>;</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`c.push_back(t % 10)`, `t = t / 10`;",
+          "html": "<p><code>c.push_back(t % 10)</code>, <code>t = t / 10</code>;</p>\n"
+        }
+      ],
+      "content": "下面的 C++ 代码使用数组模拟整数加法，可以处理超出大整数范围的加法运算。横线处应填入代码是（ ）。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码使用数组模拟整数加法，可以处理超出大整数范围的加法运算。横线处应填入代码是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "上述代码构成单向链表",
+          "html": "<p>上述代码构成单向链表</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "上述代码构成双向链表",
+          "html": "<p>上述代码构成双向链表</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "上述代码构成循环链表",
+          "html": "<p>上述代码构成循环链表</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "上述代码构成指针链表",
+          "html": "<p>上述代码构成指针链表</p>\n"
+        }
+      ],
+      "content": "有关下面 C++ 代码的说法正确的是（ ）。",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>有关下面 C++ 代码的说法正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "信息过滤",
+          "html": "<p>信息过滤</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "信号中继",
+          "html": "<p>信号中继</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "避免攻击",
+          "html": "<p>避免攻击</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "数据加密",
+          "html": "<p>数据加密</p>\n"
+        }
+      ],
+      "content": "通讯卫星在通信网络系统中主要起到（）的作用。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>通讯卫星在通信网络系统中主要起到（）的作用。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "埃氏筛法",
+          "html": "<p>埃氏筛法</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "线性筛法",
+          "html": "<p>线性筛法</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "二分答案",
+          "html": "<p>二分答案</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "枚举法",
+          "html": "<p>枚举法</p>\n"
+        }
+      ],
+      "content": "小杨想编写一个判断任意输入的整数 $N$ 是否为素数的程序，下面哪个方法不合适？（ ）",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>小杨想编写一个判断任意输入的整数 $N$ 是否为素数的程序，下面哪个方法不合适？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "选择排序",
+          "html": "<p>选择排序</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "快速排序",
+          "html": "<p>快速排序</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "堆排序",
+          "html": "<p>堆排序</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "冒泡排序",
+          "html": "<p>冒泡排序</p>\n"
+        }
+      ],
+      "content": "下面的排序算法都要处理多趟数据，哪种排序算法不能保证在下一趟处理时从待处理数据中选出最大或最小的数据？（ ）",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>下面的排序算法都要处理多趟数据，哪种排序算法不能保证在下一趟处理时从待处理数据中选出最大或最小的数据？（ ）</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "归并排序的时间复杂度是 $O(n \\log n)$。( )",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>归并排序的时间复杂度是 $O(n \\log n)$。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "小杨在生日聚会时拿一块 $H \\times W$ 的巧克力招待来的 $K$ 个小朋友，保证每位小朋友至少能获得一块相同大小的巧克力。那么小杨想分出来最大边长的巧克力可以使用二分法。（ ）",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>小杨在生日聚会时拿一块 $H \\times W$ 的巧克力招待来的 $K$ 个小朋友，保证每位小朋友至少能获得一块相同大小的巧克力。那么小杨想分出来最大边长的巧克力可以使用二分法。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "以下 C++ 代码能以递归方式实现斐波那契数列，该数列第 1、2 项为 $1$，以后各项均是前两项之和。( )",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>以下 C++ 代码能以递归方式实现斐波那契数列，该数列第 1、2 项为 $1$，以后各项均是前两项之和。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "贪心算法可以达到局部最优，但可能不是全局最优解。( )",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>贪心算法可以达到局部最优，但可能不是全局最优解。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "小杨设计了一个拆数程序，它能够将任意的非质数自然数 $N$ 转换成若干个质数的乘积，这个程序是可以设计出来的。（ ）",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>小杨设计了一个拆数程序，它能够将任意的非质数自然数 $N$ 转换成若干个质数的乘积，这个程序是可以设计出来的。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "插入排序有时比快速排序时间复杂度更低。（ ）",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>插入排序有时比快速排序时间复杂度更低。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下面的 C++ 代码能实现十进制正整数 $N$ 转换为八进制并输出。（ ）",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码能实现十进制正整数 $N$ 转换为八进制并输出。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "对数组 `int arr[] = {2, 6, 3, 5, 4, 8, 1, 0, 9, 10}` 执行 `sort(arr, arr+10)`，则执行后 `arr` 中的数据调整为 `{0, 1, 2, 3, 4, 5, 6, 8, 9, 10}`。（ ）",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>对数组 <code>int arr[] = {2, 6, 3, 5, 4, 8, 1, 0, 9, 10}</code> 执行 <code>sort(arr, arr+10)</code>，则执行后 <code>arr</code> 中的数据调整为 <code>{0, 1, 2, 3, 4, 5, 6, 8, 9, 10}</code>。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "小杨想写一个程序来算出正整数 $N$ 有多少个因数，经过思考他写出了一个重复没有超过 $N/2$ 次的循环就能够算出来了。（ ）",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>小杨想写一个程序来算出正整数 $N$ 有多少个因数，经过思考他写出了一个重复没有超过 $N/2$ 次的循环就能够算出来了。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "同样的整数序列分别保存在单链表和双向链中，这两种链表上的简单冒泡排序的复杂度相同。（ ）",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>同样的整数序列分别保存在单链表和双向链中，这两种链表上的简单冒泡排序的复杂度相同。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：小杨的幸运数**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨认为，所有大于等于 $a$ 的完全平方数都是他的超级幸运数。\n\n小杨还认为，所有超级幸运数的倍数都是他的幸运数。自然地，小杨的所有超级幸运数也都是幸运数。\n\n对于一个非幸运数，小杨规定，可以将它一直 $+1$，直到它变成一个幸运数。我们把这个过程叫做幸运化。例如，如果 $a=4$，那么 $4$ 是最小的幸运数，而 $1$ 不是，但我们可以连续对 $1$ 做 $3$ 次 $+1$ 操作，使其变为 $4$，所以我们可以说， $1$ 幸运化后的结果是 $4$。\n\n现在，小杨给出 $N$ 个数，请你首先判断它们是不是幸运数；接着，对于非幸运数，请你将它们幸运化。\n\n**输入格式**\n\n第一行 $2$ 个正整数 $a, N$。\n\n接下来 $N$ 行，每行一个正整数 $x$ ，表示需要判断（幸运化）的数。\n\n**输出格式**\n\n输出 $N$ 行，对于每个给定的 $x$ ，如果它是幸运数，请输出 `lucky`，否则请输出将其幸运化后的结果。\n\n**样例输入 #1**\n```\n2 4 \n1 \n4 \n5 \n9\n```\n\n**样例输出 #1**\n```\n4 \nlucky \n8 \nlucky\n```\n\n**样例输入 #2**\n```\n16 11 \n1 \n2 \n4 \n8 \n16 \n32 \n64 \n128 \n256 \n512\n1024\n```\n\n**样例输出 #2**\n```\n16 \n16 \n16 \n16 \nlucky \nlucky \nlucky \nlucky \nlucky \nlucky \nlucky\n```\n\n**说明/提示**\n\n**样例解释 1**\n\n$1$ 虽然是完全平方数，但它小于 $a$，因此它并不是超级幸运数，也不是幸运数。将其进行 $3$ 次 $+1$ 操作后，最终得到幸运数 $4$。\n\n$4$ 是幸运数，因此直接输出 `lucky`。\n\n$5$ 不是幸运数，将其进行 $3$ 次 $+1$ 操作后，最终得到幸运数 $8$。\n\n$9$ 是幸运数，因此直接输出 `lucky`。\n\n**数据规模**\n\n对于 $30\\%$ 的测试点，保证 $a,x \\le 100,N \\le 100$。\n\n对于 $60\\%$ 的测试点，保证 $a,x \\le 10^6$。\n\n对于所有测试点，保证 $a \\le 1,000,000$；保证 $N \\le 2 \\times 10^5$；保证 $1 \\le x \\le 1,000,001$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：小杨的幸运数</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨认为，所有大于等于 $a$ 的完全平方数都是他的超级幸运数。</p>\n<p>小杨还认为，所有超级幸运数的倍数都是他的幸运数。自然地，小杨的所有超级幸运数也都是幸运数。</p>\n<p>对于一个非幸运数，小杨规定，可以将它一直 $+1$，直到它变成一个幸运数。我们把这个过程叫做幸运化。例如，如果 $a=4$，那么 $4$ 是最小的幸运数，而 $1$ 不是，但我们可以连续对 $1$ 做 $3$ 次 $+1$ 操作，使其变为 $4$，所以我们可以说， $1$ 幸运化后的结果是 $4$。</p>\n<p>现在，小杨给出 $N$ 个数，请你首先判断它们是不是幸运数；接着，对于非幸运数，请你将它们幸运化。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行 $2$ 个正整数 $a, N$。</p>\n<p>接下来 $N$ 行，每行一个正整数 $x$ ，表示需要判断（幸运化）的数。</p>\n<p><strong>输出格式</strong></p>\n<p>输出 $N$ 行，对于每个给定的 $x$ ，如果它是幸运数，请输出 <code>lucky</code>，否则请输出将其幸运化后的结果。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>2 4 \n1 \n4 \n5 \n9\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>4 \nlucky \n8 \nlucky\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>16 11 \n1 \n2 \n4 \n8 \n16 \n32 \n64 \n128 \n256 \n512\n1024\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>16 \n16 \n16 \n16 \nlucky \nlucky \nlucky \nlucky \nlucky \nlucky \nlucky\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p><strong>样例解释 1</strong></p>\n<p>$1$ 虽然是完全平方数，但它小于 $a$，因此它并不是超级幸运数，也不是幸运数。将其进行 $3$ 次 $+1$ 操作后，最终得到幸运数 $4$。</p>\n<p>$4$ 是幸运数，因此直接输出 <code>lucky</code>。</p>\n<p>$5$ 不是幸运数，将其进行 $3$ 次 $+1$ 操作后，最终得到幸运数 $8$。</p>\n<p>$9$ 是幸运数，因此直接输出 <code>lucky</code>。</p>\n<p><strong>数据规模</strong></p>\n<p>对于 $30\\%$ 的测试点，保证 $a,x \\le 100,N \\le 100$。</p>\n<p>对于 $60\\%$ 的测试点，保证 $a,x \\le 10^6$。</p>\n<p>对于所有测试点，保证 $a \\le 1,000,000$；保证 $N \\le 2 \\times 10^5$；保证 $1 \\le x \\le 1,000,001$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：烹饪问题**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n有 $N$ 种食材，编号从 $1$ 至 $N$，其中第 $i$ 种食材的美味度为 $a_i$。\n\n不同食材之间的组合可能产生奇妙的化学反应。具体来说，如果两种食材的美味度分别为 $x$ 和 $y$ ，那么它们的契合度为 $x\\ \\text{and}\\ y $。\n\n其中，$\\text{and}$ 运算为按位与运算，需要先将两个运算数转换为二进制，然后在高位补足 ，再逐位进行与运算。例如，$12$ 与 $6$ 的二进制表示分别为 $1100$ 和 $0110$ ，将它们逐位进行与运算，得到 $0100$ ，转换为十进制得到 4，因此 $12\\ \\text{and}\\ 6 = 4$。**在 C++ 或 Python 中，可以直接使用 `&` 运算符表示与运算。**\n\n\n现在，请你找到契合度最高的两种食材，并输出它们的契合度。\n\n**输入格式**\n\n第一行一个整数 $N$，表示食材的种数。\n\n接下来一行 $N$ 个用空格隔开的整数，依次为 $a_1,\\cdots,a_N$，表示各种食材的美味度。\n\n**输出格式**\n\n输出一行一个整数，表示最高的契合度。\n\n**样例输入 #1**\n```\n3\n1 2 3\n```\n\n**样例输出 #1**\n```\n2\n```\n\n**样例输入 #2**\n```\n5\n5 6 2 10 13\n\n```\n\n**样例输出 #2**\n```\n8\n```\n\n**说明/提示**\n\n**样例解释 1**  \n\n可以编号为 $2,3$ 的食材之间的契合度为 $2\\ \\text{and} \\ 3=2$，是所有食材两两之间最高的契合度。\n\n**样例解释 2** \n\n可以编号为 $3,4$ 的食材之间的契合度为 $10\\ \\text{and}\\ 13=8$，是所有食材两两之间最高的契合度。\n\n**数据范围**\n\n对于 $40\\%$ 的测试点，保证 $N \\le 1,000$；\n\n对于所有测试点，保证 $N \\le 10^6$，$0\\le a_i \\le 2,147,483,647$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：烹饪问题</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>有 $N$ 种食材，编号从 $1$ 至 $N$，其中第 $i$ 种食材的美味度为 $a_i$。</p>\n<p>不同食材之间的组合可能产生奇妙的化学反应。具体来说，如果两种食材的美味度分别为 $x$ 和 $y$ ，那么它们的契合度为 $x\\ \\text{and}\\ y $。</p>\n<p>其中，$\\text{and}$ 运算为按位与运算，需要先将两个运算数转换为二进制，然后在高位补足 ，再逐位进行与运算。例如，$12$ 与 $6$ 的二进制表示分别为 $1100$ 和 $0110$ ，将它们逐位进行与运算，得到 $0100$ ，转换为十进制得到 4，因此 $12\\ \\text{and}\\ 6 = 4$。<strong>在 C++ 或 Python 中，可以直接使用 <code>&amp;</code> 运算符表示与运算。</strong></p>\n<p>现在，请你找到契合度最高的两种食材，并输出它们的契合度。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行一个整数 $N$，表示食材的种数。</p>\n<p>接下来一行 $N$ 个用空格隔开的整数，依次为 $a_1,\\cdots,a_N$，表示各种食材的美味度。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行一个整数，表示最高的契合度。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3\n1 2 3\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>2\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>5\n5 6 2 10 13\n\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>8\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p><strong>样例解释 1</strong></p>\n<p>可以编号为 $2,3$ 的食材之间的契合度为 $2\\ \\text{and} \\ 3=2$，是所有食材两两之间最高的契合度。</p>\n<p><strong>样例解释 2</strong></p>\n<p>可以编号为 $3,4$ 的食材之间的契合度为 $10\\ \\text{and}\\ 13=8$，是所有食材两两之间最高的契合度。</p>\n<p><strong>数据范围</strong></p>\n<p>对于 $40\\%$ 的测试点，保证 $N \\le 1,000$；</p>\n<p>对于所有测试点，保证 $N \\le 10^6$，$0\\le a_i \\le 2,147,483,647$。</p>\n"
+    }
+  ],
+  "id": "2023-12-gesp-5",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2023-12-gesp-5",
+  "version": "d886324c1e3d047a",
+  "warnings": [],
+  "objective_score": 50.0
+}

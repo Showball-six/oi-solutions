@@ -1,0 +1,631 @@
+{
+  "title": "2025年9月 GESP C++ 3级",
+  "category": "GESP",
+  "level": "3",
+  "date": "2025-09",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年9月 GESP C++ 3级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$3.33333$",
+          "html": "<p>$3.33333$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$3.333$",
+          "html": "<p>$3.333$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$3.0$",
+          "html": "<p>$3.0$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3.3$",
+          "html": "<p>$3.3$</p>\n"
+        }
+      ],
+      "content": "执行以下 C++ 代码后，$c$ 的数值是（ ）。\n\n```cpp\nint a = 10, b = 3;\ndouble c = a / b;\n```",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>执行以下 C++ 代码后，$c$ 的数值是（ ）。</p>\n<pre><code class=\"language-cpp\">int a = 10, b = 3;\ndouble c = a / b;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(5 <= 5) && (7 < 5)`",
+          "html": "<p><code>(5 &lt;= 5) &amp;&amp; (7 &lt; 5)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`!(10 > 5)`",
+          "html": "<p><code>!(10 &gt; 5)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(10 != 10) || (5 >= 3)`",
+          "html": "<p><code>(10 != 10) || (5 &gt;= 3)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`(5 == 3) && (4 > 2)`",
+          "html": "<p><code>(5 == 3) &amp;&amp; (4 &gt; 2)</code></p>\n"
+        }
+      ],
+      "content": "下列 C++ 表达式的结果为 `true` 的是（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>下列 C++ 表达式的结果为 <code>true</code> 的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "数组的下标通常从 $0$ 开始。",
+          "html": "<p>数组的下标通常从 $0$ 开始。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`int arr[5];` 声明了一个包含 $5$ 个整数的数组。",
+          "html": "<p><code>int arr[5];</code> 声明了一个包含 $5$ 个整数的数组。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "数组的大小必须在编译时确定，不能使用变量定义大小。",
+          "html": "<p>数组的大小必须在编译时确定，不能使用变量定义大小。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "可以通过 `arr[5]` 来访问 `int arr[5];` 数组的最后一个元素。",
+          "html": "<p>可以通过 <code>arr[5]</code> 来访问 <code>int arr[5];</code> 数组的最后一个元素。</p>\n"
+        }
+      ],
+      "content": "以下关于 C++ 数组的说法，错误的是（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>以下关于 C++ 数组的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$9$",
+          "html": "<p>$9$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$15$",
+          "html": "<p>$15$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "死循环",
+          "html": "<p>死循环</p>\n"
+        }
+      ],
+      "content": "执行以下 C++ 代码后，变量 `sum` 的值是（ ）。\n\n```cpp\nint sum = 0;\nfor (int i = 1; i <= 5; i += 2) {\n    sum += i;\n    int sum = 0;\n}\n```",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>执行以下 C++ 代码后，变量 <code>sum</code> 的值是（ ）。</p>\n<pre><code class=\"language-cpp\">int sum = 0;\nfor (int i = 1; i &lt;= 5; i += 2) {\n    sum += i;\n    int sum = 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`void max(int a, int b) { return a > b ? a : b; }`",
+          "html": "<p><code>void max(int a, int b) { return a &gt; b ? a : b; }</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`int max(int a, int b) { if (a > b) return a; else return b; }`",
+          "html": "<p><code>int max(int a, int b) { if (a &gt; b) return a; else return b; }</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`int max(a, b) { if (a > b) return a; else return b; }`",
+          "html": "<p><code>int max(a, b) { if (a &gt; b) return a; else return b; }</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`void max(a, b) { cout << (a > b ? a : b); }`",
+          "html": "<p><code>void max(a, b) { cout &lt;&lt; (a &gt; b ? a : b); }</code></p>\n"
+        }
+      ],
+      "content": "要正确定义一个返回两个整数中较大值的函数 `max` ，应该使用（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>要正确定义一个返回两个整数中较大值的函数 <code>max</code> ，应该使用（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`{1, 2, 3, 3}`",
+          "html": "<p><code>{1, 2, 3, 3}</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`{1, 2, 3, 4}`",
+          "html": "<p><code>{1, 2, 3, 4}</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`{1, 2, 3, 5}`",
+          "html": "<p><code>{1, 2, 3, 5}</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`{1, 2, 3, 6}`",
+          "html": "<p><code>{1, 2, 3, 6}</code></p>\n"
+        }
+      ],
+      "content": "执行以下 C++ 代码后，数组 `arr` 的内容是（ ）。\n\n```cpp\nint arr[4] = {1, 2, 3};\narr[3] = arr[0] + arr[2];\n```",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>执行以下 C++ 代码后，数组 <code>arr</code> 的内容是（ ）。</p>\n<pre><code class=\"language-cpp\">int arr[4] = {1, 2, 3};\narr[3] = arr[0] + arr[2];\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "函数必须要有参数。",
+          "html": "<p>函数必须要有参数。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "函数通过 `return` 语句只能返回一个值。但是可以通过很多间接的方式返回多个值。",
+          "html": "<p>函数通过 <code>return</code> 语句只能返回一个值。但是可以通过很多间接的方式返回多个值。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`main` 函数可以被其他函数调用。",
+          "html": "<p><code>main</code> 函数可以被其他函数调用。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "函数的定义可以直接嵌套，即一个函数内部可以真正定义另一个函数。",
+          "html": "<p>函数的定义可以直接嵌套，即一个函数内部可以真正定义另一个函数。</p>\n"
+        }
+      ],
+      "content": "以下关于 C++ 函数的描述，正确的是（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>以下关于 C++ 函数的描述，正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        }
+      ],
+      "content": "以下 C++ 代码 `count++` 执行的次数是（ ）。\n\n```cpp\nint i = 10;\nint count=0;\nwhile (i > 0) {\n    i -= 3;\n    continue;\n    count++;\n}\n```",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>以下 C++ 代码 <code>count++</code> 执行的次数是（ ）。</p>\n<pre><code class=\"language-cpp\">int i = 10;\nint count=0;\nwhile (i &gt; 0) {\n    i -= 3;\n    continue;\n    count++;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`0#01#012#0123#`",
+          "html": "<p><code>0#01#012#0123#</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`1#12#123#1234#`",
+          "html": "<p><code>1#12#123#1234#</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`0#1#2#3#`",
+          "html": "<p><code>0#1#2#3#</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`0#01#012#01243#`",
+          "html": "<p><code>0#01#012#01243#</code></p>\n"
+        }
+      ],
+      "content": "以下 C++ 代码段的输出是（ ）。\n\n```cpp\nfor (int i = 0; i < 4; i++) {\n    for (int j = 0; j <= i; j++) {\n        cout << j;\n    }\n    cout << \"#\";\n}\n```",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>以下 C++ 代码段的输出是（ ）。</p>\n<pre><code class=\"language-cpp\">for (int i = 0; i &lt; 4; i++) {\n    for (int j = 0; j &lt;= i; j++) {\n        cout &lt;&lt; j;\n    }\n    cout &lt;&lt; &quot;#&quot;;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "在 `for` 循环语句中声明的变量，其作用域仅限于该循环体内。",
+          "html": "<p>在 <code>for</code> 循环语句中声明的变量，其作用域仅限于该循环体内。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "在函数内部声明的变量（局部变量），仅在函数内部有效。",
+          "html": "<p>在函数内部声明的变量（局部变量），仅在函数内部有效。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "在所有函数外部声明的变量，在整个程序中都有效。",
+          "html": "<p>在所有函数外部声明的变量，在整个程序中都有效。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "不同函数中的局部变量可以同名，它们代表不同的内存单元。",
+          "html": "<p>不同函数中的局部变量可以同名，它们代表不同的内存单元。</p>\n"
+        }
+      ],
+      "content": "以下关于 C++ 变量作用域的说法，错误的是（ ）。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>以下关于 C++ 变量作用域的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "能够反转任何位数的整数",
+          "html": "<p>能够反转任何位数的整数</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "能够反转的最大位数正整数是 $2147483647$",
+          "html": "<p>能够反转的最大位数正整数是 $2147483647$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "能够反转的最大位数正整数是 $2147483648$",
+          "html": "<p>能够反转的最大位数正整数是 $2147483648$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "能够反转的最大位数正整数是 $1463847412$",
+          "html": "<p>能够反转的最大位数正整数是 $1463847412$</p>\n"
+        }
+      ],
+      "content": "关于以下代码的说法正确的是（ ）。\n\n```cpp\nint reversed = 0;\nwhile (x != 0) {\n    int digit = x % 10;\n    x /= 10;\n    reversed = reversed * 10 + digit;\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>关于以下代码的说法正确的是（ ）。</p>\n<pre><code class=\"language-cpp\">int reversed = 0;\nwhile (x != 0) {\n    int digit = x % 10;\n    x /= 10;\n    reversed = reversed * 10 + digit;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`arr[-1]`",
+          "html": "<p><code>arr[-1]</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`arr[0]`",
+          "html": "<p><code>arr[0]</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`size`",
+          "html": "<p><code>size</code></p>\n"
+        }
+      ],
+      "content": "以下 C++ 代码试图查找数组中的最大值，划线处应填入（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\nint findMax(int arr[], int size) {\n    int maxVal = ________; // 划线处\n    for (int i = 1; i < size; i++) {\n        if (arr[i] > maxVal) {\n            maxVal = arr[i];\n        }\n    }\n    return maxVal;\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>以下 C++ 代码试图查找数组中的最大值，划线处应填入（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint findMax(int arr[], int size) {\n    int maxVal = ________; // 划线处\n    for (int i = 1; i &lt; size; i++) {\n        if (arr[i] &gt; maxVal) {\n            maxVal = arr[i];\n        }\n    }\n    return maxVal;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "函数参数传递只有值传递一种方式。",
+          "html": "<p>函数参数传递只有值传递一种方式。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "函数的形参在函数调用结束后依然占用内存空间",
+          "html": "<p>函数的形参在函数调用结束后依然占用内存空间</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "没有返回值的函数必须声明为 `void` 类型，且不能包含 `return` 语句",
+          "html": "<p>没有返回值的函数必须声明为 <code>void</code> 类型，且不能包含 <code>return</code> 语句</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "C++11 及之后标准要求函数必须显式声明返回类型，不允许默认返回 `int`",
+          "html": "<p>C++11 及之后标准要求函数必须显式声明返回类型，不允许默认返回 <code>int</code></p>\n"
+        }
+      ],
+      "content": "以下关于 C++ 函数的说法，正确的是（ ）。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>以下关于 C++ 函数的说法，正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0$ 处",
+          "html": "<p>$0$ 处</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1$ 处",
+          "html": "<p>$1$ 处</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$2$ 处",
+          "html": "<p>$2$ 处</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3$ 处",
+          "html": "<p>$3$ 处</p>\n"
+        }
+      ],
+      "content": "以下 C++ 代码中存在几处错误（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    const int SIZE = 5;\n    int arr[SIZE];\n    for (int i = 0; i <= SIZE; i++) {\n        arr[i] = i * 2;\n    }\n    cout << arr[SIZE] << endl;\n    return 0;\n}\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>以下 C++ 代码中存在几处错误（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint main() {\n    const int SIZE = 5;\n    int arr[SIZE];\n    for (int i = 0; i &lt;= SIZE; i++) {\n        arr[i] = i * 2;\n    }\n    cout &lt;&lt; arr[SIZE] &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`string` 对象可以使用 `=` 进行赋值，而字符数组需要使用 `strcpy`。",
+          "html": "<p><code>string</code> 对象可以使用 <code>=</code> 进行赋值，而字符数组需要使用 <code>strcpy</code>。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`string` 对象的长度可以使用 `length()` 成员函数获取，而字符数组需要使用 `strlen()` 函数。",
+          "html": "<p><code>string</code> 对象的长度可以使用 <code>length()</code> 成员函数获取，而字符数组需要使用 <code>strlen()</code> 函数。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`string` 对象在内存中是动态分配空间的，因此可以自动处理字符串长度的变化。",
+          "html": "<p><code>string</code> 对象在内存中是动态分配空间的，因此可以自动处理字符串长度的变化。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`string` 对象和字符数组都可以使用 `==` 运算符来直接比较两个字符串的内容是否相同。",
+          "html": "<p><code>string</code> 对象和字符数组都可以使用 <code>==</code> 运算符来直接比较两个字符串的内容是否相同。</p>\n"
+        }
+      ],
+      "content": "以下关于 C++ 中 `string` 类和字符数组 (`char[]`) 的说法，错误的是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>以下关于 C++ 中 <code>string</code> 类和字符数组 (<code>char[]</code>) 的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "表达式 `sizeof('a')` 的结果总是 $1$，因为 `'a'` 是一个字符。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>表达式 <code>sizeof('a')</code> 的结果总是 $1$，因为 <code>'a'</code> 是一个字符。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 中，所有全局变量如果没有显式初始化，都会被自动初始化为 $0$。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>在 C++ 中，所有全局变量如果没有显式初始化，都会被自动初始化为 $0$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "`do { ... } while (false);` 循环体内的语句至少会被执行一次。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p><code>do { ... } while (false);</code> 循环体内的语句至少会被执行一次。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 中，`++i` 是一个左值表达式，而 `i++` 是一个右值表达式。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>在 C++ 中，<code>++i</code> 是一个左值表达式，而 <code>i++</code> 是一个右值表达式。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "对于 `enum Color { RED, GREEN, BLUE };`，`RED` 的类型是 `int`",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>对于 <code>enum Color { RED, GREEN, BLUE };</code>，<code>RED</code> 的类型是 <code>int</code></p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "`#define SQUARE(x) x * x` 是一个安全的宏定义，`SQUARE(2+3)` 会正确计算出 $25$。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p><code>#define SQUARE(x) x * x</code> 是一个安全的宏定义，<code>SQUARE(2+3)</code> 会正确计算出 $25$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 中，`char` 类型的取值范围总是 $-128$ 到 $127$。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>在 C++ 中，<code>char</code> 类型的取值范围总是 $-128$ 到 $127$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "表达式 `a > b ? a : b = 10;` 一定是合法的 C++ 代码。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>表达式 <code>a &gt; b ? a : b = 10;</code> 一定是合法的 C++ 代码。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "`#include \"file.h\"` 和 `#include <file.h>` 在编译器查找头文件时的搜索策略是完全相同的。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p><code>#include &quot;file.h&quot;</code> 和 <code>#include &lt;file.h&gt;</code> 在编译器查找头文件时的搜索策略是完全相同的。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在同一个作用域内，`extern` 声明的变量可以多次定义。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>在同一个作用域内，<code>extern</code> 声明的变量可以多次定义。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：数组清零**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小 A 有一个由 $n$ 个非负整数构成的数组 $a = [a_1, a_2, \\ldots, a_n]$。他会对阵组 $a$ 重复进行以下操作，直到数组 $a$ 只包含 0。在一次操作中，小 A 会依次完成以下三个步骤：\n\n1. 在数组 $a$ 中找到最大的整数，记其下标为 $k$。如果有多个最大值，那么选择其中下标最大的。\n2. 从数组 $a$ 所有不为零的整数中找到最小的整数 $a_j$。\n3. 将第一步找出的 $a_k$ 减去 $a_j$。\n\n例如，数组 $a = [2, 3, 4]$ 需要 7 次操作变成 $[0, 0, 0]$：\n\n$$\n[2, 3, 4] \\rightarrow [2, 3, 2] \\rightarrow [2, 1, 2] \\rightarrow [2, 1, 1] \\rightarrow [1, 1, 1] \\rightarrow [1, 1, 0] \\rightarrow [1, 0, 0] \\rightarrow [0, 0, 0]\n$$\n\n小 A 想知道，对于给定的数组 $a$，需要多少次操作才能使得 $a$ 中的整数全部变成 0。可以证明，$a$ 中整数必然可以在有限次操作后全部变成 0。你能帮他计算出答案吗？\n\n\n**输入格式**\n\n第一行，一个正整数 $n$，表示数组 $a$ 的长度。\n\n第二行，$n$ 个非负整数 $a_1, a_2, \\ldots, a_n$，表示数组 $a$ 中的整数。\n\n**输出格式**\n\n一行，一个正整数，表示 $a$ 中整数全部变成 0 所需要的操作次数。\n\n**样例输入 #1**\n```\n3\n2 3 4\n```\n\n**样例输出 #1**\n```\n7\n```\n\n**样例输入 #2**\n```\n5\n1 3 2 2 5\n```\n\n**样例输出 #2**\n```\n13\n```\n\n**说明/提示**\n\n对于所有测试点，保证 $1 \\leq n \\leq 100$，$0 \\leq a_i \\leq 100$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：数组清零</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小 A 有一个由 $n$ 个非负整数构成的数组 $a = [a_1, a_2, \\ldots, a_n]$。他会对阵组 $a$ 重复进行以下操作，直到数组 $a$ 只包含 0。在一次操作中，小 A 会依次完成以下三个步骤：</p>\n<ol>\n<li>在数组 $a$ 中找到最大的整数，记其下标为 $k$。如果有多个最大值，那么选择其中下标最大的。</li>\n<li>从数组 $a$ 所有不为零的整数中找到最小的整数 $a_j$。</li>\n<li>将第一步找出的 $a_k$ 减去 $a_j$。</li>\n</ol>\n<p>例如，数组 $a = [2, 3, 4]$ 需要 7 次操作变成 $[0, 0, 0]$：</p>\n<p>$$\n[2, 3, 4] \\rightarrow [2, 3, 2] \\rightarrow [2, 1, 2] \\rightarrow [2, 1, 1] \\rightarrow [1, 1, 1] \\rightarrow [1, 1, 0] \\rightarrow [1, 0, 0] \\rightarrow [0, 0, 0]\n$$</p>\n<p>小 A 想知道，对于给定的数组 $a$，需要多少次操作才能使得 $a$ 中的整数全部变成 0。可以证明，$a$ 中整数必然可以在有限次操作后全部变成 0。你能帮他计算出答案吗？</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，一个正整数 $n$，表示数组 $a$ 的长度。</p>\n<p>第二行，$n$ 个非负整数 $a_1, a_2, \\ldots, a_n$，表示数组 $a$ 中的整数。</p>\n<p><strong>输出格式</strong></p>\n<p>一行，一个正整数，表示 $a$ 中整数全部变成 0 所需要的操作次数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3\n2 3 4\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>7\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>5\n1 3 2 2 5\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>13\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于所有测试点，保证 $1 \\leq n \\leq 100$，$0 \\leq a_i \\leq 100$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：日历制作**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小 A 想制作 $2025$ 年每个月的日历。他希望你能编写一个程序，按照格式输出给定月份的日历。\n\n具体来说，第一行需要输出 MON TUE WED THU FRI SAT SUN，分别表示星期一到星期日。接下来若干行中依次输出这个月所包含的日期，日期的个位需要和对应星期几的缩写最后一个字母对齐。例如，$2025$ 年 $9$ 月 $1$ 日是星期一，在输出九月的日历时，$1$ 号的个位 $1$ 就需要与星期一 MON 的最后一个字母 N 对齐。九月的日历输出效果如下:\n\n```\nMON TUE WED THU FRI SAT SUN\n  1   2   3   4   5   6   7\n  8   9  10  11  12  13  14\n 15  16  17  18  19  20  21\n 22  23  24  25  26  27  28\n 29  30\n```\n\n你能帮助小 A 完成日历的制作吗?\n\n**输入格式**\n\n一行，一个正整数 $m$，表示需要按照格式输出 $2025$ 年 $m$ 月的日历。\n\n\n**输出格式**\n\n输出包含若干行，表示 $2025$ 年 $m$ 月的日历。\n\n**样例输入 #1**\n```\n9\n```\n\n**样例输出 #1**\n```\nMON TUE WED THU FRI SAT SUN\n  1   2   3   4   5   6   7\n  8   9  10  11  12  13  14\n 15  16  17  18  19  20  21\n 22  23  24  25  26  27  28\n 29  30\n```\n\n**样例输入 #2**\n```\n6\n```\n\n**样例输出 #2**\n```\nMON TUE WED THU FRI SAT SUN\n                          1\n  2   3   4   5   6   7   8\n  9  10  11  12  13  14  15\n 16  17  18  19  20  21  22\n 23  24  25  26  27  28  29\n 30\n```\n\n**说明/提示**\n\n对于所有测试点，保证 $1 \\leq m \\leq 12$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：日历制作</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小 A 想制作 $2025$ 年每个月的日历。他希望你能编写一个程序，按照格式输出给定月份的日历。</p>\n<p>具体来说，第一行需要输出 MON TUE WED THU FRI SAT SUN，分别表示星期一到星期日。接下来若干行中依次输出这个月所包含的日期，日期的个位需要和对应星期几的缩写最后一个字母对齐。例如，$2025$ 年 $9$ 月 $1$ 日是星期一，在输出九月的日历时，$1$ 号的个位 $1$ 就需要与星期一 MON 的最后一个字母 N 对齐。九月的日历输出效果如下:</p>\n<pre><code>MON TUE WED THU FRI SAT SUN\n  1   2   3   4   5   6   7\n  8   9  10  11  12  13  14\n 15  16  17  18  19  20  21\n 22  23  24  25  26  27  28\n 29  30\n</code></pre>\n<p>你能帮助小 A 完成日历的制作吗?</p>\n<p><strong>输入格式</strong></p>\n<p>一行，一个正整数 $m$，表示需要按照格式输出 $2025$ 年 $m$ 月的日历。</p>\n<p><strong>输出格式</strong></p>\n<p>输出包含若干行，表示 $2025$ 年 $m$ 月的日历。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>9\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>MON TUE WED THU FRI SAT SUN\n  1   2   3   4   5   6   7\n  8   9  10  11  12  13  14\n 15  16  17  18  19  20  21\n 22  23  24  25  26  27  28\n 29  30\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>6\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>MON TUE WED THU FRI SAT SUN\n                          1\n  2   3   4   5   6   7   8\n  9  10  11  12  13  14  15\n 16  17  18  19  20  21  22\n 23  24  25  26  27  28  29\n 30\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于所有测试点，保证 $1 \\leq m \\leq 12$。</p>\n"
+    }
+  ],
+  "id": "2025-09-gesp-3",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-09-gesp-3",
+  "version": "eb71e7a747f3e884",
+  "warnings": [],
+  "objective_score": 50.0
+}

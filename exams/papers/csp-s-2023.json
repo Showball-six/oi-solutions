@@ -1,0 +1,1336 @@
+{
+  "title": "2023年 CSP-S 第一轮（提高级）",
+  "category": "CSP-S",
+  "level": "CSP-S",
+  "date": "2023-09",
+  "time_limit": 120,
+  "total_score": 100,
+  "description": "",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "D",
+      "content": "在 Linux 系统终端中，以下哪个命令用于创建一个新的目录？",
+      "options": [
+        {
+          "key": "A",
+          "text": "`create`",
+          "html": "<p><code>create</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`mkfolder`",
+          "html": "<p><code>mkfolder</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`newdir`",
+          "html": "<p><code>newdir</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`mkdir`",
+          "html": "<p><code>mkdir</code></p>\n"
+        }
+      ],
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>在 Linux 系统终端中，以下哪个命令用于创建一个新的目录？</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "D",
+      "content": "$0,1,2,3,4$ 中选取 $4$ 个数字，能组成（ ）个不同四位数。（注：最小的四位数是 $1000$，最大的四位数是 $9999$）",
+      "options": [
+        {
+          "key": "A",
+          "text": "$18$",
+          "html": "<p>$18$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$120$",
+          "html": "<p>$120$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$84$",
+          "html": "<p>$84$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$96$",
+          "html": "<p>$96$</p>\n"
+        }
+      ],
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>$0,1,2,3,4$ 中选取 $4$ 个数字，能组成（ ）个不同四位数。（注：最小的四位数是 $1000$，最大的四位数是 $9999$）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "D",
+      "content": "假设 $n$ 是图的顶点的个数，$m$ 是图的边的个数，为求解某一问题有下面四种不同时间复杂度的算法。对于 $m=\\Theta(n)$ 的稀疏图而言，下面的四个选项，哪一项的渐近时间复杂度最小。",
+      "options": [
+        {
+          "key": "A",
+          "text": "$\\mathrm{O}(n^2+m)$",
+          "html": "<p>$\\mathrm{O}(n^2+m)$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$\\mathrm{O}(\\frac{n^2}{\\log{m}}+m\\log{n})$",
+          "html": "<p>$\\mathrm{O}(\\frac{n^2}{\\log{m}}+m\\log{n})$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$\\mathrm{O}(m+n\\log{n})$",
+          "html": "<p>$\\mathrm{O}(m+n\\log{n})$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$\\mathrm{O}(m\\sqrt{\\log{n} \\times \\log{\\log{n}}})$",
+          "html": "<p>$\\mathrm{O}(m\\sqrt{\\log{n} \\times \\log{\\log{n}}})$</p>\n"
+        }
+      ],
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>假设 $n$ 是图的顶点的个数，$m$ 是图的边的个数，为求解某一问题有下面四种不同时间复杂度的算法。对于 $m=\\Theta(n)$ 的稀疏图而言，下面的四个选项，哪一项的渐近时间复杂度最小。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "D",
+      "content": "假设有 $n$ 根柱子，需要按照以下规则依次放置编号为 $1, 2, 3,...$ 的圆环：每根柱子的底部固定，顶部可以放入圆环，每次从柱子顶部放入圆环时，需要保证任何两个相邻圆环的编号之和是一个完全平方数。请计算当有 $4$ 根柱子时，最多可以放置（ ）个圆环。",
+      "options": [
+        {
+          "key": "A",
+          "text": "$9$",
+          "html": "<p>$9$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$7$",
+          "html": "<p>$7$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$11$",
+          "html": "<p>$11$</p>\n"
+        }
+      ],
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>假设有 $n$ 根柱子，需要按照以下规则依次放置编号为 $1, 2, 3,...$ 的圆环：每根柱子的底部固定，顶部可以放入圆环，每次从柱子顶部放入圆环时，需要保证任何两个相邻圆环的编号之和是一个完全平方数。请计算当有 $4$ 根柱子时，最多可以放置（ ）个圆环。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "D",
+      "content": "以下对数据结构的表述不恰当的一项是：（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "散列表是一种通过散列函数将关键字映射到存储位置的数据结构",
+          "html": "<p>散列表是一种通过散列函数将关键字映射到存储位置的数据结构</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "二叉树是一种每个结点最多有两个子结点的树结构",
+          "html": "<p>二叉树是一种每个结点最多有两个子结点的树结构</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "队列是一种先进先出（FIFO）的线性结构",
+          "html": "<p>队列是一种先进先出（FIFO）的线性结构</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "哈夫曼树的构造过程主要是为了实现图的深度优先搜索",
+          "html": "<p>哈夫曼树的构造过程主要是为了实现图的深度优先搜索</p>\n"
+        }
+      ],
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>以下对数据结构的表述不恰当的一项是：（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "A",
+      "content": "以下连通无向图中，（ ）一定可以用不超过两种颜色进行染色",
+      "options": [
+        {
+          "key": "A",
+          "text": "完全三叉树",
+          "html": "<p>完全三叉树</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "平面图",
+          "html": "<p>平面图</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "边双连通图",
+          "html": "<p>边双连通图</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "欧拉图",
+          "html": "<p>欧拉图</p>\n"
+        }
+      ],
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>以下连通无向图中，（ ）一定可以用不超过两种颜色进行染色</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "D",
+      "content": "最长公共子序列长度常常用来衡量两个序列的相似度。其定义如下：给定两个序列 $X=\\{x_1,x_z,x_3,...,x_m\\}$ 和 $Y=\\{y_i,y_z,y_3,...,y_n\\}$, 最长公共子序列（LCS）问题的目标是找到一个最长的新序列 $Z=\\{z_1,z_2,z_3,...,z_k\\}$ 使得序列 $Z$ 既是序列 $X$ 的子序列，又是序列 $Y$ 的子序列，且序列 $Z$ 的长度 $k$ 在满足上述条件的序列里是最大的。（注: 序列 $A$ 是序列 $B$ 的子序列，当且仅当在保持序列 $B$ 元素顺序的情况下，从序列 $B$ 中删除若干个元素，可以使得剩余的元素构成序列 $A$。）则序列 `ABCAAAABA` 和 `ABABCBABA` 的最长公共子序列长度为（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$7$",
+          "html": "<p>$7$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        }
+      ],
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>最长公共子序列长度常常用来衡量两个序列的相似度。其定义如下：给定两个序列 $X=\\{x_1,x_z,x_3,...,x_m\\}$ 和 $Y=\\{y_i,y_z,y_3,...,y_n\\}$, 最长公共子序列（LCS）问题的目标是找到一个最长的新序列 $Z=\\{z_1,z_2,z_3,...,z_k\\}$ 使得序列 $Z$ 既是序列 $X$ 的子序列，又是序列 $Y$ 的子序列，且序列 $Z$ 的长度 $k$ 在满足上述条件的序列里是最大的。（注: 序列 $A$ 是序列 $B$ 的子序列，当且仅当在保持序列 $B$ 元素顺序的情况下，从序列 $B$ 中删除若干个元素，可以使得剩余的元素构成序列 $A$。）则序列 <code>ABCAAAABA</code> 和 <code>ABABCBABA</code> 的最长公共子序列长度为（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "D",
+      "content": "一位玩家正在玩一个特殊的掷骰子的游戏，游戏要求连续掷两次骰子，收益规则如下: 玩家第一次掷出 $x$ 点，得到 $2x$ 元；第二次掷出 $y$ 点，当 $y=x$ 时玩家会失去之前得到的 $2x$ 元而当 $y\\neq x$ 时玩家能保住第一次获得的$2x$ 元。上述 $x,y\\in \\{1,2,3,4,5,6\\}$。例如: 玩家第一次掷出 $3$ 点得到 $6$ 元后，但第二次再次掷出 $3$ 点，会失去之前得到的 $6$ 元，玩家最终收益为 $0$ 元;如果玩家第一次掷出 $3$ 点、第二次掷出 $4$ 点，则最终收益是 $6$ 元。假设骰子挑出任意一点的概率均为 $\\frac{1}{6}$，玩家连续掷两次骰子后，所有可能情形下收益的平均值是多少?",
+      "options": [
+        {
+          "key": "A",
+          "text": "$\\frac{16}{3}$元",
+          "html": "<p>$\\frac{16}{3}$元</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$\\frac{19}{3}$ 元",
+          "html": "<p>$\\frac{19}{3}$ 元</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$7$元",
+          "html": "<p>$7$元</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$\\frac{35}{6}$ 元",
+          "html": "<p>$\\frac{35}{6}$ 元</p>\n"
+        }
+      ],
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>一位玩家正在玩一个特殊的掷骰子的游戏，游戏要求连续掷两次骰子，收益规则如下: 玩家第一次掷出 $x$ 点，得到 $2x$ 元；第二次掷出 $y$ 点，当 $y=x$ 时玩家会失去之前得到的 $2x$ 元而当 $y\\neq x$ 时玩家能保住第一次获得的$2x$ 元。上述 $x,y\\in \\{1,2,3,4,5,6\\}$。例如: 玩家第一次掷出 $3$ 点得到 $6$ 元后，但第二次再次掷出 $3$ 点，会失去之前得到的 $6$ 元，玩家最终收益为 $0$ 元;如果玩家第一次掷出 $3$ 点、第二次掷出 $4$ 点，则最终收益是 $6$ 元。假设骰子挑出任意一点的概率均为 $\\frac{1}{6}$，玩家连续掷两次骰子后，所有可能情形下收益的平均值是多少?</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "D",
+      "content": "假设我们有以下的 C++ 代码：\n\n```\nint a = 5, b = 3, c = 4;\nbool res = a & b || c ^ b && a | c;\n```\n\n请问，`res` 的值是什么? （ ）\n\n提示：在 C++ 中，逻辑运算的优先级从高到低依次为：逻辑非（`!`）、逻辑与（`&&`）、逻辑或（`||`）。位运算的优先级从高到低依次为：位非（`~`）、位与（`&`）、位异或（`^`）、位或 （`|`）。同时，双目位运算的优先级高于双目逻辑运算；逻辑非和位非优先级相同，且高于所有双目运算符。",
+      "options": [
+        {
+          "key": "A",
+          "text": "`false`",
+          "html": "<p><code>false</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`1`",
+          "html": "<p><code>1</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`0`",
+          "html": "<p><code>0</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`true`",
+          "html": "<p><code>true</code></p>\n"
+        }
+      ],
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>假设我们有以下的 C++ 代码：</p>\n<pre><code>int a = 5, b = 3, c = 4;\nbool res = a &amp; b || c ^ b &amp;&amp; a | c;\n</code></pre>\n<p>请问，<code>res</code> 的值是什么? （ ）</p>\n<p>提示：在 C++ 中，逻辑运算的优先级从高到低依次为：逻辑非（<code>!</code>）、逻辑与（<code>&amp;&amp;</code>）、逻辑或（<code>||</code>）。位运算的优先级从高到低依次为：位非（<code>~</code>）、位与（<code>&amp;</code>）、位异或（<code>^</code>）、位或 （<code>|</code>）。同时，双目位运算的优先级高于双目逻辑运算；逻辑非和位非优先级相同，且高于所有双目运算符。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "D",
+      "content": "假设快速排序算法的输入是一个长度为 $n$ 的已排序数组，且该快速排序算法在分治过程总是选择第一个元素作为基准元素。以下哪个选项描述的是在这种情况下的快速排序行为？",
+      "options": [
+        {
+          "key": "A",
+          "text": "快速排序无法对此类数组进行排序，因为数组已经排序",
+          "html": "<p>快速排序无法对此类数组进行排序，因为数组已经排序</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "快速排序对于此类输入的表现最好，因为数组已经排序",
+          "html": "<p>快速排序对于此类输入的表现最好，因为数组已经排序</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "快速排序对于此类输入的时间复杂度是 $\\mathrm{O}(n\\log{n})$。",
+          "html": "<p>快速排序对于此类输入的时间复杂度是 $\\mathrm{O}(n\\log{n})$。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "快速排序对于此类输入的时间复杂度是 $\\mathrm{O}(n^2)$",
+          "html": "<p>快速排序对于此类输入的时间复杂度是 $\\mathrm{O}(n^2)$</p>\n"
+        }
+      ],
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>假设快速排序算法的输入是一个长度为 $n$ 的已排序数组，且该快速排序算法在分治过程总是选择第一个元素作为基准元素。以下哪个选项描述的是在这种情况下的快速排序行为？</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "D",
+      "content": "以下哪个命令，能将一个名为 `main.cpp` 的 C++ 源文件，编译并生成一个名为 `main` 的可执行文件？（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "`g++ -o main.cpp main`",
+          "html": "<p><code>g++ -o main.cpp main</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`g++ main -o main.cpp`",
+          "html": "<p><code>g++ main -o main.cpp</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`g++ main.cpp -o main.cpp`",
+          "html": "<p><code>g++ main.cpp -o main.cpp</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`g++ -o main main.cpp`",
+          "html": "<p><code>g++ -o main main.cpp</code></p>\n"
+        }
+      ],
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>以下哪个命令，能将一个名为 <code>main.cpp</code> 的 C++ 源文件，编译并生成一个名为 <code>main</code> 的可执行文件？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "D",
+      "content": "在图论中，树的重心是树上的一个结点，以该结点为根时，使得其所有的子树中结点数最多的子树的结点数最少。一棵树可能有多个重心。请问下面哪种树一定只有一个重心？",
+      "options": [
+        {
+          "key": "A",
+          "text": "$6$ 个结点的树",
+          "html": "<p>$6$ 个结点的树</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$8$ 个结点的树",
+          "html": "<p>$8$ 个结点的树</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$4$ 个结点的树",
+          "html": "<p>$4$ 个结点的树</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$7$ 个结点的树",
+          "html": "<p>$7$ 个结点的树</p>\n"
+        }
+      ],
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>在图论中，树的重心是树上的一个结点，以该结点为根时，使得其所有的子树中结点数最多的子树的结点数最少。一棵树可能有多个重心。请问下面哪种树一定只有一个重心？</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "D",
+      "content": "[图片]\n\n如图是一张包含 $6$ 个顶点的有向图，但顶点间不存在拓扑序。如果要删除其中一条边，使这 $6$ 个顶点能进行拓扑排序，请问总共有多少条边可以作为候选的被删除边？",
+      "options": [
+        {
+          "key": "A",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        }
+      ],
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>[图片]</p>\n<p>如图是一张包含 $6$ 个顶点的有向图，但顶点间不存在拓扑序。如果要删除其中一条边，使这 $6$ 个顶点能进行拓扑排序，请问总共有多少条边可以作为候选的被删除边？</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "D",
+      "content": "若 $n = \\Sigma^{k}_{i=0}16^i·{x_i}$，定义 $\\mathrm{f}(n) = \\Sigma^{k}_{i=0}x_i$；其中 $x_i\\in {0,1,\\dots,15}$。对于给定自然数 $n_0$，存在序列 $n_0, n_1, n_2,\\dots,n_m$，其中对于 $1\\leq i \\leq m$ 都有 $n_i = \\mathrm{f}(n_{i-1})$，且 $n_m=n_{m-1}$，称 $n_m$ 为 $n_0$ 关于 $\\mathrm{f}$ 的不动点。问在 $100_{16}$ 至 $\\mathrm{1A0}_{16}$ 中，关于 $\\mathrm{f}$ 的不动点为 $9$ 的自然数个数为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "$12$",
+          "html": "<p>$12$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$13$",
+          "html": "<p>$13$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$11$",
+          "html": "<p>$11$</p>\n"
+        }
+      ],
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>若 $n = \\Sigma^{k}_{i=0}16^i·{x_i}$，定义 $\\mathrm{f}(n) = \\Sigma^{k}_{i=0}x_i$；其中 $x_i\\in {0,1,\\dots,15}$。对于给定自然数 $n_0$，存在序列 $n_0, n_1, n_2,\\dots,n_m$，其中对于 $1\\leq i \\leq m$ 都有 $n_i = \\mathrm{f}(n_{i-1})$，且 $n_m=n_{m-1}$，称 $n_m$ 为 $n_0$ 关于 $\\mathrm{f}$ 的不动点。问在 $100_{16}$ 至 $\\mathrm{1A0}_{16}$ 中，关于 $\\mathrm{f}$ 的不动点为 $9$ 的自然数个数为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "section": "单项选择题",
+      "score": 2.0,
+      "answer": "D",
+      "content": "现在用如下代码来计算 $x^n$，其时间复杂度为（ ）。\n\n```\ndouble quick_power(double x, unsigned n) {\n    if (n == 0) return 1;\n    if (n == 1) return x;\n    return quick_power(x, n / 2)\n        * quick_power(x, n / 2)\n        * ((n & 1) ? x : 1);\n}\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "$\\mathrm{O}(1)$",
+          "html": "<p>$\\mathrm{O}(1)$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$\\mathrm{O}(\\log{n})$",
+          "html": "<p>$\\mathrm{O}(\\log{n})$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$\\mathrm{O}(n\\log{n})$",
+          "html": "<p>$\\mathrm{O}(n\\log{n})$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$\\mathrm{O}(n)$",
+          "html": "<p>$\\mathrm{O}(n)$</p>\n"
+        }
+      ],
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>现在用如下代码来计算 $x^n$，其时间复杂度为（ ）。</p>\n<pre><code>double quick_power(double x, unsigned n) {\n    if (n == 0) return 1;\n    if (n == 1) return x;\n    return quick_power(x, n / 2)\n        * quick_power(x, n / 2)\n        * ((n &amp; 1) ? x : 1);\n}\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "section": "阅读程序",
+      "score": 1.5,
+      "answer": "True",
+      "content": "```\n#include <iostream>\nusing namespace std;\n\nunsigned short f(unsigned short x) {\n    x ^= x << 6;\n    x ^= x >> 8;\n    return x;\n}\n\nint main() {\n    unsigned short x;\n    cin >> x;\n    unsigned short y = f(x);\n    cout << y << endl;\n    return 0;\n}\n```\n\n假设输入的 `x` 是不超过 $65535$ 的自然数，完成下面的判断题。\n\n当输入非零时，输出一定不为零。",
+      "options": [
+        {
+          "key": "A",
+          "text": "错误",
+          "html": "<p>错误</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "正确",
+          "html": "<p>正确</p>\n"
+        }
+      ],
+      "uid": "q16",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\nusing namespace std;\n\nunsigned short f(unsigned short x) {\n    x ^= x &lt;&lt; 6;\n    x ^= x &gt;&gt; 8;\n    return x;\n}\n\nint main() {\n    unsigned short x;\n    cin &gt;&gt; x;\n    unsigned short y = f(x);\n    cout &lt;&lt; y &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入的 <code>x</code> 是不超过 $65535$ 的自然数，完成下面的判断题。</p>\n<p>当输入非零时，输出一定不为零。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "section": "阅读程序",
+      "score": 2.0,
+      "answer": "False",
+      "content": "```\n#include <iostream>\nusing namespace std;\n\nunsigned short f(unsigned short x) {\n    x ^= x << 6;\n    x ^= x >> 8;\n    return x;\n}\n\nint main() {\n    unsigned short x;\n    cin >> x;\n    unsigned short y = f(x);\n    cout << y << endl;\n    return 0;\n}\n```\n\n假设输入的 `x` 是不超过 $65535$ 的自然数，完成下面的判断题。\n\n将f函数的输入参数的类型改为 `unsigned int`，程序的输出不变。",
+      "options": [
+        {
+          "key": "A",
+          "text": "正确",
+          "html": "<p>正确</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "错误",
+          "html": "<p>错误</p>\n"
+        }
+      ],
+      "uid": "q17",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\nusing namespace std;\n\nunsigned short f(unsigned short x) {\n    x ^= x &lt;&lt; 6;\n    x ^= x &gt;&gt; 8;\n    return x;\n}\n\nint main() {\n    unsigned short x;\n    cin &gt;&gt; x;\n    unsigned short y = f(x);\n    cout &lt;&lt; y &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入的 <code>x</code> 是不超过 $65535$ 的自然数，完成下面的判断题。</p>\n<p>将f函数的输入参数的类型改为 <code>unsigned int</code>，程序的输出不变。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "section": "阅读程序",
+      "score": 1.5,
+      "answer": "True",
+      "content": "```\n#include <iostream>\nusing namespace std;\n\nunsigned short f(unsigned short x) {\n    x ^= x << 6;\n    x ^= x >> 8;\n    return x;\n}\n\nint main() {\n    unsigned short x;\n    cin >> x;\n    unsigned short y = f(x);\n    cout << y << endl;\n    return 0;\n}\n```\n\n假设输入的 `x` 是不超过 $65535$ 的自然数，完成下面的判断题。\n\n当输入为 `65535` 时，输出为 `63`。",
+      "options": [
+        {
+          "key": "A",
+          "text": "错误",
+          "html": "<p>错误</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "正确",
+          "html": "<p>正确</p>\n"
+        }
+      ],
+      "uid": "q18",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\nusing namespace std;\n\nunsigned short f(unsigned short x) {\n    x ^= x &lt;&lt; 6;\n    x ^= x &gt;&gt; 8;\n    return x;\n}\n\nint main() {\n    unsigned short x;\n    cin &gt;&gt; x;\n    unsigned short y = f(x);\n    cout &lt;&lt; y &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入的 <code>x</code> 是不超过 $65535$ 的自然数，完成下面的判断题。</p>\n<p>当输入为 <code>65535</code> 时，输出为 <code>63</code>。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "section": "阅读程序",
+      "score": 1.5,
+      "answer": "False",
+      "content": "```\n#include <iostream>\nusing namespace std;\n\nunsigned short f(unsigned short x) {\n    x ^= x << 6;\n    x ^= x >> 8;\n    return x;\n}\n\nint main() {\n    unsigned short x;\n    cin >> x;\n    unsigned short y = f(x);\n    cout << y << endl;\n    return 0;\n}\n```\n\n假设输入的 `x` 是不超过 $65535$ 的自然数，完成下面的判断题。\n\n当输入为 `1` 时，输出为 `64`。",
+      "options": [
+        {
+          "key": "A",
+          "text": "正确",
+          "html": "<p>正确</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "错误",
+          "html": "<p>错误</p>\n"
+        }
+      ],
+      "uid": "q19",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\nusing namespace std;\n\nunsigned short f(unsigned short x) {\n    x ^= x &lt;&lt; 6;\n    x ^= x &gt;&gt; 8;\n    return x;\n}\n\nint main() {\n    unsigned short x;\n    cin &gt;&gt; x;\n    unsigned short y = f(x);\n    cout &lt;&lt; y &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入的 <code>x</code> 是不超过 $65535$ 的自然数，完成下面的判断题。</p>\n<p>当输入为 <code>1</code> 时，输出为 <code>64</code>。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 20,
+      "section": "阅读程序",
+      "score": 3.0,
+      "answer": "D",
+      "content": "```\n#include <iostream>\nusing namespace std;\n\nunsigned short f(unsigned short x) {\n    x ^= x << 6;\n    x ^= x >> 8;\n    return x;\n}\n\nint main() {\n    unsigned short x;\n    cin >> x;\n    unsigned short y = f(x);\n    cout << y << endl;\n    return 0;\n}\n```\n\n假设输入的 `x` 是不超过 $65535$ 的自然数，完成下面的单选题。\n\n当输入为 `512` 时，输出为（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "`33106`",
+          "html": "<p><code>33106</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`33346`",
+          "html": "<p><code>33346</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`33280`",
+          "html": "<p><code>33280</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`33410`",
+          "html": "<p><code>33410</code></p>\n"
+        }
+      ],
+      "uid": "q20",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\nusing namespace std;\n\nunsigned short f(unsigned short x) {\n    x ^= x &lt;&lt; 6;\n    x ^= x &gt;&gt; 8;\n    return x;\n}\n\nint main() {\n    unsigned short x;\n    cin &gt;&gt; x;\n    unsigned short y = f(x);\n    cout &lt;&lt; y &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入的 <code>x</code> 是不超过 $65535$ 的自然数，完成下面的单选题。</p>\n<p>当输入为 <code>512</code> 时，输出为（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 21,
+      "section": "阅读程序",
+      "score": 3.0,
+      "answer": "D",
+      "content": "```\n#include <iostream>\nusing namespace std;\n\nunsigned short f(unsigned short x) {\n    x ^= x << 6;\n    x ^= x >> 8;\n    return x;\n}\n\nint main() {\n    unsigned short x;\n    cin >> x;\n    unsigned short y = f(x);\n    cout << y << endl;\n    return 0;\n}\n```\n\n假设输入的 `x` 是不超过 $65535$ 的自然数，完成下面的单选题。\n\n当输入为 `64` 时，执行完第 5 行后 `x` 的值为（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "`4130`",
+          "html": "<p><code>4130</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`4128`",
+          "html": "<p><code>4128</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`8256`",
+          "html": "<p><code>8256</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`4160`",
+          "html": "<p><code>4160</code></p>\n"
+        }
+      ],
+      "uid": "q21",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\nusing namespace std;\n\nunsigned short f(unsigned short x) {\n    x ^= x &lt;&lt; 6;\n    x ^= x &gt;&gt; 8;\n    return x;\n}\n\nint main() {\n    unsigned short x;\n    cin &gt;&gt; x;\n    unsigned short y = f(x);\n    cout &lt;&lt; y &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入的 <code>x</code> 是不超过 $65535$ 的自然数，完成下面的单选题。</p>\n<p>当输入为 <code>64</code> 时，执行完第 5 行后 <code>x</code> 的值为（ ）</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "section": "阅读程序",
+      "score": 1.5,
+      "answer": "False",
+      "content": "```\n#include <iostream>\n#include <cmath>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nlong long solve1(int n) {\n    vector<bool> p(n + 1, true);\n    vector<long long> f(n + 1, 0), g(n + 1, 0);\n    f[1] = 1;\n    for (int i = 2; i * i <= n; i++) {\n        if (p[i]) {\n            vector<int> d;\n            for (int k = i; k <= n; k *= i) d.push_back(k);\n            reverse(d.begin(), d.end());\n            for (int k : d) {\n                for(int j = k; j <= n; j += k){\n                    if(p[j]){\n                        p[j] = false;\n                        f[j] = i;\n                        g[j] = k;\n                    }\n                }\n            }\n        }\n    }\n    for (int i = sqrt(n) + 1; i <= n; i++) {\n        if (p[i]) {\n            f[i] = i;\n            g[i] = i;\n        }\n    }\n    long long sum = 1;\n    for (int i = 2; i <= n; i++) {\n        f[i] = f[i / g[i]] * (g[i] * f[i] - 1) / (f[i] - 1);\n        sum += f[i]; \n    }\n    return sum; \n}\n\nlong long solve2(int n) {\n    long long sum = 0;\n    for(int i = 1; i <= n; i++){\n        sum += i * (n / i);\n    }\n    return sum;\n}\n\nint main() {\n    int n;\n    cin >> n;\n    cout << solve1(n) << endl;\n    cout << solve2(n) << endl;\n    return 0;\n}\n```\n\n假设输入的 `n` 是不超过 $1000000$ 的自然数，完成下面的判断题。\n\n将第 15 行删去，输出不变。",
+      "options": [
+        {
+          "key": "A",
+          "text": "正确",
+          "html": "<p>正确</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "错误",
+          "html": "<p>错误</p>\n"
+        }
+      ],
+      "uid": "q22",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\n#include &lt;cmath&gt;\n#include &lt;vector&gt;\n#include &lt;algorithm&gt;\nusing namespace std;\n\nlong long solve1(int n) {\n    vector&lt;bool&gt; p(n + 1, true);\n    vector&lt;long long&gt; f(n + 1, 0), g(n + 1, 0);\n    f[1] = 1;\n    for (int i = 2; i * i &lt;= n; i++) {\n        if (p[i]) {\n            vector&lt;int&gt; d;\n            for (int k = i; k &lt;= n; k *= i) d.push_back(k);\n            reverse(d.begin(), d.end());\n            for (int k : d) {\n                for(int j = k; j &lt;= n; j += k){\n                    if(p[j]){\n                        p[j] = false;\n                        f[j] = i;\n                        g[j] = k;\n                    }\n                }\n            }\n        }\n    }\n    for (int i = sqrt(n) + 1; i &lt;= n; i++) {\n        if (p[i]) {\n            f[i] = i;\n            g[i] = i;\n        }\n    }\n    long long sum = 1;\n    for (int i = 2; i &lt;= n; i++) {\n        f[i] = f[i / g[i]] * (g[i] * f[i] - 1) / (f[i] - 1);\n        sum += f[i]; \n    }\n    return sum; \n}\n\nlong long solve2(int n) {\n    long long sum = 0;\n    for(int i = 1; i &lt;= n; i++){\n        sum += i * (n / i);\n    }\n    return sum;\n}\n\nint main() {\n    int n;\n    cin &gt;&gt; n;\n    cout &lt;&lt; solve1(n) &lt;&lt; endl;\n    cout &lt;&lt; solve2(n) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入的 <code>n</code> 是不超过 $1000000$ 的自然数，完成下面的判断题。</p>\n<p>将第 15 行删去，输出不变。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "section": "阅读程序",
+      "score": 1.5,
+      "answer": "False",
+      "content": "```\n#include <iostream>\n#include <cmath>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nlong long solve1(int n) {\n    vector<bool> p(n + 1, true);\n    vector<long long> f(n + 1, 0), g(n + 1, 0);\n    f[1] = 1;\n    for (int i = 2; i * i <= n; i++) {\n        if (p[i]) {\n            vector<int> d;\n            for (int k = i; k <= n; k *= i) d.push_back(k);\n            reverse(d.begin(), d.end());\n            for (int k : d) {\n                for(int j = k; j <= n; j += k){\n                    if(p[j]){\n                        p[j] = false;\n                        f[j] = i;\n                        g[j] = k;\n                    }\n                }\n            }\n        }\n    }\n    for (int i = sqrt(n) + 1; i <= n; i++) {\n        if (p[i]) {\n            f[i] = i;\n            g[i] = i;\n        }\n    }\n    long long sum = 1;\n    for (int i = 2; i <= n; i++) {\n        f[i] = f[i / g[i]] * (g[i] * f[i] - 1) / (f[i] - 1);\n        sum += f[i]; \n    }\n    return sum; \n}\n\nlong long solve2(int n) {\n    long long sum = 0;\n    for(int i = 1; i <= n; i++){\n        sum += i * (n / i);\n    }\n    return sum;\n}\n\nint main() {\n    int n;\n    cin >> n;\n    cout << solve1(n) << endl;\n    cout << solve2(n) << endl;\n    return 0;\n}\n```\n\n假设输入的 `n` 是不超过 $1000000$ 的自然数，完成下面的判断题。\n\n当输入为 `10` 时，输出的第一行大于第二行。",
+      "options": [
+        {
+          "key": "A",
+          "text": "正确",
+          "html": "<p>正确</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "错误",
+          "html": "<p>错误</p>\n"
+        }
+      ],
+      "uid": "q23",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\n#include &lt;cmath&gt;\n#include &lt;vector&gt;\n#include &lt;algorithm&gt;\nusing namespace std;\n\nlong long solve1(int n) {\n    vector&lt;bool&gt; p(n + 1, true);\n    vector&lt;long long&gt; f(n + 1, 0), g(n + 1, 0);\n    f[1] = 1;\n    for (int i = 2; i * i &lt;= n; i++) {\n        if (p[i]) {\n            vector&lt;int&gt; d;\n            for (int k = i; k &lt;= n; k *= i) d.push_back(k);\n            reverse(d.begin(), d.end());\n            for (int k : d) {\n                for(int j = k; j &lt;= n; j += k){\n                    if(p[j]){\n                        p[j] = false;\n                        f[j] = i;\n                        g[j] = k;\n                    }\n                }\n            }\n        }\n    }\n    for (int i = sqrt(n) + 1; i &lt;= n; i++) {\n        if (p[i]) {\n            f[i] = i;\n            g[i] = i;\n        }\n    }\n    long long sum = 1;\n    for (int i = 2; i &lt;= n; i++) {\n        f[i] = f[i / g[i]] * (g[i] * f[i] - 1) / (f[i] - 1);\n        sum += f[i]; \n    }\n    return sum; \n}\n\nlong long solve2(int n) {\n    long long sum = 0;\n    for(int i = 1; i &lt;= n; i++){\n        sum += i * (n / i);\n    }\n    return sum;\n}\n\nint main() {\n    int n;\n    cin &gt;&gt; n;\n    cout &lt;&lt; solve1(n) &lt;&lt; endl;\n    cout &lt;&lt; solve2(n) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入的 <code>n</code> 是不超过 $1000000$ 的自然数，完成下面的判断题。</p>\n<p>当输入为 <code>10</code> 时，输出的第一行大于第二行。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "section": "阅读程序",
+      "score": 2.0,
+      "answer": "True",
+      "content": "```\n#include <iostream>\n#include <cmath>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nlong long solve1(int n) {\n    vector<bool> p(n + 1, true);\n    vector<long long> f(n + 1, 0), g(n + 1, 0);\n    f[1] = 1;\n    for (int i = 2; i * i <= n; i++) {\n        if (p[i]) {\n            vector<int> d;\n            for (int k = i; k <= n; k *= i) d.push_back(k);\n            reverse(d.begin(), d.end());\n            for (int k : d) {\n                for(int j = k; j <= n; j += k){\n                    if(p[j]){\n                        p[j] = false;\n                        f[j] = i;\n                        g[j] = k;\n                    }\n                }\n            }\n        }\n    }\n    for (int i = sqrt(n) + 1; i <= n; i++) {\n        if (p[i]) {\n            f[i] = i;\n            g[i] = i;\n        }\n    }\n    long long sum = 1;\n    for (int i = 2; i <= n; i++) {\n        f[i] = f[i / g[i]] * (g[i] * f[i] - 1) / (f[i] - 1);\n        sum += f[i]; \n    }\n    return sum; \n}\n\nlong long solve2(int n) {\n    long long sum = 0;\n    for(int i = 1; i <= n; i++){\n        sum += i * (n / i);\n    }\n    return sum;\n}\n\nint main() {\n    int n;\n    cin >> n;\n    cout << solve1(n) << endl;\n    cout << solve2(n) << endl;\n    return 0;\n}\n```\n\n假设输入的 `n` 是不超过 $1000000$ 的自然数，完成下面的判断题。\n\n当输入为 `1000` 时，输出的第一行与第二行相等。",
+      "options": [
+        {
+          "key": "A",
+          "text": "错误",
+          "html": "<p>错误</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "正确",
+          "html": "<p>正确</p>\n"
+        }
+      ],
+      "uid": "q24",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\n#include &lt;cmath&gt;\n#include &lt;vector&gt;\n#include &lt;algorithm&gt;\nusing namespace std;\n\nlong long solve1(int n) {\n    vector&lt;bool&gt; p(n + 1, true);\n    vector&lt;long long&gt; f(n + 1, 0), g(n + 1, 0);\n    f[1] = 1;\n    for (int i = 2; i * i &lt;= n; i++) {\n        if (p[i]) {\n            vector&lt;int&gt; d;\n            for (int k = i; k &lt;= n; k *= i) d.push_back(k);\n            reverse(d.begin(), d.end());\n            for (int k : d) {\n                for(int j = k; j &lt;= n; j += k){\n                    if(p[j]){\n                        p[j] = false;\n                        f[j] = i;\n                        g[j] = k;\n                    }\n                }\n            }\n        }\n    }\n    for (int i = sqrt(n) + 1; i &lt;= n; i++) {\n        if (p[i]) {\n            f[i] = i;\n            g[i] = i;\n        }\n    }\n    long long sum = 1;\n    for (int i = 2; i &lt;= n; i++) {\n        f[i] = f[i / g[i]] * (g[i] * f[i] - 1) / (f[i] - 1);\n        sum += f[i]; \n    }\n    return sum; \n}\n\nlong long solve2(int n) {\n    long long sum = 0;\n    for(int i = 1; i &lt;= n; i++){\n        sum += i * (n / i);\n    }\n    return sum;\n}\n\nint main() {\n    int n;\n    cin &gt;&gt; n;\n    cout &lt;&lt; solve1(n) &lt;&lt; endl;\n    cout &lt;&lt; solve2(n) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入的 <code>n</code> 是不超过 $1000000$ 的自然数，完成下面的判断题。</p>\n<p>当输入为 <code>1000</code> 时，输出的第一行与第二行相等。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 25,
+      "section": "阅读程序",
+      "score": 3.0,
+      "answer": "D",
+      "content": "```\n#include <iostream>\n#include <cmath>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nlong long solve1(int n) {\n    vector<bool> p(n + 1, true);\n    vector<long long> f(n + 1, 0), g(n + 1, 0);\n    f[1] = 1;\n    for (int i = 2; i * i <= n; i++) {\n        if (p[i]) {\n            vector<int> d;\n            for (int k = i; k <= n; k *= i) d.push_back(k);\n            reverse(d.begin(), d.end());\n            for (int k : d) {\n                for(int j = k; j <= n; j += k){\n                    if(p[j]){\n                        p[j] = false;\n                        f[j] = i;\n                        g[j] = k;\n                    }\n                }\n            }\n        }\n    }\n    for (int i = sqrt(n) + 1; i <= n; i++) {\n        if (p[i]) {\n            f[i] = i;\n            g[i] = i;\n        }\n    }\n    long long sum = 1;\n    for (int i = 2; i <= n; i++) {\n        f[i] = f[i / g[i]] * (g[i] * f[i] - 1) / (f[i] - 1);\n        sum += f[i]; \n    }\n    return sum; \n}\n\nlong long solve2(int n) {\n    long long sum = 0;\n    for(int i = 1; i <= n; i++){\n        sum += i * (n / i);\n    }\n    return sum;\n}\n\nint main() {\n    int n;\n    cin >> n;\n    cout << solve1(n) << endl;\n    cout << solve2(n) << endl;\n    return 0;\n}\n```\n\n假设输入的 `n` 是不超过 $1000000$ 的自然数，完成下面的单选题。\n\n`solve1(n)` 的时间复杂度为（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "$\\mathrm{O}(n)$",
+          "html": "<p>$\\mathrm{O}(n)$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$\\mathrm{O}(n\\log{n})$",
+          "html": "<p>$\\mathrm{O}(n\\log{n})$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$\\mathrm{O}(n\\log^{2}n)$",
+          "html": "<p>$\\mathrm{O}(n\\log^{2}n)$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$\\mathrm{O}(n\\log{\\log{n}})$",
+          "html": "<p>$\\mathrm{O}(n\\log{\\log{n}})$</p>\n"
+        }
+      ],
+      "uid": "q25",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\n#include &lt;cmath&gt;\n#include &lt;vector&gt;\n#include &lt;algorithm&gt;\nusing namespace std;\n\nlong long solve1(int n) {\n    vector&lt;bool&gt; p(n + 1, true);\n    vector&lt;long long&gt; f(n + 1, 0), g(n + 1, 0);\n    f[1] = 1;\n    for (int i = 2; i * i &lt;= n; i++) {\n        if (p[i]) {\n            vector&lt;int&gt; d;\n            for (int k = i; k &lt;= n; k *= i) d.push_back(k);\n            reverse(d.begin(), d.end());\n            for (int k : d) {\n                for(int j = k; j &lt;= n; j += k){\n                    if(p[j]){\n                        p[j] = false;\n                        f[j] = i;\n                        g[j] = k;\n                    }\n                }\n            }\n        }\n    }\n    for (int i = sqrt(n) + 1; i &lt;= n; i++) {\n        if (p[i]) {\n            f[i] = i;\n            g[i] = i;\n        }\n    }\n    long long sum = 1;\n    for (int i = 2; i &lt;= n; i++) {\n        f[i] = f[i / g[i]] * (g[i] * f[i] - 1) / (f[i] - 1);\n        sum += f[i]; \n    }\n    return sum; \n}\n\nlong long solve2(int n) {\n    long long sum = 0;\n    for(int i = 1; i &lt;= n; i++){\n        sum += i * (n / i);\n    }\n    return sum;\n}\n\nint main() {\n    int n;\n    cin &gt;&gt; n;\n    cout &lt;&lt; solve1(n) &lt;&lt; endl;\n    cout &lt;&lt; solve2(n) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入的 <code>n</code> 是不超过 $1000000$ 的自然数，完成下面的单选题。</p>\n<p><code>solve1(n)</code> 的时间复杂度为（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 26,
+      "section": "阅读程序",
+      "score": 3.0,
+      "answer": "D",
+      "content": "```\n#include <iostream>\n#include <cmath>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nlong long solve1(int n) {\n    vector<bool> p(n + 1, true);\n    vector<long long> f(n + 1, 0), g(n + 1, 0);\n    f[1] = 1;\n    for (int i = 2; i * i <= n; i++) {\n        if (p[i]) {\n            vector<int> d;\n            for (int k = i; k <= n; k *= i) d.push_back(k);\n            reverse(d.begin(), d.end());\n            for (int k : d) {\n                for(int j = k; j <= n; j += k){\n                    if(p[j]){\n                        p[j] = false;\n                        f[j] = i;\n                        g[j] = k;\n                    }\n                }\n            }\n        }\n    }\n    for (int i = sqrt(n) + 1; i <= n; i++) {\n        if (p[i]) {\n            f[i] = i;\n            g[i] = i;\n        }\n    }\n    long long sum = 1;\n    for (int i = 2; i <= n; i++) {\n        f[i] = f[i / g[i]] * (g[i] * f[i] - 1) / (f[i] - 1);\n        sum += f[i]; \n    }\n    return sum; \n}\n\nlong long solve2(int n) {\n    long long sum = 0;\n    for(int i = 1; i <= n; i++){\n        sum += i * (n / i);\n    }\n    return sum;\n}\n\nint main() {\n    int n;\n    cin >> n;\n    cout << solve1(n) << endl;\n    cout << solve2(n) << endl;\n    return 0;\n}\n```\n\n假设输入的 `n` 是不超过 $1000000$ 的自然数，完成下面的单选题。\n\n`solve2(n)` 的时间复杂度为（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "$\\mathrm{O}(n\\log{n})$",
+          "html": "<p>$\\mathrm{O}(n\\log{n})$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$\\mathrm{O}(n^2)$",
+          "html": "<p>$\\mathrm{O}(n^2)$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$\\mathrm{O}(n\\sqrt n)$",
+          "html": "<p>$\\mathrm{O}(n\\sqrt n)$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$\\mathrm{O}(n)$",
+          "html": "<p>$\\mathrm{O}(n)$</p>\n"
+        }
+      ],
+      "uid": "q26",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\n#include &lt;cmath&gt;\n#include &lt;vector&gt;\n#include &lt;algorithm&gt;\nusing namespace std;\n\nlong long solve1(int n) {\n    vector&lt;bool&gt; p(n + 1, true);\n    vector&lt;long long&gt; f(n + 1, 0), g(n + 1, 0);\n    f[1] = 1;\n    for (int i = 2; i * i &lt;= n; i++) {\n        if (p[i]) {\n            vector&lt;int&gt; d;\n            for (int k = i; k &lt;= n; k *= i) d.push_back(k);\n            reverse(d.begin(), d.end());\n            for (int k : d) {\n                for(int j = k; j &lt;= n; j += k){\n                    if(p[j]){\n                        p[j] = false;\n                        f[j] = i;\n                        g[j] = k;\n                    }\n                }\n            }\n        }\n    }\n    for (int i = sqrt(n) + 1; i &lt;= n; i++) {\n        if (p[i]) {\n            f[i] = i;\n            g[i] = i;\n        }\n    }\n    long long sum = 1;\n    for (int i = 2; i &lt;= n; i++) {\n        f[i] = f[i / g[i]] * (g[i] * f[i] - 1) / (f[i] - 1);\n        sum += f[i]; \n    }\n    return sum; \n}\n\nlong long solve2(int n) {\n    long long sum = 0;\n    for(int i = 1; i &lt;= n; i++){\n        sum += i * (n / i);\n    }\n    return sum;\n}\n\nint main() {\n    int n;\n    cin &gt;&gt; n;\n    cout &lt;&lt; solve1(n) &lt;&lt; endl;\n    cout &lt;&lt; solve2(n) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入的 <code>n</code> 是不超过 $1000000$ 的自然数，完成下面的单选题。</p>\n<p><code>solve2(n)</code> 的时间复杂度为（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 27,
+      "section": "阅读程序",
+      "score": 3.0,
+      "answer": "D",
+      "content": "```\n#include <iostream>\n#include <cmath>\n#include <vector>\n#include <algorithm>\nusing namespace std;\n\nlong long solve1(int n) {\n    vector<bool> p(n + 1, true);\n    vector<long long> f(n + 1, 0), g(n + 1, 0);\n    f[1] = 1;\n    for (int i = 2; i * i <= n; i++) {\n        if (p[i]) {\n            vector<int> d;\n            for (int k = i; k <= n; k *= i) d.push_back(k);\n            reverse(d.begin(), d.end());\n            for (int k : d) {\n                for(int j = k; j <= n; j += k){\n                    if(p[j]){\n                        p[j] = false;\n                        f[j] = i;\n                        g[j] = k;\n                    }\n                }\n            }\n        }\n    }\n    for (int i = sqrt(n) + 1; i <= n; i++) {\n        if (p[i]) {\n            f[i] = i;\n            g[i] = i;\n        }\n    }\n    long long sum = 1;\n    for (int i = 2; i <= n; i++) {\n        f[i] = f[i / g[i]] * (g[i] * f[i] - 1) / (f[i] - 1);\n        sum += f[i]; \n    }\n    return sum; \n}\n\nlong long solve2(int n) {\n    long long sum = 0;\n    for(int i = 1; i <= n; i++){\n        sum += i * (n / i);\n    }\n    return sum;\n}\n\nint main() {\n    int n;\n    cin >> n;\n    cout << solve1(n) << endl;\n    cout << solve2(n) << endl;\n    return 0;\n}\n```\n\n假设输入的 `n` 是不超过 $1000000$ 的自然数，完成下面的单选题。\n\n输入为 `5` 时，输出的第二行为（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "`22`",
+          "html": "<p><code>22</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`23`",
+          "html": "<p><code>23</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`20`",
+          "html": "<p><code>20</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`21`",
+          "html": "<p><code>21</code></p>\n"
+        }
+      ],
+      "uid": "q27",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\n#include &lt;cmath&gt;\n#include &lt;vector&gt;\n#include &lt;algorithm&gt;\nusing namespace std;\n\nlong long solve1(int n) {\n    vector&lt;bool&gt; p(n + 1, true);\n    vector&lt;long long&gt; f(n + 1, 0), g(n + 1, 0);\n    f[1] = 1;\n    for (int i = 2; i * i &lt;= n; i++) {\n        if (p[i]) {\n            vector&lt;int&gt; d;\n            for (int k = i; k &lt;= n; k *= i) d.push_back(k);\n            reverse(d.begin(), d.end());\n            for (int k : d) {\n                for(int j = k; j &lt;= n; j += k){\n                    if(p[j]){\n                        p[j] = false;\n                        f[j] = i;\n                        g[j] = k;\n                    }\n                }\n            }\n        }\n    }\n    for (int i = sqrt(n) + 1; i &lt;= n; i++) {\n        if (p[i]) {\n            f[i] = i;\n            g[i] = i;\n        }\n    }\n    long long sum = 1;\n    for (int i = 2; i &lt;= n; i++) {\n        f[i] = f[i / g[i]] * (g[i] * f[i] - 1) / (f[i] - 1);\n        sum += f[i]; \n    }\n    return sum; \n}\n\nlong long solve2(int n) {\n    long long sum = 0;\n    for(int i = 1; i &lt;= n; i++){\n        sum += i * (n / i);\n    }\n    return sum;\n}\n\nint main() {\n    int n;\n    cin &gt;&gt; n;\n    cout &lt;&lt; solve1(n) &lt;&lt; endl;\n    cout &lt;&lt; solve2(n) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入的 <code>n</code> 是不超过 $1000000$ 的自然数，完成下面的单选题。</p>\n<p>输入为 <code>5</code> 时，输出的第二行为（ ）</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 28,
+      "section": "阅读程序",
+      "score": 1.5,
+      "answer": "True",
+      "content": "```\n#include <vector>\n#include <algorithm>\n#include <iostream>\n\nusing namespace std;\n\nbool f0(vector<int>& a, int m, int k) {\n    int s = 0;\n    for (int i = 0, j = 0; i < a.size(); i++) {\n        while (a[i] - a[j] > m) j++;\n        s += i - j;\n    }\n    return s >= k; \n}\n\nint f(vector<int>& a, int k) {\n    sort(a.begin(), a.end());\n    \n    int g = 0;\n    int h = a.back() - a[0];\n    while (g < h) {\n        int m = g + (h - g) / 2;\n        if (f0(a, m, k)) {\n            h = m;\n        } else {\n            g = m + 1;\n        }\n    }\n    \n    return g;\n}\n\nint main() {\n    int n, k;\n    cin >> n >> k;\n    vector<int> a(n, 0);\n    for (int i = 0; i < n; i++) {\n        cin >> a[i];\n    }\n    cout << f(a, k) << endl;\n    return 0;\n}\n```\n\n假设输入总是合法的且 $|a[i]| \\leq 10^8, n\\leq 10000$ 和 $1\\leq k \\leq \\frac{n(n-1)}{2}$，完成下面的判断题。\n\n将第 24 行的 `m` 改为 `m - 1`，输出有可能不变，而剩下情况为少 $1$。",
+      "options": [
+        {
+          "key": "A",
+          "text": "错误",
+          "html": "<p>错误</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "正确",
+          "html": "<p>正确</p>\n"
+        }
+      ],
+      "uid": "q28",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;vector&gt;\n#include &lt;algorithm&gt;\n#include &lt;iostream&gt;\n\nusing namespace std;\n\nbool f0(vector&lt;int&gt;&amp; a, int m, int k) {\n    int s = 0;\n    for (int i = 0, j = 0; i &lt; a.size(); i++) {\n        while (a[i] - a[j] &gt; m) j++;\n        s += i - j;\n    }\n    return s &gt;= k; \n}\n\nint f(vector&lt;int&gt;&amp; a, int k) {\n    sort(a.begin(), a.end());\n    \n    int g = 0;\n    int h = a.back() - a[0];\n    while (g &lt; h) {\n        int m = g + (h - g) / 2;\n        if (f0(a, m, k)) {\n            h = m;\n        } else {\n            g = m + 1;\n        }\n    }\n    \n    return g;\n}\n\nint main() {\n    int n, k;\n    cin &gt;&gt; n &gt;&gt; k;\n    vector&lt;int&gt; a(n, 0);\n    for (int i = 0; i &lt; n; i++) {\n        cin &gt;&gt; a[i];\n    }\n    cout &lt;&lt; f(a, k) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入总是合法的且 $|a[i]| \\leq 10^8, n\\leq 10000$ 和 $1\\leq k \\leq \\frac{n(n-1)}{2}$，完成下面的判断题。</p>\n<p>将第 24 行的 <code>m</code> 改为 <code>m - 1</code>，输出有可能不变，而剩下情况为少 $1$。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 29,
+      "section": "阅读程序",
+      "score": 1.5,
+      "answer": "True",
+      "content": "```\n#include <vector>\n#include <algorithm>\n#include <iostream>\n\nusing namespace std;\n\nbool f0(vector<int>& a, int m, int k) {\n    int s = 0;\n    for (int i = 0, j = 0; i < a.size(); i++) {\n        while (a[i] - a[j] > m) j++;\n        s += i - j;\n    }\n    return s >= k; \n}\n\nint f(vector<int>& a, int k) {\n    sort(a.begin(), a.end());\n    \n    int g = 0;\n    int h = a.back() - a[0];\n    while (g < h) {\n        int m = g + (h - g) / 2;\n        if (f0(a, m, k)) {\n            h = m;\n        } else {\n            g = m + 1;\n        }\n    }\n    \n    return g;\n}\n\nint main() {\n    int n, k;\n    cin >> n >> k;\n    vector<int> a(n, 0);\n    for (int i = 0; i < n; i++) {\n        cin >> a[i];\n    }\n    cout << f(a, k) << endl;\n    return 0;\n}\n```\n\n假设输入总是合法的且 $|a[i]| \\leq 10^8, n\\leq 10000$ 和 $1\\leq k \\leq \\frac{n(n-1)}{2}$，完成下面的判断题。\n\n将第 22 行的 `g +(h - g) / 2` 改为`(h + g) >> 1`，输出不变。",
+      "options": [
+        {
+          "key": "A",
+          "text": "错误",
+          "html": "<p>错误</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "正确",
+          "html": "<p>正确</p>\n"
+        }
+      ],
+      "uid": "q29",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;vector&gt;\n#include &lt;algorithm&gt;\n#include &lt;iostream&gt;\n\nusing namespace std;\n\nbool f0(vector&lt;int&gt;&amp; a, int m, int k) {\n    int s = 0;\n    for (int i = 0, j = 0; i &lt; a.size(); i++) {\n        while (a[i] - a[j] &gt; m) j++;\n        s += i - j;\n    }\n    return s &gt;= k; \n}\n\nint f(vector&lt;int&gt;&amp; a, int k) {\n    sort(a.begin(), a.end());\n    \n    int g = 0;\n    int h = a.back() - a[0];\n    while (g &lt; h) {\n        int m = g + (h - g) / 2;\n        if (f0(a, m, k)) {\n            h = m;\n        } else {\n            g = m + 1;\n        }\n    }\n    \n    return g;\n}\n\nint main() {\n    int n, k;\n    cin &gt;&gt; n &gt;&gt; k;\n    vector&lt;int&gt; a(n, 0);\n    for (int i = 0; i &lt; n; i++) {\n        cin &gt;&gt; a[i];\n    }\n    cout &lt;&lt; f(a, k) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入总是合法的且 $|a[i]| \\leq 10^8, n\\leq 10000$ 和 $1\\leq k \\leq \\frac{n(n-1)}{2}$，完成下面的判断题。</p>\n<p>将第 22 行的 <code>g +(h - g) / 2</code> 改为<code>(h + g) &gt;&gt; 1</code>，输出不变。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 30,
+      "section": "阅读程序",
+      "score": 1.5,
+      "answer": "True",
+      "content": "```\n#include <vector>\n#include <algorithm>\n#include <iostream>\n\nusing namespace std;\n\nbool f0(vector<int>& a, int m, int k) {\n    int s = 0;\n    for (int i = 0, j = 0; i < a.size(); i++) {\n        while (a[i] - a[j] > m) j++;\n        s += i - j;\n    }\n    return s >= k; \n}\n\nint f(vector<int>& a, int k) {\n    sort(a.begin(), a.end());\n    \n    int g = 0;\n    int h = a.back() - a[0];\n    while (g < h) {\n        int m = g + (h - g) / 2;\n        if (f0(a, m, k)) {\n            h = m;\n        } else {\n            g = m + 1;\n        }\n    }\n    \n    return g;\n}\n\nint main() {\n    int n, k;\n    cin >> n >> k;\n    vector<int> a(n, 0);\n    for (int i = 0; i < n; i++) {\n        cin >> a[i];\n    }\n    cout << f(a, k) << endl;\n    return 0;\n}\n```\n\n假设输入总是合法的且 $|a[i]| \\leq 10^8, n\\leq 10000$ 和 $1\\leq k \\leq \\frac{n(n-1)}{2}$，完成下面的判断题。\n\n当输入为 `5 7 2 -4 5 1 -3`，输出为 `5`。",
+      "options": [
+        {
+          "key": "A",
+          "text": "错误",
+          "html": "<p>错误</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "正确",
+          "html": "<p>正确</p>\n"
+        }
+      ],
+      "uid": "q30",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;vector&gt;\n#include &lt;algorithm&gt;\n#include &lt;iostream&gt;\n\nusing namespace std;\n\nbool f0(vector&lt;int&gt;&amp; a, int m, int k) {\n    int s = 0;\n    for (int i = 0, j = 0; i &lt; a.size(); i++) {\n        while (a[i] - a[j] &gt; m) j++;\n        s += i - j;\n    }\n    return s &gt;= k; \n}\n\nint f(vector&lt;int&gt;&amp; a, int k) {\n    sort(a.begin(), a.end());\n    \n    int g = 0;\n    int h = a.back() - a[0];\n    while (g &lt; h) {\n        int m = g + (h - g) / 2;\n        if (f0(a, m, k)) {\n            h = m;\n        } else {\n            g = m + 1;\n        }\n    }\n    \n    return g;\n}\n\nint main() {\n    int n, k;\n    cin &gt;&gt; n &gt;&gt; k;\n    vector&lt;int&gt; a(n, 0);\n    for (int i = 0; i &lt; n; i++) {\n        cin &gt;&gt; a[i];\n    }\n    cout &lt;&lt; f(a, k) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入总是合法的且 $|a[i]| \\leq 10^8, n\\leq 10000$ 和 $1\\leq k \\leq \\frac{n(n-1)}{2}$，完成下面的判断题。</p>\n<p>当输入为 <code>5 7 2 -4 5 1 -3</code>，输出为 <code>5</code>。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 31,
+      "section": "阅读程序",
+      "score": 3.0,
+      "answer": "D",
+      "content": "```\n#include <vector>\n#include <algorithm>\n#include <iostream>\n\nusing namespace std;\n\nbool f0(vector<int>& a, int m, int k) {\n    int s = 0;\n    for (int i = 0, j = 0; i < a.size(); i++) {\n        while (a[i] - a[j] > m) j++;\n        s += i - j;\n    }\n    return s >= k; \n}\n\nint f(vector<int>& a, int k) {\n    sort(a.begin(), a.end());\n    \n    int g = 0;\n    int h = a.back() - a[0];\n    while (g < h) {\n        int m = g + (h - g) / 2;\n        if (f0(a, m, k)) {\n            h = m;\n        } else {\n            g = m + 1;\n        }\n    }\n    \n    return g;\n}\n\nint main() {\n    int n, k;\n    cin >> n >> k;\n    vector<int> a(n, 0);\n    for (int i = 0; i < n; i++) {\n        cin >> a[i];\n    }\n    cout << f(a, k) << endl;\n    return 0;\n}\n```\n\n假设输入总是合法的且 $|a[i]| \\leq 10^8, n\\leq 10000$ 和 $1\\leq k \\leq \\frac{n(n-1)}{2}$，完成下面的单选题。\n\n设 `a` 数组中最大值减最小值加 $1$ 为 $A$，则 `f` 函数的时间复杂度为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "$\\mathrm{O}(n^2\\log A)$",
+          "html": "<p>$\\mathrm{O}(n^2\\log A)$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$\\mathrm{O}(n\\log n)$",
+          "html": "<p>$\\mathrm{O}(n\\log n)$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$\\mathrm{O}(n\\log A)$",
+          "html": "<p>$\\mathrm{O}(n\\log A)$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$\\mathrm{O}(n\\log(nA))$",
+          "html": "<p>$\\mathrm{O}(n\\log(nA))$</p>\n"
+        }
+      ],
+      "uid": "q31",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;vector&gt;\n#include &lt;algorithm&gt;\n#include &lt;iostream&gt;\n\nusing namespace std;\n\nbool f0(vector&lt;int&gt;&amp; a, int m, int k) {\n    int s = 0;\n    for (int i = 0, j = 0; i &lt; a.size(); i++) {\n        while (a[i] - a[j] &gt; m) j++;\n        s += i - j;\n    }\n    return s &gt;= k; \n}\n\nint f(vector&lt;int&gt;&amp; a, int k) {\n    sort(a.begin(), a.end());\n    \n    int g = 0;\n    int h = a.back() - a[0];\n    while (g &lt; h) {\n        int m = g + (h - g) / 2;\n        if (f0(a, m, k)) {\n            h = m;\n        } else {\n            g = m + 1;\n        }\n    }\n    \n    return g;\n}\n\nint main() {\n    int n, k;\n    cin &gt;&gt; n &gt;&gt; k;\n    vector&lt;int&gt; a(n, 0);\n    for (int i = 0; i &lt; n; i++) {\n        cin &gt;&gt; a[i];\n    }\n    cout &lt;&lt; f(a, k) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入总是合法的且 $|a[i]| \\leq 10^8, n\\leq 10000$ 和 $1\\leq k \\leq \\frac{n(n-1)}{2}$，完成下面的单选题。</p>\n<p>设 <code>a</code> 数组中最大值减最小值加 $1$ 为 $A$，则 <code>f</code> 函数的时间复杂度为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 32,
+      "section": "阅读程序",
+      "score": 3.0,
+      "answer": "D",
+      "content": "```\n#include <vector>\n#include <algorithm>\n#include <iostream>\n\nusing namespace std;\n\nbool f0(vector<int>& a, int m, int k) {\n    int s = 0;\n    for (int i = 0, j = 0; i < a.size(); i++) {\n        while (a[i] - a[j] > m) j++;\n        s += i - j;\n    }\n    return s >= k; \n}\n\nint f(vector<int>& a, int k) {\n    sort(a.begin(), a.end());\n    \n    int g = 0;\n    int h = a.back() - a[0];\n    while (g < h) {\n        int m = g + (h - g) / 2;\n        if (f0(a, m, k)) {\n            h = m;\n        } else {\n            g = m + 1;\n        }\n    }\n    \n    return g;\n}\n\nint main() {\n    int n, k;\n    cin >> n >> k;\n    vector<int> a(n, 0);\n    for (int i = 0; i < n; i++) {\n        cin >> a[i];\n    }\n    cout << f(a, k) << endl;\n    return 0;\n}\n```\n\n假设输入总是合法的且 $|a[i]| \\leq 10^8, n\\leq 10000$ 和 $1\\leq k \\leq \\frac{n(n-1)}{2}$，完成下面的单选题。\n\n将第 10 行中的 `>` 替换为 `>=`，那么原输出与现输出的大小关系为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "一定小于",
+          "html": "<p>一定小于</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "一定大于等于且不一定大于",
+          "html": "<p>一定大于等于且不一定大于</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "以上三种情况都不对",
+          "html": "<p>以上三种情况都不对</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "一定小于等于且不一定小于",
+          "html": "<p>一定小于等于且不一定小于</p>\n"
+        }
+      ],
+      "uid": "q32",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;vector&gt;\n#include &lt;algorithm&gt;\n#include &lt;iostream&gt;\n\nusing namespace std;\n\nbool f0(vector&lt;int&gt;&amp; a, int m, int k) {\n    int s = 0;\n    for (int i = 0, j = 0; i &lt; a.size(); i++) {\n        while (a[i] - a[j] &gt; m) j++;\n        s += i - j;\n    }\n    return s &gt;= k; \n}\n\nint f(vector&lt;int&gt;&amp; a, int k) {\n    sort(a.begin(), a.end());\n    \n    int g = 0;\n    int h = a.back() - a[0];\n    while (g &lt; h) {\n        int m = g + (h - g) / 2;\n        if (f0(a, m, k)) {\n            h = m;\n        } else {\n            g = m + 1;\n        }\n    }\n    \n    return g;\n}\n\nint main() {\n    int n, k;\n    cin &gt;&gt; n &gt;&gt; k;\n    vector&lt;int&gt; a(n, 0);\n    for (int i = 0; i &lt; n; i++) {\n        cin &gt;&gt; a[i];\n    }\n    cout &lt;&lt; f(a, k) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入总是合法的且 $|a[i]| \\leq 10^8, n\\leq 10000$ 和 $1\\leq k \\leq \\frac{n(n-1)}{2}$，完成下面的单选题。</p>\n<p>将第 10 行中的 <code>&gt;</code> 替换为 <code>&gt;=</code>，那么原输出与现输出的大小关系为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 33,
+      "section": "阅读程序",
+      "score": 3.0,
+      "answer": "D",
+      "content": "```\n#include <vector>\n#include <algorithm>\n#include <iostream>\n\nusing namespace std;\n\nbool f0(vector<int>& a, int m, int k) {\n    int s = 0;\n    for (int i = 0, j = 0; i < a.size(); i++) {\n        while (a[i] - a[j] > m) j++;\n        s += i - j;\n    }\n    return s >= k; \n}\n\nint f(vector<int>& a, int k) {\n    sort(a.begin(), a.end());\n    \n    int g = 0;\n    int h = a.back() - a[0];\n    while (g < h) {\n        int m = g + (h - g) / 2;\n        if (f0(a, m, k)) {\n            h = m;\n        } else {\n            g = m + 1;\n        }\n    }\n    \n    return g;\n}\n\nint main() {\n    int n, k;\n    cin >> n >> k;\n    vector<int> a(n, 0);\n    for (int i = 0; i < n; i++) {\n        cin >> a[i];\n    }\n    cout << f(a, k) << endl;\n    return 0;\n}\n```\n\n假设输入总是合法的且 $|a[i]| \\leq 10^8, n\\leq 10000$ 和 $1\\leq k \\leq \\frac{n(n-1)}{2}$，完成下面的单选题。\n\n当输入为 `5 8 2 -5 3 8 -12` 时，输出为（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "`8`",
+          "html": "<p><code>8</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`15`",
+          "html": "<p><code>15</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`13`",
+          "html": "<p><code>13</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`14`",
+          "html": "<p><code>14</code></p>\n"
+        }
+      ],
+      "uid": "q33",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;vector&gt;\n#include &lt;algorithm&gt;\n#include &lt;iostream&gt;\n\nusing namespace std;\n\nbool f0(vector&lt;int&gt;&amp; a, int m, int k) {\n    int s = 0;\n    for (int i = 0, j = 0; i &lt; a.size(); i++) {\n        while (a[i] - a[j] &gt; m) j++;\n        s += i - j;\n    }\n    return s &gt;= k; \n}\n\nint f(vector&lt;int&gt;&amp; a, int k) {\n    sort(a.begin(), a.end());\n    \n    int g = 0;\n    int h = a.back() - a[0];\n    while (g &lt; h) {\n        int m = g + (h - g) / 2;\n        if (f0(a, m, k)) {\n            h = m;\n        } else {\n            g = m + 1;\n        }\n    }\n    \n    return g;\n}\n\nint main() {\n    int n, k;\n    cin &gt;&gt; n &gt;&gt; k;\n    vector&lt;int&gt; a(n, 0);\n    for (int i = 0; i &lt; n; i++) {\n        cin &gt;&gt; a[i];\n    }\n    cout &lt;&lt; f(a, k) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n<p>假设输入总是合法的且 $|a[i]| \\leq 10^8, n\\leq 10000$ 和 $1\\leq k \\leq \\frac{n(n-1)}{2}$，完成下面的单选题。</p>\n<p>当输入为 <code>5 8 2 -5 3 8 -12</code> 时，输出为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 34,
+      "section": "完善程序",
+      "score": 3.0,
+      "answer": "D",
+      "content": "```\n#include <algorithm>\n#include <algorithm>\n#include <vector>\n\nconst int MAXN = 100000;\nconst long long LIM = 1000000000000000000LL;\n\nint n, m, deg[MAXN];\nstd::vector<int> E[MAXN];\nlong long k, f[MAXN];\n\nint next(std::vector<int> cand, long long &k) {\n    std::sort(cand.begin(), cand.end());\n    for (int u : cand) {\n        if (①) return u;\n        k -= f[u];\n    }\n    return -1;\n}\n\nint main() {\n    std::cin >> n >> m >> k;\n    for (int i=0; i<m; ++i) {\n        int u, v;\n        std::cin >> u >> v;\n        E[u].push_back(v);\n        ++deg[v];\n    }\n    std::vector<int> Q;\n    for (int i=0; i<n; ++i)\n        if (!deg[i]) Q.push_back(i);\n    for (int i=0; i<n; ++i) {\n        int u= Q[i];\n        for (int v : E[u]) {\n            if (②) Q.push_back(v);\n            --deg[v];\n        }\n    }\n    std::reverse(Q.begin(), Q.end());\n    for (int u: Q) {\n        f[u] = 1;\n        for (int v : E[u]) f[u] = ③;\n    }\n    int u = next(Q, k);\n    std::cout << u << std::endl;\n    while (④) {\n        ⑤;\n        u = next(E[u], k);\n        std::cout << u << std::endl;\n    }\n    return 0;\n}\n```\n\n（第k小路径）给定一张 $n$ 个点 $m$ 条边的有向无环图，顶点编号从 $0$ 到 $n-1$。\n\n对于一条路径，我们定义“路径序列”为该路径从起点出发依次经过的项点编号构成的序列。求所有至少包含一个点的简单路径中，“路径序列”字典序第 $k$ 小的路径。保证存在至少 $k$ 条路径。上述参数满足 $1\\leq n,m\\leq 10^5$ 和$1\\leq k\\leq 10^{18}$。\n\n在程序中，我们求出从每个点出发的路径数量。超过$10^{18}$ 的数都用 $10^{18}$ 表示。然后我们根据 $k$ 的值和每个顶点的路径数量，确定路径的起点，然后可以类似地依次求出路径中的每个点。\n\n试补全程序。\n\n① 处应该填 ( )",
+      "options": [
+        {
+          "key": "A",
+          "text": "`k > f[u]`",
+          "html": "<p><code>k &gt; f[u]</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`k < f[u]`",
+          "html": "<p><code>k &lt; f[u]</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`k >= f[u]`",
+          "html": "<p><code>k &gt;= f[u]</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`k <= f[u]`",
+          "html": "<p><code>k &lt;= f[u]</code></p>\n"
+        }
+      ],
+      "uid": "q34",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;algorithm&gt;\n#include &lt;algorithm&gt;\n#include &lt;vector&gt;\n\nconst int MAXN = 100000;\nconst long long LIM = 1000000000000000000LL;\n\nint n, m, deg[MAXN];\nstd::vector&lt;int&gt; E[MAXN];\nlong long k, f[MAXN];\n\nint next(std::vector&lt;int&gt; cand, long long &amp;k) {\n    std::sort(cand.begin(), cand.end());\n    for (int u : cand) {\n        if (①) return u;\n        k -= f[u];\n    }\n    return -1;\n}\n\nint main() {\n    std::cin &gt;&gt; n &gt;&gt; m &gt;&gt; k;\n    for (int i=0; i&lt;m; ++i) {\n        int u, v;\n        std::cin &gt;&gt; u &gt;&gt; v;\n        E[u].push_back(v);\n        ++deg[v];\n    }\n    std::vector&lt;int&gt; Q;\n    for (int i=0; i&lt;n; ++i)\n        if (!deg[i]) Q.push_back(i);\n    for (int i=0; i&lt;n; ++i) {\n        int u= Q[i];\n        for (int v : E[u]) {\n            if (②) Q.push_back(v);\n            --deg[v];\n        }\n    }\n    std::reverse(Q.begin(), Q.end());\n    for (int u: Q) {\n        f[u] = 1;\n        for (int v : E[u]) f[u] = ③;\n    }\n    int u = next(Q, k);\n    std::cout &lt;&lt; u &lt;&lt; std::endl;\n    while (④) {\n        ⑤;\n        u = next(E[u], k);\n        std::cout &lt;&lt; u &lt;&lt; std::endl;\n    }\n    return 0;\n}\n</code></pre>\n<p>（第k小路径）给定一张 $n$ 个点 $m$ 条边的有向无环图，顶点编号从 $0$ 到 $n-1$。</p>\n<p>对于一条路径，我们定义“路径序列”为该路径从起点出发依次经过的项点编号构成的序列。求所有至少包含一个点的简单路径中，“路径序列”字典序第 $k$ 小的路径。保证存在至少 $k$ 条路径。上述参数满足 $1\\leq n,m\\leq 10^5$ 和$1\\leq k\\leq 10^{18}$。</p>\n<p>在程序中，我们求出从每个点出发的路径数量。超过$10^{18}$ 的数都用 $10^{18}$ 表示。然后我们根据 $k$ 的值和每个顶点的路径数量，确定路径的起点，然后可以类似地依次求出路径中的每个点。</p>\n<p>试补全程序。</p>\n<p>① 处应该填 ( )</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 35,
+      "section": "完善程序",
+      "score": 3.0,
+      "answer": "A",
+      "content": "```\n#include <algorithm>\n#include <algorithm>\n#include <vector>\n\nconst int MAXN = 100000;\nconst long long LIM = 1000000000000000000LL;\n\nint n, m, deg[MAXN];\nstd::vector<int> E[MAXN];\nlong long k, f[MAXN];\n\nint next(std::vector<int> cand, long long &k) {\n    std::sort(cand.begin(), cand.end());\n    for (int u : cand) {\n        if (①) return u;\n        k -= f[u];\n    }\n    return -1;\n}\n\nint main() {\n    std::cin >> n >> m >> k;\n    for (int i=0; i<m; ++i) {\n        int u, v;\n        std::cin >> u >> v;\n        E[u].push_back(v);\n        ++deg[v];\n    }\n    std::vector<int> Q;\n    for (int i=0; i<n; ++i)\n        if (!deg[i]) Q.push_back(i);\n    for (int i=0; i<n; ++i) {\n        int u= Q[i];\n        for (int v : E[u]) {\n            if (②) Q.push_back(v);\n            --deg[v];\n        }\n    }\n    std::reverse(Q.begin(), Q.end());\n    for (int u: Q) {\n        f[u] = 1;\n        for (int v : E[u]) f[u] = ③;\n    }\n    int u = next(Q, k);\n    std::cout << u << std::endl;\n    while (④) {\n        ⑤;\n        u = next(E[u], k);\n        std::cout << u << std::endl;\n    }\n    return 0;\n}\n```\n\n（第k小路径）给定一张 $n$ 个点 $m$ 条边的有向无环图，顶点编号从 $0$ 到 $n-1$。\n\n对于一条路径，我们定义“路径序列”为该路径从起点出发依次经过的项点编号构成的序列。求所有至少包含一个点的简单路径中，“路径序列”字典序第 $k$ 小的路径。保证存在至少 $k$ 条路径。上述参数满足 $1\\leq n,m\\leq 10^5$ 和$1\\leq k\\leq 10^{18}$。\n\n在程序中，我们求出从每个点出发的路径数量。超过$10^{18}$ 的数都用 $10^{18}$ 表示。然后我们根据 $k$ 的值和每个顶点的路径数量，确定路径的起点，然后可以类似地依次求出路径中的每个点。\n\n试补全程序。\n\n② 处应该填 ( )",
+      "options": [
+        {
+          "key": "A",
+          "text": "`deg[v] == 1`",
+          "html": "<p><code>deg[v] == 1</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`deg[v] == 0`",
+          "html": "<p><code>deg[v] == 0</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`deg[v] > 1`",
+          "html": "<p><code>deg[v] &gt; 1</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`deg[v] > 0`",
+          "html": "<p><code>deg[v] &gt; 0</code></p>\n"
+        }
+      ],
+      "uid": "q35",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;algorithm&gt;\n#include &lt;algorithm&gt;\n#include &lt;vector&gt;\n\nconst int MAXN = 100000;\nconst long long LIM = 1000000000000000000LL;\n\nint n, m, deg[MAXN];\nstd::vector&lt;int&gt; E[MAXN];\nlong long k, f[MAXN];\n\nint next(std::vector&lt;int&gt; cand, long long &amp;k) {\n    std::sort(cand.begin(), cand.end());\n    for (int u : cand) {\n        if (①) return u;\n        k -= f[u];\n    }\n    return -1;\n}\n\nint main() {\n    std::cin &gt;&gt; n &gt;&gt; m &gt;&gt; k;\n    for (int i=0; i&lt;m; ++i) {\n        int u, v;\n        std::cin &gt;&gt; u &gt;&gt; v;\n        E[u].push_back(v);\n        ++deg[v];\n    }\n    std::vector&lt;int&gt; Q;\n    for (int i=0; i&lt;n; ++i)\n        if (!deg[i]) Q.push_back(i);\n    for (int i=0; i&lt;n; ++i) {\n        int u= Q[i];\n        for (int v : E[u]) {\n            if (②) Q.push_back(v);\n            --deg[v];\n        }\n    }\n    std::reverse(Q.begin(), Q.end());\n    for (int u: Q) {\n        f[u] = 1;\n        for (int v : E[u]) f[u] = ③;\n    }\n    int u = next(Q, k);\n    std::cout &lt;&lt; u &lt;&lt; std::endl;\n    while (④) {\n        ⑤;\n        u = next(E[u], k);\n        std::cout &lt;&lt; u &lt;&lt; std::endl;\n    }\n    return 0;\n}\n</code></pre>\n<p>（第k小路径）给定一张 $n$ 个点 $m$ 条边的有向无环图，顶点编号从 $0$ 到 $n-1$。</p>\n<p>对于一条路径，我们定义“路径序列”为该路径从起点出发依次经过的项点编号构成的序列。求所有至少包含一个点的简单路径中，“路径序列”字典序第 $k$ 小的路径。保证存在至少 $k$ 条路径。上述参数满足 $1\\leq n,m\\leq 10^5$ 和$1\\leq k\\leq 10^{18}$。</p>\n<p>在程序中，我们求出从每个点出发的路径数量。超过$10^{18}$ 的数都用 $10^{18}$ 表示。然后我们根据 $k$ 的值和每个顶点的路径数量，确定路径的起点，然后可以类似地依次求出路径中的每个点。</p>\n<p>试补全程序。</p>\n<p>② 处应该填 ( )</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 36,
+      "section": "完善程序",
+      "score": 3.0,
+      "answer": "A",
+      "content": "```\n#include <algorithm>\n#include <algorithm>\n#include <vector>\n\nconst int MAXN = 100000;\nconst long long LIM = 1000000000000000000LL;\n\nint n, m, deg[MAXN];\nstd::vector<int> E[MAXN];\nlong long k, f[MAXN];\n\nint next(std::vector<int> cand, long long &k) {\n    std::sort(cand.begin(), cand.end());\n    for (int u : cand) {\n        if (①) return u;\n        k -= f[u];\n    }\n    return -1;\n}\n\nint main() {\n    std::cin >> n >> m >> k;\n    for (int i=0; i<m; ++i) {\n        int u, v;\n        std::cin >> u >> v;\n        E[u].push_back(v);\n        ++deg[v];\n    }\n    std::vector<int> Q;\n    for (int i=0; i<n; ++i)\n        if (!deg[i]) Q.push_back(i);\n    for (int i=0; i<n; ++i) {\n        int u= Q[i];\n        for (int v : E[u]) {\n            if (②) Q.push_back(v);\n            --deg[v];\n        }\n    }\n    std::reverse(Q.begin(), Q.end());\n    for (int u: Q) {\n        f[u] = 1;\n        for (int v : E[u]) f[u] = ③;\n    }\n    int u = next(Q, k);\n    std::cout << u << std::endl;\n    while (④) {\n        ⑤;\n        u = next(E[u], k);\n        std::cout << u << std::endl;\n    }\n    return 0;\n}\n```\n\n（第k小路径）给定一张 $n$ 个点 $m$ 条边的有向无环图，顶点编号从 $0$ 到 $n-1$。\n\n对于一条路径，我们定义“路径序列”为该路径从起点出发依次经过的项点编号构成的序列。求所有至少包含一个点的简单路径中，“路径序列”字典序第 $k$ 小的路径。保证存在至少 $k$ 条路径。上述参数满足 $1\\leq n,m\\leq 10^5$ 和$1\\leq k\\leq 10^{18}$。\n\n在程序中，我们求出从每个点出发的路径数量。超过$10^{18}$ 的数都用 $10^{18}$ 表示。然后我们根据 $k$ 的值和每个顶点的路径数量，确定路径的起点，然后可以类似地依次求出路径中的每个点。\n\n试补全程序。\n\n③ 处应该填 ( )",
+      "options": [
+        {
+          "key": "A",
+          "text": "`std::min(f[u] + f[v], LIM)`",
+          "html": "<p><code>std::min(f[u] + f[v], LIM)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`std::min(f[u] + f[v] + 1, LIM)`",
+          "html": "<p><code>std::min(f[u] + f[v] + 1, LIM)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`std::min(f[u] * f[v], LIM)`",
+          "html": "<p><code>std::min(f[u] * f[v], LIM)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`std::min(f[u] * (f[v] + 1), LIM)`",
+          "html": "<p><code>std::min(f[u] * (f[v] + 1), LIM)</code></p>\n"
+        }
+      ],
+      "uid": "q36",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;algorithm&gt;\n#include &lt;algorithm&gt;\n#include &lt;vector&gt;\n\nconst int MAXN = 100000;\nconst long long LIM = 1000000000000000000LL;\n\nint n, m, deg[MAXN];\nstd::vector&lt;int&gt; E[MAXN];\nlong long k, f[MAXN];\n\nint next(std::vector&lt;int&gt; cand, long long &amp;k) {\n    std::sort(cand.begin(), cand.end());\n    for (int u : cand) {\n        if (①) return u;\n        k -= f[u];\n    }\n    return -1;\n}\n\nint main() {\n    std::cin &gt;&gt; n &gt;&gt; m &gt;&gt; k;\n    for (int i=0; i&lt;m; ++i) {\n        int u, v;\n        std::cin &gt;&gt; u &gt;&gt; v;\n        E[u].push_back(v);\n        ++deg[v];\n    }\n    std::vector&lt;int&gt; Q;\n    for (int i=0; i&lt;n; ++i)\n        if (!deg[i]) Q.push_back(i);\n    for (int i=0; i&lt;n; ++i) {\n        int u= Q[i];\n        for (int v : E[u]) {\n            if (②) Q.push_back(v);\n            --deg[v];\n        }\n    }\n    std::reverse(Q.begin(), Q.end());\n    for (int u: Q) {\n        f[u] = 1;\n        for (int v : E[u]) f[u] = ③;\n    }\n    int u = next(Q, k);\n    std::cout &lt;&lt; u &lt;&lt; std::endl;\n    while (④) {\n        ⑤;\n        u = next(E[u], k);\n        std::cout &lt;&lt; u &lt;&lt; std::endl;\n    }\n    return 0;\n}\n</code></pre>\n<p>（第k小路径）给定一张 $n$ 个点 $m$ 条边的有向无环图，顶点编号从 $0$ 到 $n-1$。</p>\n<p>对于一条路径，我们定义“路径序列”为该路径从起点出发依次经过的项点编号构成的序列。求所有至少包含一个点的简单路径中，“路径序列”字典序第 $k$ 小的路径。保证存在至少 $k$ 条路径。上述参数满足 $1\\leq n,m\\leq 10^5$ 和$1\\leq k\\leq 10^{18}$。</p>\n<p>在程序中，我们求出从每个点出发的路径数量。超过$10^{18}$ 的数都用 $10^{18}$ 表示。然后我们根据 $k$ 的值和每个顶点的路径数量，确定路径的起点，然后可以类似地依次求出路径中的每个点。</p>\n<p>试补全程序。</p>\n<p>③ 处应该填 ( )</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 37,
+      "section": "完善程序",
+      "score": 3.0,
+      "answer": "D",
+      "content": "```\n#include <algorithm>\n#include <algorithm>\n#include <vector>\n\nconst int MAXN = 100000;\nconst long long LIM = 1000000000000000000LL;\n\nint n, m, deg[MAXN];\nstd::vector<int> E[MAXN];\nlong long k, f[MAXN];\n\nint next(std::vector<int> cand, long long &k) {\n    std::sort(cand.begin(), cand.end());\n    for (int u : cand) {\n        if (①) return u;\n        k -= f[u];\n    }\n    return -1;\n}\n\nint main() {\n    std::cin >> n >> m >> k;\n    for (int i=0; i<m; ++i) {\n        int u, v;\n        std::cin >> u >> v;\n        E[u].push_back(v);\n        ++deg[v];\n    }\n    std::vector<int> Q;\n    for (int i=0; i<n; ++i)\n        if (!deg[i]) Q.push_back(i);\n    for (int i=0; i<n; ++i) {\n        int u= Q[i];\n        for (int v : E[u]) {\n            if (②) Q.push_back(v);\n            --deg[v];\n        }\n    }\n    std::reverse(Q.begin(), Q.end());\n    for (int u: Q) {\n        f[u] = 1;\n        for (int v : E[u]) f[u] = ③;\n    }\n    int u = next(Q, k);\n    std::cout << u << std::endl;\n    while (④) {\n        ⑤;\n        u = next(E[u], k);\n        std::cout << u << std::endl;\n    }\n    return 0;\n}\n```\n\n（第k小路径）给定一张 $n$ 个点 $m$ 条边的有向无环图，顶点编号从 $0$ 到 $n-1$。\n\n对于一条路径，我们定义“路径序列”为该路径从起点出发依次经过的项点编号构成的序列。求所有至少包含一个点的简单路径中，“路径序列”字典序第 $k$ 小的路径。保证存在至少 $k$ 条路径。上述参数满足 $1\\leq n,m\\leq 10^5$ 和$1\\leq k\\leq 10^{18}$。\n\n在程序中，我们求出从每个点出发的路径数量。超过$10^{18}$ 的数都用 $10^{18}$ 表示。然后我们根据 $k$ 的值和每个顶点的路径数量，确定路径的起点，然后可以类似地依次求出路径中的每个点。\n\n试补全程序。\n\n④ 处应该填 ( )",
+      "options": [
+        {
+          "key": "A",
+          "text": "`!E[u].empty()`",
+          "html": "<p><code>!E[u].empty()</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`k > 0`",
+          "html": "<p><code>k &gt; 0</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`u != -1`",
+          "html": "<p><code>u != -1</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`k > 1`",
+          "html": "<p><code>k &gt; 1</code></p>\n"
+        }
+      ],
+      "uid": "q37",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;algorithm&gt;\n#include &lt;algorithm&gt;\n#include &lt;vector&gt;\n\nconst int MAXN = 100000;\nconst long long LIM = 1000000000000000000LL;\n\nint n, m, deg[MAXN];\nstd::vector&lt;int&gt; E[MAXN];\nlong long k, f[MAXN];\n\nint next(std::vector&lt;int&gt; cand, long long &amp;k) {\n    std::sort(cand.begin(), cand.end());\n    for (int u : cand) {\n        if (①) return u;\n        k -= f[u];\n    }\n    return -1;\n}\n\nint main() {\n    std::cin &gt;&gt; n &gt;&gt; m &gt;&gt; k;\n    for (int i=0; i&lt;m; ++i) {\n        int u, v;\n        std::cin &gt;&gt; u &gt;&gt; v;\n        E[u].push_back(v);\n        ++deg[v];\n    }\n    std::vector&lt;int&gt; Q;\n    for (int i=0; i&lt;n; ++i)\n        if (!deg[i]) Q.push_back(i);\n    for (int i=0; i&lt;n; ++i) {\n        int u= Q[i];\n        for (int v : E[u]) {\n            if (②) Q.push_back(v);\n            --deg[v];\n        }\n    }\n    std::reverse(Q.begin(), Q.end());\n    for (int u: Q) {\n        f[u] = 1;\n        for (int v : E[u]) f[u] = ③;\n    }\n    int u = next(Q, k);\n    std::cout &lt;&lt; u &lt;&lt; std::endl;\n    while (④) {\n        ⑤;\n        u = next(E[u], k);\n        std::cout &lt;&lt; u &lt;&lt; std::endl;\n    }\n    return 0;\n}\n</code></pre>\n<p>（第k小路径）给定一张 $n$ 个点 $m$ 条边的有向无环图，顶点编号从 $0$ 到 $n-1$。</p>\n<p>对于一条路径，我们定义“路径序列”为该路径从起点出发依次经过的项点编号构成的序列。求所有至少包含一个点的简单路径中，“路径序列”字典序第 $k$ 小的路径。保证存在至少 $k$ 条路径。上述参数满足 $1\\leq n,m\\leq 10^5$ 和$1\\leq k\\leq 10^{18}$。</p>\n<p>在程序中，我们求出从每个点出发的路径数量。超过$10^{18}$ 的数都用 $10^{18}$ 表示。然后我们根据 $k$ 的值和每个顶点的路径数量，确定路径的起点，然后可以类似地依次求出路径中的每个点。</p>\n<p>试补全程序。</p>\n<p>④ 处应该填 ( )</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 38,
+      "section": "完善程序",
+      "score": 3.0,
+      "answer": "D",
+      "content": "```\n#include <algorithm>\n#include <algorithm>\n#include <vector>\n\nconst int MAXN = 100000;\nconst long long LIM = 1000000000000000000LL;\n\nint n, m, deg[MAXN];\nstd::vector<int> E[MAXN];\nlong long k, f[MAXN];\n\nint next(std::vector<int> cand, long long &k) {\n    std::sort(cand.begin(), cand.end());\n    for (int u : cand) {\n        if (①) return u;\n        k -= f[u];\n    }\n    return -1;\n}\n\nint main() {\n    std::cin >> n >> m >> k;\n    for (int i=0; i<m; ++i) {\n        int u, v;\n        std::cin >> u >> v;\n        E[u].push_back(v);\n        ++deg[v];\n    }\n    std::vector<int> Q;\n    for (int i=0; i<n; ++i)\n        if (!deg[i]) Q.push_back(i);\n    for (int i=0; i<n; ++i) {\n        int u= Q[i];\n        for (int v : E[u]) {\n            if (②) Q.push_back(v);\n            --deg[v];\n        }\n    }\n    std::reverse(Q.begin(), Q.end());\n    for (int u: Q) {\n        f[u] = 1;\n        for (int v : E[u]) f[u] = ③;\n    }\n    int u = next(Q, k);\n    std::cout << u << std::endl;\n    while (④) {\n        ⑤;\n        u = next(E[u], k);\n        std::cout << u << std::endl;\n    }\n    return 0;\n}\n```\n\n（第k小路径）给定一张 $n$ 个点 $m$ 条边的有向无环图，顶点编号从 $0$ 到 $n-1$。\n\n对于一条路径，我们定义“路径序列”为该路径从起点出发依次经过的项点编号构成的序列。求所有至少包含一个点的简单路径中，“路径序列”字典序第 $k$ 小的路径。保证存在至少 $k$ 条路径。上述参数满足 $1\\leq n,m\\leq 10^5$ 和$1\\leq k\\leq 10^{18}$。\n\n在程序中，我们求出从每个点出发的路径数量。超过$10^{18}$ 的数都用 $10^{18}$ 表示。然后我们根据 $k$ 的值和每个顶点的路径数量，确定路径的起点，然后可以类似地依次求出路径中的每个点。\n\n试补全程序。\n\n⑤ 处应该填 ( )",
+      "options": [
+        {
+          "key": "A",
+          "text": "`k -= f[u]`",
+          "html": "<p><code>k -= f[u]</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`++k`",
+          "html": "<p><code>++k</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`k += f[u]`",
+          "html": "<p><code>k += f[u]</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`--k`",
+          "html": "<p><code>--k</code></p>\n"
+        }
+      ],
+      "uid": "q38",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;algorithm&gt;\n#include &lt;algorithm&gt;\n#include &lt;vector&gt;\n\nconst int MAXN = 100000;\nconst long long LIM = 1000000000000000000LL;\n\nint n, m, deg[MAXN];\nstd::vector&lt;int&gt; E[MAXN];\nlong long k, f[MAXN];\n\nint next(std::vector&lt;int&gt; cand, long long &amp;k) {\n    std::sort(cand.begin(), cand.end());\n    for (int u : cand) {\n        if (①) return u;\n        k -= f[u];\n    }\n    return -1;\n}\n\nint main() {\n    std::cin &gt;&gt; n &gt;&gt; m &gt;&gt; k;\n    for (int i=0; i&lt;m; ++i) {\n        int u, v;\n        std::cin &gt;&gt; u &gt;&gt; v;\n        E[u].push_back(v);\n        ++deg[v];\n    }\n    std::vector&lt;int&gt; Q;\n    for (int i=0; i&lt;n; ++i)\n        if (!deg[i]) Q.push_back(i);\n    for (int i=0; i&lt;n; ++i) {\n        int u= Q[i];\n        for (int v : E[u]) {\n            if (②) Q.push_back(v);\n            --deg[v];\n        }\n    }\n    std::reverse(Q.begin(), Q.end());\n    for (int u: Q) {\n        f[u] = 1;\n        for (int v : E[u]) f[u] = ③;\n    }\n    int u = next(Q, k);\n    std::cout &lt;&lt; u &lt;&lt; std::endl;\n    while (④) {\n        ⑤;\n        u = next(E[u], k);\n        std::cout &lt;&lt; u &lt;&lt; std::endl;\n    }\n    return 0;\n}\n</code></pre>\n<p>（第k小路径）给定一张 $n$ 个点 $m$ 条边的有向无环图，顶点编号从 $0$ 到 $n-1$。</p>\n<p>对于一条路径，我们定义“路径序列”为该路径从起点出发依次经过的项点编号构成的序列。求所有至少包含一个点的简单路径中，“路径序列”字典序第 $k$ 小的路径。保证存在至少 $k$ 条路径。上述参数满足 $1\\leq n,m\\leq 10^5$ 和$1\\leq k\\leq 10^{18}$。</p>\n<p>在程序中，我们求出从每个点出发的路径数量。超过$10^{18}$ 的数都用 $10^{18}$ 表示。然后我们根据 $k$ 的值和每个顶点的路径数量，确定路径的起点，然后可以类似地依次求出路径中的每个点。</p>\n<p>试补全程序。</p>\n<p>⑤ 处应该填 ( )</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 39,
+      "section": "完善程序",
+      "score": 3.0,
+      "answer": "D",
+      "content": "```\n#include <iostream>\n#include <algorithm>\n#include <vector>\n\nconst int MAXN = 100000;\nint n;\nint a[MAXN];\nlong long ans;\n\nvoid solve(int l, int r) {\n    if (l + 1 == r) {\n        ans += a[l];\n        return ;\n    }\n    int mid = (l + r) >> 1;\n    std::vector<int> pre(a + mid, a + r);\n    for (int i = 1; i < r - mid; ++i) ①;\n    std::vector<long long> sum(r - mid + 1);\n    for (int i = 0; i < r - mid; ++i) sum[i + 1] = sum[i] + pre[i];\n    for (int i = mid - 1, j = mid, max = 0; i >= l; --i) {\n        while (j < r && ②) ++j;\n        max = std::max(max, a[i]);\n        ans += ③;\n        ans += ④;\n    }\n    solve(l, mid);\n    solve(mid, r);\n}\n\nint main() {\n    std::cin >> n;\n    for (int i = 0; i < n; ++i) std::cin >> a[i];\n    ⑤;\n    std::cout << ans << std::endl;\n    return 0;\n}\n```\n\n（最大值之和）给定整数序列 $a_0, ..., a_{n-1}$ 求该序列所有非空连续子序列的最大值之和。上述参数满足 $1 <n\\leq 10^5$ 和 $1\\leq a_i \\leq 10^8$。\n\n一个序列的非空连续子序列可以用两个下标 $l$ 和 $r$ (其中 $0\\leq l\\leq r<n$) 表示，对应的序列为 $a_l, a_{l+1}, ..., a_r$。两个非空连续子序列不同，当且仅当下标不同。\n\n例如，当原序列为 `[1,2,1,2]` 时，要计算子序列 `[1]`、`[2]`、`[1]`、`[2]`、`[1,2]`、`[2,1]`、`[1,2]`、`[1,2,1]`、`[2,1,2]`、`[1,2,1,2]` 的最大值之和，答案为 $18$。 注意 `[1,1]` 和 `[2,2]` 虽然是原序列的子序列，但不是连续子序列，所以不应该被计算。另外，注意其中有一些值相同的子序列，但由于他们在原序列中的下标不同，属于不同的非空连续子序列，所以会被分别计算。\n\n解决该问题有许多算法，以下程序使用分治算法，时间复杂度 $\\mathrm{O}(n \\log n)$。\n\n试补全程序。\n\n① 处应填（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "`pre[i + 1] = std::max(pre[i], pre[i + 1])`",
+          "html": "<p><code>pre[i + 1] = std::max(pre[i], pre[i + 1])</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`pre[i] = std::max(pre[i - 1], a[i])`",
+          "html": "<p><code>pre[i] = std::max(pre[i - 1], a[i])</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`pre[i] = std::max(pre[i - 1], a[i - 1])`",
+          "html": "<p><code>pre[i] = std::max(pre[i - 1], a[i - 1])</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`pre[i] = std::max(pre[i], pre[i - 1])`",
+          "html": "<p><code>pre[i] = std::max(pre[i], pre[i - 1])</code></p>\n"
+        }
+      ],
+      "uid": "q39",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\n#include &lt;algorithm&gt;\n#include &lt;vector&gt;\n\nconst int MAXN = 100000;\nint n;\nint a[MAXN];\nlong long ans;\n\nvoid solve(int l, int r) {\n    if (l + 1 == r) {\n        ans += a[l];\n        return ;\n    }\n    int mid = (l + r) &gt;&gt; 1;\n    std::vector&lt;int&gt; pre(a + mid, a + r);\n    for (int i = 1; i &lt; r - mid; ++i) ①;\n    std::vector&lt;long long&gt; sum(r - mid + 1);\n    for (int i = 0; i &lt; r - mid; ++i) sum[i + 1] = sum[i] + pre[i];\n    for (int i = mid - 1, j = mid, max = 0; i &gt;= l; --i) {\n        while (j &lt; r &amp;&amp; ②) ++j;\n        max = std::max(max, a[i]);\n        ans += ③;\n        ans += ④;\n    }\n    solve(l, mid);\n    solve(mid, r);\n}\n\nint main() {\n    std::cin &gt;&gt; n;\n    for (int i = 0; i &lt; n; ++i) std::cin &gt;&gt; a[i];\n    ⑤;\n    std::cout &lt;&lt; ans &lt;&lt; std::endl;\n    return 0;\n}\n</code></pre>\n<p>（最大值之和）给定整数序列 $a_0, ..., a_{n-1}$ 求该序列所有非空连续子序列的最大值之和。上述参数满足 $1 &lt;n\\leq 10^5$ 和 $1\\leq a_i \\leq 10^8$。</p>\n<p>一个序列的非空连续子序列可以用两个下标 $l$ 和 $r$ (其中 $0\\leq l\\leq r&lt;n$) 表示，对应的序列为 $a_l, a_{l+1}, ..., a_r$。两个非空连续子序列不同，当且仅当下标不同。</p>\n<p>例如，当原序列为 <code>[1,2,1,2]</code> 时，要计算子序列 <code>[1]</code>、<code>[2]</code>、<code>[1]</code>、<code>[2]</code>、<code>[1,2]</code>、<code>[2,1]</code>、<code>[1,2]</code>、<code>[1,2,1]</code>、<code>[2,1,2]</code>、<code>[1,2,1,2]</code> 的最大值之和，答案为 $18$。 注意 <code>[1,1]</code> 和 <code>[2,2]</code> 虽然是原序列的子序列，但不是连续子序列，所以不应该被计算。另外，注意其中有一些值相同的子序列，但由于他们在原序列中的下标不同，属于不同的非空连续子序列，所以会被分别计算。</p>\n<p>解决该问题有许多算法，以下程序使用分治算法，时间复杂度 $\\mathrm{O}(n \\log n)$。</p>\n<p>试补全程序。</p>\n<p>① 处应填（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 40,
+      "section": "完善程序",
+      "score": 3.0,
+      "answer": "D",
+      "content": "```\n#include <iostream>\n#include <algorithm>\n#include <vector>\n\nconst int MAXN = 100000;\nint n;\nint a[MAXN];\nlong long ans;\n\nvoid solve(int l, int r) {\n    if (l + 1 == r) {\n        ans += a[l];\n        return ;\n    }\n    int mid = (l + r) >> 1;\n    std::vector<int> pre(a + mid, a + r);\n    for (int i = 1; i < r - mid; ++i) ①;\n    std::vector<long long> sum(r - mid + 1);\n    for (int i = 0; i < r - mid; ++i) sum[i + 1] = sum[i] + pre[i];\n    for (int i = mid - 1, j = mid, max = 0; i >= l; --i) {\n        while (j < r && ②) ++j;\n        max = std::max(max, a[i]);\n        ans += ③;\n        ans += ④;\n    }\n    solve(l, mid);\n    solve(mid, r);\n}\n\nint main() {\n    std::cin >> n;\n    for (int i = 0; i < n; ++i) std::cin >> a[i];\n    ⑤;\n    std::cout << ans << std::endl;\n    return 0;\n}\n```\n\n（最大值之和）给定整数序列 $a_0, ..., a_{n-1}$ 求该序列所有非空连续子序列的最大值之和。上述参数满足 $1 <n\\leq 10^5$ 和 $1\\leq a_i \\leq 10^8$。\n\n一个序列的非空连续子序列可以用两个下标 $l$ 和 $r$ (其中 $0\\leq l\\leq r<n$) 表示，对应的序列为 $a_l, a_{l+1}, ..., a_r$。两个非空连续子序列不同，当且仅当下标不同。\n\n例如，当原序列为 `[1,2,1,2]` 时，要计算子序列 `[1]`、`[2]`、`[1]`、`[2]`、`[1,2]`、`[2,1]`、`[1,2]`、`[1,2,1]`、`[2,1,2]`、`[1,2,1,2]` 的最大值之和，答案为 $18$。 注意 `[1,1]` 和 `[2,2]` 虽然是原序列的子序列，但不是连续子序列，所以不应该被计算。另外，注意其中有一些值相同的子序列，但由于他们在原序列中的下标不同，属于不同的非空连续子序列，所以会被分别计算。\n\n解决该问题有许多算法，以下程序使用分治算法，时间复杂度 $\\mathrm{O}(n \\log n)$。\n\n试补全程序。\n\n② 处应填（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "`pre[j - mid] > max`",
+          "html": "<p><code>pre[j - mid] &gt; max</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`a[j] < max`",
+          "html": "<p><code>a[j] &lt; max</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`pre[j - mid] < max`",
+          "html": "<p><code>pre[j - mid] &lt; max</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`a[j] < a[i]`",
+          "html": "<p><code>a[j] &lt; a[i]</code></p>\n"
+        }
+      ],
+      "uid": "q40",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\n#include &lt;algorithm&gt;\n#include &lt;vector&gt;\n\nconst int MAXN = 100000;\nint n;\nint a[MAXN];\nlong long ans;\n\nvoid solve(int l, int r) {\n    if (l + 1 == r) {\n        ans += a[l];\n        return ;\n    }\n    int mid = (l + r) &gt;&gt; 1;\n    std::vector&lt;int&gt; pre(a + mid, a + r);\n    for (int i = 1; i &lt; r - mid; ++i) ①;\n    std::vector&lt;long long&gt; sum(r - mid + 1);\n    for (int i = 0; i &lt; r - mid; ++i) sum[i + 1] = sum[i] + pre[i];\n    for (int i = mid - 1, j = mid, max = 0; i &gt;= l; --i) {\n        while (j &lt; r &amp;&amp; ②) ++j;\n        max = std::max(max, a[i]);\n        ans += ③;\n        ans += ④;\n    }\n    solve(l, mid);\n    solve(mid, r);\n}\n\nint main() {\n    std::cin &gt;&gt; n;\n    for (int i = 0; i &lt; n; ++i) std::cin &gt;&gt; a[i];\n    ⑤;\n    std::cout &lt;&lt; ans &lt;&lt; std::endl;\n    return 0;\n}\n</code></pre>\n<p>（最大值之和）给定整数序列 $a_0, ..., a_{n-1}$ 求该序列所有非空连续子序列的最大值之和。上述参数满足 $1 &lt;n\\leq 10^5$ 和 $1\\leq a_i \\leq 10^8$。</p>\n<p>一个序列的非空连续子序列可以用两个下标 $l$ 和 $r$ (其中 $0\\leq l\\leq r&lt;n$) 表示，对应的序列为 $a_l, a_{l+1}, ..., a_r$。两个非空连续子序列不同，当且仅当下标不同。</p>\n<p>例如，当原序列为 <code>[1,2,1,2]</code> 时，要计算子序列 <code>[1]</code>、<code>[2]</code>、<code>[1]</code>、<code>[2]</code>、<code>[1,2]</code>、<code>[2,1]</code>、<code>[1,2]</code>、<code>[1,2,1]</code>、<code>[2,1,2]</code>、<code>[1,2,1,2]</code> 的最大值之和，答案为 $18$。 注意 <code>[1,1]</code> 和 <code>[2,2]</code> 虽然是原序列的子序列，但不是连续子序列，所以不应该被计算。另外，注意其中有一些值相同的子序列，但由于他们在原序列中的下标不同，属于不同的非空连续子序列，所以会被分别计算。</p>\n<p>解决该问题有许多算法，以下程序使用分治算法，时间复杂度 $\\mathrm{O}(n \\log n)$。</p>\n<p>试补全程序。</p>\n<p>② 处应填（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 41,
+      "section": "完善程序",
+      "score": 3.0,
+      "answer": "A",
+      "content": "```\n#include <iostream>\n#include <algorithm>\n#include <vector>\n\nconst int MAXN = 100000;\nint n;\nint a[MAXN];\nlong long ans;\n\nvoid solve(int l, int r) {\n    if (l + 1 == r) {\n        ans += a[l];\n        return ;\n    }\n    int mid = (l + r) >> 1;\n    std::vector<int> pre(a + mid, a + r);\n    for (int i = 1; i < r - mid; ++i) ①;\n    std::vector<long long> sum(r - mid + 1);\n    for (int i = 0; i < r - mid; ++i) sum[i + 1] = sum[i] + pre[i];\n    for (int i = mid - 1, j = mid, max = 0; i >= l; --i) {\n        while (j < r && ②) ++j;\n        max = std::max(max, a[i]);\n        ans += ③;\n        ans += ④;\n    }\n    solve(l, mid);\n    solve(mid, r);\n}\n\nint main() {\n    std::cin >> n;\n    for (int i = 0; i < n; ++i) std::cin >> a[i];\n    ⑤;\n    std::cout << ans << std::endl;\n    return 0;\n}\n```\n\n（最大值之和）给定整数序列 $a_0, ..., a_{n-1}$ 求该序列所有非空连续子序列的最大值之\n\n和。上述参数满足 $1 <n\\leq 10^5$ 和 $1\\leq a_i \\leq 10^8$。\n\n一个序列的非空连续子序列可以用两个下标 $l$ 和 $r$ (其中 $0\\leq l\\leq r<n$) 表示，对应的序列为 $a_l, a_{l+1}, ..., a_r$。两个非空连续子序列不同，当且仅当下标不同。\n\n例如，当原序列为 `[1,2,1,2]` 时，要计算子序列 `[1]`、`[2]`、`[1]`、`[2]`、`[1,2]`、`[2,1]`、`[1,2]`、`[1,2,1]`、`[2,1,2]`、`[1,2,1,2]` 的最大值之和，答案为 $18$。 注意 `[1,1]` 和 `[2,2]` 虽然是原序列的子序列，但不是连续子序列，所以不应该被计算。另外，注意其中有一些值相同的子序列，但由于他们在原序列中的下标不同，属于不同的非空连续子序列，所以会被分别计算。\n\n解决该问题有许多算法，以下程序使用分治算法，时间复杂度 $\\mathrm{O}(n \\log n)$。\n\n试补全程序。\n\n③ 处应填（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(long long)(j - mid) * max`",
+          "html": "<p><code>(long long)(j - mid) * max</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(long long)(j - mid) * (i - 1) * max`",
+          "html": "<p><code>(long long)(j - mid) * (i - 1) * max</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`sum[j - mid]`",
+          "html": "<p><code>sum[j - mid]</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`sum[j - mid] * (i - 1)`",
+          "html": "<p><code>sum[j - mid] * (i - 1)</code></p>\n"
+        }
+      ],
+      "uid": "q41",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\n#include &lt;algorithm&gt;\n#include &lt;vector&gt;\n\nconst int MAXN = 100000;\nint n;\nint a[MAXN];\nlong long ans;\n\nvoid solve(int l, int r) {\n    if (l + 1 == r) {\n        ans += a[l];\n        return ;\n    }\n    int mid = (l + r) &gt;&gt; 1;\n    std::vector&lt;int&gt; pre(a + mid, a + r);\n    for (int i = 1; i &lt; r - mid; ++i) ①;\n    std::vector&lt;long long&gt; sum(r - mid + 1);\n    for (int i = 0; i &lt; r - mid; ++i) sum[i + 1] = sum[i] + pre[i];\n    for (int i = mid - 1, j = mid, max = 0; i &gt;= l; --i) {\n        while (j &lt; r &amp;&amp; ②) ++j;\n        max = std::max(max, a[i]);\n        ans += ③;\n        ans += ④;\n    }\n    solve(l, mid);\n    solve(mid, r);\n}\n\nint main() {\n    std::cin &gt;&gt; n;\n    for (int i = 0; i &lt; n; ++i) std::cin &gt;&gt; a[i];\n    ⑤;\n    std::cout &lt;&lt; ans &lt;&lt; std::endl;\n    return 0;\n}\n</code></pre>\n<p>（最大值之和）给定整数序列 $a_0, ..., a_{n-1}$ 求该序列所有非空连续子序列的最大值之</p>\n<p>和。上述参数满足 $1 &lt;n\\leq 10^5$ 和 $1\\leq a_i \\leq 10^8$。</p>\n<p>一个序列的非空连续子序列可以用两个下标 $l$ 和 $r$ (其中 $0\\leq l\\leq r&lt;n$) 表示，对应的序列为 $a_l, a_{l+1}, ..., a_r$。两个非空连续子序列不同，当且仅当下标不同。</p>\n<p>例如，当原序列为 <code>[1,2,1,2]</code> 时，要计算子序列 <code>[1]</code>、<code>[2]</code>、<code>[1]</code>、<code>[2]</code>、<code>[1,2]</code>、<code>[2,1]</code>、<code>[1,2]</code>、<code>[1,2,1]</code>、<code>[2,1,2]</code>、<code>[1,2,1,2]</code> 的最大值之和，答案为 $18$。 注意 <code>[1,1]</code> 和 <code>[2,2]</code> 虽然是原序列的子序列，但不是连续子序列，所以不应该被计算。另外，注意其中有一些值相同的子序列，但由于他们在原序列中的下标不同，属于不同的非空连续子序列，所以会被分别计算。</p>\n<p>解决该问题有许多算法，以下程序使用分治算法，时间复杂度 $\\mathrm{O}(n \\log n)$。</p>\n<p>试补全程序。</p>\n<p>③ 处应填（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 42,
+      "section": "完善程序",
+      "score": 3.0,
+      "answer": "D",
+      "content": "```\n#include <iostream>\n#include <algorithm>\n#include <vector>\n\nconst int MAXN = 100000;\nint n;\nint a[MAXN];\nlong long ans;\n\nvoid solve(int l, int r) {\n    if (l + 1 == r) {\n        ans += a[l];\n        return ;\n    }\n    int mid = (l + r) >> 1;\n    std::vector<int> pre(a + mid, a + r);\n    for (int i = 1; i < r - mid; ++i) ①;\n    std::vector<long long> sum(r - mid + 1);\n    for (int i = 0; i < r - mid; ++i) sum[i + 1] = sum[i] + pre[i];\n    for (int i = mid - 1, j = mid, max = 0; i >= l; --i) {\n        while (j < r && ②) ++j;\n        max = std::max(max, a[i]);\n        ans += ③;\n        ans += ④;\n    }\n    solve(l, mid);\n    solve(mid, r);\n}\n\nint main() {\n    std::cin >> n;\n    for (int i = 0; i < n; ++i) std::cin >> a[i];\n    ⑤;\n    std::cout << ans << std::endl;\n    return 0;\n}\n```\n\n（最大值之和）给定整数序列 $a_0, ..., a_{n-1}$ 求该序列所有非空连续子序列的最大值之\n\n和。上述参数满足 $1 <n\\leq 10^5$ 和 $1\\leq a_i \\leq 10^8$。\n\n一个序列的非空连续子序列可以用两个下标 $l$ 和 $r$ (其中 $0\\leq l\\leq r<n$) 表示，对应的序列为 $a_l, a_{l+1}, ..., a_r$。两个非空连续子序列不同，当且仅当下标不同。\n\n例如，当原序列为 `[1,2,1,2]` 时，要计算子序列 `[1]`、`[2]`、`[1]`、`[2]`、`[1,2]`、`[2,1]`、`[1,2]`、`[1,2,1]`、`[2,1,2]`、`[1,2,1,2]` 的最大值之和，答案为 $18$。 注意 `[1,1]` 和 `[2,2]` 虽然是原序列的子序列，但不是连续子序列，所以不应该被计算。另外，注意其中有一些值相同的子序列，但由于他们在原序列中的下标不同，属于不同的非空连续子序列，所以会被分别计算。\n\n解决该问题有许多算法，以下程序使用分治算法，时间复杂度 $\\mathrm{O}(n \\log n)$。\n\n试补全程序。\n\n④ 处应填（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(long long)(r - j) * (mid - i) * max`",
+          "html": "<p><code>(long long)(r - j) * (mid - i) * max</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(sum[r - mid] - sum[j - mid]) * (mid - i)`",
+          "html": "<p><code>(sum[r - mid] - sum[j - mid]) * (mid - i)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(long long)(r - j) * max`",
+          "html": "<p><code>(long long)(r - j) * max</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`sum[r - mid] - sum[j - mid]`",
+          "html": "<p><code>sum[r - mid] - sum[j - mid]</code></p>\n"
+        }
+      ],
+      "uid": "q42",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\n#include &lt;algorithm&gt;\n#include &lt;vector&gt;\n\nconst int MAXN = 100000;\nint n;\nint a[MAXN];\nlong long ans;\n\nvoid solve(int l, int r) {\n    if (l + 1 == r) {\n        ans += a[l];\n        return ;\n    }\n    int mid = (l + r) &gt;&gt; 1;\n    std::vector&lt;int&gt; pre(a + mid, a + r);\n    for (int i = 1; i &lt; r - mid; ++i) ①;\n    std::vector&lt;long long&gt; sum(r - mid + 1);\n    for (int i = 0; i &lt; r - mid; ++i) sum[i + 1] = sum[i] + pre[i];\n    for (int i = mid - 1, j = mid, max = 0; i &gt;= l; --i) {\n        while (j &lt; r &amp;&amp; ②) ++j;\n        max = std::max(max, a[i]);\n        ans += ③;\n        ans += ④;\n    }\n    solve(l, mid);\n    solve(mid, r);\n}\n\nint main() {\n    std::cin &gt;&gt; n;\n    for (int i = 0; i &lt; n; ++i) std::cin &gt;&gt; a[i];\n    ⑤;\n    std::cout &lt;&lt; ans &lt;&lt; std::endl;\n    return 0;\n}\n</code></pre>\n<p>（最大值之和）给定整数序列 $a_0, ..., a_{n-1}$ 求该序列所有非空连续子序列的最大值之</p>\n<p>和。上述参数满足 $1 &lt;n\\leq 10^5$ 和 $1\\leq a_i \\leq 10^8$。</p>\n<p>一个序列的非空连续子序列可以用两个下标 $l$ 和 $r$ (其中 $0\\leq l\\leq r&lt;n$) 表示，对应的序列为 $a_l, a_{l+1}, ..., a_r$。两个非空连续子序列不同，当且仅当下标不同。</p>\n<p>例如，当原序列为 <code>[1,2,1,2]</code> 时，要计算子序列 <code>[1]</code>、<code>[2]</code>、<code>[1]</code>、<code>[2]</code>、<code>[1,2]</code>、<code>[2,1]</code>、<code>[1,2]</code>、<code>[1,2,1]</code>、<code>[2,1,2]</code>、<code>[1,2,1,2]</code> 的最大值之和，答案为 $18$。 注意 <code>[1,1]</code> 和 <code>[2,2]</code> 虽然是原序列的子序列，但不是连续子序列，所以不应该被计算。另外，注意其中有一些值相同的子序列，但由于他们在原序列中的下标不同，属于不同的非空连续子序列，所以会被分别计算。</p>\n<p>解决该问题有许多算法，以下程序使用分治算法，时间复杂度 $\\mathrm{O}(n \\log n)$。</p>\n<p>试补全程序。</p>\n<p>④ 处应填（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 43,
+      "section": "完善程序",
+      "score": 3.0,
+      "answer": "A",
+      "content": "```\n#include <iostream>\n#include <algorithm>\n#include <vector>\n\nconst int MAXN = 100000;\nint n;\nint a[MAXN];\nlong long ans;\n\nvoid solve(int l, int r) {\n    if (l + 1 == r) {\n        ans += a[l];\n        return ;\n    }\n    int mid = (l + r) >> 1;\n    std::vector<int> pre(a + mid, a + r);\n    for (int i = 1; i < r - mid; ++i) ①;\n    std::vector<long long> sum(r - mid + 1);\n    for (int i = 0; i < r - mid; ++i) sum[i + 1] = sum[i] + pre[i];\n    for (int i = mid - 1, j = mid, max = 0; i >= l; --i) {\n        while (j < r && ②) ++j;\n        max = std::max(max, a[i]);\n        ans += ③;\n        ans += ④;\n    }\n    solve(l, mid);\n    solve(mid, r);\n}\n\nint main() {\n    std::cin >> n;\n    for (int i = 0; i < n; ++i) std::cin >> a[i];\n    ⑤;\n    std::cout << ans << std::endl;\n    return 0;\n}\n```\n\n（最大值之和）给定整数序列 $a_0, ..., a_{n-1}$ 求该序列所有非空连续子序列的最大值之\n\n和。上述参数满足 $1 <n\\leq 10^5$ 和 $1\\leq a_i \\leq 10^8$。\n\n一个序列的非空连续子序列可以用两个下标 $l$ 和 $r$ (其中 $0\\leq l\\leq r<n$) 表示，对应的序列为 $a_l, a_{l+1}, ..., a_r$。两个非空连续子序列不同，当且仅当下标不同。\n\n例如，当原序列为 `[1,2,1,2]` 时，要计算子序列 `[1]`、`[2]`、`[1]`、`[2]`、`[1,2]`、`[2,1]`、`[1,2]`、`[1,2,1]`、`[2,1,2]`、`[1,2,1,2]` 的最大值之和，答案为 $18$。 注意 `[1,1]` 和 `[2,2]` 虽然是原序列的子序列，但不是连续子序列，所以不应该被计算。另外，注意其中有一些值相同的子序列，但由于他们在原序列中的下标不同，属于不同的非空连续子序列，所以会被分别计算。\n\n解决该问题有许多算法，以下程序使用分治算法，时间复杂度 $\\mathrm{O}(n \\log n)$。\n\n试补全程序。\n\n⑤ 处应填（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "`solve(0, n)`",
+          "html": "<p><code>solve(0, n)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`solve(0, n - 1)`",
+          "html": "<p><code>solve(0, n - 1)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`solve(1, n)`",
+          "html": "<p><code>solve(1, n)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`solve(1, n - 1)`",
+          "html": "<p><code>solve(1, n - 1)</code></p>\n"
+        }
+      ],
+      "uid": "q43",
+      "gradable": true,
+      "html": "<pre><code>#include &lt;iostream&gt;\n#include &lt;algorithm&gt;\n#include &lt;vector&gt;\n\nconst int MAXN = 100000;\nint n;\nint a[MAXN];\nlong long ans;\n\nvoid solve(int l, int r) {\n    if (l + 1 == r) {\n        ans += a[l];\n        return ;\n    }\n    int mid = (l + r) &gt;&gt; 1;\n    std::vector&lt;int&gt; pre(a + mid, a + r);\n    for (int i = 1; i &lt; r - mid; ++i) ①;\n    std::vector&lt;long long&gt; sum(r - mid + 1);\n    for (int i = 0; i &lt; r - mid; ++i) sum[i + 1] = sum[i] + pre[i];\n    for (int i = mid - 1, j = mid, max = 0; i &gt;= l; --i) {\n        while (j &lt; r &amp;&amp; ②) ++j;\n        max = std::max(max, a[i]);\n        ans += ③;\n        ans += ④;\n    }\n    solve(l, mid);\n    solve(mid, r);\n}\n\nint main() {\n    std::cin &gt;&gt; n;\n    for (int i = 0; i &lt; n; ++i) std::cin &gt;&gt; a[i];\n    ⑤;\n    std::cout &lt;&lt; ans &lt;&lt; std::endl;\n    return 0;\n}\n</code></pre>\n<p>（最大值之和）给定整数序列 $a_0, ..., a_{n-1}$ 求该序列所有非空连续子序列的最大值之</p>\n<p>和。上述参数满足 $1 &lt;n\\leq 10^5$ 和 $1\\leq a_i \\leq 10^8$。</p>\n<p>一个序列的非空连续子序列可以用两个下标 $l$ 和 $r$ (其中 $0\\leq l\\leq r&lt;n$) 表示，对应的序列为 $a_l, a_{l+1}, ..., a_r$。两个非空连续子序列不同，当且仅当下标不同。</p>\n<p>例如，当原序列为 <code>[1,2,1,2]</code> 时，要计算子序列 <code>[1]</code>、<code>[2]</code>、<code>[1]</code>、<code>[2]</code>、<code>[1,2]</code>、<code>[2,1]</code>、<code>[1,2]</code>、<code>[1,2,1]</code>、<code>[2,1,2]</code>、<code>[1,2,1,2]</code> 的最大值之和，答案为 $18$。 注意 <code>[1,1]</code> 和 <code>[2,2]</code> 虽然是原序列的子序列，但不是连续子序列，所以不应该被计算。另外，注意其中有一些值相同的子序列，但由于他们在原序列中的下标不同，属于不同的非空连续子序列，所以会被分别计算。</p>\n<p>解决该问题有许多算法，以下程序使用分治算法，时间复杂度 $\\mathrm{O}(n \\log n)$。</p>\n<p>试补全程序。</p>\n<p>⑤ 处应填（ ）</p>\n"
+    }
+  ],
+  "id": "csp-s-2023",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/csp-s-2023",
+  "version": "828a397ae26afdc3",
+  "warnings": [],
+  "objective_score": 100.0
+}

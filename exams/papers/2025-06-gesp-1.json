@@ -1,0 +1,631 @@
+{
+  "title": "2025年6月 GESP C++ 1级",
+  "category": "GESP",
+  "level": "1",
+  "date": "2025-06",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年6月 GESP C++ 1级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "处理器",
+          "html": "<p>处理器</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "存储器",
+          "html": "<p>存储器</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "输入设备",
+          "html": "<p>输入设备</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "输出设备",
+          "html": "<p>输出设备</p>\n"
+        }
+      ],
+      "content": "2025年4月19日在北京举行了一场颇为瞩目的人形机器人半程马拉松赛。比赛期间，跑动着的机器人会利用身上安装的多个传感器所反馈的数据来调整姿态、保持平衡等，那么这类传感器类似于计算机的( )。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>2025年4月19日在北京举行了一场颇为瞩目的人形机器人半程马拉松赛。比赛期间，跑动着的机器人会利用身上安装的多个传感器所反馈的数据来调整姿态、保持平衡等，那么这类传感器类似于计算机的( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "断点不可以设在 L1 标记的代码行",
+          "html": "<p>断点不可以设在 L1 标记的代码行</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "执行暂停在 L2 标记的代码行时，可以检测 `i` 的值",
+          "html": "<p>执行暂停在 L2 标记的代码行时，可以检测 <code>i</code> 的值</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "执行暂停在 L3 标记的代码行时，可以修改 `i` 的值",
+          "html": "<p>执行暂停在 L3 标记的代码行时，可以修改 <code>i</code> 的值</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "执行有可能暂停在 L4 标记的代码行",
+          "html": "<p>执行有可能暂停在 L4 标记的代码行</p>\n"
+        }
+      ],
+      "content": "在某集成开发环境中调试下面代码段时尝试设置断点和检查局部变量，下面哪个说法是错误的（ ）。\n\n```cpp\nint i,N = 0; // L1\ncin >> N; // L2\nfor (i = 1; i < 9; i++)\n    if (N % i == 0) break; // L3\nif (i < 9)\n    printf(\"N不能大于9\\n\"); // L4\n```",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>在某集成开发环境中调试下面代码段时尝试设置断点和检查局部变量，下面哪个说法是错误的（ ）。</p>\n<pre><code class=\"language-cpp\">int i,N = 0; // L1\ncin &gt;&gt; N; // L2\nfor (i = 1; i &lt; 9; i++)\n    if (N % i == 0) break; // L3\nif (i &lt; 9)\n    printf(&quot;N不能大于9\\n&quot;); // L4\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "执行后输出 $10$",
+          "html": "<p>执行后输出 $10$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "执行后输出 `{First}`",
+          "html": "<p>执行后输出 <code>{First}</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "执行后输出 `\"{First}\"`",
+          "html": "<p>执行后输出 <code>&quot;{First}&quot;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "编译报错，因为 `First` 应该是 `first`",
+          "html": "<p>编译报错，因为 <code>First</code> 应该是 <code>first</code></p>\n"
+        }
+      ],
+      "content": "对下列 C++ 的代码，描述准确的是( )。\n\n```cpp\nint first = 10;\nprintf(\"{%d}\\n\", First)\n```",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>对下列 C++ 的代码，描述准确的是( )。</p>\n<pre><code class=\"language-cpp\">int first = 10;\nprintf(&quot;{%d}\\n&quot;, First)\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`X.cpp`",
+          "html": "<p><code>X.cpp</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`X-cpp`",
+          "html": "<p><code>X-cpp</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`X#cpp`",
+          "html": "<p><code>X#cpp</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`X_cpp`",
+          "html": "<p><code>X_cpp</code></p>\n"
+        }
+      ],
+      "content": "在 C++ 中，下列可以做变量名的是( )。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>在 C++ 中，下列可以做变量名的是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$11$",
+          "html": "<p>$11$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$13$",
+          "html": "<p>$13$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$-67$",
+          "html": "<p>$-67$</p>\n"
+        }
+      ],
+      "content": "C++ 表达式 `14 - 3 * 3 % 2` 的值是( )。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>C++ 表达式 <code>14 - 3 * 3 % 2</code> 的值是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$10$ $20$",
+          "html": "<p>$10$ $20$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$20$ $10$",
+          "html": "<p>$20$ $10$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$10$ $10$",
+          "html": "<p>$10$ $10$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$20$ $20$",
+          "html": "<p>$20$ $20$</p>\n"
+        }
+      ],
+      "content": "下面的 C++ 代码执行后，其输出是( )。\n\n```cpp\nint x = 10, y = 20;\nx = x + y;\ny = x - y;\nx = x - y;\ncout << x << ' ' << y;\n```",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码执行后，其输出是( )。</p>\n<pre><code class=\"language-cpp\">int x = 10, y = 20;\nx = x + y;\ny = x - y;\nx = x - y;\ncout &lt;&lt; x &lt;&lt; ' ' &lt;&lt; y;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$17$",
+          "html": "<p>$17$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$19$",
+          "html": "<p>$19$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$20$",
+          "html": "<p>$20$</p>\n"
+        }
+      ],
+      "content": "定义整型变量 `int a = 16` ，则执行 `++a += 3` 之后， $a$ 的值会是（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>定义整型变量 <code>int a = 16</code> ，则执行 <code>++a += 3</code> 之后， $a$ 的值会是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$8$ $9$",
+          "html": "<p>$8$ $9$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$9$ $9$",
+          "html": "<p>$9$ $9$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$9$ $10$",
+          "html": "<p>$9$ $10$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "编译错误，无法执行",
+          "html": "<p>编译错误，无法执行</p>\n"
+        }
+      ],
+      "content": "C++ 的 `int` 类型变量 $X$ 的值为 $8$，如果执行 `cout << (++X)++;`，则输出和执行后 $X$ 的值分别是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>C++ 的 <code>int</code> 类型变量 $X$ 的值为 $8$，如果执行 <code>cout &lt;&lt; (++X)++;</code>，则输出和执行后 $X$ 的值分别是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`a+b=07#a+b={a+b}`",
+          "html": "<p><code>a+b=07#a+b={a+b}</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`a+b= 7#a+b=7`",
+          "html": "<p><code>a+b= 7#a+b=7</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`a+b=7#a+b={a+b}`",
+          "html": "<p><code>a+b=7#a+b={a+b}</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`a+b=7#a+b=7`",
+          "html": "<p><code>a+b=7#a+b=7</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后的输出是（ ）。\n\n```cpp\nint a, b;\na = 3;\nb = 4;\nprintf(\"a+b=%02d#a+b={a+b}\", a + b, a + b);\n```",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出是（ ）。</p>\n<pre><code class=\"language-cpp\">int a, b;\na = 3;\nb = 4;\nprintf(&quot;a+b=%02d#a+b={a+b}&quot;, a + b, a + b);\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\n(N + M) / 7\nD == 0\n```",
+          "html": "<pre><code class=\"language-cpp\">(N + M) / 7\nD == 0\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\n(N + M) % 7\nD == 0\n```",
+          "html": "<pre><code class=\"language-cpp\">(N + M) % 7\nD == 0\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\n(N + M) / 7\nD <= 0\n```",
+          "html": "<pre><code class=\"language-cpp\">(N + M) / 7\nD &lt;= 0\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\n(N + M) % 7\nD = 0\n```",
+          "html": "<pre><code class=\"language-cpp\">(N + M) % 7\nD = 0\n</code></pre>\n"
+        }
+      ],
+      "content": "下面的 C++ 代码用于求 $M$ 天后是星期几，两处横线处分别应填入的代码是（ ）。\n\n```cpp\nint N, M, D;\ncout << \"当前星期几? \"; // 星期日是0\ncin >> N;\ncout << \"求多少天后? \"; // 输入正整数\ncin >> M;\nD = ____________;\nif (____________)\n    printf(\"%d天后是星期日\", M);\nelse\n    printf(\"%d天后是星期%d\", M, D);\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码用于求 $M$ 天后是星期几，两处横线处分别应填入的代码是（ ）。</p>\n<pre><code class=\"language-cpp\">int N, M, D;\ncout &lt;&lt; &quot;当前星期几? &quot;; // 星期日是0\ncin &gt;&gt; N;\ncout &lt;&lt; &quot;求多少天后? &quot;; // 输入正整数\ncin &gt;&gt; M;\nD = ____________;\nif (____________)\n    printf(&quot;%d天后是星期日&quot;, M);\nelse\n    printf(&quot;%d天后是星期%d&quot;, M, D);\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`END`",
+          "html": "<p><code>END</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`1#`",
+          "html": "<p><code>1#</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`1#4#END`",
+          "html": "<p><code>1#4#END</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`1#4#7#10#END`",
+          "html": "<p><code>1#4#7#10#END</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后输出是（ ）。\n\n```cpp\nint i;\nfor (i = 1; i < 11; i += 3){\n    continue;\n    if (i % 2 == 0)\n        break;\n    printf(\"%d#\", i);\n}\nif (i >= 11)\n    printf(\"END\");\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后输出是（ ）。</p>\n<pre><code class=\"language-cpp\">int i;\nfor (i = 1; i &lt; 11; i += 3){\n    continue;\n    if (i % 2 == 0)\n        break;\n    printf(&quot;%d#&quot;, i);\n}\nif (i &gt;= 11)\n    printf(&quot;END&quot;);\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`i -= 1`",
+          "html": "<p><code>i -= 1</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`i == 1`",
+          "html": "<p><code>i == 1</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`i > 1`",
+          "html": "<p><code>i &gt; 1</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`i >= 1`",
+          "html": "<p><code>i &gt;= 1</code></p>\n"
+        }
+      ],
+      "content": "下面的 C++ 代码用于求 $N$ 的所有因数（即能将 $N$ 整除的数），如输入 $12$ 则将输出 12,6,4,3,2,1。（ ）。\n\n```cpp\nint i, N;\ncin >> N;\ni = N;\nwhile (_______){\n    if (N % i == 0)\n        printf(\"%d,\", i);\n    i -= 1;\n}\nprintf(\"1\");\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码用于求 $N$ 的所有因数（即能将 $N$ 整除的数），如输入 $12$ 则将输出 12,6,4,3,2,1。（ ）。</p>\n<pre><code class=\"language-cpp\">int i, N;\ncin &gt;&gt; N;\ni = N;\nwhile (_______){\n    if (N % i == 0)\n        printf(&quot;%d,&quot;, i);\n    i -= 1;\n}\nprintf(&quot;1&quot;);\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$55$",
+          "html": "<p>$55$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$15$",
+          "html": "<p>$15$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$9$",
+          "html": "<p>$9$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后输出的是（ ）。\n\n```cpp\nint Sum = 0;\nfor (int i = 0; i < 10; i++){\n    if (i % 2 == 0)\n        continue;\n    if (i % 5 == 0)\n        break;\n    Sum += i;\n}\ncout << Sum;\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后输出的是（ ）。</p>\n<pre><code class=\"language-cpp\">int Sum = 0;\nfor (int i = 0; i &lt; 10; i++){\n    if (i % 2 == 0)\n        continue;\n    if (i % 5 == 0)\n        break;\n    Sum += i;\n}\ncout &lt;&lt; Sum;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "输出 $101$",
+          "html": "<p>输出 $101$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "输出 $102$",
+          "html": "<p>输出 $102$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "输出 $103$",
+          "html": "<p>输出 $103$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "编译将报错，无法执行",
+          "html": "<p>编译将报错，无法执行</p>\n"
+        }
+      ],
+      "content": "试图编译并执行下面 C++ 代码，下面描述正确的是（ ）。\n\n```cpp\nfloat x;\nx = 101;\nx++;\ncout << ++x;\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>试图编译并执行下面 C++ 代码，下面描述正确的是（ ）。</p>\n<pre><code class=\"language-cpp\">float x;\nx = 101;\nx++;\ncout &lt;&lt; ++x;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`int b = (i / 10) / 10;`",
+          "html": "<p><code>int b = (i / 10) / 10;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`int b = (i / 10) % 10;`",
+          "html": "<p><code>int b = (i / 10) % 10;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`int b = (i % 10) % 10;`",
+          "html": "<p><code>int b = (i % 10) % 10;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "int b = (i % 10) % 10;",
+          "html": "<p>int b = (i % 10) % 10;</p>\n"
+        }
+      ],
+      "content": "以下 C++ 代码可以找出百位、十位和个位满足特定条件的三位数，横线处应该填入的是（ ）\n\n```cpp\nint count = 0;\nfor (int i = 100; i <= 999; i++) {\n    int a = i / 100;\n    _________________________\n    int c = i % 10;\n    if (a * a + b * b == c * c) {\n        count++;\n    }\n}\n```",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>以下 C++ 代码可以找出百位、十位和个位满足特定条件的三位数，横线处应该填入的是（ ）</p>\n<pre><code class=\"language-cpp\">int count = 0;\nfor (int i = 100; i &lt;= 999; i++) {\n    int a = i / 100;\n    _________________________\n    int c = i % 10;\n    if (a * a + b * b == c * c) {\n        count++;\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "人们现在参加很多闭卷考试时通常都不允许带智能手机、平板电脑等，此外很多种智能手表同样因为具有嵌入操作系统及通信等功能，所以也不允许随身携带。（ ）",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>人们现在参加很多闭卷考试时通常都不允许带智能手机、平板电脑等，此外很多种智能手表同样因为具有嵌入操作系统及通信等功能，所以也不允许随身携带。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "如果 $N$ 是 C++ 的整型变量，值为 $5$，则表达式 `(N + !N)` 的值为 $4$。 ( )",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>如果 $N$ 是 C++ 的整型变量，值为 $5$，则表达式 <code>(N + !N)</code> 的值为 $4$。 ( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在下面 C++ 代码中，删除 `break` 语句对程序执行结果没有影响。 ( )\n\n```cpp\nint i;\nfor (i = 0; i < 10; i++){\n    continue;\n    cout << i << \"#\";\n    break;\n}\nif (i >= 10)\n    cout << \"END\";\n```",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>在下面 C++ 代码中，删除 <code>break</code> 语句对程序执行结果没有影响。 ( )</p>\n<pre><code class=\"language-cpp\">int i;\nfor (i = 0; i &lt; 10; i++){\n    continue;\n    cout &lt;&lt; i &lt;&lt; &quot;#&quot;;\n    break;\n}\nif (i &gt;= 10)\n    cout &lt;&lt; &quot;END&quot;;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "删除下面 C++ 代码中的 `continue` 后其输出是 `0#2#4#6#8#`。（ ）\n\n```cpp\nint i;\nfor (i = 0; i < 10; i++){\n    if (i % 2 == 0){\n        cout << i << \"#\";\n        continue;\n    }\n}\nif (i >= 10)\n    cout << \"END\";\n```",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>删除下面 C++ 代码中的 <code>continue</code> 后其输出是 <code>0#2#4#6#8#</code>。（ ）</p>\n<pre><code class=\"language-cpp\">int i;\nfor (i = 0; i &lt; 10; i++){\n    if (i % 2 == 0){\n        cout &lt;&lt; i &lt;&lt; &quot;#&quot;;\n        continue;\n    }\n}\nif (i &gt;= 10)\n    cout &lt;&lt; &quot;END&quot;;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "将下面 C++ 代码中的 `i < 100; i = i + 1` 修改为 `i < 200; i += i + 1` ，其输出与当前代码输出相同。（ ）\n\n```cpp\nint cnt = 0;\nfor (int i = 0; i < 100; i = i + 1)\n    cnt += 1;\ncout << cnt;\n```",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>将下面 C++ 代码中的 <code>i &lt; 100; i = i + 1</code> 修改为 <code>i &lt; 200; i += i + 1</code> ，其输出与当前代码输出相同。（ ）</p>\n<pre><code class=\"language-cpp\">int cnt = 0;\nfor (int i = 0; i &lt; 100; i = i + 1)\n    cnt += 1;\ncout &lt;&lt; cnt;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "交换下面 C++ 代码中的 `i += 2` 和 `cnt += 1`，交换前后分别运行的两次输出相同。（ ）\n\n```cpp\nint i, cnt = 0;\ncnt = 0;\nwhile (i < 10){\n    i += 2;\n    cnt += 1;\n}\ncout << cnt;\n```",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>交换下面 C++ 代码中的 <code>i += 2</code> 和 <code>cnt += 1</code>，交换前后分别运行的两次输出相同。（ ）</p>\n<pre><code class=\"language-cpp\">int i, cnt = 0;\ncnt = 0;\nwhile (i &lt; 10){\n    i += 2;\n    cnt += 1;\n}\ncout &lt;&lt; cnt;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "下面的 C++ 代码执行后将输出 $45$。（ ）\n\n```cpp\nint cnt;\nfor (int i = 0; i < 10; i++)\n    cnt += 1;\ncout << cnt;\n```",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码执行后将输出 $45$。（ ）</p>\n<pre><code class=\"language-cpp\">int cnt;\nfor (int i = 0; i &lt; 10; i++)\n    cnt += 1;\ncout &lt;&lt; cnt;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "执行 C++ 代码 `cout << (12 + 12.12)` 将报错，因为 $12$ 是 `int` 类型，而 $12.12$ 是 `float` 类型，不同类型不能直接运算。（ ）",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>执行 C++ 代码 <code>cout &lt;&lt; (12 + 12.12)</code> 将报错，因为 $12$ 是 <code>int</code> 类型，而 $12.12$ 是 <code>float</code> 类型，不同类型不能直接运算。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 代码中，不可以将变量命名为 `false`，因为 `false` 是 C++ 语言的关键字。（ ）",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>在 C++ 代码中，不可以将变量命名为 <code>false</code>，因为 <code>false</code> 是 C++ 语言的关键字。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "$X$ 是 C++ 的整型变量，则表达式 `3 < X < 5` 求值结果是 $4$。( )",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>$X$ 是 C++ 的整型变量，则表达式 <code>3 &lt; X &lt; 5</code> 求值结果是 $4$。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：假期阅读**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小 A 有一本厚厚的书。这本书总共有 $n$ 页，小 A 一天中最多只能阅读完其中的 $k$ 页。小 A 的假期总共有 $t$ 天，他想知道在假期中最多能阅读完这本书的多少页。\n\n\n**输入格式**\n\n第一行，一个正整数 $n$，表示书的页数。\n\n第二行，一个正整数 $k$，表示小 A 每天最多阅读的页数。\n\n第三行，一个正整数 $t$，表示小 A 假期的天数。\n\n**输出格式**\n\n一行，一个整数，表示假期中所能阅读的最多页数。\n\n**样例输入 #1**\n```\n8\n3\n2\n```\n\n**样例输出 #1**\n```\n6\n```\n\n**样例输入 #2**\n```\n19\n3\n30\n```\n\n**样例输出 #2**\n```\n19\n```\n\n**说明/提示**\n\n对于所有测试点，保证 $n,k,t$ 均不超过 $1000$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：假期阅读</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小 A 有一本厚厚的书。这本书总共有 $n$ 页，小 A 一天中最多只能阅读完其中的 $k$ 页。小 A 的假期总共有 $t$ 天，他想知道在假期中最多能阅读完这本书的多少页。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，一个正整数 $n$，表示书的页数。</p>\n<p>第二行，一个正整数 $k$，表示小 A 每天最多阅读的页数。</p>\n<p>第三行，一个正整数 $t$，表示小 A 假期的天数。</p>\n<p><strong>输出格式</strong></p>\n<p>一行，一个整数，表示假期中所能阅读的最多页数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>8\n3\n2\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>6\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>19\n3\n30\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>19\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于所有测试点，保证 $n,k,t$ 均不超过 $1000$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：值日**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨和小红是值日生，负责打扫教室。小杨每 $m$ 天值日一次，小红每 $n$ 天值日一次。今天他们两个一起值日，请问至少多少天后，他们会再次同一天值日？\n\n\n**输入格式**\n\n第一行，一个正整数 $m$，表示小杨的值日周期；\n\n第二行，一个正整数 $n$，表示小红的值日周期。\n\n**输出格式**\n\n一行，一个整数，表示至少多少天后他们会再次同一天值日。\n\n**样例输入 #1**\n```\n4\n6\n```\n\n**样例输出 #1**\n```\n12\n```\n\n**说明/提示**\n\n对于所有测试点，保证 $1 \\leq m, n \\leq 100$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：值日</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨和小红是值日生，负责打扫教室。小杨每 $m$ 天值日一次，小红每 $n$ 天值日一次。今天他们两个一起值日，请问至少多少天后，他们会再次同一天值日？</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，一个正整数 $m$，表示小杨的值日周期；</p>\n<p>第二行，一个正整数 $n$，表示小红的值日周期。</p>\n<p><strong>输出格式</strong></p>\n<p>一行，一个整数，表示至少多少天后他们会再次同一天值日。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4\n6\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>12\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于所有测试点，保证 $1 \\leq m, n \\leq 100$。</p>\n"
+    }
+  ],
+  "id": "2025-06-gesp-1",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-06-gesp-1",
+  "version": "1f311b4efd53fcd8",
+  "warnings": [],
+  "objective_score": 50.0
+}

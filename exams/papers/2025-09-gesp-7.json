@@ -1,0 +1,631 @@
+{
+  "title": "2025年9月 GESP C++ 7级",
+  "category": "GESP",
+  "level": "7",
+  "date": "2025-09",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年9月 GESP C++ 7级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$b$",
+          "html": "<p>$b$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$c$",
+          "html": "<p>$c$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$98$",
+          "html": "<p>$98$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$99$",
+          "html": "<p>$99$</p>\n"
+        }
+      ],
+      "content": "已知小写字母 $b$ 的 ASCII 码为 $98$，下列 C++ 代码的输出结果是（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    char a = 'b' + 1;\n    cout << a;\n    return 0;\n}\n```",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>已知小写字母 $b$ 的 ASCII 码为 $98$，下列 C++ 代码的输出结果是（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint main() {\n    char a = 'b' + 1;\n    cout &lt;&lt; a;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`a * a`",
+          "html": "<p><code>a * a</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`p * p`",
+          "html": "<p><code>p * p</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`a && a`",
+          "html": "<p><code>a &amp;&amp; a</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`p && p`",
+          "html": "<p><code>p &amp;&amp; p</code></p>\n"
+        }
+      ],
+      "content": "已知 $a$ 为 `int` 类型变量，$p$ 为 `int *` 类型变量，下列表达式不符合语法的是（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>已知 $a$ 为 <code>int</code> 类型变量，$p$ 为 <code>int *</code> 类型变量，下列表达式不符合语法的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "如果一个类包含纯虚函数，则它不能包含成员变量。",
+          "html": "<p>如果一个类包含纯虚函数，则它不能包含成员变量。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "如果一个类包含纯虚函数，则不能用它定义对象。",
+          "html": "<p>如果一个类包含纯虚函数，则不能用它定义对象。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "派生类对象占用的内存总是不小于基类对象。",
+          "html": "<p>派生类对象占用的内存总是不小于基类对象。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "派生类可以不实现基类的虚函数。",
+          "html": "<p>派生类可以不实现基类的虚函数。</p>\n"
+        }
+      ],
+      "content": "下列关于 C++ 类的说法，错误的是（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下列关于 C++ 类的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "数组 `a` 至少占用 $10$ 个 `int` 大小的内存，一般为 $40$ 个字节。",
+          "html": "<p>数组 <code>a</code> 至少占用 $10$ 个 <code>int</code> 大小的内存，一般为 $40$ 个字节。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "数组 `a` 的所有元素均被初始化为 $-1$。",
+          "html": "<p>数组 <code>a</code> 的所有元素均被初始化为 $-1$。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "语句 `a[-1] = 0;` 不会产生编译错误，但会导致难以预测的运行结果。",
+          "html": "<p>语句 <code>a[-1] = 0;</code> 不会产生编译错误，但会导致难以预测的运行结果。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "语句 `a[13] = 0;` 不会产生编译错误，但会导致难以预测的运行结果。",
+          "html": "<p>语句 <code>a[13] = 0;</code> 不会产生编译错误，但会导致难以预测的运行结果。</p>\n"
+        }
+      ],
+      "content": "已知数组 `a` 的定义 `int a[10] = {-1};`，下列说法不正确的是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>已知数组 <code>a</code> 的定义 <code>int a[10] = {-1};</code>，下列说法不正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$38$",
+          "html": "<p>$38$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$82$",
+          "html": "<p>$82$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$83$",
+          "html": "<p>$83$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$84$",
+          "html": "<p>$84$</p>\n"
+        }
+      ],
+      "content": "一棵完全二叉树有 $165$ 个结点，则叶结点有多少个？( )",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>一棵完全二叉树有 $165$ 个结点，则叶结点有多少个？( )</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "二叉排序树的中序遍历顺序与元素排序的顺序是相同的。",
+          "html": "<p>二叉排序树的中序遍历顺序与元素排序的顺序是相同的。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "自平衡二叉查找树（AVL 树）是一种二叉排序树。",
+          "html": "<p>自平衡二叉查找树（AVL 树）是一种二叉排序树。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$n$ 个元素的二叉排序树，其高一定为 $\\log_2 n$ 。",
+          "html": "<p>$n$ 个元素的二叉排序树，其高一定为 $\\log_2 n$ 。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "任意的森林，都可以映射为一颗二叉树进行表达和存储。",
+          "html": "<p>任意的森林，都可以映射为一颗二叉树进行表达和存储。</p>\n"
+        }
+      ],
+      "content": "下列关于二叉树的说法，错误的是（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>下列关于二叉树的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "保留树的所有节点，并把树的每个节点指向其父节点，则可以将树转换为一个有向弱连通图。",
+          "html": "<p>保留树的所有节点，并把树的每个节点指向其父节点，则可以将树转换为一个有向弱连通图。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "保留树的所有节点，并把树的每个节点指向其子节点，则可以将树转换为一个有向无环图。",
+          "html": "<p>保留树的所有节点，并把树的每个节点指向其子节点，则可以将树转换为一个有向无环图。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "每个连通图都存在生成树。",
+          "html": "<p>每个连通图都存在生成树。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "每个存在生成树的有向图，都一定是强连通的。",
+          "html": "<p>每个存在生成树的有向图，都一定是强连通的。</p>\n"
+        }
+      ],
+      "content": "下列关于树和图的说法，错误的是（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>下列关于树和图的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "对一个包含 $n$ 个顶点、 $m$ 条边的图，执行广度优先搜索，其最优时间复杂度是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>对一个包含 $n$ 个顶点、 $m$ 条边的图，执行广度优先搜索，其最优时间复杂度是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "用新元素覆盖发生冲突的哈希表项。",
+          "html": "<p>用新元素覆盖发生冲突的哈希表项。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "在每个哈希表项处，使用单链表管理该表项的冲突元素。",
+          "html": "<p>在每个哈希表项处，使用单链表管理该表项的冲突元素。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "建立额外的单链表，用来管理所有发生冲突的元素。",
+          "html": "<p>建立额外的单链表，用来管理所有发生冲突的元素。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "使用不同的哈希函数再建立一个哈希表，用来管理所有发生冲突的元素。",
+          "html": "<p>使用不同的哈希函数再建立一个哈希表，用来管理所有发生冲突的元素。</p>\n"
+        }
+      ],
+      "content": "以下哪个方案不能合理解决或缓解哈希表冲突（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>以下哪个方案不能合理解决或缓解哈希表冲突（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "对特定的问题，贪心法不一定适用。",
+          "html": "<p>对特定的问题，贪心法不一定适用。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "当特定的问题适用贪心法时，通常比动态规划的时间复杂度更低。",
+          "html": "<p>当特定的问题适用贪心法时，通常比动态规划的时间复杂度更低。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "对很多问题，递推实现和递归实现动态规划方法的时间复杂度相当。",
+          "html": "<p>对很多问题，递推实现和递归实现动态规划方法的时间复杂度相当。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "采用动态规划的算法一定具有多项式时间复杂度。",
+          "html": "<p>采用动态规划的算法一定具有多项式时间复杂度。</p>\n"
+        }
+      ],
+      "content": "以下关于贪心法和动态规划的说法中，错误的是（ ）。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>以下关于贪心法和动态规划的说法中，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$8$",
+          "html": "<p>$8$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$13$",
+          "html": "<p>$13$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$21$",
+          "html": "<p>$21$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "无法正常结束。",
+          "html": "<p>无法正常结束。</p>\n"
+        }
+      ],
+      "content": "下面程序的输出为（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\nint fib(int n) {\n    if (n == 0)\n        return 1;\n    return fib(n - 1) + fib(n - 2);\n}\nint main() {\n    cout << fib(6) << endl;\n    return 0;\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面程序的输出为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint fib(int n) {\n    if (n == 0)\n        return 1;\n    return fib(n - 1) + fib(n - 2);\n}\nint main() {\n    cout &lt;&lt; fib(6) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面程序的时间复杂度为（ ）。\n\n```cpp\nint rec_fib[MAX_N];\nint fib(int n) {\n    if (n <= 1)\n        return n;\n    if (rec_fib[n] != 0)\n        return rec_fib[n];\n    return fib(n - 1) + fib(n - 2);\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下面程序的时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">int rec_fib[MAX_N];\nint fib(int n) {\n    if (n &lt;= 1)\n        return n;\n    if (rec_fib[n] != 0)\n        return rec_fib[n];\n    return fib(n - 1) + fib(n - 2);\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面 `init_sieve` 函数的时间复杂度为( )。\n\n```cpp\nint sieve[MAX_N];\nvoid init_sieve(int n) {\n    for (int i = 1; i <= n; i++)\n        sieve[i] = i;\n    for (int i = 2; i <= n; i++)\n        for (int j = i; j <= n; j += i)\n            sieve[j]--;\n}\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>下面 <code>init_sieve</code> 函数的时间复杂度为( )。</p>\n<pre><code class=\"language-cpp\">int sieve[MAX_N];\nvoid init_sieve(int n) {\n    for (int i = 1; i &lt;= n; i++)\n        sieve[i] = i;\n    for (int i = 2; i &lt;= n; i++)\n        for (int j = i; j &lt;= n; j += i)\n            sieve[j]--;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面 `count_triple` 函数的时间复杂度为( )。\n\n```cpp\nint gcd(int m, int n) {\n    if (m == 0) return n;\n    return gcd(n % m, m);\n}\nint count_triple(int n) {\n    int cnt = 0;\n    for (int v = 1; v * v * 4 <= n; v++)\n        for (int u = v + 1; u * (u + v) * 2 <= n; u += 2)\n            if (gcd(u, v) == 1) {\n                int a = u * u - v * v;\n                int b = u * v * 2;\n                int c = u * u + v * v;\n                cnt += n / (a + b + c);\n            }\n    return cnt;\n}\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>下面 <code>count_triple</code> 函数的时间复杂度为( )。</p>\n<pre><code class=\"language-cpp\">int gcd(int m, int n) {\n    if (m == 0) return n;\n    return gcd(n % m, m);\n}\nint count_triple(int n) {\n    int cnt = 0;\n    for (int v = 1; v * v * 4 &lt;= n; v++)\n        for (int u = v + 1; u * (u + v) * 2 &lt;= n; u += 2)\n            if (gcd(u, v) == 1) {\n                int a = u * u - v * v;\n                int b = u * v * 2;\n                int c = u * u + v * v;\n                cnt += n / (a + b + c);\n            }\n    return cnt;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$2$, $3$, $5$, $7$, $8$, $9$, $6$, $4$, $1$",
+          "html": "<p>$2$, $3$, $5$, $7$, $8$, $9$, $6$, $4$, $1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$5$, $7$, $8$, $9$, $1$, $2$, $4$, $3$, $6$",
+          "html": "<p>$5$, $7$, $8$, $9$, $1$, $2$, $4$, $3$, $6$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$6$, $8$, $9$, $5$, $7$, $1$, $2$, $3$, $4$",
+          "html": "<p>$6$, $8$, $9$, $5$, $7$, $1$, $2$, $3$, $4$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$8$, $5$, $7$, $9$, $1$, $2$, $3$, $6$, $4$",
+          "html": "<p>$8$, $5$, $7$, $9$, $1$, $2$, $3$, $6$, $4$</p>\n"
+        }
+      ],
+      "content": "下列选项中，哪个不可能是下图的深度优先遍历序列（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>下列选项中，哪个不可能是下图的深度优先遍历序列（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 语言中，表达式 `9 && 12` 的结果类型为 `int`、值为 $8$。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>C++ 语言中，表达式 <code>9 &amp;&amp; 12</code> 的结果类型为 <code>int</code>、值为 $8$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 语言中，在有 `int a[10];` 定义的范围内，通过表达式 `a[-1]` 进行访问将导致编译错误。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>C++ 语言中，在有 <code>int a[10];</code> 定义的范围内，通过表达式 <code>a[-1]</code> 进行访问将导致编译错误。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "选择排序一般是不稳定的。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>选择排序一般是不稳定的。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 语言中，`float` 和 `int` 类型一般都是 4 字节，因此 `float` 类型能够表达不同的浮点数值的数量，与 `int` 类型能够表达不同的整数值的数量是相同的。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>C++ 语言中，<code>float</code> 和 <code>int</code> 类型一般都是 4 字节，因此 <code>float</code> 类型能够表达不同的浮点数值的数量，与 <code>int</code> 类型能够表达不同的整数值的数量是相同的。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "使用 `math.h` 或 `cmath` 头文件中的对数函数，表达式 `log(256)` 的结果类型为 `double`、值约为 $8.0$。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>使用 <code>math.h</code> 或 <code>cmath</code> 头文件中的对数函数，表达式 <code>log(256)</code> 的结果类型为 <code>double</code>、值约为 $8.0$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "一棵有 $n$ 个节点的完全二叉树，则树的深度为 $\\lfloor \\log_2 n \\rfloor + 1$。( )",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>一棵有 $n$ 个节点的完全二叉树，则树的深度为 $\\lfloor \\log_2 n \\rfloor + 1$。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "邻接表和邻接矩阵都是图的存储形式。通常，使用邻接表比使用邻接矩阵的时间复杂度更低。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>邻接表和邻接矩阵都是图的存储形式。通常，使用邻接表比使用邻接矩阵的时间复杂度更低。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "C++ 语言中，类的构造函数可以声明为私有（`private`）。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>C++ 语言中，类的构造函数可以声明为私有（<code>private</code>）。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "泛洪算法的递归实现容易造成溢出，因此大的二维地图算法中，一般使用广度优先搜索实现。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>泛洪算法的递归实现容易造成溢出，因此大的二维地图算法中，一般使用广度优先搜索实现。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "很多游戏中为玩家设置多种可供学习的技能，要学习特定技能又往往需要先学习 $1$ 个或以上的前置技能。尽管这样的技能间依赖关系常被玩家称为“技能树”，但它并不一定是树，更可能是有向无环图。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>很多游戏中为玩家设置多种可供学习的技能，要学习特定技能又往往需要先学习 $1$ 个或以上的前置技能。尽管这样的技能间依赖关系常被玩家称为“技能树”，但它并不一定是树，更可能是有向无环图。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：连通图**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n给定一张包含 $n$ 个结点与 $m$ 条边的无向图，结点依次以 $1,2,\\ldots,n$ 编号，第 $i$ 条边（$1\\le i\\le m$）连接结点 $u_i$ 与结点 $v_i$。如果从一个结点经过若干条边可以到达另一个结点，则称这两个结点是连通的。\n\n你需要向图中加入若干条边，使得图中任意两个结点都是连通的。请你求出最少需要加入的边的条数。\n\n注意给出的图中可能包含重边与自环。\n\n**输入格式**\n\n第一行，两个正整数 $n,m$，表示图的点数与边数。\n\n接下来 $m$ 行，每行两个正整数 $u_i,v_i$，表示图中一条连接结点 $u_i$ 与结点 $v_i$ 的边。\n\n**输出格式**\n\n输出一行，一个整数，表示使得图中任意两个结点连通所需加入的边的最少数量。\n\n**样例输入 #1**\n```\n4 4\n1 2\n2 3\n3 1\n1 4\n```\n\n**样例输出 #1**\n```\n0\n```\n\n**样例输入 #2**\n```\n6 4\n1 2\n2 3\n3 1\n6 5\n```\n\n**样例输出 #2**\n```\n2\n```\n\n**说明/提示**\n\n对于 $40\\%$ 的测试点，保证 $1\\le n\\le 100$，$1\\le m\\le 100$。\n\n对于所有测试点，保证 $1\\le n\\le 10^5$，$1\\le m\\le 10^5$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：连通图</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>给定一张包含 $n$ 个结点与 $m$ 条边的无向图，结点依次以 $1,2,\\ldots,n$ 编号，第 $i$ 条边（$1\\le i\\le m$）连接结点 $u_i$ 与结点 $v_i$。如果从一个结点经过若干条边可以到达另一个结点，则称这两个结点是连通的。</p>\n<p>你需要向图中加入若干条边，使得图中任意两个结点都是连通的。请你求出最少需要加入的边的条数。</p>\n<p>注意给出的图中可能包含重边与自环。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，两个正整数 $n,m$，表示图的点数与边数。</p>\n<p>接下来 $m$ 行，每行两个正整数 $u_i,v_i$，表示图中一条连接结点 $u_i$ 与结点 $v_i$ 的边。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，一个整数，表示使得图中任意两个结点连通所需加入的边的最少数量。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4 4\n1 2\n2 3\n3 1\n1 4\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>0\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>6 4\n1 2\n2 3\n3 1\n6 5\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>2\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $40\\%$ 的测试点，保证 $1\\le n\\le 100$，$1\\le m\\le 100$。</p>\n<p>对于所有测试点，保证 $1\\le n\\le 10^5$，$1\\le m\\le 10^5$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：金币收集**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小 A 正在游玩收集金币的游戏。具体来说，在数轴上将会出现 $n$ 枚金币，其中第 $i$ 枚（$1\\le i\\le n$）金币将会在时刻 $t_i$ 出现在数轴上坐标为 $x_i$ 的位置。小 A 必须在时刻 $t_i$ 恰好位于坐标 $x_i$，才可以获得第 $i$ 枚金币。\n\n游戏开始时为时刻 $0$，此时小 A 的坐标为 $0$。正常来说，小 A 可以按游戏机的按键在数轴上左右移动，但不幸的是游戏机的左方向键失灵了。小 A 每个时刻只能选择保持不动，或是向右移动一个单位。换言之，如果小 A 在时刻 $t$ 的坐标为 $x$，那么他在时刻 $t+1$ 的坐标只能是 $x$ 或是 $x+1$ 二者之一，分别对应保持不动和向右移动。\n\n小 A 想知道他最多能收集多少枚金币。你能帮他收集最多的金币吗？\n\n**输入格式**\n\n第一行，一个正整数 $n$，表示金币的数量。\n\n接下来 $n$ 行，每行两个正整数 $x_i,t_i$，分别表示金币出现的坐标与时刻。\n\n**输出格式**\n\n输出一行，一个整数，表示小 A 最多能收集的金币数量。\n\n**样例输入 #1**\n```\n3\n1 6\n3 7\n2 4\n```\n\n**样例输出 #1**\n```\n2\n```\n\n**样例输入 #2**\n```\n4\n1 1\n2 2\n1 3\n2 4\n```\n\n**样例输出 #2**\n```\n3\n```\n\n**说明/提示**\n\n对于 $40\\%$ 的测试点，保证 $1\\le n\\le 8$。\n\n对于另外 $30\\%$ 的测试点，保证 $1\\le n\\le 100$，$1\\le x_i\\le 100$，$1\\le t_i\\le 100$。\n\n对于所有测试点，保证 $1\\le n\\le 10^5$，$1\\le x_i\\le 10^9$，$1\\le t_i\\le 10^9$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：金币收集</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小 A 正在游玩收集金币的游戏。具体来说，在数轴上将会出现 $n$ 枚金币，其中第 $i$ 枚（$1\\le i\\le n$）金币将会在时刻 $t_i$ 出现在数轴上坐标为 $x_i$ 的位置。小 A 必须在时刻 $t_i$ 恰好位于坐标 $x_i$，才可以获得第 $i$ 枚金币。</p>\n<p>游戏开始时为时刻 $0$，此时小 A 的坐标为 $0$。正常来说，小 A 可以按游戏机的按键在数轴上左右移动，但不幸的是游戏机的左方向键失灵了。小 A 每个时刻只能选择保持不动，或是向右移动一个单位。换言之，如果小 A 在时刻 $t$ 的坐标为 $x$，那么他在时刻 $t+1$ 的坐标只能是 $x$ 或是 $x+1$ 二者之一，分别对应保持不动和向右移动。</p>\n<p>小 A 想知道他最多能收集多少枚金币。你能帮他收集最多的金币吗？</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，一个正整数 $n$，表示金币的数量。</p>\n<p>接下来 $n$ 行，每行两个正整数 $x_i,t_i$，分别表示金币出现的坐标与时刻。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，一个整数，表示小 A 最多能收集的金币数量。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3\n1 6\n3 7\n2 4\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>2\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>4\n1 1\n2 2\n1 3\n2 4\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>3\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $40\\%$ 的测试点，保证 $1\\le n\\le 8$。</p>\n<p>对于另外 $30\\%$ 的测试点，保证 $1\\le n\\le 100$，$1\\le x_i\\le 100$，$1\\le t_i\\le 100$。</p>\n<p>对于所有测试点，保证 $1\\le n\\le 10^5$，$1\\le x_i\\le 10^9$，$1\\le t_i\\le 10^9$。</p>\n"
+    }
+  ],
+  "id": "2025-09-gesp-7",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-09-gesp-7",
+  "version": "31ad7cf26f24875c",
+  "warnings": [],
+  "objective_score": 50.0
+}

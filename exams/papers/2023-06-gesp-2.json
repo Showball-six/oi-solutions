@@ -1,0 +1,631 @@
+{
+  "title": "2023年6月 GESP C++ 2级",
+  "category": "GESP",
+  "level": "2",
+  "date": "2023-06",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2023年6月 GESP C++ 2级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "编辑",
+          "html": "<p>编辑</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "保存",
+          "html": "<p>保存</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "调试",
+          "html": "<p>调试</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "编译",
+          "html": "<p>编译</p>\n"
+        }
+      ],
+      "content": "高级语言编写的程序需要经过以下（ ）操作，可以生成在计算机上运行的可执行代码。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>高级语言编写的程序需要经过以下（ ）操作，可以生成在计算机上运行的可执行代码。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`if` 条件判断 `then` 语句块",
+          "html": "<p><code>if</code> 条件判断 <code>then</code> 语句块</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`if` 条件判断 `then` 什么也不做 `else` 语句块",
+          "html": "<p><code>if</code> 条件判断 <code>then</code> 什么也不做 <code>else</code> 语句块</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`while` 条件判断 `do` 语句块",
+          "html": "<p><code>while</code> 条件判断 <code>do</code> 语句块</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`while not` 条件判断 `do` 语句块",
+          "html": "<p><code>while not</code> 条件判断 <code>do</code> 语句块</p>\n"
+        }
+      ],
+      "content": "能够实现下面流程图功能的伪代码是（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>能够实现下面流程图功能的伪代码是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`char` 类型变量不能赋值给 `int` 类型的变量。",
+          "html": "<p><code>char</code> 类型变量不能赋值给 <code>int</code> 类型的变量。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "两个 `int` 类型变量相乘，计算结果还是 `int` 类型。",
+          "html": "<p>两个 <code>int</code> 类型变量相乘，计算结果还是 <code>int</code> 类型。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "计算两个 `int` 类型变量相乘时，如果乘积超出了 `int` 类型的取值范围，程序会报错崩溃。",
+          "html": "<p>计算两个 <code>int</code> 类型变量相乘时，如果乘积超出了 <code>int</code> 类型的取值范围，程序会报错崩溃。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "计算两个 `double` 类型变量相除时，如果除数的值为 $0.0$，程序会报错崩溃。",
+          "html": "<p>计算两个 <code>double</code> 类型变量相除时，如果除数的值为 $0.0$，程序会报错崩溃。</p>\n"
+        }
+      ],
+      "content": "下列关于 C++ 语言的叙述，正确的是（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下列关于 C++ 语言的叙述，正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`if` 语句中的判断条件必须用小括号 `(` 和 `)` 括起来。",
+          "html": "<p><code>if</code> 语句中的判断条件必须用小括号 <code>(</code> 和 <code>)</code> 括起来。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`for` 语句中两个 `;` 之间的循环条件可以省略，表示循环继续执行的条件一直满足。",
+          "html": "<p><code>for</code> 语句中两个 <code>;</code> 之间的循环条件可以省略，表示循环继续执行的条件一直满足。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "循环体包含多条语句时，可以用缩进消除二义性。",
+          "html": "<p>循环体包含多条语句时，可以用缩进消除二义性。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "除了“先乘除、后加减”，还有很多运算符优先级。",
+          "html": "<p>除了“先乘除、后加减”，还有很多运算符优先级。</p>\n"
+        }
+      ],
+      "content": "下列关于 C++ 语言的叙述，不正确的是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>下列关于 C++ 语言的叙述，不正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`main`",
+          "html": "<p><code>main</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`max`",
+          "html": "<p><code>max</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`double`",
+          "html": "<p><code>double</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`sqrt`",
+          "html": "<p><code>sqrt</code></p>\n"
+        }
+      ],
+      "content": "以下哪个是 C++ 语言的关键字？（ ）",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>以下哪个是 C++ 语言的关键字？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`>=`",
+          "html": "<p><code>&gt;=</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`/=`",
+          "html": "<p><code>/=</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`||`",
+          "html": "<p><code>||</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`<>`",
+          "html": "<p><code>&lt;&gt;</code></p>\n"
+        }
+      ],
+      "content": "以下哪个不是 C++ 语言的运算符？（ ）",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>以下哪个不是 C++ 语言的运算符？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`a = a + 1.0;`",
+          "html": "<p><code>a = a + 1.0;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`a = (int)(b - '0');`",
+          "html": "<p><code>a = (int)(b - '0');</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`b = (char)(a + '0');`",
+          "html": "<p><code>b = (char)(a + '0');</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`(int)b = a;`",
+          "html": "<p><code>(int)b = a;</code></p>\n"
+        }
+      ],
+      "content": "如果 $a$ 为 `int` 类型的变量，$b$ 为 `char` 类型的变量，则下列哪个语句不符合 C++ 语法？（ ）",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>如果 $a$ 为 <code>int</code> 类型的变量，$b$ 为 <code>char</code> 类型的变量，则下列哪个语句不符合 C++ 语法？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`a / b * (0.0 + h)`",
+          "html": "<p><code>a / b * (0.0 + h)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(0.0 + a * h) / b`",
+          "html": "<p><code>(0.0 + a * h) / b</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`a * h / (b + 0.0)`",
+          "html": "<p><code>a * h / (b + 0.0)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`(a + 0.0) * h / b`",
+          "html": "<p><code>(a + 0.0) * h / b</code></p>\n"
+        }
+      ],
+      "content": "如果用两个 `int` 类型的变量 $a$ 和 $b$ 分别表达平行四边形的两条边长，用 `int` 类型的变量 $h$ 表达 $a$ 边对应的高，则下列哪个表达式不能用来计算 $b$ 边对应的高？（ ）",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>如果用两个 <code>int</code> 类型的变量 $a$ 和 $b$ 分别表达平行四边形的两条边长，用 <code>int</code> 类型的变量 $h$ 表达 $a$ 边对应的高，则下列哪个表达式不能用来计算 $b$ 边对应的高？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`for (int a = 0; a; a++) ;`",
+          "html": "<p><code>for (int a = 0; a; a++) ;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`for (bool b = false; b <= true; b++) ;`",
+          "html": "<p><code>for (bool b = false; b &lt;= true; b++) ;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`for (char c = 'A'; c < 'z'; c++) ;`",
+          "html": "<p><code>for (char c = 'A'; c &lt; 'z'; c++) ;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`for (double d = 0.0; d < 10.0; d += 0.001) ;`",
+          "html": "<p><code>for (double d = 0.0; d &lt; 10.0; d += 0.001) ;</code></p>\n"
+        }
+      ],
+      "content": "以下哪个循环语句会无限次执行？（ ）",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>以下哪个循环语句会无限次执行？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "E",
+          "html": "<p>E</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "C+2",
+          "html": "<p>C+2</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "C2",
+          "html": "<p>C2</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "69",
+          "html": "<p>69</p>\n"
+        }
+      ],
+      "content": "如果 $a$ 为 `char` 类型的变量，且 $a$ 的值为 `'C'`（已知 `'C'` 的 ASCII 码为 $67$），则执行 `cout << (a + 2);` 会输出（ ）。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>如果 $a$ 为 <code>char</code> 类型的变量，且 $a$ 的值为 <code>'C'</code>（已知 <code>'C'</code> 的 ASCII 码为 $67$），则执行 <code>cout &lt;&lt; (a + 2);</code> 会输出（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(a == b) && (b == 1)`",
+          "html": "<p><code>(a == b) &amp;&amp; (b == 1)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(a && b)`",
+          "html": "<p><code>(a &amp;&amp; b)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(a == b == 1)`",
+          "html": "<p><code>(a == b == 1)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`(a * b == 1)`",
+          "html": "<p><code>(a * b == 1)</code></p>\n"
+        }
+      ],
+      "content": "如果 $a$ 和 $b$ 均为 `int` 类型的变量，下列表达式能正确判断“$a$ 等于 $1$ 且 $b$ 等于 $1$”的是（ ）。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>如果 $a$ 和 $b$ 均为 <code>int</code> 类型的变量，下列表达式能正确判断“$a$ 等于 $1$ 且 $b$ 等于 $1$”的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`'0' <= a && a <= '9'`",
+          "html": "<p><code>'0' &lt;= a &amp;&amp; a &lt;= '9'</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`'1' <= a && a <= '0'`",
+          "html": "<p><code>'1' &lt;= a &amp;&amp; a &lt;= '0'</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`'0' <= a <= '9'`",
+          "html": "<p><code>'0' &lt;= a &lt;= '9'</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`'1' <= a <= '0'`",
+          "html": "<p><code>'1' &lt;= a &lt;= '0'</code></p>\n"
+        }
+      ],
+      "content": "如果 $a$ 为 `char` 类型的变量，下列哪个表达式可以正确判断“$a$ 是数字”？\n（ ）",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>如果 $a$ 为 <code>char</code> 类型的变量，下列哪个表达式可以正确判断“$a$ 是数字”？<br />\n（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(a + b)`",
+          "html": "<p><code>(a + b)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(a + b - '0')`",
+          "html": "<p><code>(a + b - '0')</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(char)(a + b)`",
+          "html": "<p><code>(char)(a + b)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`(char)(a + b - '0')`",
+          "html": "<p><code>(char)(a + b - '0')</code></p>\n"
+        }
+      ],
+      "content": "在下列代码的横线处填写（ ），使得输出是 $9$ 。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>在下列代码的横线处填写（ ），使得输出是 $9$ 。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`i % 3 == 0`",
+          "html": "<p><code>i % 3 == 0</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`20 % i == 0`",
+          "html": "<p><code>20 % i == 0</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`i <= 8`",
+          "html": "<p><code>i &lt;= 8</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`i >= 18`",
+          "html": "<p><code>i &gt;= 18</code></p>\n"
+        }
+      ],
+      "content": "在下列代码的横线处填写（ ），可以使得输出是 $42$ 。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>在下列代码的横线处填写（ ），可以使得输出是 $42$ 。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "A",
+          "html": "<p>A</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "B",
+          "html": "<p>B</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "C",
+          "html": "<p>C</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "D",
+          "html": "<p>D</p>\n"
+        }
+      ],
+      "content": "执行以下 C++ 语言程序后，输出结果是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>执行以下 C++ 语言程序后，输出结果是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "诞生于 $1986$ 年的中华学习机 CEC-I 入选了 $2021$ 年的 CCF 计算机历史记忆（一类），它的内存只有 $64$ KB。当时的汉字编码字符集 GB2312 中共有 $6763$ 个汉字，假如每个汉字用 $2$ 个字节编码，将整个 GB2312 汉字字符集都放入 CEC-I 的内存，也只占用了不超过 $1/5$ 的内存空间。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>诞生于 $1986$ 年的中华学习机 CEC-I 入选了 $2021$ 年的 CCF 计算机历史记忆（一类），它的内存只有 $64$ KB。当时的汉字编码字符集 GB2312 中共有 $6763$ 个汉字，假如每个汉字用 $2$ 个字节编码，将整个 GB2312 汉字字符集都放入 CEC-I 的内存，也只占用了不超过 $1/5$ 的内存空间。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "域名是由一串用点分隔的名字来标识互联网上一个计算机或计算机组的名称，CCF 编程能力等级认证官方网站的域名是 gesp.ccf.org.cn，其中顶级域名是 gesp。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>域名是由一串用点分隔的名字来标识互联网上一个计算机或计算机组的名称，CCF 编程能力等级认证官方网站的域名是 gesp.ccf.org.cn，其中顶级域名是 gesp。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在使用 C++ 语言编写程序时，不能使用 `sqrt`、`abs` 等数学函数，包含 `<cmath>` 或 `<math.h>` 头文件后就能够使用了。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>在使用 C++ 语言编写程序时，不能使用 <code>sqrt</code>、<code>abs</code> 等数学函数，包含 <code>&lt;cmath&gt;</code> 或 <code>&lt;math.h&gt;</code> 头文件后就能够使用了。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 语言中，标识符中可以有下划线 `_`。同时，`_` 也是 C++ 语言的运算符。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，标识符中可以有下划线 <code>_</code>。同时，<code>_</code> 也是 C++ 语言的运算符。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "如果 $a$ 是 `double` 类型的变量，而且值为 $3.5$，则表达式 `a * 10` 的计算结果为 $35$，且结果类型为 `int`。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>如果 $a$ 是 <code>double</code> 类型的变量，而且值为 $3.5$，则表达式 <code>a * 10</code> 的计算结果为 $35$，且结果类型为 <code>int</code>。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 `if` 语句中，如果条件成立时需要执行多条语句，可以使用大括号‘{’和‘}’将这些语句括起来。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>在 <code>if</code> 语句中，如果条件成立时需要执行多条语句，可以使用大括号‘{’和‘}’将这些语句括起来。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "循环语句的循环体有可能无限制地执行下去。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>循环语句的循环体有可能无限制地执行下去。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "`++` 和 `==` 都是 C++ 语言的运算符，但 `+=` 不是。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p><code>++</code> 和 <code>==</code> 都是 C++ 语言的运算符，但 <code>+=</code> 不是。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "如果 $a$ 为 `char` 类型的变量，且取值为大写字母 'F'，则执行语句 `a = a + 1;` 后，$a$ 的值会变为大写字母 'G'。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>如果 $a$ 为 <code>char</code> 类型的变量，且取值为大写字母 'F'，则执行语句 <code>a = a + 1;</code> 后，$a$ 的值会变为大写字母 'G'。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "表达式 `sqrt(9.0)` 的计算结果为 $3$，且结果类型为 `int`。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>表达式 <code>sqrt(9.0)</code> 的计算结果为 $3$，且结果类型为 <code>int</code>。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：找素数**\n\n> 时间限制：1.0 s | 内存限制：128.0 MB\n\n**题目描述**\n\n小明刚刚学习了素数的概念：如果一个大于 $1$ 的正整数，除了 $1$ 和它自身外，不能被其他正整数整除，则这个正整数是素数。现在，小明想找到两个正整数 $A$ 和 $B$ 之间（包括 $A$ 和 $B$）有多少个素数。\n\n**输入格式**\n\n输入只有一行两个正整数 $A, B$。约定 $2 \\le A \\le B \\le 1000$。\n\n**输出格式**\n\n输出一行，包含一个整数 $C$，表示找到 $C$ 个素数。\n\n**样例输入 #1**\n```\n2 10\n```\n\n**样例输出 #1**\n```\n4\n```\n\n**样例输入 #2**\n```\n98 100\n```\n\n**样例输出 #2**\n```\n0\n```\n\n**说明/提示**\n\n【样例解释 1】\n\n在 $2$ 和 $10$ 之间有 $4$ 个素数，分别为：$2$、$3$、$5$、$7$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：找素数</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：128.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小明刚刚学习了素数的概念：如果一个大于 $1$ 的正整数，除了 $1$ 和它自身外，不能被其他正整数整除，则这个正整数是素数。现在，小明想找到两个正整数 $A$ 和 $B$ 之间（包括 $A$ 和 $B$）有多少个素数。</p>\n<p><strong>输入格式</strong></p>\n<p>输入只有一行两个正整数 $A, B$。约定 $2 \\le A \\le B \\le 1000$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，包含一个整数 $C$，表示找到 $C$ 个素数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>2 10\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>4\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>98 100\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>0\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>【样例解释 1】</p>\n<p>在 $2$ 和 $10$ 之间有 $4$ 个素数，分别为：$2$、$3$、$5$、$7$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：自幂数判断**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n自幂数是指，一个 $N$ 位数，满足各位数字 $N$ 次方之和是本身。例如，$153$ 是 $3$ 位数，其每位数的 $3$ 次方之和，$1^3+5^3+3^3=153$，因此 $153$ 是自幂数；$1634$ 是 $4$ 位数，其每位数的 $4$ 次方之和，$1^4+6^4+3^4+4^4=1634$，因此 $1634$ 是自幂数。现在，输入若干个正整数，请判断它们是否是自幂数。\n\n**输入格式**\n\n输入第一行是一个正整数 $M$，表示有 $M$ 个待判断的正整数。约定 $1 \\le M \\le 100$。\n\n从第 $2$ 行开始的 $M$ 行，每行一个待判断的正整数。约定这些正整数均小于 $10^8$。\n\n**输出格式**\n\n输出 $M$ 行，如果对应的待判断正整数为自幂数，则输出英文大写字母 $\\texttt T$，否则输出英文大写字母 $\\texttt F$。\n\n提示：不需要等到所有输入结束在依次输出，可以输入一个数就判断一个数并输出，再输入下一个数。\n\n**样例输入 #1**\n```\n3\n152\n111\n153\n```\n\n**样例输出 #1**\n```\nF\nF\nT\n```\n\n**样例输入 #2**\n```\n5\n8208\n548834\n88593477\n12345\n5432\n```\n\n**样例输出 #2**\n```\nT\nT\nT\nF\nF\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：自幂数判断</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>自幂数是指，一个 $N$ 位数，满足各位数字 $N$ 次方之和是本身。例如，$153$ 是 $3$ 位数，其每位数的 $3$ 次方之和，$1^3+5^3+3^3=153$，因此 $153$ 是自幂数；$1634$ 是 $4$ 位数，其每位数的 $4$ 次方之和，$1^4+6^4+3^4+4^4=1634$，因此 $1634$ 是自幂数。现在，输入若干个正整数，请判断它们是否是自幂数。</p>\n<p><strong>输入格式</strong></p>\n<p>输入第一行是一个正整数 $M$，表示有 $M$ 个待判断的正整数。约定 $1 \\le M \\le 100$。</p>\n<p>从第 $2$ 行开始的 $M$ 行，每行一个待判断的正整数。约定这些正整数均小于 $10^8$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出 $M$ 行，如果对应的待判断正整数为自幂数，则输出英文大写字母 $\\texttt T$，否则输出英文大写字母 $\\texttt F$。</p>\n<p>提示：不需要等到所有输入结束在依次输出，可以输入一个数就判断一个数并输出，再输入下一个数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3\n152\n111\n153\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>F\nF\nT\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>5\n8208\n548834\n88593477\n12345\n5432\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>T\nT\nT\nF\nF\n</code></pre>\n"
+    }
+  ],
+  "id": "2023-06-gesp-2",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2023-06-gesp-2",
+  "version": "edc50d6e6e5c6980",
+  "warnings": [],
+  "objective_score": 50.0
+}

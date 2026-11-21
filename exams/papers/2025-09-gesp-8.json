@@ -1,0 +1,631 @@
+{
+  "title": "2025年9月 GESP C++ 8级",
+  "category": "GESP",
+  "level": "8",
+  "date": "2025-09",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年9月 GESP C++ 8级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$16$",
+          "html": "<p>$16$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$9$",
+          "html": "<p>$9$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$7$",
+          "html": "<p>$7$</p>\n"
+        }
+      ],
+      "content": "小杨想点一杯奶茶外卖，但还差 $5$ 元起送。于是，小杨决定点一些小料。可选的小料包括：珍珠 $1$ 元、椰果 $2$ 元、奶冻 $3$ 元、奶盖 $4$ 元。每种小料最多点 $1$ 份。请问共有多少种满足起送条件的点小料方案？（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>小杨想点一杯奶茶外卖，但还差 $5$ 元起送。于是，小杨决定点一些小料。可选的小料包括：珍珠 $1$ 元、椰果 $2$ 元、奶冻 $3$ 元、奶盖 $4$ 元。每种小料最多点 $1$ 份。请问共有多少种满足起送条件的点小料方案？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1820$",
+          "html": "<p>$1820$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$70$",
+          "html": "<p>$70$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$24$",
+          "html": "<p>$24$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$16$",
+          "html": "<p>$16$</p>\n"
+        }
+      ],
+      "content": "小杨和小刘是好朋友，她们在逛商场时发现新设置的大头贴自拍机，于是决定一起拍一组照片。一组照片包括 $4$ 张，这 $4$ 张照片没有顺序区分。拍每张照片时，可以选择有相框或无相框、两人可以分别选择有头饰或无头饰、还可以从 $2$ 种位置（小杨在左，或小刘在左）中选出一种。她们不希望一组照片中出现完全相同的相框、头饰、位置的组合。请问一组照片共有多少种不同的方案？（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>小杨和小刘是好朋友，她们在逛商场时发现新设置的大头贴自拍机，于是决定一起拍一组照片。一组照片包括 $4$ 张，这 $4$ 张照片没有顺序区分。拍每张照片时，可以选择有相框或无相框、两人可以分别选择有头饰或无头饰、还可以从 $2$ 种位置（小杨在左，或小刘在左）中选出一种。她们不希望一组照片中出现完全相同的相框、头饰、位置的组合。请问一组照片共有多少种不同的方案？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "派生类对象占用的内存总是不小于基类对象。",
+          "html": "<p>派生类对象占用的内存总是不小于基类对象。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "派生类可以不实现基类的虚函数。",
+          "html": "<p>派生类可以不实现基类的虚函数。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "如果一个类包含纯虚函数，则它不能包含成员变量。",
+          "html": "<p>如果一个类包含纯虚函数，则它不能包含成员变量。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "如果一个类包含纯虚函数，则不能用它定义对象。",
+          "html": "<p>如果一个类包含纯虚函数，则不能用它定义对象。</p>\n"
+        }
+      ],
+      "content": "下列关于 C++ 类的说法，错误的是（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下列关于 C++ 类的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "每个连通图都存在生成树。",
+          "html": "<p>每个连通图都存在生成树。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "每个存在生成树的有向图，都一定是强连通的。",
+          "html": "<p>每个存在生成树的有向图，都一定是强连通的。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "保留树的所有节点，并把树的每个节点指向其父节点，则可以将树转换为一个有向弱连通图。",
+          "html": "<p>保留树的所有节点，并把树的每个节点指向其父节点，则可以将树转换为一个有向弱连通图。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "保留树的所有节点，并把树的每个节点指向其子节点，则可以将树转换为一个有向无环图。",
+          "html": "<p>保留树的所有节点，并把树的每个节点指向其子节点，则可以将树转换为一个有向无环图。</p>\n"
+        }
+      ],
+      "content": "下列关于树和图的说法，错误的是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>下列关于树和图的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "一对夫妻生男生女的概率相同。这对夫妻希望儿女双全。请问这对夫妻生下三个孩子时，实现儿女双全的概率是多少？（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>一对夫妻生男生女的概率相同。这对夫妻希望儿女双全。请问这对夫妻生下三个孩子时，实现儿女双全的概率是多少？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$720$",
+          "html": "<p>$720$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$120$",
+          "html": "<p>$120$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$20$",
+          "html": "<p>$20$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$15$",
+          "html": "<p>$15$</p>\n"
+        }
+      ],
+      "content": "二项式 $(x + 2)^6$ 的展开式中 $x^4$ 项的系数是（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>二项式 $(x + 2)^6$ 的展开式中 $x^4$ 项的系数是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "对一个包含 $n$ 个顶点、$m$ 条边的图，执行广度优先搜索，其最优时间复杂度是（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>对一个包含 $n$ 个顶点、$m$ 条边的图，执行广度优先搜索，其最优时间复杂度是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "动态规划能解决大部分多阶段决策问题。",
+          "html": "<p>动态规划能解决大部分多阶段决策问题。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "对特定的问题，贪心法不一定适用。",
+          "html": "<p>对特定的问题，贪心法不一定适用。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "当特定的问题适用贪心法时，通常比动态规划的时间复杂度更低。",
+          "html": "<p>当特定的问题适用贪心法时，通常比动态规划的时间复杂度更低。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "对很多问题，递推实现和递归实现动态规划方法的时间复杂度相当。",
+          "html": "<p>对很多问题，递推实现和递归实现动态规划方法的时间复杂度相当。</p>\n"
+        }
+      ],
+      "content": "以下关于贪心法和动态规划的说法中，错误的是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>以下关于贪心法和动态规划的说法中，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$45$",
+          "html": "<p>$45$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$102$",
+          "html": "<p>$102$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$174$",
+          "html": "<p>$174$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3375$",
+          "html": "<p>$3375$</p>\n"
+        }
+      ],
+      "content": "下面程序的输出为（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int N = 15, cnt = 0;\n    for (int x = 1; x + x + x <= N; x++)\n        for (int y = x; x + y + y <= N; y++)\n            for (int z = y; x + y + z <= N; z++)\n                cnt++;\n    cout << cnt << endl;\n    return 0;\n}\n```",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>下面程序的输出为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint main() {\n    int N = 15, cnt = 0;\n    for (int x = 1; x + x + x &lt;= N; x++)\n        for (int y = x; x + y + y &lt;= N; y++)\n            for (int z = y; x + y + z &lt;= N; z++)\n                cnt++;\n    cout &lt;&lt; cnt &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面程序的时间复杂度为（ ）。\n\n```cpp\nint primes[MAXP], num = 0;\nbool isPrime[MAXN] = {false};\nvoid sieve() {\n    for (int n = 2; n <= MAXN; n++) {\n        if (!isPrime[n])\n            primes[num++] = n;\n        for (int i = 0; i < num && n * primes[i] <= MAXN; i++) {\n            isPrime[n * primes[i]] = true;\n            if (n % primes[i] == 0)\n                break;\n        }\n    }\n}\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面程序的时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">int primes[MAXP], num = 0;\nbool isPrime[MAXN] = {false};\nvoid sieve() {\n    for (int n = 2; n &lt;= MAXN; n++) {\n        if (!isPrime[n])\n            primes[num++] = n;\n        for (int i = 0; i &lt; num &amp;&amp; n * primes[i] &lt;= MAXN; i++) {\n            isPrime[n * primes[i]] = true;\n            if (n % primes[i] == 0)\n                break;\n        }\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下列 Dijkstra 算法，假设图中顶点数 $N$ 、边数 $M$ ，则程序的时间复杂度为（ ）。\n\n```cpp\ntypedef struct Edge {\n    int in, out; // 从下标in顶点到下标out顶点的边\n    int len; // 边长度\n    struct Edge * next;\n} Edge;\n// v：顶点个数，graph：出边邻接表，start：起点下标，dis：输出每个顶点的最短距离\nvoid dijkstra(int v, Edge * graph[], int start, int * dis) {\n    const int MAX_DIS = 0x7fffff;\n    for (int i = 0; i < v; i++)\n        dis[i] = MAX_DIS;\n    dis[start] = 0;\n    int * visited = new int[v];\n    for (int i = 0; i < v; i++)\n        visited[i] = 0;\n    visited[start] = 1;\n    for (int t = 0; ; t++) {\n        int min = MAX_DIS, minv = -1;\n        for (int i = 0; i < v; i++) {\n            if (visited[i] == 0 && min > dis[i]) {\n                min = dis[i];\n                minv = i;\n            }\n        }\n        if (minv < 0)\n            break;\n        visited[minv] = 1;\n        for (Edge * e = graph[minv]; e != NULL; e = e->next)\n            if (dis[e->out] > e->len)\n                dis[e->out] = e->len;\n    }\n    delete[] visited;\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下列 Dijkstra 算法，假设图中顶点数 $N$ 、边数 $M$ ，则程序的时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">typedef struct Edge {\n    int in, out; // 从下标in顶点到下标out顶点的边\n    int len; // 边长度\n    struct Edge * next;\n} Edge;\n// v：顶点个数，graph：出边邻接表，start：起点下标，dis：输出每个顶点的最短距离\nvoid dijkstra(int v, Edge * graph[], int start, int * dis) {\n    const int MAX_DIS = 0x7fffff;\n    for (int i = 0; i &lt; v; i++)\n        dis[i] = MAX_DIS;\n    dis[start] = 0;\n    int * visited = new int[v];\n    for (int i = 0; i &lt; v; i++)\n        visited[i] = 0;\n    visited[start] = 1;\n    for (int t = 0; ; t++) {\n        int min = MAX_DIS, minv = -1;\n        for (int i = 0; i &lt; v; i++) {\n            if (visited[i] == 0 &amp;&amp; min &gt; dis[i]) {\n                min = dis[i];\n                minv = i;\n            }\n        }\n        if (minv &lt; 0)\n            break;\n        visited[minv] = 1;\n        for (Edge * e = graph[minv]; e != NULL; e = e-&gt;next)\n            if (dis[e-&gt;out] &gt; e-&gt;len)\n                dis[e-&gt;out] = e-&gt;len;\n    }\n    delete[] visited;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面 `count_triple` 函数的时间复杂度为( )。\n\n```cpp\nint gcd(int m, int n) {\n    if (m == 0) return n;\n    return gcd(n % m, m);\n}\nint count_triple(int n) {\n    int cnt = 0;\n    for (int v = 1; v * v * 4 <= n; v++)\n        for (int u = v + 1; u * (u + v) * 2 <= n; u += 2)\n            if (gcd(u, v) == 1) {\n                int a = u * u - v * v;\n                int b = u * v * 2;\n                int c = u * u + v * v;\n                cnt += n / (a + b + c);\n            }\n    return cnt;\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下面 <code>count_triple</code> 函数的时间复杂度为( )。</p>\n<pre><code class=\"language-cpp\">int gcd(int m, int n) {\n    if (m == 0) return n;\n    return gcd(n % m, m);\n}\nint count_triple(int n) {\n    int cnt = 0;\n    for (int v = 1; v * v * 4 &lt;= n; v++)\n        for (int u = v + 1; u * (u + v) * 2 &lt;= n; u += 2)\n            if (gcd(u, v) == 1) {\n                int a = u * u - v * v;\n                int b = u * v * 2;\n                int c = u * u + v * v;\n                cnt += n / (a + b + c);\n            }\n    return cnt;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\narr, left, mid\narr, mid, right\n```",
+          "html": "<pre><code class=\"language-cpp\">arr, left, mid\narr, mid, right\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\narr, left, mid + 1\narr, mid + 1, right\n```",
+          "html": "<pre><code class=\"language-cpp\">arr, left, mid + 1\narr, mid + 1, right\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\narr, left, mid\narr, mid + 1, right\n```",
+          "html": "<pre><code class=\"language-cpp\">arr, left, mid\narr, mid + 1, right\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\narr, left, mid + 1\narr, mid + 1, right + 1\n```",
+          "html": "<pre><code class=\"language-cpp\">arr, left, mid + 1\narr, mid + 1, right + 1\n</code></pre>\n"
+        }
+      ],
+      "content": "下面 `merge_sort` 函数试图实现归并排序算法，横线处应该填入的是（ ）。\n\n```cpp\n#include <vector>\nusing namespace std;\nvoid merge_sort(vector<int> & arr, int left, int right) {\n    if (right - left <= 1)\n        return;\n    int mid = (left + right) / 2;\n    merge_sort(________); // 在此处填入选项\n    merge_sort(________); // 在此处填入选项\n    vector<int> temp(right - left);\n    int i = left, j = mid, k = 0;\n    while (i < mid && j < right)\n        if (arr[i] <= arr[j])\n            temp[k++] = arr[i++];\n        else\n            temp[k++] = arr[j++];\n    while (i < mid)\n        temp[k++] = arr[i++];\n    while (j < right)\n        temp[k++] = arr[j++];\n    for (i = left, k = 0; i < right; ++i, ++k)\n        arr[i] = temp[k];\n}\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>下面 <code>merge_sort</code> 函数试图实现归并排序算法，横线处应该填入的是（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;vector&gt;\nusing namespace std;\nvoid merge_sort(vector&lt;int&gt; &amp; arr, int left, int right) {\n    if (right - left &lt;= 1)\n        return;\n    int mid = (left + right) / 2;\n    merge_sort(________); // 在此处填入选项\n    merge_sort(________); // 在此处填入选项\n    vector&lt;int&gt; temp(right - left);\n    int i = left, j = mid, k = 0;\n    while (i &lt; mid &amp;&amp; j &lt; right)\n        if (arr[i] &lt;= arr[j])\n            temp[k++] = arr[i++];\n        else\n            temp[k++] = arr[j++];\n    while (i &lt; mid)\n        temp[k++] = arr[i++];\n    while (j &lt; right)\n        temp[k++] = arr[j++];\n    for (i = left, k = 0; i &lt; right; ++i, ++k)\n        arr[i] = temp[k];\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`graph[u][v] >= 0 && key[v] > graph[u][v]`",
+          "html": "<p><code>graph[u][v] &gt;= 0 &amp;&amp; key[v] &gt; graph[u][v]</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`graph[u][v] <= 0 && key[v] > graph[u][v]`",
+          "html": "<p><code>graph[u][v] &lt;= 0 &amp;&amp; key[v] &gt; graph[u][v]</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`graph[u][v] == 0 && key[v] > graph[u][v]`",
+          "html": "<p><code>graph[u][v] == 0 &amp;&amp; key[v] &gt; graph[u][v]</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`graph[u][v] != 0 && key[v] > graph[u][v]`",
+          "html": "<p><code>graph[u][v] != 0 &amp;&amp; key[v] &gt; graph[u][v]</code></p>\n"
+        }
+      ],
+      "content": "下面 Prim 算法程序中，横线处应该填入的是（ ）。\n\n```cpp\n#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\nint prim(vector<vector<int>> & graph, int n) {\n    vector<int> key(n, INT_MAX);\n    vector<int> parent(n, -1);\n    key[0] = 0;\n    for (int i = 0; i < n; i++) {\n        int u = min_element(key.begin(), key.end()) - key.begin();\n        if (key[u] == INT_MAX)\n            break;\n        for (int v = 0; v < n; v++) {\n            if (__________) { // 在此处填入选项\n                key[v] = graph[u][v];\n                parent[v] = u;\n            }\n        }\n    }\n    int sum = 0;\n    for (int i = 0; i < n; i++) {\n        if (parent[i] != -1) {\n            cout << \"Edge: \" << parent[i] << \" - \" << i << \" Weight: \" << key[i] << endl;\n            sum += key[i];\n        }\n    }\n    return sum;\n}\nint main() {\n    int n, m;\n    cin >> n >> m;\n    vector<vector<int>> graph(n, vector<int>(n, 0));\n    for (int i = 0; i < m; i++) {\n        int u, v, w;\n        cin >> u >> v >> w;\n        graph[u][v] = w;\n        graph[v][u] = w;\n    }\n    int result = prim(graph, n);\n    cout << \"Total weight of the minimum spanning tree: \" << result << endl;\n    return 0;\n}\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>下面 Prim 算法程序中，横线处应该填入的是（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\n#include &lt;vector&gt;\n#include &lt;algorithm&gt;\nusing namespace std;\nint prim(vector&lt;vector&lt;int&gt;&gt; &amp; graph, int n) {\n    vector&lt;int&gt; key(n, INT_MAX);\n    vector&lt;int&gt; parent(n, -1);\n    key[0] = 0;\n    for (int i = 0; i &lt; n; i++) {\n        int u = min_element(key.begin(), key.end()) - key.begin();\n        if (key[u] == INT_MAX)\n            break;\n        for (int v = 0; v &lt; n; v++) {\n            if (__________) { // 在此处填入选项\n                key[v] = graph[u][v];\n                parent[v] = u;\n            }\n        }\n    }\n    int sum = 0;\n    for (int i = 0; i &lt; n; i++) {\n        if (parent[i] != -1) {\n            cout &lt;&lt; &quot;Edge: &quot; &lt;&lt; parent[i] &lt;&lt; &quot; - &quot; &lt;&lt; i &lt;&lt; &quot; Weight: &quot; &lt;&lt; key[i] &lt;&lt; endl;\n            sum += key[i];\n        }\n    }\n    return sum;\n}\nint main() {\n    int n, m;\n    cin &gt;&gt; n &gt;&gt; m;\n    vector&lt;vector&lt;int&gt;&gt; graph(n, vector&lt;int&gt;(n, 0));\n    for (int i = 0; i &lt; m; i++) {\n        int u, v, w;\n        cin &gt;&gt; u &gt;&gt; v &gt;&gt; w;\n        graph[u][v] = w;\n        graph[v][u] = w;\n    }\n    int result = prim(graph, n);\n    cout &lt;&lt; &quot;Total weight of the minimum spanning tree: &quot; &lt;&lt; result &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$12$",
+          "html": "<p>$12$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$11$",
+          "html": "<p>$11$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$9$",
+          "html": "<p>$9$</p>\n"
+        }
+      ],
+      "content": "下面的程序使用出边邻接表表达的带权无向图，则从顶点 $0$ 到顶点 $3$ 的最短距离为（ ）。\n\n```cpp\n#include <vector>\nusing namespace std;\nclass Edge {\n    public:\n    int dest;\n    int weight;\n    Edge(int d, int w) : dest(d), weight(w) {}\n};\nclass Graph {\n    private:\n    int num_vertex;\n    vector<vector<Edge>> vve;\n    public:\n    Graph(int v) : num_vertex(v), vve(v) {}\n    void addEdge(int s, int d, int w) {\n        vve[s].emplace_back(d, w);\n        vve[d].emplace_back(s, w);\n    }\n};\nint main() {\n    Graph g(4);\n    g.addEdge(0, 1, 8);\n    g.addEdge(0, 2, 5);\n    g.addEdge(1, 2, 1);\n    g.addEdge(1, 3, 3);\n    g.addEdge(2, 3, 7);\n    return 0;\n}\n```",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>下面的程序使用出边邻接表表达的带权无向图，则从顶点 $0$ 到顶点 $3$ 的最短距离为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;vector&gt;\nusing namespace std;\nclass Edge {\n    public:\n    int dest;\n    int weight;\n    Edge(int d, int w) : dest(d), weight(w) {}\n};\nclass Graph {\n    private:\n    int num_vertex;\n    vector&lt;vector&lt;Edge&gt;&gt; vve;\n    public:\n    Graph(int v) : num_vertex(v), vve(v) {}\n    void addEdge(int s, int d, int w) {\n        vve[s].emplace_back(d, w);\n        vve[d].emplace_back(s, w);\n    }\n};\nint main() {\n    Graph g(4);\n    g.addEdge(0, 1, 8);\n    g.addEdge(0, 2, 5);\n    g.addEdge(1, 2, 1);\n    g.addEdge(1, 3, 3);\n    g.addEdge(2, 3, 7);\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 语言中，表达式 `'9' ^ 3` 的结果值为 `'999'`。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>C++ 语言中，表达式 <code>'9' ^ 3</code> 的结果值为 <code>'999'</code>。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "下列 C++ 语⾔代码，能够安全地输出 `arr[5]` 的值。\n\n```cpp\nint n = 5;\nint arr[n] = {1, 2, 3};\nstd::cout << arr[5];\n```",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>下列 C++ 语⾔代码，能够安全地输出 <code>arr[5]</code> 的值。</p>\n<pre><code class=\"language-cpp\">int n = 5;\nint arr[n] = {1, 2, 3};\nstd::cout &lt;&lt; arr[5];\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "对 $n$ 个元素的数组进行排序，最差情况的时间复杂度为 $O(n^2)$。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>对 $n$ 个元素的数组进行排序，最差情况的时间复杂度为 $O(n^2)$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "有 $4$ 个红球、$3$ 个蓝球和 $2$ 个绿球排成一排（相同色球视为完全相同），则不同的排列方案数为 $1260$ 种。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>有 $4$ 个红球、$3$ 个蓝球和 $2$ 个绿球排成一排（相同色球视为完全相同），则不同的排列方案数为 $1260$ 种。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "使用 `math.h` 或 `cmath` 头文件中的函数，对于 `int` 类型的变量 $x$，表达式 `fabs(x)` 和 `sqrt(x * x)` 的结果总是近似相等的。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>使用 <code>math.h</code> 或 <code>cmath</code> 头文件中的函数，对于 <code>int</code> 类型的变量 $x$，表达式 <code>fabs(x)</code> 和 <code>sqrt(x * x)</code> 的结果总是近似相等的。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "运算符重载是 C++ 语⾔静态多态的一种典型体现，⽽使用 C 语⾔则无法实现运算符重载。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>运算符重载是 C++ 语⾔静态多态的一种典型体现，⽽使用 C 语⾔则无法实现运算符重载。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "存在一个简单无向图满足：顶点数为 $6$，边数为 $8$，$6$ 个顶点的度数分别为 $3$、$3$、$3$、$3$、$2$、$2$。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>存在一个简单无向图满足：顶点数为 $6$，边数为 $8$，$6$ 个顶点的度数分别为 $3$、$3$、$3$、$3$、$2$、$2$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "已知两个 `double` 类型的变量 $r$ 和 $theta$ 分别表示一个扇形的圆半径及圆心角（弧度），则扇形的周长可以通过表达式 $(2 + theta) * r$ 求得。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>已知两个 <code>double</code> 类型的变量 $r$ 和 $theta$ 分别表示一个扇形的圆半径及圆心角（弧度），则扇形的周长可以通过表达式 $(2 + theta) * r$ 求得。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "Dijkstra 算法的时间复杂度为 $O(n^2)$，其中 $n$ 为图中顶点的数量。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>Dijkstra 算法的时间复杂度为 $O(n^2)$，其中 $n$ 为图中顶点的数量。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "从 $32$ 名学生中选出 $2$ 人分别担任男生班长和女生班长（男生班长必须是男生，女生班长必须是女生），则共有 种不同的选法。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>从 $32$ 名学生中选出 $2$ 人分别担任男生班长和女生班长（男生班长必须是男生，女生班长必须是女生），则共有 种不同的选法。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：最短距离**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n给定正整数 $p,q$ 以及常数 $N=10^{18}$。现在构建一张包含 $N$ 个结点的带权无向图，结点依次以 $1,2,\\ldots,N$ 编号。对于任意满足 $1\\le u<v\\le N$ 的 $u,v$，向图中加入一条连接结点 $u$ 与结点 $v$ 的无向边，边权取决于 $u,v$ 是否互质：\n\n- 若 $u,v$ 互质（即 $u,v$ 的最大公因数为 $1$），则连接结点 $u$ 与结点 $v$ 的无向边长度为 $p$；\n- 否则连接结点 $u$ 与结点 $v$ 的无向边长度为 $q$。\n\n现在给定 $n$ 组询问，第 $i$（$1\\le i\\le n$）组询问给定两个正整数 $a_i,b_i$，你需要回答结点 $a_i$ 与结点 $b_i$ 之间的最短距离。\n\n**输入格式**\n\n第一行，三个正整数 $n,p,q$，分别表示询问数量，结点编号互质时的边权，以及结点编号不互质时的边权。\n\n接下来 $n$ 行，每行两个正整数 $a_i,b_i$，表示一组询问。\n\n**输出格式**\n\n输出共 $n$ 行，每行一个整数，表示结点 $a_i$ 与结点 $b_i$ 之间的最短距离。\n\n**样例输入 #1**\n```\n4 4 3\n1 2\n2 3\n4 2\n3 5\n```\n\n**样例输出 #1**\n```\n4\n4\n3\n4\n```\n\n**样例输入 #2**\n```\n5 2 6\n1 2\n2 3\n4 2\n3 5\n6 6\n```\n\n**样例输出 #2**\n```\n2\n2\n4\n2\n0\n```\n\n**说明/提示**\n\n对于 $30\\%$ 的测试点，保证 $1\\le n\\le 10$，$1\\le a_i,b_i\\le 50$。\n\n对于另外 $30\\%$ 的测试点，保证 $1\\le a_i,b_i\\le 250$。\n\n对于所有测试点，保证 $1\\le n\\le 10^4$，$1\\le a_i,b_i\\le 10^9$，$1\\le p,q\\le 10^9$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：最短距离</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>给定正整数 $p,q$ 以及常数 $N=10^{18}$。现在构建一张包含 $N$ 个结点的带权无向图，结点依次以 $1,2,\\ldots,N$ 编号。对于任意满足 $1\\le u&lt;v\\le N$ 的 $u,v$，向图中加入一条连接结点 $u$ 与结点 $v$ 的无向边，边权取决于 $u,v$ 是否互质：</p>\n<ul>\n<li>若 $u,v$ 互质（即 $u,v$ 的最大公因数为 $1$），则连接结点 $u$ 与结点 $v$ 的无向边长度为 $p$；</li>\n<li>否则连接结点 $u$ 与结点 $v$ 的无向边长度为 $q$。</li>\n</ul>\n<p>现在给定 $n$ 组询问，第 $i$（$1\\le i\\le n$）组询问给定两个正整数 $a_i,b_i$，你需要回答结点 $a_i$ 与结点 $b_i$ 之间的最短距离。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，三个正整数 $n,p,q$，分别表示询问数量，结点编号互质时的边权，以及结点编号不互质时的边权。</p>\n<p>接下来 $n$ 行，每行两个正整数 $a_i,b_i$，表示一组询问。</p>\n<p><strong>输出格式</strong></p>\n<p>输出共 $n$ 行，每行一个整数，表示结点 $a_i$ 与结点 $b_i$ 之间的最短距离。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4 4 3\n1 2\n2 3\n4 2\n3 5\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>4\n4\n3\n4\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>5 2 6\n1 2\n2 3\n4 2\n3 5\n6 6\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>2\n2\n4\n2\n0\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $30\\%$ 的测试点，保证 $1\\le n\\le 10$，$1\\le a_i,b_i\\le 50$。</p>\n<p>对于另外 $30\\%$ 的测试点，保证 $1\\le a_i,b_i\\le 250$。</p>\n<p>对于所有测试点，保证 $1\\le n\\le 10^4$，$1\\le a_i,b_i\\le 10^9$，$1\\le p,q\\le 10^9$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：最小生成树**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n给定一张包含 $n$ 个结点 $m$ 条边的带权连通无向图，结点依次以 $1,2,\\ldots,n$ 编号，第 $i$ 条边（$1\\le i\\le m$）连接结点 $u_i$ 与结点 $v_i$，边权为 $w_i$。\n\n对于每条边，请你求出从图中移除该条边后，图的最小生成树中所有边的边权和。特别地，若移除某条边后图的最小生成树不存在，则输出 $-1$。\n\n**输入格式**\n\n第一行，两个正整数 $n,m$，分别表示图的结点数与边数。\n\n接下来 $m$ 行中的第 $i$ 行（$1\\le i\\le m$）包含三个正整数 $u_i,v_i,w_i$，表示图中连接结点 $u_i$ 与结点 $v_i$ 的边，边权为 $w_i$。\n\n**输出格式**\n\n输出共 $m$ 行，第 $i$ 行（$1\\le i\\le m$）包含一个整数，表示移除第 $i$ 条边后，图的最小生成树中所有边的边权和。若移除第 $i$ 条边后图的最小生成树不存在，则输出 $−1$。\n\n**样例输入 #1**\n```\n5 5\n1 2 4\n2 3 3\n3 4 1\n2 5 2\n3 1 8\n```\n\n**样例输出 #1**\n```\n14\n15\n-1\n-1\n10\n```\n\n**样例输入 #2**\n```\n6 10\n1 2 6\n2 3 3\n3 1 4\n3 4 5\n4 5 8\n5 6 2\n6 4 1\n3 2 4\n5 4 4\n3 3 6\n```\n\n**样例输出 #2**\n```\n15\n16\n17\n-1\n15\n17\n18\n15\n15\n15\n```\n\n**说明/提示**\n\n::cute-table{tuack}\n\n| 子任务编号 |\t测试点占比 |\t$n$ |\t$m$|\t特殊性质 |\n|:--:|:--:|:--:|:--:|:--:|\n| 1 |\t$20\\%$ |\t$\\le 50$ |\t$\\le 100$ |\t- |\n| 2 |\t$30\\%$ |\t$\\le 10^5$ |\t$\\le 10^5$|\t$n=m$ |\n| 3 |\t$30\\%$ |\t$\\le 500$ |\t$\\le 2\\times 10^4$ |\t- |\n| 4 |\t$20\\%$ |\t$\\le 10^5$ |\t$\\le 10^5$|\t- |\n\n对于所有测试点，保证 $1\\le n\\le 10^5$，$1\\le m\\le 10^5$，$1\\le u_i,v_i\\le n$，$1\\le w_i\\le 10^9$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：最小生成树</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>给定一张包含 $n$ 个结点 $m$ 条边的带权连通无向图，结点依次以 $1,2,\\ldots,n$ 编号，第 $i$ 条边（$1\\le i\\le m$）连接结点 $u_i$ 与结点 $v_i$，边权为 $w_i$。</p>\n<p>对于每条边，请你求出从图中移除该条边后，图的最小生成树中所有边的边权和。特别地，若移除某条边后图的最小生成树不存在，则输出 $-1$。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，两个正整数 $n,m$，分别表示图的结点数与边数。</p>\n<p>接下来 $m$ 行中的第 $i$ 行（$1\\le i\\le m$）包含三个正整数 $u_i,v_i,w_i$，表示图中连接结点 $u_i$ 与结点 $v_i$ 的边，边权为 $w_i$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出共 $m$ 行，第 $i$ 行（$1\\le i\\le m$）包含一个整数，表示移除第 $i$ 条边后，图的最小生成树中所有边的边权和。若移除第 $i$ 条边后图的最小生成树不存在，则输出 $−1$。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5 5\n1 2 4\n2 3 3\n3 4 1\n2 5 2\n3 1 8\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>14\n15\n-1\n-1\n10\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>6 10\n1 2 6\n2 3 3\n3 1 4\n3 4 5\n4 5 8\n5 6 2\n6 4 1\n3 2 4\n5 4 4\n3 3 6\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>15\n16\n17\n-1\n15\n17\n18\n15\n15\n15\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>::cute-table{tuack}</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\">子任务编号</th>\n<th style=\"text-align:center\">测试点占比</th>\n<th style=\"text-align:center\">$n$</th>\n<th style=\"text-align:center\">$m$</th>\n<th style=\"text-align:center\">特殊性质</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">1</td>\n<td style=\"text-align:center\">$20\\%$</td>\n<td style=\"text-align:center\">$\\le 50$</td>\n<td style=\"text-align:center\">$\\le 100$</td>\n<td style=\"text-align:center\">-</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">2</td>\n<td style=\"text-align:center\">$30\\%$</td>\n<td style=\"text-align:center\">$\\le 10^5$</td>\n<td style=\"text-align:center\">$\\le 10^5$</td>\n<td style=\"text-align:center\">$n=m$</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">3</td>\n<td style=\"text-align:center\">$30\\%$</td>\n<td style=\"text-align:center\">$\\le 500$</td>\n<td style=\"text-align:center\">$\\le 2\\times 10^4$</td>\n<td style=\"text-align:center\">-</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">4</td>\n<td style=\"text-align:center\">$20\\%$</td>\n<td style=\"text-align:center\">$\\le 10^5$</td>\n<td style=\"text-align:center\">$\\le 10^5$</td>\n<td style=\"text-align:center\">-</td>\n</tr>\n</tbody>\n</table>\n<p>对于所有测试点，保证 $1\\le n\\le 10^5$，$1\\le m\\le 10^5$，$1\\le u_i,v_i\\le n$，$1\\le w_i\\le 10^9$。</p>\n"
+    }
+  ],
+  "id": "2025-09-gesp-8",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-09-gesp-8",
+  "version": "bf5cf5e013747a75",
+  "warnings": [],
+  "objective_score": 50.0
+}

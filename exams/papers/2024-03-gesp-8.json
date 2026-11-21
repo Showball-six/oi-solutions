@@ -1,0 +1,631 @@
+{
+  "title": "2024年3月 GESP C++ 8级",
+  "category": "GESP",
+  "level": "8",
+  "date": "2024-03",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2024年3月 GESP C++ 8级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$13$",
+          "html": "<p>$13$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$42$",
+          "html": "<p>$42$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$63$",
+          "html": "<p>$63$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$108$",
+          "html": "<p>$108$</p>\n"
+        }
+      ],
+      "content": "为丰富食堂菜谱，炒菜部进行头脑风暴。肉类有鸡肉、牛肉、羊肉、猪肉 $4$ 种，切法有肉排、肉块、肉末 $3$ 种，配菜有圆白菜、油菜、豆腐 $3$ 种，辣度有麻辣、微辣、不辣 $3$ 种。不考虑口感的情况下，选 $1$ 种肉、$1$ 种切法、$1$ 种配菜、$1$ 种辣度产生一道菜（例如：麻辣牛肉片炒豆腐），这样能产生多少道菜？（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>为丰富食堂菜谱，炒菜部进行头脑风暴。肉类有鸡肉、牛肉、羊肉、猪肉 $4$ 种，切法有肉排、肉块、肉末 $3$ 种，配菜有圆白菜、油菜、豆腐 $3$ 种，辣度有麻辣、微辣、不辣 $3$ 种。不考虑口感的情况下，选 $1$ 种肉、$1$ 种切法、$1$ 种配菜、$1$ 种辣度产生一道菜（例如：麻辣牛肉片炒豆腐），这样能产生多少道菜？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1440$",
+          "html": "<p>$1440$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$2520$",
+          "html": "<p>$2520$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3628800$",
+          "html": "<p>$3628800$</p>\n"
+        }
+      ],
+      "content": "已知袋中有 $2$ 个相同的红球、$3$ 个相同的绿球、$5$ 个相同的黄球。每次取出一个不放回，全部取出。可能产生多少种序列？（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>已知袋中有 $2$ 个相同的红球、$3$ 个相同的绿球、$5$ 个相同的黄球。每次取出一个不放回，全部取出。可能产生多少种序列？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`int a[][] = {{1, 2}, {3, 4}};`",
+          "html": "<p><code>int a[][] = {{1, 2}, {3, 4}};</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`int a[][2] = {};`",
+          "html": "<p><code>int a[][2] = {};</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`int a[2][2] = {{1, 2, 3}, {4, 5, 6}};`",
+          "html": "<p><code>int a[2][2] = {{1, 2, 3}, {4, 5, 6}};</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`int a[2][] = {{1, 2, 3}, {4, 5, 6}};`",
+          "html": "<p><code>int a[2][] = {{1, 2, 3}, {4, 5, 6}};</code></p>\n"
+        }
+      ],
+      "content": "以下二维数组的初始化，哪个是符合语法的？（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>以下二维数组的初始化，哪个是符合语法的？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "必须实现拷贝构造函数，否则一定会出现编译错误。",
+          "html": "<p>必须实现拷贝构造函数，否则一定会出现编译错误。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "对象作为函数参数、以值传递方式传入函数时，会自动调用拷贝构造函数。",
+          "html": "<p>对象作为函数参数、以值传递方式传入函数时，会自动调用拷贝构造函数。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "对象作为函数返回值、以值传递方式从函数返回时，会自动调用拷贝构造函数。",
+          "html": "<p>对象作为函数返回值、以值传递方式从函数返回时，会自动调用拷贝构造函数。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "使用一个对象初始化另一个对象时，会自动调用拷贝构造函数。",
+          "html": "<p>使用一个对象初始化另一个对象时，会自动调用拷贝构造函数。</p>\n"
+        }
+      ],
+      "content": "下面有关 C++ 拷贝构造函数的说法，错误的是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>下面有关 C++ 拷贝构造函数的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "使用邻接表表达一个无向简单图，图中包含 $v$ 个顶点、$e$ 条边，则该表中边节点的个数为（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>使用邻接表表达一个无向简单图，图中包含 $v$ 个顶点、$e$ 条边，则该表中边节点的个数为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "一个无向连通图可以有多个生成树。",
+          "html": "<p>一个无向连通图可以有多个生成树。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "一个无向图，只要连通，就一定有生成树。",
+          "html": "<p>一个无向图，只要连通，就一定有生成树。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$n$ 个顶点的无向完全图，有 $n^{n-2}$ 棵生成树。",
+          "html": "<p>$n$ 个顶点的无向完全图，有 $n^{n-2}$ 棵生成树。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$n$ 个顶点的无向图，生成树包含 $n-1$ 条边。",
+          "html": "<p>$n$ 个顶点的无向图，生成树包含 $n-1$ 条边。</p>\n"
+        }
+      ],
+      "content": "关于生成树的说法，错误的是（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>关于生成树的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$a \\times b \\times \\sin(\\theta) / 2$",
+          "html": "<p>$a \\times b \\times \\sin(\\theta) / 2$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$a + b + (a + b) \\times \\sin(\\theta) / 2$",
+          "html": "<p>$a + b + (a + b) \\times \\sin(\\theta) / 2$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$a \\times b \\times \\cos(\\theta) / 2$",
+          "html": "<p>$a \\times b \\times \\cos(\\theta) / 2$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$a + b + \\sqrt{a \\times a + b \\times b - 2 \\times a \\times b \\times \\cos(\\theta)}$",
+          "html": "<p>$a + b + \\sqrt{a \\times a + b \\times b - 2 \\times a \\times b \\times \\cos(\\theta)}$</p>\n"
+        }
+      ],
+      "content": "已知三个 `double` 类型的变量 $a$ 、 $b$ 和 $\\theta$ 分别表示一个三角形的两条边长及二者的夹角（弧度），则下列哪个表达式可以计算这个三角形的周长？（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>已知三个 <code>double</code> 类型的变量 $a$ 、 $b$ 和 $\\theta$ 分别表示一个三角形的两条边长及二者的夹角（弧度），则下列哪个表达式可以计算这个三角形的周长？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "、",
+          "html": "<p>、</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "、",
+          "html": "<p>、</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "、",
+          "html": "<p>、</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "、",
+          "html": "<p>、</p>\n"
+        }
+      ],
+      "content": "在有 $n$ 个元素的二叉排序树中进行查找，其最好、最差时间复杂度分别为（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>在有 $n$ 个元素的二叉排序树中进行查找，其最好、最差时间复杂度分别为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$r * r * \\sin(t) / 2$",
+          "html": "<p>$r * r * \\sin(t) / 2$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$r * r * t / 2$",
+          "html": "<p>$r * r * t / 2$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$r * r * (t - \\sin(t))$",
+          "html": "<p>$r * r * (t - \\sin(t))$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$r * r * (t - \\sin(t)) / 2$",
+          "html": "<p>$r * r * (t - \\sin(t)) / 2$</p>\n"
+        }
+      ],
+      "content": "如下图所⽰，半径为 $r$ 、圆心角为 $t$ （弧度）的扇形，下面哪个表达式能够求出顶部阴影部分的面积？（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>如下图所⽰，半径为 $r$ 、圆心角为 $t$ （弧度）的扇形，下面哪个表达式能够求出顶部阴影部分的面积？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "，其中",
+          "html": "<p>，其中</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面程序的时间复杂度为（ ）。\n\n```cpp\nint fib(int n) {\n    if (n <= 1)\n        return 1;\n    return fib(n - 1) + fib(n - 2);\n}\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面程序的时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">int fib(int n) {\n    if (n &lt;= 1)\n        return 1;\n    return fib(n - 1) + fib(n - 2);\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面程序的时间复杂度为（ ）。\n\n```cpp\nint choose(int n, int m) {\n    if (m == 0 || m == n)\n        return 1;\n    return choose(n - 1, m - 1) + choose(n - 1, m);\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面程序的时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">int choose(int n, int m) {\n    if (m == 0 || m == n)\n        return 1;\n    return choose(n - 1, m - 1) + choose(n - 1, m);\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面程序的时间复杂度为（ ）。\n\n```cpp\nint primes[MAXP], num = 0;\nbool isPrime[MAXN] = {false};\nvoid sieve() {\n    for (int n = 2; n <= MAXN; n++) {\n        if (!isPrime[n])\n            primes[num++] = n;\n        for (int i = 0; i < num && n * primes[i] <= MAXN; i++) {\n            isPrime[n * primes[i]] = true;\n            if (n % primes[i] == 0)\n                break;\n        }\n    }\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下面程序的时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">int primes[MAXP], num = 0;\nbool isPrime[MAXN] = {false};\nvoid sieve() {\n    for (int n = 2; n &lt;= MAXN; n++) {\n        if (!isPrime[n])\n            primes[num++] = n;\n        for (int i = 0; i &lt; num &amp;&amp; n * primes[i] &lt;= MAXN; i++) {\n            isPrime[n * primes[i]] = true;\n            if (n % primes[i] == 0)\n                break;\n        }\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$126$",
+          "html": "<p>$126$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3024$",
+          "html": "<p>$3024$</p>\n"
+        }
+      ],
+      "content": "下面程序的输出为（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\nint a[10][10];\nint main() {\n    int m = 5, n = 4;\n    for (int x = 0; x <= m; x++)\n        a[x][0] = 1;\n    for (int y = 1; y <= n; y++)\n        a[0][y] = 1;\n    for (int x = 1; x <= m; x++)\n        for (int y = 1; y <= n; y++)\n            a[x][y] = a[x - 1][y] + a[x][y - 1];\n    cout << a[m][n] << endl;\n    return 0;\n}\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>下面程序的输出为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint a[10][10];\nint main() {\n    int m = 5, n = 4;\n    for (int x = 0; x &lt;= m; x++)\n        a[x][0] = 1;\n    for (int y = 1; y &lt;= n; y++)\n        a[0][y] = 1;\n    for (int x = 1; x &lt;= m; x++)\n        for (int y = 1; y &lt;= n; y++)\n            a[x][y] = a[x - 1][y] + a[x][y - 1];\n    cout &lt;&lt; a[m][n] &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$90$",
+          "html": "<p>$90$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$91$",
+          "html": "<p>$91$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$96$",
+          "html": "<p>$96$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$100$",
+          "html": "<p>$100$</p>\n"
+        }
+      ],
+      "content": "下面程序的输出为（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int cnt = 0;\n    for (int x = 0; x <= 10; x++)\n        for (int y = 0; y <= 10; y++)\n            for (int z = 0; z <= 10; z++)\n                if (x + y + z == 15)\n                    cnt++;\n    cout << cnt << endl;\n    return 0;\n}\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>下面程序的输出为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint main() {\n    int cnt = 0;\n    for (int x = 0; x &lt;= 10; x++)\n        for (int y = 0; y &lt;= 10; y++)\n            for (int z = 0; z &lt;= 10; z++)\n                if (x + y + z == 15)\n                    cnt++;\n    cout &lt;&lt; cnt &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$100$",
+          "html": "<p>$100$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$16$",
+          "html": "<p>$16$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$12$",
+          "html": "<p>$12$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$13$",
+          "html": "<p>$13$</p>\n"
+        }
+      ],
+      "content": "下面的程序使用邻接矩阵表达的带权无向图，则从顶点 $0$ 到顶点 $3$ 的最短距离为（ ）。\n\n```cpp\nint weight[4][4] = {\n    { 0, 1, 7, 100},\n    { 1, 0, 5, 15},\n    { 7, 5, 0, 6},\n    {100, 15, 6, 0}};\n```",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>下面的程序使用邻接矩阵表达的带权无向图，则从顶点 $0$ 到顶点 $3$ 的最短距离为（ ）。</p>\n<pre><code class=\"language-cpp\">int weight[4][4] = {\n    { 0, 1, 7, 100},\n    { 1, 0, 5, 15},\n    { 7, 5, 0, 6},\n    {100, 15, 6, 0}};\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "已知 `int` 类型的变量 $a$ 和 $b$，则执行语句 `a, b = b, a;` 后，变量 $a$ 和 $b$ 的值会互换。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>已知 <code>int</code> 类型的变量 $a$ 和 $b$，则执行语句 <code>a, b = b, a;</code> 后，变量 $a$ 和 $b$ 的值会互换。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "一个袋子中有 $3$ 个完全相同的红色小球、$2$ 个完全相同的蓝色小球。每次从中取出 $1$ 个，再放回袋子，这样进行 $3$ 次后，可能的颜色顺序有 $7$ 种。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>一个袋子中有 $3$ 个完全相同的红色小球、$2$ 个完全相同的蓝色小球。每次从中取出 $1$ 个，再放回袋子，这样进行 $3$ 次后，可能的颜色顺序有 $7$ 种。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "孙子定理是求解一次同余方程组的方法，最早见于中国南北朝时期（公元5世纪）的数学著作《孙子算经》。又称中国余数定理，是中国数学史上的一项伟大成就。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>孙子定理是求解一次同余方程组的方法，最早见于中国南北朝时期（公元5世纪）的数学著作《孙子算经》。又称中国余数定理，是中国数学史上的一项伟大成就。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "$n$ 个顶点的无向完全图有 $\\frac{n(n-1)}{2}$ 条边。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>$n$ 个顶点的无向完全图有 $\\frac{n(n-1)}{2}$ 条边。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "为解决哈希函数冲突，在哈希表项内设置链表存储该项内的所有冲突元素，则该哈希表内查找元素的最差时间复杂度为 。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>为解决哈希函数冲突，在哈希表项内设置链表存储该项内的所有冲突元素，则该哈希表内查找元素的最差时间复杂度为 。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "求一个包含 $v$ 个顶点、$e$ 条边的带权连通无向图的最小生成树，Prim 算法的时间复杂度为 。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>求一个包含 $v$ 个顶点、$e$ 条边的带权连通无向图的最小生成树，Prim 算法的时间复杂度为 。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "已知 `int` 类型的变量 $a$ 、 $b$ 和 $c$ 中分别存储着一个三角形的三条边长，则这个三角形的面积可以通过表达式 $\\sqrt{(a + b + c) \\times (b + c - a) \\times (a + c - b) \\times (a + b - c)} / 4$ 求得。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>已知 <code>int</code> 类型的变量 $a$ 、 $b$ 和 $c$ 中分别存储着一个三角形的三条边长，则这个三角形的面积可以通过表达式 $\\sqrt{(a + b + c) \\times (b + c - a) \\times (a + c - b) \\times (a + b - c)} / 4$ 求得。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "可以使用深度优先搜索算法判断图的连通性。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>可以使用深度优先搜索算法判断图的连通性。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 $n$ 个元素的二叉排序树中查找一个元素，平均情况的时间复杂度是 $O(\\log n)$。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>在 $n$ 个元素的二叉排序树中查找一个元素，平均情况的时间复杂度是 $O(\\log n)$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "给定 `double` 类型的变量 $x$ ，且其值大于等于 $0$ ，我们可以通过二分法求出 $\\sqrt{x}$ 的近似值。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>给定 <code>double</code> 类型的变量 $x$ ，且其值大于等于 $0$ ，我们可以通过二分法求出 $\\sqrt{x}$ 的近似值。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：公倍数问题**\n\n> 时间限制：1.0 s | 内存限制：128.0 MB\n\n**题目描述**\n\n小 A 写了一个 $N \\times M$ 的矩阵 $A$，我们看不到这个矩阵，但我们可以知道，其中第 $i$ 行第 $j$ 列的元素 $A_{i,j}$ 是 $i$ 和 $j$ 的公倍数（$i=1,\\dots,N$，$j=1,\\dots,M$）。现在有 $K$ 个小朋友，其中第 $k$ 个小朋友想知道，矩阵 $A$ 中最多有多少个元素可以是 $k$（$k=1,2,\\dots,K$）。请你帮助这些小朋友求解。\n\n注意：每位小朋友的答案互不相关，例如，有些位置既可能是 $x$，又可能是 $y$，则它同时可以满足 $x,y$ 两名小朋友的要求。\n\n方便起见，你只需要输出 $\\sum_{k=1}^{K}{k \\times \\texttt{ans}_k}$ 即可，其中 $\\texttt{ans}_k$ 表示第 $k$ 名小朋友感兴趣的答案。\n\n**输入格式**\n\n第一行三个正整数 $N,M,K$。\n\n**输出格式**\n\n输出一行，即 $\\sum_{k=1}^{K}{k \\times \\texttt{ans}_k}$。\n\n请注意，这个数可能很大，使用 C++ 语言的选手请酌情使用 `long long` 等数据类型存储答案。\n\n**样例输入 #1**\n```\n2 5 2\n```\n\n**样例输出 #1**\n```\n9\n```\n\n**样例输入 #2**\n```\n100 100 100\n```\n\n**样例输出 #2**\n```\n185233\n```\n\n**说明/提示**\n\n### 样例 1 解释\n\n只有 $A_{1,1}$ 可以是 $1$，其余都不行。\n\n$A_{1,1},A_{1,2},A_{2,1},A_{2,2}$ 都可以是 $2$，而其余不行。\n\n因此答案是 $1 \\times 1 + 2 \\times 4 = 9$。\n\n### 数据规模\n\n对于 $30\\%$ 的测试点，保证 $N,M,K \\leq 10$；\n\n对于 $60\\%$ 的测试点，保证 $N,M,K \\leq 500$；\n\n对于 $100\\%$ 的测试点，保证 $N,M \\leq 10^5$，$K \\leq 10^6$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：公倍数问题</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：128.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小 A 写了一个 $N \\times M$ 的矩阵 $A$，我们看不到这个矩阵，但我们可以知道，其中第 $i$ 行第 $j$ 列的元素 $A_{i,j}$ 是 $i$ 和 $j$ 的公倍数（$i=1,\\dots,N$，$j=1,\\dots,M$）。现在有 $K$ 个小朋友，其中第 $k$ 个小朋友想知道，矩阵 $A$ 中最多有多少个元素可以是 $k$（$k=1,2,\\dots,K$）。请你帮助这些小朋友求解。</p>\n<p>注意：每位小朋友的答案互不相关，例如，有些位置既可能是 $x$，又可能是 $y$，则它同时可以满足 $x,y$ 两名小朋友的要求。</p>\n<p>方便起见，你只需要输出 $\\sum_{k=1}^{K}{k \\times \\texttt{ans}_k}$ 即可，其中 $\\texttt{ans}_k$ 表示第 $k$ 名小朋友感兴趣的答案。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行三个正整数 $N,M,K$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，即 $\\sum_{k=1}^{K}{k \\times \\texttt{ans}_k}$。</p>\n<p>请注意，这个数可能很大，使用 C++ 语言的选手请酌情使用 <code>long long</code> 等数据类型存储答案。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>2 5 2\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>9\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>100 100 100\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>185233\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<h3>样例 1 解释</h3>\n<p>只有 $A_{1,1}$ 可以是 $1$，其余都不行。</p>\n<p>$A_{1,1},A_{1,2},A_{2,1},A_{2,2}$ 都可以是 $2$，而其余不行。</p>\n<p>因此答案是 $1 \\times 1 + 2 \\times 4 = 9$。</p>\n<h3>数据规模</h3>\n<p>对于 $30\\%$ 的测试点，保证 $N,M,K \\leq 10$；</p>\n<p>对于 $60\\%$ 的测试点，保证 $N,M,K \\leq 500$；</p>\n<p>对于 $100\\%$ 的测试点，保证 $N,M \\leq 10^5$，$K \\leq 10^6$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：接竹竿**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨同学想用卡牌玩一种叫做“接竹竿”的游戏。\n\n游戏规则是：每张牌上有一个点数 $v$，将给定的牌依次放入一列牌的末端。若放入之前这列牌中已有与这张牌点数相同的牌，则小杨同学会将这张牌和点数相同的牌之间的所有牌全部取出队列（包括这两张牌本身）。\n\n小杨同学现在有一个长度为 $n$ 的卡牌序列 $A$，其中每张牌的点数为 $A_i$（$1\\le i\\le n$）。小杨同学有 $q$ 次询问。第 $i$ 次（$1\\le i\\le q$）询问时，小杨同学会给出 $l_i,r_i$ 小杨同学想知道如果用下标在 $[l_i,r_i]$ 的所有卡牌按照下标顺序玩“接竹竿”的游戏，最后队列中剩余的牌数。\n\n**输入格式**\n\n一行包含一个正整数 $T$，表示测试数据组数。\n\n对于每组测试数据，第一行包含一个正整数 $n$，表示卡牌序列 $A$ 的长度。\n\n第二行包含 $n$ 个正整数 $A_1,A_2,\\dots,A_n$，表示卡牌的点数 $A$。\n\n第三行包含一个正整数 $q$，表示询问次数。\n\n接下来 $q$ 行，每行两个正整数 $l_i,r_i$ 表示一组询问。\n\n**输出格式**\n\n对于每组数据，输出 $q$ 行。第 $i$ 行（$1\\le i\\le q$）输出一个非负整数，表示第 $i$ 次询问的答案。\n\n**样例输入 #1**\n```\n1\n6\n1 2 2 3 1 3\n4\n1 3\n1 6\n1 5\n5 6\n\n```\n\n**样例输出 #1**\n```\n1\n1\n0\n2\n```\n\n**说明/提示**\n\n**样例解释**\n\n对于第一次询问，小杨同学会按照 $1,2,2$ 的顺序放置卡牌，在放置最后一张卡牌时，两张点数为 $2$ 的卡牌会被收走，因此最后队列中只剩余一张点数为 $1$ 的卡牌。\n\n对于第二次询问，队列变化情况为：\n\n$\\{\\}\\to\\{1\\}\\to\\{1,2\\}\\to\\{1,2,2\\}\\to\\{1\\}\\to\\{1,3\\}\\to\\{1,3,1\\}\\to\\{\\}\\to\\{3\\}$。因此最后队列中只剩余一张点数为 $3$ 的卡牌。\n\n**数据范围**\n\n|子任务|分数|$T$|$n$|$q$|$\\max A_i$|特殊条件| \n|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n|$1$|$30$|$\\le 5$|$\\le100$|$\\le100$|$\\le13$|\n|$2$|$30$|$\\le 5$|$\\le 1.5\\times10^4$|$\\le 1.5\\times10^4$|$\\le13$|所有询问的右端点等于 $n$\n|$3$|$40$|$\\le 5$|$\\le 1.5\\times10^4$|$\\le 1.5\\times10^4$|$\\le13$|\n\n对于全部数据，保证有 $1\\le T\\le 5$，$1\\le n\\le 1.5\\times 10^4$，$1\\le q\\le 1.5\\times 10^4$，$1\\le A_i\\le 13$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：接竹竿</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨同学想用卡牌玩一种叫做“接竹竿”的游戏。</p>\n<p>游戏规则是：每张牌上有一个点数 $v$，将给定的牌依次放入一列牌的末端。若放入之前这列牌中已有与这张牌点数相同的牌，则小杨同学会将这张牌和点数相同的牌之间的所有牌全部取出队列（包括这两张牌本身）。</p>\n<p>小杨同学现在有一个长度为 $n$ 的卡牌序列 $A$，其中每张牌的点数为 $A_i$（$1\\le i\\le n$）。小杨同学有 $q$ 次询问。第 $i$ 次（$1\\le i\\le q$）询问时，小杨同学会给出 $l_i,r_i$ 小杨同学想知道如果用下标在 $[l_i,r_i]$ 的所有卡牌按照下标顺序玩“接竹竿”的游戏，最后队列中剩余的牌数。</p>\n<p><strong>输入格式</strong></p>\n<p>一行包含一个正整数 $T$，表示测试数据组数。</p>\n<p>对于每组测试数据，第一行包含一个正整数 $n$，表示卡牌序列 $A$ 的长度。</p>\n<p>第二行包含 $n$ 个正整数 $A_1,A_2,\\dots,A_n$，表示卡牌的点数 $A$。</p>\n<p>第三行包含一个正整数 $q$，表示询问次数。</p>\n<p>接下来 $q$ 行，每行两个正整数 $l_i,r_i$ 表示一组询问。</p>\n<p><strong>输出格式</strong></p>\n<p>对于每组数据，输出 $q$ 行。第 $i$ 行（$1\\le i\\le q$）输出一个非负整数，表示第 $i$ 次询问的答案。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>1\n6\n1 2 2 3 1 3\n4\n1 3\n1 6\n1 5\n5 6\n\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>1\n1\n0\n2\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p><strong>样例解释</strong></p>\n<p>对于第一次询问，小杨同学会按照 $1,2,2$ 的顺序放置卡牌，在放置最后一张卡牌时，两张点数为 $2$ 的卡牌会被收走，因此最后队列中只剩余一张点数为 $1$ 的卡牌。</p>\n<p>对于第二次询问，队列变化情况为：</p>\n<p>$\\{\\}\\to\\{1\\}\\to\\{1,2\\}\\to\\{1,2,2\\}\\to\\{1\\}\\to\\{1,3\\}\\to\\{1,3,1\\}\\to\\{\\}\\to\\{3\\}$。因此最后队列中只剩余一张点数为 $3$ 的卡牌。</p>\n<p><strong>数据范围</strong></p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\">子任务</th>\n<th style=\"text-align:center\">分数</th>\n<th style=\"text-align:center\">$T$</th>\n<th style=\"text-align:center\">$n$</th>\n<th style=\"text-align:center\">$q$</th>\n<th style=\"text-align:center\">$\\max A_i$</th>\n<th style=\"text-align:center\">特殊条件</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">$1$</td>\n<td style=\"text-align:center\">$30$</td>\n<td style=\"text-align:center\">$\\le 5$</td>\n<td style=\"text-align:center\">$\\le100$</td>\n<td style=\"text-align:center\">$\\le100$</td>\n<td style=\"text-align:center\">$\\le13$</td>\n<td style=\"text-align:center\"></td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$2$</td>\n<td style=\"text-align:center\">$30$</td>\n<td style=\"text-align:center\">$\\le 5$</td>\n<td style=\"text-align:center\">$\\le 1.5\\times10^4$</td>\n<td style=\"text-align:center\">$\\le 1.5\\times10^4$</td>\n<td style=\"text-align:center\">$\\le13$</td>\n<td style=\"text-align:center\">所有询问的右端点等于 $n$</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$3$</td>\n<td style=\"text-align:center\">$40$</td>\n<td style=\"text-align:center\">$\\le 5$</td>\n<td style=\"text-align:center\">$\\le 1.5\\times10^4$</td>\n<td style=\"text-align:center\">$\\le 1.5\\times10^4$</td>\n<td style=\"text-align:center\">$\\le13$</td>\n<td style=\"text-align:center\"></td>\n</tr>\n</tbody>\n</table>\n<p>对于全部数据，保证有 $1\\le T\\le 5$，$1\\le n\\le 1.5\\times 10^4$，$1\\le q\\le 1.5\\times 10^4$，$1\\le A_i\\le 13$。</p>\n"
+    }
+  ],
+  "id": "2024-03-gesp-8",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2024-03-gesp-8",
+  "version": "82320378ce11cf39",
+  "warnings": [],
+  "objective_score": 50.0
+}

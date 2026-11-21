@@ -1,0 +1,631 @@
+{
+  "title": "2025年12月 GESP C++ 3级",
+  "category": "GESP",
+  "level": "3",
+  "date": "2025-12",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年12月 GESP C++ 3级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$14.25$",
+          "html": "<p>$14.25$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$13.625$",
+          "html": "<p>$13.625$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$13.5$",
+          "html": "<p>$13.5$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$14.5$",
+          "html": "<p>$14.5$</p>\n"
+        }
+      ],
+      "content": "请将二进制数 ，转换为等值的 $10$ 进制数（ ）",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>请将二进制数 ，转换为等值的 $10$ 进制数（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "数组的下标从 $0$ 开始",
+          "html": "<p>数组的下标从 $0$ 开始</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "数组在内存中是连续存放的",
+          "html": "<p>数组在内存中是连续存放的</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "数组的长度只能在运行时才能确定",
+          "html": "<p>数组的长度只能在运行时才能确定</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "可以在程序中修改数组某个元素的值",
+          "html": "<p>可以在程序中修改数组某个元素的值</p>\n"
+        }
+      ],
+      "content": "以下关于标准 C++ 一维数组的描述，哪一项是错误的？（ ）",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>以下关于标准 C++ 一维数组的描述，哪一项是错误的？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$12$",
+          "html": "<p>$12$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$17$",
+          "html": "<p>$17$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$33$",
+          "html": "<p>$33$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$40$",
+          "html": "<p>$40$</p>\n"
+        }
+      ],
+      "content": "下列代码段执行后，变量 `sum` 的值是（ ）\n\n```cpp\n{\n    int sum = 0;\n    for (int i = 1; i <= 10; i++) {\n        if (i % 3 == 8>>2)\n            continue;\n        sum += i;\n    }\n}\n```",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下列代码段执行后，变量 <code>sum</code> 的值是（ ）</p>\n<pre><code class=\"language-cpp\">{\n    int sum = 0;\n    for (int i = 1; i &lt;= 10; i++) {\n        if (i % 3 == 8&gt;&gt;2)\n            continue;\n        sum += i;\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$120$",
+          "html": "<p>$120$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        }
+      ],
+      "content": "执行以下程序段，输出值是（ ）\n\n```cpp\nint x = 5;\nif (x == 3 >> 2) x = 8 >> 3;\ncout << x << endl;\n```",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>执行以下程序段，输出值是（ ）</p>\n<pre><code class=\"language-cpp\">int x = 5;\nif (x == 3 &gt;&gt; 2) x = 8 &gt;&gt; 3;\ncout &lt;&lt; x &lt;&lt; endl;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$14$",
+          "html": "<p>$14$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$15$",
+          "html": "<p>$15$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$16$",
+          "html": "<p>$16$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$17$",
+          "html": "<p>$17$</p>\n"
+        }
+      ],
+      "content": "已知字符串 $s = \\text{\"C++ Programming\"}$，下列程序运行的结果是（ ）\n\n```cpp\ncout << (int)(s.length() | 3) << endl;\n```",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>已知字符串 $s = \\text{&quot;C++ Programming&quot;}$，下列程序运行的结果是（ ）</p>\n<pre><code class=\"language-cpp\">cout &lt;&lt; (int)(s.length() | 3) &lt;&lt; endl;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        }
+      ],
+      "content": "以下代码是一个程序的部分代码，能够正确执行，输出的结果是（ ）\n\n```cpp\nint arr[5] = {1, 2, 3, 4, 5};\nint p = arr[1];\ncout << (p + 2) << endl;\n```",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>以下代码是一个程序的部分代码，能够正确执行，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">int arr[5] = {1, 2, 3, 4, 5};\nint p = arr[1];\ncout &lt;&lt; (p + 2) &lt;&lt; endl;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "函数必须返回一个值",
+          "html": "<p>函数必须返回一个值</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "该函数可以嵌套调用",
+          "html": "<p>该函数可以嵌套调用</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "调用 `min(5)` 是错误的，不能通过编译",
+          "html": "<p>调用 <code>min(5)</code> 是错误的，不能通过编译</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "调用 `min()`（不传任何参数）可以通过编译，结果为 $0$",
+          "html": "<p>调用 <code>min()</code>（不传任何参数）可以通过编译，结果为 $0$</p>\n"
+        }
+      ],
+      "content": "以下关于 C++ 求最小值函数 `min()` 的描述，不正确的是（ ）",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>以下关于 C++ 求最小值函数 <code>min()</code> 的描述，不正确的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0 \\sim 65535$",
+          "html": "<p>$0 \\sim 65535$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$0 \\sim 65536$",
+          "html": "<p>$0 \\sim 65536$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$-65536 \\sim 65535$",
+          "html": "<p>$-65536 \\sim 65535$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$0 \\sim 32767$",
+          "html": "<p>$0 \\sim 32767$</p>\n"
+        }
+      ],
+      "content": "在一个特定的计算机系统中，假如 `unsigned int` 类型需要占用 $2$ 个字节的存储空间（每个字节有 $8$ 位），则 `unsigned int` 可以表示的数据范围是（ ）",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>在一个特定的计算机系统中，假如 <code>unsigned int</code> 类型需要占用 $2$ 个字节的存储空间（每个字节有 $8$ 位），则 <code>unsigned int</code> 可以表示的数据范围是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`{2,1,4,3,6,5}`",
+          "html": "<p><code>{2,1,4,3,6,5}</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`{1,2,3,4,5,6}`",
+          "html": "<p><code>{1,2,3,4,5,6}</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`{3,1,4,2,5,3}`",
+          "html": "<p><code>{3,1,4,2,5,3}</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`{1,3,2,5,4,6}`",
+          "html": "<p><code>{1,3,2,5,4,6}</code></p>\n"
+        }
+      ],
+      "content": "以下代码执行后，数组 `arr` 的内容是（ ）\n\n```cpp\nint arr[6] = {1, 2, 3, 4, 5, 6};\nfor (int i = 0; i < 6; i += 2) {\n    arr[i] = arr[i] + arr[i+1];\n    arr[i+1] = arr[i] - arr[i+1];\n    arr[i] = arr[i] - arr[i+1];\n}\n```",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>以下代码执行后，数组 <code>arr</code> 的内容是（ ）</p>\n<pre><code class=\"language-cpp\">int arr[6] = {1, 2, 3, 4, 5, 6};\nfor (int i = 0; i &lt; 6; i += 2) {\n    arr[i] = arr[i] + arr[i+1];\n    arr[i+1] = arr[i] - arr[i+1];\n    arr[i] = arr[i] - arr[i+1];\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "十进制 $11$",
+          "html": "<p>十进制 $11$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "二进制 $11$",
+          "html": "<p>二进制 $11$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "八进制 $11$",
+          "html": "<p>八进制 $11$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "十六进制 $11$",
+          "html": "<p>十六进制 $11$</p>\n"
+        }
+      ],
+      "content": "$a \\& b | (c \\^ d)$，其中 $a = 3$，$b = 7$，$c = 15$，$d = 4$，计算结果是（ ）",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>$a \\&amp; b | (c \\^ d)$，其中 $a = 3$，$b = 7$，$c = 15$，$d = 4$，计算结果是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$-1$",
+          "html": "<p>$-1$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "死循环",
+          "html": "<p>死循环</p>\n"
+        }
+      ],
+      "content": "整型变量 $x$ 的初始值为 $10$，以下代码的输出结果是（ ）\n\n```cpp\nint t = x--;\nt -= x;\ncout << t << endl;\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>整型变量 $x$ 的初始值为 $10$，以下代码的输出结果是（ ）</p>\n<pre><code class=\"language-cpp\">int t = x--;\nt -= x;\ncout &lt;&lt; t &lt;&lt; endl;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "优秀",
+          "html": "<p>优秀</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "及格",
+          "html": "<p>及格</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "不及格",
+          "html": "<p>不及格</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "没有输出",
+          "html": "<p>没有输出</p>\n"
+        }
+      ],
+      "content": "根据下面的流程图，如果成绩 $score$ 输入 $60$，输出的结果是（ ）",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>根据下面的流程图，如果成绩 $score$ 输入 $60$，输出的结果是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$11$",
+          "html": "<p>$11$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$14$",
+          "html": "<p>$14$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$15$",
+          "html": "<p>$15$</p>\n"
+        }
+      ],
+      "content": "以下代码运行后，`sum` 的结果是（ ）\n\n```cpp\nint arr[5] = {2, 4, 6, 8, 10};\nint sum = 0;\nfor (int i = 0; i < 5; i++) {\n    switch (arr[i] % (1|2)) {\n        case 0: sum += 1; break;\n        case 1: sum += 2; break;\n        case 2: sum += 3; break;\n    }\n}\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>以下代码运行后，<code>sum</code> 的结果是（ ）</p>\n<pre><code class=\"language-cpp\">int arr[5] = {2, 4, 6, 8, 10};\nint sum = 0;\nfor (int i = 0; i &lt; 5; i++) {\n    switch (arr[i] % (1|2)) {\n        case 0: sum += 1; break;\n        case 1: sum += 2; break;\n        case 2: sum += 3; break;\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`abs()` 函数可用于计算 `int` 类型整数的绝对值，头文件为 `<cmath>` 或 `<cstdlib>`",
+          "html": "<p><code>abs()</code> 函数可用于计算 <code>int</code> 类型整数的绝对值，头文件为 <code>&lt;cmath&gt;</code> 或 <code>&lt;cstdlib&gt;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "调用 `abs(3.14)` 可以四舍五入得到 $3$",
+          "html": "<p>调用 <code>abs(3.14)</code> 可以四舍五入得到 $3$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`abs(-1, -2)` 的返回值是 $1$",
+          "html": "<p><code>abs(-1, -2)</code> 的返回值是 $1$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "若传入负数浮点数，`abs()` 会自动截断小数部分后返回整数绝对值",
+          "html": "<p>若传入负数浮点数，<code>abs()</code> 会自动截断小数部分后返回整数绝对值</p>\n"
+        }
+      ],
+      "content": "以下关于 C++ 中 `abs()` 函数的描述，正确的是（ ）",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>以下关于 C++ 中 <code>abs()</code> 函数的描述，正确的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`GESP`",
+          "html": "<p><code>GESP</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`HFTR`",
+          "html": "<p><code>HFTR</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`hesp`",
+          "html": "<p><code>hesp</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`GFUS`",
+          "html": "<p><code>GFUS</code></p>\n"
+        }
+      ],
+      "content": "如果字符串 $s$ 的值是 `GESP` ，以下代码 $s$ 的最后结果是（ ）\n\n```cpp\nfor (int i = 0; i < s.length(); i++) {\n    s[i] = toupper(s[i] + i);\n}\n```",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>如果字符串 $s$ 的值是 <code>GESP</code> ，以下代码 $s$ 的最后结果是（ ）</p>\n<pre><code class=\"language-cpp\">for (int i = 0; i &lt; s.length(); i++) {\n    s[i] = toupper(s[i] + i);\n}\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 中，数组名不能改变，数组名不能被赋值。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>在 C++ 中，数组名不能改变，数组名不能被赋值。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "整型变量 $a$ 的值为 $3$，浮点数变量 $b$ 的值为 $3.5$，在 C++ 编译环境下，经过 `a *= b` 计算后，$a$ 的值变为 $10.5$，此时如果输出 $a$，将输出 $10.5$。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>整型变量 $a$ 的值为 $3$，浮点数变量 $b$ 的值为 $3.5$，在 C++ 编译环境下，经过 <code>a *= b</code> 计算后，$a$ 的值变为 $10.5$，此时如果输出 $a$，将输出 $10.5$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "`strcmp(str1, str2)` 返回 $0$ 表示 `str1` 大于 `str2`，返回正数表示两者相等。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p><code>strcmp(str1, str2)</code> 返回 $0$ 表示 <code>str1</code> 大于 <code>str2</code>，返回正数表示两者相等。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "以下代码输出结果为 $8$。\n\n```cpp\nint a = 5, b = 3;\nint c = a++ + ++b;\ncout << c << endl;\n```",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>以下代码输出结果为 $8$。</p>\n<pre><code class=\"language-cpp\">int a = 5, b = 3;\nint c = a++ + ++b;\ncout &lt;&lt; c &lt;&lt; endl;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "位运算符 `&`、`|`、`^`、`~` 的优先级高于算术运算符 `+`、`-`、`*`、`/`。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>位运算符 <code>&amp;</code>、<code>|</code>、<code>^</code>、<code>~</code> 的优先级高于算术运算符 <code>+</code>、<code>-</code>、<code>*</code>、<code>/</code>。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 中，`int a[] = {1, 2, 3, 4, 5};` 可以定义一个包含 $5$ 个元素的整型数组。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>在 C++ 中，<code>int a[] = {1, 2, 3, 4, 5};</code> 可以定义一个包含 $5$ 个元素的整型数组。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "C++ 表达式 `z = a > b ? x : y` 等同于：\n\n```cpp\nif (a > b) {\n    z = x;\n} else {\n    z = y;\n}\n```\n\n以下代码执行后，输出将会是 $2$。\n\n```cpp\nint main() {\n    int arr[5] = {1, 2, 3, 4, 5};\n    cout << arr[3 > 2 ? 1 : 2] << endl;\n    return 0;\n}\n```",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>C++ 表达式 <code>z = a &gt; b ? x : y</code> 等同于：</p>\n<pre><code class=\"language-cpp\">if (a &gt; b) {\n    z = x;\n} else {\n    z = y;\n}\n</code></pre>\n<p>以下代码执行后，输出将会是 $2$。</p>\n<pre><code class=\"language-cpp\">int main() {\n    int arr[5] = {1, 2, 3, 4, 5};\n    cout &lt;&lt; arr[3 &gt; 2 ? 1 : 2] &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 中，`++` 和 `--` 运算符只能用于整型变量，不能用于浮点数变量。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>在 C++ 中，<code>++</code> 和 <code>--</code> 运算符只能用于整型变量，不能用于浮点数变量。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "给定一个正整数 $a$，当需要计算 $-a$ 的补码时，有这样一个计算技巧：将 $a$ 的二进制形式从右往左扫描，遇到第一个 $1$ 之后，将找到的第一个 $1$ 左边的所有位都取反，能得到 $-a$ 的补码。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>给定一个正整数 $a$，当需要计算 $-a$ 的补码时，有这样一个计算技巧：将 $a$ 的二进制形式从右往左扫描，遇到第一个 $1$ 之后，将找到的第一个 $1$ 左边的所有位都取反，能得到 $-a$ 的补码。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "以下代码中，Hello 将被输出 5 次。\n\n```cpp\nfor (int i = 0; i < 5; i++);\n{\n    cout << \"Hello\" << endl;\n}\n```",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>以下代码中，Hello 将被输出 5 次。</p>\n<pre><code class=\"language-cpp\">for (int i = 0; i &lt; 5; i++);\n{\n    cout &lt;&lt; &quot;Hello&quot; &lt;&lt; endl;\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：密码强度**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨是学校网络安全小组的成员，今天他的任务是设计一个“密码强度检测器”，帮助同学们检查自己的密码是否足够安全。一个安全的密码需要满足以下条件：\n\n- 密码至少包含 $8$ 个字符（太短的密码容易被猜出来哦！）。\n- 密码至少包含一个大写字母（A、B、C、...、Z 都可以）。\n- 密码至少包含一个数字（0、1、2、3、...、9 都可以）。\n\n例如：\n\n- 密码 `PAs1s2an` 是安全密码（有 $8$ 位、包含大写字母 `P`、`A` 和数字 `1`、`2`）。\n- 密码 `ab1da3cd` 不是安全密码（没有大写字母）。\n- 密码 `Paabdbcd` 不是安全密码（没有数字）。\n- 密码 `Pa2` 不是安全密码（只有 $3$ 位，太短了）。\n\n**输入格式**\n\n第一行一个正整数 $T$，代表需要安全检测的密码组数。\n\n对于每组密码，一行包含一个字符串，代表需要安全检测的密码。\n\n**输出格式**\n\n对于每组密码，输出一行，如果满足强度要求输出 Y，否则输出 N。\n\n**样例输入 #1**\n```\n6\nPAs1s2an\n1a2bCql3\nPa12bsna\nab1da3cd\nPaabdbcd\nPa2\n```\n\n**样例输出 #1**\n```\nY\nY\nY\nN\nN\nN\n```\n\n**说明/提示**\n\n### 样例解释\n\n- 密码 `PAs1s2an` 是安全密码（有 $8$ 位、包含大写字母 `P`、`A` 和数字 `1`、`2`）。\n- 密码 `1a2bCq13` 是安全密码（有 $8$ 位、包含大写字母 `C` 和数字 `1`、`2`、`3`）。\n- 密码 `Pa12bsna` 是安全密码（有 $8$ 位、包含大写字母 `P` 和数字 `1`、`2`）。\n- 密码 `ab1da5cd` 不是安全密码（没有大写字母）。\n- 密码 `Paabdbcd` 不是安全密码（没有数字）。\n- 密码 `Pa2` 不是安全密码（只有 $3$ 位，太短了）。\n\n### 数据范围\n\n对于所有测试点，保证 $1 \\leq T \\leq 100$，并且每组密码长度不超过 $100$ 且至少为 $1$，每组密码仅由大小写字母和数字组成。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：密码强度</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨是学校网络安全小组的成员，今天他的任务是设计一个“密码强度检测器”，帮助同学们检查自己的密码是否足够安全。一个安全的密码需要满足以下条件：</p>\n<ul>\n<li>密码至少包含 $8$ 个字符（太短的密码容易被猜出来哦！）。</li>\n<li>密码至少包含一个大写字母（A、B、C、...、Z 都可以）。</li>\n<li>密码至少包含一个数字（0、1、2、3、...、9 都可以）。</li>\n</ul>\n<p>例如：</p>\n<ul>\n<li>密码 <code>PAs1s2an</code> 是安全密码（有 $8$ 位、包含大写字母 <code>P</code>、<code>A</code> 和数字 <code>1</code>、<code>2</code>）。</li>\n<li>密码 <code>ab1da3cd</code> 不是安全密码（没有大写字母）。</li>\n<li>密码 <code>Paabdbcd</code> 不是安全密码（没有数字）。</li>\n<li>密码 <code>Pa2</code> 不是安全密码（只有 $3$ 位，太短了）。</li>\n</ul>\n<p><strong>输入格式</strong></p>\n<p>第一行一个正整数 $T$，代表需要安全检测的密码组数。</p>\n<p>对于每组密码，一行包含一个字符串，代表需要安全检测的密码。</p>\n<p><strong>输出格式</strong></p>\n<p>对于每组密码，输出一行，如果满足强度要求输出 Y，否则输出 N。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>6\nPAs1s2an\n1a2bCql3\nPa12bsna\nab1da3cd\nPaabdbcd\nPa2\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>Y\nY\nY\nN\nN\nN\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<h3>样例解释</h3>\n<ul>\n<li>密码 <code>PAs1s2an</code> 是安全密码（有 $8$ 位、包含大写字母 <code>P</code>、<code>A</code> 和数字 <code>1</code>、<code>2</code>）。</li>\n<li>密码 <code>1a2bCq13</code> 是安全密码（有 $8$ 位、包含大写字母 <code>C</code> 和数字 <code>1</code>、<code>2</code>、<code>3</code>）。</li>\n<li>密码 <code>Pa12bsna</code> 是安全密码（有 $8$ 位、包含大写字母 <code>P</code> 和数字 <code>1</code>、<code>2</code>）。</li>\n<li>密码 <code>ab1da5cd</code> 不是安全密码（没有大写字母）。</li>\n<li>密码 <code>Paabdbcd</code> 不是安全密码（没有数字）。</li>\n<li>密码 <code>Pa2</code> 不是安全密码（只有 $3$ 位，太短了）。</li>\n</ul>\n<h3>数据范围</h3>\n<p>对于所有测试点，保证 $1 \\leq T \\leq 100$，并且每组密码长度不超过 $100$ 且至少为 $1$，每组密码仅由大小写字母和数字组成。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：小杨的智慧购物**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨的班级要举办一个环保手工作品展览，老师请小杨去文具店购买 $M$ 种不同的文具（例如：铅笔、橡皮、尺子等）。\n\n商店里共有 $N$ 件文具，每件文具都有一个种类编号（从 $1$ 到 $M$）和价格。\n\n小杨的预算有限，他想了一个聪明的办法：对于每种文具，他只买最便宜的那一件（如果同种文具有多件价格相同且都是最便宜的，他只会购买其中的一件）。请你帮小杨计算出，买齐这 $M$ 种文具一共需要花费多少钱。\n\n\n**输入格式**\n\n第一行两个正整数 $M, N$，代表文具的种类数和总数。\n\n之后 $N$ 行，每行两个正整数 $K_i$ 和 $P_i$，分别代表第 $i$ 件文具的种类编号和它的价格。数据保证每个种类至少有一件文具可供购买。\n\n**输出格式**\n\n输出一行，代表购买文具的总价。\n\n**样例输入 #1**\n```\n2 5\n1 1\n1 2\n1 1\n2 3\n2 10\n```\n\n**样例输出 #1**\n```\n4\n```\n\n**说明/提示**\n\n### 样例解释\n\n文具清单如下：\n\n- 文具 1：种类 1，价格 $1$\n- 文具 2：种类 1，价格 $2$\n- 文具 3：种类 1，价格 $1$\n- 文具 4：种类 2，价格 $3$\n- 文具 5：种类 2，价格 $10$\n\n小杨的选择过程：对于种类 1：有三件商品，价格分别为 $1, 2, 1$。其中最便宜的价格是 $1$。对于种类 2：有两件商品，价格分别为 $3, 10$。其中最便宜的价格是 $3$。\n\n计算总价：小杨购买这两类文具的总花费为 $1 + 3 = 4$。\n\n### 数据范围\n\n对于所有测试点，保证 $1 \\leq M \\leq N \\leq 10^5$，$1 \\leq K_i \\leq M$，$1 \\leq P_i \\leq 10^3$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：小杨的智慧购物</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨的班级要举办一个环保手工作品展览，老师请小杨去文具店购买 $M$ 种不同的文具（例如：铅笔、橡皮、尺子等）。</p>\n<p>商店里共有 $N$ 件文具，每件文具都有一个种类编号（从 $1$ 到 $M$）和价格。</p>\n<p>小杨的预算有限，他想了一个聪明的办法：对于每种文具，他只买最便宜的那一件（如果同种文具有多件价格相同且都是最便宜的，他只会购买其中的一件）。请你帮小杨计算出，买齐这 $M$ 种文具一共需要花费多少钱。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行两个正整数 $M, N$，代表文具的种类数和总数。</p>\n<p>之后 $N$ 行，每行两个正整数 $K_i$ 和 $P_i$，分别代表第 $i$ 件文具的种类编号和它的价格。数据保证每个种类至少有一件文具可供购买。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，代表购买文具的总价。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>2 5\n1 1\n1 2\n1 1\n2 3\n2 10\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>4\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<h3>样例解释</h3>\n<p>文具清单如下：</p>\n<ul>\n<li>文具 1：种类 1，价格 $1$</li>\n<li>文具 2：种类 1，价格 $2$</li>\n<li>文具 3：种类 1，价格 $1$</li>\n<li>文具 4：种类 2，价格 $3$</li>\n<li>文具 5：种类 2，价格 $10$</li>\n</ul>\n<p>小杨的选择过程：对于种类 1：有三件商品，价格分别为 $1, 2, 1$。其中最便宜的价格是 $1$。对于种类 2：有两件商品，价格分别为 $3, 10$。其中最便宜的价格是 $3$。</p>\n<p>计算总价：小杨购买这两类文具的总花费为 $1 + 3 = 4$。</p>\n<h3>数据范围</h3>\n<p>对于所有测试点，保证 $1 \\leq M \\leq N \\leq 10^5$，$1 \\leq K_i \\leq M$，$1 \\leq P_i \\leq 10^3$。</p>\n"
+    }
+  ],
+  "id": "2025-12-gesp-3",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-12-gesp-3",
+  "version": "68aa53021e68114e",
+  "warnings": [],
+  "objective_score": 50.0
+}

@@ -1,0 +1,631 @@
+{
+  "title": "2024年3月 GESP C++ 4级",
+  "category": "GESP",
+  "level": "4",
+  "date": "2024-03",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2024年3月 GESP C++ 4级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`f(&a);`",
+          "html": "<p><code>f(&amp;a);</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`f(*a);`",
+          "html": "<p><code>f(*a);</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`f(a);`",
+          "html": "<p><code>f(a);</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`f(a-3);`",
+          "html": "<p><code>f(a-3);</code></p>\n"
+        }
+      ],
+      "content": "若函数声明为 `int f(int &x){ x+=3; return x; }`，则对声明的变量 `int a=3`，下面哪个调用能够改变 $a$ 的值( )。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>若函数声明为 <code>int f(int &amp;x){ x+=3; return x; }</code>，则对声明的变量 <code>int a=3</code>，下面哪个调用能够改变 $a$ 的值( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "G",
+          "html": "<p>G</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "e",
+          "html": "<p>e</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "n",
+          "html": "<p>n</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "P",
+          "html": "<p>P</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后，输出的是( )。\n\n```cpp\nint main()\n{\n    int x[] = {2, 0, 2, 4};\n    char geSP[] = \"Grade Examination of SP\";\n    cout << geSP[sizeof(x)] << endl;\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后，输出的是( )。</p>\n<pre><code class=\"language-cpp\">int main()\n{\n    int x[] = {2, 0, 2, 4};\n    char geSP[] = &quot;Grade Examination of SP&quot;;\n    cout &lt;&lt; geSP[sizeof(x)] &lt;&lt; endl;\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1.1$",
+          "html": "<p>$1.1$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3.1$",
+          "html": "<p>$3.1$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后输出是( )。\n\n```cpp\nint foo(float *f)\n{\n    return int(*f*2);\n}\nint main()\n{\n    float fnum[10]={1.1};\n    fnum[1]=foo(fnum);\n    cout << fnum[0]+fnum[1] << endl;\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后输出是( )。</p>\n<pre><code class=\"language-cpp\">int foo(float *f)\n{\n    return int(*f*2);\n}\nint main()\n{\n    float fnum[10]={1.1};\n    fnum[1]=foo(fnum);\n    cout &lt;&lt; fnum[0]+fnum[1] &lt;&lt; endl;\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$16$",
+          "html": "<p>$16$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$48$",
+          "html": "<p>$48$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$64$",
+          "html": "<p>$64$</p>\n"
+        }
+      ],
+      "content": "对二维数组 `int arr[3][16];` ，则 `arr[1]` 占用内存的大小为（ ）字节。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>对二维数组 <code>int arr[3][16];</code> ，则 <code>arr[1]</code> 占用内存的大小为（ ）字节。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0x28cbc4$",
+          "html": "<p>$0x28cbc4$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$0x28cbd0$",
+          "html": "<p>$0x28cbd0$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$0x28cc00$",
+          "html": "<p>$0x28cc00$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "不确定",
+          "html": "<p>不确定</p>\n"
+        }
+      ],
+      "content": "对二维数组 `int arr[3][16];`，若 `arr` 的地址是 $0x28cbc0$，则 `arr[1]` 的值是（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>对二维数组 <code>int arr[3][16];</code>，若 <code>arr</code> 的地址是 $0x28cbc0$，则 <code>arr[1]</code> 的值是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`e`",
+          "html": "<p><code>e</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`I lov`",
+          "html": "<p><code>I lov</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`e GESP!`",
+          "html": "<p><code>e GESP!</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`GESP!`",
+          "html": "<p><code>GESP!</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后输出是（ ）。\n\n```cpp\nint main()\n{\n    char *p = \"I love GESP!\";\n    cout << p + 5 << endl;\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后输出是（ ）。</p>\n<pre><code class=\"language-cpp\">int main()\n{\n    char *p = &quot;I love GESP!&quot;;\n    cout &lt;&lt; p + 5 &lt;&lt; endl;\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "不确定",
+          "html": "<p>不确定</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行以后输出的是（ ）。\n\n```cpp\nint rc=5;\nint main()\n{\n    int rc;\n    cout << ++rc << endl;\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行以后输出的是（ ）。</p>\n<pre><code class=\"language-cpp\">int rc=5;\nint main()\n{\n    int rc;\n    cout &lt;&lt; ++rc &lt;&lt; endl;\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "递推",
+          "html": "<p>递推</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "递归",
+          "html": "<p>递归</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "迭代",
+          "html": "<p>迭代</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "循环",
+          "html": "<p>循环</p>\n"
+        }
+      ],
+      "content": "下面 C++ 函数中采用的算法是（ ）。\n\n```cpp\nint fib(int n)\n{\n    int i, f[n]={0, 1};\n    for(int i=2; i<=n; i++)\n        f[i]=f[i-1]+f[i-2];\n    return f[n];\n}\n```",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下面 C++ 函数中采用的算法是（ ）。</p>\n<pre><code class=\"language-cpp\">int fib(int n)\n{\n    int i, f[n]={0, 1};\n    for(int i=2; i&lt;=n; i++)\n        f[i]=f[i-1]+f[i-2];\n    return f[n];\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "插入排序在最好情况下的时间复杂度是（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>插入排序在最好情况下的时间复杂度是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$X > Y$",
+          "html": "<p>$X &gt; Y$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$X == Y$",
+          "html": "<p>$X == Y$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$X < Y$",
+          "html": "<p>$X &lt; Y$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "不确定",
+          "html": "<p>不确定</p>\n"
+        }
+      ],
+      "content": "在如下的 C++ 代码执行后，设第 11 和 12 行的输出地址值分别为 $X$ 和 $Y$ ，则下面正确的是（ ）。\n\n```cpp\nstruct pass{\n    int no;\n    char name[20];\n    int level;\n};\nint main()\n{\n    struct pass XiaoYang;\n    cout << \"&XiaoYang=\" << &XiaoYang << endl; //第11行\n    cout << \"&(XiaoYang.no)=\" << &(XiaoYang.no) << endl; //第12行\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>在如下的 C++ 代码执行后，设第 11 和 12 行的输出地址值分别为 $X$ 和 $Y$ ，则下面正确的是（ ）。</p>\n<pre><code class=\"language-cpp\">struct pass{\n    int no;\n    char name[20];\n    int level;\n};\nint main()\n{\n    struct pass XiaoYang;\n    cout &lt;&lt; &quot;&amp;XiaoYang=&quot; &lt;&lt; &amp;XiaoYang &lt;&lt; endl; //第11行\n    cout &lt;&lt; &quot;&amp;(XiaoYang.no)=&quot; &lt;&lt; &amp;(XiaoYang.no) &lt;&lt; endl; //第12行\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$2024$",
+          "html": "<p>$2024$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        }
+      ],
+      "content": "如果文件 1.txt 中的内容如下，则执行下面 C++ 代码时，注释了 `####` 那行代码所输出的 $x$ 的值为（ ）。\n\n```cpp\n50 2024 3.16 I\nlove\nGESP!\nint main()\n{\n    ifstream fin;\n    string line;\n    int x;\n    fin.open(\"1.txt\", ios::in);\n    for (int i = 0; i < 2; i++) {\n        fin >> line;\n        cout << line << endl;\n    }\n    fin >> x;\n    cout << x << endl; //####\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>如果文件 1.txt 中的内容如下，则执行下面 C++ 代码时，注释了 <code>####</code> 那行代码所输出的 $x$ 的值为（ ）。</p>\n<pre><code class=\"language-cpp\">50 2024 3.16 I\nlove\nGESP!\nint main()\n{\n    ifstream fin;\n    string line;\n    int x;\n    fin.open(&quot;1.txt&quot;, ios::in);\n    for (int i = 0; i &lt; 2; i++) {\n        fin &gt;&gt; line;\n        cout &lt;&lt; line &lt;&lt; endl;\n    }\n    fin &gt;&gt; x;\n    cout &lt;&lt; x &lt;&lt; endl; //####\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`2024`",
+          "html": "<p><code>2024</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`3.16`",
+          "html": "<p><code>3.16</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`024`",
+          "html": "<p><code>024</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`3`",
+          "html": "<p><code>3</code></p>\n"
+        }
+      ],
+      "content": "执行下列 C++ 代码时输出中的第 2 行是（ ）。\n\n```cpp\nint main()\n{\n    char *s[]={(char*)\"2024\",(char*)\"3.16\",(char*)\"GESP\"};\n    for (int i=0; i< 2; i++){\n        cout << *s+i << endl;\n    }\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>执行下列 C++ 代码时输出中的第 2 行是（ ）。</p>\n<pre><code class=\"language-cpp\">int main()\n{\n    char *s[]={(char*)&quot;2024&quot;,(char*)&quot;3.16&quot;,(char*)&quot;GESP&quot;};\n    for (int i=0; i&lt; 2; i++){\n        cout &lt;&lt; *s+i &lt;&lt; endl;\n    }\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`extern`",
+          "html": "<p><code>extern</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`static`",
+          "html": "<p><code>static</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`inline`",
+          "html": "<p><code>inline</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`public`",
+          "html": "<p><code>public</code></p>\n"
+        }
+      ],
+      "content": "C++ 语言中下面哪个关键字能够限定对象的作用域（ ）。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>C++ 语言中下面哪个关键字能够限定对象的作用域（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "小程序",
+          "html": "<p>小程序</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "计时器",
+          "html": "<p>计时器</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "操作系统",
+          "html": "<p>操作系统</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "神话人物",
+          "html": "<p>神话人物</p>\n"
+        }
+      ],
+      "content": "小杨的父母最近刚刚给他买了一块华为手表，他说手表上跑的是鸿蒙，这个鸿蒙是（ ）。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>小杨的父母最近刚刚给他买了一块华为手表，他说手表上跑的是鸿蒙，这个鸿蒙是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "制造自动驾驶汽车",
+          "html": "<p>制造自动驾驶汽车</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "创立培训学校",
+          "html": "<p>创立培训学校</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "发明汉字激光照排系统",
+          "html": "<p>发明汉字激光照排系统</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "成立方正公司",
+          "html": "<p>成立方正公司</p>\n"
+        }
+      ],
+      "content": "中国计算机学会（CCF）在 2024 年 1 月 27 日的颁奖典礼上颁布了王选奖，王选先生的重大贡献是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>中国计算机学会（CCF）在 2024 年 1 月 27 日的颁奖典礼上颁布了王选奖，王选先生的重大贡献是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "对 `int a[]={2,0,2,4,3,1,6}`，执行第一趟选择排序处理后 $a$ 中数据变为 `{0,2,2,4,3,1,6}`。( )",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>对 <code>int a[]={2,0,2,4,3,1,6}</code>，执行第一趟选择排序处理后 $a$ 中数据变为 <code>{0,2,2,4,3,1,6}</code>。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "如果待排序数据不能都装进内存，需要使用外排序算法。（ ）",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>如果待排序数据不能都装进内存，需要使用外排序算法。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "定义变量 `int a = 5`，则 `cout << &++a` 会输出 $6$。( )",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>定义变量 <code>int a = 5</code>，则 <code>cout &lt;&lt; &amp;++a</code> 会输出 $6$。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "两个函数之间可以使用全局变量来传递数据。 ( )",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>两个函数之间可以使用全局变量来传递数据。 ( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "定义数组 `int a[2024][3][16]={2,0,2,4,3,1,6}`，则 `cout << a[2023][2][15]` 的结果不确定。（ ）",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>定义数组 <code>int a[2024][3][16]={2,0,2,4,3,1,6}</code>，则 <code>cout &lt;&lt; a[2023][2][15]</code> 的结果不确定。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 语言中，函数的参数为指针时，可以在函数内部修改该参数的值。（ ）",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，函数的参数为指针时，可以在函数内部修改该参数的值。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 语言中 `try` 子句里抛出的结构体等类型的异常无法被 `catch` 捕获。（ ）",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中 <code>try</code> 子句里抛出的结构体等类型的异常无法被 <code>catch</code> 捕获。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 语言中 `cout << 9^2 << endl;` 会输出 $81$。（ ）",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>C++ 语言中 <code>cout &lt;&lt; 9^2 &lt;&lt; endl;</code> 会输出 $81$。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "小杨今年春节回奶奶家了，奶奶家的数字电视要设置 ip 地址并接入到 WIFI 盒子才能收看节目，那这个 WIFI 盒子具有路由器的功能。（ ）",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>小杨今年春节回奶奶家了，奶奶家的数字电视要设置 ip 地址并接入到 WIFI 盒子才能收看节目，那这个 WIFI 盒子具有路由器的功能。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "任何一个 `for` 循环都可以转化为等价的 `while` 循环（ ）。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>任何一个 <code>for</code> 循环都可以转化为等价的 <code>while</code> 循环（ ）。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：相似字符串**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n\n对于两个字符串 $A$ 和 $B$，如果 $A$ 可以通过删除一个字符，**或**插入一个字符，**或**修改一个字符变成 $B$，那么我们说 $A$ 和 $B$ 是相似的。\n\n比如 $\\texttt{apple}$ 可以通过插入一个字符变成 $\\texttt{applee}$，可以通过删除一个字符变成 $\\texttt{appe}$，也可以通过修改一个字符变成 $\\texttt{bpple}$。因此 $\\texttt{apple}$ 和 $\\texttt{applee}$、$\\texttt{appe}$、$\\texttt{bpple}$ 都是相似的。但 $\\texttt{applee}$ 并不能 通过任意一个操作变成 $\\texttt{bpple}$，因此它们并不相似。\n\n特别地，两个完全相同的字符串也是相似的。\n\n给定 $T$ 组 $A,B$，请你分别判断它们是否相似。\n\n**输入格式**\n\n第一行一个正整数 $T$。  \n接下来 $T$ 行，每行两个用空格隔开的字符串 $A$ 和 $B$。  \n\n**输出格式**\n\n对组 $A,B$，如果他们相似，输出 ``similar``，否则输出 ``not similar``。\n\n**样例输入 #1**\n```\n5\napple applee\napple appe\napple bpple\napplee bpple\napple apple\n```\n\n**样例输出 #1**\n```\nsimilar\nsimilar\nsimilar\nnot similar\nsimilar\n```\n\n**说明/提示**\n\n对全部的测试数据，保证 $1 \\leq T \\leq 100$，$A$ 和 $B$ 的长度不超过 $50$，仅含小写字母。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：相似字符串</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>对于两个字符串 $A$ 和 $B$，如果 $A$ 可以通过删除一个字符，<strong>或</strong>插入一个字符，<strong>或</strong>修改一个字符变成 $B$，那么我们说 $A$ 和 $B$ 是相似的。</p>\n<p>比如 $\\texttt{apple}$ 可以通过插入一个字符变成 $\\texttt{applee}$，可以通过删除一个字符变成 $\\texttt{appe}$，也可以通过修改一个字符变成 $\\texttt{bpple}$。因此 $\\texttt{apple}$ 和 $\\texttt{applee}$、$\\texttt{appe}$、$\\texttt{bpple}$ 都是相似的。但 $\\texttt{applee}$ 并不能 通过任意一个操作变成 $\\texttt{bpple}$，因此它们并不相似。</p>\n<p>特别地，两个完全相同的字符串也是相似的。</p>\n<p>给定 $T$ 组 $A,B$，请你分别判断它们是否相似。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行一个正整数 $T$。<br />\n接下来 $T$ 行，每行两个用空格隔开的字符串 $A$ 和 $B$。</p>\n<p><strong>输出格式</strong></p>\n<p>对组 $A,B$，如果他们相似，输出 <code>similar</code>，否则输出 <code>not similar</code>。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5\napple applee\napple appe\napple bpple\napplee bpple\napple apple\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>similar\nsimilar\nsimilar\nnot similar\nsimilar\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对全部的测试数据，保证 $1 \\leq T \\leq 100$，$A$ 和 $B$ 的长度不超过 $50$，仅含小写字母。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：做题**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨同学为了提高自己的实力制定了做题计划，在第 $k$ 天时，他必须要完成 $k$ 道题，否则他就会偷懒。\n\n小杨同学现在找到了一个题库，一共有 $n$ 套题单，每一套题单中有一定数量的题目。但是他十分挑剔，每套题单他只会使用一次，每一天也只能使用一套题单里的题目，之后那套题单就会弃之不用。对于每套题单，他不必完成题单内所有的题。\n\n那么问题来了，小杨同学最多做题几天才偷懒呢？\n\n**输入格式**\n\n第一行，一个整数为 $n$，表示有多少套题单。  \n第二行 $n$ 个整数 $a_1, a_2, \\dots a_n$，分别表示每套题单有多少道题。\n\n**输出格式**\n\n输出一行一个整数表示答案。\n\n**样例输入 #1**\n```\n4\n3 1 4 1\n\n```\n\n**样例输出 #1**\n```\n3\n```\n\n**说明/提示**\n\n### 数据规模与约定\n对全部的测试数据，保证 $1 \\leq n \\leq 10^6$，$1 \\leq a_i \\leq 10^9$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：做题</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨同学为了提高自己的实力制定了做题计划，在第 $k$ 天时，他必须要完成 $k$ 道题，否则他就会偷懒。</p>\n<p>小杨同学现在找到了一个题库，一共有 $n$ 套题单，每一套题单中有一定数量的题目。但是他十分挑剔，每套题单他只会使用一次，每一天也只能使用一套题单里的题目，之后那套题单就会弃之不用。对于每套题单，他不必完成题单内所有的题。</p>\n<p>那么问题来了，小杨同学最多做题几天才偷懒呢？</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，一个整数为 $n$，表示有多少套题单。<br />\n第二行 $n$ 个整数 $a_1, a_2, \\dots a_n$，分别表示每套题单有多少道题。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行一个整数表示答案。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4\n3 1 4 1\n\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>3\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<h3>数据规模与约定</h3>\n<p>对全部的测试数据，保证 $1 \\leq n \\leq 10^6$，$1 \\leq a_i \\leq 10^9$。</p>\n"
+    }
+  ],
+  "id": "2024-03-gesp-4",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2024-03-gesp-4",
+  "version": "6272363c276a5625",
+  "warnings": [],
+  "objective_score": 50.0
+}

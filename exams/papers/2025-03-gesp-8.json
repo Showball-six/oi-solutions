@@ -1,0 +1,631 @@
+{
+  "title": "2025年3月 GESP C++ 8级",
+  "category": "GESP",
+  "level": "8",
+  "date": "2025-03",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年3月 GESP C++ 8级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$18$",
+          "html": "<p>$18$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$119$",
+          "html": "<p>$119$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$238$",
+          "html": "<p>$238$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$360$",
+          "html": "<p>$360$</p>\n"
+        }
+      ],
+      "content": "国家“以旧换新”政策仍在继续，小杨家决定在家里旧的冰箱、电视、洗衣机、微波炉中选两种换新。其中，冰箱有 $4$ 种型号可选，电视有 $6$ 种型号可选，洗衣机有 $3$ 种型号可选，微波炉有 $5$ 种型号可选。请问小杨家共有多少种换新的方案？（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>国家“以旧换新”政策仍在继续，小杨家决定在家里旧的冰箱、电视、洗衣机、微波炉中选两种换新。其中，冰箱有 $4$ 种型号可选，电视有 $6$ 种型号可选，洗衣机有 $3$ 种型号可选，微波炉有 $5$ 种型号可选。请问小杨家共有多少种换新的方案？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$495$",
+          "html": "<p>$495$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$96$",
+          "html": "<p>$96$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$7$",
+          "html": "<p>$7$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        }
+      ],
+      "content": "小杨和 $3$ 位朋友约好一起去看电影“哪吒2”。打开购票软件，他们发现，已经没有同一排连续的四个座位了（图中每个方框代表一个座位，红色方框代表已经售出）。朋友们商量了一下，决定分为两组，每组两人在同一排的相邻两个座位，且两组之间至少有一对座位是前后相邻的。请问共有多少种购票方案？（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>小杨和 $3$ 位朋友约好一起去看电影“哪吒2”。打开购票软件，他们发现，已经没有同一排连续的四个座位了（图中每个方框代表一个座位，红色方框代表已经售出）。朋友们商量了一下，决定分为两组，每组两人在同一排的相邻两个座位，且两组之间至少有一对座位是前后相邻的。请问共有多少种购票方案？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "构造函数不能声明为虚函数。",
+          "html": "<p>构造函数不能声明为虚函数。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "析构函数必须声明为虚函数。",
+          "html": "<p>析构函数必须声明为虚函数。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "类的默认构造函数可以被声明为 `private`。",
+          "html": "<p>类的默认构造函数可以被声明为 <code>private</code>。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "类的析构函数可以被声明为 `private`。",
+          "html": "<p>类的析构函数可以被声明为 <code>private</code>。</p>\n"
+        }
+      ],
+      "content": "下面关于 C++ 类构造和析构函数的说法，错误的是（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下面关于 C++ 类构造和析构函数的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "树是一种有向无环图，有向无环图都是一棵树。",
+          "html": "<p>树是一种有向无环图，有向无环图都是一棵树。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "如果把树看做有向图，每个节点指向其子节点，则该图是弱连通图。",
+          "html": "<p>如果把树看做有向图，每个节点指向其子节点，则该图是弱连通图。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$n$ 个顶点且连通的无向图，其最小生成树一定包含 $n-1$ 条边。",
+          "html": "<p>$n$ 个顶点且连通的无向图，其最小生成树一定包含 $n-1$ 条边。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$n$ 个顶点、$n-1$ 条边的有向图，一定不是强连通的。",
+          "html": "<p>$n$ 个顶点、$n-1$ 条边的有向图，一定不是强连通的。</p>\n"
+        }
+      ],
+      "content": "下列关于树和图的说法，错误的是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>下列关于树和图的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$600$",
+          "html": "<p>$600$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$601$",
+          "html": "<p>$601$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$602$",
+          "html": "<p>$602$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$603$",
+          "html": "<p>$603$</p>\n"
+        }
+      ],
+      "content": "从 $1$ 到 $2025$ 这 $2025$ 个数中，包含数字 $5$ 的个数（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>从 $1$ 到 $2025$ 这 $2025$ 个数中，包含数字 $5$ 的个数（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$r \\times \\cos(theta)$",
+          "html": "<p>$r \\times \\cos(theta)$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$r \\times \\cos(theta / 2) \\times 2$",
+          "html": "<p>$r \\times \\cos(theta / 2) \\times 2$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$r \\times \\sin(theta)$",
+          "html": "<p>$r \\times \\sin(theta)$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$r \\times \\sin(theta / 2) \\times 2$",
+          "html": "<p>$r \\times \\sin(theta / 2) \\times 2$</p>\n"
+        }
+      ],
+      "content": "已定义 `double` 类型的变量 $r$ 和 $theta$，分别表示图中圆半径和圆心角。下列表达式中可以求出弦长 $s$ 的是（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>已定义 <code>double</code> 类型的变量 $r$ 和 $theta$，分别表示图中圆半径和圆心角。下列表达式中可以求出弦长 $s$ 的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "无法确定。",
+          "html": "<p>无法确定。</p>\n"
+        }
+      ],
+      "content": "$n$ 个节点的平衡二叉树的高为（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>$n$ 个节点的平衡二叉树的高为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "如果有足够的时间和空间，枚举法能解决一切有限的问题。",
+          "html": "<p>如果有足够的时间和空间，枚举法能解决一切有限的问题。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "分治算法将原问题分为多个子问题进行求解，且分解出的子问题必须相互独立。",
+          "html": "<p>分治算法将原问题分为多个子问题进行求解，且分解出的子问题必须相互独立。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "如果能找到合理的贪心原则，贪心算法往往能够比其他方法更快求解。",
+          "html": "<p>如果能找到合理的贪心原则，贪心算法往往能够比其他方法更快求解。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "倍增法在搜索未知长度的有序数组时，通过动态倍增或减半步长，快速定位目标范围。",
+          "html": "<p>倍增法在搜索未知长度的有序数组时，通过动态倍增或减半步长，快速定位目标范围。</p>\n"
+        }
+      ],
+      "content": "下列关于算法的说法，错误的是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下列关于算法的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`nl + nr == n`",
+          "html": "<p><code>nl + nr == n</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`nl + nr == n2`",
+          "html": "<p><code>nl + nr == n2</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(nl + nr) * (nl + nr) == n`",
+          "html": "<p><code>(nl + nr) * (nl + nr) == n</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`(nl + nr) ^ 2 == n2`",
+          "html": "<p><code>(nl + nr) ^ 2 == n2</code></p>\n"
+        }
+      ],
+      "content": "$9$ 是个神奇的数字，因为它是由两个数 $2$ 和 $3$ 拼接而成，而且 $2 + 3 = 5$，$5^2 = 25$，$25$ 是 $9$ 的平方。小杨决定写个程序找找小于 $N$ 的正整数中共有多少这样神奇的数字。下面程序横线处应填入的是（ ）。\n\n```cpp\n#include <string>\nint count_miracle(int N) {\n    int cnt = 0;\n    for (int n = 1; n * n < N; n++) {\n        int n2 = n * n;\n        std::string s = std::to_string(n2);\n        for (int i = 1; i < s.length(); i++)\n            if (s[i] != '0') {\n                std::string sl = s.substr(0, i);\n                std::string sr = s.substr(i);\n                int nl = std::stoi(sl);\n                int nr = std::stoi(sr);\n                if (_________) // 在此处填入选项\n                    cnt++;\n            }\n    }\n    return cnt;\n}\n```",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>$9$ 是个神奇的数字，因为它是由两个数 $2$ 和 $3$ 拼接而成，而且 $2 + 3 = 5$，$5^2 = 25$，$25$ 是 $9$ 的平方。小杨决定写个程序找找小于 $N$ 的正整数中共有多少这样神奇的数字。下面程序横线处应填入的是（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;string&gt;\nint count_miracle(int N) {\n    int cnt = 0;\n    for (int n = 1; n * n &lt; N; n++) {\n        int n2 = n * n;\n        std::string s = std::to_string(n2);\n        for (int i = 1; i &lt; s.length(); i++)\n            if (s[i] != '0') {\n                std::string sl = s.substr(0, i);\n                std::string sr = s.substr(i);\n                int nl = std::stoi(sl);\n                int nr = std::stoi(sr);\n                if (_________) // 在此处填入选项\n                    cnt++;\n            }\n    }\n    return cnt;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "$n^2$ 是个神奇的数字，因为它是由两个数 $a$ 和 $b$ 拼接而成，而且 $n^2 = a + b$。小杨决定写个程序找找小于 $N$ 的正整数中共有多少这样神奇的数字。该函数的时间复杂度为（ ）。\n\n```cpp\n#include <string>\nint count_miracle(int N) {\n    int cnt = 0;\n    for (int n = 1; n * n < N; n++) {\n        int n2 = n * n;\n        std::string s = std::to_string(n2);\n        for (int i = 1; i < s.length(); i++)\n            if (s[i] != '0') {\n                std::string sl = s.substr(0, i);\n                std::string sr = s.substr(i);\n                int nl = std::stoi(sl);\n                int nr = std::stoi(sr);\n                if (_________) // 在此处填入选项\n                    cnt++;\n            }\n    }\n    return cnt;\n}\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>$n^2$ 是个神奇的数字，因为它是由两个数 $a$ 和 $b$ 拼接而成，而且 $n^2 = a + b$。小杨决定写个程序找找小于 $N$ 的正整数中共有多少这样神奇的数字。该函数的时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;string&gt;\nint count_miracle(int N) {\n    int cnt = 0;\n    for (int n = 1; n * n &lt; N; n++) {\n        int n2 = n * n;\n        std::string s = std::to_string(n2);\n        for (int i = 1; i &lt; s.length(); i++)\n            if (s[i] != '0') {\n                std::string sl = s.substr(0, i);\n                std::string sr = s.substr(i);\n                int nl = std::stoi(sl);\n                int nr = std::stoi(sr);\n                if (_________) // 在此处填入选项\n                    cnt++;\n            }\n    }\n    return cnt;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nn * primes[i] < MAXN\nn % primes[i] == 0\n```",
+          "html": "<pre><code class=\"language-cpp\">n * primes[i] &lt; MAXN\nn % primes[i] == 0\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\nn * primes[i] < MAXN\nprimes[i] > n\n```",
+          "html": "<pre><code class=\"language-cpp\">n * primes[i] &lt; MAXN\nprimes[i] &gt; n\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\nn * primes[i] <= MAXN\nn % primes[i] == 0\n```",
+          "html": "<pre><code class=\"language-cpp\">n * primes[i] &lt;= MAXN\nn % primes[i] == 0\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nn * primes[i] <= MAXN\nprimes[i] > n\n```",
+          "html": "<pre><code class=\"language-cpp\">n * primes[i] &lt;= MAXN\nprimes[i] &gt; n\n</code></pre>\n"
+        }
+      ],
+      "content": "下面的欧氏筛法程序中，两个横线处应填入的分别是（ ）。\n\n```cpp\nint primes[MAXP], num = 0;\nbool isPrime[MAXN + 1] = {false};\nvoid sieve() {\n    for (int n = 2; n <= MAXN; n++) {\n        if (!isPrime[n])\n            primes[num++] = n;\n        for (int i = 0; i < num && ________; i++) { // 在此处填入选项\n            isPrime[n * primes[i]] = true;\n            if (________) // 在此处填入选项\n                break;\n        }\n    }\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面的欧氏筛法程序中，两个横线处应填入的分别是（ ）。</p>\n<pre><code class=\"language-cpp\">int primes[MAXP], num = 0;\nbool isPrime[MAXN + 1] = {false};\nvoid sieve() {\n    for (int n = 2; n &lt;= MAXN; n++) {\n        if (!isPrime[n])\n            primes[num++] = n;\n        for (int i = 0; i &lt; num &amp;&amp; ________; i++) { // 在此处填入选项\n            isPrime[n * primes[i]] = true;\n            if (________) // 在此处填入选项\n                break;\n        }\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`map[i][j] = map[i][k] + map[k][j]`",
+          "html": "<p><code>map[i][j] = map[i][k] + map[k][j]</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`map[i][k] = map[i][j] - map[k][j]`",
+          "html": "<p><code>map[i][k] = map[i][j] - map[k][j]</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`map[i][j] = map[i][k] - map[k][j]`",
+          "html": "<p><code>map[i][j] = map[i][k] - map[k][j]</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`map[k][j] = map[i][j] - map[i][k]`",
+          "html": "<p><code>map[k][j] = map[i][j] - map[i][k]</code></p>\n"
+        }
+      ],
+      "content": "下面 Floyd 算法中，横线处应该填入的是（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\n#define N 21\n#define INF 99999999\nint map[N][N];\nint main() {\n    int n, m, t1, t2, t3;\n    cin >> n >> m;\n    for (int i = 1; i <= n; i++) {\n        for (int j = 1; j <= n; j++) {\n            if (i == j)\n                map[i][j] = 0;\n            else\n                map[i][j] = INF;\n        }\n    }\n    for (int i = 1; i <= m; i++) {\n        cin >> t1 >> t2 >> t3;\n        map[t1][t2] = t3;\n    }\n    for (int k = 1; k <= n; k++)\n        for (int i = 1; i <= n; i++)\n            for (int j = 1; j <= n; j++)\n                if (map[i][j] > map[i][k] + map[k][j])\n                    ________; // 在此处填入选项\n    for (int i = 1; i <= n; i++) {\n        for (int j = 1; j <= n; j++) {\n            cout.width(4);\n            cout << map[i][j];\n        }\n        cout << endl;\n    }\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下面 Floyd 算法中，横线处应该填入的是（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\n#define N 21\n#define INF 99999999\nint map[N][N];\nint main() {\n    int n, m, t1, t2, t3;\n    cin &gt;&gt; n &gt;&gt; m;\n    for (int i = 1; i &lt;= n; i++) {\n        for (int j = 1; j &lt;= n; j++) {\n            if (i == j)\n                map[i][j] = 0;\n            else\n                map[i][j] = INF;\n        }\n    }\n    for (int i = 1; i &lt;= m; i++) {\n        cin &gt;&gt; t1 &gt;&gt; t2 &gt;&gt; t3;\n        map[t1][t2] = t3;\n    }\n    for (int k = 1; k &lt;= n; k++)\n        for (int i = 1; i &lt;= n; i++)\n            for (int j = 1; j &lt;= n; j++)\n                if (map[i][j] &gt; map[i][k] + map[k][j])\n                    ________; // 在此处填入选项\n    for (int i = 1; i &lt;= n; i++) {\n        for (int j = 1; j &lt;= n; j++) {\n            cout.width(4);\n            cout &lt;&lt; map[i][j];\n        }\n        cout &lt;&lt; endl;\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面 Floyd 算法程序的时间复杂度为（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\n#define N 21\n#define INF 99999999\nint map[N][N];\nint main() {\n    int n, m, t1, t2, t3;\n    cin >> n >> m;\n    for (int i = 1; i <= n; i++) {\n        for (int j = 1; j <= n; j++) {\n            if (i == j)\n                map[i][j] = 0;\n            else\n                map[i][j] = INF;\n        }\n    }\n    for (int i = 1; i <= m; i++) {\n        cin >> t1 >> t2 >> t3;\n        map[t1][t2] = t3;\n    }\n    for (int k = 1; k <= n; k++)\n        for (int i = 1; i <= n; i++)\n            for (int j = 1; j <= n; j++)\n                if (map[i][j] > map[i][k] + map[k][j])\n                    ________; // 在此处填入选项\n    for (int i = 1; i <= n; i++) {\n        for (int j = 1; j <= n; j++) {\n            cout.width(4);\n            cout << map[i][j];\n        }\n        cout << endl;\n    }\n}\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>下面 Floyd 算法程序的时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\n#define N 21\n#define INF 99999999\nint map[N][N];\nint main() {\n    int n, m, t1, t2, t3;\n    cin &gt;&gt; n &gt;&gt; m;\n    for (int i = 1; i &lt;= n; i++) {\n        for (int j = 1; j &lt;= n; j++) {\n            if (i == j)\n                map[i][j] = 0;\n            else\n                map[i][j] = INF;\n        }\n    }\n    for (int i = 1; i &lt;= m; i++) {\n        cin &gt;&gt; t1 &gt;&gt; t2 &gt;&gt; t3;\n        map[t1][t2] = t3;\n    }\n    for (int k = 1; k &lt;= n; k++)\n        for (int i = 1; i &lt;= n; i++)\n            for (int j = 1; j &lt;= n; j++)\n                if (map[i][j] &gt; map[i][k] + map[k][j])\n                    ________; // 在此处填入选项\n    for (int i = 1; i &lt;= n; i++) {\n        for (int j = 1; j &lt;= n; j++) {\n            cout.width(4);\n            cout &lt;&lt; map[i][j];\n        }\n        cout &lt;&lt; endl;\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`a[j] += a[j + 1]`",
+          "html": "<p><code>a[j] += a[j + 1]</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`a[j] += a[j - 1]`",
+          "html": "<p><code>a[j] += a[j - 1]</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`a[j - 1] += a[j]`",
+          "html": "<p><code>a[j - 1] += a[j]</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`a[j + 1] += a[j]`",
+          "html": "<p><code>a[j + 1] += a[j]</code></p>\n"
+        }
+      ],
+      "content": "下列程序实现了输出杨辉三角形，代码中横线部分应该填入的是（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\n#define N 35\nint a[N];\nint main() {\n    int n;\n    cin >> n;\n    for (int i = 0; i < n; i++) {\n        a[i] = 1;\n        for (int j = i - 1; j > 0; j--)\n            ________; // 在此处填入选项\n        for (int j = 0; j <= i; j++)\n            cout << a[j] << \" \";\n        cout << endl;\n    }\n    return 0;\n}\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>下列程序实现了输出杨辉三角形，代码中横线部分应该填入的是（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\n#define N 35\nint a[N];\nint main() {\n    int n;\n    cin &gt;&gt; n;\n    for (int i = 0; i &lt; n; i++) {\n        a[i] = 1;\n        for (int j = i - 1; j &gt; 0; j--)\n            ________; // 在此处填入选项\n        for (int j = 0; j &lt;= i; j++)\n            cout &lt;&lt; a[j] &lt;&lt; &quot; &quot;;\n        cout &lt;&lt; endl;\n    }\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下列程序实现了输出杨辉三角形，其时间复杂度为（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\n#define N 35\nint a[N];\nint main() {\n    int n;\n    cin >> n;\n    for (int i = 0; i < n; i++) {\n        a[i] = 1;\n        for (int j = i - 1; j > 0; j--)\n            ________; // 在此处填入选项\n        for (int j = 0; j <= i; j++)\n            cout << a[j] << \" \";\n        cout << endl;\n    }\n    return 0;\n}\n```",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>下列程序实现了输出杨辉三角形，其时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\n#define N 35\nint a[N];\nint main() {\n    int n;\n    cin &gt;&gt; n;\n    for (int i = 0; i &lt; n; i++) {\n        a[i] = 1;\n        for (int j = i - 1; j &gt; 0; j--)\n            ________; // 在此处填入选项\n        for (int j = 0; j &lt;= i; j++)\n            cout &lt;&lt; a[j] &lt;&lt; &quot; &quot;;\n        cout &lt;&lt; endl;\n    }\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "表达式 `'5' - 3.0` 的结果为 $2.0$，类型为 `double`。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>表达式 <code>'5' - 3.0</code> 的结果为 $2.0$，类型为 <code>double</code>。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 语言中，如果想要在一个函数内调用一个类的私有方法，可以在该类中将该函数声明为友元函数。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，如果想要在一个函数内调用一个类的私有方法，可以在该类中将该函数声明为友元函数。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "插入排序一般是稳定的。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>插入排序一般是稳定的。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "$5$ 个相同的红球和 $4$ 个相同的蓝球排成一排，要求蓝球不能相邻，则一共有 $15$ 种排列方案。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>$5$ 个相同的红球和 $4$ 个相同的蓝球排成一排，要求蓝球不能相邻，则一共有 $15$ 种排列方案。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "使用 `math.h` 或 `cmath` 头文件中的函数，表达式 `pow(2, 5)` 的结果类型为 `int` 、值为 $32$ 。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>使用 <code>math.h</code> 或 <code>cmath</code> 头文件中的函数，表达式 <code>pow(2, 5)</code> 的结果类型为 <code>int</code> 、值为 $32$ 。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 是一种面向对象编程语言，C 则不是。多态是面向对象三大特性之一，虚函数是动态多态的代表特性。\n因此，使用 C 语言无法实现虚函数。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>C++ 是一种面向对象编程语言，C 则不是。多态是面向对象三大特性之一，虚函数是动态多态的代表特性。<br />\n因此，使用 C 语言无法实现虚函数。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 $n$ 个节点的平衡二叉树中查找指定元素的最差时间复杂度为 $O(\\log n)$。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>在 $n$ 个节点的平衡二叉树中查找指定元素的最差时间复杂度为 $O(\\log n)$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "定义 `int` 类型的变量 $a$ 和 $b$ ，求二次函数取最小值时 $x$ 的值，可以通过表达式 `-a / 2.0` 求得。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>定义 <code>int</code> 类型的变量 $a$ 和 $b$ ，求二次函数取最小值时 $x$ 的值，可以通过表达式 <code>-a / 2.0</code> 求得。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "判断无向图中是否有环，可以通过广度优先搜索实现。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>判断无向图中是否有环，可以通过广度优先搜索实现。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "从 $32$ 名学生中选出 $4$ 人分别担任班长、副班长、学习委员和组织委员，共有 种不同的选法。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>从 $32$ 名学生中选出 $4$ 人分别担任班长、副班长、学习委员和组织委员，共有 种不同的选法。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：上学**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\nC 城可以视为由 $n$ 个结点与 $m$ 条边组成的无向图。 这些结点依次以 $1, 2, \\ldots, n$ 标号，边依次以 $1 \\leq i \\leq m$ 连接边号为 $u_i$ 与 $v_i$ 的结点，长度为 $l_i$ 米。\n\n小 A 的学校坐落在 C 城的编号为 $s$ 的结点。小 A 的同学们共有 $q$ 位，他们想在保证不迟到的前提下，每天尽可能晚地出门上学。但同学们并不会计算从家需要多久才能到学校，于是找到了聪明的小 A。第 $i$ 位同学 ($1 \\leq i \\leq q$) 告诉小 A，他的家位置于编号为 $h_i$ 的结点，并且他每秒钟能行走 1 米。请你帮小 A 计算，每位同学从家出发需要多少秒才能到达学校呢？\n\n**输入格式**\n\n第一行，四个正整数 $n, m, s, q$，分别表示 C 城的结点数与边数，学校所在的结点编号，以及小 A 同学们的数量。\n\n接下来 $m$ 行，每行三个正整数 $u_i, v_i, l_i$，表示 C 城中的一条无向边。\n\n接下来 $q$ 行，每行一个正整数 $h_i$，表示一位同学的情况。\n\n**输出格式**\n\n共 $q$ 行，对于每位同学，输出一个整数，表示从家出发到学校的最短时间。\n\n**样例输入 #1**\n```\n5 5 3 3\n1 2 3\n2 3 2\n3 4 1\n4 5 3\n1 4 2\n5\n1\n4\n```\n\n**样例输出 #1**\n```\n4\n3\n1\n```\n\n**说明/提示**\n\n**本题采用捆绑测试。**\n\n对于 $20\\%$ 的测试点，保证 $q = 1$。\n\n对于另外 $20\\%$ 的测试点，保证 $1 \\leq n \\leq 500$，$1 \\leq m \\leq 500$。\n\n对于所有测试点，保证 $1 \\leq n \\leq 2 \\times 10^5$，$1 \\leq m \\leq 2 \\times 10^5$，$1 \\leq q \\leq 2 \\times 10^5$，$1 \\leq u_i, v_i, s, h_i \\leq n$，$1 \\leq l_i \\leq 10^6$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：上学</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>C 城可以视为由 $n$ 个结点与 $m$ 条边组成的无向图。 这些结点依次以 $1, 2, \\ldots, n$ 标号，边依次以 $1 \\leq i \\leq m$ 连接边号为 $u_i$ 与 $v_i$ 的结点，长度为 $l_i$ 米。</p>\n<p>小 A 的学校坐落在 C 城的编号为 $s$ 的结点。小 A 的同学们共有 $q$ 位，他们想在保证不迟到的前提下，每天尽可能晚地出门上学。但同学们并不会计算从家需要多久才能到学校，于是找到了聪明的小 A。第 $i$ 位同学 ($1 \\leq i \\leq q$) 告诉小 A，他的家位置于编号为 $h_i$ 的结点，并且他每秒钟能行走 1 米。请你帮小 A 计算，每位同学从家出发需要多少秒才能到达学校呢？</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，四个正整数 $n, m, s, q$，分别表示 C 城的结点数与边数，学校所在的结点编号，以及小 A 同学们的数量。</p>\n<p>接下来 $m$ 行，每行三个正整数 $u_i, v_i, l_i$，表示 C 城中的一条无向边。</p>\n<p>接下来 $q$ 行，每行一个正整数 $h_i$，表示一位同学的情况。</p>\n<p><strong>输出格式</strong></p>\n<p>共 $q$ 行，对于每位同学，输出一个整数，表示从家出发到学校的最短时间。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5 5 3 3\n1 2 3\n2 3 2\n3 4 1\n4 5 3\n1 4 2\n5\n1\n4\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>4\n3\n1\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p><strong>本题采用捆绑测试。</strong></p>\n<p>对于 $20\\%$ 的测试点，保证 $q = 1$。</p>\n<p>对于另外 $20\\%$ 的测试点，保证 $1 \\leq n \\leq 500$，$1 \\leq m \\leq 500$。</p>\n<p>对于所有测试点，保证 $1 \\leq n \\leq 2 \\times 10^5$，$1 \\leq m \\leq 2 \\times 10^5$，$1 \\leq q \\leq 2 \\times 10^5$，$1 \\leq u_i, v_i, s, h_i \\leq n$，$1 \\leq l_i \\leq 10^6$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：割裂**\n\n> 时间限制：4.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨有一棵包含 $ n $ 个节点的树，其中节点的编号从 $ 1 $ 到 $ n $。\n\n小杨设置了 $ a $ 个好点对 $\\{\\langle u_1, v_1 \\rangle, \\langle u_2, v_2 \\rangle, \\dots, \\langle u_a, v_a \\rangle\\}$ 和一个坏点对 $\\langle b_u, b_v \\rangle$。一个节点能被删除，当且仅当：\n\n- 删除该节点后对于所有的 $ 1 \\leq i \\leq a $，好点对 $ u_i $ 和 $ v_i $ 仍然连通；\n- 删除该节点后坏点对 $ b_u $ 和 $ b_v $ 不连通。\n\n如果点对中的任意一个节点被删除，其视为不连通。\n\n小杨想知道，还有多少个节点能被删除。\n\n**输入格式**\n\n第一行包含两个非负整数 $ n $, $ a $，含义如下题面所示。\n\n接下来 $n - 1$ 行，每行包含两个正整数 $ x_i, y_i $，代表存在一条连接节点 $ x_i $ 和 $ y_i $ 的边；\n\n之后 $ a $ 行，每行包含两个正整数 $ u_i, v_i $，代表一个好点对 $ \\langle u_i, v_i \\rangle $；\n\n最后一行包含两个正整数 $ b_u, b_v $，代表坏点对 $ \\langle b_u, b_v \\rangle $。\n\n**输出格式**\n\n输出一个非负整数，代表删除的节点个数。\n\n**样例输入 #1**\n```\n6 2\n1 3\n1 5\n3 6\n3 2\n5 4\n5 4\n5 3\n2 6\n```\n\n**样例输出 #1**\n```\n2\n```\n\n**说明/提示**\n\n| 子任务编号 | 分值 | $ n $ | $ a $ |\n|:-:|:-:|:-:|:-:|\n| 1          | $20$  | $=10$     | $=0$      |\n| 2          | $20$  | $ \\leq 100 $ | $ \\leq 100 $ |\n| 3          | $60$  | $ \\leq 10^6 $ | $ \\leq 10^5 $ |\n\n对于全部数据，保证有 $ 1 \\leq n \\leq 10^6 $, $ 0 \\leq a \\leq 10^5 $, $ u_i \\neq v_i $, $ b_u \\neq b_v $。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：割裂</strong></p>\n<blockquote>\n<p>时间限制：4.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨有一棵包含 $ n $ 个节点的树，其中节点的编号从 $ 1 $ 到 $ n $。</p>\n<p>小杨设置了 $ a $ 个好点对 $\\{\\langle u_1, v_1 \\rangle, \\langle u_2, v_2 \\rangle, \\dots, \\langle u_a, v_a \\rangle\\}$ 和一个坏点对 $\\langle b_u, b_v \\rangle$。一个节点能被删除，当且仅当：</p>\n<ul>\n<li>删除该节点后对于所有的 $ 1 \\leq i \\leq a $，好点对 $ u_i $ 和 $ v_i $ 仍然连通；</li>\n<li>删除该节点后坏点对 $ b_u $ 和 $ b_v $ 不连通。</li>\n</ul>\n<p>如果点对中的任意一个节点被删除，其视为不连通。</p>\n<p>小杨想知道，还有多少个节点能被删除。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含两个非负整数 $ n $, $ a $，含义如下题面所示。</p>\n<p>接下来 $n - 1$ 行，每行包含两个正整数 $ x_i, y_i $，代表存在一条连接节点 $ x_i $ 和 $ y_i $ 的边；</p>\n<p>之后 $ a $ 行，每行包含两个正整数 $ u_i, v_i $，代表一个好点对 $ \\langle u_i, v_i \\rangle $；</p>\n<p>最后一行包含两个正整数 $ b_u, b_v $，代表坏点对 $ \\langle b_u, b_v \\rangle $。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一个非负整数，代表删除的节点个数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>6 2\n1 3\n1 5\n3 6\n3 2\n5 4\n5 4\n5 3\n2 6\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>2\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\">子任务编号</th>\n<th style=\"text-align:center\">分值</th>\n<th style=\"text-align:center\">$ n $</th>\n<th style=\"text-align:center\">$ a $</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">1</td>\n<td style=\"text-align:center\">$20$</td>\n<td style=\"text-align:center\">$=10$</td>\n<td style=\"text-align:center\">$=0$</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">2</td>\n<td style=\"text-align:center\">$20$</td>\n<td style=\"text-align:center\">$ \\leq 100 $</td>\n<td style=\"text-align:center\">$ \\leq 100 $</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">3</td>\n<td style=\"text-align:center\">$60$</td>\n<td style=\"text-align:center\">$ \\leq 10^6 $</td>\n<td style=\"text-align:center\">$ \\leq 10^5 $</td>\n</tr>\n</tbody>\n</table>\n<p>对于全部数据，保证有 $ 1 \\leq n \\leq 10^6 $, $ 0 \\leq a \\leq 10^5 $, $ u_i \\neq v_i $, $ b_u \\neq b_v $。</p>\n"
+    }
+  ],
+  "id": "2025-03-gesp-8",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-03-gesp-8",
+  "version": "83b799297af00f99",
+  "warnings": [],
+  "objective_score": 50.0
+}

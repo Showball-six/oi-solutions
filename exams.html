@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="color-scheme" content="light dark"><meta name="description" content="GESP、CSP、NCT 笔试练习，支持客观题评分与本地答题记录。"><title>笔试练习 · Showball OI</title><link rel="stylesheet" href="assets/theme.css"><script defer src="assets/app.js"></script><link rel="stylesheet" href="assets/hub.css">
+</head>
+<body data-page="exams">
+<a class="skip-link" href="#main-content">跳到正文</a><header class="topbar"><div class="topbar-inner"><a class="logo" href="index.html"><span class="logo-icon">S</span><span>Showball <small>OI</small></span></a><nav class="nav-cards" id="site-nav" aria-label="主导航"><a class="nav-card" data-page="courses" href="memos.html">课程讲义</a><a class="nav-card" data-page="exams" href="exams.html">笔试练习</a><a class="nav-card" data-page="favorites" href="favorite.html">题目题解</a><a class="nav-card" data-page="templates" href="templates.html">代码模板</a><a class="nav-card" data-page="tools" href="tools.html">工具</a></nav><div class="topbar-actions"><time class="topbar-time" id="clock"></time><button class="theme-button" data-theme-toggle aria-label="切换主题">主题</button><button class="menu-button" data-menu-toggle aria-controls="site-nav" aria-expanded="false">导航</button></div></div></header>
+<main id="main-content" class="page"><header class="page-header"><p class="eyebrow">训练</p><h1 class="page-title">笔试练习</h1><p class="page-desc">选择一份试卷开始练习，交卷后查看参考答案。答题记录保存在当前浏览器。</p></header>
+<div class="category-tabs" id="categories" aria-label="比赛分类"></div>
+<form class="exam-filters" id="filters" role="search"><label class="field grow">搜索试卷<input type="search" id="exam-search" placeholder="试卷名称、年份或级别" autocomplete="off"></label><label class="field">级别<select id="exam-level"><option value="">全部级别</option></select></label><label class="field">年份<select id="exam-year"><option value="">全部年份</option></select></label><button class="btn" type="button" id="clear-filters">清空筛选</button></form>
+<div class="list-heading"><span id="catalog-status" role="status" aria-live="polite">正在加载试卷…</span></div>
+<div id="paper-list" class="paper-list"></div>
+<div id="catalog-error" class="notice warning" hidden>暂时无法读取试卷目录。<button class="btn" id="retry-catalog">重新加载</button></div>
+<nav class="pagination-wrap" aria-label="试卷分页"><span id="page-info" class="page-info"></span><div class="button-row"><button class="btn" id="prev-page" disabled>上一页</button><button class="btn" id="next-page" disabled>下一页</button></div></nav>
+<p class="small muted">题库整理自远明老师的刷题中心。参考答案用于练习自查，编程题需另行评测。</p>
+</main><footer class="site-footer">© 2026 Showball OI · 学习与训练</footer>
+<script>
+(() => {
+ const $=id=>document.getElementById(id), esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const params=new URLSearchParams(location.search), size=20;
+ let papers=[], category=params.get('category')||'', page=Math.max(1,Number(params.get('page'))||1);
+ $('exam-search').value=params.get('q')||'';
+ const labels={'GESP':'GESP','CSP-J':'CSP-J','CSP-S':'CSP-S','NCT-C++':'NCT C++','NCT-KITTEN':'NCT Kitten','OTHER':'其他赛事'};
+ function options(){
+  const current=papers.filter(p=>!category||p.category===category);
+  const level=$('exam-level').value||params.get('level')||'', year=$('exam-year').value||params.get('year')||'';
+  const levels=[...new Set(current.map(p=>String(p.level||'')).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'zh-CN',{numeric:true}));
+  $('exam-level').innerHTML='<option value="">全部级别</option>'+levels.map(v=>`<option value="${esc(v)}">${esc(v)}${/^\d+$/.test(v)?'级':''}</option>`).join('');
+  if(levels.includes(level))$('exam-level').value=level;
+  const years=[...new Set(current.map(p=>String(p.date||'').slice(0,4)).filter(y=>/^\d{4}$/.test(y)))].sort().reverse();
+  $('exam-year').innerHTML='<option value="">全部年份</option>'+years.map(v=>`<option>${v}</option>`).join('');if(years.includes(year))$('exam-year').value=year;
+ }
+ function render(){
+  const query=$('exam-search').value.trim().toLowerCase(), level=$('exam-level').value, year=$('exam-year').value;
+  const filtered=papers.filter(p=>(!category||p.category===category)&&(!level||String(p.level)===level)&&(!year||String(p.date).startsWith(year))&&query.split(/\s+/).every(t=>`${p.title} ${p.category} ${p.date} ${p.level}级`.toLowerCase().includes(t)));
+  const totalPages=Math.max(1,Math.ceil(filtered.length/size));page=Math.min(Math.max(1,page),totalPages);
+  const url=new URL(location.href);url.search='';for(const [k,v] of Object.entries({category,q:query,level,year,page:page>1?String(page):''}))if(v)url.searchParams.set(k,v);history.replaceState(null,'',url);
+  try{sessionStorage.setItem('showball-exams-return',url.pathname+url.search);}catch{}
+  $('catalog-status').textContent=`${filtered.length} 份试卷${category?' · '+(labels[category]||category):''}`;
+  document.querySelectorAll('[data-category]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.category===category)));
+  $('paper-list').innerHTML=filtered.slice((page-1)*size,page*size).map(p=>{
+   let stored=null;try{stored=JSON.parse(localStorage.getItem(`showball-exam:v1:${p.id}:${p.version}`));}catch{}
+   const progress=stored?.submitted?'已完成':stored?.answers&&Object.keys(stored.answers).length?'继续练习':'开始练习';
+   return `<a class="paper-row" href="${esc(p.href)}"><span class="paper-category">${esc(labels[p.category]||p.category)}</span><span class="paper-info"><strong>${esc(p.title)}</strong><small>${esc([p.date,p.level&&`${p.level}${/^\d+$/.test(p.level)?'级':''}`,`${p.count} 题`,`${p.time_limit||'—'} 分钟`,`客观题 ${p.objective_score} 分`].filter(Boolean).join(' · '))}</small></span><span class="paper-progress">${progress}</span></a>`;
+  }).join('')||'<div class="empty-state">没有找到符合条件的试卷，请调整关键词或清空筛选。</div>';
+  $('page-info').textContent=`第 ${page} / ${totalPages} 页 · 每页 ${size} 份`;$('prev-page').disabled=page<=1;$('next-page').disabled=page>=totalPages;
+ }
+ $('filters').onsubmit=e=>e.preventDefault();let timer;
+ $('exam-search').addEventListener('input',e=>{if(e.isComposing)return;clearTimeout(timer);timer=setTimeout(()=>{page=1;render();},200);});
+ $('exam-search').addEventListener('compositionend',()=>{page=1;render();});
+ for(const id of ['exam-level','exam-year'])$(id).onchange=()=>{page=1;render();};
+ $('categories').onclick=e=>{const b=e.target.closest('[data-category]');if(!b)return;category=b.dataset.category;params.delete('level');params.delete('year');$('exam-level').value='';$('exam-year').value='';page=1;options();render();};
+ $('clear-filters').onclick=()=>{category='';params.delete('level');params.delete('year');$('exam-search').value='';$('exam-level').value='';$('exam-year').value='';page=1;options();render();};
+ $('prev-page').onclick=()=>{page--;render();$('paper-list').scrollIntoView({block:'start'});};$('next-page').onclick=()=>{page++;render();$('paper-list').scrollIntoView({block:'start'});};
+ async function load(){try{
+  $('catalog-error').hidden=true;const r=await fetch('exams/catalog.json');if(!r.ok)throw Error(r.status);papers=await r.json();
+  const categories=[...new Set(papers.map(p=>p.category))].sort((a,b)=>{const order=Object.keys(labels);return (order.indexOf(a)<0?99:order.indexOf(a))-(order.indexOf(b)<0?99:order.indexOf(b));});
+  if(category&&!categories.includes(category))category='';
+  $('categories').innerHTML=['',...categories].map(c=>`<button class="category-tab" data-category="${esc(c)}" aria-pressed="false">${esc(c?(labels[c]||c):'全部试卷')} <small>${c?papers.filter(p=>p.category===c).length:papers.length}</small></button>`).join('');options();render();
+ }catch{$('catalog-status').textContent='目录加载失败';$('catalog-error').hidden=false;}}
+ $('retry-catalog').onclick=load;window.addEventListener('pageshow',()=>{if(papers.length)render();});load();
+})();
+</script></body></html>

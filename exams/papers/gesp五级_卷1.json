@@ -1,0 +1,631 @@
+{
+  "title": "GESP C++ 五级 模拟卷1",
+  "category": "GESP",
+  "level": "5",
+  "date": "2026-06",
+  "time_limit": 120,
+  "total_score": 100,
+  "description": "GESP C++ 五级模拟卷1（链表操作、数论、快速排序、二分查找、贪心算法）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "A",
+      "content": "与数组相比，链表在以下哪种操作上通常具有更高的效率？（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "在已知位置插入或删除节点",
+          "html": "<p>在已知位置插入或删除节点</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "通过下标随机访问元素",
+          "html": "<p>通过下标随机访问元素</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "在未排序链表中查找指定值",
+          "html": "<p>在未排序链表中查找指定值</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "计算链表中元素的总个数",
+          "html": "<p>计算链表中元素的总个数</p>\n"
+        }
+      ],
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>与数组相比，链表在以下哪种操作上通常具有更高的效率？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "B",
+      "content": "用辗转相除法求 `gcd(72, 30)` 时，第一步计算 `72 % 30 = 12`，则第二步计算的是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "`gcd(72, 12)`",
+          "html": "<p><code>gcd(72, 12)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`gcd(30, 12)`",
+          "html": "<p><code>gcd(30, 12)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`gcd(12, 6)`",
+          "html": "<p><code>gcd(12, 6)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`gcd(30, 72)`",
+          "html": "<p><code>gcd(30, 72)</code></p>\n"
+        }
+      ],
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>用辗转相除法求 <code>gcd(72, 30)</code> 时，第一步计算 <code>72 % 30 = 12</code>，则第二步计算的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "C",
+      "content": "以下代码用于判断正整数 n 是否为质数，横线处应填入（ ）\n\n```cpp\nbool isPrime(int n) {\n    if (n < 2) return false;\n    for (int i = 2; i <= sqrt(n); i++) {\n        if (______) return false;\n    }\n    return true;\n}\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "`n / i == 0`",
+          "html": "<p><code>n / i == 0</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`i * i > n`",
+          "html": "<p><code>i * i &gt; n</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`n % i == 0`",
+          "html": "<p><code>n % i == 0</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`n - i == 0`",
+          "html": "<p><code>n - i == 0</code></p>\n"
+        }
+      ],
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>以下代码用于判断正整数 n 是否为质数，横线处应填入（ ）</p>\n<pre><code class=\"language-cpp\">bool isPrime(int n) {\n    if (n &lt; 2) return false;\n    for (int i = 2; i &lt;= sqrt(n); i++) {\n        if (______) return false;\n    }\n    return true;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "D",
+      "content": "以下快速排序的 partition 函数中，横线处应填入（ ）\n\n```cpp\nint partition(int arr[], int low, int high) {\n    int pivot = arr[high];\n    int i = low - 1;\n    for (int j = low; j < high; j++) {\n        if (______) {\n            i++;\n            swap(arr[i], arr[j]);\n        }\n    }\n    swap(arr[i + 1], arr[high]);\n    return i + 1;\n}\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "`arr[j] > pivot`",
+          "html": "<p><code>arr[j] &gt; pivot</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`arr[j] == pivot`",
+          "html": "<p><code>arr[j] == pivot</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`arr[j] >= pivot`",
+          "html": "<p><code>arr[j] &gt;= pivot</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`arr[j] < pivot`",
+          "html": "<p><code>arr[j] &lt; pivot</code></p>\n"
+        }
+      ],
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>以下快速排序的 partition 函数中，横线处应填入（ ）</p>\n<pre><code class=\"language-cpp\">int partition(int arr[], int low, int high) {\n    int pivot = arr[high];\n    int i = low - 1;\n    for (int j = low; j &lt; high; j++) {\n        if (______) {\n            i++;\n            swap(arr[i], arr[j]);\n        }\n    }\n    swap(arr[i + 1], arr[high]);\n    return i + 1;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "A",
+      "content": "在二分查找中，为避免 `(left + right)` 溢出，mid 的计算通常写为（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "`mid = left + (right - left) / 2;`",
+          "html": "<p><code>mid = left + (right - left) / 2;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`mid = (left + right) * 2;`",
+          "html": "<p><code>mid = (left + right) * 2;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`mid = left - (right - left) / 2;`",
+          "html": "<p><code>mid = left - (right - left) / 2;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`mid = right - (left + right) / 2;`",
+          "html": "<p><code>mid = right - (left + right) / 2;</code></p>\n"
+        }
+      ],
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>在二分查找中，为避免 <code>(left + right)</code> 溢出，mid 的计算通常写为（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "content": "贪心算法的核心特征是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "总能找到全局最优解",
+          "html": "<p>总能找到全局最优解</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "每一步选择当前看起来最优的方案",
+          "html": "<p>每一步选择当前看起来最优的方案</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "将问题分解为子问题分别求解",
+          "html": "<p>将问题分解为子问题分别求解</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "尝试所有可能的组合",
+          "html": "<p>尝试所有可能的组合</p>\n"
+        }
+      ],
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>贪心算法的核心特征是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "C",
+      "content": "以下排序算法中，属于稳定排序的是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "选择排序",
+          "html": "<p>选择排序</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "快速排序",
+          "html": "<p>快速排序</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "归并排序",
+          "html": "<p>归并排序</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "堆排序",
+          "html": "<p>堆排序</p>\n"
+        }
+      ],
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>以下排序算法中，属于稳定排序的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "D",
+      "content": "在程序运行过程中，如果递归调用的层数过多，通常会因为什么原因引发错误？（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "堆空间溢出",
+          "html": "<p>堆空间溢出</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "全局变量区溢出",
+          "html": "<p>全局变量区溢出</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "代码段溢出",
+          "html": "<p>代码段溢出</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "栈空间溢出",
+          "html": "<p>栈空间溢出</p>\n"
+        }
+      ],
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>在程序运行过程中，如果递归调用的层数过多，通常会因为什么原因引发错误？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "content": "在双向链表中，结点 `p` 的前驱和后继均非空。要删除结点 `p`，以下正确的是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "`p->prev->next = p->next; p->next->prev = p->prev;`",
+          "html": "<p><code>p-&gt;prev-&gt;next = p-&gt;next; p-&gt;next-&gt;prev = p-&gt;prev;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`p->next = p->prev; p->prev = p->next;`",
+          "html": "<p><code>p-&gt;next = p-&gt;prev; p-&gt;prev = p-&gt;next;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`p->prev = p->next; p->next->prev = p;`",
+          "html": "<p><code>p-&gt;prev = p-&gt;next; p-&gt;next-&gt;prev = p;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`p->prev->prev = p->next; p->next->next = p->prev;`",
+          "html": "<p><code>p-&gt;prev-&gt;prev = p-&gt;next; p-&gt;next-&gt;next = p-&gt;prev;</code></p>\n"
+        }
+      ],
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>在双向链表中，结点 <code>p</code> 的前驱和后继均非空。要删除结点 <code>p</code>，以下正确的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "B",
+      "content": "根据唯一分解定理，以下分解正确的是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "18 = 3 × 6",
+          "html": "<p>18 = 3 × 6</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "30 = 2 × 3 × 5",
+          "html": "<p>30 = 2 × 3 × 5</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "28 = 4 × 7",
+          "html": "<p>28 = 4 × 7</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "36 = 2 × 3 × 6",
+          "html": "<p>36 = 2 × 3 × 6</p>\n"
+        }
+      ],
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>根据唯一分解定理，以下分解正确的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "content": "快速排序在平均情况下的时间复杂度是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "O(n)",
+          "html": "<p>O(n)</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "O(n²)",
+          "html": "<p>O(n²)</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "O(n log n)",
+          "html": "<p>O(n log n)</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "O(log n)",
+          "html": "<p>O(log n)</p>\n"
+        }
+      ],
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>快速排序在平均情况下的时间复杂度是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "B",
+      "content": "执行以下代码后，变量 `a` 的值是（ ）\n\n```cpp\nint a = 1, b = 1, c;\nfor (int i = 3; i <= 6; i++) {\n    c = a + b;\n    a = b;\n    b = c;\n}\ncout << a;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "3",
+          "html": "<p>3</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "5",
+          "html": "<p>5</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "8",
+          "html": "<p>8</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "13",
+          "html": "<p>13</p>\n"
+        }
+      ],
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>执行以下代码后，变量 <code>a</code> 的值是（ ）</p>\n<pre><code class=\"language-cpp\">int a = 1, b = 1, c;\nfor (int i = 3; i &lt;= 6; i++) {\n    c = a + b;\n    a = b;\n    b = c;\n}\ncout &lt;&lt; a;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "A",
+      "content": "在双向循环链表中，head 为头哨兵结点。将新结点 `t` 插入到链表头部（head 之后），横线处应填入（ ）\n\n```cpp\nvoid insertHead(Node* head, Node* t) {\n    t->next = head->next;\n    t->prev = head;\n    ______;\n    head->next = t;\n}\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "`head->next->prev = t;`",
+          "html": "<p><code>head-&gt;next-&gt;prev = t;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`head->prev->next = t;`",
+          "html": "<p><code>head-&gt;prev-&gt;next = t;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`t->next->prev = head;`",
+          "html": "<p><code>t-&gt;next-&gt;prev = head;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`head->next = t->next;`",
+          "html": "<p><code>head-&gt;next = t-&gt;next;</code></p>\n"
+        }
+      ],
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>在双向循环链表中，head 为头哨兵结点。将新结点 <code>t</code> 插入到链表头部（head 之后），横线处应填入（ ）</p>\n<pre><code class=\"language-cpp\">void insertHead(Node* head, Node* t) {\n    t-&gt;next = head-&gt;next;\n    t-&gt;prev = head;\n    ______;\n    head-&gt;next = t;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "content": "以下关于质数的说法，正确的是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 是质数",
+          "html": "<p>1 是质数</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "2 是唯一的偶质数",
+          "html": "<p>2 是唯一的偶质数</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "所有奇数都是质数",
+          "html": "<p>所有奇数都是质数</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "大于 10 的质数个位数一定是 1",
+          "html": "<p>大于 10 的质数个位数一定是 1</p>\n"
+        }
+      ],
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>以下关于质数的说法，正确的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "C",
+      "content": "活动选择问题中，贪心策略为\"每次选择结束时间最早的活动\"。使用该策略（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "一定能得到全局最优解",
+          "html": "<p>一定能得到全局最优解</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "不能保证得到最优解",
+          "html": "<p>不能保证得到最优解</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "一定能得到全局最优解，前提是按结束时间排序后贪心",
+          "html": "<p>一定能得到全局最优解，前提是按结束时间排序后贪心</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "需要配合回溯才能得到最优解",
+          "html": "<p>需要配合回溯才能得到最优解</p>\n"
+        }
+      ],
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>活动选择问题中，贪心策略为&quot;每次选择结束时间最早的活动&quot;。使用该策略（ ）</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "链表支持通过下标直接访问任意位置的元素。（ ）",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>链表支持通过下标直接访问任意位置的元素。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "辗转相除法（欧几里得算法）可用于求两个正整数的最大公约数。（ ）",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>辗转相除法（欧几里得算法）可用于求两个正整数的最大公约数。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "快速排序在最好情况下的时间复杂度为 O(n²)。（ ）",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>快速排序在最好情况下的时间复杂度为 O(n²)。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "二分查找只适用于有序数组。（ ）",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>二分查找只适用于有序数组。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "贪心算法能够保证对所有问题都得到全局最优解。（ ）",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>贪心算法能够保证对所有问题都得到全局最优解。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "2 是唯一的偶质数。（ ）",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>2 是唯一的偶质数。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "归并排序是一种稳定的排序算法。（ ）",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>归并排序是一种稳定的排序算法。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "递归调用层数过多可能导致栈空间溢出。（ ）",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>递归调用层数过多可能导致栈空间溢出。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "唯一分解定理适用于所有正整数。（ ）",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>唯一分解定理适用于所有正整数。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "链表在插入元素时需要移动其他元素。（ ）",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>链表在插入元素时需要移动其他元素。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：最大公约数**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n给定两个正整数 a 和 b，求它们的最大公约数（GCD）。\n\n**输入格式**\n一行，两个正整数 a 和 b（1 ≤ a, b ≤ 10⁹）。\n\n**输出格式**\n一行，一个整数，表示 a 和 b 的最大公约数。\n\n**样例输入 #1**\n```\n72 30\n```\n\n**样例输出 #1**\n```\n6\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：最大公约数</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p>给定两个正整数 a 和 b，求它们的最大公约数（GCD）。</p>\n<p><strong>输入格式</strong><br />\n一行，两个正整数 a 和 b（1 ≤ a, b ≤ 10⁹）。</p>\n<p><strong>输出格式</strong><br />\n一行，一个整数，表示 a 和 b 的最大公约数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>72 30\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>6\n</code></pre>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：二分查找统计出现次数**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n给定一个升序排列的整数数组（可能包含重复元素）和一个目标值 target，请统计 target 在数组中出现的次数。\n\n要求使用二分查找实现，时间复杂度 O(log n)。\n\n**输入格式**\n第一行，两个整数 N 和 target（1 ≤ N ≤ 100000）。\n第二行，N 个升序排列的整数，绝对值不超过 10⁹，数之间用空格分隔。\n\n**输出格式**\n一行，一个整数，表示 target 在数组中出现的次数。如果不存在则输出 0。\n\n**样例输入 #1**\n```\n8 3\n1 2 3 3 3 5 6 7\n```\n\n**样例输出 #1**\n```\n3\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：二分查找统计出现次数</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p>给定一个升序排列的整数数组（可能包含重复元素）和一个目标值 target，请统计 target 在数组中出现的次数。</p>\n<p>要求使用二分查找实现，时间复杂度 O(log n)。</p>\n<p><strong>输入格式</strong><br />\n第一行，两个整数 N 和 target（1 ≤ N ≤ 100000）。<br />\n第二行，N 个升序排列的整数，绝对值不超过 10⁹，数之间用空格分隔。</p>\n<p><strong>输出格式</strong><br />\n一行，一个整数，表示 target 在数组中出现的次数。如果不存在则输出 0。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>8 3\n1 2 3 3 3 5 6 7\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>3\n</code></pre>\n"
+    }
+  ],
+  "id": "gesp五级_卷1",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/gesp五级_卷1",
+  "version": "11adf87e131f9f8c",
+  "warnings": [],
+  "objective_score": 50.0
+}

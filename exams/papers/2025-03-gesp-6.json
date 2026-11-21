@@ -1,0 +1,711 @@
+{
+  "title": "2025年3月 GESP C++ 6级",
+  "category": "GESP",
+  "level": "6",
+  "date": "2025-03",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年3月 GESP C++ 6级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "类是一个抽象的概念，用于描述具有相同属性和行为的对象集合。",
+          "html": "<p>类是一个抽象的概念，用于描述具有相同属性和行为的对象集合。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "类可以包含属性和方法，属性用于描述对象的状态，方法用于描述对象的行为。",
+          "html": "<p>类可以包含属性和方法，属性用于描述对象的状态，方法用于描述对象的行为。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "类可以被实例化，生成具体的对象。",
+          "html": "<p>类可以被实例化，生成具体的对象。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "类一旦定义后，其属性和方法不能被修改或扩展。",
+          "html": "<p>类一旦定义后，其属性和方法不能被修改或扩展。</p>\n"
+        }
+      ],
+      "content": "在面向对象编程中，类是一种重要的概念。下面关于类的描述中，不正确的是（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>在面向对象编程中，类是一种重要的概念。下面关于类的描述中，不正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "哈夫曼编码是一种变长编码，频率高的字符使用较短的编码，频率低的字符使用较长的编码。",
+          "html": "<p>哈夫曼编码是一种变长编码，频率高的字符使用较短的编码，频率低的字符使用较长的编码。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "在构造哈夫曼树时，频率越低的字符离根节点越近，频率越高的字符离根节点越远。",
+          "html": "<p>在构造哈夫曼树时，频率越低的字符离根节点越近，频率越高的字符离根节点越远。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "哈夫曼编码的生成过程基于贪心算法，每次选择频率最低的两个节点进行合并。",
+          "html": "<p>哈夫曼编码的生成过程基于贪心算法，每次选择频率最低的两个节点进行合并。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "哈夫曼编码是一种前缀编码，任何一个字符的编码都不会是另一个字符编码的前缀，因此可以实现唯一解码。",
+          "html": "<p>哈夫曼编码是一种前缀编码，任何一个字符的编码都不会是另一个字符编码的前缀，因此可以实现唯一解码。</p>\n"
+        }
+      ],
+      "content": "哈夫曼编码是一种数据压缩算法。以下关于哈夫曼编码的描述中，不正确的是（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>哈夫曼编码是一种数据压缩算法。以下关于哈夫曼编码的描述中，不正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "前序遍历",
+          "html": "<p>前序遍历</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "中序遍历",
+          "html": "<p>中序遍历</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "后序遍历",
+          "html": "<p>后序遍历</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "层次遍历",
+          "html": "<p>层次遍历</p>\n"
+        }
+      ],
+      "content": "以下代码实现了树的哪种遍历方式？\n\n```cpp\nvoid traverse(TreeNode* root) {\n    if (root == nullptr) return;\n    cout << root->val << \" \";\n    traverse(root->left);\n    traverse(root->right);\n}\n```",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>以下代码实现了树的哪种遍历方式？</p>\n<pre><code class=\"language-cpp\">void traverse(TreeNode* root) {\n    if (root == nullptr) return;\n    cout &lt;&lt; root-&gt;val &lt;&lt; &quot; &quot;;\n    traverse(root-&gt;left);\n    traverse(root-&gt;right);\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "该代码用于判断一棵树是否为满二叉树",
+          "html": "<p>该代码用于判断一棵树是否为满二叉树</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "该代码用于判断一棵树是否为完全二叉树",
+          "html": "<p>该代码用于判断一棵树是否为完全二叉树</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "该代码用于判断一棵树是否为二叉搜索树",
+          "html": "<p>该代码用于判断一棵树是否为二叉搜索树</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "该代码用于计算树的高度",
+          "html": "<p>该代码用于计算树的高度</p>\n"
+        }
+      ],
+      "content": "以下关于完全二叉树的代码描述，正确的是（ ）。\n\n```cpp\nbool isCompleteTree(TreeNode* root) {\n    if (root == nullptr) return true;\n    queue<TreeNode*> q;\n    q.push(root);\n    bool hasNull = false;\n    while (!q.empty()) {\n        TreeNode* node = q.front();\n        q.pop();\n        if (node == nullptr) {\n            hasNull = true;\n        } else {\n            if (hasNull) return false;\n            q.push(node->left);\n            q.push(node->right);\n        }\n    }\n    return true;\n}\n```",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>以下关于完全二叉树的代码描述，正确的是（ ）。</p>\n<pre><code class=\"language-cpp\">bool isCompleteTree(TreeNode* root) {\n    if (root == nullptr) return true;\n    queue&lt;TreeNode*&gt; q;\n    q.push(root);\n    bool hasNull = false;\n    while (!q.empty()) {\n        TreeNode* node = q.front();\n        q.pop();\n        if (node == nullptr) {\n            hasNull = true;\n        } else {\n            if (hasNull) return false;\n            q.push(node-&gt;left);\n            q.push(node-&gt;right);\n        }\n    }\n    return true;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "查找",
+          "html": "<p>查找</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "插入",
+          "html": "<p>插入</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "删除",
+          "html": "<p>删除</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "遍历",
+          "html": "<p>遍历</p>\n"
+        }
+      ],
+      "content": "以下代码实现了二叉排序树的哪种操作？\n\n```cpp\nTreeNode* op(TreeNode* root, int val) {\n    if (root == nullptr) return new TreeNode(val);\n    if (val < root->val) {\n        root->left = op(root->left, val);\n    } else {\n        root->right = op(root->right, val);\n    }\n    return root;\n}\n```",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>以下代码实现了二叉排序树的哪种操作？</p>\n<pre><code class=\"language-cpp\">TreeNode* op(TreeNode* root, int val) {\n    if (root == nullptr) return new TreeNode(val);\n    if (val &lt; root-&gt;val) {\n        root-&gt;left = op(root-&gt;left, val);\n    } else {\n        root-&gt;right = op(root-&gt;right, val);\n    }\n    return root;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "10,",
+          "html": "<p>10,</p>\n"
+        },
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "101,",
+          "html": "<p>101,</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "0,",
+          "html": "<p>0,</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "100",
+          "html": "<p>100</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "101,",
+          "html": "<p>101,</p>\n"
+        },
+        {
+          "key": "A",
+          "text": "11,",
+          "html": "<p>11,</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "100,",
+          "html": "<p>100,</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "11,",
+          "html": "<p>11,</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "101",
+          "html": "<p>101</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "A",
+          "text": "0,",
+          "html": "<p>0,</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "101,",
+          "html": "<p>101,</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "11,",
+          "html": "<p>11,</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "101",
+          "html": "<p>101</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "101",
+          "html": "<p>101</p>\n"
+        },
+        {
+          "key": "A",
+          "text": "10,",
+          "html": "<p>10,</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "101,",
+          "html": "<p>101,</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "0,",
+          "html": "<p>0,</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "100",
+          "html": "<p>100</p>\n"
+        }
+      ],
+      "content": "给定字符集 {$A$, $B$, $C$, $D$} 的出现频率分别为 {$5$, $1$, $6$, $2$}，则正确的哈夫曼编码是（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>给定字符集 {$A$, $B$, $C$, $D$} 的出现频率分别为 {$5$, $1$, $6$, $2$}，则正确的哈夫曼编码是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "动态规划算法的时间复杂度总是低于贪心算法。",
+          "html": "<p>动态规划算法的时间复杂度总是低于贪心算法。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "动态规划要求问题必须具有最优子结构和重叠子问题两个性质。",
+          "html": "<p>动态规划要求问题必须具有最优子结构和重叠子问题两个性质。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "动态规划通过递归实现时不需要存储中间结果。",
+          "html": "<p>动态规划通过递归实现时不需要存储中间结果。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "动态规划的核心思想是将问题分解为互不重叠的子问题。",
+          "html": "<p>动态规划的核心思想是将问题分解为互不重叠的子问题。</p>\n"
+        }
+      ],
+      "content": "关于动态规划的描述，正确的是（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>关于动态规划的描述，正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        }
+      ],
+      "content": "以下代码中，类的构造函数被调用了（ ）次。\n\n```cpp\nclass MyClass {\n    public:\n    MyClass() {\n        cout << \"Constructor called!\" << endl;\n    }\n};\nint main() {\n    MyClass obj1;\n    MyClass obj2 = obj1;\n    return 0;\n}\n```",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>以下代码中，类的构造函数被调用了（ ）次。</p>\n<pre><code class=\"language-cpp\">class MyClass {\n    public:\n    MyClass() {\n        cout &lt;&lt; &quot;Constructor called!&quot; &lt;&lt; endl;\n    }\n};\nint main() {\n    MyClass obj1;\n    MyClass obj2 = obj1;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "入队",
+          "html": "<p>入队</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "出队",
+          "html": "<p>出队</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "查看队首元素",
+          "html": "<p>查看队首元素</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "判断队列是否为空",
+          "html": "<p>判断队列是否为空</p>\n"
+        }
+      ],
+      "content": "以下代码实现了循环队列的哪种操作？\n\n```cpp\nclass CircularQueue {\n    int* arr;\n    int front, rear, size;\n    public:\n    CircularQueue(int k) {\n        size = k;\n        arr = new int[k];\n        front = rear = -1;\n    }\n    bool enQueue(int value) {\n        if (isFull()) return false;\n        if (isEmpty()) front = 0;\n        rear = (rear + 1) % size;\n        arr[rear] = value;\n        return true;\n    }\n};\n```",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>以下代码实现了循环队列的哪种操作？</p>\n<pre><code class=\"language-cpp\">class CircularQueue {\n    int* arr;\n    int front, rear, size;\n    public:\n    CircularQueue(int k) {\n        size = k;\n        arr = new int[k];\n        front = rear = -1;\n    }\n    bool enQueue(int value) {\n        if (isFull()) return false;\n        if (isEmpty()) front = 0;\n        rear = (rear + 1) % size;\n        arr[rear] = value;\n        return true;\n    }\n};\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`if (node->left) s.push(node->left);`",
+          "html": "<p><code>if (node-&gt;left) s.push(node-&gt;left);</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`if (node->left) s.pop(node->left);`",
+          "html": "<p><code>if (node-&gt;left) s.pop(node-&gt;left);</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`if (node->left) s.front(node->left);`",
+          "html": "<p><code>if (node-&gt;left) s.front(node-&gt;left);</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`if (node->left) s.push(node->right);`",
+          "html": "<p><code>if (node-&gt;left) s.push(node-&gt;right);</code></p>\n"
+        }
+      ],
+      "content": "以下代码实现了二叉树的深度优先搜索（DFS），并统计叶⼦结点的数量，则横线上应填写（ ）。\n\n```cpp\nint countLeafNodes(TreeNode* root) {\n    if (root == nullptr) return 0;\n    stack<TreeNode*> s;\n    s.push(root);\n    int count = 0;\n    while (!s.empty()) {\n        TreeNode* node = s.top();\n        s.pop();\n        if (node->left == nullptr && node->right == nullptr) {\n            count++;\n        }\n        if (node->right) s.push(node->right);\n        ———————————————————————— // 在此处填入代码\n    }\n    return count;\n}\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>以下代码实现了二叉树的深度优先搜索（DFS），并统计叶⼦结点的数量，则横线上应填写（ ）。</p>\n<pre><code class=\"language-cpp\">int countLeafNodes(TreeNode* root) {\n    if (root == nullptr) return 0;\n    stack&lt;TreeNode*&gt; s;\n    s.push(root);\n    int count = 0;\n    while (!s.empty()) {\n        TreeNode* node = s.top();\n        s.pop();\n        if (node-&gt;left == nullptr &amp;&amp; node-&gt;right == nullptr) {\n            count++;\n        }\n        if (node-&gt;right) s.push(node-&gt;right);\n        ———————————————————————— // 在此处填入代码\n    }\n    return count;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nif (current->left) q.push(current->left);\nif (current->right) q.push(current->right);\n```",
+          "html": "<pre><code class=\"language-cpp\">if (current-&gt;left) q.push(current-&gt;left);\nif (current-&gt;right) q.push(current-&gt;right);\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\nif (current->left) q.pop(current->left);\nif (current->right) q.pop(current->right);\n```",
+          "html": "<pre><code class=\"language-cpp\">if (current-&gt;left) q.pop(current-&gt;left);\nif (current-&gt;right) q.pop(current-&gt;right);\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\nif (current->left) q.front(current->left);\nif (current->right) q.front(current->right);\n```",
+          "html": "<pre><code class=\"language-cpp\">if (current-&gt;left) q.front(current-&gt;left);\nif (current-&gt;right) q.front(current-&gt;right);\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nif (current->left) q.push(current->right);\nif (current->right) q.push(current->left);\n```",
+          "html": "<pre><code class=\"language-cpp\">if (current-&gt;left) q.push(current-&gt;right);\nif (current-&gt;right) q.push(current-&gt;left);\n</code></pre>\n"
+        }
+      ],
+      "content": "以下代码实现了二叉树的广度优先搜索（BFS），并查找特定值的节点，则横线上应填写（ ）。\n\n```cpp\nTreeNode* findNode(TreeNode* root, int target) {\n    if (root == nullptr) return nullptr;\n    queue<TreeNode*> q;\n    q.push(root);\n    while (!q.empty()) {\n        TreeNode* current = q.front();\n        q.pop();\n        if (current->val == target) {\n            return current; // 找到目标节点\n        }\n        ———————————————————————— // 在此处填入代码\n    }\n    return nullptr; // 未找到目标节点\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>以下代码实现了二叉树的广度优先搜索（BFS），并查找特定值的节点，则横线上应填写（ ）。</p>\n<pre><code class=\"language-cpp\">TreeNode* findNode(TreeNode* root, int target) {\n    if (root == nullptr) return nullptr;\n    queue&lt;TreeNode*&gt; q;\n    q.push(root);\n    while (!q.empty()) {\n        TreeNode* current = q.front();\n        q.pop();\n        if (current-&gt;val == target) {\n            return current; // 找到目标节点\n        }\n        ———————————————————————— // 在此处填入代码\n    }\n    return nullptr; // 未找到目标节点\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`result.push_back(\"1\" + prev[i]);`",
+          "html": "<p><code>result.push_back(&quot;1&quot; + prev[i]);</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`result.push_back(\"0\" + prev[i]);`",
+          "html": "<p><code>result.push_back(&quot;0&quot; + prev[i]);</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`result.push_back(prev[i] + \"1\");`",
+          "html": "<p><code>result.push_back(prev[i] + &quot;1&quot;);</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`result.push_back(prev[i] + \"0\");`",
+          "html": "<p><code>result.push_back(prev[i] + &quot;0&quot;);</code></p>\n"
+        }
+      ],
+      "content": "以下代码用于生成 $n$ 位格雷编码。横线上应填写（ ）。\n\n```cpp\nvector<string> generateGrayCode(int n) {\n    if (n == 0) return {\"0\"};\n    if (n == 1) return {\"0\", \"1\"};\n    vector<string> prev = generateGrayCode(n - 1);\n    vector<string> result;\n    for (string s : prev) {\n        result.push_back(\"0\" + s); // 在前缀添加 0\n    }\n    for (int i = prev.size() - 1; i >= 0; i--) {\n        ———————————————————————— // 在此处填入代码\n    }\n    return result;\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>以下代码用于生成 $n$ 位格雷编码。横线上应填写（ ）。</p>\n<pre><code class=\"language-cpp\">vector&lt;string&gt; generateGrayCode(int n) {\n    if (n == 0) return {&quot;0&quot;};\n    if (n == 1) return {&quot;0&quot;, &quot;1&quot;};\n    vector&lt;string&gt; prev = generateGrayCode(n - 1);\n    vector&lt;string&gt; result;\n    for (string s : prev) {\n        result.push_back(&quot;0&quot; + s); // 在前缀添加 0\n    }\n    for (int i = prev.size() - 1; i &gt;= 0; i--) {\n        ———————————————————————— // 在此处填入代码\n    }\n    return result;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`dp[i-1][j]`, `values[i-1]`",
+          "html": "<p><code>dp[i-1][j]</code>, <code>values[i-1]</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`dp[i-1][j]`, `dp[i-1][j - weights[i-1]] + values[i-1]`",
+          "html": "<p><code>dp[i-1][j]</code>, <code>dp[i-1][j - weights[i-1]] + values[i-1]</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`dp[i][j-1]`, `values[i-1]`",
+          "html": "<p><code>dp[i][j-1]</code>, <code>values[i-1]</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`dp[i-1][j - weights[i-1]] + values[i-1]`, `dp[i][j-1]`",
+          "html": "<p><code>dp[i-1][j - weights[i-1]] + values[i-1]</code>, <code>dp[i][j-1]</code></p>\n"
+        }
+      ],
+      "content": "以下代码实现了 0/1 背包问题的动态规划解法。假设物品重量为 `weights[]`，价值为 `values[]`，背包容量为 $W$，横线上应填写（ ）。\n\n```cpp\nint knapsack(int W, vector<int>& weights, vector<int>& values) {\n    int n = weights.size();\n    vector<vector<int>> dp(n + 1, vector<int>(W + 1, 0));\n    for (int i = 1; i <= n; i++) {\n        for (int j = 1; j <= W; j++) {\n            if (weights[i-1] > j) {\n                dp[i][j] = dp[i-1][j]; // 当前物品装不下\n            } else {\n                dp[i][j] = max(_________________________); // 在此处填入代码\n            }\n        }\n    }\n    return dp[n][W];\n}\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>以下代码实现了 0/1 背包问题的动态规划解法。假设物品重量为 <code>weights[]</code>，价值为 <code>values[]</code>，背包容量为 $W$，横线上应填写（ ）。</p>\n<pre><code class=\"language-cpp\">int knapsack(int W, vector&lt;int&gt;&amp; weights, vector&lt;int&gt;&amp; values) {\n    int n = weights.size();\n    vector&lt;vector&lt;int&gt;&gt; dp(n + 1, vector&lt;int&gt;(W + 1, 0));\n    for (int i = 1; i &lt;= n; i++) {\n        for (int j = 1; j &lt;= W; j++) {\n            if (weights[i-1] &gt; j) {\n                dp[i][j] = dp[i-1][j]; // 当前物品装不下\n            } else {\n                dp[i][j] = max(_________________________); // 在此处填入代码\n            }\n        }\n    }\n    return dp[n][W];\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`true`",
+          "html": "<p><code>true</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`false`",
+          "html": "<p><code>false</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`st.empty()`",
+          "html": "<p><code>st.empty()</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`!st.empty()`",
+          "html": "<p><code>!st.empty()</code></p>\n"
+        }
+      ],
+      "content": "以下代码用于检查字符串中的括号是否匹配，横线上应填写（ ）。\n\n```cpp\nbool isBalanced(string s) {\n    stack<char> st;\n    for (char c : s) {\n        if (c == '(' || c == '[' || c == '{') {\n            st.push(c);\n        } else {\n            if (st.empty()) return false; // 无左括号匹配\n            char top = st.top();\n            st.pop();\n            if ((c == ')' && top != '(') ||\n                (c == ']' && top != '[') ||\n                (c == '}' && top != '{')) {\n                return false;\n            }\n        }\n    }\n    return ________________; //在此处填入代码\n}\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>以下代码用于检查字符串中的括号是否匹配，横线上应填写（ ）。</p>\n<pre><code class=\"language-cpp\">bool isBalanced(string s) {\n    stack&lt;char&gt; st;\n    for (char c : s) {\n        if (c == '(' || c == '[' || c == '{') {\n            st.push(c);\n        } else {\n            if (st.empty()) return false; // 无左括号匹配\n            char top = st.top();\n            st.pop();\n            if ((c == ')' &amp;&amp; top != '(') ||\n                (c == ']' &amp;&amp; top != '[') ||\n                (c == '}' &amp;&amp; top != '{')) {\n                return false;\n            }\n        }\n    }\n    return ________________; //在此处填入代码\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "语句 `Shape* shapePtr = &circle;` 和 `shapePtr = &rectangle;` 出现编译错误",
+          "html": "<p>语句 <code>Shape* shapePtr = &amp;circle;</code> 和 <code>shapePtr = &amp;rectangle;</code> 出现编译错误</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`Shape` 为基类， `Circle` 和 `Rectangle` 是派生类",
+          "html": "<p><code>Shape</code> 为基类， <code>Circle</code> 和 <code>Rectangle</code> 是派生类</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "通过继承， `Circle` 和 `Rectangle` 复用了 `Shape` 的属性和方法，并扩展了新的功能",
+          "html": "<p>通过继承， <code>Circle</code> 和 <code>Rectangle</code> 复用了 <code>Shape</code> 的属性和方法，并扩展了新的功能</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`Circle` 和 `Rectangle` 通过重写（`override`）基类的虚函数 `area` 和基类指针，实现了运行时多态",
+          "html": "<p><code>Circle</code> 和 <code>Rectangle</code> 通过重写（<code>override</code>）基类的虚函数 <code>area</code> 和基类指针，实现了运行时多态</p>\n"
+        }
+      ],
+      "content": "关于下面代码，说法错误的是（ ）。\n\n```cpp\nclass Shape {\n    protected:\n    string name;\n    public:\n    Shape(const string& n) : name(n) {}\n    virtual double area() const {\n        return 0.0;\n    }\n};\nclass Circle : public Shape {\n    private:\n    double radius; // 半径\n    public:\n    Circle(const string& n, double r) : Shape(n), radius(r) {}\n    double area() const override {\n        return 3.14159 * radius * radius;\n    }\n};\nclass Rectangle : public Shape {\n    private:\n    double width; // 宽度\n    double height; // 高度\n    public:\n    Rectangle(const string& n, double w, double h) : Shape(n), width(w), height(h) {}\n    double area() const override {\n        return width * height;\n    }\n};\nint main() {\n    Circle circle(\"MyCircle\", 5.0);\n    Rectangle rectangle(\"MyRectangle\", 4.0, 6.0);\n    Shape* shapePtr = &circle;\n    cout << \"Area: \" << shapePtr->area() << endl;\n    shapePtr = &rectangle;\n    cout << \"Area: \" << shapePtr->area() << endl;\n    return 0;\n}\n```",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>关于下面代码，说法错误的是（ ）。</p>\n<pre><code class=\"language-cpp\">class Shape {\n    protected:\n    string name;\n    public:\n    Shape(const string&amp; n) : name(n) {}\n    virtual double area() const {\n        return 0.0;\n    }\n};\nclass Circle : public Shape {\n    private:\n    double radius; // 半径\n    public:\n    Circle(const string&amp; n, double r) : Shape(n), radius(r) {}\n    double area() const override {\n        return 3.14159 * radius * radius;\n    }\n};\nclass Rectangle : public Shape {\n    private:\n    double width; // 宽度\n    double height; // 高度\n    public:\n    Rectangle(const string&amp; n, double w, double h) : Shape(n), width(w), height(h) {}\n    double area() const override {\n        return width * height;\n    }\n};\nint main() {\n    Circle circle(&quot;MyCircle&quot;, 5.0);\n    Rectangle rectangle(&quot;MyRectangle&quot;, 4.0, 6.0);\n    Shape* shapePtr = &amp;circle;\n    cout &lt;&lt; &quot;Area: &quot; &lt;&lt; shapePtr-&gt;area() &lt;&lt; endl;\n    shapePtr = &amp;rectangle;\n    cout &lt;&lt; &quot;Area: &quot; &lt;&lt; shapePtr-&gt;area() &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "哈夫曼树在构造过程中，每次合并权值最小的两个节点，最终生成的树带权路径长度最小。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>哈夫曼树在构造过程中，每次合并权值最小的两个节点，最终生成的树带权路径长度最小。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "格雷编码的相邻两个编码之间必须有多位不同，以避免数据传输错误。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>格雷编码的相邻两个编码之间必须有多位不同，以避免数据传输错误。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在树的深度优先搜索（DFS）中，使用队列作为辅助数据结构以实现“先进后出”的访问顺序。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>在树的深度优先搜索（DFS）中，使用队列作为辅助数据结构以实现“先进后出”的访问顺序。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "以下代码实现的是二叉树的中序遍历：\n\n```cpp\nvoid traverse(TreeNode* root) {\n    if (root == nullptr) return;\n    traverse(root->left);\n    cout << root->val << \" \";\n    traverse(root->right);\n}\n```",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>以下代码实现的是二叉树的中序遍历：</p>\n<pre><code class=\"language-cpp\">void traverse(TreeNode* root) {\n    if (root == nullptr) return;\n    traverse(root-&gt;left);\n    cout &lt;&lt; root-&gt;val &lt;&lt; &quot; &quot;;\n    traverse(root-&gt;right);\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "C++ 支持构造函数重载，但默认无参数的构造函数只能有一个。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>C++ 支持构造函数重载，但默认无参数的构造函数只能有一个。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "二叉排序树（BST）中，若某节点的左⼦树为空，则该节点一定是树中的最小值节点。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>二叉排序树（BST）中，若某节点的左⼦树为空，则该节点一定是树中的最小值节点。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在动态规划解决一维硬币找零问题时，若硬币面额为 $[1, 3, 4]$，目标金额为 $6$，则最少需要 $2$ 枚硬币（$3+3$）。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>在动态规划解决一维硬币找零问题时，若硬币面额为 $[1, 3, 4]$，目标金额为 $6$，则最少需要 $2$ 枚硬币（$3+3$）。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "面向对象编程中，封装是指将数据和行为绑定在一起，并对外隐藏实现细节。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>面向对象编程中，封装是指将数据和行为绑定在一起，并对外隐藏实现细节。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "以下代码创建的树是一棵完全二叉树：\n\n```cpp\nTreeNode* root = new TreeNode{1};\nroot->left = new TreeNode{2};\nroot->right = new TreeNode{3};\nroot->left->left = new TreeNode{4};\n```",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>以下代码创建的树是一棵完全二叉树：</p>\n<pre><code class=\"language-cpp\">TreeNode* root = new TreeNode{1};\nroot-&gt;left = new TreeNode{2};\nroot-&gt;right = new TreeNode{3};\nroot-&gt;left-&gt;left = new TreeNode{4};\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "栈和队列均可以用双向链表实现，插入和删除操作的时间复杂度为 $O(1)$ 。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>栈和队列均可以用双向链表实现，插入和删除操作的时间复杂度为 $O(1)$ 。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：树上漫步**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小 A 有一棵 $n$ 个结点的树，这些结点依次以 $1,2,\\cdots,n$ 标号。\n\n小 A 想在这棵树上漫步。具体来说，小 A 会从树上的某个结点出发，每一步可以移动到与当前结点相邻的结点，并且小 A 只会在偶数步（可以是零步）后结束漫步。\n\n现在小 A 想知道，对于树上的每个结点，从这个结点出发开始漫步，经过偶数步能结束漫步的结点有多少个（可以经过重复的节点）。\n\n**输入格式**\n\n第一行，一个正整数 $n$。\n\n接下来 $n-1$ 行，每行两个整数 $u_i,v_i$，表示树上有⼀条连接结点 $u_i$ 和结点 $v_i$ 的边。\n\n**输出格式**\n\n一行，$n$ 个整数。第 $i$ 个整数表示从结点 $i$ 出发开始漫步，能结束漫步的结点数量。\n\n**样例输入 #1**\n```\n3\n1 3\n2 3\n```\n\n**样例输出 #1**\n```\n2 2 1\n```\n\n**样例输入 #2**\n```\n4\n1 3\n3 2\n4 3\n```\n\n**样例输出 #2**\n```\n3 3 1 3\n```\n\n**说明/提示**\n\n对于 $40\\%$ 的测试点，保证 $1\\leq n\\leq 10^3$。\n\n对于所有测试点，保证 $1\\leq n\\leq 2\\times 10^5$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：树上漫步</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小 A 有一棵 $n$ 个结点的树，这些结点依次以 $1,2,\\cdots,n$ 标号。</p>\n<p>小 A 想在这棵树上漫步。具体来说，小 A 会从树上的某个结点出发，每一步可以移动到与当前结点相邻的结点，并且小 A 只会在偶数步（可以是零步）后结束漫步。</p>\n<p>现在小 A 想知道，对于树上的每个结点，从这个结点出发开始漫步，经过偶数步能结束漫步的结点有多少个（可以经过重复的节点）。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，一个正整数 $n$。</p>\n<p>接下来 $n-1$ 行，每行两个整数 $u_i,v_i$，表示树上有⼀条连接结点 $u_i$ 和结点 $v_i$ 的边。</p>\n<p><strong>输出格式</strong></p>\n<p>一行，$n$ 个整数。第 $i$ 个整数表示从结点 $i$ 出发开始漫步，能结束漫步的结点数量。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3\n1 3\n2 3\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>2 2 1\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>4\n1 3\n3 2\n4 3\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>3 3 1 3\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $40\\%$ 的测试点，保证 $1\\leq n\\leq 10^3$。</p>\n<p>对于所有测试点，保证 $1\\leq n\\leq 2\\times 10^5$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：环线**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小 A 喜欢坐地铁。地铁环线有 $n$ 个车站，依次以 $1,2,\\cdots,n$ 标号。车站 $i\\ (1\\leq i<n)$ 的下一个车站是车站 $i+1$。特殊地，车站 $n$ 的下一个车站是车站 $1$。\n\n小 A 会从某个车站出发，乘坐地铁环线到某个车站结束行程，这意味着小 A 至少会经过一个车站。小 A 不会经过一个车站多次。当小 A 乘坐地铁环线经过车站 $i$ 时，小 A 会获得 $a_i$ 点快乐值。请你安排小 A 的行程，选择出发车站与结束车站，使得获得的快乐值总和最大。\n\n**输入格式**\n\n第一行，一个正整数 $n$，表示车站的数量。\n\n第二行，$n$ 个整数 $a_i$，分别表示经过每个车站时获得的快乐值。\n\n**输出格式**\n\n一行，一个整数，表示小 A 能获得的最大快乐值。\n\n**样例输入 #1**\n```\n4\n-1 2 3 0\n```\n\n**样例输出 #1**\n```\n5\n```\n\n**样例输入 #2**\n```\n5\n-3 4 -5 1 3\n```\n\n**样例输出 #2**\n```\n5\n```\n\n**说明/提示**\n\n对于 $20\\%$ 的测试点，保证 $1\\leq n\\leq 200$。\n\n对于 $40\\%$ 的测试点，保证 $1\\leq n\\leq 2000$。\n\n对于所有测试点，保证 $1\\leq n\\leq 2\\times 10^5$，$-10^9\\leq a_i\\leq 10^9$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：环线</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小 A 喜欢坐地铁。地铁环线有 $n$ 个车站，依次以 $1,2,\\cdots,n$ 标号。车站 $i\\ (1\\leq i&lt;n)$ 的下一个车站是车站 $i+1$。特殊地，车站 $n$ 的下一个车站是车站 $1$。</p>\n<p>小 A 会从某个车站出发，乘坐地铁环线到某个车站结束行程，这意味着小 A 至少会经过一个车站。小 A 不会经过一个车站多次。当小 A 乘坐地铁环线经过车站 $i$ 时，小 A 会获得 $a_i$ 点快乐值。请你安排小 A 的行程，选择出发车站与结束车站，使得获得的快乐值总和最大。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，一个正整数 $n$，表示车站的数量。</p>\n<p>第二行，$n$ 个整数 $a_i$，分别表示经过每个车站时获得的快乐值。</p>\n<p><strong>输出格式</strong></p>\n<p>一行，一个整数，表示小 A 能获得的最大快乐值。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4\n-1 2 3 0\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>5\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>5\n-3 4 -5 1 3\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>5\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $20\\%$ 的测试点，保证 $1\\leq n\\leq 200$。</p>\n<p>对于 $40\\%$ 的测试点，保证 $1\\leq n\\leq 2000$。</p>\n<p>对于所有测试点，保证 $1\\leq n\\leq 2\\times 10^5$，$-10^9\\leq a_i\\leq 10^9$。</p>\n"
+    }
+  ],
+  "id": "2025-03-gesp-6",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-03-gesp-6",
+  "version": "f6d5e99c3105e42f",
+  "warnings": [],
+  "objective_score": 50.0
+}

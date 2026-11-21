@@ -1,5 +1,22 @@
 # AGENTS.md — oi-solutions
 
+## 2026-11 教学入口改版（优先于下方旧版 UI 描述）
+
+- 主站采用紧凑顶栏（`.topbar/.nav-cards/.nav-card`）、全站搜索与深浅主题。导航为课程讲义、笔试练习、题目题解、代码模板、工具。
+- `assets/theme.css` 保留原有组件，`assets/hub.css` 管理本次统一后的主题 token、布局及答题组件，`assets/app.js` 管理主题、手机导航和实时时钟。不要按旧版描述再给每页复制整套 CSS。
+- 设计与行为规范见 `DESIGN.md`、`UX-CONTRACT.md`。
+- 知识手册入口直接阅读第一章，统一主站顶栏；章节内容保持原地址，阅读时使用可展开章节目录。重新导出手册后运行 `python scripts/unify_handbook.py`，相关导航元数据在 `handbook/assets/books.json`，验证 `python tests/handbook_browser.py`。
+- 不在教学界面展示来源迁移文档、维护报告等开发者入口。来源署名和许可文件留在仓库维护；影响学生评分理解的实际数据限制应继续说明。
+- Typora 讲义增强使用 `python script.py polish [文件名|all] [--dry-run]`。算法实验笔记主题与阅读增强由 script.py 的 `LECTURE_THEME_CSS` / `_ENHANCE_JS_TEMPLATE` 统一生成到 memos/lecture-theme.css 与 lecture-enhance.js；只改生成源，不手改输出，不重写 Typora 原生 CSS。讲义正文、公式与代码保持原样；阅读目录、深浅主题与打印在增强层实现。
+- 首页为入口页；题解列表在 `favorite.html`，继续使用 `solutions/records.json`。
+- 新题库：`exams.html` 目录、`exams/practice.html?paper=<id>` 答题、`exams/catalog.json` 元数据、`exams/papers/*.json` 数据；来源与维护流程见 `exams/SOURCES.md`。
+- 导入：`python -u scripts/download_exams.py` 后 `python scripts/import_exams.py --archive .cache/exams/upstream.zip`。源码版本固定，异常见 `exams/import-report.json`。
+- 验证：`python -m unittest discover -s tests -p test_import_exams.py`、`node --test tests/exam-core.test.cjs`、`python scripts/check_exams.py`、`node tests/check-scripts.cjs`。本地浏览器检查见 `tests/exams_browser.py`（需先启动 8765 静态服务器与本机 Edge）。
+- 答案、草稿、截止时间和最高分仅保存在浏览器，不上传；编程题不自动评分。学生平台提交矩阵保持现有独立数据源。
+- `.env` 与缓存必须被忽略；不得输出 `.env` 内容。
+
+---
+
 ## 项目概览
 
 **项目地址**: D:/oi-solutions  

@@ -1,0 +1,466 @@
+[
+  {
+    "id": 1,
+    "title": "GESP 1级",
+    "chapters": [
+      {
+        "path": "handbook/docs/GESP C++1级/chapter1/index.html",
+        "title": "第1章 计算机基础知识"
+      },
+      {
+        "path": "handbook/docs/GESP C++1级/chapter2/index.html",
+        "title": "第2章 C/C++ 集成开发环境与程序开发流程"
+      },
+      {
+        "path": "handbook/docs/GESP C++1级/chapter3/index.html",
+        "title": "第3章 数据类型、变量与常量"
+      },
+      {
+        "path": "handbook/docs/GESP C++1级/chapter4/index.html",
+        "title": "第4章 程序的输入和输出"
+      },
+      {
+        "path": "handbook/docs/GESP C++1级/chapter5/index.html",
+        "title": "第5章 运算符与表达式"
+      },
+      {
+        "path": "handbook/docs/GESP C++1级/chapter6/index.html",
+        "title": "第6章 程序基本控制结构"
+      },
+      {
+        "path": "handbook/docs/GESP C++1级/chapter7/index.html",
+        "title": "第7章 数组与字符串"
+      },
+      {
+        "path": "handbook/docs/GESP C++1级/chapter8/index.html",
+        "title": "第8章 简单算法与数学"
+      },
+      {
+        "path": "handbook/docs/GESP C++1级/chapter9/index.html",
+        "title": "第9章 一级必背编程模板（编程题通关）"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "GESP 2级",
+    "chapters": [
+      {
+        "path": "handbook/docs/GESP C++2级/chapter1/index.html",
+        "title": "第9章 计算机的架构体系"
+      },
+      {
+        "path": "handbook/docs/GESP C++2级/chapter2/index.html",
+        "title": "第10章 计算机网络知识"
+      },
+      {
+        "path": "handbook/docs/GESP C++2级/chapter3/index.html",
+        "title": "第11章 计算机语言"
+      },
+      {
+        "path": "handbook/docs/GESP C++2级/chapter4/index.html",
+        "title": "第12章 流程图的概念与描述"
+      },
+      {
+        "path": "handbook/docs/GESP C++2级/chapter5/index.html",
+        "title": "第13章 数据类型的转换"
+      },
+      {
+        "path": "handbook/docs/GESP C++2级/chapter6/index.html",
+        "title": "第14章 ASCII 编码"
+      },
+      {
+        "path": "handbook/docs/GESP C++2级/chapter7/index.html",
+        "title": "第15章 循环、分支的嵌套"
+      },
+      {
+        "path": "handbook/docs/GESP C++2级/chapter8/index.html",
+        "title": "第18章 字符图形"
+      },
+      {
+        "path": "handbook/docs/GESP C++2级/chapter9/index.html",
+        "title": "第16章 常用数学函数"
+      },
+      {
+        "path": "handbook/docs/GESP C++2级/chapter10/index.html",
+        "title": "第17章 数位分离"
+      },
+      {
+        "path": "handbook/docs/GESP C++2级/chapter11/index.html",
+        "title": "第19章 数学问题"
+      },
+      {
+        "path": "handbook/docs/GESP C++2级/chapter12/index.html",
+        "title": "第20章 GESP 2 级必背编程程序（套路模板）"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "GESP 3级",
+    "chapters": [
+      {
+        "path": "handbook/docs/GESP C++3级/chapter1/index.html",
+        "title": "第20章 数据编码"
+      },
+      {
+        "path": "handbook/docs/GESP C++3级/chapter2/index.html",
+        "title": "第21章 计算机的数制"
+      },
+      {
+        "path": "handbook/docs/GESP C++3级/chapter3/index.html",
+        "title": "第22章 位运算"
+      },
+      {
+        "path": "handbook/docs/GESP C++3级/chapter4/index.html",
+        "title": "第23章 算法与算法描述"
+      },
+      {
+        "path": "handbook/docs/GESP C++3级/chapter5/index.html",
+        "title": "第24章 一维数组"
+      },
+      {
+        "path": "handbook/docs/GESP C++3级/chapter6/index.html",
+        "title": "第25章 字符串与字符数组"
+      },
+      {
+        "path": "handbook/docs/GESP C++3级/chapter7/index.html",
+        "title": "第26章 枚举算法"
+      },
+      {
+        "path": "handbook/docs/GESP C++3级/chapter8/index.html",
+        "title": "第27章 模拟算法"
+      },
+      {
+        "path": "handbook/docs/GESP C++3级/chapter9/index.html",
+        "title": "第28章 字符串相关算法"
+      },
+      {
+        "path": "handbook/docs/GESP C++3级/chapter10/index.html",
+        "title": "GESP C++ 三级必备编程程序（真题必背）"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "GESP 4级",
+    "chapters": [
+      {
+        "path": "handbook/docs/GESP C++4级/chapter1/index.html",
+        "title": "第29章 函数"
+      },
+      {
+        "path": "handbook/docs/GESP C++4级/chapter2/index.html",
+        "title": "第30章 指针"
+      },
+      {
+        "path": "handbook/docs/GESP C++4级/chapter3/index.html",
+        "title": "第31章 引用"
+      },
+      {
+        "path": "handbook/docs/GESP C++4级/chapter4/index.html",
+        "title": "第33章 结构体与联合体"
+      },
+      {
+        "path": "handbook/docs/GESP C++4级/chapter5/index.html",
+        "title": "第34章内存分区模型"
+      },
+      {
+        "path": "handbook/docs/GESP C++4级/chapter6/index.html",
+        "title": "第35章 异常处理"
+      },
+      {
+        "path": "handbook/docs/GESP C++4级/chapter7/index.html",
+        "title": "第36章 文件操作"
+      },
+      {
+        "path": "handbook/docs/GESP C++4级/chapter8/index.html",
+        "title": "第37章 二维和多维数组"
+      },
+      {
+        "path": "handbook/docs/GESP C++4级/chapter9/index.html",
+        "title": "第38章 算法的复杂度评估"
+      },
+      {
+        "path": "handbook/docs/GESP C++4级/chapter10/index.html",
+        "title": "第39章 排序算法"
+      },
+      {
+        "path": "handbook/docs/GESP C++4级/chapter11/index.html",
+        "title": "第40章 递推算法"
+      },
+      {
+        "path": "handbook/docs/GESP C++4级/chapter12/index.html",
+        "title": "GESP C++四级 必背编程真题"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "GESP 5级",
+    "chapters": [
+      {
+        "path": "handbook/docs/GESP C++5级/chapter1/index.html",
+        "title": "第41章 初等数论"
+      },
+      {
+        "path": "handbook/docs/GESP C++5级/chapter2/index.html",
+        "title": "第42章 数组模拟高精度计算"
+      },
+      {
+        "path": "handbook/docs/GESP C++5级/chapter3/index.html",
+        "title": "第43章 动态数组"
+      },
+      {
+        "path": "handbook/docs/GESP C++5级/chapter4/index.html",
+        "title": "第44章 线性表和链表"
+      },
+      {
+        "path": "handbook/docs/GESP C++5级/chapter5/index.html",
+        "title": "第45章 递归算法"
+      },
+      {
+        "path": "handbook/docs/GESP C++5级/chapter6/index.html",
+        "title": "第46章 二分查找"
+      },
+      {
+        "path": "handbook/docs/GESP C++5级/chapter7/index.html",
+        "title": "第47章 贪心算法"
+      },
+      {
+        "path": "handbook/docs/GESP C++5级/chapter8/index.html",
+        "title": "第48章 分治算法"
+      },
+      {
+        "path": "handbook/docs/GESP C++5级/chapter9/index.html",
+        "title": "GESP C++ 五级编程真题必备程序（必背模板）"
+      },
+      {
+        "path": "handbook/docs/GESP C++5级/复杂度估算/index.html",
+        "title": "算法复杂度估算方法"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "GESP 6级",
+    "chapters": [
+      {
+        "path": "handbook/docs/GESP C++6级/chapter1/index.html",
+        "title": "第49章 栈、队列与循环队列"
+      },
+      {
+        "path": "handbook/docs/GESP C++6级/chapter2/index.html",
+        "title": "第50章 树"
+      },
+      {
+        "path": "handbook/docs/GESP C++6级/chapter3/index.html",
+        "title": "第51章 哈夫曼树"
+      },
+      {
+        "path": "handbook/docs/GESP C++6级/chapter4/index.html",
+        "title": "第52章 完全二叉树和二叉排序树"
+      },
+      {
+        "path": "handbook/docs/GESP C++6级/chapter5/index.html",
+        "title": "第53章 格雷编码"
+      },
+      {
+        "path": "handbook/docs/GESP C++6级/chapter6/index.html",
+        "title": "第54章 二叉树的搜索算法"
+      },
+      {
+        "path": "handbook/docs/GESP C++6级/chapter7/index.html",
+        "title": "第55章 简单动态规划"
+      },
+      {
+        "path": "handbook/docs/GESP C++6级/chapter8/index.html",
+        "title": "第56章 面向对象编程"
+      },
+      {
+        "path": "handbook/docs/GESP C++6级/chapter9/index.html",
+        "title": "GESP C++ 六级必备编程程序（核心模板）"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "GESP 7级",
+    "chapters": [
+      {
+        "path": "handbook/docs/GESP C++7级/chapter1/index.html",
+        "title": "第57章 常用数学函数"
+      },
+      {
+        "path": "handbook/docs/GESP C++7级/chapter2/index.html",
+        "title": "第58章 复杂动态规划"
+      },
+      {
+        "path": "handbook/docs/GESP C++7级/chapter3/index.html",
+        "title": "第59章 图的定义及基本图论算法"
+      },
+      {
+        "path": "handbook/docs/GESP C++7级/chapter4/index.html",
+        "title": "第60章 哈希表"
+      },
+      {
+        "path": "handbook/docs/GESP C++7级/chapter5/index.html",
+        "title": "必备编程模板（GESP 七级真题实战）"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "GESP 8级",
+    "chapters": [
+      {
+        "path": "handbook/docs/GESP C++8级/chapter1/index.html",
+        "title": "第61章 计数原理"
+      },
+      {
+        "path": "handbook/docs/GESP C++8级/chapter2/index.html",
+        "title": "第62章 杨辉三角"
+      },
+      {
+        "path": "handbook/docs/GESP C++8级/chapter3/index.html",
+        "title": "第63章 倍增法"
+      },
+      {
+        "path": "handbook/docs/GESP C++8级/chapter4/index.html",
+        "title": "第64章 代数与平面几何"
+      },
+      {
+        "path": "handbook/docs/GESP C++8级/chapter5/index.html",
+        "title": "第65章 图论算法及综合应用"
+      },
+      {
+        "path": "handbook/docs/GESP C++8级/chapter6/index.html",
+        "title": "第66章 算法的时间和空间效率分析"
+      },
+      {
+        "path": "handbook/docs/GESP C++8级/chapter7/index.html",
+        "title": "第67章 算法优化"
+      },
+      {
+        "path": "handbook/docs/GESP C++8级/chapter8/index.html",
+        "title": "八级编程题必备代码模板"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "CSP-J",
+    "chapters": [
+      {
+        "path": "handbook/docs/CSP-J知识手册/chapter-01-computer-basics/index.html",
+        "title": "第1章 计算机基础知识"
+      },
+      {
+        "path": "handbook/docs/CSP-J知识手册/chapter-02-computer-architecture/index.html",
+        "title": "第2章 计算机体系基本结构"
+      },
+      {
+        "path": "handbook/docs/CSP-J知识手册/chapter-03-software-and-programming-languages/index.html",
+        "title": "第3章 计算机软件和计算机语言"
+      },
+      {
+        "path": "handbook/docs/CSP-J知识手册/chapter-04-number-systems-and-encoding/index.html",
+        "title": "第4章 数制转换和信息编码"
+      },
+      {
+        "path": "handbook/docs/CSP-J知识手册/chapter-05-codes-and-bitwise-operations/index.html",
+        "title": "第5章 原码反码补码和位运算"
+      },
+      {
+        "path": "handbook/docs/CSP-J知识手册/chapter-06-computer-networks/index.html",
+        "title": "第6章 计算机网络"
+      },
+      {
+        "path": "handbook/docs/CSP-J知识手册/chapter-07-internet/index.html",
+        "title": "第7章 因特网"
+      },
+      {
+        "path": "handbook/docs/CSP-J知识手册/chapter-08-linear-data-structures/index.html",
+        "title": "第8章 线性数据结构"
+      },
+      {
+        "path": "handbook/docs/CSP-J知识手册/chapter-09-trees-and-graphs/index.html",
+        "title": "第9章 树和图"
+      },
+      {
+        "path": "handbook/docs/CSP-J知识手册/chapter-10-advanced-time-complexity/index.html",
+        "title": "第10章 时间复杂度进阶"
+      },
+      {
+        "path": "handbook/docs/CSP-J知识手册/chapter-11-mathematics/index.html",
+        "title": "第11章 数学专题"
+      },
+      {
+        "path": "handbook/docs/CSP-J知识手册/chapter-12-algorithm-topics/index.html",
+        "title": "第12章 算法专题(排序算法、哈夫曼树)"
+      },
+      {
+        "path": "handbook/docs/CSP-J知识手册/chapter-13-cspj-essential-codes/index.html",
+        "title": "CSP-J 复赛必备编程模板（核心代码速查）"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "CSP-S",
+    "chapters": [
+      {
+        "path": "handbook/docs/CSP-S知识手册/chapter1/index.html",
+        "title": "第1章 计算机基础知识"
+      },
+      {
+        "path": "handbook/docs/CSP-S知识手册/chapter2/index.html",
+        "title": "第2章 计算机体系基本结构"
+      },
+      {
+        "path": "handbook/docs/CSP-S知识手册/chapter3/index.html",
+        "title": "第3章 计算机软件和计算机语言"
+      },
+      {
+        "path": "handbook/docs/CSP-S知识手册/chapter4/index.html",
+        "title": "第4章 数制转换和信息编码"
+      },
+      {
+        "path": "handbook/docs/CSP-S知识手册/chapter5/index.html",
+        "title": "第5章 原码、反码、补码和位运算"
+      },
+      {
+        "path": "handbook/docs/CSP-S知识手册/chapter6/index.html",
+        "title": "第6章 计算机网络"
+      },
+      {
+        "path": "handbook/docs/CSP-S知识手册/chapter7/index.html",
+        "title": "第7章 因特网"
+      },
+      {
+        "path": "handbook/docs/CSP-S知识手册/chapter8/index.html",
+        "title": "第8章 线性数据结构"
+      },
+      {
+        "path": "handbook/docs/CSP-S知识手册/chapter9/index.html",
+        "title": "第9章 树和图"
+      },
+      {
+        "path": "handbook/docs/CSP-S知识手册/chapter10/index.html",
+        "title": "第10章 时间复杂度进阶"
+      },
+      {
+        "path": "handbook/docs/CSP-S知识手册/chapter11/index.html",
+        "title": "第11章 数学专题"
+      },
+      {
+        "path": "handbook/docs/CSP-S知识手册/chapter12/index.html",
+        "title": "第12章 算法专题"
+      },
+      {
+        "path": "handbook/docs/CSP-S知识手册/chapter13/index.html",
+        "title": "CSP-S 必备编程模板"
+      }
+    ]
+  }
+]

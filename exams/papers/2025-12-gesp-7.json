@@ -1,0 +1,631 @@
+{
+  "title": "2025年12月 GESP C++ 7级",
+  "category": "GESP",
+  "level": "7",
+  "date": "2025-12",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年12月 GESP C++ 7级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "形参是函数定义时所指定的变量，它只在函数内部有效。",
+          "html": "<p>形参是函数定义时所指定的变量，它只在函数内部有效。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "在函数内部，可以修改传入的形参的值，即使该形参是一个常量引用。",
+          "html": "<p>在函数内部，可以修改传入的形参的值，即使该形参是一个常量引用。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "实参和形参的类型必须完全一致，否则会导致编译错误。",
+          "html": "<p>实参和形参的类型必须完全一致，否则会导致编译错误。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "使用指针作为形参时，形参是指向实参的地址，因此对该指针赋值会影响实参。",
+          "html": "<p>使用指针作为形参时，形参是指向实参的地址，因此对该指针赋值会影响实参。</p>\n"
+        }
+      ],
+      "content": "下面关于 C++ 中形参、实参和定义域的说法中，正确的一项是（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>下面关于 C++ 中形参、实参和定义域的说法中，正确的一项是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$\\{1, 8, 5, 6\\}$",
+          "html": "<p>$\\{1, 8, 5, 6\\}$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$\\{1, 5, 6, 7\\}$",
+          "html": "<p>$\\{1, 5, 6, 7\\}$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$\\{1, 8, 6\\}$",
+          "html": "<p>$\\{1, 8, 6\\}$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$\\{1, 5, 7, 4\\}$",
+          "html": "<p>$\\{1, 5, 7, 4\\}$</p>\n"
+        }
+      ],
+      "content": "已知三个序列：$s1 = \\{3, 1, 8, 2, 5, 6, 7, 4\\}$， $s2 = \\{1, 5, 1, 8, 6, 4, 7, 5, 6\\}$， $s3 = \\{1, 8, 3, 5, 7, 6, 2, 4\\}$。以下哪个序列是它们的最长公共子序列（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>已知三个序列：$s1 = \\{3, 1, 8, 2, 5, 6, 7, 4\\}$， $s2 = \\{1, 5, 1, 8, 6, 4, 7, 5, 6\\}$， $s3 = \\{1, 8, 3, 5, 7, 6, 2, 4\\}$。以下哪个序列是它们的最长公共子序列（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        }
+      ],
+      "content": "现有一个地址区间为 $[0, 9]$ 的哈希表，当出现冲突情况，会往后找第一个空的地址存储（到 $9$ 冲突了就从 $0$ 开始往后），现在要依次存储 $[3, 5, 2, 9, 1, 8]$，哈希函数为 $h(x) = x \\% 10$。其中 $8$ 存储在哈希表哪个地址中（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>现有一个地址区间为 $[0, 9]$ 的哈希表，当出现冲突情况，会往后找第一个空的地址存储（到 $9$ 冲突了就从 $0$ 开始往后），现在要依次存储 $[3, 5, 2, 9, 1, 8]$，哈希函数为 $h(x) = x \\% 10$。其中 $8$ 存储在哈希表哪个地址中（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "在解决 0/1 背包问题时，使用贪心算法可以保证找到最优解，因为物品只能放入一次。",
+          "html": "<p>在解决 0/1 背包问题时，使用贪心算法可以保证找到最优解，因为物品只能放入一次。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "0/1 背包是 P 问题（多项式时间可解问题），它可以在 $O(nW)$ 的时间复杂度内解决。",
+          "html": "<p>0/1 背包是 P 问题（多项式时间可解问题），它可以在 $O(nW)$ 的时间复杂度内解决。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "0/1 背包问题中，动态规划解法的空间复杂度为 $O(nW)$，但可以通过滚动数组技巧将空间复杂度优化到 $O(W)$。",
+          "html": "<p>0/1 背包问题中，动态规划解法的空间复杂度为 $O(nW)$，但可以通过滚动数组技巧将空间复杂度优化到 $O(W)$。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "0/1 背包问题中，每个物品只能选择一次，并且子问题之间是独立的，无法重用计算结果。",
+          "html": "<p>0/1 背包问题中，每个物品只能选择一次，并且子问题之间是独立的，无法重用计算结果。</p>\n"
+        }
+      ],
+      "content": "在 0/1 背包问题中，给定一组物品，每个物品有一个重量和价值，背包的容量有限。假设背包的最大容量为 $W$，物品的数量为 $n$，其中第 $i$ 个物品的重量为 $w_i$，价值为 $v_i$。以下关于 0/1 背包问题的描述，正确的是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>在 0/1 背包问题中，给定一组物品，每个物品有一个重量和价值，背包的容量有限。假设背包的最大容量为 $W$，物品的数量为 $n$，其中第 $i$ 个物品的重量为 $w_i$，价值为 $v_i$。以下关于 0/1 背包问题的描述，正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$31$",
+          "html": "<p>$31$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$32$",
+          "html": "<p>$32$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$63$",
+          "html": "<p>$63$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$64$",
+          "html": "<p>$64$</p>\n"
+        }
+      ],
+      "content": "一棵深度为 $6$（根节点深度为 $1$）的完全二叉树，节点总数最少有（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>一棵深度为 $6$（根节点深度为 $1$）的完全二叉树，节点总数最少有（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$D$ $E$ $B$ $F$ $H$ $J$ $I$ $G$ $C$ $A$ 是它的后序遍历序列。",
+          "html": "<p>$D$ $E$ $B$ $F$ $H$ $J$ $I$ $G$ $C$ $A$ 是它的后序遍历序列。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$A$ $B$ $C$ $D$ $E$ $F$ $G$ $H$ $I$ $J$ 是它的广度优先遍历序列。",
+          "html": "<p>$A$ $B$ $C$ $D$ $E$ $F$ $G$ $H$ $I$ $J$ 是它的广度优先遍历序列。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$A$ $B$ $D$ $E$ $C$ $F$ $G$ $H$ $I$ $J$ 是它的先序遍历序列。",
+          "html": "<p>$A$ $B$ $D$ $E$ $C$ $F$ $G$ $H$ $I$ $J$ 是它的先序遍历序列。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$D$ $B$ $E$ $A$ $F$ $C$ $H$ $G$ $J$ $I$ 是它的中序遍历序列。",
+          "html": "<p>$D$ $B$ $E$ $A$ $F$ $C$ $H$ $G$ $J$ $I$ 是它的中序遍历序列。</p>\n"
+        }
+      ],
+      "content": "对于如下二叉树，下面关于访问的顺序说法错误的是（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>对于如下二叉树，下面关于访问的顺序说法错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        }
+      ],
+      "content": "下面程序的运行结果为（ ）。\n\n```cpp\n#include <iostream>\nint query(int n, int *a, int x) {\n    int l = 0, r = n;\n    while (l < r) {\n        int mid = l + (r - l) / 2;\n        if (a[mid] >= x) r = mid;\n        else l = mid + 1;\n    }\n    if (l == n) return -1;\n    return l;\n}\nint main() {\n    int n = 10;\n    int x = 3;\n    int num[] = {1, 2, 2, 3, 3, 4, 5, 5, 6, 7};\n    std::cout << query(n, num, x) << \"\\n\";\n    return 0;\n}\n```",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>下面程序的运行结果为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nint query(int n, int *a, int x) {\n    int l = 0, r = n;\n    while (l &lt; r) {\n        int mid = l + (r - l) / 2;\n        if (a[mid] &gt;= x) r = mid;\n        else l = mid + 1;\n    }\n    if (l == n) return -1;\n    return l;\n}\nint main() {\n    int n = 10;\n    int x = 3;\n    int num[] = {1, 2, 2, 3, 3, 4, 5, 5, 6, 7};\n    std::cout &lt;&lt; query(n, num, x) &lt;&lt; &quot;\\n&quot;;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面程序中，函数 `query` 的时间复杂度是（ ）。\n\n```cpp\n#include <iostream>\nint query(int n, int *a, int x) {\n    int l = 0, r = n;\n    while (l < r) {\n        int mid = l + (r - l) / 2;\n        if (a[mid] >= x) r = mid;\n        else l = mid + 1;\n    }\n    if (l == n) return -1;\n    return l;\n}\nint main() {\n    int n = 10;\n    int x = 3;\n    int num[] = {1, 2, 2, 3, 3, 4, 5, 5, 6, 7};\n    std::cout << query(n, num, x) << \"\\n\";\n    return 0;\n}\n```",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下面程序中，函数 <code>query</code> 的时间复杂度是（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nint query(int n, int *a, int x) {\n    int l = 0, r = n;\n    while (l &lt; r) {\n        int mid = l + (r - l) / 2;\n        if (a[mid] &gt;= x) r = mid;\n        else l = mid + 1;\n    }\n    if (l == n) return -1;\n    return l;\n}\nint main() {\n    int n = 10;\n    int x = 3;\n    int num[] = {1, 2, 2, 3, 3, 4, 5, 5, 6, 7};\n    std::cout &lt;&lt; query(n, num, x) &lt;&lt; &quot;\\n&quot;;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$30$",
+          "html": "<p>$30$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$34$",
+          "html": "<p>$34$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$43$",
+          "html": "<p>$43$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$47$",
+          "html": "<p>$47$</p>\n"
+        }
+      ],
+      "content": "有 $5$ 个字符，它们出现的次数分别为 $2$ 次、$2$ 次、$3$ 次、$3$ 次、$5$ 次。现在要用哈夫曼编码的方式来为这些字符进行编码，最小加权路径长度 WPL（每个字符的出现次数 $\\times$ 它的编码长度，再把每个字符结果加起来）的值为（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>有 $5$ 个字符，它们出现的次数分别为 $2$ 次、$2$ 次、$3$ 次、$3$ 次、$5$ 次。现在要用哈夫曼编码的方式来为这些字符进行编码，最小加权路径长度 WPL（每个字符的出现次数 $\\times$ 它的编码长度，再把每个字符结果加起来）的值为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$16$",
+          "html": "<p>$16$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$26$",
+          "html": "<p>$26$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$30$",
+          "html": "<p>$30$</p>\n"
+        }
+      ],
+      "content": "下面程序的运行结果为（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\nint f(int n) {\n    if (n <= 2) return n * 2;\n    return f(n - 1) + f(n - 2);\n}\nint main() {\n    cout << f(5) << endl;\n    return 0;\n}\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面程序的运行结果为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint f(int n) {\n    if (n &lt;= 2) return n * 2;\n    return f(n - 1) + f(n - 2);\n}\nint main() {\n    cout &lt;&lt; f(5) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$9$",
+          "html": "<p>$9$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$12$",
+          "html": "<p>$12$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$18$",
+          "html": "<p>$18$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$36$",
+          "html": "<p>$36$</p>\n"
+        }
+      ],
+      "content": "一个简单无向图有 $36$ 条边，且每个顶点的度数都为 $4$，则图的顶点个数为（ ）。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>一个简单无向图有 $36$ 条边，且每个顶点的度数都为 $4$，则图的顶点个数为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "任意二叉树的中序遍历与后序遍历必定不相同。",
+          "html": "<p>任意二叉树的中序遍历与后序遍历必定不相同。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "对任意二叉树，若已知先序遍历与后序遍历，则该二叉树唯一确定。",
+          "html": "<p>对任意二叉树，若已知先序遍历与后序遍历，则该二叉树唯一确定。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "若二叉树有 $n$ 个结点，根节点高度为 $h$，则其高度满足： $h \\leq n$。",
+          "html": "<p>若二叉树有 $n$ 个结点，根节点高度为 $h$，则其高度满足： $h \\leq n$。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "在二叉树的先序遍历中，根后紧跟的结点一定是根的左孩⼦。",
+          "html": "<p>在二叉树的先序遍历中，根后紧跟的结点一定是根的左孩⼦。</p>\n"
+        }
+      ],
+      "content": "下面关于二叉树的说法正确的是（ ）。",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下面关于二叉树的说法正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "假设一个算法时间复杂度的递推式是 $T(n) = 2T(n/2) + n$（$n$ 为正整数），和 $T(1) = 1$，那么这个算法的时间复杂度是（ ）。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>假设一个算法时间复杂度的递推式是 $T(n) = 2T(n/2) + n$（$n$ 为正整数），和 $T(1) = 1$，那么这个算法的时间复杂度是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$, $5$, $6$, $3$, $2$, $8$, $9$, $4$, $7$",
+          "html": "<p>$1$, $5$, $6$, $3$, $2$, $8$, $9$, $4$, $7$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1$, $5$, $8$, $9$, $7$, $4$, $6$, $3$, $2$",
+          "html": "<p>$1$, $5$, $8$, $9$, $7$, $4$, $6$, $3$, $2$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$3$, $2$, $1$, $4$, $7$, $6$, $9$, $5$, $8$",
+          "html": "<p>$3$, $2$, $1$, $4$, $7$, $6$, $9$, $5$, $8$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$2$, $5$, $6$, $3$, $8$, $7$, $9$, $4$, $1$",
+          "html": "<p>$2$, $5$, $6$, $3$, $8$, $7$, $9$, $4$, $1$</p>\n"
+        }
+      ],
+      "content": "下面哪一个可能是下图的深度优先遍历序列（ ）。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>下面哪一个可能是下图的深度优先遍历序列（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        }
+      ],
+      "content": "下面这个有向图的强连通分量的个数是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>下面这个有向图的强连通分量的个数是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 语言中，表达式 `3 ^ 2` 的结果类型为 `int`，值为 $9$。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>C++ 语言中，表达式 <code>3 ^ 2</code> 的结果类型为 <code>int</code>，值为 $9$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "使用 `cmath` 头文件中的正弦函数，表达式 `sin(90)` 的结果类型为 `double`，值约为 $1.0$。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>使用 <code>cmath</code> 头文件中的正弦函数，表达式 <code>sin(90)</code> 的结果类型为 <code>double</code>，值约为 $1.0$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "使用 `strcmp(\"10\", \"9\")` 比较两个字符串，返回值大于 $0$ ，说明 `\"10\"` 比 `\"9\"` 大。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>使用 <code>strcmp(&quot;10&quot;, &quot;9&quot;)</code> 比较两个字符串，返回值大于 $0$ ，说明 <code>&quot;10&quot;</code> 比 <code>&quot;9&quot;</code> 大。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "选择排序是一种不稳定的排序算法，而冒泡排序是一种稳定的排序算法。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>选择排序是一种不稳定的排序算法，而冒泡排序是一种稳定的排序算法。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "求两个长度为 $n$ 的序列的最长公共子序列（LCS）长度时，可以使用滚动数组将空间复杂度从 $O(n^2)$ 优化到 $O(n)$。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>求两个长度为 $n$ 的序列的最长公共子序列（LCS）长度时，可以使用滚动数组将空间复杂度从 $O(n^2)$ 优化到 $O(n)$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在无向图中，所有顶点的度数之和等于边数的两倍。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>在无向图中，所有顶点的度数之和等于边数的两倍。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "使用邻接矩阵存储一个有 $n$ 个顶点、 $m$ 条边的图，对该图进行一次完整的 BFS 遍历，时间复杂度为 $O(n^2)$。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>使用邻接矩阵存储一个有 $n$ 个顶点、 $m$ 条边的图，对该图进行一次完整的 BFS 遍历，时间复杂度为 $O(n^2)$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在图像处理或游戏开发中，泛洪（flood fill）算法既可以用 BFS 实现，也可以用 DFS 实现。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>在图像处理或游戏开发中，泛洪（flood fill）算法既可以用 BFS 实现，也可以用 DFS 实现。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "使用链地址法处理冲突的哈希表，当所有元素都映射到同一个槽位时，查找操作的最坏时间复杂度为 $O(n)$，其中 $n$ 为元素个数。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>使用链地址法处理冲突的哈希表，当所有元素都映射到同一个槽位时，查找操作的最坏时间复杂度为 $O(n)$，其中 $n$ 为元素个数。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "一个包含 $n$ 个顶点的连通无向图，其任何一棵生成树都恰好包含 $n-1$ 条边。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>一个包含 $n$ 个顶点的连通无向图，其任何一棵生成树都恰好包含 $n-1$ 条边。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：城市规划**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\nA 国有 $n$ 座城市，城市之间由 $m$ 条双向道路连接，任意一座城市均可经过若干条双向道路到达另一座城市。城市依次以 $1,2,\\ldots,n$ 编号。第 $i$（$1\\le i\\le m$）条双向道路连接城市 $u_i$ 与城市 $v_i$。\n\n对于城市 $u$ 和城市 $v$ 而言，它们之间的连通度 $d(u,v)$ 定义为从城市 $u$ 出发到达城市 $v$ 所需经过的双向道路的最少条数。由于道路是双向的，可以知道连通度满足 $d(u,v)=d(v,u)$，特殊地有 $d(u,u)=0$。\n\n现在 A 国正在规划城市建设方案。城市 $u$ 的建设难度为它到其它城市的最大连通度。请你求出建设难度最小的城市，如果有多个满足条件的城市，则选取其中编号最小的城市。形式化地，你需要求出使得 $\\max\\limits_{1\\le i\\le n}d(u,i)$ 最小的 $u$，若存在多个可能的 $u$ 则选取其中最小的。\n\n**输入格式**\n\n第一行，两个正整数 $n,m$，表示 A 国的城市数量与双向道路数量。\n\n接下来 $m$ 行，每行两个整数 $u_i,v_i$，表示一条连接城市 $u_i$ 与城市 $v_i$ 的双向道路。\n\n**输出格式**\n\n输出一行，一个整数，表示建设难度最小的城市编号。如果有多个满足条件的城市，则选取其中编号最小的城市。\n\n**样例输入 #1**\n```\n3 3\n1 2\n1 3\n2 3\n```\n\n**样例输出 #1**\n```\n1\n```\n\n**样例输入 #2**\n```\n4 4\n1 2\n2 3\n3 4\n2 4\n```\n\n**样例输出 #2**\n```\n2\n```\n\n**说明/提示**\n\n对于 $40\\%$ 的测试点，保证 $1\\le n\\le 300$。\n\n对于所有测试点，保证 $1\\le n\\le 2000$，$1\\le m\\le 2000$，$1\\le u_i,v_i\\le n$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：城市规划</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>A 国有 $n$ 座城市，城市之间由 $m$ 条双向道路连接，任意一座城市均可经过若干条双向道路到达另一座城市。城市依次以 $1,2,\\ldots,n$ 编号。第 $i$（$1\\le i\\le m$）条双向道路连接城市 $u_i$ 与城市 $v_i$。</p>\n<p>对于城市 $u$ 和城市 $v$ 而言，它们之间的连通度 $d(u,v)$ 定义为从城市 $u$ 出发到达城市 $v$ 所需经过的双向道路的最少条数。由于道路是双向的，可以知道连通度满足 $d(u,v)=d(v,u)$，特殊地有 $d(u,u)=0$。</p>\n<p>现在 A 国正在规划城市建设方案。城市 $u$ 的建设难度为它到其它城市的最大连通度。请你求出建设难度最小的城市，如果有多个满足条件的城市，则选取其中编号最小的城市。形式化地，你需要求出使得 $\\max\\limits_{1\\le i\\le n}d(u,i)$ 最小的 $u$，若存在多个可能的 $u$ 则选取其中最小的。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，两个正整数 $n,m$，表示 A 国的城市数量与双向道路数量。</p>\n<p>接下来 $m$ 行，每行两个整数 $u_i,v_i$，表示一条连接城市 $u_i$ 与城市 $v_i$ 的双向道路。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，一个整数，表示建设难度最小的城市编号。如果有多个满足条件的城市，则选取其中编号最小的城市。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3 3\n1 2\n1 3\n2 3\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>1\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>4 4\n1 2\n2 3\n3 4\n2 4\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>2\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $40\\%$ 的测试点，保证 $1\\le n\\le 300$。</p>\n<p>对于所有测试点，保证 $1\\le n\\le 2000$，$1\\le m\\le 2000$，$1\\le u_i,v_i\\le n$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：学习小组**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n班主任计划将班级里的 $n$ 名同学划分为若干个学习小组，每名同学都需要分入某一个学习小组中。班级里的同学依次以 $1,2,\\ldots,n$ 编号，第 $i$ 名同学有其发言积极度 $c_i$。\n\n观察发现，如果一个学习小组中恰好包含编号为 $p_1,p_2,\\ldots,p_k$ 的 $k$ 名同学，则该学习小组的基础讨论积极度为 $a_k$，综合讨论积极度为 $a_k+\\max\\{c_{p_1},c_{p_2},\\ldots,c_{p_k}\\}−\\min\\{c_{p_1},c_{p_2},\\ldots,c_{p_k}\\}$，也即基础讨论积极度加上小组内同学的最大发言积极度与最小发言积极度之差。\n\n给定基础讨论积极度 $a_1,a_2,\\ldots,a_n$，请你计算将这 $n$ 名同学划分为学习小组的所有可能方案中，综合讨论积极度之和的最大值。\n\n**输入格式**\n\n第一行，一个正整数 $n$，表示班级人数。\n\n第二行，$n$ 个非负整数 $c_1,c_2,\\ldots,c_n$，表示每位同学的发言积极度。\n\n第三行，$n$ 个非负整数 $a_1,a_2,\\ldots,a_n$，表示不同人数学习小组的基础讨论积极度。\n\n**输出格式**\n\n输出一行，一个整数，表示所有划分方案中，学习小组综合讨论积极度之和的最大值。\n\n**样例输入 #1**\n```\n4\n2 1 3 2\n1 5 6 3\n```\n\n**样例输出 #1**\n```\n12\n```\n\n**样例输入 #2**\n```\n8\n1 3 2 4 3 5 4 6\n0 2 5 6 4 3 3 4\n```\n\n**样例输出 #2**\n```\n21\n```\n\n**说明/提示**\n\n对于 $40\\%$ 的测试点，保证 $c_i=0$。\n\n对于所有测试点，保证 $1\\le n\\le 300$，$0\\le c_i\\le 10^4$，$0\\le a_i\\le 10^4$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：学习小组</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>班主任计划将班级里的 $n$ 名同学划分为若干个学习小组，每名同学都需要分入某一个学习小组中。班级里的同学依次以 $1,2,\\ldots,n$ 编号，第 $i$ 名同学有其发言积极度 $c_i$。</p>\n<p>观察发现，如果一个学习小组中恰好包含编号为 $p_1,p_2,\\ldots,p_k$ 的 $k$ 名同学，则该学习小组的基础讨论积极度为 $a_k$，综合讨论积极度为 $a_k+\\max\\{c_{p_1},c_{p_2},\\ldots,c_{p_k}\\}−\\min\\{c_{p_1},c_{p_2},\\ldots,c_{p_k}\\}$，也即基础讨论积极度加上小组内同学的最大发言积极度与最小发言积极度之差。</p>\n<p>给定基础讨论积极度 $a_1,a_2,\\ldots,a_n$，请你计算将这 $n$ 名同学划分为学习小组的所有可能方案中，综合讨论积极度之和的最大值。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，一个正整数 $n$，表示班级人数。</p>\n<p>第二行，$n$ 个非负整数 $c_1,c_2,\\ldots,c_n$，表示每位同学的发言积极度。</p>\n<p>第三行，$n$ 个非负整数 $a_1,a_2,\\ldots,a_n$，表示不同人数学习小组的基础讨论积极度。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，一个整数，表示所有划分方案中，学习小组综合讨论积极度之和的最大值。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4\n2 1 3 2\n1 5 6 3\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>12\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>8\n1 3 2 4 3 5 4 6\n0 2 5 6 4 3 3 4\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>21\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $40\\%$ 的测试点，保证 $c_i=0$。</p>\n<p>对于所有测试点，保证 $1\\le n\\le 300$，$0\\le c_i\\le 10^4$，$0\\le a_i\\le 10^4$。</p>\n"
+    }
+  ],
+  "id": "2025-12-gesp-7",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-12-gesp-7",
+  "version": "b37f8dde4ce65008",
+  "warnings": [],
+  "objective_score": 50.0
+}

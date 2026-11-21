@@ -1,0 +1,631 @@
+{
+  "title": "2025年9月 GESP C++ 2级",
+  "category": "GESP",
+  "level": "2",
+  "date": "2025-09",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年9月 GESP C++ 2级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "大电脑模型",
+          "html": "<p>大电脑模型</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "大规模智能",
+          "html": "<p>大规模智能</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "智能的单位",
+          "html": "<p>智能的单位</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "大语言模型",
+          "html": "<p>大语言模型</p>\n"
+        }
+      ],
+      "content": "人工智能现在非常火，小杨就想多了解一下，其中就经常听人提到“大模型”。那么请问这里说的“大模型”最贴切是指 ( )。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>人工智能现在非常火，小杨就想多了解一下，其中就经常听人提到“大模型”。那么请问这里说的“大模型”最贴切是指 ( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "一次",
+          "html": "<p>一次</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "二次",
+          "html": "<p>二次</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "三次",
+          "html": "<p>三次</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "四次",
+          "html": "<p>四次</p>\n"
+        }
+      ],
+      "content": "在 TCP 协议中，完成连接建立需要通过（ ）握手。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>在 TCP 协议中，完成连接建立需要通过（ ）握手。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`XingMing` 是汉语拼音，不能作为变量名称",
+          "html": "<p><code>XingMing</code> 是汉语拼音，不能作为变量名称</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "可以将 `XingMing` 改为 `Xing Ming`",
+          "html": "<p>可以将 <code>XingMing</code> 改为 <code>Xing Ming</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "可以将 `XingMing` 改为 `xingming`",
+          "html": "<p>可以将 <code>XingMing</code> 改为 <code>xingming</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "可以将 `XingMing` 改为 `Xing-Ming`",
+          "html": "<p>可以将 <code>XingMing</code> 改为 <code>Xing-Ming</code></p>\n"
+        }
+      ],
+      "content": "下面的 C++ 代码用于输入姓名，然后输出姓名，正确的说法是( )。\n\n```cpp\nstring XingMing;\ncout << \"请输入您的姓名：\";\ncin >> XingMing;\ncout << XingMing;\n```",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码用于输入姓名，然后输出姓名，正确的说法是( )。</p>\n<pre><code class=\"language-cpp\">string XingMing;\ncout &lt;&lt; &quot;请输入您的姓名：&quot;;\ncin &gt;&gt; XingMing;\ncout &lt;&lt; XingMing;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`N % div / 10`",
+          "html": "<p><code>N % div / 10</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`N / div / 10`",
+          "html": "<p><code>N / div / 10</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`N % div % 10`",
+          "html": "<p><code>N % div % 10</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`N / div % 10`",
+          "html": "<p><code>N / div % 10</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码用于获得正整数 $N$ 的第 $M$ 位数，如 $N$ 等于 $1234$，$M$ 等于 $2$，则输出 $3$。此题假设 $M$ 的值大于等于 $1$ 且小于等于 $N$ 的位数。横线处应填入的代码是( )。\n\n```cpp\nint N, M, div=1;\ncout << \"请输入一个正整数：\";\ncin >> N;\ncout << \"请输入从右到左取第几位数：\";\ncin >> M;\nfor (int i = 0; i < (M - 1); i++) div *= 10;\ncout << (______________);\n```",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码用于获得正整数 $N$ 的第 $M$ 位数，如 $N$ 等于 $1234$，$M$ 等于 $2$，则输出 $3$。此题假设 $M$ 的值大于等于 $1$ 且小于等于 $N$ 的位数。横线处应填入的代码是( )。</p>\n<pre><code class=\"language-cpp\">int N, M, div=1;\ncout &lt;&lt; &quot;请输入一个正整数：&quot;;\ncin &gt;&gt; N;\ncout &lt;&lt; &quot;请输入从右到左取第几位数：&quot;;\ncin &gt;&gt; M;\nfor (int i = 0; i &lt; (M - 1); i++) div *= 10;\ncout &lt;&lt; (______________);\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$3$ $4$ $0$",
+          "html": "<p>$3$ $4$ $0$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$3$ $3$ $3$",
+          "html": "<p>$3$ $3$ $3$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$4$ $4$ $4$",
+          "html": "<p>$4$ $4$ $4$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "以上都不对",
+          "html": "<p>以上都不对</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行，其输出是( )。\n\n```cpp\na, b = 3, 4;\nc = a == b;\ncout << a << ' ' << b << ' ' << c;\n```",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行，其输出是( )。</p>\n<pre><code class=\"language-cpp\">a, b = 3, 4;\nc = a == b;\ncout &lt;&lt; a &lt;&lt; ' ' &lt;&lt; b &lt;&lt; ' ' &lt;&lt; c;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`12 10`",
+          "html": "<p><code>12 10</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`10 10`",
+          "html": "<p><code>10 10</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`11 9`",
+          "html": "<p><code>11 9</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`9 9`",
+          "html": "<p><code>9 9</code></p>\n"
+        }
+      ],
+      "content": "某种编号的规则是“XX-Y”，其中 XX 从 $00$ 到 $11$，Y 从 $0$ 到 $9$。第 1 个编号是 $00$-$0$，第 2 个编号是 $01$-$1$，…，第 12 个编号 $11$-$1$，第 13 个编号 $00$-$2$，即其编码规则是 XX 和 Y 同时增 $1$，到 XX 到 $11$ 时下一个变为 $00$，Y 到 $9$ 时，下一个变为 $0$。\n下面的 C++ 代码用于生成第 $N$ 个编号，横线处应填上的代码是( )。\n\n```cpp\ncout << \"请输入编号位置：\";\ncin >> N;\npart1 = N % _____;\npart2 = N % _____;\nif (part1 < 10)\n    printf(\"0%d-%d\\n\", part1, part2);\nelse\n    printf(\"%d-%d\\n\", part1, part2);\n```",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>某种编号的规则是“XX-Y”，其中 XX 从 $00$ 到 $11$，Y 从 $0$ 到 $9$。第 1 个编号是 $00$-$0$，第 2 个编号是 $01$-$1$，…，第 12 个编号 $11$-$1$，第 13 个编号 $00$-$2$，即其编码规则是 XX 和 Y 同时增 $1$，到 XX 到 $11$ 时下一个变为 $00$，Y 到 $9$ 时，下一个变为 $0$。<br />\n下面的 C++ 代码用于生成第 $N$ 个编号，横线处应填上的代码是( )。</p>\n<pre><code class=\"language-cpp\">cout &lt;&lt; &quot;请输入编号位置：&quot;;\ncin &gt;&gt; N;\npart1 = N % _____;\npart2 = N % _____;\nif (part1 &lt; 10)\n    printf(&quot;0%d-%d\\n&quot;, part1, part2);\nelse\n    printf(&quot;%d-%d\\n&quot;, part1, part2);\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$145$",
+          "html": "<p>$145$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$125$",
+          "html": "<p>$125$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$55$",
+          "html": "<p>$55$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$45$",
+          "html": "<p>$45$</p>\n"
+        }
+      ],
+      "content": "下面的 C++ 代码执行后其输出是( )。\n\n```cpp\ncnt = 0;\nfor (int i = -10; i < 10; i++)\n    for (int j = 0; j < i; j++)\n        cnt += 1;\ncout << cnt;\n```",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码执行后其输出是( )。</p>\n<pre><code class=\"language-cpp\">cnt = 0;\nfor (int i = -10; i &lt; 10; i++)\n    for (int j = 0; j &lt; i; j++)\n        cnt += 1;\ncout &lt;&lt; cnt;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$110$",
+          "html": "<p>$110$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$12$",
+          "html": "<p>$12$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "不确定",
+          "html": "<p>不确定</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "无输出",
+          "html": "<p>无输出</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后其输出是( )。\n\n```cpp\nfor (i = 1; i < 12; i++){\n    if (i % 2 == 0)\n        continue;\n    for (j = 0; j < i; j++)\n        if (i * j % 2)\n            break;\n}\nif (i >= 12)\n    cout << (i * j);\n```",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后其输出是( )。</p>\n<pre><code class=\"language-cpp\">for (i = 1; i &lt; 12; i++){\n    if (i % 2 == 0)\n        continue;\n    for (j = 0; j &lt; i; j++)\n        if (i * j % 2)\n            break;\n}\nif (i &gt;= 12)\n    cout &lt;&lt; (i * j);\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$b$ 不能为 $0$，因为 `a % b` 将导致错误",
+          "html": "<p>$b$ 不能为 $0$，因为 <code>a % b</code> 将导致错误</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$a$ 必须小于 $b$，否则 `a % b` 将导致错误",
+          "html": "<p>$a$ 必须小于 $b$，否则 <code>a % b</code> 将导致错误</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$a$ 和 $b$ 都必须为正整数，否则 `a % b` 将导致错误",
+          "html": "<p>$a$ 和 $b$ 都必须为正整数，否则 <code>a % b</code> 将导致错误</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "如果 $a$ 输入为 $0$，则不管 $b$ 的输入值是什么，输出值的绝对值都是 `abs(b)`",
+          "html": "<p>如果 $a$ 输入为 $0$，则不管 $b$ 的输入值是什么，输出值的绝对值都是 <code>abs(b)</code></p>\n"
+        }
+      ],
+      "content": "阅读下面的 C++ 代码，其中变量都是整型，则说法正确的是( )。\n\n```cpp\ncin >> a >> b;\nwhile (b != 0) {\n    remainder = a % b;\n    a = b;\n    b = remainder;\n}\ncout << a;\n```",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>阅读下面的 C++ 代码，其中变量都是整型，则说法正确的是( )。</p>\n<pre><code class=\"language-cpp\">cin &gt;&gt; a &gt;&gt; b;\nwhile (b != 0) {\n    remainder = a % b;\n    a = b;\n    b = remainder;\n}\ncout &lt;&lt; a;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`1#2#4#5#6#`",
+          "html": "<p><code>1#2#4#5#6#</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`1#2#4#5#6`",
+          "html": "<p><code>1#2#4#5#6</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`1#2#3#4#5#6#`",
+          "html": "<p><code>1#2#3#4#5#6#</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`1#2#3#4#5#6`",
+          "html": "<p><code>1#2#3#4#5#6</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后输出是（ ）。\n\n```cpp\nnum = 0;\nwhile (num <= 5){\n    num += 1;\n    if (num == 3)\n        continue;\n    printf(\"%d#\", num);\n}\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后输出是（ ）。</p>\n<pre><code class=\"language-cpp\">num = 0;\nwhile (num &lt;= 5){\n    num += 1;\n    if (num == 3)\n        continue;\n    printf(&quot;%d#&quot;, num);\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "程序运行时如果第一个数输入 $-999$，则输出将是 $-999$ $-999$",
+          "html": "<p>程序运行时如果第一个数输入 $-999$，则输出将是 $-999$ $-999$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "程序输入过程中，如果输入的第一个数不是 $-999$，则如果待输入的数据中没有 $-999$，则程序能求出已输入整数中的最大数和最小数",
+          "html": "<p>程序输入过程中，如果输入的第一个数不是 $-999$，则如果待输入的数据中没有 $-999$，则程序能求出已输入整数中的最大数和最小数</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "如果用于输入考试成绩，即成绩中不可能有 $-999$，则程序能求出已输入成绩中的最高成绩和最低成绩",
+          "html": "<p>如果用于输入考试成绩，即成绩中不可能有 $-999$，则程序能求出已输入成绩中的最高成绩和最低成绩</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "可以将 `cin >> now_num;` 移动到 `while (now_num != -999) {` 下面，结果不变",
+          "html": "<p>可以将 <code>cin &gt;&gt; now_num;</code> 移动到 <code>while (now_num != -999) {</code> 下面，结果不变</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码用于记录多个输入数中的最大数和最小数（输入 $-999$ 则输入结束），相关说法错误的是（ ）。\n\n```cpp\ncin >> now_num;\nmin_num = max_num = now_num;\nwhile (now_num != -999){\n    if (max_num < now_num)\n        max_num = now_num;\n    if (min_num > now_num)\n        min_num = now_num;\n    cin >> now_num;\n}\ncout << min_num << ' ' << max_num;\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码用于记录多个输入数中的最大数和最小数（输入 $-999$ 则输入结束），相关说法错误的是（ ）。</p>\n<pre><code class=\"language-cpp\">cin &gt;&gt; now_num;\nmin_num = max_num = now_num;\nwhile (now_num != -999){\n    if (max_num &lt; now_num)\n        max_num = now_num;\n    if (min_num &gt; now_num)\n        min_num = now_num;\n    cin &gt;&gt; now_num;\n}\ncout &lt;&lt; min_num &lt;&lt; ' ' &lt;&lt; max_num;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "删除代码中 `continue` 不影响程序执行结果",
+          "html": "<p>删除代码中 <code>continue</code> 不影响程序执行结果</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "删除 `j = i` 并将 `while` 循环内的 `j` 修改为 `i`，不影响程序执行结果",
+          "html": "<p>删除 <code>j = i</code> 并将 <code>while</code> 循环内的 <code>j</code> 修改为 <code>i</code>，不影响程序执行结果</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "代码中 `break` 修改为 `j = 0`，不影响程序执行结果",
+          "html": "<p>代码中 <code>break</code> 修改为 <code>j = 0</code>，不影响程序执行结果</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "将 `while (j > 0)` 修正为 `while (j >= 0)` 不影响程序执行的结果",
+          "html": "<p>将 <code>while (j &gt; 0)</code> 修正为 <code>while (j &gt;= 0)</code> 不影响程序执行的结果</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后输出与 $5$ 有关的数的数量。“与 $5$ 有关的数”定义为含有 $5$ 或者能被 $5$ 整除的数。相关说法正确的是（ ）。\n\n```cpp\ncnt = 0;\nfor (i = 1; i < 1000; i++){\n    if (i % 5 == 0){\n        cnt += 1;\n        continue;\n    }\n    j = i;\n    while (j > 0)\n        if (j % 10 == 5){\n            cnt += 1;\n            break;\n        }\n        else\n            j /= 10;\n}\ncout << cnt;\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后输出与 $5$ 有关的数的数量。“与 $5$ 有关的数”定义为含有 $5$ 或者能被 $5$ 整除的数。相关说法正确的是（ ）。</p>\n<pre><code class=\"language-cpp\">cnt = 0;\nfor (i = 1; i &lt; 1000; i++){\n    if (i % 5 == 0){\n        cnt += 1;\n        continue;\n    }\n    j = i;\n    while (j &gt; 0)\n        if (j % 10 == 5){\n            cnt += 1;\n            break;\n        }\n        else\n            j /= 10;\n}\ncout &lt;&lt; cnt;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nN - i + 1\ni + 1\n```",
+          "html": "<pre><code class=\"language-cpp\">N - i + 1\ni + 1\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\nN - i\ni\n```",
+          "html": "<pre><code class=\"language-cpp\">N - i\ni\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\nN\ni\n```",
+          "html": "<pre><code class=\"language-cpp\">N\ni\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nN - i\ni + 1\n```",
+          "html": "<pre><code class=\"language-cpp\">N - i\ni + 1\n</code></pre>\n"
+        }
+      ],
+      "content": "下面 C++ 代码实现输出如下图形，应该在横线处填入的代码是（ ）。\n\n```cpp\n请输入层数：10\n1\n23\n456\n7891\n23456\n789123\n4567891\n23456789\n123456789\n1234567891\ncout << \"请输入层数：\";\ncin >> N;\nK = 1;\nfor (i = 1; i < N + 1; i++){\n    for (int _ = 1; _ < ___________; _++)\n        cout << \" \";\n    for (int _ = 1; _ < ________; _++){\n        cout << K;\n        K += 1;\n        if (K == 10)\n            K = 1;\n    }\n    cout << '\\n';\n}\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码实现输出如下图形，应该在横线处填入的代码是（ ）。</p>\n<pre><code class=\"language-cpp\">请输入层数：10\n1\n23\n456\n7891\n23456\n789123\n4567891\n23456789\n123456789\n1234567891\ncout &lt;&lt; &quot;请输入层数：&quot;;\ncin &gt;&gt; N;\nK = 1;\nfor (i = 1; i &lt; N + 1; i++){\n    for (int _ = 1; _ &lt; ___________; _++)\n        cout &lt;&lt; &quot; &quot;;\n    for (int _ = 1; _ &lt; ________; _++){\n        cout &lt;&lt; K;\n        K += 1;\n        if (K == 10)\n            K = 1;\n    }\n    cout &lt;&lt; '\\n';\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$196$ $-1$",
+          "html": "<p>$196$ $-1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$27$ $9$",
+          "html": "<p>$27$ $9$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$98$ $97$",
+          "html": "<p>$98$ $97$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "不确定",
+          "html": "<p>不确定</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行，其输出是( )。\n\n```cpp\nint a=9, b=27;\na = 'a' + 'b';\nb = 'a' - 'b';\na = a - b;\ncout << a << ' ' << b << endl;\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行，其输出是( )。</p>\n<pre><code class=\"language-cpp\">int a=9, b=27;\na = 'a' + 'b';\nb = 'a' - 'b';\na = a - b;\ncout &lt;&lt; a &lt;&lt; ' ' &lt;&lt; b &lt;&lt; endl;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "必须同时修改 L1 和 L2 代码行才能实现功能",
+          "html": "<p>必须同时修改 L1 和 L2 代码行才能实现功能</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "必须同时修改 L3 和 L4 代码行才能实现功能",
+          "html": "<p>必须同时修改 L3 和 L4 代码行才能实现功能</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "必须同时修改 L3 和 L5 代码行才能实现功能",
+          "html": "<p>必须同时修改 L3 和 L5 代码行才能实现功能</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "其他说法都不对",
+          "html": "<p>其他说法都不对</p>\n"
+        }
+      ],
+      "content": "有个无限长的链，由 $3$ 种外形相同但材质不同的环链成。$3$ 种环的重量分别是 $3$ 、$4$ 、$6$ 克，相同材质的多个环每 $12$ 克一组，分别记为 G3、G4、G6。链依次 G3、G4、G6、G3、G4、G6、…。同时对链上所有环从头依次编号 $1$ 、$2$ 、$3$ 、$4$ ……。输入正整数代表环编号，求该编号前所有环（不含该环本身）的重量。下面是 C++ 代码是实现，正确说法是( )。\n\n```cpp\nint N, G, R;\nint wc = 0;\ncin >> N; // 输入正整数\nG = (N - 1) / 9; // L1\nR = (N - 1) % 9; // L2: 保存余数\nwc += 36*G;\nif((1 <= R) && (R <= 4))\n    wc += 3*R; // L3\nelse if ((5 <= R) && (R <= 7))\n    wc += 4*R; // L4\nelse if(R == 8)\n    wc += 6*(R - 1); // L5\ncout << wc << endl;\n```",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>有个无限长的链，由 $3$ 种外形相同但材质不同的环链成。$3$ 种环的重量分别是 $3$ 、$4$ 、$6$ 克，相同材质的多个环每 $12$ 克一组，分别记为 G3、G4、G6。链依次 G3、G4、G6、G3、G4、G6、…。同时对链上所有环从头依次编号 $1$ 、$2$ 、$3$ 、$4$ ……。输入正整数代表环编号，求该编号前所有环（不含该环本身）的重量。下面是 C++ 代码是实现，正确说法是( )。</p>\n<pre><code class=\"language-cpp\">int N, G, R;\nint wc = 0;\ncin &gt;&gt; N; // 输入正整数\nG = (N - 1) / 9; // L1\nR = (N - 1) % 9; // L2: 保存余数\nwc += 36*G;\nif((1 &lt;= R) &amp;&amp; (R &lt;= 4))\n    wc += 3*R; // L3\nelse if ((5 &lt;= R) &amp;&amp; (R &lt;= 7))\n    wc += 4*R; // L4\nelse if(R == 8)\n    wc += 6*(R - 1); // L5\ncout &lt;&lt; wc &lt;&lt; endl;\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在集成开发环境里调试程序时，要注意不能修改源程序，因为如果修改，就要终止调试、关闭该文件并重新打开，才能再次开始调试。（ ）",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>在集成开发环境里调试程序时，要注意不能修改源程序，因为如果修改，就要终止调试、关闭该文件并重新打开，才能再次开始调试。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 代码中，假设 $N$ 为正整数且大于 $100$，则 `N / 100` 将舍弃个位和十位，如 $N$ 为 $1234$ 则 `cout << (N / 100)` 将输出 $12$。如果 $N$ 小于 $100$，则其值为 $0$。( )",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>在 C++ 代码中，假设 $N$ 为正整数且大于 $100$，则 <code>N / 100</code> 将舍弃个位和十位，如 $N$ 为 $1234$ 则 <code>cout &lt;&lt; (N / 100)</code> 将输出 $12$。如果 $N$ 小于 $100$，则其值为 $0$。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "下列 C++ 代码执行后将输出 1，因为 $a$ 确实小于 $20$ 和 $10$。( )\n\n```cpp\na = 5;\ncout << (a < 10 and 20);\n```",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>下列 C++ 代码执行后将输出 1，因为 $a$ 确实小于 $20$ 和 $10$。( )</p>\n<pre><code class=\"language-cpp\">a = 5;\ncout &lt;&lt; (a &lt; 10 and 20);\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下面的 C++ 代码中变量都是整型，则执行后将输出 1。（ ）\n\n```cpp\nx, y, z = 5, 10, 15;\nresult = x < y < z;\ncout << result;\n```",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码中变量都是整型，则执行后将输出 1。（ ）</p>\n<pre><code class=\"language-cpp\">x, y, z = 5, 10, 15;\nresult = x &lt; y &lt; z;\ncout &lt;&lt; result;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下面 C++ 代码执行时如输入 $99.99$ ，将输出及格两个汉字。（ ）\n\n```cpp\nint score;\ncout << \"请输入学生成绩：\";\ncin >> score;\nif (score >= 60)\n    printf(\"及格\");\nelse\n    printf(\"不及格\");\n```",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行时如输入 $99.99$ ，将输出及格两个汉字。（ ）</p>\n<pre><code class=\"language-cpp\">int score;\ncout &lt;&lt; &quot;请输入学生成绩：&quot;;\ncin &gt;&gt; score;\nif (score &gt;= 60)\n    printf(&quot;及格&quot;);\nelse\n    printf(&quot;不及格&quot;);\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "执行下面的 C++ 代码时输入 123，则输出是 DCB。( )\n\n```cpp\nint a;\ncin >> a;\nwhile(a){\n    cout << 'A'+a%10;\n    a /= 10;\n}\n```",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>执行下面的 C++ 代码时输入 123，则输出是 DCB。( )</p>\n<pre><code class=\"language-cpp\">int a;\ncin &gt;&gt; a;\nwhile(a){\n    cout &lt;&lt; 'A'+a%10;\n    a /= 10;\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下面的 C++ 代码执行后将输出 `+#+#3#`。（ ）\n\n```cpp\nint i;\nfor (i = 0; i < 3; i++){\n    if (i == 2)\n        continue;\n    printf(\"+#\");\n}\ncout << i << '#';\n```",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码执行后将输出 <code>+#+#3#</code>。（ ）</p>\n<pre><code class=\"language-cpp\">int i;\nfor (i = 0; i &lt; 3; i++){\n    if (i == 2)\n        continue;\n    printf(&quot;+#&quot;);\n}\ncout &lt;&lt; i &lt;&lt; '#';\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下列 C++ 代码用于求斐波那契数列，即第 $1$ 个数 $0$，第 $2$ 个数 $1$，从第三个数开始，是前两个数之和。如果输入的值为大于 $1$ 的正整数，该代码能实现。（ ）\n\n```cpp\ncin >> n;\na = 0, b = 1;\nfor (int j = 0; j < n; j++){\n    cout << a << \" \";\n    b = b + a;\n    a = b - a;\n}\n```",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>下列 C++ 代码用于求斐波那契数列，即第 $1$ 个数 $0$，第 $2$ 个数 $1$，从第三个数开始，是前两个数之和。如果输入的值为大于 $1$ 的正整数，该代码能实现。（ ）</p>\n<pre><code class=\"language-cpp\">cin &gt;&gt; n;\na = 0, b = 1;\nfor (int j = 0; j &lt; n; j++){\n    cout &lt;&lt; a &lt;&lt; &quot; &quot;;\n    b = b + a;\n    a = b - a;\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下面的 C++ 不能实现如下输出，但如果将 L1 标记的 `cout << 0` 行移动到 `if` 块外面，或者说移动到 L2 标记行，则可以。（ ）\n\n```cpp\n请输入矩阵大小n: 9\n100000000\n020000000\n003000000\n000400000\n000050000\n000006000\n000000700\n000000080\n000000009\nint n, i, j;\ncout << \"请输入矩阵大小n: \";\ncin >> n;\nfor (i = 0; i < n; i++){\n    for (j = 0; j < n; j++){\n        if (i == j){\n            cout << i + 1;\n            continue;\n            cout << 0; // L1\n        }\n        // L2\n    }\n    printf(\"\\n\");\n}\n```",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>下面的 C++ 不能实现如下输出，但如果将 L1 标记的 <code>cout &lt;&lt; 0</code> 行移动到 <code>if</code> 块外面，或者说移动到 L2 标记行，则可以。（ ）</p>\n<pre><code class=\"language-cpp\">请输入矩阵大小n: 9\n100000000\n020000000\n003000000\n000400000\n000050000\n000006000\n000000700\n000000080\n000000009\nint n, i, j;\ncout &lt;&lt; &quot;请输入矩阵大小n: &quot;;\ncin &gt;&gt; n;\nfor (i = 0; i &lt; n; i++){\n    for (j = 0; j &lt; n; j++){\n        if (i == j){\n            cout &lt;&lt; i + 1;\n            continue;\n            cout &lt;&lt; 0; // L1\n        }\n        // L2\n    }\n    printf(&quot;\\n&quot;);\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 代码 `cout << ('5' + 4);` 执行后的输出为 $9$。( )",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>C++ 代码 <code>cout &lt;&lt; ('5' + 4);</code> 执行后的输出为 $9$。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：优美的数字**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n如果一个正整数在十进制下的所有数位都相同，小 A 就会觉得这个正整数很优美。例如，正整数 $6$ 的数位都是 $6$，所以 $6$ 是优美的。正整数 $99$ 的数位都是 $9$，所以 $99$ 是优美的。正整数 $123$ 的数位不都相同，所以 $123$ 并不优美。\n\n小 A 想知道不超过 $n$ 的正整数中有多少优美的数字。你能帮他数一数吗？\n\n**输入格式**\n\n一行，一个正整数 $n$。\n\n**输出格式**\n\n一行，一个正整数，表示不超过 $n$ 的优美正整数的数量。\n\n**样例输入 #1**\n```\n6\n```\n\n**样例输出 #1**\n```\n6\n```\n\n**样例输入 #2**\n```\n2025\n```\n\n**样例输出 #2**\n```\n28\n```\n\n**说明/提示**\n\n对于所有测试点，保证 $1 \\leq n \\leq 2025$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：优美的数字</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>如果一个正整数在十进制下的所有数位都相同，小 A 就会觉得这个正整数很优美。例如，正整数 $6$ 的数位都是 $6$，所以 $6$ 是优美的。正整数 $99$ 的数位都是 $9$，所以 $99$ 是优美的。正整数 $123$ 的数位不都相同，所以 $123$ 并不优美。</p>\n<p>小 A 想知道不超过 $n$ 的正整数中有多少优美的数字。你能帮他数一数吗？</p>\n<p><strong>输入格式</strong></p>\n<p>一行，一个正整数 $n$。</p>\n<p><strong>输出格式</strong></p>\n<p>一行，一个正整数，表示不超过 $n$ 的优美正整数的数量。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>6\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>6\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>2025\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>28\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于所有测试点，保证 $1 \\leq n \\leq 2025$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：菱形**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小 A 想绘制一个菱形。具体来说，需要绘制的菱形是一个 $n$ 行 $n$ 列的字符画，$n$ 是一个大于 $1$ 的奇数。菱形的四个顶点依次位于第 $1$ 行、第 $1$ 列、第 $n$ 行、第 $n$ 列的正中间，使用 `#` 绘制。相邻顶点之间也用 `#` 连接。其余位置都是 `.`。\n\n例如，一个 $5$ 行 $5$ 列的菱形字符画是这样的：\n\n```\n..#..\n.#.#.\n#...#\n.#.#.\n..#..\n```\n\n给定 $n$，请你帮小 A 绘制对应的菱形。\n\n**输入格式**\n\n一行，一个正整数 $n$。\n\n**输出格式**\n\n输出共 $n$ 行，表示对应的菱形。\n\n**样例输入 #1**\n```\n3\n```\n\n**样例输出 #1**\n```\n.#.\n#.#\n.#.\n```\n\n**样例输入 #2**\n```\n9\n```\n\n**样例输出 #2**\n```\n....#....\n...#.#...\n..#...#..\n.#.....#.\n#.......#\n.#.....#.\n..#...#..\n...#.#...\n....#....\n```\n\n**说明/提示**\n\n对于所有测试点，保证 $3 \\leq n \\leq 29$ 并且 $n$ 为奇数。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：菱形</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小 A 想绘制一个菱形。具体来说，需要绘制的菱形是一个 $n$ 行 $n$ 列的字符画，$n$ 是一个大于 $1$ 的奇数。菱形的四个顶点依次位于第 $1$ 行、第 $1$ 列、第 $n$ 行、第 $n$ 列的正中间，使用 <code>#</code> 绘制。相邻顶点之间也用 <code>#</code> 连接。其余位置都是 <code>.</code>。</p>\n<p>例如，一个 $5$ 行 $5$ 列的菱形字符画是这样的：</p>\n<pre><code>..#..\n.#.#.\n#...#\n.#.#.\n..#..\n</code></pre>\n<p>给定 $n$，请你帮小 A 绘制对应的菱形。</p>\n<p><strong>输入格式</strong></p>\n<p>一行，一个正整数 $n$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出共 $n$ 行，表示对应的菱形。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>.#.\n#.#\n.#.\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>9\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>....#....\n...#.#...\n..#...#..\n.#.....#.\n#.......#\n.#.....#.\n..#...#..\n...#.#...\n....#....\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于所有测试点，保证 $3 \\leq n \\leq 29$ 并且 $n$ 为奇数。</p>\n"
+    }
+  ],
+  "id": "2025-09-gesp-2",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-09-gesp-2",
+  "version": "fd55fd6b4e72015a",
+  "warnings": [],
+  "objective_score": 50.0
+}

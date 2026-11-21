@@ -1,0 +1,631 @@
+{
+  "title": "2023年9月 GESP C++ 5级",
+  "category": "GESP",
+  "level": "5",
+  "date": "2023-09",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2023年9月 GESP C++ 5级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "输入",
+          "html": "<p>输入</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "输出",
+          "html": "<p>输出</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "控制",
+          "html": "<p>控制</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "记录",
+          "html": "<p>记录</p>\n"
+        }
+      ],
+      "content": "近年来，线上授课变得普遍，很多有助于改善教学效果的设备也逐渐流行，其中包括比较常用的手写板，那么它属于哪类设备？（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>近年来，线上授课变得普遍，很多有助于改善教学效果的设备也逐渐流行，其中包括比较常用的手写板，那么它属于哪类设备？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(a >> 3 == b)`",
+          "html": "<p><code>(a &gt;&gt; 3 == b)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(a - b) % 3 == 0`",
+          "html": "<p><code>(a - b) % 3 == 0</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(a / b == 3)`",
+          "html": "<p><code>(a / b == 3)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`(a == 3 * b)`",
+          "html": "<p><code>(a == 3 * b)</code></p>\n"
+        }
+      ],
+      "content": "如果 $a$ 和 $b$ 均为 `int` 类型的变量，且 $b$ 的值不为 $0$，那么下列能正确判断“$a$ 是 $b$ 的 $3$ 倍”的表达式是（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>如果 $a$ 和 $b$ 均为 <code>int</code> 类型的变量，且 $b$ 的值不为 $0$，那么下列能正确判断“$a$ 是 $b$ 的 $3$ 倍”的表达式是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$21$",
+          "html": "<p>$21$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$28$",
+          "html": "<p>$28$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "不确定",
+          "html": "<p>不确定</p>\n"
+        }
+      ],
+      "content": "如果变量 $a$ 和 $b$ 分别为 `double` 类型和 `int` 类型，则表达式 `(a = 6, b = 3 * (7 + 8) / 2, b += a)` 的计算结果为（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>如果变量 $a$ 和 $b$ 分别为 <code>double</code> 类型和 <code>int</code> 类型，则表达式 <code>(a = 6, b = 3 * (7 + 8) / 2, b += a)</code> 的计算结果为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`sumA()` 用循环方式求从 $1$ 到 $N$ 之和，`sumB()` 用递归方式求从 $1$ 到 $N$ 之和。",
+          "html": "<p><code>sumA()</code> 用循环方式求从 $1$ 到 $N$ 之和，<code>sumB()</code> 用递归方式求从 $1$ 到 $N$ 之和。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "默认情况下，如果输入正整数 $1000$ ，能实现求从 $1$ 到 $1000$ 之和。",
+          "html": "<p>默认情况下，如果输入正整数 $1000$ ，能实现求从 $1$ 到 $1000$ 之和。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "默认情况下，如果输入正整数 $100000$ ，能实现求从 $1$ 到 $100000$ 之和。",
+          "html": "<p>默认情况下，如果输入正整数 $100000$ ，能实现求从 $1$ 到 $100000$ 之和。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "一般说来，`sumA()` 的效率高于 `sumB()` 。",
+          "html": "<p>一般说来，<code>sumA()</code> 的效率高于 <code>sumB()</code> 。</p>\n"
+        }
+      ],
+      "content": "有关下面 C++ 代码说法错误的是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>有关下面 C++ 代码说法错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`sIn[sIn.length() - 1] + sReverse(sIn.substr(0, sIn.length() - 1));`",
+          "html": "<p><code>sIn[sIn.length() - 1] + sReverse(sIn.substr(0, sIn.length() - 1));</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`sIn[0] + sReverse(sIn.substr(1, sIn.length() - 1));`",
+          "html": "<p><code>sIn[0] + sReverse(sIn.substr(1, sIn.length() - 1));</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`sReverse(sIn.substr(0, sIn.length() - 1)) + sIn[sIn.length() - 1];`",
+          "html": "<p><code>sReverse(sIn.substr(0, sIn.length() - 1)) + sIn[sIn.length() - 1];</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`sReverse(sIn.substr(1, sIn.length() - 1)) + sIn[sIn.length() - 1];`",
+          "html": "<p><code>sReverse(sIn.substr(1, sIn.length() - 1)) + sIn[sIn.length() - 1];</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码以递归方式实现字符串反序，横线处应填上代码是（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码以递归方式实现字符串反序，横线处应填上代码是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`Hanoi(B, C, A, N - 2)`",
+          "html": "<p><code>Hanoi(B, C, A, N - 2)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`Hanoi(B, A, C, N - 1)`",
+          "html": "<p><code>Hanoi(B, A, C, N - 1)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`Hanoi(A, B, C, N - 2)`",
+          "html": "<p><code>Hanoi(A, B, C, N - 2)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`Hanoi(C, B, A, N - 1)`",
+          "html": "<p><code>Hanoi(C, B, A, N - 1)</code></p>\n"
+        }
+      ],
+      "content": "印度古老的汉诺塔传说：创世时有三根金刚柱，其中一柱从下往上按照大小顺序摞着 $64$ 片黄金圆盘，当圆盘逐一从一柱借助另外一柱全部移动到另外一柱时，宇宙毁灭。移动规则：在小圆盘上不能放大圆盘，在三根柱子之间一次只能移动一个圆盘。下面的 C++ 代码以递归方式实现汉诺塔，横线处应填入代码是（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>印度古老的汉诺塔传说：创世时有三根金刚柱，其中一柱从下往上按照大小顺序摞着 $64$ 片黄金圆盘，当圆盘逐一从一柱借助另外一柱全部移动到另外一柱时，宇宙毁灭。移动规则：在小圆盘上不能放大圆盘，在三根柱子之间一次只能移动一个圆盘。下面的 C++ 代码以递归方式实现汉诺塔，横线处应填入代码是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`compare` 和 `isOdd(lstA[i])`",
+          "html": "<p><code>compare</code> 和 <code>isOdd(lstA[i])</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`compare(x1, y1)` 和 `isOdd`",
+          "html": "<p><code>compare(x1, y1)</code> 和 <code>isOdd</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`compare` 和 `isOdd`",
+          "html": "<p><code>compare</code> 和 <code>isOdd</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`compare(x1, y1)` 和 `isOdd(lstA[i])`",
+          "html": "<p><code>compare(x1, y1)</code> 和 <code>isOdd(lstA[i])</code></p>\n"
+        }
+      ],
+      "content": "根据下面 C++ 代码的注释，两个横线处应分别填入（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>根据下面 C++ 代码的注释，两个横线处应分别填入（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`checkNum()` 函数定义错误。",
+          "html": "<p><code>checkNum()</code> 函数定义错误。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "将 `isEven` 作为 `checkNum()` 参数将导致错误。",
+          "html": "<p>将 <code>isEven</code> 作为 <code>checkNum()</code> 参数将导致错误。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "执行后将输出 $1$ 。",
+          "html": "<p>执行后将输出 $1$ 。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "运行时触发异常。",
+          "html": "<p>运行时触发异常。</p>\n"
+        }
+      ],
+      "content": "有关下面代码正确的是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>有关下面代码正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`checkNum()` 函数定义错误。",
+          "html": "<p><code>checkNum()</code> 函数定义错误。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "输出行 A 的语句将导致编译错误。",
+          "html": "<p>输出行 A 的语句将导致编译错误。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "输出行 B 的语句将导致编译错误。",
+          "html": "<p>输出行 B 的语句将导致编译错误。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "该代码没有编译错误。",
+          "html": "<p>该代码没有编译错误。</p>\n"
+        }
+      ],
+      "content": "有关下面 C++ 代码正确的是（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>有关下面 C++ 代码正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "4#3#2#2#4",
+          "html": "<p>4#3#2#2#4</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "4#3#2#2#1#5",
+          "html": "<p>4#3#2#2#1#5</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "4#3#2#1#2#4",
+          "html": "<p>4#3#2#1#2#4</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "4#3#2#1#2#5",
+          "html": "<p>4#3#2#1#2#5</p>\n"
+        }
+      ],
+      "content": "下面代码执行后的输出是（ ）。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面代码执行后的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`isPrimeA()` 的最坏时间复杂度是 $O(N)$ ，`isPrimeB()` 的最坏时间复杂度是 $O(\\sqrt{N})$ ，`isPrimeB()` 优于 `isPrimeA()`。",
+          "html": "<p><code>isPrimeA()</code> 的最坏时间复杂度是 $O(N)$ ，<code>isPrimeB()</code> 的最坏时间复杂度是 $O(\\sqrt{N})$ ，<code>isPrimeB()</code> 优于 <code>isPrimeA()</code>。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`isPrimeA()` 的最坏时间复杂度是 $O(N)$ ，`isPrimeB()` 的最坏时间复杂度是 $O(\\log N)$ ，`isPrimeB()` 优于 `isPrimeA()`。",
+          "html": "<p><code>isPrimeA()</code> 的最坏时间复杂度是 $O(N)$ ，<code>isPrimeB()</code> 的最坏时间复杂度是 $O(\\log N)$ ，<code>isPrimeB()</code> 优于 <code>isPrimeA()</code>。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`isPrimeA()` 的最坏时间复杂度是 $O(\\sqrt{N})$ ，`isPrimeB()` 的最坏时间复杂度是 $O(N)$ ，`isPrimeA()` 优于 `isPrimeB()`。",
+          "html": "<p><code>isPrimeA()</code> 的最坏时间复杂度是 $O(\\sqrt{N})$ ，<code>isPrimeB()</code> 的最坏时间复杂度是 $O(N)$ ，<code>isPrimeA()</code> 优于 <code>isPrimeB()</code>。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`isPrimeA()` 的最坏时间复杂度是 $O(\\sqrt{N})$ ，`isPrimeB()` 的最坏时间复杂度是 $O(\\log N)$ ，`isPrimeA()` 优于 `isPrimeB()`。",
+          "html": "<p><code>isPrimeA()</code> 的最坏时间复杂度是 $O(\\sqrt{N})$ ，<code>isPrimeB()</code> 的最坏时间复杂度是 $O(\\log N)$ ，<code>isPrimeA()</code> 优于 <code>isPrimeB()</code>。</p>\n"
+        }
+      ],
+      "content": "下面代码中的 `isPrimeA()` 和 `isPrimeB()` 都用于判断参数 $N$ 是否素数，有关其时间复杂度的正确说法是（ ）。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面代码中的 <code>isPrimeA()</code> 和 <code>isPrimeB()</code> 都用于判断参数 $N$ 是否素数，有关其时间复杂度的正确说法是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$7$",
+          "html": "<p>$7$</p>\n"
+        }
+      ],
+      "content": "下面代码用于归并排序，其中 `merge()` 函数被调用次数为（ ）。",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下面代码用于归并排序，其中 <code>merge()</code> 函数被调用次数为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "搜索算法",
+          "html": "<p>搜索算法</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "分治算法",
+          "html": "<p>分治算法</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "贪心算法",
+          "html": "<p>贪心算法</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "递推算法",
+          "html": "<p>递推算法</p>\n"
+        }
+      ],
+      "content": "在上题的归并排序算法中，`mergeSort(listData, start, middle);` 和 `mergeSort(listData, middle + 1, end);` 涉及到的算法为（ ）。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>在上题的归并排序算法中，<code>mergeSort(listData, start, middle);</code> 和 <code>mergeSort(listData, middle + 1, end);</code> 涉及到的算法为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "将数组分成两个子数组，分别排序后再合并。",
+          "html": "<p>将数组分成两个子数组，分别排序后再合并。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "随机选择一个元素作为枢轴，将数组划分为两个部分。",
+          "html": "<p>随机选择一个元素作为枢轴，将数组划分为两个部分。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "从数组的最后一个元素开始，依次与前一个元素比较并交换位置。",
+          "html": "<p>从数组的最后一个元素开始，依次与前一个元素比较并交换位置。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "比较相邻的两个元素，如果顺序错误就交换位置。",
+          "html": "<p>比较相邻的两个元素，如果顺序错误就交换位置。</p>\n"
+        }
+      ],
+      "content": "归并排序算法的基本思想是（ ）。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>归并排序算法的基本思想是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "上述代码构成单向链表。",
+          "html": "<p>上述代码构成单向链表。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "上述代码构成双向链表。",
+          "html": "<p>上述代码构成双向链表。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "上述代码构成循环链表。",
+          "html": "<p>上述代码构成循环链表。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "上述代码构成指针链表。",
+          "html": "<p>上述代码构成指针链表。</p>\n"
+        }
+      ],
+      "content": "有关下面代码的说法正确的是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>有关下面代码的说法正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "TCP/IP 的传输层的两个不同的协议分别是 UDP 和 TCP。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>TCP/IP 的传输层的两个不同的协议分别是 UDP 和 TCP。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在特殊情况下流程图中可以出现三角框和圆形框。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>在特殊情况下流程图中可以出现三角框和圆形框。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "找出自然数 $N$ 以内的所有质数，常用算法有埃氏筛法和线性筛法，其中埃氏筛法效率更高。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>找出自然数 $N$ 以内的所有质数，常用算法有埃氏筛法和线性筛法，其中埃氏筛法效率更高。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 中，可以使用二分法查找链表中的元素。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>在 C++ 中，可以使用二分法查找链表中的元素。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 中，通过恰当的实现，可以将链表首尾相接，形成循环链表。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>在 C++ 中，通过恰当的实现，可以将链表首尾相接，形成循环链表。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "贪心算法的解可能不是最优解。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>贪心算法的解可能不是最优解。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "一般说来，冒泡排序算法优于归并排序。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>一般说来，冒泡排序算法优于归并排序。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "C++ 语言中的 `qsort` 库函数是不稳定排序。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>C++ 语言中的 <code>qsort</code> 库函数是不稳定排序。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "质数的判定和筛法的目的并不相同，质数判定旨在判断特定的正整数是否为质数，而质数筛法意在筛选出范围内的所有质数。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>质数的判定和筛法的目的并不相同，质数判定旨在判断特定的正整数是否为质数，而质数筛法意在筛选出范围内的所有质数。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "下面的 C++ 代码执行后将输出 `0 5 1 6 2 3 4` 。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>下面的 C++ 代码执行后将输出 <code>0 5 1 6 2 3 4</code> 。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：因数分解**\n\n> 时间限制：1.0 s | 内存限制：128.0 MB\n\n**题目描述**\n\n每个正整数都可以分解成素数的乘积，例如： $6=2\\times 3$，$20=2^2\\times5$。\n\n现在，给定一个正整数，请按要求输出它的因数分解式。\n\n**输入格式**\n\n输入第一行，包含一个正整数 $N$。约定 $2 \\le N \\le 10^{12}$。\n\n**输出格式**\n\n输出一行，为 $N$ 的因数分解式。要求按质因数由小到大排列，乘号用星号 `*` 表示，且左右各空一格。当且仅当一个素数出现多次时，将它们合并为指数形式，用上箭头 `^` 表示，且左右不空格。\n\n**样例输入 #1**\n```\n6\n```\n\n**样例输出 #1**\n```\n2 * 3\n```\n\n**样例输入 #2**\n```\n20\n```\n\n**样例输出 #2**\n```\n2^2 * 5\n```\n\n**样例输入 #3**\n```\n23\n```\n\n**样例输出 #3**\n```\n23\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：因数分解</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：128.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>每个正整数都可以分解成素数的乘积，例如： $6=2\\times 3$，$20=2^2\\times5$。</p>\n<p>现在，给定一个正整数，请按要求输出它的因数分解式。</p>\n<p><strong>输入格式</strong></p>\n<p>输入第一行，包含一个正整数 $N$。约定 $2 \\le N \\le 10^{12}$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，为 $N$ 的因数分解式。要求按质因数由小到大排列，乘号用星号 <code>*</code> 表示，且左右各空一格。当且仅当一个素数出现多次时，将它们合并为指数形式，用上箭头 <code>^</code> 表示，且左右不空格。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>6\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>2 * 3\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>20\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>2^2 * 5\n</code></pre>\n<p><strong>样例输入 #3</strong></p>\n<pre><code>23\n</code></pre>\n<p><strong>样例输出 #3</strong></p>\n<pre><code>23\n</code></pre>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：巧夺大奖**\n\n> 时间限制：1.0 s | 内存限制：128.0 MB\n\n**题目描述**\n\n小明参加了一个巧夺大奖的游戏节目。主持人宣布了游戏规则：\n\n1. 游戏分为 $n$ 个时间段，参加者每个时间段可以选择一个小游戏。\n\n2. 游戏中共有 $n$ 个小游戏可供选择。\n\n3. 每个小游戏有规定的时限和奖励。对于第 $i$ 个小游戏，参加者必须在第 $T_i$ 个时间段结束前完成才能得到奖励 $R_i$。\n\n小明发现，这些小游戏都很简单，不管选择哪个小游戏，他都能在一个时间段内完成。关键问题在于，如何安排每个时间段分别选择哪个小游戏，才能使得总奖励最高？\n\n**输入格式**\n\n输入第一行，包含一个正整数 $n$。$n$ 既是游戏时间段的个数，也是小游戏的个数。约定 $1\\le n\\le500$。\n\n输入第二行，包含 $n$ 个正整数。第 $i$ 个正整数为 $T_i$，即第 $i$ 个小游戏的完成期限。约定 $1\\le T_i\\le n$。\n\n输入第三行，包含 $n$ 个正整数。第 $i$ 个正整数为 $R_i$，即第 $i$ 个小游戏的完成奖励。约定 $1\\le R_i\\le 1000$。\n\n**输出格式**\n\n输出一行，包含一个正整数 $C$，为最高可获得的奖励。\n\n**样例输入 #1**\n```\n7\n4 2 4 3 1 4 6\n70 60 50 40 30 20 10\n```\n\n**样例输出 #1**\n```\n230\n```\n\n**说明/提示**\n\n**样例解释 1**\n\n$7$ 个时间段可分别安排完成第 4、2、3、1、6、7、5 个小游戏，其中第 4、2、3、1、7 个小游戏在期限内完成。因此，可以获得总计 $40+60+50+70+10=230$ 的奖励。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：巧夺大奖</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：128.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小明参加了一个巧夺大奖的游戏节目。主持人宣布了游戏规则：</p>\n<ol>\n<li>\n<p>游戏分为 $n$ 个时间段，参加者每个时间段可以选择一个小游戏。</p>\n</li>\n<li>\n<p>游戏中共有 $n$ 个小游戏可供选择。</p>\n</li>\n<li>\n<p>每个小游戏有规定的时限和奖励。对于第 $i$ 个小游戏，参加者必须在第 $T_i$ 个时间段结束前完成才能得到奖励 $R_i$。</p>\n</li>\n</ol>\n<p>小明发现，这些小游戏都很简单，不管选择哪个小游戏，他都能在一个时间段内完成。关键问题在于，如何安排每个时间段分别选择哪个小游戏，才能使得总奖励最高？</p>\n<p><strong>输入格式</strong></p>\n<p>输入第一行，包含一个正整数 $n$。$n$ 既是游戏时间段的个数，也是小游戏的个数。约定 $1\\le n\\le500$。</p>\n<p>输入第二行，包含 $n$ 个正整数。第 $i$ 个正整数为 $T_i$，即第 $i$ 个小游戏的完成期限。约定 $1\\le T_i\\le n$。</p>\n<p>输入第三行，包含 $n$ 个正整数。第 $i$ 个正整数为 $R_i$，即第 $i$ 个小游戏的完成奖励。约定 $1\\le R_i\\le 1000$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，包含一个正整数 $C$，为最高可获得的奖励。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>7\n4 2 4 3 1 4 6\n70 60 50 40 30 20 10\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>230\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p><strong>样例解释 1</strong></p>\n<p>$7$ 个时间段可分别安排完成第 4、2、3、1、6、7、5 个小游戏，其中第 4、2、3、1、7 个小游戏在期限内完成。因此，可以获得总计 $40+60+50+70+10=230$ 的奖励。</p>\n"
+    }
+  ],
+  "id": "2023-09-gesp-5",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2023-09-gesp-5",
+  "version": "29d2fc0fb848b3af",
+  "warnings": [],
+  "objective_score": 50.0
+}

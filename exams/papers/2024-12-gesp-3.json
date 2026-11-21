@@ -1,0 +1,631 @@
+{
+  "title": "2024年12月 GESP C++ 3级",
+  "category": "GESP",
+  "level": "3",
+  "date": "2024-12",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2024年12月 GESP C++ 3级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$-125$，$-3$",
+          "html": "<p>$-125$，$-3$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$-3$，$-125$",
+          "html": "<p>$-3$，$-125$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$-3$，$-3$",
+          "html": "<p>$-3$，$-3$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$-125$，$-125$",
+          "html": "<p>$-125$，$-125$</p>\n"
+        }
+      ],
+      "content": "下列二进制表示的十进制数值分别是（ ）\n\n```cpp\n[10000011]原=（ ）\n[10000011]补=（ ）\n```",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>下列二进制表示的十进制数值分别是（ ）</p>\n<pre><code class=\"language-cpp\">[10000011]原=（ ）\n[10000011]补=（ ）\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "对于无符号数，原码就是真值",
+          "html": "<p>对于无符号数，原码就是真值</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "正数的反码是其本身",
+          "html": "<p>正数的反码是其本身</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "负数的反码和补码是不一样的",
+          "html": "<p>负数的反码和补码是不一样的</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "负数的反码，在其原码的基础上，各个位取反",
+          "html": "<p>负数的反码，在其原码的基础上，各个位取反</p>\n"
+        }
+      ],
+      "content": "关于计算机中的编码，下列说法中错误的是（）",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>关于计算机中的编码，下列说法中错误的是（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "2620045",
+          "html": "<p>2620045</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "2004526",
+          "html": "<p>2004526</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "729125",
+          "html": "<p>729125</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "2420045",
+          "html": "<p>2420045</p>\n"
+        }
+      ],
+      "content": "16 进制数 B2025 转换成 8 进制数是（ ）",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>16 进制数 B2025 转换成 8 进制数是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1001110001.101$",
+          "html": "<p>$1001110001.101$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$101.101$",
+          "html": "<p>$101.101$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$101.1001110001$",
+          "html": "<p>$101.1001110001$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$1001110001.1101$",
+          "html": "<p>$1001110001.1101$</p>\n"
+        }
+      ],
+      "content": "$625.625$ 变成二进制是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>$625.625$ 变成二进制是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`5 && 3 == 0`",
+          "html": "<p><code>5 &amp;&amp; 3 == 0</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`5 | 3 == 8`",
+          "html": "<p><code>5 | 3 == 8</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`5 || 3 == 11`",
+          "html": "<p><code>5 || 3 == 11</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`5 & 3 == 0001`",
+          "html": "<p><code>5 &amp; 3 == 0001</code></p>\n"
+        }
+      ],
+      "content": "下面逻辑运算中，正确的是（ ）",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>下面逻辑运算中，正确的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`1111 1100`",
+          "html": "<p><code>1111 1100</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$-2$",
+          "html": "<p>$-2$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`1111 1101`",
+          "html": "<p><code>1111 1101</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`1111 1010`",
+          "html": "<p><code>1111 1010</code></p>\n"
+        }
+      ],
+      "content": "补码 `1111 1101` 进行运算 `1111 1101 >> 1` 以后得到的结果是（ ）",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>补码 <code>1111 1101</code> 进行运算 <code>1111 1101 &gt;&gt; 1</code> 以后得到的结果是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`12345`",
+          "html": "<p><code>12345</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`2345@`",
+          "html": "<p><code>2345@</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`112345chenadai`",
+          "html": "<p><code>112345chenadai</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`12345chenadai`",
+          "html": "<p><code>12345chenadai</code></p>\n"
+        }
+      ],
+      "content": "下列代码输出的是\n\n```cpp\nstring s=\"1234@@chenadai\";\nstring str=\"12345\";\ns.replace(1,5,str);\ncout<<s<<endl;\n```",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>下列代码输出的是</p>\n<pre><code class=\"language-cpp\">string s=&quot;1234@@chenadai&quot;;\nstring str=&quot;12345&quot;;\ns.replace(1,5,str);\ncout&lt;&lt;s&lt;&lt;endl;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "使 $a$ 的二进制表示从右往左的第二位为 $1$",
+          "html": "<p>使 $a$ 的二进制表示从右往左的第二位为 $1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "使 $a$ 的二进制表示从右往左的第一位为 $0$",
+          "html": "<p>使 $a$ 的二进制表示从右往左的第一位为 $0$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "使 $a$ 的二进制表示从右往左第二位为 $0$",
+          "html": "<p>使 $a$ 的二进制表示从右往左第二位为 $0$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "使 $a$ 的二进制表示最高位为 $0$",
+          "html": "<p>使 $a$ 的二进制表示最高位为 $0$</p>\n"
+        }
+      ],
+      "content": "`a | 10`（$a$ 与 $10$ 都是十进制，且二进制表示最高位为 $1$）运算的结果是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p><code>a | 10</code>（$a$ 与 $10$ 都是十进制，且二进制表示最高位为 $1$）运算的结果是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`right`",
+          "html": "<p><code>right</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`wrong`",
+          "html": "<p><code>wrong</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`hello`",
+          "html": "<p><code>hello</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "不能正确执行",
+          "html": "<p>不能正确执行</p>\n"
+        }
+      ],
+      "content": "下列程序输出的是（ ）\n\n```cpp\nstring ch=\"hello\";\nif(ch[5]==NULL)\n{\n    cout<<\"right\"<<endl;\n}\nelse if (ch[5]=='\\0')\n{\n    cout<<\"wrong\"<<endl;\n}\nelse\n{\n    cout<<\"hello\"<<endl;\n}\n```",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>下列程序输出的是（ ）</p>\n<pre><code class=\"language-cpp\">string ch=&quot;hello&quot;;\nif(ch[5]==NULL)\n{\n    cout&lt;&lt;&quot;right&quot;&lt;&lt;endl;\n}\nelse if (ch[5]=='\\0')\n{\n    cout&lt;&lt;&quot;wrong&quot;&lt;&lt;endl;\n}\nelse\n{\n    cout&lt;&lt;&quot;hello&quot;&lt;&lt;endl;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$11$",
+          "html": "<p>$11$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$13$",
+          "html": "<p>$13$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$12$",
+          "html": "<p>$12$</p>\n"
+        }
+      ],
+      "content": "下列程序中，假设一个字符占用的内存空间是 $1$ ，下列程序中，`ch` 占用的内存空间是( )\n\n```cpp\nchar ch[] = \"hello world\";\nsize_t ret = strlen(ch);\ncout << ret << endl;\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下列程序中，假设一个字符占用的内存空间是 $1$ ，下列程序中，<code>ch</code> 占用的内存空间是( )</p>\n<pre><code class=\"language-cpp\">char ch[] = &quot;hello world&quot;;\nsize_t ret = strlen(ch);\ncout &lt;&lt; ret &lt;&lt; endl;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$65$",
+          "html": "<p>$65$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`A`",
+          "html": "<p><code>A</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`a`",
+          "html": "<p><code>a</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$97$",
+          "html": "<p>$97$</p>\n"
+        }
+      ],
+      "content": "下列程序最后输出的是（）\n\n```cpp\nint a=65;\ncout<<tolower(a)<<endl;\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下列程序最后输出的是（）</p>\n<pre><code class=\"language-cpp\">int a=65;\ncout&lt;&lt;tolower(a)&lt;&lt;endl;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nint n,m,res,d;\ncin >> n >> m>>d;\nfor(int i = n+1; i <= m; i++){\n    int temp = i;\n    while(temp){\n        if(temp % 10 == d) res++;\n        temp /= 10;\n    }\n}\ncout << res << endl;\nreturn 0;\n```",
+          "html": "<pre><code class=\"language-cpp\">int n,m,res,d;\ncin &gt;&gt; n &gt;&gt; m&gt;&gt;d;\nfor(int i = n+1; i &lt;= m; i++){\n    int temp = i;\n    while(temp){\n        if(temp % 10 == d) res++;\n        temp /= 10;\n    }\n}\ncout &lt;&lt; res &lt;&lt; endl;\nreturn 0;\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\nint n,m,res,d;\ncin >> n >> m>>d;\nfor(int i = n; i <= m; i++){\n    int temp = i;\n    while(temp){\n        if(temp % 10 = d) res++;\n        temp /= 10;\n    }\n}\ncout << res << endl;\nreturn 0;\n```",
+          "html": "<pre><code class=\"language-cpp\">int n,m,res,d;\ncin &gt;&gt; n &gt;&gt; m&gt;&gt;d;\nfor(int i = n; i &lt;= m; i++){\n    int temp = i;\n    while(temp){\n        if(temp % 10 = d) res++;\n        temp /= 10;\n    }\n}\ncout &lt;&lt; res &lt;&lt; endl;\nreturn 0;\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\nint n,m,res=0,d;\ncin >> n >> m>>d;\nfor(int i = n; i <= m; i++){\n    int temp = i;\n    while(temp){\n        if(temp % 10 == d) res++;\n        temp /= 10;\n    }\n}\ncout << res << endl;\nreturn 0;\n```",
+          "html": "<pre><code class=\"language-cpp\">int n,m,res=0,d;\ncin &gt;&gt; n &gt;&gt; m&gt;&gt;d;\nfor(int i = n; i &lt;= m; i++){\n    int temp = i;\n    while(temp){\n        if(temp % 10 == d) res++;\n        temp /= 10;\n    }\n}\ncout &lt;&lt; res &lt;&lt; endl;\nreturn 0;\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nint n,m,res=0,d;\ncin >> n >> m>>d;\nfor(int i = n; i <= m; i++){\n    while(temp){\n        if(temp % 10 == d) res++;\n        temp /= 10;\n    }\n}\ncout << res << endl;\nreturn 0;\n```",
+          "html": "<pre><code class=\"language-cpp\">int n,m,res=0,d;\ncin &gt;&gt; n &gt;&gt; m&gt;&gt;d;\nfor(int i = n; i &lt;= m; i++){\n    while(temp){\n        if(temp % 10 == d) res++;\n        temp /= 10;\n    }\n}\ncout &lt;&lt; res &lt;&lt; endl;\nreturn 0;\n</code></pre>\n"
+        }
+      ],
+      "content": "想要计算从数字 $n$ 到数字 $m$ 之间（包含 $n$ 和 $m$）有多少个数字 $d$ 出现，下列程序哪个能够实现（ ）。",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>想要计算从数字 $n$ 到数字 $m$ 之间（包含 $n$ 和 $m$）有多少个数字 $d$ 出现，下列程序哪个能够实现（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nfor(int i = 0; i <= 100; i++){\n    for(int j = 0; j <= 100; j++){\n        for(int k = 0; k <= 100; k++){\n            if(i + j + k == 100 && 25 * i + 10 * j + k == 300)\n                cout << i << \" \" << j << \" \" << k << endl;\n        }\n    }\n}\n```",
+          "html": "<pre><code class=\"language-cpp\">for(int i = 0; i &lt;= 100; i++){\n    for(int j = 0; j &lt;= 100; j++){\n        for(int k = 0; k &lt;= 100; k++){\n            if(i + j + k == 100 &amp;&amp; 25 * i + 10 * j + k == 300)\n                cout &lt;&lt; i &lt;&lt; &quot; &quot; &lt;&lt; j &lt;&lt; &quot; &quot; &lt;&lt; k &lt;&lt; endl;\n        }\n    }\n}\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\nfor(int i = 0; i <= 100; i++){\n    for(int j = 0; j <= 100; j++){\n        for(int k = 0; k <= 100; k++){\n            if(i + j + k == 100 && 20 * i + 10 * j + k == 300)\n                cout << i << \" \" << j << \" \" << k << endl;\n        }\n    }\n}\n```",
+          "html": "<pre><code class=\"language-cpp\">for(int i = 0; i &lt;= 100; i++){\n    for(int j = 0; j &lt;= 100; j++){\n        for(int k = 0; k &lt;= 100; k++){\n            if(i + j + k == 100 &amp;&amp; 20 * i + 10 * j + k == 300)\n                cout &lt;&lt; i &lt;&lt; &quot; &quot; &lt;&lt; j &lt;&lt; &quot; &quot; &lt;&lt; k &lt;&lt; endl;\n        }\n    }\n}\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\nfor(int i = 0; i <= 20; i++){\n    for(int j = 0; j <= 34; j++){\n        for(int k = 0; k <= 20; k++){\n            if(i + j + k == 100 && 15 * i + 9 * j + k == 300)\n                cout << i << \" \" << j << \" \" << k << endl;\n        }\n    }\n}\n```",
+          "html": "<pre><code class=\"language-cpp\">for(int i = 0; i &lt;= 20; i++){\n    for(int j = 0; j &lt;= 34; j++){\n        for(int k = 0; k &lt;= 20; k++){\n            if(i + j + k == 100 &amp;&amp; 15 * i + 9 * j + k == 300)\n                cout &lt;&lt; i &lt;&lt; &quot; &quot; &lt;&lt; j &lt;&lt; &quot; &quot; &lt;&lt; k &lt;&lt; endl;\n        }\n    }\n}\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nfor(int i = 0; i <= 100; i++){\n    for(int j = 0; j <= 100; j++){\n        for(int k = 0; k <= 100; k++){\n            if(i + j + k == 100 && 15 * i + 9 * j + k == 300)\n                cout << i << \" \" << j << \" \" << k << endl;\n        }\n    }\n}\n```",
+          "html": "<pre><code class=\"language-cpp\">for(int i = 0; i &lt;= 100; i++){\n    for(int j = 0; j &lt;= 100; j++){\n        for(int k = 0; k &lt;= 100; k++){\n            if(i + j + k == 100 &amp;&amp; 15 * i + 9 * j + k == 300)\n                cout &lt;&lt; i &lt;&lt; &quot; &quot; &lt;&lt; j &lt;&lt; &quot; &quot; &lt;&lt; k &lt;&lt; endl;\n        }\n    }\n}\n</code></pre>\n"
+        }
+      ],
+      "content": "兔子五元一只，鸡三元一只，小鸭子一元三只，现在你有一百元要买一百只，兔子、鸡、鸭子，问兔子、鸡、鸭子各买多少只，每种必须至少一只，下列哪个程序能实现。（ ）。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>兔子五元一只，鸡三元一只，小鸭子一元三只，现在你有一百元要买一百只，兔子、鸡、鸭子，问兔子、鸡、鸭子各买多少只，每种必须至少一只，下列哪个程序能实现。（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nif(N >= 3){\n    cout<<2<<endl;\n    for(int i = 2;i <= N;i ++){\n        for(int j = 2;j < i;j ++){\n            if(i % j != 0){\n                flag = 1;\n            }\n        }\n        if(flag == 0){\n            cout<<i<<endl;\n        }\n        flag = 0;\n    }\n}\n```",
+          "html": "<pre><code class=\"language-cpp\">if(N &gt;= 3){\n    cout&lt;&lt;2&lt;&lt;endl;\n    for(int i = 2;i &lt;= N;i ++){\n        for(int j = 2;j &lt; i;j ++){\n            if(i % j != 0){\n                flag = 1;\n            }\n        }\n        if(flag == 0){\n            cout&lt;&lt;i&lt;&lt;endl;\n        }\n        flag = 0;\n    }\n}\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\nif(N >= 2){\n    for(int i = 3;i <= N;i ++){\n        for(int j = 2;j < i;j ++){\n            if(i % j == 0){\n                flag = 1;\n            }\n        }\n        if(flag == 0){\n            cout<<i<<endl;\n        }\n        flag = 0;\n    }\n}\n```",
+          "html": "<pre><code class=\"language-cpp\">if(N &gt;= 2){\n    for(int i = 3;i &lt;= N;i ++){\n        for(int j = 2;j &lt; i;j ++){\n            if(i % j == 0){\n                flag = 1;\n            }\n        }\n        if(flag == 0){\n            cout&lt;&lt;i&lt;&lt;endl;\n        }\n        flag = 0;\n    }\n}\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\nif(N >= 2){\n    cout<<2<<endl;\n    for(int i = 3;i <= N;i ++){\n        for(int j = 2;j < i;j ++){\n            if(i % j == 0){\n                flag = 1;\n            }\n        }\n        if(flag == 0){\n            cout<<i<<endl;\n        }\n        flag = 0;\n    }\n}\n```",
+          "html": "<pre><code class=\"language-cpp\">if(N &gt;= 2){\n    cout&lt;&lt;2&lt;&lt;endl;\n    for(int i = 3;i &lt;= N;i ++){\n        for(int j = 2;j &lt; i;j ++){\n            if(i % j == 0){\n                flag = 1;\n            }\n        }\n        if(flag == 0){\n            cout&lt;&lt;i&lt;&lt;endl;\n        }\n        flag = 0;\n    }\n}\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nif(N >= 2){\n    cout<<2<<endl;\n    for(int i = 3;i <= N;i ++){\n        for(int j = 2;j < i;j ++){\n            if(i % j == 0){\n                flag = 1;\n            }\n        }\n        if(flag == 0){\n            cout<<i<<endl;\n        }\n    }\n}\n```",
+          "html": "<pre><code class=\"language-cpp\">if(N &gt;= 2){\n    cout&lt;&lt;2&lt;&lt;endl;\n    for(int i = 3;i &lt;= N;i ++){\n        for(int j = 2;j &lt; i;j ++){\n            if(i % j == 0){\n                flag = 1;\n            }\n        }\n        if(flag == 0){\n            cout&lt;&lt;i&lt;&lt;endl;\n        }\n    }\n}\n</code></pre>\n"
+        }
+      ],
+      "content": "求小于等于 $N$ 的素数的方法中，有一种方法是将所有从 $2$ 到它本身减 $1$ 的数都除一遍，如果不能整除，就是素数。下列哪个程序，体现了这种方法（）",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>求小于等于 $N$ 的素数的方法中，有一种方法是将所有从 $2$ 到它本身减 $1$ 的数都除一遍，如果不能整除，就是素数。下列哪个程序，体现了这种方法（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$4$ 段，分别是 $1$、$2$、$4$、$8$",
+          "html": "<p>$4$ 段，分别是 $1$、$2$、$4$、$8$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$15$ 段，每段 $1$ 个",
+          "html": "<p>$15$ 段，每段 $1$ 个</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$6$ 段，分别是 $3$、$3$、$3$、$3$、$2$、$1$",
+          "html": "<p>$6$ 段，分别是 $3$、$3$、$3$、$3$、$2$、$1$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$9$ 段，分别是 $2$、$2$、$2$、$2$、$2$、$2$、$1$、$1$、$1$",
+          "html": "<p>$9$ 段，分别是 $2$、$2$、$2$、$2$、$2$、$2$、$1$、$1$、$1$</p>\n"
+        }
+      ],
+      "content": "工人工作一天，会得到一个金环作为工资报酬，某个工作需要 $15$ 天完成，一条 $15$ 个环的金环项链，为了严格执行每天工作结束时，完成对工人工资的结算，最少需要将金环项链剪裁成几段，每段几个金环（ ）",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>工人工作一天，会得到一个金环作为工资报酬，某个工作需要 $15$ 天完成，一条 $15$ 个环的金环项链，为了严格执行每天工作结束时，完成对工人工资的结算，最少需要将金环项链剪裁成几段，每段几个金环（ ）</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "为了简化计算机基本运算电路，使加减法都只需要通过加法电路实现，也就是让减去一个正数或加上一个负数这样的运算可以用加上一个正数来代替。于是改变负数存储的形式，存储成一种可以直接当成正数来相加的形式，这种形式就是补码。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>为了简化计算机基本运算电路，使加减法都只需要通过加法电路实现，也就是让减去一个正数或加上一个负数这样的运算可以用加上一个正数来代替。于是改变负数存储的形式，存储成一种可以直接当成正数来相加的形式，这种形式就是补码。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "使用原码进行的计算，$2 + (-1)$ 的结果是 $-3$",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>使用原码进行的计算，$2 + (-1)$ 的结果是 $-3$</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "反码计算加减法：加法与减法结果都是正确的，只是解决不了 $-0$ 的问题",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>反码计算加减法：加法与减法结果都是正确的，只是解决不了 $-0$ 的问题</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "```cpp\n进制数 63，在转换成二进制的计算过程中，产生了如下的式⼦：\n63/2=31 余 1\n31/2=15 余 1\n15/2=7 余 1\n7/2=3 余 1\n3/2=1 余 1\n1/2=0 余 1\n```\n按照从前往后的顺序，获得 $63$ 的二进制值是 $111111$",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<pre><code class=\"language-cpp\">进制数 63，在转换成二进制的计算过程中，产生了如下的式⼦：\n63/2=31 余 1\n31/2=15 余 1\n15/2=7 余 1\n7/2=3 余 1\n3/2=1 余 1\n1/2=0 余 1\n</code></pre>\n<p>按照从前往后的顺序，获得 $63$ 的二进制值是 $111111$</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下列程序输出的是 $A$\n\n```cpp\nchar x=65;\nx=x&00001111;\ncout<<x<<endl;\n```",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>下列程序输出的是 $A$</p>\n<pre><code class=\"language-cpp\">char x=65;\nx=x&amp;00001111;\ncout&lt;&lt;x&lt;&lt;endl;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下列可执行程序段中，最后 $pos$ 的值是 $4$\n\n```cpp\nstring str=\"chenADai\";\nint pos = str.find('D');\n--pos&11;\n```",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>下列可执行程序段中，最后 $pos$ 的值是 $4$</p>\n<pre><code class=\"language-cpp\">string str=&quot;chenADai&quot;;\nint pos = str.find('D');\n--pos&amp;11;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "```cpp\nstring ch=\"chen\";\ncout<<ch[4]<<endl;\n```\n该段程序将不能正确执行",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<pre><code class=\"language-cpp\">string ch=&quot;chen&quot;;\ncout&lt;&lt;ch[4]&lt;&lt;endl;\n</code></pre>\n<p>该段程序将不能正确执行</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "```cpp\nchar a='A';\na=a+32;\ncout<<(int)a<<endl;\n```\n将输出 $97$",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<pre><code class=\"language-cpp\">char a='A';\na=a+32;\ncout&lt;&lt;(int)a&lt;&lt;endl;\n</code></pre>\n<p>将输出 $97$</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "自然界中，最小的素数是 $2$",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>自然界中，最小的素数是 $2$</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "CCF(十六进制) = 12363(七进制)",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>CCF(十六进制) = 12363(七进制)</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：数字替换**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨有一个包含 $n$ 个数字的序列 $A$，即 $A=[a_1,a_2,\\ldots,a_n]$，他想将其中大于 $k$ 的数字都替换为序列的最大值，将其中小于 $k$ 的数字都替换为序列的最小值，请你帮他计算出替换后的序列。\n\n\n\n**输入格式**\n\n第一行包含两个正整数 $n,k$，含义如题面所示。\n\n第二行包含 $n$ 个数字，代表序列 $A$。\n\n**输出格式**\n\n输出 $n$ 个整数，代表替换后的结果。\n\n**样例输入 #1**\n```\n5 0\n-2 -1 0 1 2\n```\n\n**样例输出 #1**\n```\n-2 -2 0 2 2\n```\n\n**说明/提示**\n\n对于全部数据，保证有 $1\\le n\\le 10^5$，$|k|,|a_i|\\le 10^5$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：数字替换</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨有一个包含 $n$ 个数字的序列 $A$，即 $A=[a_1,a_2,\\ldots,a_n]$，他想将其中大于 $k$ 的数字都替换为序列的最大值，将其中小于 $k$ 的数字都替换为序列的最小值，请你帮他计算出替换后的序列。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含两个正整数 $n,k$，含义如题面所示。</p>\n<p>第二行包含 $n$ 个数字，代表序列 $A$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出 $n$ 个整数，代表替换后的结果。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5 0\n-2 -1 0 1 2\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>-2 -2 0 2 2\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于全部数据，保证有 $1\\le n\\le 10^5$，$|k|,|a_i|\\le 10^5$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：打印数字**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨为数字 $0,1,2$ 和 $3$ 设计了一款表示形式，每个数字占用了 $5\\times 5$ 的网格。数字 $0,1,2$ 和 $3$ 的表示形式如下：\n\n```plain\n..... ****. ..... .....\n.***. ****. ****. ****.\n.***. ****. ..... .....\n.***. ****. .**** ****.\n..... ****. ..... .....\n```\n\n小杨想请你将给定的数字 $n$ 转换为对应的表示形式。\n\n**输入格式**\n\n第一行包含一个非负整数代表 $n$。\n\n**输出格式**\n\n输出对应的表示形式。\n\n**样例输入 #1**\n```\n12230\n```\n\n**样例输出 #1**\n```\n****.....................\n****.****.****.****..***.\n****.................***.\n****..****.********..***.\n****.....................\n```\n\n**说明/提示**\n\n对于全部数据，保证有 $0\\le n\\le 10^6$，且 $n$ 仅由数字 $0,1,2,3$ 组成。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：打印数字</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨为数字 $0,1,2$ 和 $3$ 设计了一款表示形式，每个数字占用了 $5\\times 5$ 的网格。数字 $0,1,2$ 和 $3$ 的表示形式如下：</p>\n<pre><code class=\"language-plain\">..... ****. ..... .....\n.***. ****. ****. ****.\n.***. ****. ..... .....\n.***. ****. .**** ****.\n..... ****. ..... .....\n</code></pre>\n<p>小杨想请你将给定的数字 $n$ 转换为对应的表示形式。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含一个非负整数代表 $n$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出对应的表示形式。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>12230\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>****.....................\n****.****.****.****..***.\n****.................***.\n****..****.********..***.\n****.....................\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于全部数据，保证有 $0\\le n\\le 10^6$，且 $n$ 仅由数字 $0,1,2,3$ 组成。</p>\n"
+    }
+  ],
+  "id": "2024-12-gesp-3",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2024-12-gesp-3",
+  "version": "e90de01792b87ceb",
+  "warnings": [],
+  "objective_score": 50.0
+}

@@ -1,0 +1,711 @@
+{
+  "title": "2024年12月 GESP C++ 6级",
+  "category": "GESP",
+  "level": "6",
+  "date": "2024-12",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2024年12月 GESP C++ 6级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "抽象",
+          "html": "<p>抽象</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "封装",
+          "html": "<p>封装</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "继承",
+          "html": "<p>继承</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "模块化",
+          "html": "<p>模块化</p>\n"
+        }
+      ],
+      "content": "面向对象编程 (OOP) 是一种特殊的程序设计方法。下面 ( ) 不是重要的 OOP 特性。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>面向对象编程 (OOP) 是一种特殊的程序设计方法。下面 ( ) 不是重要的 OOP 特性。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "类中定义的所有成员变量和成员函数默认是 `public` 访问权限。",
+          "html": "<p>类中定义的所有成员变量和成员函数默认是 <code>public</code> 访问权限。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "类的构造函数必须显式声明返回类型为 `void` 。",
+          "html": "<p>类的构造函数必须显式声明返回类型为 <code>void</code> 。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "在 C++ 中，类的数据一般设置为私有，其公有成员函数提供访问私有数据的唯一途径。",
+          "html": "<p>在 C++ 中，类的数据一般设置为私有，其公有成员函数提供访问私有数据的唯一途径。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "同一个类的实例有各自的成员数据和成员函数。",
+          "html": "<p>同一个类的实例有各自的成员数据和成员函数。</p>\n"
+        }
+      ],
+      "content": "以下关于 C++ 中类的说法，哪一项是正确的？",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>以下关于 C++ 中类的说法，哪一项是正确的？</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`NULL` 在 C++ 中无法用于指针初始化，应使用 `nullptr`。",
+          "html": "<p><code>NULL</code> 在 C++ 中无法用于指针初始化，应使用 <code>nullptr</code>。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`obj` 的定义应该是 `MyClass obj;` 而不是指针类型。",
+          "html": "<p><code>obj</code> 的定义应该是 <code>MyClass obj;</code> 而不是指针类型。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`obj->display()` 语句存在空指针访问错误，`obj` 应该初始化为一个有效的对象。",
+          "html": "<p><code>obj-&gt;display()</code> 语句存在空指针访问错误，<code>obj</code> 应该初始化为一个有效的对象。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`obj->display()` 语句会调用 `display()` 函数，但它没有输出任何内容。",
+          "html": "<p><code>obj-&gt;display()</code> 语句会调用 <code>display()</code> 函数，但它没有输出任何内容。</p>\n"
+        }
+      ],
+      "content": "以下 C++ 代码段中存在语法错误或逻辑错误，（ ）是正确的。\n\n```cpp\n#include <iostream>\nusing namespace std;\nclass MyClass {\n    public:\n    MyClass() {\n        cout << \"Constructor called!\" << endl;\n    }\n    void display() {\n        cout << \"Display function called!\" << endl;\n    }\n};\nint main() {\n    MyClass* obj = NULL;\n    obj->display();\n    return 0;\n}\n```",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>以下 C++ 代码段中存在语法错误或逻辑错误，（ ）是正确的。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nclass MyClass {\n    public:\n    MyClass() {\n        cout &lt;&lt; &quot;Constructor called!&quot; &lt;&lt; endl;\n    }\n    void display() {\n        cout &lt;&lt; &quot;Display function called!&quot; &lt;&lt; endl;\n    }\n};\nint main() {\n    MyClass* obj = NULL;\n    obj-&gt;display();\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "栈 `s` 的输出顺序是 $1$ $2$ $3$ $4$ $5$，队列 `q` 的输出顺序是 $5$ $4$ $3$ $2$ $1$。",
+          "html": "<p>栈 <code>s</code> 的输出顺序是 $1$ $2$ $3$ $4$ $5$，队列 <code>q</code> 的输出顺序是 $5$ $4$ $3$ $2$ $1$。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "栈 `s` 的输出顺序是 $5$ $4$ $3$ $2$ $1$，队列 `q` 的输出顺序是 $1$ $2$ $3$ $4$ $5$。",
+          "html": "<p>栈 <code>s</code> 的输出顺序是 $5$ $4$ $3$ $2$ $1$，队列 <code>q</code> 的输出顺序是 $1$ $2$ $3$ $4$ $5$。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "栈 `s` 的输出顺序是 $1$ $2$ $3$ $4$ $5$，队列 `q` 的输出顺序是 $1$ $2$ $3$ $4$ $5$。",
+          "html": "<p>栈 <code>s</code> 的输出顺序是 $1$ $2$ $3$ $4$ $5$，队列 <code>q</code> 的输出顺序是 $1$ $2$ $3$ $4$ $5$。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "栈 `s` 的输出顺序是 $1$ $2$ $3$ $4$ $5$，队列 `q` 的输出顺序是 $1$ $2$ $3$ $4$ $5$，程序不会正常执行。",
+          "html": "<p>栈 <code>s</code> 的输出顺序是 $1$ $2$ $3$ $4$ $5$，队列 <code>q</code> 的输出顺序是 $1$ $2$ $3$ $4$ $5$，程序不会正常执行。</p>\n"
+        }
+      ],
+      "content": "阅读以下代码，下面哪一项是正确的？\n\n```cpp\nvoid processData() {\n    stack<int> s;\n    queue<int> q;\n    for (int i = 1; i <= 5; ++i) {\n        s.push(i);\n        q.push(i);\n    }\n    while (!s.empty()) {\n        cout << \"Stack pop: \" << s.top() << endl;\n        s.pop();\n    }\n    while (!q.empty()) {\n        cout << \"Queue pop: \" << q.front() << endl;\n        q.pop();\n    }\n}\n```",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>阅读以下代码，下面哪一项是正确的？</p>\n<pre><code class=\"language-cpp\">void processData() {\n    stack&lt;int&gt; s;\n    queue&lt;int&gt; q;\n    for (int i = 1; i &lt;= 5; ++i) {\n        s.push(i);\n        q.push(i);\n    }\n    while (!s.empty()) {\n        cout &lt;&lt; &quot;Stack pop: &quot; &lt;&lt; s.top() &lt;&lt; endl;\n        s.pop();\n    }\n    while (!q.empty()) {\n        cout &lt;&lt; &quot;Queue pop: &quot; &lt;&lt; q.front() &lt;&lt; endl;\n        q.pop();\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "$n$ 个节点的双向循环链，在其中查找某个节点的平均时间复杂度是( )。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>$n$ 个节点的双向循环链，在其中查找某个节点的平均时间复杂度是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "在一棵二叉树中，叶⼦结点的度一定是 $2$ 。",
+          "html": "<p>在一棵二叉树中，叶⼦结点的度一定是 $2$ 。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "满二叉树中每一层的结点数等于层数。",
+          "html": "<p>满二叉树中每一层的结点数等于层数。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "在一棵树中，所有结点的度之和等于所有叶⼦结点的度之和。",
+          "html": "<p>在一棵树中，所有结点的度之和等于所有叶⼦结点的度之和。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "一棵二叉树的先序遍历结果和中序遍历结果一定相同。",
+          "html": "<p>一棵二叉树的先序遍历结果和中序遍历结果一定相同。</p>\n"
+        }
+      ],
+      "content": "以下关于树的说法，（ ）是正确的。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>以下关于树的说法，（ ）是正确的。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nABCD\n/ \\\nA BCD\n/ \\\nD BC\n/ \\\nB C\n```",
+          "html": "<pre><code class=\"language-cpp\">ABCD\n/ \\\nA BCD\n/ \\\nD BC\n/ \\\nB C\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\nABCD\n/ \\\nA BCD\n/ \\\nB CD\n/ \\\nC D\n```",
+          "html": "<pre><code class=\"language-cpp\">ABCD\n/ \\\nA BCD\n/ \\\nB CD\n/ \\\nC D\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\nABCD\n/ \\\nD ABC\n/ \\\nA BC\n/ \\\nB C\n```",
+          "html": "<pre><code class=\"language-cpp\">ABCD\n/ \\\nD ABC\n/ \\\nA BC\n/ \\\nB C\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nABCD\n/ \\\nC ABC\n/ \\\nB AD\n/ \\\nA D\n```",
+          "html": "<pre><code class=\"language-cpp\">ABCD\n/ \\\nC ABC\n/ \\\nB AD\n/ \\\nA D\n</code></pre>\n"
+        }
+      ],
+      "content": "已知字符集 {$A$, $B$, $C$, $D$} 的出现频率如下表所⽰：\n字符 频率\n$A$ $8$\n$B$ $3$\n$C$ $1$\n$D$ $6$\n根据哈夫曼编码法，下面（ ）是正确的哈夫曼树。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>已知字符集 {$A$, $B$, $C$, $D$} 的出现频率如下表所⽰：<br />\n字符 频率<br />\n$A$ $8$<br />\n$B$ $3$<br />\n$C$ $1$<br />\n$D$ $6$<br />\n根据哈夫曼编码法，下面（ ）是正确的哈夫曼树。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$11$,",
+          "html": "<p>$11$,</p>\n"
+        },
+        {
+          "key": "A",
+          "text": "$0$,",
+          "html": "<p>$0$,</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$10$,",
+          "html": "<p>$10$,</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$01$,",
+          "html": "<p>$01$,</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$00$",
+          "html": "<p>$00$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "A",
+          "text": "$0$,",
+          "html": "<p>$0$,</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "10,",
+          "html": "<p>10,</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "11,",
+          "html": "<p>11,</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "10",
+          "html": "<p>10</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "A",
+          "text": "0,",
+          "html": "<p>0,</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "101,",
+          "html": "<p>101,</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "100,",
+          "html": "<p>100,</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "11",
+          "html": "<p>11</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "A",
+          "text": "11,",
+          "html": "<p>11,</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "10,",
+          "html": "<p>10,</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "01,",
+          "html": "<p>01,</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "00",
+          "html": "<p>00</p>\n"
+        }
+      ],
+      "content": "上一题中各字符的哈夫曼编码是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>上一题中各字符的哈夫曼编码是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "000 001 011 010 110 111 101 100",
+          "html": "<p>000 001 011 010 110 111 101 100</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "000 001 010 011 100 101 110 111",
+          "html": "<p>000 001 010 011 100 101 110 111</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "000 001 100 101 011 010 111 110",
+          "html": "<p>000 001 100 101 011 010 111 110</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "000 010 001 011 100 110 101 111",
+          "html": "<p>000 010 001 011 100 110 101 111</p>\n"
+        }
+      ],
+      "content": "( ) 是 $3$ 位格雷编码。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>( ) 是 $3$ 位格雷编码。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "根据下面二叉树和给定的代码，\n\n```cpp\n#include <iostream>\nusing namespace std;\nstruct TreeNode {\n    int val;\n    TreeNode* left;\n    TreeNode* right;\n    TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n};\nTreeNode* search(TreeNode* root, int val) {\n    cout << root->val << \" \";\n    if (root == NULL || root->val == val) return root;\n    if (val < root->val)\n        return search(root->left, val);\n    else\n        return search(root->right, val);\n}\n```\n\n给定以下二叉搜索树，调用函数 `search(root, 7)` 时，输出的结果是（ ）。\n\n```cpp\n5\n/ \\\n3 7\n/ \\ / \\\n2 4 6 8\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>根据下面二叉树和给定的代码，</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nstruct TreeNode {\n    int val;\n    TreeNode* left;\n    TreeNode* right;\n    TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n};\nTreeNode* search(TreeNode* root, int val) {\n    cout &lt;&lt; root-&gt;val &lt;&lt; &quot; &quot;;\n    if (root == NULL || root-&gt;val == val) return root;\n    if (val &lt; root-&gt;val)\n        return search(root-&gt;left, val);\n    else\n        return search(root-&gt;right, val);\n}\n</code></pre>\n<p>给定以下二叉搜索树，调用函数 <code>search(root, 7)</code> 时，输出的结果是（ ）。</p>\n<pre><code class=\"language-cpp\">5\n/ \\\n3 7\n/ \\ / \\\n2 4 6 8\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`TreeNode* node = s.top();`",
+          "html": "<p><code>TreeNode* node = s.top();</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`TreeNode* node = s.top(); s.pop();`",
+          "html": "<p><code>TreeNode* node = s.top(); s.pop();</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`TreeNode* node = s.front();`",
+          "html": "<p><code>TreeNode* node = s.front();</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`TreeNode* node = s.front(); s.pop();`",
+          "html": "<p><code>TreeNode* node = s.front(); s.pop();</code></p>\n"
+        }
+      ],
+      "content": "阅读以下二叉树的深度优先搜索算法，横线上应填写（ ）。\n\n```cpp\nvoid dfs(TreeNode* root) {\n    if (root == nullptr)\n        return;\n    stack<TreeNode*> s;\n    s.push(root);\n    while (!s.empty()) {\n        ———————————————————————— // 在此处填入代码\n        cout << node->value << \" \";\n        if (node->right) s.push(node->right);\n        if (node->left) s.push(node->left);\n    }\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>阅读以下二叉树的深度优先搜索算法，横线上应填写（ ）。</p>\n<pre><code class=\"language-cpp\">void dfs(TreeNode* root) {\n    if (root == nullptr)\n        return;\n    stack&lt;TreeNode*&gt; s;\n    s.push(root);\n    while (!s.empty()) {\n        ———————————————————————— // 在此处填入代码\n        cout &lt;&lt; node-&gt;value &lt;&lt; &quot; &quot;;\n        if (node-&gt;right) s.push(node-&gt;right);\n        if (node-&gt;left) s.push(node-&gt;left);\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`TreeNode* node = q.top();`",
+          "html": "<p><code>TreeNode* node = q.top();</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`TreeNode* node = q.top(); q.pop();`",
+          "html": "<p><code>TreeNode* node = q.top(); q.pop();</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`TreeNode* node = q.front();`",
+          "html": "<p><code>TreeNode* node = q.front();</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`TreeNode* node = q.front(); q.pop();`",
+          "html": "<p><code>TreeNode* node = q.front(); q.pop();</code></p>\n"
+        }
+      ],
+      "content": "阅读以下二叉树的广度优先搜索的代码，横线上应填写（ ）。\n\n```cpp\n#include <queue>\nvoid bfs(TreeNode* root) {\n    if (root == NULL) return;\n    queue<TreeNode*> q;\n    q.push(root);\n    while (!q.empty()) {\n        ———————————————————————— // 在此处填入代码\n        cout << node->val << \" \";\n        if (node->left) {\n            q.push(node->left);\n        }\n        if (node->right) {\n            q.push(node->right);\n        }\n    }\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>阅读以下二叉树的广度优先搜索的代码，横线上应填写（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;queue&gt;\nvoid bfs(TreeNode* root) {\n    if (root == NULL) return;\n    queue&lt;TreeNode*&gt; q;\n    q.push(root);\n    while (!q.empty()) {\n        ———————————————————————— // 在此处填入代码\n        cout &lt;&lt; node-&gt;val &lt;&lt; &quot; &quot;;\n        if (node-&gt;left) {\n            q.push(node-&gt;left);\n        }\n        if (node-&gt;right) {\n            q.push(node-&gt;right);\n        }\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "使用上题中的宽度优先搜索算法遍历以下这棵树，可能的输出是( )。\n\n```cpp\n1\n/ \\\n2 3\n/ \\ \\\n8 9 6\n/ \\ \\\n4 5 7\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>使用上题中的宽度优先搜索算法遍历以下这棵树，可能的输出是( )。</p>\n<pre><code class=\"language-cpp\">1\n/ \\\n2 3\n/ \\ \\\n8 9 6\n/ \\ \\\n4 5 7\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "动态规划适用于没有重叠子问题的优化问题。",
+          "html": "<p>动态规划适用于没有重叠子问题的优化问题。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "动态规划要求问题具有最优子结构和无后效性。",
+          "html": "<p>动态规划要求问题具有最优子结构和无后效性。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "动态规划通常通过递归来实现。",
+          "html": "<p>动态规划通常通过递归来实现。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "动态规划与贪心算法不同，贪心算法不适用于有重叠子问题的问题。",
+          "html": "<p>动态规划与贪心算法不同，贪心算法不适用于有重叠子问题的问题。</p>\n"
+        }
+      ],
+      "content": "以下关于动态规划的描述，（ ）是正确的。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>以下关于动态规划的描述，（ ）是正确的。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$70$",
+          "html": "<p>$70$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$90$",
+          "html": "<p>$90$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$100$",
+          "html": "<p>$100$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$120$",
+          "html": "<p>$120$</p>\n"
+        }
+      ],
+      "content": "假设背包的最大容量 $W = 50$，共有 $n = 4$ 个物品可供选择，$4$ 个物品的重量分别为 $w = [10, 20, 30, 40]$，对应的价值分别为 $v = [60, 100, 120, 150]$，则该 $0/1$ 背包问题中，背包的最大价值为（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>假设背包的最大容量 $W = 50$，共有 $n = 4$ 个物品可供选择，$4$ 个物品的重量分别为 $w = [10, 20, 30, 40]$，对应的价值分别为 $v = [60, 100, 120, 150]$，则该 $0/1$ 背包问题中，背包的最大价值为（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "构造函数是一种特殊的类成员函数，构造函数的名称和类名相同。但通过函数重载，可以创建多个同名的构造函数，条件是每个构造函数的参数列表不同。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>构造函数是一种特殊的类成员函数，构造函数的名称和类名相同。但通过函数重载，可以创建多个同名的构造函数，条件是每个构造函数的参数列表不同。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "类的静态成员函数既能访问类的静态数据成员，也能访问非静态数据成员。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>类的静态成员函数既能访问类的静态数据成员，也能访问非静态数据成员。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "栈中元素的插入和删除操作都在栈的顶端进行，所以方便用单向链表实现。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>栈中元素的插入和删除操作都在栈的顶端进行，所以方便用单向链表实现。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下面代码构建的树一定是完全二叉树：\n\n```cpp\nstruct TreeNode {\n    int value;\n    TreeNode* left;\n    TreeNode* right;\n};\nTreeNode* buildCompleteBinaryTree() {\n    TreeNode* root = new TreeNode{1};\n    root->left = new TreeNode{2};\n    root->right = new TreeNode{3};\n    root->left->left = new TreeNode{4};\n    root->left->right = new TreeNode{5};\n    root->right->left = new TreeNode{6};\n    return root;\n}\n```",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>下面代码构建的树一定是完全二叉树：</p>\n<pre><code class=\"language-cpp\">struct TreeNode {\n    int value;\n    TreeNode* left;\n    TreeNode* right;\n};\nTreeNode* buildCompleteBinaryTree() {\n    TreeNode* root = new TreeNode{1};\n    root-&gt;left = new TreeNode{2};\n    root-&gt;right = new TreeNode{3};\n    root-&gt;left-&gt;left = new TreeNode{4};\n    root-&gt;left-&gt;right = new TreeNode{5};\n    root-&gt;right-&gt;left = new TreeNode{6};\n    return root;\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在二叉排序树中，左子树所有节点的值都大于根节点的值，右子树所有节点的值都小于根节点的值。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>在二叉排序树中，左子树所有节点的值都大于根节点的值，右子树所有节点的值都小于根节点的值。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在生成一个派生类的对象时，只调用派生类的构造函数。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>在生成一个派生类的对象时，只调用派生类的构造函数。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下面的代码实现了二叉树的前序遍历，它通过递归方法访问每个节点并打印节点值。\n\n```cpp\nvoid preorder(TreeNode* root) {\n    if (root == NULL) return;\n    cout << root->val << \" \";\n    preorder(root->left);\n    preorder(root->right);\n}\n```",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>下面的代码实现了二叉树的前序遍历，它通过递归方法访问每个节点并打印节点值。</p>\n<pre><code class=\"language-cpp\">void preorder(TreeNode* root) {\n    if (root == NULL) return;\n    cout &lt;&lt; root-&gt;val &lt;&lt; &quot; &quot;;\n    preorder(root-&gt;left);\n    preorder(root-&gt;right);\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在二叉树中，宽度优先搜索算法（BFS）保证从起点到每个节点的访问路径是边数最少的路径（即最短路径）。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>在二叉树中，宽度优先搜索算法（BFS）保证从起点到每个节点的访问路径是边数最少的路径（即最短路径）。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在解决简单背包问题时，动态规划的状态转移方程如下：\n\n```cpp\ndp[i][w] = max(dp[i-1][w], dp[i-1][w - weights[i-1]] + values[i-1]);\n```\n该方程表示：在考虑第 $i$ 个物品时，当前背包容量为 $w$，如果不放物品 $i$，则最大价值是 `dp[i-1][w]`；如果放入物品 $i$，则最大价值是 `dp[i-1][w - weights[i-1]] + values[i-1]`，其中数组 `weights` 和 `values` 分别表示所有物品的重量和价值，数组下标从 $0$ 开始。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>在解决简单背包问题时，动态规划的状态转移方程如下：</p>\n<pre><code class=\"language-cpp\">dp[i][w] = max(dp[i-1][w], dp[i-1][w - weights[i-1]] + values[i-1]);\n</code></pre>\n<p>该方程表示：在考虑第 $i$ 个物品时，当前背包容量为 $w$，如果不放物品 $i$，则最大价值是 <code>dp[i-1][w]</code>；如果放入物品 $i$，则最大价值是 <code>dp[i-1][w - weights[i-1]] + values[i-1]</code>，其中数组 <code>weights</code> 和 <code>values</code> 分别表示所有物品的重量和价值，数组下标从 $0$ 开始。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "栈中元素的插入和删除操作都在栈的顶端进行，所以方便用双向链表比单向链表更合适表实现。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>栈中元素的插入和删除操作都在栈的顶端进行，所以方便用双向链表比单向链表更合适表实现。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：树上游走**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨有一棵包含无穷节点的二叉树（即每个节点都有左儿子节点和右儿子节点；除根节点外，每个节点都有父节点），其中根节点的编号为 $1$，对于节点 $i$，其左儿子的编号为 $2\\times i$，右儿子的编号为 $2\\times i + 1$。\n\n小杨会从节点 $s$ 开始在二叉树上移动，每次移动为以下三种移动方式的任意一种：\n\n- **第 1 种移动方式**：如果当前节点存在父亲节点，向上移动到当前节点的父节点，否则不移动；\n- **第 2 种移动方式**：移动到当前节点的左儿子；\n- **第 3 种移动方式**：移动到当前节点的右儿子。\n\n小杨想知道移动 $n$ 次后自己所处的节点编号。**数据保证最后所处的节点编号不超过 $10^{12}$**。\n\n**输入格式**\n\n第一行包含两个正整数 $n$ 和 $s$，代表移动次数和初始节点编号。\n\n第二行包含一个长度为 $n$ 且仅包含大写字母 $\\tt{U}$、$\\tt{L}$ 和 $\\tt{R}$ 的字符串，代表每次移动的方式，其中 $\\tt{U}$ 代表第 1 种移动方式，$\\tt{L}$ 代表第 2 种移动方式，$\\tt{R}$ 代表第 3 种移动方式。\n\n**输出格式**\n\n输出一个正整数，代表最后所处的节点编号。\n\n**样例输入 #1**\n```\n3 2\nURR\n```\n\n**样例输出 #1**\n```\n7\n```\n\n**说明/提示**\n\n小杨的移动路线为 $2 \\to 1 \\to 3 \\to 7$。\n\n| 子任务编号 | 数据点占比 |     $n$     |      $s$       |\n| :--------: | :--------: | :---------: | :------------: |\n|    $1$     |   $20\\%$   |  $\\leq 10$  |    $\\leq 2$    |\n|    $2$     |   $20\\%$   |  $\\leq 50$  |   $\\leq 10$    |\n|    $3$     |   $60\\%$   | $\\leq 10^6$ | $\\leq 10^{12}$ |\n\n\n对于全部数据，保证有 $1\\leq n\\leq 10^6$，$1\\leq s\\leq 10^{12}$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：树上游走</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨有一棵包含无穷节点的二叉树（即每个节点都有左儿子节点和右儿子节点；除根节点外，每个节点都有父节点），其中根节点的编号为 $1$，对于节点 $i$，其左儿子的编号为 $2\\times i$，右儿子的编号为 $2\\times i + 1$。</p>\n<p>小杨会从节点 $s$ 开始在二叉树上移动，每次移动为以下三种移动方式的任意一种：</p>\n<ul>\n<li><strong>第 1 种移动方式</strong>：如果当前节点存在父亲节点，向上移动到当前节点的父节点，否则不移动；</li>\n<li><strong>第 2 种移动方式</strong>：移动到当前节点的左儿子；</li>\n<li><strong>第 3 种移动方式</strong>：移动到当前节点的右儿子。</li>\n</ul>\n<p>小杨想知道移动 $n$ 次后自己所处的节点编号。<strong>数据保证最后所处的节点编号不超过 $10^{12}$</strong>。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含两个正整数 $n$ 和 $s$，代表移动次数和初始节点编号。</p>\n<p>第二行包含一个长度为 $n$ 且仅包含大写字母 $\\tt{U}$、$\\tt{L}$ 和 $\\tt{R}$ 的字符串，代表每次移动的方式，其中 $\\tt{U}$ 代表第 1 种移动方式，$\\tt{L}$ 代表第 2 种移动方式，$\\tt{R}$ 代表第 3 种移动方式。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一个正整数，代表最后所处的节点编号。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3 2\nURR\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>7\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>小杨的移动路线为 $2 \\to 1 \\to 3 \\to 7$。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\">子任务编号</th>\n<th style=\"text-align:center\">数据点占比</th>\n<th style=\"text-align:center\">$n$</th>\n<th style=\"text-align:center\">$s$</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">$1$</td>\n<td style=\"text-align:center\">$20\\%$</td>\n<td style=\"text-align:center\">$\\leq 10$</td>\n<td style=\"text-align:center\">$\\leq 2$</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$2$</td>\n<td style=\"text-align:center\">$20\\%$</td>\n<td style=\"text-align:center\">$\\leq 50$</td>\n<td style=\"text-align:center\">$\\leq 10$</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$3$</td>\n<td style=\"text-align:center\">$60\\%$</td>\n<td style=\"text-align:center\">$\\leq 10^6$</td>\n<td style=\"text-align:center\">$\\leq 10^{12}$</td>\n</tr>\n</tbody>\n</table>\n<p>对于全部数据，保证有 $1\\leq n\\leq 10^6$，$1\\leq s\\leq 10^{12}$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：运送物资**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨管理着 $m$ 辆货车，每辆货车每天需要向 A 市和 B 市运送若干次物资。小杨同时拥有 $n$ 个运输站点，这些站点位于 A 市和 B 市之间。\n\n每次运送物资时，货车从初始运输站点出发，前往 A 市或 B 市，之后返回初始运输站点。A 市、B 市和运输站点的位置可以视作数轴上的三个点，其中 A 市的坐标为 $0$，B 市的坐标为 $x$，运输站点的坐标为 $p$ 且有 $0 \\lt p \\lt x$。货车每次去 A 市运送物资的总行驶路程为 $2p$，去 B 市运送物资的总行驶路程为 $2(x - p)$。\n\n对于第 $i$ 个运输站点，其位置为 $p_i$ 且至多作为 $c_i$ 辆车的初始运输站点。小杨想知道，在最优分配每辆货车的初始运输站点的情况下，所有货车每天的最短总行驶路程是多少。\n\n**输入格式**\n\n第一行包含三个正整数 $n,m,x$，代表运输站点数量、货车数量和两市距离。\n\n之后 $n$ 行，每行包含两个正整数 $p_i$ 和 $c_i$，代表第 $i$ 个运输站点的位置和最多容纳车辆数。\n\n之后 $m$ 行，每行包含两个正整数 $a_i$ 和 $b_i$，代表第 $i$ 辆货车每天需要向 A 市运送 $a_i$ 次物资，向 B 市运送 $b_i$ 次物资。\n\n**输出格式**\n\n输出一个正整数，代表所有货车每天的最短总行驶路程。\n\n**样例输入 #1**\n```\n3 4 10\n1 1\n2 1\n8 3\n5 3\n7 2\n9 0\n1 10000\n```\n\n**样例输出 #1**\n```\n40186\n```\n\n**说明/提示**\n\n第 $1$ 辆车的初始运输站点为站点 $3$，第 $2$ 辆车的初始运输站点为站点 $2$。第 $3$ 辆车的初始运输站点为站点 $1$，第 $4$ 辆车的初始运输站点为站点 $3$。此时总驶路程最短，为 $40186$。\n\n| 子任务编号 | 数据点占比 |     $n$     |     $s$     |    $c_i$    |\n| :--------: | :--------: | :---------: | :---------: | :---------: |\n|    $1$     |   $20\\%$   |     $2$     |     $2$     |     $1$     |\n|    $2$     |   $20\\%$   | $\\leq 10^5$ | $\\leq 10^5$ |     $1$     |\n|    $3$     |   $60\\%$   | $\\leq 10^5$ | $\\leq 10^5$ | $\\leq 10^5$ |\n\n对于全部数据，保证有 $1\\leq n,m\\leq 10^5$，$2\\leq x\\leq 10^8$，$0\\lt p_i\\lt x$，$1\\leq c_i\\leq 10^5$，$0\\leq a_i,b_i\\leq 10^5$。数据保证 $\\sum c_i\\geq m$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：运送物资</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨管理着 $m$ 辆货车，每辆货车每天需要向 A 市和 B 市运送若干次物资。小杨同时拥有 $n$ 个运输站点，这些站点位于 A 市和 B 市之间。</p>\n<p>每次运送物资时，货车从初始运输站点出发，前往 A 市或 B 市，之后返回初始运输站点。A 市、B 市和运输站点的位置可以视作数轴上的三个点，其中 A 市的坐标为 $0$，B 市的坐标为 $x$，运输站点的坐标为 $p$ 且有 $0 \\lt p \\lt x$。货车每次去 A 市运送物资的总行驶路程为 $2p$，去 B 市运送物资的总行驶路程为 $2(x - p)$。</p>\n<p>对于第 $i$ 个运输站点，其位置为 $p_i$ 且至多作为 $c_i$ 辆车的初始运输站点。小杨想知道，在最优分配每辆货车的初始运输站点的情况下，所有货车每天的最短总行驶路程是多少。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含三个正整数 $n,m,x$，代表运输站点数量、货车数量和两市距离。</p>\n<p>之后 $n$ 行，每行包含两个正整数 $p_i$ 和 $c_i$，代表第 $i$ 个运输站点的位置和最多容纳车辆数。</p>\n<p>之后 $m$ 行，每行包含两个正整数 $a_i$ 和 $b_i$，代表第 $i$ 辆货车每天需要向 A 市运送 $a_i$ 次物资，向 B 市运送 $b_i$ 次物资。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一个正整数，代表所有货车每天的最短总行驶路程。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3 4 10\n1 1\n2 1\n8 3\n5 3\n7 2\n9 0\n1 10000\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>40186\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>第 $1$ 辆车的初始运输站点为站点 $3$，第 $2$ 辆车的初始运输站点为站点 $2$。第 $3$ 辆车的初始运输站点为站点 $1$，第 $4$ 辆车的初始运输站点为站点 $3$。此时总驶路程最短，为 $40186$。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\">子任务编号</th>\n<th style=\"text-align:center\">数据点占比</th>\n<th style=\"text-align:center\">$n$</th>\n<th style=\"text-align:center\">$s$</th>\n<th style=\"text-align:center\">$c_i$</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">$1$</td>\n<td style=\"text-align:center\">$20\\%$</td>\n<td style=\"text-align:center\">$2$</td>\n<td style=\"text-align:center\">$2$</td>\n<td style=\"text-align:center\">$1$</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$2$</td>\n<td style=\"text-align:center\">$20\\%$</td>\n<td style=\"text-align:center\">$\\leq 10^5$</td>\n<td style=\"text-align:center\">$\\leq 10^5$</td>\n<td style=\"text-align:center\">$1$</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$3$</td>\n<td style=\"text-align:center\">$60\\%$</td>\n<td style=\"text-align:center\">$\\leq 10^5$</td>\n<td style=\"text-align:center\">$\\leq 10^5$</td>\n<td style=\"text-align:center\">$\\leq 10^5$</td>\n</tr>\n</tbody>\n</table>\n<p>对于全部数据，保证有 $1\\leq n,m\\leq 10^5$，$2\\leq x\\leq 10^8$，$0\\lt p_i\\lt x$，$1\\leq c_i\\leq 10^5$，$0\\leq a_i,b_i\\leq 10^5$。数据保证 $\\sum c_i\\geq m$。</p>\n"
+    }
+  ],
+  "id": "2024-12-gesp-6",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2024-12-gesp-6",
+  "version": "dbda1a2d092defe5",
+  "warnings": [],
+  "objective_score": 50.0
+}

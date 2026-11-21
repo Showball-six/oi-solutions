@@ -1,0 +1,552 @@
+{
+  "title": "NOC Kitten图形化编程练习卷一",
+  "category": "其他赛事",
+  "level": "NOC",
+  "date": "2026-04",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "NOC 全国中小学信息技术创新与实践大赛 Kitten 图形化编程",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 5.0,
+      "answer": "A",
+      "content": "网络的普及，带给我们很多便利，同时也带来了很多潜在的风险。下列说法合理的是（）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "没有经过父母的同意，不把自己及家人的真实信息，在网上告诉其他人。",
+          "html": "<p>没有经过父母的同意，不把自己及家人的真实信息，在网上告诉其他人。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "将私人账号密码都设置成123456。",
+          "html": "<p>将私人账号密码都设置成123456。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "网络上下载的图片，都可以作为商业用途。",
+          "html": "<p>网络上下载的图片，都可以作为商业用途。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "在网络社区里可以随便骂人，反正他们也找不到我。",
+          "html": "<p>在网络社区里可以随便骂人，反正他们也找不到我。</p>\n"
+        }
+      ],
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>网络的普及，带给我们很多便利，同时也带来了很多潜在的风险。下列说法合理的是（）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 5.0,
+      "answer": "A",
+      "content": "在源码编辑器中，展示程序运行效果的区域是（）。\n![img](../assets/images/noc/nocimg-c-20220326-0927491.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "A区域",
+          "html": "<p>A区域</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "B区域",
+          "html": "<p>B区域</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "C区域",
+          "html": "<p>C区域</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "D区域",
+          "html": "<p>D区域</p>\n"
+        }
+      ],
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>在源码编辑器中，展示程序运行效果的区域是（）。<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-0927491.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 5.0,
+      "answer": "D",
+      "content": "阿短在操场上跑步。为背景添加下列哪个脚本能实现阿短向右移动的视觉效果，同时能够播放音乐（）。\n![img](../assets/images/noc/nocimg-c-20220326-0927492.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "A\n![img](../assets/images/noc/nocimg-c-20220326-0927493.png)",
+          "html": "<p>A<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-0927493.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "B\n![img](../assets/images/noc/nocimg-c-20220326-0927494.png)",
+          "html": "<p>B<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-0927494.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "C\n![img](../assets/images/noc/nocimg-c-20220326-0927495.png)",
+          "html": "<p>C<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-0927495.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "D\n![img](../assets/images/noc/nocimg-c-20220326-0927496.png)",
+          "html": "<p>D<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-0927496.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>阿短在操场上跑步。为背景添加下列哪个脚本能实现阿短向右移动的视觉效果，同时能够播放音乐（）。<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-0927492.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 5.0,
+      "answer": "D",
+      "content": "如图所示，每一个方格的宽度和长度都是100。要让角色“雷电猴”拿到苹果，应添加脚本（ ）。\n![img](../assets/images/noc/nocimg-c-20220326-0927497.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "A\n![img](../assets/images/noc/nocimg-c-20220326-0927498.png)",
+          "html": "<p>A<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-0927498.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "B\n![img](../assets/images/noc/nocimg-c-20220326-0927499.png)",
+          "html": "<p>B<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-0927499.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "C\n![img](../assets/images/noc/nocimg-c-20220326-09274910.png)",
+          "html": "<p>C<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274910.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "D\n![img](../assets/images/noc/nocimg-c-20220326-09274911.png)",
+          "html": "<p>D<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274911.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>如图所示，每一个方格的宽度和长度都是100。要让角色“雷电猴”拿到苹果，应添加脚本（ ）。<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-0927497.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 5.0,
+      "answer": "A",
+      "content": "舞台中一个角色“飞电鼠”，其位置和脚本如下图所示。运行脚本后，“飞电鼠”将会出现在（   ）。注：面向90度为竖直向上方向。\n![img](../assets/images/noc/nocimg-c-20220326-09274912.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "A\n![img](../assets/images/noc/nocimg-c-20220326-09274913.png)",
+          "html": "<p>A<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274913.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "B\n![img](../assets/images/noc/nocimg-c-20220326-09274914.png)",
+          "html": "<p>B<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274914.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "C\n![img](../assets/images/noc/nocimg-c-20220326-09274915.png)",
+          "html": "<p>C<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274915.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "D\n![img](../assets/images/noc/nocimg-c-20220326-09274916.png)",
+          "html": "<p>D<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274916.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>舞台中一个角色“飞电鼠”，其位置和脚本如下图所示。运行脚本后，“飞电鼠”将会出现在（   ）。注：面向90度为竖直向上方向。<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274912.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 5.0,
+      "answer": "D",
+      "content": "下列脚本绘制的图形是（ ）：\n![img](../assets/images/noc/nocimg-c-20220326-09274917.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "A\n![img](../assets/images/noc/nocimg-c-20220326-09274918.png)",
+          "html": "<p>A<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274918.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "B\n![img](../assets/images/noc/nocimg-c-20220326-09274919.png)",
+          "html": "<p>B<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274919.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "C\n![img](../assets/images/noc/nocimg-c-20220326-09274920.png)",
+          "html": "<p>C<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274920.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "D\n![img](../assets/images/noc/nocimg-c-20220326-09274921.png)",
+          "html": "<p>D<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274921.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>下列脚本绘制的图形是（ ）：<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274917.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 5.0,
+      "answer": "D",
+      "content": "角色“骰子”有如图所示的5个造型，分别显示不同点数。执行下列脚本，不可能显示的点数是（）：\n![img](../assets/images/noc/nocimg-c-20220326-09274922.png)\n![img](../assets/images/noc/nocimg-c-20220326-09274923.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "1",
+          "html": "<p>1</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "2",
+          "html": "<p>2</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "3",
+          "html": "<p>3</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "6",
+          "html": "<p>6</p>\n"
+        }
+      ],
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>角色“骰子”有如图所示的5个造型，分别显示不同点数。执行下列脚本，不可能显示的点数是（）：<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274922.png\" alt=\"\" loading=\"lazy\" /><br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274923.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 5.0,
+      "answer": "D",
+      "content": "运行下列脚本，输入：小可，则新建对话框输出的是（）：\n![img](../assets/images/noc/nocimg-c-20220326-09274924.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "获得答复你好",
+          "html": "<p>获得答复你好</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "你好",
+          "html": "<p>你好</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "把小可你好放在一起",
+          "html": "<p>把小可你好放在一起</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "小可你好",
+          "html": "<p>小可你好</p>\n"
+        }
+      ],
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>运行下列脚本，输入：小可，则新建对话框输出的是（）：<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274924.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 5.0,
+      "answer": "B",
+      "content": "阿短在编写一个古诗接龙的游戏，给出上句，选择正确的下句。下列脚本实现的是诗句“白日依山尽，黄河入海流。”的接龙。脚本“？”处应填写的是（）：\n![img](../assets/images/noc/nocimg-c-20220326-09274925.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "0",
+          "html": "<p>0</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "1",
+          "html": "<p>1</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "2",
+          "html": "<p>2</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "黄河入海流",
+          "html": "<p>黄河入海流</p>\n"
+        }
+      ],
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>阿短在编写一个古诗接龙的游戏，给出上句，选择正确的下句。下列脚本实现的是诗句“白日依山尽，黄河入海流。”的接龙。脚本“？”处应填写的是（）：<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274925.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 5.0,
+      "answer": "B",
+      "content": "下面的图示描述了根据天气情况选择特定活动的流程。天气预报将会下雨，则选择的活动是（）：\n![img](../assets/images/noc/nocimg-c-20220326-09274926.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "打篮球",
+          "html": "<p>打篮球</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "看书",
+          "html": "<p>看书</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "先看书，再打篮球",
+          "html": "<p>先看书，再打篮球</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "先打篮球，再看书",
+          "html": "<p>先打篮球，再看书</p>\n"
+        }
+      ],
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面的图示描述了根据天气情况选择特定活动的流程。天气预报将会下雨，则选择的活动是（）：<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274926.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 5.0,
+      "answer": "B",
+      "content": "飞船渐渐远去，越来越小，最终消失在无垠的星空。为实现上述效果，应为飞船添加脚本（ ）：\n![img](../assets/images/noc/nocimg-c-20220326-09274927.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "A\n![img](../assets/images/noc/nocimg-c-20220326-09274928.png)",
+          "html": "<p>A<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274928.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "B\n![img](../assets/images/noc/nocimg-c-20220326-09274929.png)",
+          "html": "<p>B<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274929.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "C\n![img](../assets/images/noc/nocimg-c-20220326-09274930.png)",
+          "html": "<p>C<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274930.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "D\n![img](../assets/images/noc/nocimg-c-20220326-09274931.png)",
+          "html": "<p>D<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274931.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>飞船渐渐远去，越来越小，最终消失在无垠的星空。为实现上述效果，应为飞船添加脚本（ ）：<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274927.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 5.0,
+      "answer": "C",
+      "content": "下列脚本实现的功能是：输入一串数字，如果该数字是11位，则在舞台上显示输入的数字；否则提示“输入的位数有误！”。脚本“？”处应填写的是（ ）：\n![img](../assets/images/noc/nocimg-c-20220326-09274932.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "A\n![img](../assets/images/noc/nocimg-c-20220326-09274933.png)",
+          "html": "<p>A<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274933.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "B\n![img](../assets/images/noc/nocimg-c-20220326-09274934.png)",
+          "html": "<p>B<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274934.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "C\n![img](../assets/images/noc/nocimg-c-20220326-09274935.png)",
+          "html": "<p>C<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274935.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "D\n![img](../assets/images/noc/nocimg-c-20220326-09274936.png)",
+          "html": "<p>D<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274936.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下列脚本实现的功能是：输入一串数字，如果该数字是11位，则在舞台上显示输入的数字；否则提示“输入的位数有误！”。脚本“？”处应填写的是（ ）：<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274932.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 5.0,
+      "answer": "B",
+      "content": "舞台上有一个播放—暂停按钮。它有两个造型，分别表示播放状态和暂停状态。其初始造型编号为1，表示播放状态。如果要实现点击按钮切换到暂停状态，再次点击按钮切换到播放状态的效果，则按钮的脚本是（ ）：\n![img](../assets/images/noc/nocimg-c-20220326-09274937.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "A\n![img](../assets/images/noc/nocimg-c-20220326-09274938.png)",
+          "html": "<p>A<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274938.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "B\n![img](../assets/images/noc/nocimg-c-20220326-09274939.png)",
+          "html": "<p>B<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274939.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "C\n![img](../assets/images/noc/nocimg-c-20220326-09274940.png)",
+          "html": "<p>C<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274940.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "D\n![img](../assets/images/noc/nocimg-c-20220326-09274941.png)",
+          "html": "<p>D<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274941.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>舞台上有一个播放—暂停按钮。它有两个造型，分别表示播放状态和暂停状态。其初始造型编号为1，表示播放状态。如果要实现点击按钮切换到暂停状态，再次点击按钮切换到播放状态的效果，则按钮的脚本是（ ）：<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274937.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 5.0,
+      "answer": "C",
+      "content": "下列脚本中，不能实现按下按键“a”角色持续移动效果的是（ ）：",
+      "options": [
+        {
+          "key": "A",
+          "text": "A\n![img](../assets/images/noc/nocimg-c-20220326-09274942.png)",
+          "html": "<p>A<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274942.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "B\n![img](../assets/images/noc/nocimg-c-20220326-09274943.png)",
+          "html": "<p>B<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09274943.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "C\n![img](../assets/images/noc/nocimg-c-20220326-09275044.png)",
+          "html": "<p>C<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09275044.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "D\n![img](../assets/images/noc/nocimg-c-20220326-09275045.png)",
+          "html": "<p>D<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09275045.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>下列脚本中，不能实现按下按键“a”角色持续移动效果的是（ ）：</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 5.0,
+      "answer": "A",
+      "content": "舞台上某一角色，它的脚本如下图所示。以下选项正确的是（）：\n![img](../assets/images/noc/nocimg-c-20220326-09275047.png)",
+      "options": [
+        {
+          "key": "A",
+          "text": "角色将在舞台上做往复运动",
+          "html": "<p>角色将在舞台上做往复运动</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "角色将在舞台上，沿着正方形路径运动",
+          "html": "<p>角色将在舞台上，沿着正方形路径运动</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "角色将在舞台上运动，一段时间后离开舞台",
+          "html": "<p>角色将在舞台上运动，一段时间后离开舞台</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "以上说法均不正确",
+          "html": "<p>以上说法均不正确</p>\n"
+        }
+      ],
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>舞台上某一角色，它的脚本如下图所示。以下选项正确的是（）：<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09275047.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "fill",
+      "id": 16,
+      "score": 5.0,
+      "answer": "9",
+      "content": "运行下列脚本，新建对话框输出的结果是 ( )。\n![img](../assets/images/noc/nocimg-c-20220326-09275048.png)",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>运行下列脚本，新建对话框输出的结果是 ( )。<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09275048.png\" alt=\"\" loading=\"lazy\" /></p>\n",
+      "options": []
+    },
+    {
+      "type": "fill",
+      "id": 17,
+      "score": 5.0,
+      "answer": "210",
+      "content": "运行下列脚本，角色一共移动了( )步。\n![img](../assets/images/noc/nocimg-c-20220326-09275049.png)",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>运行下列脚本，角色一共移动了( )步。<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09275049.png\" alt=\"\" loading=\"lazy\" /></p>\n",
+      "options": []
+    },
+    {
+      "type": "fill",
+      "id": 18,
+      "score": 5.0,
+      "answer": "90",
+      "content": "阿短去买铅笔，店员告诉阿短，按照下列脚本的规则付款。阿短要买10支铅笔，需要支付的价格是( )。\n![img](../assets/images/noc/nocimg-c-20220326-09275050.png)",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>阿短去买铅笔，店员告诉阿短，按照下列脚本的规则付款。阿短要买10支铅笔，需要支付的价格是( )。<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09275050.png\" alt=\"\" loading=\"lazy\" /></p>\n",
+      "options": []
+    },
+    {
+      "type": "fill",
+      "id": 19,
+      "score": 5.0,
+      "answer": "1",
+      "content": "小可编写了一个程序，要实现30秒倒计时功能。脚本中“？”处填写的是( )。\n![img](../assets/images/noc/nocimg-c-20220326-09275051.png)",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>小可编写了一个程序，要实现30秒倒计时功能。脚本中“？”处填写的是( )。<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09275051.png\" alt=\"\" loading=\"lazy\" /></p>\n",
+      "options": []
+    },
+    {
+      "type": "fill",
+      "id": 20,
+      "score": 5.0,
+      "answer": "30",
+      "content": "下图分别为角色“飞夜鼠”和角色“呆鲤鱼”的脚本。运行下列脚本，5秒后，“呆鲤鱼”总共移动( )步。\n![img](../assets/images/noc/nocimg-c-20220326-09275052.png)\n![img](../assets/images/noc/nocimg-c-20220326-09275053.png)",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>下图分别为角色“飞夜鼠”和角色“呆鲤鱼”的脚本。运行下列脚本，5秒后，“呆鲤鱼”总共移动( )步。<br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09275052.png\" alt=\"\" loading=\"lazy\" /><br />\n<img src=\"assets/images/noc/nocimg-c-20220326-09275053.png\" alt=\"\" loading=\"lazy\" /></p>\n",
+      "options": []
+    }
+  ],
+  "id": "noc-kitten-练习卷一",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/noc-kitten-练习卷一",
+  "version": "11fd6331df3e3981",
+  "warnings": [],
+  "objective_score": 100.0
+}

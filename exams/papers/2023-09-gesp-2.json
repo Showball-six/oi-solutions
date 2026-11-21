@@ -1,0 +1,631 @@
+{
+  "title": "2023年9月 GESP C++ 2级",
+  "category": "GESP",
+  "level": "2",
+  "date": "2023-09",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2023年9月 GESP C++ 2级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "集成电路",
+          "html": "<p>集成电路</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "大规模集成电路",
+          "html": "<p>大规模集成电路</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "晶体管",
+          "html": "<p>晶体管</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "电子管",
+          "html": "<p>电子管</p>\n"
+        }
+      ],
+      "content": "我国第一台大型通用电子计算机使用的逻辑部件是（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>我国第一台大型通用电子计算机使用的逻辑部件是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "5 12",
+          "html": "<p>5 12</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "12 5",
+          "html": "<p>12 5</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "5 5",
+          "html": "<p>5 5</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "12 12",
+          "html": "<p>12 12</p>\n"
+        }
+      ],
+      "content": "下列流程图的输出结果是（ ）？",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>下列流程图的输出结果是（ ）？</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "顺序结构",
+          "html": "<p>顺序结构</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "循环结构",
+          "html": "<p>循环结构</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "分支结构",
+          "html": "<p>分支结构</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "跳转结构",
+          "html": "<p>跳转结构</p>\n"
+        }
+      ],
+      "content": "如果要找出整数 $a$ 、 $b$ 中较大一个，通常要用下面哪种程序结构？（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>如果要找出整数 $a$ 、 $b$ 中较大一个，通常要用下面哪种程序结构？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`continue`",
+          "html": "<p><code>continue</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`cout`",
+          "html": "<p><code>cout</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`break`",
+          "html": "<p><code>break</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`goto`",
+          "html": "<p><code>goto</code></p>\n"
+        }
+      ],
+      "content": "以下不是 C++ 关键字的是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>以下不是 C++ 关键字的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$-124$",
+          "html": "<p>$-124$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$-123$",
+          "html": "<p>$-123$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$-13$",
+          "html": "<p>$-13$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$-12$",
+          "html": "<p>$-12$</p>\n"
+        }
+      ],
+      "content": "C++ 表达式 `int(-123.123 / 10)` 的值是（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>C++ 表达式 <code>int(-123.123 / 10)</code> 的值是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`; ;`",
+          "html": "<p><code>; ;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`int i = 1; i < N; i++`",
+          "html": "<p><code>int i = 1; i &lt; N; i++</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`int i = N; i > 0; i--`",
+          "html": "<p><code>int i = N; i &gt; 0; i--</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`int i = N; i > 1; i--`",
+          "html": "<p><code>int i = N; i &gt; 1; i--</code></p>\n"
+        }
+      ],
+      "content": "以下 C++ 代码实现从大到小的顺序输出 $N$ 的所有因子。例如，输入 $N = 18$ 时输出 `18 9 6 3 2 1`，横线处应填入（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>以下 C++ 代码实现从大到小的顺序输出 $N$ 的所有因子。例如，输入 $N = 18$ 时输出 <code>18 9 6 3 2 1</code>，横线处应填入（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`i = j`",
+          "html": "<p><code>i = j</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`j != j`",
+          "html": "<p><code>j != j</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`i >= j`",
+          "html": "<p><code>i &gt;= j</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`i == j`",
+          "html": "<p><code>i == j</code></p>\n"
+        }
+      ],
+      "content": "如下图所⽰，输出 $N$ 行 $N$ 列的矩阵，对角线为 $1$ ，横线处应填入（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>如下图所⽰，输出 $N$ 行 $N$ 列的矩阵，对角线为 $1$ ，横线处应填入（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`break`",
+          "html": "<p><code>break</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`continue`",
+          "html": "<p><code>continue</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`exit`",
+          "html": "<p><code>exit</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`return`",
+          "html": "<p><code>return</code></p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码用于判断 $N$ 是否为质数（素数），约定输入 $N$ 为大于等于 $2$ 的正整数，请在横线处填入合适的代码（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码用于判断 $N$ 是否为质数（素数），约定输入 $N$ 为大于等于 $2$ 的正整数，请在横线处填入合适的代码（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "1#0",
+          "html": "<p>1#0</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "1#",
+          "html": "<p>1#</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "1#1#1#1#1#1",
+          "html": "<p>1#1#1#1#1#1</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "1#1#1#1#1#1#0",
+          "html": "<p>1#1#1#1#1#1#0</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后的输出是（ ）。\n",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$16$",
+          "html": "<p>$16$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$28$",
+          "html": "<p>$28$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$35$",
+          "html": "<p>$35$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$36$",
+          "html": "<p>$36$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后的输出是（ ）。\n",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$15$",
+          "html": "<p>$15$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "没有输出",
+          "html": "<p>没有输出</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后的输出是（ ）。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$3,9,11$",
+          "html": "<p>$3,9,11$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$3,6,9,10$",
+          "html": "<p>$3,6,9,10$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$1,5,7,11,13,15$",
+          "html": "<p>$1,5,7,11,13,15$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后的输出是（ ）。",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`'A' + j / 3`",
+          "html": "<p><code>'A' + j / 3</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(char)('A' + j / 3)`",
+          "html": "<p><code>(char)('A' + j / 3)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`'A' + j % 3`",
+          "html": "<p><code>'A' + j % 3</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`(char)('A' + j % 3)`",
+          "html": "<p><code>(char)('A' + j % 3)</code></p>\n"
+        }
+      ],
+      "content": "下面图形每一行从字母 A 开始，以 ABC 方式重复。行数为输入的整数。请在 C++ 代码段横线处填入合适代码（ ）。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>下面图形每一行从字母 A 开始，以 ABC 方式重复。行数为输入的整数。请在 C++ 代码段横线处填入合适代码（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(lineCount - i - 1) * 2`",
+          "html": "<p><code>(lineCount - i - 1) * 2</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(lineCount - i) * 2`",
+          "html": "<p><code>(lineCount - i) * 2</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`lineCount - i - 1`",
+          "html": "<p><code>lineCount - i - 1</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`lineCount - i`",
+          "html": "<p><code>lineCount - i</code></p>\n"
+        }
+      ],
+      "content": "输入行数，约定 $1 \\leq n \\leq 100$，输出以下图形。应在 C++ 代码横线处填入（ ）。\n",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>输入行数，约定 $1 \\leq n \\leq 100$，输出以下图形。应在 C++ 代码横线处填入（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`true`",
+          "html": "<p><code>true</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`false`",
+          "html": "<p><code>false</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`True`",
+          "html": "<p><code>True</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`False`",
+          "html": "<p><code>False</code></p>\n"
+        }
+      ],
+      "content": "某班级人数不知，连续输入成绩直到输入负数停止，输入结束后求出平均成绩。在以下 C++ 代码横线处应填入是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>某班级人数不知，连续输入成绩直到输入负数停止，输入结束后求出平均成绩。在以下 C++ 代码横线处应填入是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "我们常说的互联网（Internet）是一个覆盖全球的广域网络，它不属于任何一个国家。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>我们常说的互联网（Internet）是一个覆盖全球的广域网络，它不属于任何一个国家。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "神威·太湖之光超级计算机是中国自主研制的超级计算机，在全球超级计算机 TOP500 排行榜中多次荣膺榜首。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>神威·太湖之光超级计算机是中国自主研制的超级计算机，在全球超级计算机 TOP500 排行榜中多次荣膺榜首。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 表达式 `7.8 / 2` 的值为 $3.9$，类型为 `float`。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>C++ 表达式 <code>7.8 / 2</code> 的值为 $3.9$，类型为 <code>float</code>。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 表达式 `(2 * 3) || (2 + 5)` 的值为 $67$。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>C++ 表达式 <code>(2 * 3) || (2 + 5)</code> 的值为 $67$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "如果 $m$ 和 $n$ 为 `int` 类型变量，则执行 `for (m = 0, n = 1; n < 9; ) n = ((m = 3 * n, m + 1), m - 1);` 之后 $n$ 的值为偶数。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>如果 $m$ 和 $n$ 为 <code>int</code> 类型变量，则执行 <code>for (m = 0, n = 1; n &lt; 9; ) n = ((m = 3 * n, m + 1), m - 1);</code> 之后 $n$ 的值为偶数。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "如果 $a$ 为 `int` 类型的变量，则表达式 `(a >= 5 && a <= 10)` 与 `(5 <= a <= 10)` 的值总是相同的。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>如果 $a$ 为 <code>int</code> 类型的变量，则表达式 <code>(a &gt;= 5 &amp;&amp; a &lt;= 10)</code> 与 <code>(5 &lt;= a &lt;= 10)</code> 的值总是相同的。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下面 C++ 代码执行后的输出为 $10$。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出为 $10$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "执行以下 C++ 代码后的输出为 $0$。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>执行以下 C++ 代码后的输出为 $0$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "执行以下 C++ 代码后的输出为 $30$。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>执行以下 C++ 代码后的输出为 $30$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "C++ 是一种高级程序设计语言。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>C++ 是一种高级程序设计语言。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：小杨的 X 字矩阵**\n\n> 时间限制：1.0 s | 内存限制：128.0 MB\n\n**题目描述**\n\n小杨想要构造一个 的 X 字矩阵（ 为奇数），这个矩阵的两条对角线都是半角加号 `+` ，其余都是半角减号 `-` 。例如，一个 $5 \\times 5$ 的 X 字矩阵如下：\n\n```plain\n+---+\n-+-+-\n--+--\n-+-+-\n+---+\n```\n\n请你帮小杨根据给定的 打印出对应的“X 字矩阵”。\n\n**输入格式**\n\n一行一个整数 （ $5 \\le N \\le 49$，保证为奇数）。\n\n**输出格式**\n\n输出对应的“X 字矩阵”。\n\n请严格按格式要求输出，不要擅自添加任何空格、标点、空行等任何符号。你应该恰好输出 $N$ 行，每行除了换行符外恰好包含 $N$ 个字符，这些字符要么是 `+`，要么是 `-`。\n\n**样例输入 #1**\n```\n5\n```\n\n**样例输出 #1**\n```\n+---+\n-+-+-\n--+--\n-+-+-\n+---+\n```\n\n**样例输入 #2**\n```\n7\n```\n\n**样例输出 #2**\n```\n+-----+\n-+---+-\n--+-+--\n---+---\n--+-+--\n-+---+-\n+-----+\n```\n\n**说明/提示**\n\n**特别提醒**\n\n在常规程序中，输入、输出时提供提示是好习惯。但在本场考试中，由于系统限定，请不要在输入、输出中附带任何提示信息。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：小杨的 X 字矩阵</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：128.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨想要构造一个 的 X 字矩阵（ 为奇数），这个矩阵的两条对角线都是半角加号 <code>+</code> ，其余都是半角减号 <code>-</code> 。例如，一个 $5 \\times 5$ 的 X 字矩阵如下：</p>\n<pre><code class=\"language-plain\">+---+\n-+-+-\n--+--\n-+-+-\n+---+\n</code></pre>\n<p>请你帮小杨根据给定的 打印出对应的“X 字矩阵”。</p>\n<p><strong>输入格式</strong></p>\n<p>一行一个整数 （ $5 \\le N \\le 49$，保证为奇数）。</p>\n<p><strong>输出格式</strong></p>\n<p>输出对应的“X 字矩阵”。</p>\n<p>请严格按格式要求输出，不要擅自添加任何空格、标点、空行等任何符号。你应该恰好输出 $N$ 行，每行除了换行符外恰好包含 $N$ 个字符，这些字符要么是 <code>+</code>，要么是 <code>-</code>。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>+---+\n-+-+-\n--+--\n-+-+-\n+---+\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>7\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>+-----+\n-+---+-\n--+-+--\n---+---\n--+-+--\n-+---+-\n+-----+\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p><strong>特别提醒</strong></p>\n<p>在常规程序中，输入、输出时提供提示是好习惯。但在本场考试中，由于系统限定，请不要在输入、输出中附带任何提示信息。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：数字黑洞**\n\n> 时间限制：1.0 s | 内存限制：128.0 MB\n\n**题目描述**\n\n给定一个三位数，要求各位不能相同。例如，$352$ 是符合要求的，$112$ 是不符合要求的。将这个三位数的三个数字重新排列，得到的最大的数，减去得到的最小的数，形成一个新的三位数。对这个新的三位数可以重复上述过程。神奇的是，最终一定会得到 $495$！\n\n试试看，重新排列 $352$，得到的最大数为 $532$，最小数为 $235$，它们的差是 $297$；变换 $297$，得到 $972-279=693$；变换 $693$，$963-369=594$；变换 $594$，$954-459=495$。因此，经过 $4$ 次变换得到了 $495$。\n\n现在，输入的三位数，你能通过编程得出，这个三位数经过多少次变换能够得到 $495$ 吗？\n\n**输入格式**\n\n输入一行，包含一个符合要求的三位数 $N$。\n\n**输出格式**\n\n输出一行，包含一个整数 $C$，表示经过 $C$ 次变换得到 $495$。\n\n**样例输入 #1**\n```\n352\n```\n\n**样例输出 #1**\n```\n4\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：数字黑洞</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：128.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>给定一个三位数，要求各位不能相同。例如，$352$ 是符合要求的，$112$ 是不符合要求的。将这个三位数的三个数字重新排列，得到的最大的数，减去得到的最小的数，形成一个新的三位数。对这个新的三位数可以重复上述过程。神奇的是，最终一定会得到 $495$！</p>\n<p>试试看，重新排列 $352$，得到的最大数为 $532$，最小数为 $235$，它们的差是 $297$；变换 $297$，得到 $972-279=693$；变换 $693$，$963-369=594$；变换 $594$，$954-459=495$。因此，经过 $4$ 次变换得到了 $495$。</p>\n<p>现在，输入的三位数，你能通过编程得出，这个三位数经过多少次变换能够得到 $495$ 吗？</p>\n<p><strong>输入格式</strong></p>\n<p>输入一行，包含一个符合要求的三位数 $N$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，包含一个整数 $C$，表示经过 $C$ 次变换得到 $495$。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>352\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>4\n</code></pre>\n"
+    }
+  ],
+  "id": "2023-09-gesp-2",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2023-09-gesp-2",
+  "version": "bb5ae385f53ab285",
+  "warnings": [],
+  "objective_score": 50.0
+}

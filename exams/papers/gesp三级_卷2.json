@@ -1,0 +1,631 @@
+{
+  "title": "GESP C++ 三级 模拟卷2",
+  "category": "GESP",
+  "level": "3",
+  "date": "2026-06",
+  "time_limit": 120,
+  "total_score": 100,
+  "description": "GESP C++ 三级模拟卷2（数据编码、进制转换、位运算、字符串处理、数组模拟、枚举法与模拟法）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "A",
+      "content": "表达式 `(5 | 3)` 的值是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "7",
+          "html": "<p>7</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "8",
+          "html": "<p>8</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "1",
+          "html": "<p>1</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "5",
+          "html": "<p>5</p>\n"
+        }
+      ],
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>表达式 <code>(5 | 3)</code> 的值是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "B",
+      "content": "执行以下代码后，输出的结果是（ ）\n\n```cpp\nstring s = \"hello\";\ncout << s.find(\"e\");\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "0",
+          "html": "<p>0</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "1",
+          "html": "<p>1</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "2",
+          "html": "<p>2</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "-1",
+          "html": "<p>-1</p>\n"
+        }
+      ],
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">string s = &quot;hello&quot;;\ncout &lt;&lt; s.find(&quot;e&quot;);\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "C",
+      "content": "释放 `int *p = new int[10];` 所分配内存的正确方式是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "`delete p;`",
+          "html": "<p><code>delete p;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`free(p);`",
+          "html": "<p><code>free(p);</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`delete[] p;`",
+          "html": "<p><code>delete[] p;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`p = NULL;`",
+          "html": "<p><code>p = NULL;</code></p>\n"
+        }
+      ],
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>释放 <code>int *p = new int[10];</code> 所分配内存的正确方式是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "C",
+      "content": "二进制数 101101 转换为十进制数是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "47",
+          "html": "<p>47</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "46",
+          "html": "<p>46</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "45",
+          "html": "<p>45</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "44",
+          "html": "<p>44</p>\n"
+        }
+      ],
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>二进制数 101101 转换为十进制数是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "content": "十进制数 -3 的 8 位二进制补码表示为（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "10000011",
+          "html": "<p>10000011</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "11111100",
+          "html": "<p>11111100</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "11111101",
+          "html": "<p>11111101</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "00000011",
+          "html": "<p>00000011</p>\n"
+        }
+      ],
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>十进制数 -3 的 8 位二进制补码表示为（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "content": "执行以下枚举算法代码，输出的结果是（ ）\n\n```cpp\nint cnt = 0;\nfor (int a = 1; a <= 9; a++) {\n    for (int b = 0; b <= 9; b++) {\n        if (a * b == 24) cnt++;\n    }\n}\ncout << cnt;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "2",
+          "html": "<p>2</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "4",
+          "html": "<p>4</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "6",
+          "html": "<p>6</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "8",
+          "html": "<p>8</p>\n"
+        }
+      ],
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>执行以下枚举算法代码，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">int cnt = 0;\nfor (int a = 1; a &lt;= 9; a++) {\n    for (int b = 0; b &lt;= 9; b++) {\n        if (a * b == 24) cnt++;\n    }\n}\ncout &lt;&lt; cnt;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "A",
+      "content": "执行以下代码后，输出的结果是（ ）\n\n```cpp\nstring s = \"Hello World\";\nint cnt = 0;\nfor (int i = 0; i < s.length(); i++) {\n    if (s[i] >= 'a' && s[i] <= 'z') cnt++;\n}\ncout << cnt;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "8",
+          "html": "<p>8</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "7",
+          "html": "<p>7</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "9",
+          "html": "<p>9</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "10",
+          "html": "<p>10</p>\n"
+        }
+      ],
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">string s = &quot;Hello World&quot;;\nint cnt = 0;\nfor (int i = 0; i &lt; s.length(); i++) {\n    if (s[i] &gt;= 'a' &amp;&amp; s[i] &lt;= 'z') cnt++;\n}\ncout &lt;&lt; cnt;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "content": "执行以下代码后，输出的结果是（ ）\n\n```cpp\nint a[5] = {2, 4, 6, 8, 10};\nint s = 0;\nfor (int i = 0; i < 5; i++) {\n    if (i % 2 == 0) s += a[i];\n}\ncout << s;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "12",
+          "html": "<p>12</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "18",
+          "html": "<p>18</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "20",
+          "html": "<p>20</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "30",
+          "html": "<p>30</p>\n"
+        }
+      ],
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">int a[5] = {2, 4, 6, 8, 10};\nint s = 0;\nfor (int i = 0; i &lt; 5; i++) {\n    if (i % 2 == 0) s += a[i];\n}\ncout &lt;&lt; s;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "D",
+      "content": "8 位二进制补码 `11111001` 表示的十进制数是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "-6",
+          "html": "<p>-6</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "-8",
+          "html": "<p>-8</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "-9",
+          "html": "<p>-9</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "-7",
+          "html": "<p>-7</p>\n"
+        }
+      ],
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>8 位二进制补码 <code>11111001</code> 表示的十进制数是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "C",
+      "content": "表达式 `(12 ^ 5)` 的值是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "7",
+          "html": "<p>7</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "8",
+          "html": "<p>8</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "9",
+          "html": "<p>9</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "17",
+          "html": "<p>17</p>\n"
+        }
+      ],
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>表达式 <code>(12 ^ 5)</code> 的值是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "content": "将十进制数 255 转换为十六进制数是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "AF",
+          "html": "<p>AF</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "EF",
+          "html": "<p>EF</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "FF",
+          "html": "<p>FF</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "FE",
+          "html": "<p>FE</p>\n"
+        }
+      ],
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>将十进制数 255 转换为十六进制数是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "B",
+      "content": "执行以下代码后，输出的结果是（ ）\n\n```cpp\nint a[6] = {0};\nfor (int i = 1; i <= 5; i++) {\n    for (int j = i; j <= 5; j++) {\n        a[j]++;\n    }\n}\nint s = 0;\nfor (int i = 1; i <= 5; i++) {\n    s += a[i];\n}\ncout << s;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "10",
+          "html": "<p>10</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "15",
+          "html": "<p>15</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "20",
+          "html": "<p>20</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "25",
+          "html": "<p>25</p>\n"
+        }
+      ],
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">int a[6] = {0};\nfor (int i = 1; i &lt;= 5; i++) {\n    for (int j = i; j &lt;= 5; j++) {\n        a[j]++;\n    }\n}\nint s = 0;\nfor (int i = 1; i &lt;= 5; i++) {\n    s += a[i];\n}\ncout &lt;&lt; s;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "D",
+      "content": "执行以下代码后，输出的结果是（ ）\n\n```cpp\nint a[8] = {1, 2, 3, 4, 5, 6, 7, 8};\nint s = 0;\nfor (int i = 0; i < 8; i++) {\n    if (a[i] % 2 == 1) s++;\n}\ncout << s;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "3",
+          "html": "<p>3</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "5",
+          "html": "<p>5</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "8",
+          "html": "<p>8</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "4",
+          "html": "<p>4</p>\n"
+        }
+      ],
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">int a[8] = {1, 2, 3, 4, 5, 6, 7, 8};\nint s = 0;\nfor (int i = 0; i &lt; 8; i++) {\n    if (a[i] % 2 == 1) s++;\n}\ncout &lt;&lt; s;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "content": "执行以下代码后，输出的结果是（ ）\n\n```cpp\nint cnt = 0;\nfor (int i = 1; i <= 50; i++) {\n    if (i % 3 == 0 && i % 5 == 0) cnt++;\n}\ncout << cnt;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "2",
+          "html": "<p>2</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "3",
+          "html": "<p>3</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "4",
+          "html": "<p>4</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "5",
+          "html": "<p>5</p>\n"
+        }
+      ],
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">int cnt = 0;\nfor (int i = 1; i &lt;= 50; i++) {\n    if (i % 3 == 0 &amp;&amp; i % 5 == 0) cnt++;\n}\ncout &lt;&lt; cnt;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "C",
+      "content": "执行以下代码后，变量 `a` 的值是（ ）\n\n```cpp\nint a = 0, b = 1, c;\nfor (int i = 1; i <= 4; i++) {\n    c = a + b;\n    a = b;\n    b = c;\n}\ncout << a;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "1",
+          "html": "<p>1</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "2",
+          "html": "<p>2</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "3",
+          "html": "<p>3</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "5",
+          "html": "<p>5</p>\n"
+        }
+      ],
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>执行以下代码后，变量 <code>a</code> 的值是（ ）</p>\n<pre><code class=\"language-cpp\">int a = 0, b = 1, c;\nfor (int i = 1; i &lt;= 4; i++) {\n    c = a + b;\n    a = b;\n    b = c;\n}\ncout &lt;&lt; a;\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "二进制数 1010 转换为十进制数是 10。（ ）",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>二进制数 1010 转换为十进制数是 10。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 中 string 类型的 find() 函数在找不到子串时返回 0。（ ）",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>C++ 中 string 类型的 find() 函数在找不到子串时返回 0。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "C++ 中 `delete` 和 `delete[]` 不能互换使用。（ ）",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>C++ 中 <code>delete</code> 和 <code>delete[]</code> 不能互换使用。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "一维数组在内存中占用连续的存储空间。（ ）",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>一维数组在内存中占用连续的存储空间。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "使用 `new` 分配的动态数组，大小在分配后不能再改变。（ ）",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>使用 <code>new</code> 分配的动态数组，大小在分配后不能再改变。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 中，表达式 `(7 & 3)` 的值为 3。（ ）",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>在 C++ 中，表达式 <code>(7 &amp; 3)</code> 的值为 3。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "枚举法在问题规模较大时，可能会因为需要验证的情况过多而效率较低。（ ）",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>枚举法在问题规模较大时，可能会因为需要验证的情况过多而效率较低。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "十六进制数 2F 转换为十进制数的结果是 47。（ ）",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>十六进制数 2F 转换为十进制数的结果是 47。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 中，定义数组 `int a[10];` 后，可以使用 `a[10] = 5;` 对数组元素赋值。（ ）",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>在 C++ 中，定义数组 <code>int a[10];</code> 后，可以使用 <code>a[10] = 5;</code> 对数组元素赋值。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "使用 `new` 关键字分配的内存位于堆（heap）上。（ ）",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>使用 <code>new</code> 关键字分配的内存位于堆（heap）上。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：回文数判断**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n给定一个正整数 N，请判断它是否是回文数。回文数是指正读和反读都一样的数。\n\n**输入格式**\n一行，一个正整数 N（1 ≤ N ≤ 10⁹）。\n\n**输出格式**\n如果是回文数，输出 `Yes`；否则输出 `No`。\n\n**样例输入 #1**\n```\n12321\n```\n\n**样例输出 #1**\n```\nYes\n```\n\n**样例输入 #2**\n```\n12345\n```\n\n**样例输出 #2**\n```\nNo\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：回文数判断</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p>给定一个正整数 N，请判断它是否是回文数。回文数是指正读和反读都一样的数。</p>\n<p><strong>输入格式</strong><br />\n一行，一个正整数 N（1 ≤ N ≤ 10⁹）。</p>\n<p><strong>输出格式</strong><br />\n如果是回文数，输出 <code>Yes</code>；否则输出 <code>No</code>。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>12321\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>Yes\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>12345\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>No\n</code></pre>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：数组循环右移**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n给定 N 个整数和一个非负整数 K，将数组中的每个元素向右循环移动 K 个位置。右边的元素移出后从左边重新进入。\n\n例如：数组 `[1, 2, 3, 4, 5]`，K=2，结果为 `[4, 5, 1, 2, 3]`。\n\n**输入格式**\n第一行，两个整数 N 和 K（1 ≤ N ≤ 1000，0 ≤ K ≤ 10⁹）。\n第二行，N 个整数，每个整数的绝对值不超过 10000，数之间用空格分隔。\n\n**输出格式**\n一行，N 个整数，表示循环右移 K 位后的数组，数之间用一个空格分隔。\n\n**样例输入 #1**\n```\n5 2\n1 2 3 4 5\n```\n\n**样例输出 #1**\n```\n4 5 1 2 3\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：数组循环右移</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p>给定 N 个整数和一个非负整数 K，将数组中的每个元素向右循环移动 K 个位置。右边的元素移出后从左边重新进入。</p>\n<p>例如：数组 <code>[1, 2, 3, 4, 5]</code>，K=2，结果为 <code>[4, 5, 1, 2, 3]</code>。</p>\n<p><strong>输入格式</strong><br />\n第一行，两个整数 N 和 K（1 ≤ N ≤ 1000，0 ≤ K ≤ 10⁹）。<br />\n第二行，N 个整数，每个整数的绝对值不超过 10000，数之间用空格分隔。</p>\n<p><strong>输出格式</strong><br />\n一行，N 个整数，表示循环右移 K 位后的数组，数之间用一个空格分隔。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5 2\n1 2 3 4 5\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>4 5 1 2 3\n</code></pre>\n"
+    }
+  ],
+  "id": "gesp三级_卷2",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/gesp三级_卷2",
+  "version": "c2fbeb0e8975985a",
+  "warnings": [],
+  "objective_score": 50.0
+}

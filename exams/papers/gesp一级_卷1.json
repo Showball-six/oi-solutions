@@ -1,0 +1,629 @@
+{
+  "title": "GESP C++ 一级 模拟卷1",
+  "category": "GESP",
+  "level": "1",
+  "date": "2026-06",
+  "time_limit": 120,
+  "total_score": 100,
+  "description": "GESP C++ 一级模拟卷1（基础摸底卷）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "B",
+      "content": "2025年，华为发布了自主研发的\"纯血鸿蒙\"（HarmonyOS NEXT），以下关于它的描述正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "鸿蒙是一款办公软件",
+          "html": "<p>鸿蒙是一款办公软件</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "鸿蒙是一款操作系统",
+          "html": "<p>鸿蒙是一款操作系统</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "鸿蒙是一种编程语言",
+          "html": "<p>鸿蒙是一种编程语言</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "鸿蒙是一台计算机",
+          "html": "<p>鸿蒙是一台计算机</p>\n"
+        }
+      ],
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>2025年，华为发布了自主研发的&quot;纯血鸿蒙&quot;（HarmonyOS NEXT），以下关于它的描述正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "content": "计算机的核心部件中，负责执行算术运算和逻辑判断的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "内存",
+          "html": "<p>内存</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "硬盘",
+          "html": "<p>硬盘</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "中央处理器（CPU）",
+          "html": "<p>中央处理器（CPU）</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "显示器",
+          "html": "<p>显示器</p>\n"
+        }
+      ],
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>计算机的核心部件中，负责执行算术运算和逻辑判断的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "C",
+      "content": "在C++中，下列哪个可以作为合法的变量名？（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "2name",
+          "html": "<p>2name</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "my-name",
+          "html": "<p>my-name</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "_count",
+          "html": "<p>_count</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "int",
+          "html": "<p>int</p>\n"
+        }
+      ],
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>在C++中，下列哪个可以作为合法的变量名？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "D",
+      "content": "C++中，下列哪个关键字用于定义双精度浮点型变量？（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "int",
+          "html": "<p>int</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "float",
+          "html": "<p>float</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "char",
+          "html": "<p>char</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "double",
+          "html": "<p>double</p>\n"
+        }
+      ],
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>C++中，下列哪个关键字用于定义双精度浮点型变量？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "content": "执行以下C++代码段，如果输入10，输出是（ ）。\n\n```cpp\nint a;\ncin >> a;\ncout << a + 5 << endl;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "10",
+          "html": "<p>10</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "a+5",
+          "html": "<p>a+5</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "15",
+          "html": "<p>15</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "105",
+          "html": "<p>105</p>\n"
+        }
+      ],
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>执行以下C++代码段，如果输入10，输出是（ ）。</p>\n<pre><code class=\"language-cpp\">int a;\ncin &gt;&gt; a;\ncout &lt;&lt; a + 5 &lt;&lt; endl;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "content": "C++语句 printf(\"%02d:%02d\", 3, 15); 执行后的输出是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "3:15",
+          "html": "<p>3:15</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "03:15",
+          "html": "<p>03:15</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "03:015",
+          "html": "<p>03:015</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "3:015",
+          "html": "<p>3:015</p>\n"
+        }
+      ],
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>C++语句 printf(&quot;%02d:%02d&quot;, 3, 15); 执行后的输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "B",
+      "content": "C++表达式 10 + 6 / 3 的值是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "5",
+          "html": "<p>5</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "12",
+          "html": "<p>12</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "8",
+          "html": "<p>8</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "5.33",
+          "html": "<p>5.33</p>\n"
+        }
+      ],
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>C++表达式 10 + 6 / 3 的值是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "D",
+      "content": "C++表达式 (5 > 3) && (2 < 1) 的值是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "true",
+          "html": "<p>true</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "false",
+          "html": "<p>false</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "1",
+          "html": "<p>1</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "0",
+          "html": "<p>0</p>\n"
+        }
+      ],
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>C++表达式 (5 &gt; 3) &amp;&amp; (2 &lt; 1) 的值是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "B",
+      "content": "以下代码执行后，输出是（ ）。\n\n```cpp\nint score = 85;\nif (score >= 90)\n    cout << \"A\";\nelse if (score >= 80)\n    cout << \"B\";\nelse\n    cout << \"C\";\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "A",
+          "html": "<p>A</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "B",
+          "html": "<p>B</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "C",
+          "html": "<p>C</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "不输出",
+          "html": "<p>不输出</p>\n"
+        }
+      ],
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>以下代码执行后，输出是（ ）。</p>\n<pre><code class=\"language-cpp\">int score = 85;\nif (score &gt;= 90)\n    cout &lt;&lt; &quot;A&quot;;\nelse if (score &gt;= 80)\n    cout &lt;&lt; &quot;B&quot;;\nelse\n    cout &lt;&lt; &quot;C&quot;;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "A",
+      "content": "以下代码用于判断一个数是否既能被2整除又能被5整除，横线上应填入（ ）。\n\n```cpp\nint N;\ncin >> N;\nif (______________)\n    cout << \"Yes\";\nelse\n    cout << \"No\";\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "N % 2 == 0 && N % 5 == 0",
+          "html": "<p>N % 2 == 0 &amp;&amp; N % 5 == 0</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "N % 2 == 0 || N % 5 == 0",
+          "html": "<p>N % 2 == 0 || N % 5 == 0</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "N / 2 == 0 && N / 5 == 0",
+          "html": "<p>N / 2 == 0 &amp;&amp; N / 5 == 0</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "N % 10 != 0",
+          "html": "<p>N % 10 != 0</p>\n"
+        }
+      ],
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>以下代码用于判断一个数是否既能被2整除又能被5整除，横线上应填入（ ）。</p>\n<pre><code class=\"language-cpp\">int N;\ncin &gt;&gt; N;\nif (______________)\n    cout &lt;&lt; &quot;Yes&quot;;\nelse\n    cout &lt;&lt; &quot;No&quot;;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "A",
+      "content": "以下代码中，循环体 N += 1 被执行了多少次？（ ）\n\n```cpp\nint N = 0;\nfor (int i = 1; i <= 10; i++)\n    N += 1;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "10次",
+          "html": "<p>10次</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "9次",
+          "html": "<p>9次</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "11次",
+          "html": "<p>11次</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "1次",
+          "html": "<p>1次</p>\n"
+        }
+      ],
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>以下代码中，循环体 N += 1 被执行了多少次？（ ）</p>\n<pre><code class=\"language-cpp\">int N = 0;\nfor (int i = 1; i &lt;= 10; i++)\n    N += 1;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "D",
+      "content": "执行以下代码后，输出是（ ）。\n\n```cpp\nint a = 5;\nint b = a++;\ncout << a << \" \" << b;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "5 5",
+          "html": "<p>5 5</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "5 6",
+          "html": "<p>5 6</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "6 6",
+          "html": "<p>6 6</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "6 5",
+          "html": "<p>6 5</p>\n"
+        }
+      ],
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出是（ ）。</p>\n<pre><code class=\"language-cpp\">int a = 5;\nint b = a++;\ncout &lt;&lt; a &lt;&lt; &quot; &quot; &lt;&lt; b;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "A",
+      "content": "执行以下代码后，输出是（ ）。\n\n```cpp\nint N = 10;\nwhile (N > 5) {\n    N = N - 1;\n}\ncout << N;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "5",
+          "html": "<p>5</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "4",
+          "html": "<p>4</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "6",
+          "html": "<p>6</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "10",
+          "html": "<p>10</p>\n"
+        }
+      ],
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出是（ ）。</p>\n<pre><code class=\"language-cpp\">int N = 10;\nwhile (N &gt; 5) {\n    N = N - 1;\n}\ncout &lt;&lt; N;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "content": "以下代码执行后，输出是（ ）。\n\n```cpp\nint i;\nfor (i = 1; i <= 10; i++) {\n    if (i == 5)\n        break;\n}\ncout << i;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "4",
+          "html": "<p>4</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "6",
+          "html": "<p>6</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "5",
+          "html": "<p>5</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "10",
+          "html": "<p>10</p>\n"
+        }
+      ],
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>以下代码执行后，输出是（ ）。</p>\n<pre><code class=\"language-cpp\">int i;\nfor (i = 1; i &lt;= 10; i++) {\n    if (i == 5)\n        break;\n}\ncout &lt;&lt; i;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "D",
+      "content": "以下代码用于判断正整数N的个位数是否为3，横线上应填入（ ）。\n\n```cpp\nint N;\ncin >> N;\nif (__________)\n    cout << \"个位是3\";\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "N / 10 == 3",
+          "html": "<p>N / 10 == 3</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "N % 3 == 0",
+          "html": "<p>N % 3 == 0</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "N / 3 == 10",
+          "html": "<p>N / 3 == 10</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "N % 10 == 3",
+          "html": "<p>N % 10 == 3</p>\n"
+        }
+      ],
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>以下代码用于判断正整数N的个位数是否为3，横线上应填入（ ）。</p>\n<pre><code class=\"language-cpp\">int N;\ncin &gt;&gt; N;\nif (__________)\n    cout &lt;&lt; &quot;个位是3&quot;;\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "2024年诺贝尔物理学奖颁发给了人工智能领域的研究者，这说明AI技术的重要性得到了广泛认可。（ ）",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>2024年诺贝尔物理学奖颁发给了人工智能领域的研究者，这说明AI技术的重要性得到了广泛认可。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在C++中，for是一个合法的变量名。（ ）",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>在C++中，for是一个合法的变量名。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "C++语句 printf(\"Hello\\nWorld\"); 执行后将在两行分别输出Hello和World。（ ）",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>C++语句 printf(&quot;Hello\\nWorld&quot;); 执行后将在两行分别输出Hello和World。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++表达式 (3, 5) 的值是3。（ ）",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>C++表达式 (3, 5) 的值是3。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在C++中，if语句的条件表达式必须用圆括号括起来。（ ）",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>在C++中，if语句的条件表达式必须用圆括号括起来。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "以下代码执行后输出为55。（ ）\n\n```cpp\nint sum = 0;\nfor (int i = 1; i <= 10; i++)\n    sum += i;\ncout << sum;\n```",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>以下代码执行后输出为55。（ ）</p>\n<pre><code class=\"language-cpp\">int sum = 0;\nfor (int i = 1; i &lt;= 10; i++)\n    sum += i;\ncout &lt;&lt; sum;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "do-while循环的循环体至少会被执行一次。（ ）",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>do-while循环的循环体至少会被执行一次。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "以下代码中，continue语句会导致程序在i=3时跳过cout，因此输出为1 2 4 5。（ ）\n\n```cpp\nfor (int i = 1; i <= 5; i++) {\n    if (i == 3)\n        continue;\n    cout << i << \" \";\n}\n```",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>以下代码中，continue语句会导致程序在i=3时跳过cout，因此输出为1 2 4 5。（ ）</p>\n<pre><code class=\"language-cpp\">for (int i = 1; i &lt;= 5; i++) {\n    if (i == 3)\n        continue;\n    cout &lt;&lt; i &lt;&lt; &quot; &quot;;\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++表达式 N % 10 可以用来获取整数N的十位数。（ ）",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>C++表达式 N % 10 可以用来获取整数N的十位数。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "正整数N的因数是指能被N整除的正整数。（ ）",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>正整数N的因数是指能被N整除的正整数。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "### 编程题 1：买书找零\n\n时间限制：1.0 s    内存限制：512.0 MB\n\n**【题目描述】**\n\n小杨有 m 元零用钱，他想买一些单价为 13 元的笔记本。请编写程序，计算小杨最多能买多少本笔记本，以及买完后还剩多少零用钱。\n\n**【输入格式】**\n\n一行，一个正整数 m，表示小杨的零用钱金额。\n\n**【输出格式】**\n\n第一行，一个整数，表示最多能买的笔记本数量。\n\n第二行，一个整数，表示剩余的零用钱金额。\n\n**【样例输入1】**\n\n```\n100\n```\n\n**【样例输出1】**\n\n```\n7\n9\n```\n\n**【样例输入2】**\n\n```\n50\n```\n\n**【样例输出2】**\n\n```\n3\n11\n```\n\n**【数据范围】**\n\n对于所有测试点，保证 1 ≤ m ≤ 10000。",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<h3>编程题 1：买书找零</h3>\n<p>时间限制：1.0 s    内存限制：512.0 MB</p>\n<p><strong>【题目描述】</strong></p>\n<p>小杨有 m 元零用钱，他想买一些单价为 13 元的笔记本。请编写程序，计算小杨最多能买多少本笔记本，以及买完后还剩多少零用钱。</p>\n<p><strong>【输入格式】</strong></p>\n<p>一行，一个正整数 m，表示小杨的零用钱金额。</p>\n<p><strong>【输出格式】</strong></p>\n<p>第一行，一个整数，表示最多能买的笔记本数量。</p>\n<p>第二行，一个整数，表示剩余的零用钱金额。</p>\n<p><strong>【样例输入1】</strong></p>\n<pre><code>100\n</code></pre>\n<p><strong>【样例输出1】</strong></p>\n<pre><code>7\n9\n</code></pre>\n<p><strong>【样例输入2】</strong></p>\n<pre><code>50\n</code></pre>\n<p><strong>【样例输出2】</strong></p>\n<pre><code>3\n11\n</code></pre>\n<p><strong>【数据范围】</strong></p>\n<p>对于所有测试点，保证 1 ≤ m ≤ 10000。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "### 编程题 2：统计奇数偶数\n\n时间限制：1.0 s    内存限制：512.0 MB\n\n**【题目描述】**\n\n小杨有 n 个正整数，他想知道这些数中有多少个是奇数，多少个是偶数。\n\n**【输入格式】**\n\n第一行，一个正整数 n，表示数字的个数。\n\n接下来 n 行，每行包含一个正整数。\n\n**【输出格式】**\n\n一行，两个用空格分隔的整数，分别表示奇数的个数和偶数的个数。\n\n**【样例输入1】**\n\n```\n5\n1\n2\n3\n4\n5\n```\n\n**【样例输出1】**\n\n```\n3 2\n```\n\n**【样例输入2】**\n\n```\n4\n2\n4\n6\n8\n```\n\n**【样例输出2】**\n\n```\n0 4\n```\n\n**【数据范围】**\n\n对于所有测试点，保证 1 ≤ n ≤ 100，每个正整数不超过 10000。",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<h3>编程题 2：统计奇数偶数</h3>\n<p>时间限制：1.0 s    内存限制：512.0 MB</p>\n<p><strong>【题目描述】</strong></p>\n<p>小杨有 n 个正整数，他想知道这些数中有多少个是奇数，多少个是偶数。</p>\n<p><strong>【输入格式】</strong></p>\n<p>第一行，一个正整数 n，表示数字的个数。</p>\n<p>接下来 n 行，每行包含一个正整数。</p>\n<p><strong>【输出格式】</strong></p>\n<p>一行，两个用空格分隔的整数，分别表示奇数的个数和偶数的个数。</p>\n<p><strong>【样例输入1】</strong></p>\n<pre><code>5\n1\n2\n3\n4\n5\n</code></pre>\n<p><strong>【样例输出1】</strong></p>\n<pre><code>3 2\n</code></pre>\n<p><strong>【样例输入2】</strong></p>\n<pre><code>4\n2\n4\n6\n8\n</code></pre>\n<p><strong>【样例输出2】</strong></p>\n<pre><code>0 4\n</code></pre>\n<p><strong>【数据范围】</strong></p>\n<p>对于所有测试点，保证 1 ≤ n ≤ 100，每个正整数不超过 10000。</p>\n",
+      "options": []
+    }
+  ],
+  "id": "gesp一级_卷1",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/gesp一级_卷1",
+  "version": "bfe794a48456196d",
+  "warnings": [],
+  "objective_score": 50.0
+}

@@ -1,0 +1,631 @@
+{
+  "title": "2026年3月 GESP C++ 7级",
+  "category": "GESP",
+  "level": "7",
+  "date": "2026-03",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2026年3月 GESP C++ 7级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$O(n)$",
+          "html": "<p>$O(n)$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$O(n \\log n)$",
+          "html": "<p>$O(n \\log n)$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$O(n^2)$",
+          "html": "<p>$O(n^2)$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$O(2^n)$",
+          "html": "<p>$O(2^n)$</p>\n"
+        }
+      ],
+      "content": "假设一个算法时间复杂度的递推式是 $T(n) = 2T(n/2) + n$（$n$ 为正整数），且 $T(1) = 1$，那么这个算法的时间复杂度是（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>假设一个算法时间复杂度的递推式是 $T(n) = 2T(n/2) + n$（$n$ 为正整数），且 $T(1) = 1$，那么这个算法的时间复杂度是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "如果预处理出 $n$ 以内每个数的最小质因子，那么可以在 $O(\\log n)$ 时间内完成任意一个不超过 $n$ 的整数的质因数分解。",
+          "html": "<p>如果预处理出 $n$ 以内每个数的最小质因子，那么可以在 $O(\\log n)$ 时间内完成任意一个不超过 $n$ 的整数的质因数分解。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "线性筛（欧拉筛）能够保证每个合数只被其最小质因子筛掉一次，这一性质依赖于唯一分解定理。",
+          "html": "<p>线性筛（欧拉筛）能够保证每个合数只被其最小质因子筛掉一次，这一性质依赖于唯一分解定理。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "唯一分解定理保证：若一个数未被任何不超过其平方根的质数筛去，则它一定是质数。",
+          "html": "<p>唯一分解定理保证：若一个数未被任何不超过其平方根的质数筛去，则它一定是质数。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "唯一分解定理是埃氏筛时间复杂度为 $O(n \\log \\log n)$ 的根本原因。",
+          "html": "<p>唯一分解定理是埃氏筛时间复杂度为 $O(n \\log \\log n)$ 的根本原因。</p>\n"
+        }
+      ],
+      "content": "下面关于“唯一分解定理”和“素数筛法”的说法中，错误的是（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>下面关于“唯一分解定理”和“素数筛法”的说法中，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "它们的编辑距离为 $5$",
+          "html": "<p>它们的编辑距离为 $5$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "它们至少有 $5$ 个公共字符",
+          "html": "<p>它们至少有 $5$ 个公共字符</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "它们最长公共子串长度为 $5$",
+          "html": "<p>它们最长公共子串长度为 $5$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "它们一定长度相等",
+          "html": "<p>它们一定长度相等</p>\n"
+        }
+      ],
+      "content": "若字符串与字符串的最长公共子序列（LCS）长度为 $5$，则（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>若字符串与字符串的最长公共子序列（LCS）长度为 $5$，则（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "对于一棵包含 $n$ 个顶点（$n \\geq 1$）的树，其所有顶点的度数之和必定等于（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>对于一棵包含 $n$ 个顶点（$n \\geq 1$）的树，其所有顶点的度数之和必定等于（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "装载因⼦越大，发生冲突的概率通常越高",
+          "html": "<p>装载因⼦越大，发生冲突的概率通常越高</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "开放定址法在删除元素时实现相对复杂",
+          "html": "<p>开放定址法在删除元素时实现相对复杂</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "链地址法在最坏情况下查找时间复杂度为 $O(n)$",
+          "html": "<p>链地址法在最坏情况下查找时间复杂度为 $O(n)$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "查找哈希表的时间复杂度总是 $O(1)$",
+          "html": "<p>查找哈希表的时间复杂度总是 $O(1)$</p>\n"
+        }
+      ],
+      "content": "关于哈希表（Hash Table）在不考虑扩容且采用简单均匀哈希函数的前提下，下列说法中错误的是（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>关于哈希表（Hash Table）在不考虑扩容且采用简单均匀哈希函数的前提下，下列说法中错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "分治",
+          "html": "<p>分治</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "贪心",
+          "html": "<p>贪心</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "动态规划",
+          "html": "<p>动态规划</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "回溯",
+          "html": "<p>回溯</p>\n"
+        }
+      ],
+      "content": "深度优先搜索（DFS）在遍历图时，每当访问到某个顶点后，选择一个相邻的未访问顶点继续搜索，直到某个顶点的所有相邻顶点均已被访问，则退回到前一顶点继续搜索。该算法主要运用了（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>深度优先搜索（DFS）在遍历图时，每当访问到某个顶点后，选择一个相邻的未访问顶点继续搜索，直到某个顶点的所有相邻顶点均已被访问，则退回到前一顶点继续搜索。该算法主要运用了（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        }
+      ],
+      "content": "下面程序的运行结果为（ ）。\n\n```cpp\n#include <iostream>\n#include <algorithm>\nbool check(int n, int a[], int k, int dist) {\n    int cnt = 1;\n    int last = a[0];\n    for (int i = 1; i < n; i++) {\n        if (a[i] - last >= dist) {\n            cnt++;\n            last = a[i];\n        }\n    }\n    return cnt >= k;\n}\nint solve(int n, int a[], int k) {\n    std::sort(a, a + n);\n    int l = 0;\n    int r = a[n - 1] - a[0];\n    while (l < r) {\n        int mid = (l + r + 1) / 2;\n        if (check(n, a, k, mid))\n            l = mid;\n        else\n            r = mid - 1;\n    }\n    return l;\n}\nint main() {\n    int a[] = {1, 2, 8, 4, 9};\n    int n = 5;\n    int k = 3;\n    std::cout << solve(n, a, k) << std::endl;\n    return 0;\n}\n```",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>下面程序的运行结果为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\n#include &lt;algorithm&gt;\nbool check(int n, int a[], int k, int dist) {\n    int cnt = 1;\n    int last = a[0];\n    for (int i = 1; i &lt; n; i++) {\n        if (a[i] - last &gt;= dist) {\n            cnt++;\n            last = a[i];\n        }\n    }\n    return cnt &gt;= k;\n}\nint solve(int n, int a[], int k) {\n    std::sort(a, a + n);\n    int l = 0;\n    int r = a[n - 1] - a[0];\n    while (l &lt; r) {\n        int mid = (l + r + 1) / 2;\n        if (check(n, a, k, mid))\n            l = mid;\n        else\n            r = mid - 1;\n    }\n    return l;\n}\nint main() {\n    int a[] = {1, 2, 8, 4, 9};\n    int n = 5;\n    int k = 3;\n    std::cout &lt;&lt; solve(n, a, k) &lt;&lt; std::endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面程序的时间复杂度是（ ），假设数组的值域范围是 $[0, M]$。\n\n```cpp\n#include <iostream>\n#include <algorithm>\nbool check(int n, int a[], int k, int dist) {\n    int cnt = 1;\n    int last = a[0];\n    for (int i = 1; i < n; i++) {\n        if (a[i] - last >= dist) {\n            cnt++;\n            last = a[i];\n        }\n    }\n    return cnt >= k;\n}\nint solve(int n, int a[], int k) {\n    std::sort(a, a + n);\n    int l = 0;\n    int r = a[n - 1] - a[0];\n    while (l < r) {\n        int mid = (l + r + 1) / 2;\n        if (check(n, a, k, mid))\n            l = mid;\n        else\n            r = mid - 1;\n    }\n    return l;\n}\nint main() {\n    int a[] = {1, 2, 8, 4, 9};\n    int n = 5;\n    int k = 3;\n    std::cout << solve(n, a, k) << std::endl;\n    return 0;\n}\n```",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下面程序的时间复杂度是（ ），假设数组的值域范围是 $[0, M]$。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\n#include &lt;algorithm&gt;\nbool check(int n, int a[], int k, int dist) {\n    int cnt = 1;\n    int last = a[0];\n    for (int i = 1; i &lt; n; i++) {\n        if (a[i] - last &gt;= dist) {\n            cnt++;\n            last = a[i];\n        }\n    }\n    return cnt &gt;= k;\n}\nint solve(int n, int a[], int k) {\n    std::sort(a, a + n);\n    int l = 0;\n    int r = a[n - 1] - a[0];\n    while (l &lt; r) {\n        int mid = (l + r + 1) / 2;\n        if (check(n, a, k, mid))\n            l = mid;\n        else\n            r = mid - 1;\n    }\n    return l;\n}\nint main() {\n    int a[] = {1, 2, 8, 4, 9};\n    int n = 5;\n    int k = 3;\n    std::cout &lt;&lt; solve(n, a, k) &lt;&lt; std::endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$H$ $I$ $D$ $E$ $B$ $J$ $F$ $G$ $C$ $A$",
+          "html": "<p>$H$ $I$ $D$ $E$ $B$ $J$ $F$ $G$ $C$ $A$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$H$ $I$ $D$ $B$ $E$ $J$ $F$ $G$ $C$ $A$",
+          "html": "<p>$H$ $I$ $D$ $B$ $E$ $J$ $F$ $G$ $C$ $A$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$I$ $H$ $D$ $E$ $B$ $J$ $F$ $G$ $C$ $A$",
+          "html": "<p>$I$ $H$ $D$ $E$ $B$ $J$ $F$ $G$ $C$ $A$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$H$ $I$ $D$ $E$ $B$ $F$ $J$ $G$ $C$ $A$",
+          "html": "<p>$H$ $I$ $D$ $E$ $B$ $F$ $J$ $G$ $C$ $A$</p>\n"
+        }
+      ],
+      "content": "某二叉树共有 $10$ 个结点，记为 $A$~$J$，已知它的先序遍历序列为：$A$ $B$ $D$ $H$ $I$ $E$ $C$ $F$ $J$ $G$，中序遍历序列为：$H$ $D$ $I$ $B$ $E$ $A$ $F$ $J$ $C$ $G$，则该二叉树的后序遍历序列是（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>某二叉树共有 $10$ 个结点，记为 $A$~$J$，已知它的先序遍历序列为：$A$ $B$ $D$ $H$ $I$ $E$ $C$ $F$ $J$ $G$，中序遍历序列为：$H$ $D$ $I$ $B$ $E$ $A$ $F$ $J$ $C$ $G$，则该二叉树的后序遍历序列是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$, $5$, $4$, $8$, $7$, $9$, $6$, $3$, $2$",
+          "html": "<p>$1$, $5$, $4$, $8$, $7$, $9$, $6$, $3$, $2$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1$, $5$, $8$, $4$, $7$, $9$, $6$, $3$, $2$",
+          "html": "<p>$1$, $5$, $8$, $4$, $7$, $9$, $6$, $3$, $2$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$2$, $5$, $8$, $7$, $9$, $6$, $3$, $4$, $1$",
+          "html": "<p>$2$, $5$, $8$, $7$, $9$, $6$, $3$, $4$, $1$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$8$, $9$, $6$, $3$, $2$, $5$, $1$, $4$, $7$",
+          "html": "<p>$8$, $9$, $6$, $3$, $2$, $5$, $1$, $4$, $7$</p>\n"
+        }
+      ],
+      "content": "下面哪一个可能是下图的深度优先遍历序列（ ）。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面哪一个可能是下图的深度优先遍历序列（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        }
+      ],
+      "content": "下面这个有向图的强连通分量的个数是（ ）。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面这个有向图的强连通分量的个数是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "泛洪算法只适用于二维网格中的四连通或八连通问题。",
+          "html": "<p>泛洪算法只适用于二维网格中的四连通或八连通问题。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "泛洪算法必须使用递归方式实现。",
+          "html": "<p>泛洪算法必须使用递归方式实现。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "泛洪算法本质上是对图进行一次从起点出发的搜索。",
+          "html": "<p>泛洪算法本质上是对图进行一次从起点出发的搜索。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "泛洪算法只能用于统计连通块个数，不能用于计算面积或周长。",
+          "html": "<p>泛洪算法只能用于统计连通块个数，不能用于计算面积或周长。</p>\n"
+        }
+      ],
+      "content": "关于泛洪算法（Flood Fill）的说法，正确的是（ ）。",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>关于泛洪算法（Flood Fill）的说法，正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$58$",
+          "html": "<p>$58$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$60$",
+          "html": "<p>$60$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$62$",
+          "html": "<p>$62$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$64$",
+          "html": "<p>$64$</p>\n"
+        }
+      ],
+      "content": "有 $6$ 个字符，它们出现的次数分别为：$\\{2, 3, 3, 4, 6, 8\\}$，现在用哈夫曼编码为这些字符编码，最小加权路径长度 WPL（每个字符的出现次数 $\\times$ 它的编码长度，再把每个字符结果加起来）的值为（ ）。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>有 $6$ 个字符，它们出现的次数分别为：$\\{2, 3, 3, 4, 6, 8\\}$，现在用哈夫曼编码为这些字符编码，最小加权路径长度 WPL（每个字符的出现次数 $\\times$ 它的编码长度，再把每个字符结果加起来）的值为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "在单链表中，若已知某结点的指针，则可以在 $O(1)$ 时间内删除该结点。",
+          "html": "<p>在单链表中，若已知某结点的指针，则可以在 $O(1)$ 时间内删除该结点。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "循环链表中一定不存在空指针。",
+          "html": "<p>循环链表中一定不存在空指针。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "在循环双链表中，尾结点的 `next` 指针一定为 `NULL`。",
+          "html": "<p>在循环双链表中，尾结点的 <code>next</code> 指针一定为 <code>NULL</code>。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "在带头结点的循环单链表中，判定链表是否为空只需判断头结点的 `next` 是否指向自身。",
+          "html": "<p>在带头结点的循环单链表中，判定链表是否为空只需判断头结点的 <code>next</code> 是否指向自身。</p>\n"
+        }
+      ],
+      "content": "关于单链表、双链表和循环链表，下列说法正确的是（ ）。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>关于单链表、双链表和循环链表，下列说法正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "对任意一棵树进行深度优先遍历，所得序列一定唯一。",
+          "html": "<p>对任意一棵树进行深度优先遍历，所得序列一定唯一。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "已知一棵二叉树的先序遍历和后序遍历序列，可以唯一确定这棵二叉树。",
+          "html": "<p>已知一棵二叉树的先序遍历和后序遍历序列，可以唯一确定这棵二叉树。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "已知一棵二叉树的先序遍历和中序遍历序列，可以唯一确定这棵二叉树。",
+          "html": "<p>已知一棵二叉树的先序遍历和中序遍历序列，可以唯一确定这棵二叉树。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "一棵二叉树的中序遍历序列是单调递增的，则该二叉树一定是二叉平衡树。",
+          "html": "<p>一棵二叉树的中序遍历序列是单调递增的，则该二叉树一定是二叉平衡树。</p>\n"
+        }
+      ],
+      "content": "下列关于树的遍历的说法中，正确的一项是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>下列关于树的遍历的说法中，正确的一项是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "C++ 语言中，表达式 `4 ^ 2` 的结果类型为 `int`，值为 $6$。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>C++ 语言中，表达式 <code>4 ^ 2</code> 的结果类型为 <code>int</code>，值为 $6$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 中引用可以重新绑定。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>C++ 中引用可以重新绑定。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 中，若函数形参为引用类型，则在函数内部对该形参的修改会影响对应的实参。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>在 C++ 中，若函数形参为引用类型，则在函数内部对该形参的修改会影响对应的实参。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "如果一个最值问题可以用动态规划在多项式时间内求解，那么也一定存在一种贪心策略，可以在多项式时间内求得最优解。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>如果一个最值问题可以用动态规划在多项式时间内求解，那么也一定存在一种贪心策略，可以在多项式时间内求得最优解。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "使用归并排序对 $n$ 个元素进行排序时，无论最好、最坏还是平均情况，时间复杂度均为 $O(n \\log n)$。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>使用归并排序对 $n$ 个元素进行排序时，无论最好、最坏还是平均情况，时间复杂度均为 $O(n \\log n)$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在无向连通图中删除一条边，该图就一定变成非连通图。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>在无向连通图中删除一条边，该图就一定变成非连通图。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在一个无向图中，每个顶点有不同的编号，在执行深度优先遍历过程中选择下一个顶点时总是优先选择编号更小的相邻顶点，则从指定顶点开始的遍历序列是唯一的。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>在一个无向图中，每个顶点有不同的编号，在执行深度优先遍历过程中选择下一个顶点时总是优先选择编号更小的相邻顶点，则从指定顶点开始的遍历序列是唯一的。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "若所有字符出现频率相同，则哈夫曼编码一定会得到完全二叉树。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>若所有字符出现频率相同，则哈夫曼编码一定会得到完全二叉树。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "使用 `math.h` 或 `cmath` 头文件中的函数，表达式 `sin(90)` 的结果为 $1$。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>使用 <code>math.h</code> 或 <code>cmath</code> 头文件中的函数，表达式 <code>sin(90)</code> 的结果为 $1$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在一个无向连通图中，从任意顶点开始进行深度优先遍历，最终得到的 DFS 生成树一定包含图中的所有顶点。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>在一个无向连通图中，从任意顶点开始进行深度优先遍历，最终得到的 DFS 生成树一定包含图中的所有顶点。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：拆分**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小 A 想将正整数 $n$ 拆分成若干个正整数之和，并最大化拆分后的正整数之积。小 A 希望你帮他计算出拆分后正整数之积的最大值。由于答案可能很大，你只需要求出答案对 $10^9$ 取模的结果。\n\n形式化地，$n$ 的拆分是满足 $a_1+\\cdots+a_k=n$ 的若干个正整数 $a_1,\\dots,a_k$，其中 $1\\leq k\\leq n$。你需要求出 $n$ 的所有拆分中 $a_1\\times \\cdots\\times a_k$ 的最大值对 $10^9$ 取模的结果。\n\n**输入格式**\n\n第一行，一个正整数 $t$，表示数据组数。\n\n对于每组数据：一行，一个整数 $n$，表示给定的正整数。\n\n**输出格式**\n\n对于每组数据：输出一行，一个整数，表示 $n$ 拆分后正整数之积的最大值对 $10^9$ 取模的结果。\n\n**样例输入 #1**\n```\n3\n5\n8\n100\n```\n\n**样例输出 #1**\n```\n6\n18\n755407364\n```\n\n**说明/提示**\n\n对于 $40\\%$ 的测试点，保证 $n\\leq 50$。\n\n对于所有测试点，保证 $1\\leq t\\leq 10^4$，$1\\leq n\\leq 10^6$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：拆分</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小 A 想将正整数 $n$ 拆分成若干个正整数之和，并最大化拆分后的正整数之积。小 A 希望你帮他计算出拆分后正整数之积的最大值。由于答案可能很大，你只需要求出答案对 $10^9$ 取模的结果。</p>\n<p>形式化地，$n$ 的拆分是满足 $a_1+\\cdots+a_k=n$ 的若干个正整数 $a_1,\\dots,a_k$，其中 $1\\leq k\\leq n$。你需要求出 $n$ 的所有拆分中 $a_1\\times \\cdots\\times a_k$ 的最大值对 $10^9$ 取模的结果。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，一个正整数 $t$，表示数据组数。</p>\n<p>对于每组数据：一行，一个整数 $n$，表示给定的正整数。</p>\n<p><strong>输出格式</strong></p>\n<p>对于每组数据：输出一行，一个整数，表示 $n$ 拆分后正整数之积的最大值对 $10^9$ 取模的结果。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3\n5\n8\n100\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>6\n18\n755407364\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $40\\%$ 的测试点，保证 $n\\leq 50$。</p>\n<p>对于所有测试点，保证 $1\\leq t\\leq 10^4$，$1\\leq n\\leq 10^6$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：物流网络**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n一个物流网络由 $n$ 个城市和 $m$ 条双向公路组成。每条公路都有两个属性：\n\n- 运输费用 $w_i$\n- 景观评分 $b_i$\n\n当一辆运输车从城市 $1$ 运送货物到城市 $n$ 时，需要支付经过道路的运输费用之和。\n\n为了推广旅游线路，物流公司推出了一项优惠政策：在运输路径上，可以**免除景观评分最高**的那条公路的运输费用。如果有多条公路的景观评分同为最大值，则只免除其中 **一条** 的费用。\n\n请你计算，从城市 $1$ 到城市 $n$ 的最小运输费用。\n\n**输入格式**\n\n第一行两个整数 $n,m$，分别表示城市数量和公路数量。\n\n接下来 $m$ 行，每行四个整数 $u,v,w,b$，表示存在一条连接城市 $u$ 和城市 $v$ 的双向公路，其中 $w$ 为运输费用，$b$ 为景观评分。\n\n**输出格式**\n\n输出一个整数，表示从城市 $1$ 到城市 $n$ 的最小费用。\n\n如果无法到达，输出 `-1`。\n\n**样例输入 #1**\n```\n3 3\n1 2 10 5\n2 3 20 6\n1 3 100 1\n```\n\n**样例输出 #1**\n```\n0\n```\n\n**说明/提示**\n\n### 样例解释\n\n路径 $1\\to 2\\to 3$：费用 $10+20$，最大美丽值 $6$（边 $2-3$）。免除 $20$，总花费 $10$。\n\n路径 $1\\to 3$：费用 $100$，最大美丽值 $1$（边 $1-3$）。免除 $100$，总花费 $0$。\n\n### 数据范围\n\n$1\\leq n\\leq 5000$，$1\\leq m\\leq 5000$，$1\\leq w,b\\leq 10^9$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：物流网络</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>一个物流网络由 $n$ 个城市和 $m$ 条双向公路组成。每条公路都有两个属性：</p>\n<ul>\n<li>运输费用 $w_i$</li>\n<li>景观评分 $b_i$</li>\n</ul>\n<p>当一辆运输车从城市 $1$ 运送货物到城市 $n$ 时，需要支付经过道路的运输费用之和。</p>\n<p>为了推广旅游线路，物流公司推出了一项优惠政策：在运输路径上，可以<strong>免除景观评分最高</strong>的那条公路的运输费用。如果有多条公路的景观评分同为最大值，则只免除其中 <strong>一条</strong> 的费用。</p>\n<p>请你计算，从城市 $1$ 到城市 $n$ 的最小运输费用。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行两个整数 $n,m$，分别表示城市数量和公路数量。</p>\n<p>接下来 $m$ 行，每行四个整数 $u,v,w,b$，表示存在一条连接城市 $u$ 和城市 $v$ 的双向公路，其中 $w$ 为运输费用，$b$ 为景观评分。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一个整数，表示从城市 $1$ 到城市 $n$ 的最小费用。</p>\n<p>如果无法到达，输出 <code>-1</code>。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3 3\n1 2 10 5\n2 3 20 6\n1 3 100 1\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>0\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<h3>样例解释</h3>\n<p>路径 $1\\to 2\\to 3$：费用 $10+20$，最大美丽值 $6$（边 $2-3$）。免除 $20$，总花费 $10$。</p>\n<p>路径 $1\\to 3$：费用 $100$，最大美丽值 $1$（边 $1-3$）。免除 $100$，总花费 $0$。</p>\n<h3>数据范围</h3>\n<p>$1\\leq n\\leq 5000$，$1\\leq m\\leq 5000$，$1\\leq w,b\\leq 10^9$。</p>\n"
+    }
+  ],
+  "id": "2026-03-gesp-7",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2026-03-gesp-7",
+  "version": "7e6f5cb3320de0d4",
+  "warnings": [],
+  "objective_score": 50.0
+}

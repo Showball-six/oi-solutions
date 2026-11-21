@@ -1,0 +1,631 @@
+{
+  "title": "2023年6月 GESP C++ 1级",
+  "category": "GESP",
+  "level": "1",
+  "date": "2023-06",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2023年6月 GESP C++ 1级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "麦克风",
+          "html": "<p>麦克风</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "音箱",
+          "html": "<p>音箱</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "打印机",
+          "html": "<p>打印机</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "显示器",
+          "html": "<p>显示器</p>\n"
+        }
+      ],
+      "content": "以下不属于计算机输出设备的有（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>以下不属于计算机输出设备的有（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "改邮件",
+          "html": "<p>改邮件</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "编剧本",
+          "html": "<p>编剧本</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "擦地板",
+          "html": "<p>擦地板</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "写代码",
+          "html": "<p>写代码</p>\n"
+        }
+      ],
+      "content": "ChatGPT 是 OpenAI 研发的聊天机器人程序，它能通过理解和学习人类的语言来进行对话，还能根据聊天的上下文进行互动，完成很多工作。请你猜猜看，下面任务中，ChatGPT 不能完成的是（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>ChatGPT 是 OpenAI 研发的聊天机器人程序，它能通过理解和学习人类的语言来进行对话，还能根据聊天的上下文进行互动，完成很多工作。请你猜猜看，下面任务中，ChatGPT 不能完成的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`double`",
+          "html": "<p><code>double</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`float`",
+          "html": "<p><code>float</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`char`",
+          "html": "<p><code>char</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`int`",
+          "html": "<p><code>int</code></p>\n"
+        }
+      ],
+      "content": "常量 `'3'` 的数据类型是（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>常量 <code>'3'</code> 的数据类型是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "变量可以没有定义",
+          "html": "<p>变量可以没有定义</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "对一个没有定义的变量赋值，相当于定义了一个新变量",
+          "html": "<p>对一个没有定义的变量赋值，相当于定义了一个新变量</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "执行赋值语句后，变量的类型可能会变化",
+          "html": "<p>执行赋值语句后，变量的类型可能会变化</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "执行赋值语句后，变量的值可能不会变化",
+          "html": "<p>执行赋值语句后，变量的值可能不会变化</p>\n"
+        }
+      ],
+      "content": "下列关于 C++ 语言变量的叙述，正确的是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>下列关于 C++ 语言变量的叙述，正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "number_of_Chinese_people_in_millions",
+          "html": "<p>number_of_Chinese_people_in_millions</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "360AntiVirus",
+          "html": "<p>360AntiVirus</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "Man&Woman",
+          "html": "<p>Man&amp;Woman</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`break`",
+          "html": "<p><code>break</code></p>\n"
+        }
+      ],
+      "content": "以下可以作为 C++ 标识符的是（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>以下可以作为 C++ 标识符的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`double`",
+          "html": "<p><code>double</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`else`",
+          "html": "<p><code>else</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`while`",
+          "html": "<p><code>while</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`endl`",
+          "html": "<p><code>endl</code></p>\n"
+        }
+      ],
+      "content": "以下哪个不是 C++ 语言的关键字？（ ）",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>以下哪个不是 C++ 语言的关键字？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`a = (b == c);`",
+          "html": "<p><code>a = (b == c);</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`b = 5.5;`",
+          "html": "<p><code>b = 5.5;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`c = a + b + c;`",
+          "html": "<p><code>c = a + b + c;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`a + c = b + c;`",
+          "html": "<p><code>a + c = b + c;</code></p>\n"
+        }
+      ],
+      "content": "如果 $a$ 、$b$ 和 $c$ 都是 `int` 类型的变量，下列哪个语句不符合 C++ 语法？（ ）",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>如果 $a$ 、$b$ 和 $c$ 都是 <code>int</code> 类型的变量，下列哪个语句不符合 C++ 语法？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`a * a`",
+          "html": "<p><code>a * a</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`1 * a * a`",
+          "html": "<p><code>1 * a * a</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`a ^ 2`",
+          "html": "<p><code>a ^ 2</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`a * 2 * a / 2`",
+          "html": "<p><code>a * 2 * a / 2</code></p>\n"
+        }
+      ],
+      "content": "如果用一个 `int` 类型的变量 $a$ 表达正方形的边长，则下列哪个表达式不能用来计算正方形的面积？（ ）",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>如果用一个 <code>int</code> 类型的变量 $a$ 表达正方形的边长，则下列哪个表达式不能用来计算正方形的面积？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$47$",
+          "html": "<p>$47$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$20$",
+          "html": "<p>$20$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$23$",
+          "html": "<p>$23$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$56$",
+          "html": "<p>$56$</p>\n"
+        }
+      ],
+      "content": "表达式 `(4 * (11 + 12) / 4)` 的计算结果为（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>表达式 <code>(4 * (11 + 12) / 4)</code> 的计算结果为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        }
+      ],
+      "content": "如果 $a$ 为 `int` 类型的变量，且 $a$ 的值为 $6$，则执行 `a %= 4;` 之后，$a$ 的值会是（ ）。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>如果 $a$ 为 <code>int</code> 类型的变量，且 $a$ 的值为 $6$，则执行 <code>a %= 4;</code> 之后，$a$ 的值会是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(a == b == 0)`",
+          "html": "<p><code>(a == b == 0)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`!(a || b)`",
+          "html": "<p><code>!(a || b)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(a + b == 0)`",
+          "html": "<p><code>(a + b == 0)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`(a == 0) + (b == 0)`",
+          "html": "<p><code>(a == 0) + (b == 0)</code></p>\n"
+        }
+      ],
+      "content": "如果 $a$ 和 $b$ 均为 `int` 类型的变量，下列表达式能正确判断“$a$ 等于 $0$ 且 $b$ 等于 $0$”的是（ ）。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>如果 $a$ 和 $b$ 均为 <code>int</code> 类型的变量，下列表达式能正确判断“$a$ 等于 $0$ 且 $b$ 等于 $0$”的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`0.0 + a / b`",
+          "html": "<p><code>0.0 + a / b</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(a + 0.0) / b`",
+          "html": "<p><code>(a + 0.0) / b</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(0.0 + a) / b`",
+          "html": "<p><code>(0.0 + a) / b</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`a / (0.0 + b)`",
+          "html": "<p><code>a / (0.0 + b)</code></p>\n"
+        }
+      ],
+      "content": "如果 $a$ 和 $b$ 为 `int` 类型的变量，且值分别为 $7$ 和 $2$，则下列哪个表达式的计算结果不是 $3.5$？（ ）",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>如果 $a$ 和 $b$ 为 <code>int</code> 类型的变量，且值分别为 $7$ 和 $2$，则下列哪个表达式的计算结果不是 $3.5$？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`a + b`",
+          "html": "<p><code>a + b</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`b`",
+          "html": "<p><code>b</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`a - b`",
+          "html": "<p><code>a - b</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`b - a`",
+          "html": "<p><code>b - a</code></p>\n"
+        }
+      ],
+      "content": "在下列代码的横线处填写（ ），使得输出是“20 10”。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>在下列代码的横线处填写（ ），使得输出是“20 10”。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`i % 2 == 1`",
+          "html": "<p><code>i % 2 == 1</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`i % 3 == 1`",
+          "html": "<p><code>i % 3 == 1</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`i = i + 3`",
+          "html": "<p><code>i = i + 3</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`i + 3`",
+          "html": "<p><code>i + 3</code></p>\n"
+        }
+      ],
+      "content": "在下列代码的横线处填写（ ），可以使得输出是“147”。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>在下列代码的横线处填写（ ），可以使得输出是“147”。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$63$",
+          "html": "<p>$63$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$98$",
+          "html": "<p>$98$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$113$",
+          "html": "<p>$113$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "无法确定",
+          "html": "<p>无法确定</p>\n"
+        }
+      ],
+      "content": "执行以下 C++ 语言程序后，输出结果是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>执行以下 C++ 语言程序后，输出结果是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "计算机硬件主要包括运算器、控制器、存储器、输入设备和输出设备。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>计算机硬件主要包括运算器、控制器、存储器、输入设备和输出设备。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "诞生于 $1958$ 年的 $103$ 机是中国第一台通用数字电子计算机，比 $1946$ 年在美国诞生的第一台通用电子计算机 ENIAC 晚了十多年。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>诞生于 $1958$ 年的 $103$ 机是中国第一台通用数字电子计算机，比 $1946$ 年在美国诞生的第一台通用电子计算机 ENIAC 晚了十多年。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 语言中，计算结果必须存储在变量中才能输出。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，计算结果必须存储在变量中才能输出。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 语言中，标识符的命名不能完全由数字组成，至少有一个字母就可以。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，标识符的命名不能完全由数字组成，至少有一个字母就可以。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "```cpp\n是一个 int 类型常量。\n```",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<pre><code class=\"language-cpp\">是一个 int 类型常量。\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "`if` 语句可以没有 `else` 子句。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p><code>if</code> 语句可以没有 <code>else</code> 子句。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "`do ... while` 语句的循环体至少会执行一次。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p><code>do ... while</code> 语句的循环体至少会执行一次。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "如果 $a$ 和 $b$ 为 `int` 类型的变量，则表达式 `a = b` 可以判断 $a$ 和 $b$ 是否相等。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>如果 $a$ 和 $b$ 为 <code>int</code> 类型的变量，则表达式 <code>a = b</code> 可以判断 $a$ 和 $b$ 是否相等。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "如果 $a$ 为 `int` 类型的变量，则表达式 `(a % 4 == 2)` 可以判断 $a$ 的值是否为偶数。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>如果 $a$ 为 <code>int</code> 类型的变量，则表达式 <code>(a % 4 == 2)</code> 可以判断 $a$ 的值是否为偶数。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "表达式 `(37 / 4)` 的计算结果为 $9$，且结果类型为 `int`。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>表达式 <code>(37 / 4)</code> 的计算结果为 $9$，且结果类型为 <code>int</code>。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：时间规划**\n\n> 时间限制：1.0 s | 内存限制：128.0 MB\n\n**题目描述**\n\n小明在为自己规划学习时间。现在他想知道两个时刻之间有多少分钟，你能通过编程帮他做到吗？\n\n**输入格式**\n\n输入 $4$ 行，第一行为开始时刻的小时，第二行为开始时刻的分钟，第三行为结束时刻的小时，第四行为结束时刻的分钟。输入保证两个时刻是同一天，开始时刻一定在结束时刻之前。时刻使用 $24$ 小时制，即小时在 $0$ 到 $23$ 之间，分钟在 $0$ 到 $59$ 之间。\n\n**输出格式**\n\n输出一行，包含一个整数，从开始时刻到结束时刻之间有多少分钟。\n\n**样例输入 #1**\n```\n9\n5\n9\n6\n```\n\n**样例输出 #1**\n```\n1\n```\n\n**样例输入 #2**\n```\n9\n5\n10\n0\n```\n\n**样例输出 #2**\n```\n55\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：时间规划</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：128.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小明在为自己规划学习时间。现在他想知道两个时刻之间有多少分钟，你能通过编程帮他做到吗？</p>\n<p><strong>输入格式</strong></p>\n<p>输入 $4$ 行，第一行为开始时刻的小时，第二行为开始时刻的分钟，第三行为结束时刻的小时，第四行为结束时刻的分钟。输入保证两个时刻是同一天，开始时刻一定在结束时刻之前。时刻使用 $24$ 小时制，即小时在 $0$ 到 $23$ 之间，分钟在 $0$ 到 $59$ 之间。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，包含一个整数，从开始时刻到结束时刻之间有多少分钟。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>9\n5\n9\n6\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>1\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>9\n5\n10\n0\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>55\n</code></pre>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：累计相加**\n\n> 时间限制：1.0 s | 内存限制：128.0 MB\n\n**题目描述**\n\n输入一个正整数 $n$，求形如：\n\n$1+(1+2)+(1+2+3)+(1+2+3+4)+ \\cdots  +(1+2+3+4+5+ \\cdots  +n)$ 的累计相加。\n\n**输入格式**\n\n输入一个正整数 $n$。约定 $1<n \\le 100$。\n\n**输出格式**\n\n输出累计相加的结果。\n\n**样例输入 #1**\n```\n3\n```\n\n**样例输出 #1**\n```\n10\n```\n\n**样例输入 #2**\n```\n4\n```\n\n**样例输出 #2**\n```\n20\n```\n\n**样例输入 #3**\n```\n10\n```\n\n**样例输出 #3**\n```\n220\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：累计相加</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：128.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>输入一个正整数 $n$，求形如：</p>\n<p>$1+(1+2)+(1+2+3)+(1+2+3+4)+ \\cdots  +(1+2+3+4+5+ \\cdots  +n)$ 的累计相加。</p>\n<p><strong>输入格式</strong></p>\n<p>输入一个正整数 $n$。约定 $1&lt;n \\le 100$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出累计相加的结果。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>10\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>4\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>20\n</code></pre>\n<p><strong>样例输入 #3</strong></p>\n<pre><code>10\n</code></pre>\n<p><strong>样例输出 #3</strong></p>\n<pre><code>220\n</code></pre>\n"
+    }
+  ],
+  "id": "2023-06-gesp-1",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2023-06-gesp-1",
+  "version": "81c52b3c6fce4947",
+  "warnings": [],
+  "objective_score": 50.0
+}

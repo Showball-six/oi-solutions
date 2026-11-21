@@ -1,0 +1,631 @@
+{
+  "title": "GESP C++ 二级 模拟卷1",
+  "category": "GESP",
+  "level": "2",
+  "date": "2026-06",
+  "time_limit": 90,
+  "total_score": 100,
+  "description": "GESP C++ 二级模拟卷1（质数判断、逻辑运算、完全平方数、闰年判断）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "B",
+      "content": "下列选项中，可以作为C++合法变量名的是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "`3score`",
+          "html": "<p><code>3score</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`my_name`",
+          "html": "<p><code>my_name</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`my-name`",
+          "html": "<p><code>my-name</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`class`",
+          "html": "<p><code>class</code></p>\n"
+        }
+      ],
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>下列选项中，可以作为C++合法变量名的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "content": "以下关于计算机存储单位的换算，正确的是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "1KB = 1000B",
+          "html": "<p>1KB = 1000B</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "1MB = 1000KB",
+          "html": "<p>1MB = 1000KB</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "1GB = 1024MB",
+          "html": "<p>1GB = 1024MB</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "1TB = 1000GB",
+          "html": "<p>1TB = 1000GB</p>\n"
+        }
+      ],
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>以下关于计算机存储单位的换算，正确的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "A",
+      "content": "在C++中，表达式 `11 % 3 + 4 * 2` 的值是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "10",
+          "html": "<p>10</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "12",
+          "html": "<p>12</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "14",
+          "html": "<p>14</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "8",
+          "html": "<p>8</p>\n"
+        }
+      ],
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>在C++中，表达式 <code>11 % 3 + 4 * 2</code> 的值是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "D",
+      "content": "执行以下代码后，变量 `cnt` 的值是（ ）\n\n```cpp\nint cnt = 0;\nfor (int i = 1; i <= 15; i++) {\n    if (i % 5 == 0) cnt++;\n}\ncout << cnt;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "2",
+          "html": "<p>2</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "4",
+          "html": "<p>4</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "5",
+          "html": "<p>5</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "3",
+          "html": "<p>3</p>\n"
+        }
+      ],
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>执行以下代码后，变量 <code>cnt</code> 的值是（ ）</p>\n<pre><code class=\"language-cpp\">int cnt = 0;\nfor (int i = 1; i &lt;= 15; i++) {\n    if (i % 5 == 0) cnt++;\n}\ncout &lt;&lt; cnt;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "B",
+      "content": "执行以下代码后，输出的结果是（ ）\n\n```cpp\nint sum = 0;\nfor (int i = 1; i <= 4; i++) {\n    for (int j = 1; j <= i; j++) {\n        sum++;\n    }\n}\ncout << sum;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "8",
+          "html": "<p>8</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "10",
+          "html": "<p>10</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "12",
+          "html": "<p>12</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "16",
+          "html": "<p>16</p>\n"
+        }
+      ],
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">int sum = 0;\nfor (int i = 1; i &lt;= 4; i++) {\n    for (int j = 1; j &lt;= i; j++) {\n        sum++;\n    }\n}\ncout &lt;&lt; sum;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "A",
+      "content": "执行以下代码后，变量 `x` 的值是（ ）\n\n```cpp\nint x = 0;\nfor (int i = 1; i <= 10; i++) {\n    if (i > 6) break;\n    x += i;\n}\ncout << x;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "21",
+          "html": "<p>21</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "28",
+          "html": "<p>28</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "36",
+          "html": "<p>36</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "55",
+          "html": "<p>55</p>\n"
+        }
+      ],
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>执行以下代码后，变量 <code>x</code> 的值是（ ）</p>\n<pre><code class=\"language-cpp\">int x = 0;\nfor (int i = 1; i &lt;= 10; i++) {\n    if (i &gt; 6) break;\n    x += i;\n}\ncout &lt;&lt; x;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "B",
+      "content": "执行以下代码后，输出的结果是（ ）\n\n```cpp\nint a = 3;\nswitch (a) {\n    case 1: cout << \"P\";\n    case 2: cout << \"Q\";\n    case 3: cout << \"R\";\n    case 4: cout << \"S\"; break;\n    default: cout << \"T\";\n}\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "R",
+          "html": "<p>R</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "RS",
+          "html": "<p>RS</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "RST",
+          "html": "<p>RST</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "PQR",
+          "html": "<p>PQR</p>\n"
+        }
+      ],
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">int a = 3;\nswitch (a) {\n    case 1: cout &lt;&lt; &quot;P&quot;;\n    case 2: cout &lt;&lt; &quot;Q&quot;;\n    case 3: cout &lt;&lt; &quot;R&quot;;\n    case 4: cout &lt;&lt; &quot;S&quot;; break;\n    default: cout &lt;&lt; &quot;T&quot;;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "D",
+      "content": "以下关于质数的描述，正确的是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "1是质数",
+          "html": "<p>1是质数</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "2不是质数",
+          "html": "<p>2不是质数</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "所有奇数都是质数",
+          "html": "<p>所有奇数都是质数</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "大于1且只能被1和自身整除的数是质数",
+          "html": "<p>大于1且只能被1和自身整除的数是质数</p>\n"
+        }
+      ],
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>以下关于质数的描述，正确的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "content": "在C++中，表达式 `(6 < 5) || (3 > 1) && (4 == 4)` 的值是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "1",
+          "html": "<p>1</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "0",
+          "html": "<p>0</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "2",
+          "html": "<p>2</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "3",
+          "html": "<p>3</p>\n"
+        }
+      ],
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>在C++中，表达式 <code>(6 &lt; 5) || (3 &gt; 1) &amp;&amp; (4 == 4)</code> 的值是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "B",
+      "content": "执行以下代码后，输出的结果是（ ）\n\n```cpp\nchar c1 = 'D', c2 = 'd';\ncout << c2 - c1;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "0",
+          "html": "<p>0</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "32",
+          "html": "<p>32</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "68",
+          "html": "<p>68</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "100",
+          "html": "<p>100</p>\n"
+        }
+      ],
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">char c1 = 'D', c2 = 'd';\ncout &lt;&lt; c2 - c1;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "content": "执行以下代码后，变量 `s` 的值是（ ）\n\n```cpp\nint n = 2025, s = 0;\nwhile (n > 0) {\n    s += n % 10;\n    n /= 10;\n}\ncout << s;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "7",
+          "html": "<p>7</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "8",
+          "html": "<p>8</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "9",
+          "html": "<p>9</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "10",
+          "html": "<p>10</p>\n"
+        }
+      ],
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>执行以下代码后，变量 <code>s</code> 的值是（ ）</p>\n<pre><code class=\"language-cpp\">int n = 2025, s = 0;\nwhile (n &gt; 0) {\n    s += n % 10;\n    n /= 10;\n}\ncout &lt;&lt; s;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "D",
+      "content": "执行以下代码后，输出的结果是（ ）\n\n```cpp\nint a = 7, b = 3;\ndouble c = a / b;\ncout << c;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "2.33333",
+          "html": "<p>2.33333</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "2.5",
+          "html": "<p>2.5</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "3",
+          "html": "<p>3</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "2",
+          "html": "<p>2</p>\n"
+        }
+      ],
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>执行以下代码后，输出的结果是（ ）</p>\n<pre><code class=\"language-cpp\">int a = 7, b = 3;\ndouble c = a / b;\ncout &lt;&lt; c;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "A",
+      "content": "以下各数中，是完全平方数的是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "144",
+          "html": "<p>144</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "150",
+          "html": "<p>150</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "160",
+          "html": "<p>160</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "170",
+          "html": "<p>170</p>\n"
+        }
+      ],
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>以下各数中，是完全平方数的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "content": "以下关于闰年判断条件的描述，正确的是（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "能被4整除的年份一定是闰年",
+          "html": "<p>能被4整除的年份一定是闰年</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "能被100整除的年份一定是闰年",
+          "html": "<p>能被100整除的年份一定是闰年</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "能被400整除的年份一定是闰年",
+          "html": "<p>能被400整除的年份一定是闰年</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "能被4整除但不能被400整除的年份一定是闰年",
+          "html": "<p>能被4整除但不能被400整除的年份一定是闰年</p>\n"
+        }
+      ],
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>以下关于闰年判断条件的描述，正确的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "B",
+      "content": "以下代码用于输出1到n之间所有奇数的和，横线处应填入（ ）\n\n```cpp\nint n, sum = 0;\ncin >> n;\nfor (int i = 1; i <= n; ______) {\n    sum += i;\n}\ncout << sum;\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "i = i + 1",
+          "html": "<p>i = i + 1</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "i += 2",
+          "html": "<p>i += 2</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "i = i * 2",
+          "html": "<p>i = i * 2</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "i++",
+          "html": "<p>i++</p>\n"
+        }
+      ],
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>以下代码用于输出1到n之间所有奇数的和，横线处应填入（ ）</p>\n<pre><code class=\"language-cpp\">int n, sum = 0;\ncin &gt;&gt; n;\nfor (int i = 1; i &lt;= n; ______) {\n    sum += i;\n}\ncout &lt;&lt; sum;\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在C++中，`int` 类型变量可以存储小数。（ ）",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>在C++中，<code>int</code> 类型变量可以存储小数。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "`for` 循环中的循环变量必须在循环外部先声明。（ ）",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p><code>for</code> 循环中的循环变量必须在循环外部先声明。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在C++中，`=` 用于比较两个值是否相等。（ ）",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>在C++中，<code>=</code> 用于比较两个值是否相等。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "`while(0)` 的循环体不会被执行。（ ）",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p><code>while(0)</code> 的循环体不会被执行。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "数组下标从0开始，`int arr[5]` 的最后一个元素是 `arr[4]`。（ ）",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>数组下标从0开始，<code>int arr[5]</code> 的最后一个元素是 <code>arr[4]</code>。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在C++中，`break` 语句可以跳出所有嵌套循环。（ ）",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>在C++中，<code>break</code> 语句可以跳出所有嵌套循环。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "表达式 `7 / 2` 在C++中的结果是 `3.5`。（ ）",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>表达式 <code>7 / 2</code> 在C++中的结果是 <code>3.5</code>。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "变量名 `_count` 在C++中是合法的。（ ）",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>变量名 <code>_count</code> 在C++中是合法的。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "`cout << (5 > 3 || 2 > 4);` 的输出结果是 `1`。（ ）",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p><code>cout &lt;&lt; (5 &gt; 3 || 2 &gt; 4);</code> 的输出结果是 <code>1</code>。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "`sqrt` 函数的返回值类型是 `double`。（ ）",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p><code>sqrt</code> 函数的返回值类型是 <code>double</code>。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：统计幸运数字**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n给定一个正整数 N，请统计 1 到 N 之间（包含 1 和 N）所有满足以下条件之一的整数个数：\n- 能被 3 整除\n- 个位数字是 3\n\n**输入格式**\n一行，一个正整数 N（1 ≤ N ≤ 10000）。\n\n**输出格式**\n一行，一个整数，表示满足条件的整数个数。\n\n**样例输入 #1**\n```\n20\n```\n\n**样例输出 #1**\n```\n7\n```\n\n**说明/提示**\n1~20中满足条件的数：3, 6, 9, 12, 13, 15, 18，共7个。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：统计幸运数字</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p>给定一个正整数 N，请统计 1 到 N 之间（包含 1 和 N）所有满足以下条件之一的整数个数：</p>\n<ul>\n<li>能被 3 整除</li>\n<li>个位数字是 3</li>\n</ul>\n<p><strong>输入格式</strong><br />\n一行，一个正整数 N（1 ≤ N ≤ 10000）。</p>\n<p><strong>输出格式</strong><br />\n一行，一个整数，表示满足条件的整数个数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>20\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>7\n</code></pre>\n<p><strong>说明/提示</strong><br />\n1~20中满足条件的数：3, 6, 9, 12, 13, 15, 18，共7个。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：输出数字菱形**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n给定一个正奇数 N，请输出一个由连续数字组成的菱形图案。上半部分每行数字从1递增，下半部分对称递减。每行数字之间用一个空格分隔。\n\n**输入格式**\n一行，一个正奇数 N（1 ≤ N ≤ 19）。\n\n**输出格式**\nN 行，每行输出连续数字（从1开始），数字之间用一个空格分隔。行首不要多余空格。\n\n**样例输入 #1**\n```\n5\n```\n\n**样例输出 #1**\n```\n1\n1 2\n1 2 3\n1 2\n1\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：输出数字菱形</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p>给定一个正奇数 N，请输出一个由连续数字组成的菱形图案。上半部分每行数字从1递增，下半部分对称递减。每行数字之间用一个空格分隔。</p>\n<p><strong>输入格式</strong><br />\n一行，一个正奇数 N（1 ≤ N ≤ 19）。</p>\n<p><strong>输出格式</strong><br />\nN 行，每行输出连续数字（从1开始），数字之间用一个空格分隔。行首不要多余空格。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>1\n1 2\n1 2 3\n1 2\n1\n</code></pre>\n"
+    }
+  ],
+  "id": "gesp二级_卷1",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/gesp二级_卷1",
+  "version": "e2a34996d14f1699",
+  "warnings": [],
+  "objective_score": 50.0
+}

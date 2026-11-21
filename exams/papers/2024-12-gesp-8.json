@@ -1,0 +1,636 @@
+{
+  "title": "2024年12月 GESP C++ 8级",
+  "category": "GESP",
+  "level": "8",
+  "date": "2024-12",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2024年12月 GESP C++ 8级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$100,000$",
+          "html": "<p>$100,000$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1,060,000$",
+          "html": "<p>$1,060,000$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$1,360,000$",
+          "html": "<p>$1,360,000$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$1,460,000$",
+          "html": "<p>$1,460,000$</p>\n"
+        }
+      ],
+      "content": "小杨家响应国家“以旧换新”政策，将自家的汽油车置换为新能源汽车，正在准备自编车牌。自编车牌包括 $5$ 位数字或英文字母，要求第 $5$ 位必须是数字，前 $4$ 位中可以有最多 $1$ 位英文字母。英文字母必须是大写，而且不能是 `O` 或 `I`（因为容易与数字 $0$ 或 $1$ 混淆）。请问自编车牌共有多少种可能性？（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>小杨家响应国家“以旧换新”政策，将自家的汽油车置换为新能源汽车，正在准备自编车牌。自编车牌包括 $5$ 位数字或英文字母，要求第 $5$ 位必须是数字，前 $4$ 位中可以有最多 $1$ 位英文字母。英文字母必须是大写，而且不能是 <code>O</code> 或 <code>I</code>（因为容易与数字 $0$ 或 $1$ 混淆）。请问自编车牌共有多少种可能性？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "8640",
+          "html": "<p>8640</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "6912",
+          "html": "<p>6912</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "144",
+          "html": "<p>144</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "60",
+          "html": "<p>60</p>\n"
+        }
+      ],
+      "content": "新年到，四家人在一起聚会。其中两家有三口人，另外两家有两口人。现在要安排大家在一张十人圆桌坐下，要求一家人必须相邻就座。由于有“主座”的习俗，每个座位都被认为是不同的。请问共有多少种就座方案？（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>新年到，四家人在一起聚会。其中两家有三口人，另外两家有两口人。现在要安排大家在一张十人圆桌坐下，要求一家人必须相邻就座。由于有“主座”的习俗，每个座位都被认为是不同的。请问共有多少种就座方案？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "一个类可以继承多个类。",
+          "html": "<p>一个类可以继承多个类。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "一个类可以被多个类继承。",
+          "html": "<p>一个类可以被多个类继承。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "一个类可以继承另一个类的子类。",
+          "html": "<p>一个类可以继承另一个类的子类。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "抽象类必须被至少一个类继承，否则会编译错误。",
+          "html": "<p>抽象类必须被至少一个类继承，否则会编译错误。</p>\n"
+        }
+      ],
+      "content": "下面关于 C++ 类继承的说法，错误的是（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下面关于 C++ 类继承的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "使用邻接表表达一个简单有向图，图中包含 $v$ 个顶点、$e$ 条边，则该出边表中边节点的个数为（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>使用邻接表表达一个简单有向图，图中包含 $v$ 个顶点、$e$ 条边，则该出边表中边节点的个数为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`void Bubble(int a[10][], int m);`",
+          "html": "<p><code>void Bubble(int a[10][], int m);</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`void Bubble(int a[][], int n, int m);`",
+          "html": "<p><code>void Bubble(int a[][], int n, int m);</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`void Bubble(int (*a)[20], int n);`",
+          "html": "<p><code>void Bubble(int (*a)[20], int n);</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`void Bubble(int * a[20], int n);`",
+          "html": "<p><code>void Bubble(int * a[20], int n);</code></p>\n"
+        }
+      ],
+      "content": "以下将二维数组作为参数的函数声明，哪个是符合语法的？（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>以下将二维数组作为参数的函数声明，哪个是符合语法的？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(xa - xb) / (ya - yb)`",
+          "html": "<p><code>(xa - xb) / (ya - yb)</code></p>\n"
+        },
+        {
+          "key": "A",
+          "text": "(xa - xb) / (ya - yb)",
+          "html": "<p>(xa - xb) / (ya - yb)</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(xa - xb) / (yb - ya)`",
+          "html": "<p><code>(xa - xb) / (yb - ya)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(ya - yb) / (xa - xb)`",
+          "html": "<p><code>(ya - yb) / (xa - xb)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`(ya - yb) / (xb - xa)`",
+          "html": "<p><code>(ya - yb) / (xb - xa)</code></p>\n"
+        }
+      ],
+      "content": "已知两个点 $A$ 和 $B$ 在平面直角坐标系下的坐标分别为 $(x_a, y_a)$ 和 $(x_b, y_b)$，并分别定义变量 `double xa, ya, xb, yb;` 存储坐标。假设直线 $AB$ 的斜率存在，下列哪个表达式可以用来表达它？（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>已知两个点 $A$ 和 $B$ 在平面直角坐标系下的坐标分别为 $(x_a, y_a)$ 和 $(x_b, y_b)$，并分别定义变量 <code>double xa, ya, xb, yb;</code> 存储坐标。假设直线 $AB$ 的斜率存在，下列哪个表达式可以用来表达它？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$15$",
+          "html": "<p>$15$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$20$",
+          "html": "<p>$20$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$120$",
+          "html": "<p>$120$</p>\n"
+        }
+      ],
+      "content": "二项式 $(a + b)^6$ 的展开式中 $a^4 b^2$ 项的系数是（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>二项式 $(a + b)^6$ 的展开式中 $a^4 b^2$ 项的系数是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "动态规划方法有递推和递归两种实现形式。",
+          "html": "<p>动态规划方法有递推和递归两种实现形式。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "递归实现动态规划方法的时间复杂度总是不低于递推实现。",
+          "html": "<p>递归实现动态规划方法的时间复杂度总是不低于递推实现。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "动态规划方法将原问题分解为一个或多个相似的子问题。",
+          "html": "<p>动态规划方法将原问题分解为一个或多个相似的子问题。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "动态规划方法通常能够列出递推公式。",
+          "html": "<p>动态规划方法通常能够列出递推公式。</p>\n"
+        }
+      ],
+      "content": "以下关于动态规划的说法中，错误的是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>以下关于动态规划的说法中，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`((c - 1) ^ c)`",
+          "html": "<p><code>((c - 1) ^ c)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(((c - 1) ^ c) + 1)`",
+          "html": "<p><code>(((c - 1) ^ c) + 1)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(((c - 1) ^ c) >> 1)`",
+          "html": "<p><code>(((c - 1) ^ c) &gt;&gt; 1)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`((((c - 1) ^ c) + 1) >> 1)`",
+          "html": "<p><code>((((c - 1) ^ c) + 1) &gt;&gt; 1)</code></p>\n"
+        }
+      ],
+      "content": "在下面的程序中，使用整数表示一种组合。整数二进制表示的某一位为 $1$ ，表示该位对应的数被选中，反之为 $0$ 表示未选中。例如，从 $0$ - $5$ 这 $6$ 个数中选出 $3$ 个，则 `0b111000` 代表选中 $3$, $4$, $5$ 三个数，`0b011001` 代表选中 $0$, $3$, $4$ 三个数。`zuhe_next` 函数按组合对应的整数由大到小的顺序，求出组合 $c$ 的下一个组合。横线处可以填入的是（ ）。\n\n```cpp\nint intlow2(int c) {\n    return ________; // 在此处填入选项\n}\nint zuhe_next_incur(int c, int n, int l) {\n    if (n == 1) return c;\n    if ((c & (1 << l)) == 0) {\n        int d = intlow2(c);\n        c = (c & ~d);\n        c = (c | (d >> 1));\n    } else {\n        c = (c & ~(1 << l));\n        c = zuhe_next_incur(c, n - 1, l + 1);\n        int d = intlow2(c);\n        c = (c | (d >> 1));\n    }\n    return c;\n}\n// 从n个数中选m个，当前组合为c\nint zuhe_next(int c, int n, int m) {\n    return zuhe_next_incur(c, n, 0);\n}\n```",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>在下面的程序中，使用整数表示一种组合。整数二进制表示的某一位为 $1$ ，表示该位对应的数被选中，反之为 $0$ 表示未选中。例如，从 $0$ - $5$ 这 $6$ 个数中选出 $3$ 个，则 <code>0b111000</code> 代表选中 $3$, $4$, $5$ 三个数，<code>0b011001</code> 代表选中 $0$, $3$, $4$ 三个数。<code>zuhe_next</code> 函数按组合对应的整数由大到小的顺序，求出组合 $c$ 的下一个组合。横线处可以填入的是（ ）。</p>\n<pre><code class=\"language-cpp\">int intlow2(int c) {\n    return ________; // 在此处填入选项\n}\nint zuhe_next_incur(int c, int n, int l) {\n    if (n == 1) return c;\n    if ((c &amp; (1 &lt;&lt; l)) == 0) {\n        int d = intlow2(c);\n        c = (c &amp; ~d);\n        c = (c | (d &gt;&gt; 1));\n    } else {\n        c = (c &amp; ~(1 &lt;&lt; l));\n        c = zuhe_next_incur(c, n - 1, l + 1);\n        int d = intlow2(c);\n        c = (c | (d &gt;&gt; 1));\n    }\n    return c;\n}\n// 从n个数中选m个，当前组合为c\nint zuhe_next(int c, int n, int m) {\n    return zuhe_next_incur(c, n, 0);\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$174$",
+          "html": "<p>$174$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$447$",
+          "html": "<p>$447$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$816$",
+          "html": "<p>$816$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$4096$",
+          "html": "<p>$4096$</p>\n"
+        }
+      ],
+      "content": "下面程序的输出为（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int N = 15, cnt = 0;\n    for (int x = 0; x + x + x <= N; x++)\n        for (int y = x; x + y + y <= N; y++)\n            for (int z = y; x + y + z <= N; z++)\n                cnt++;\n    cout << cnt << endl;\n    return 0;\n}\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面程序的输出为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint main() {\n    int N = 15, cnt = 0;\n    for (int x = 0; x + x + x &lt;= N; x++)\n        for (int y = x; x + y + y &lt;= N; y++)\n            for (int z = y; x + y + z &lt;= N; z++)\n                cnt++;\n    cout &lt;&lt; cnt &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`dp[i + 1][j + 1] = dp[i][j + 1] + dp[i + 1][j]`",
+          "html": "<p><code>dp[i + 1][j + 1] = dp[i][j + 1] + dp[i + 1][j]</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`dp[i + 1][j + 1] = MIN(dp[i][j + 1], dp[i + 1][j])`",
+          "html": "<p><code>dp[i + 1][j + 1] = MIN(dp[i][j + 1], dp[i + 1][j])</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`dp[i + 1][j + 1] = MAX(dp[i][j + 1], dp[i + 1][j])`",
+          "html": "<p><code>dp[i + 1][j + 1] = MAX(dp[i][j + 1], dp[i + 1][j])</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`dp[i + 1][j + 1] = MAX(dp[i][j + 1], dp[i + 1][j]) + 1`",
+          "html": "<p><code>dp[i + 1][j + 1] = MAX(dp[i][j + 1], dp[i + 1][j]) + 1</code></p>\n"
+        }
+      ],
+      "content": "下面最长公共子序列程序中，横线处应该填入的是（ ）。\n\n```cpp\n#define MAX(A, B) (((A) > (B)) ? (A) : (B))\n#define MIN(A, B) (((A) < (B)) ? (A) : (B))\nint dp[MAX_L + 1][MAX_L + 1];\nint LCS(char str1[], char str2[]) {\n    int len1 = strlen(str1);\n    int len2 = strlen(str2);\n    for (int i = 0; i < len1; i++)\n        for (int j = 0; j < len2; j++)\n            if (str1[i] == str2[j])\n                dp[i + 1][j + 1] = dp[i][j] + 1;\n            else\n                ________; // 在此处填入选项\n    return dp[len1][len2];\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面最长公共子序列程序中，横线处应该填入的是（ ）。</p>\n<pre><code class=\"language-cpp\">#define MAX(A, B) (((A) &gt; (B)) ? (A) : (B))\n#define MIN(A, B) (((A) &lt; (B)) ? (A) : (B))\nint dp[MAX_L + 1][MAX_L + 1];\nint LCS(char str1[], char str2[]) {\n    int len1 = strlen(str1);\n    int len2 = strlen(str2);\n    for (int i = 0; i &lt; len1; i++)\n        for (int j = 0; j &lt; len2; j++)\n            if (str1[i] == str2[j])\n                dp[i + 1][j + 1] = dp[i][j] + 1;\n            else\n                ________; // 在此处填入选项\n    return dp[len1][len2];\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nif (dis[e->out] > e->len)\n    dis[e->out] = e->len;\n```",
+          "html": "<pre><code class=\"language-cpp\">if (dis[e-&gt;out] &gt; e-&gt;len)\n    dis[e-&gt;out] = e-&gt;len;\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\nif (dis[e->out] > min + e->len)\n    dis[e->out] = min + e->len;\n```",
+          "html": "<pre><code class=\"language-cpp\">if (dis[e-&gt;out] &gt; min + e-&gt;len)\n    dis[e-&gt;out] = min + e-&gt;len;\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\nif (dis[e->in] > e->len)\n    dis[e->in] = e->len;\n```",
+          "html": "<pre><code class=\"language-cpp\">if (dis[e-&gt;in] &gt; e-&gt;len)\n    dis[e-&gt;in] = e-&gt;len;\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nif (dis[e->in] > min + e->len)\n    dis[e->in] = min + e->len;\n```",
+          "html": "<pre><code class=\"language-cpp\">if (dis[e-&gt;in] &gt; min + e-&gt;len)\n    dis[e-&gt;in] = min + e-&gt;len;\n</code></pre>\n"
+        }
+      ],
+      "content": "下列 Dijkstra 算法中，横线处应该填入的是（ ）。\n\n```cpp\ntypedef struct Edge {\n    int in, out; // 从下标 in 顶点到下标 out 顶点的边\n    int len; // 边长度\n    struct Edge * next;\n} Edge;\n// v：顶点个数，graph：出边邻接表，start：起点下标，dis：输出每个顶点的最短距离\nvoid dijkstra(int v, Edge * graph[], int start, int * dis) {\n    const int MAX_DIS = 0x7fffff;\n    for (int i = 0; i < v; i++)\n        dis[i] = MAX_DIS;\n    dis[start] = 0;\n    int * visited = new int[v];\n    for (int i = 0; i < v; i++)\n        visited[i] = 0;\n    visited[start] = 1;\n    for (int t = 0; ; t++) {\n        int min = MAX_DIS, minv = -1;\n        for (int i = 0; i < v; i++) {\n            if (visited[i] == 0 && min > dis[i]) {\n                min = dis[i];\n                minv = i;\n            }\n        }\n        if (minv < 0)\n            break;\n        visited[minv] = 1;\n        for (Edge * e = graph[minv]; e != NULL; e = e->next) {\n            ________; // 在此处填入选项\n        }\n    }\n    delete[] visited;\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下列 Dijkstra 算法中，横线处应该填入的是（ ）。</p>\n<pre><code class=\"language-cpp\">typedef struct Edge {\n    int in, out; // 从下标 in 顶点到下标 out 顶点的边\n    int len; // 边长度\n    struct Edge * next;\n} Edge;\n// v：顶点个数，graph：出边邻接表，start：起点下标，dis：输出每个顶点的最短距离\nvoid dijkstra(int v, Edge * graph[], int start, int * dis) {\n    const int MAX_DIS = 0x7fffff;\n    for (int i = 0; i &lt; v; i++)\n        dis[i] = MAX_DIS;\n    dis[start] = 0;\n    int * visited = new int[v];\n    for (int i = 0; i &lt; v; i++)\n        visited[i] = 0;\n    visited[start] = 1;\n    for (int t = 0; ; t++) {\n        int min = MAX_DIS, minv = -1;\n        for (int i = 0; i &lt; v; i++) {\n            if (visited[i] == 0 &amp;&amp; min &gt; dis[i]) {\n                min = dis[i];\n                minv = i;\n            }\n        }\n        if (minv &lt; 0)\n            break;\n        visited[minv] = 1;\n        for (Edge * e = graph[minv]; e != NULL; e = e-&gt;next) {\n            ________; // 在此处填入选项\n        }\n    }\n    delete[] visited;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "假设图 $graph$ 中顶点数 $v$ 、边数 $e$ ，上题程序的时间复杂度为（ ）。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>假设图 $graph$ 中顶点数 $v$ 、边数 $e$ ，上题程序的时间复杂度为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nl < r\na + pivot + 1, n - pivot - 1\n```",
+          "html": "<pre><code class=\"language-cpp\">l &lt; r\na + pivot + 1, n - pivot - 1\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\nl < r\na + pivot + 1, n - pivot\n```",
+          "html": "<pre><code class=\"language-cpp\">l &lt; r\na + pivot + 1, n - pivot\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\nl <= r\na + pivot + 1, n - pivot - 1\n```",
+          "html": "<pre><code class=\"language-cpp\">l &lt;= r\na + pivot + 1, n - pivot - 1\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nl <= r\na + pivot + 1, n - pivot\n```",
+          "html": "<pre><code class=\"language-cpp\">l &lt;= r\na + pivot + 1, n - pivot\n</code></pre>\n"
+        }
+      ],
+      "content": "下面的快速排序程序中，两处横线处分别应填入的是（ ）。\n\n```cpp\nvoid quick_sort(int a[], int n) {\n    if (n <= 1)\n        return;\n    int pivot = 0, l = 0, r = n - 1;\n    while (________) { // 在此处填入选项\n        while (r > pivot && a[r] >= a[pivot])\n            r--;\n        if (r > pivot) {\n            int temp = a[pivot];\n            a[pivot] = a[r];\n            a[r] = temp;\n            pivot = r;\n        }\n        while (l < pivot && a[l] <= a[pivot])\n            l++;\n        if (l < pivot) {\n            int temp = a[pivot];\n            a[pivot] = a[l];\n            a[l] = temp;\n            pivot = l;\n        }\n    }\n    quick_sort(a, pivot);\n    quick_sort(________); // 在此处填入选项\n}\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>下面的快速排序程序中，两处横线处分别应填入的是（ ）。</p>\n<pre><code class=\"language-cpp\">void quick_sort(int a[], int n) {\n    if (n &lt;= 1)\n        return;\n    int pivot = 0, l = 0, r = n - 1;\n    while (________) { // 在此处填入选项\n        while (r &gt; pivot &amp;&amp; a[r] &gt;= a[pivot])\n            r--;\n        if (r &gt; pivot) {\n            int temp = a[pivot];\n            a[pivot] = a[r];\n            a[r] = temp;\n            pivot = r;\n        }\n        while (l &lt; pivot &amp;&amp; a[l] &lt;= a[pivot])\n            l++;\n        if (l &lt; pivot) {\n            int temp = a[pivot];\n            a[pivot] = a[l];\n            a[l] = temp;\n            pivot = l;\n        }\n    }\n    quick_sort(a, pivot);\n    quick_sort(________); // 在此处填入选项\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "上题程序的时间复杂度为（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>上题程序的时间复杂度为（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "表达式 `'3' + '5'` 的结果为 `'8'`，类型为 `char`。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>表达式 <code>'3' + '5'</code> 的结果为 <code>'8'</code>，类型为 <code>char</code>。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 语言中，可以在函数内定义结构体，但该结构体类型只能在该函数内使用。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，可以在函数内定义结构体，但该结构体类型只能在该函数内使用。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "对 $n$ 个元素的数组进行排序，快速排序和归并排序的平均时间复杂度都为 $O(n \\log n)$。但快速排序存在退化情况，使得时间复杂度升高至 $O(n^2)$；归并排序需要额外的空间开销。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>对 $n$ 个元素的数组进行排序，快速排序和归并排序的平均时间复杂度都为 $O(n \\log n)$。但快速排序存在退化情况，使得时间复杂度升高至 $O(n^2)$；归并排序需要额外的空间开销。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "二维数组的最后一维在内存中一定是连续的，但第一维在内存中可能不连续。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>二维数组的最后一维在内存中一定是连续的，但第一维在内存中可能不连续。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "使用 `math.h` 或 `cmath` 头文件中的函数，表达式 `log(1000)` 的结果类型为 `double`、值约为 $3$。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>使用 <code>math.h</code> 或 <code>cmath</code> 头文件中的函数，表达式 <code>log(1000)</code> 的结果类型为 <code>double</code>、值约为 $3$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "你有三种硬币，分别面值 $2$ 元、$5$ 元和 $7$ 元，每种硬币都有足够多。买一本书需要 $27$ 元，则有 $8$ 种硬币组合（组合与顺序无关，“$1$ 个 $2$ 元 + $1$ 个 $5$ 元 + $1$ 个 $2$ 元”与“$1$ 个 $5$ 元 + $2$ 个 $2$ 元”认为是同样的组合）可以正好付清，且不需要对方找钱。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>你有三种硬币，分别面值 $2$ 元、$5$ 元和 $7$ 元，每种硬币都有足够多。买一本书需要 $27$ 元，则有 $8$ 种硬币组合（组合与顺序无关，“$1$ 个 $2$ 元 + $1$ 个 $5$ 元 + $1$ 个 $2$ 元”与“$1$ 个 $5$ 元 + $2$ 个 $2$ 元”认为是同样的组合）可以正好付清，且不需要对方找钱。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "使用哈希函数 $f(x) = x \\% p$ 建立键值为 `int` 类型的哈希表，只要 $p$ 取小于等于哈希表大小的素数，可保证不发生碰撞。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>使用哈希函数 $f(x) = x \\% p$ 建立键值为 <code>int</code> 类型的哈希表，只要 $p$ 取小于等于哈希表大小的素数，可保证不发生碰撞。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "杨辉三角中的第 $n$ 行、第 $k$ 项，即为将二项式 $(a + b)^n$ 展开后 $a^{n-k} b^k$ 项的系数。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>杨辉三角中的第 $n$ 行、第 $k$ 项，即为将二项式 $(a + b)^n$ 展开后 $a^{n-k} b^k$ 项的系数。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "判断图是否连通，可以通过广度优先搜索实现。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>判断图是否连通，可以通过广度优先搜索实现。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "要求解一元二次方程，需要先判断表达式 `a ^ 2 - b * 4 >= 0` 是否为真。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>要求解一元二次方程，需要先判断表达式 <code>a ^ 2 - b * 4 &gt;= 0</code> 是否为真。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：树上移动**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨有一棵包含 $n$ 个节点的树，其中节点的编号从 $1$ 到 $n$，每个节点的颜色要么是白色要么是黑色，小杨可以任意选择节点 $s$ 和节点 $t$ 并从节点 $s$ 出发移动到节点 $t$，移动过程中小杨不能够经过重复节点。\n\n小杨希望自己在至多经过 $k$ 个黑色节点的前提下，经过的总节点数尽可能多，请你帮小杨选择经过最多的节点数是多少。\n\n**输入格式**\n\n第一行包含两个正整数 $n,k$，代表节点数量和至多经过的黑色节点数。\n\n第二行包含 $n$ 个正整数 $a_1,a_2,\\dots,a_n$，代表节点颜色，如果 $a_i=0$，代表节点颜色为白色，如果 $a_i=1$，代表节点颜色为黑色。\n\n之后 $n-1$ 行，每行包含两个正整数 $u_i,v_i$，代表存在一条连接 $u_i$ 和 $v_i$ 的边。\n\n**输出格式**\n\n输出一个正整数，代表最多经过的节点数。\n\n**样例输入 #1**\n```\n5 1\n0 0 1 1 1\n1 2\n2 3\n2 5\n1 4\n```\n\n**样例输出 #1**\n```\n3\n```\n\n**说明/提示**\n\n| 子任务编号 | 数据点占比 |     $n$     | $k$         |     特殊性质     |\n| :--------: | :--------: | :---------: | ----------- | :--------------: |\n|    $1$     |   $20\\%$   | $\\leq 100$  | $\\leq 100$  | 树的形态为一条链 |\n|    $2$     |   $20\\%$   | $\\leq 1000$ | $0$         |                  |\n|    $3$     |   $60\\%$   | $\\leq 1000$ | $\\leq 1000$ |                  |\n\n\n对于全部数据，保证有 $1\\leq n\\leq 1000$，$0\\leq k\\leq 1000$，$0\\leq a_i\\leq 1$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：树上移动</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨有一棵包含 $n$ 个节点的树，其中节点的编号从 $1$ 到 $n$，每个节点的颜色要么是白色要么是黑色，小杨可以任意选择节点 $s$ 和节点 $t$ 并从节点 $s$ 出发移动到节点 $t$，移动过程中小杨不能够经过重复节点。</p>\n<p>小杨希望自己在至多经过 $k$ 个黑色节点的前提下，经过的总节点数尽可能多，请你帮小杨选择经过最多的节点数是多少。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含两个正整数 $n,k$，代表节点数量和至多经过的黑色节点数。</p>\n<p>第二行包含 $n$ 个正整数 $a_1,a_2,\\dots,a_n$，代表节点颜色，如果 $a_i=0$，代表节点颜色为白色，如果 $a_i=1$，代表节点颜色为黑色。</p>\n<p>之后 $n-1$ 行，每行包含两个正整数 $u_i,v_i$，代表存在一条连接 $u_i$ 和 $v_i$ 的边。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一个正整数，代表最多经过的节点数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5 1\n0 0 1 1 1\n1 2\n2 3\n2 5\n1 4\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>3\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\">子任务编号</th>\n<th style=\"text-align:center\">数据点占比</th>\n<th style=\"text-align:center\">$n$</th>\n<th>$k$</th>\n<th style=\"text-align:center\">特殊性质</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">$1$</td>\n<td style=\"text-align:center\">$20\\%$</td>\n<td style=\"text-align:center\">$\\leq 100$</td>\n<td>$\\leq 100$</td>\n<td style=\"text-align:center\">树的形态为一条链</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$2$</td>\n<td style=\"text-align:center\">$20\\%$</td>\n<td style=\"text-align:center\">$\\leq 1000$</td>\n<td>$0$</td>\n<td style=\"text-align:center\"></td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$3$</td>\n<td style=\"text-align:center\">$60\\%$</td>\n<td style=\"text-align:center\">$\\leq 1000$</td>\n<td>$\\leq 1000$</td>\n<td style=\"text-align:center\"></td>\n</tr>\n</tbody>\n</table>\n<p>对于全部数据，保证有 $1\\leq n\\leq 1000$，$0\\leq k\\leq 1000$，$0\\leq a_i\\leq 1$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：排队**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨所在班级共有 $n$ 位同学，依次以 $1,2,\\dots,n$ 标号。这 $n$ 位同学想排成一行队伍，其中有些同学之间关系非常好，在队伍里需要排在相邻的位置。具体来说，有 $m$ 对这样的关系（$m$ 是一个非负整数）。当 $m\\geq 1$ 时，第 $i$ 对关系（$1\\leq i\\leq m$）给出 $a_i,b_i$，表示排队时编号为 $a_i$ 的同学需要排在编号为 $b_i$ 的同学前面，并且两人在队伍中相邻。\n\n现在小杨想知道总共有多少种排队方式。由于答案可能很大，你只需要求出答案对 $10^9+7$ 取模的结果。\n\n**输入格式**\n\n第一行，两个整数 $n,m$，分别表示同学们的数量与关系数量。\n\n接下来 $m$ 行，每行两个整数 $a_i,b_i$，表示一对关系。\n\n**输出格式**\n\n一行，一个整数，表示答案对 $10^9+7$ 取模的结果。\n\n**样例输入 #1**\n```\n4 2\n1 3\n2 4\n```\n\n**样例输出 #1**\n```\n2\n```\n\n**样例输入 #2**\n```\n3 0\n```\n\n**样例输出 #2**\n```\n6\n```\n\n**样例输入 #3**\n```\n3 2\n1 2\n2 1\n```\n\n**样例输出 #3**\n```\n0\n```\n\n**说明/提示**\n\n对于 $20\\%$ 的测试数据点，保证 $1\\leq n\\leq 8$，$0\\leq m\\leq 10$。\n\n对于另外 $20\\%$ 的测试数据点，保证 $1\\leq n\\leq 10^3$，$0\\leq m\\leq 1$。\n\n对于所有测试数据点，保证 $1\\leq n\\leq 2\\times 10^5$，$0\\leq m\\leq 2\\times 10^5$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：排队</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨所在班级共有 $n$ 位同学，依次以 $1,2,\\dots,n$ 标号。这 $n$ 位同学想排成一行队伍，其中有些同学之间关系非常好，在队伍里需要排在相邻的位置。具体来说，有 $m$ 对这样的关系（$m$ 是一个非负整数）。当 $m\\geq 1$ 时，第 $i$ 对关系（$1\\leq i\\leq m$）给出 $a_i,b_i$，表示排队时编号为 $a_i$ 的同学需要排在编号为 $b_i$ 的同学前面，并且两人在队伍中相邻。</p>\n<p>现在小杨想知道总共有多少种排队方式。由于答案可能很大，你只需要求出答案对 $10^9+7$ 取模的结果。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，两个整数 $n,m$，分别表示同学们的数量与关系数量。</p>\n<p>接下来 $m$ 行，每行两个整数 $a_i,b_i$，表示一对关系。</p>\n<p><strong>输出格式</strong></p>\n<p>一行，一个整数，表示答案对 $10^9+7$ 取模的结果。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4 2\n1 3\n2 4\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>2\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>3 0\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>6\n</code></pre>\n<p><strong>样例输入 #3</strong></p>\n<pre><code>3 2\n1 2\n2 1\n</code></pre>\n<p><strong>样例输出 #3</strong></p>\n<pre><code>0\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $20\\%$ 的测试数据点，保证 $1\\leq n\\leq 8$，$0\\leq m\\leq 10$。</p>\n<p>对于另外 $20\\%$ 的测试数据点，保证 $1\\leq n\\leq 10^3$，$0\\leq m\\leq 1$。</p>\n<p>对于所有测试数据点，保证 $1\\leq n\\leq 2\\times 10^5$，$0\\leq m\\leq 2\\times 10^5$。</p>\n"
+    }
+  ],
+  "id": "2024-12-gesp-8",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2024-12-gesp-8",
+  "version": "49e48665145d53ab",
+  "warnings": [],
+  "objective_score": 50.0
+}

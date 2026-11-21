@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark"><title>笔试练习 · Showball OI</title>
+<link rel="stylesheet" href="../assets/theme.css"><script defer src="../assets/app.js"></script>
+<link rel="stylesheet" href="assets/css/katex.min.css">
+<script defer src="assets/js/katex.min.js"></script><script defer src="assets/js/katex-auto-render.min.js"></script>
+<link rel="stylesheet" href="../assets/hub.css">
+</head>
+<body data-page="exams">
+<a class="skip-link" href="#main-content">跳到正文</a><header class="topbar"><div class="topbar-inner"><a class="logo" href="../index.html"><span class="logo-icon">S</span><span>Showball <small>OI</small></span></a><nav class="nav-cards" id="site-nav" aria-label="主导航"><a class="nav-card" data-page="courses" href="../memos.html">课程讲义</a><a class="nav-card" data-page="exams" href="../exams.html">笔试练习</a><a class="nav-card" data-page="favorites" href="../favorite.html">题目题解</a><a class="nav-card" data-page="templates" href="../templates.html">代码模板</a><a class="nav-card" data-page="tools" href="../tools.html">工具</a></nav><div class="topbar-actions"><time class="topbar-time" id="clock"></time><button class="theme-button" data-theme-toggle aria-label="切换主题">主题</button><button class="menu-button" data-menu-toggle aria-controls="site-nav" aria-expanded="false">导航</button></div></div></header>
+<main id="main-content" class="page practice-page">
+<div class="breadcrumb"><a href="../exams.html" id="back-catalog">笔试练习</a><span>/</span><span id="crumb-title">试卷</span></div>
+<div id="load-state" role="status">正在加载试卷…</div>
+<div id="practice" hidden>
+<header class="page-header"><p class="eyebrow" id="paper-category"></p><h1 class="page-title" id="paper-title"></h1><p id="paper-meta" class="page-desc"></p></header>
+<div class="notice">练习记录仅保存在当前浏览器。客观题按参考答案评分；编程题不自动评分，代码草稿可保存。</div>
+<p id="storage-warning" class="notice warning" role="status" hidden>本次记录无法保存，离开页面后可能丢失。你仍可以继续答题。</p>
+<details id="data-warning" class="notice warning" hidden><summary id="data-warning-title"></summary><ul id="data-warning-list"></ul></details>
+<section class="practice-controls" aria-label="练习控制"><div><strong id="timer-label">自由练习</strong><span id="best-score" class="muted"></span></div><div class="button-row"><button class="btn" id="start-timed">开始限时练习</button><button class="btn primary" id="submit-paper">交卷并查看结果</button><button class="btn" id="reset-paper">重新练习</button></div></section>
+<section id="result-summary" class="result-summary" tabindex="-1" hidden aria-live="polite"></section>
+<div class="practice-layout"><div id="questions"></div><aside class="answer-aside"><details open id="answer-details"><summary>答题卡 <span id="answered-count"></span></summary><div id="answer-grid" class="answer-grid"></div><p class="small muted">已答 · 正确 · 错误均有文字标记</p><label class="check-label"><input type="checkbox" id="wrong-only" disabled> 只看本次错题</label></details></aside></div>
+</div>
+</main>
+<footer class="site-footer">© 2026 Showball OI · <a href="../exams.html">返回试卷目录</a></footer>
+<dialog id="action-dialog" aria-labelledby="dialog-title"><form method="dialog"><h2 id="dialog-title"></h2><p id="dialog-copy"></p><div class="button-row"><button class="btn" value="cancel" autofocus>返回检查</button><button class="btn primary" id="dialog-confirm" value="confirm">确认</button></div></form></dialog>
+<script id="exam-core">
+globalThis.ExamCore = (() => {
+  const normalized = (q, value) => {
+    if (q.type === 'multi_choice') return [...new Set(Array.isArray(value) ? value.map(String) : String(value || '').split(''))].sort().join('');
+    if (q.type === 'judge') return String(value ?? '').trim().toLowerCase();
+    return String(value ?? '').trim();
+  };
+  const grade = (paper, answers) => {
+    let score = 0, max = 0, correct = 0, wrong = 0;
+    const results = {};
+    for (const q of paper.questions) {
+      if (!q.gradable) { results[q.uid] = null; continue; }
+      max += q.score;
+      const value = normalized(q, answers[q.uid]);
+      const ok = value !== '' && value === normalized(q, q.answer);
+      results[q.uid] = ok;
+      if (ok) { score += q.score; correct++; } else wrong++;
+    }
+    return {score, max, correct, wrong, results};
+  };
+  const restore = (paper, state) => {
+    if (!state || state.version !== paper.version || !state.answers || typeof state.answers !== 'object' || Array.isArray(state.answers)) return null;
+    const answers = {};
+    for (const q of paper.questions) {
+      const value = state.answers[q.uid];
+      if (q.type === 'multi_choice' && Array.isArray(value)) answers[q.uid] = value.filter(x => typeof x === 'string' && (!q.options || q.options.some(o => o.key === x)));
+      else if (typeof value === 'string') answers[q.uid] = value;
+    }
+    return {version:paper.version, attempt:typeof state.attempt === 'string' ? state.attempt : 'legacy', answers, submitted:state.submitted === true,
+      deadline:typeof state.deadline === 'number' && Number.isFinite(state.deadline) && state.deadline > 0 ? state.deadline : null};
+  };
+  const remaining = (deadline, now) => Math.max(0, Math.ceil((deadline - now) / 1000));
+  const merge = (paper, current, stored, changedUid) => {
+    const latest = restore(paper,stored);
+    if (!latest) return current;
+    if (latest.attempt !== current.attempt || latest.submitted) return latest;
+    return {...current, deadline:latest.deadline || current.deadline,
+      answers:changedUid ? {...latest.answers,[changedUid]:current.answers[changedUid]} : {...current.answers,...latest.answers}};
+  };
+  return {grade, restore, remaining, merge};
+})();
+</script>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  let paper, state, key, result, best = 0;
+  const types = {choice:'单选题',multi_choice:'多选题',judge:'判断题',fill:'填空题',program:'编程题'};
+  const read = k => { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } };
+  const freshState = () => ({version:paper.version, attempt:crypto.randomUUID(), answers:{}, submitted:false, deadline:null});
+  function syncView() {
+    result=null;$('result-summary').hidden=true;$('submit-paper').disabled=state.submitted;
+    $('start-timed').disabled=state.submitted||!!state.deadline||!(Number(paper.time_limit)>0);
+    $('wrong-only').checked=false;$('wrong-only').disabled=!state.submitted;
+    $('timer-label').textContent='自由练习';renderQuestions();if(state.submitted)displayResult();tick();
+  }
+  function save(changedUid, replace=false) {
+    const previous=state;
+    if(!replace)state=ExamCore.merge(paper,state,read(key),changedUid);
+    if(previous.attempt!==state.attempt||(!previous.submitted&&state.submitted)){syncView();return false;}
+    try { localStorage.setItem(key, JSON.stringify(state)); } catch { $('storage-warning').hidden = false; }
+    return true;
+  }
+  async function confirmAction(title, copy, label) {
+    const dialog = $('action-dialog'); $('dialog-title').textContent = title; $('dialog-copy').textContent = copy; $('dialog-confirm').textContent = label;
+    return new Promise(resolve => { dialog.returnValue='';dialog.addEventListener('close',()=>resolve(dialog.returnValue === 'confirm'),{once:true}); dialog.showModal(); });
+  }
+  function answered(q) { const v = state.answers[q.uid]; return Array.isArray(v) ? v.length > 0 : typeof v === 'string' && v.trim() !== ''; }
+  function updateProgress() {
+    $('answered-count').textContent = `${paper.questions.filter(answered).length} / ${paper.questions.length}`;
+    paper.questions.forEach(q=>{
+      const btn = document.querySelector(`[data-jump="${q.uid}"]`), ok = result?.results[q.uid];
+      btn.className = 'answer-dot' + (ok === true ? ' correct' : ok === false ? ' wrong' : answered(q) ? ' answered' : '');
+      const mark = ok === true ? '正确' : ok === false ? '错误' : answered(q) ? '已答' : '未答';
+      btn.title = `第 ${q.id} 题 · ${mark}`; btn.setAttribute('aria-label',btn.title); btn.innerHTML = `${esc(q.id)}<small>${mark}</small>`;
+    });
+  }
+  function renderQuestions() {
+    $('questions').innerHTML = paper.questions.map(q=>{
+      let options = q.options || [];
+      if (q.type === 'judge') options = [{key:'True',html:'正确'},{key:'False',html:'错误'}];
+      let controls;
+      if (['choice','multi_choice','judge'].includes(q.type)) controls = `<div class="question-options">${options.map(o=>`<label class="option"><input type="${q.type === 'multi_choice' ? 'checkbox' : 'radio'}" name="${q.uid}" data-answer="${q.uid}" value="${esc(o.key)}"><span class="option-key">${q.type === 'judge' ? '' : esc(o.key)}</span><span class="option-text">${o.html}</span></label>`).join('')}</div>`;
+      else controls = `<label class="draft-label" for="input-${q.uid}">${q.type === 'program' ? '代码草稿（不自动评测）' : '你的答案'}</label><textarea id="input-${q.uid}" data-answer="${q.uid}" rows="${q.type === 'program' ? 8 : 2}" spellcheck="false" aria-label="第 ${esc(q.id)} 题${q.type === 'program' ? '代码草稿' : '答案'}"></textarea>`;
+      return `<article class="question" id="${q.uid}"><header class="question-heading"><h2>第 ${esc(q.id)} 题 <span>${esc(types[q.type] || q.type)}</span></h2><span>${q.gradable ? q.score + ' 分' : '不自动评分'}</span></header>${q.section ? `<p class="question-section">${esc(q.section)}</p>` : ''}<div class="question-content">${q.html}</div>${controls}<div id="feedback-${q.uid}" class="answer-feedback" hidden></div></article>`;
+    }).join('');
+    $('answer-grid').innerHTML = paper.questions.map(q=>`<button class="answer-dot" data-jump="${q.uid}">${esc(q.id)}</button>`).join('');
+    for (const input of document.querySelectorAll('[data-answer]')) {
+      const value = state.answers[input.dataset.answer];
+      if (input.type === 'checkbox') input.checked = Array.isArray(value) && value.includes(input.value);
+      else if (input.type === 'radio') input.checked = value === input.value;
+      else input.value = typeof value === 'string' ? value : '';
+    }
+    if (window.renderMathInElement) renderMathInElement($('questions'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}],throwOnError:false,trust:false});
+    updateProgress();
+  }
+  function displayResult() {
+    result = ExamCore.grade(paper,state.answers);
+    document.querySelectorAll('[data-answer]').forEach(el=>el.disabled = true);
+    $('submit-paper').disabled = true; $('start-timed').disabled = true; $('wrong-only').disabled = false;
+    $('timer-label').textContent = '已交卷';
+    const summary = $('result-summary'); summary.hidden = false;
+    summary.innerHTML = `<div><span class="small">客观题得分</span><strong>${result.score}<small> / ${result.max}</small></strong></div><p>正确 ${result.correct} 题 · 错误或未答 ${result.wrong} 题<br><span class="muted">编程题和缺少有效参考答案的题目不计入此分数。</span></p>`;
+    paper.questions.forEach(q=>{
+      const ok = result.results[q.uid], feedback = $('feedback-'+q.uid);
+      feedback.hidden = false;
+      feedback.innerHTML = ok === null ? '<strong>本题不自动评分</strong>' : `<strong>${ok ? '回答正确' : '回答错误或未作答'}</strong><p>参考答案：${esc(q.type === 'judge' ? (q.answer === 'True' ? '正确' : '错误') : q.answer)}</p>`;
+      if (q.explanation_html) feedback.innerHTML += '<div class="question-content">'+q.explanation_html+'</div>';
+      $(q.uid).classList.toggle('correct',ok === true); $(q.uid).classList.toggle('wrong',ok === false);
+    });
+    if (window.renderMathInElement) renderMathInElement($('questions'),{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false,trust:false});
+    updateProgress();
+  }
+  function submit() {
+    if (state.submitted) return;
+    state.submitted = true; if(!save())return; displayResult();
+    best = Math.max(best,Number(read(key+':best'))||0,result.score);
+    try { localStorage.setItem(key+':best', JSON.stringify(best)); } catch { $('storage-warning').hidden = false; }
+    $('best-score').textContent = `最高客观题得分 ${best} / ${result.max}`;
+    $('result-summary').focus(); $('result-summary').scrollIntoView({block:'start'});
+  }
+  function tick() {
+    if (!state || !state.deadline || state.submitted) return;
+    const seconds = ExamCore.remaining(state.deadline,Date.now());
+    $('timer-label').textContent = `剩余 ${String(Math.floor(seconds/60)).padStart(2,'0')}:${String(seconds%60).padStart(2,'0')}`;
+    $('timer-label').classList.toggle('timer-warning',seconds <= 300);
+    if (!seconds) submit();
+  }
+  $('questions').addEventListener('input',e=>{
+    const input = e.target.closest('[data-answer]'); if (!input || state.submitted) return;
+    if (state.deadline && ExamCore.remaining(state.deadline,Date.now()) === 0) { submit(); return; }
+    state.answers[input.dataset.answer] = input.type === 'checkbox' ? [...document.querySelectorAll(`[data-answer="${input.dataset.answer}"]:checked`)].map(x=>x.value) : input.value;
+    if(!save(input.dataset.answer))return; updateProgress();
+  });
+  $('answer-grid').addEventListener('click',e=>{ const b = e.target.closest('[data-jump]'); if (!b) return; const target = $(b.dataset.jump); if(target.hidden){$('wrong-only').checked=false;filterWrong();} target.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}); });
+  const filterWrong = () => paper.questions.forEach(q=>$(q.uid).hidden = $('wrong-only').checked && result?.results[q.uid] !== false);
+  $('wrong-only').addEventListener('change',filterWrong);
+  $('submit-paper').addEventListener('click', async()=>{
+    const missing = paper.questions.filter(q=>q.gradable&&!answered(q)).length;
+    if(await confirmAction('交卷并评分',`还有 ${missing} 道可评分题未作答。交卷后可以查看参考答案，并通过重新练习再次作答。`,'确认交卷')) submit();
+  });
+  $('start-timed').addEventListener('click', async()=>{
+    if(!await confirmAction('开始限时练习',`时长 ${paper.time_limit} 分钟，当前作答会保留；计时开始后刷新页面也不会重置，到时自动交卷。`,'开始计时')) return;
+    if (state.submitted || state.deadline) return;
+    state.deadline = Date.now()+Number(paper.time_limit)*60000;save();$('start-timed').disabled=true;tick();
+  });
+  $('reset-paper').addEventListener('click',async()=>{
+    if(!await confirmAction('重新练习','将清除本卷当前答案、草稿与倒计时，最高分保留。','清除并重新练习'))return;
+    state=freshState();result=null;save(undefined,true);
+    $('result-summary').hidden=true;$('submit-paper').disabled=false;$('start-timed').disabled=!(Number(paper.time_limit)>0);$('wrong-only').checked=false;$('wrong-only').disabled=true;$('timer-label').textContent='自由练习';$('timer-label').classList.remove('timer-warning');renderQuestions();
+  });
+  async function load() {
+    try {
+      const id = new URLSearchParams(location.search).get('paper');
+      const response = await fetch('catalog.json');if(!response.ok)throw Error('目录暂时无法读取');
+      const catalog = await response.json(), entry=catalog.find(x=>x.id===id);
+      if(!entry)throw Error('没有找到这份试卷，请返回目录选择');
+      const r=await fetch(entry.path);if(!r.ok)throw Error('试卷暂时无法读取');paper=await r.json();
+      key=`showball-exam:v1:${paper.id}:${paper.version}`;
+      state=ExamCore.restore(paper,read(key))||freshState();save();
+      best=Number(read(key+':best'))||0;
+      $('paper-title').textContent=paper.title;document.title=paper.title+' · Showball OI';$('crumb-title').textContent=paper.title;
+      $('paper-category').textContent=[paper.category,paper.level?`${paper.level}${/^\d+$/.test(paper.level)?'级':''}`:'',paper.date].filter(Boolean).join(' · ');
+      $('paper-meta').textContent=`共 ${paper.questions.length} 题 · ${paper.time_limit||'未设置'} 分钟 · 原卷满分 ${paper.total_score||'未标注'} · 可自动评分 ${paper.objective_score} 分`;
+      $('best-score').textContent=`最高客观题得分 ${best} / ${paper.objective_score}`;
+      if(paper.warnings.length){$('data-warning').hidden=false;$('data-warning-title').textContent=`此卷有 ${paper.warnings.length} 项原始数据提示，点击查看`;$('data-warning-list').innerHTML=paper.warnings.map(w=>`<li>${esc(w.replace(/^q(\d+):/,(_,n)=>'第 '+n+' 道题：'))}</li>`).join('');}
+      $('start-timed').disabled=!!state.deadline||!(Number(paper.time_limit)>0);
+      $('load-state').hidden=true;$('practice').hidden=false;
+      renderQuestions();if(state.submitted)displayResult();tick();setInterval(tick,1000);
+      try { const returned=sessionStorage.getItem('showball-exams-return');if(returned&&returned.startsWith('/exams.html'))$('back-catalog').href=returned; }catch{}
+    }catch(error){$('load-state').innerHTML=`<p>${esc(error.message)}</p><button class="btn" id="retry-load">重新加载</button> <a href="../exams.html">返回试卷目录</a>`;$('retry-load').onclick=load;}
+  }
+  window.addEventListener('storage',event=>{
+    if(!key)return;
+    if(event.key===key){const next=ExamCore.restore(paper,read(key));if(next){state=next;syncView();}}
+    if(event.key===key+':best'){best=Math.max(best,Number(read(key+':best'))||0);$('best-score').textContent=`最高客观题得分 ${best} / ${paper.objective_score}`;}
+  });
+  load();
+})();
+</script>
+</body></html>

@@ -1,0 +1,651 @@
+{
+  "title": "2026年3月 GESP C++ 5级",
+  "category": "GESP",
+  "level": "5",
+  "date": "2026-03",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2026年3月 GESP C++ 5级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "在单链表中，若已知任意结点的指针，则可以在 $O(1)$ 时间内删除该结点。",
+          "html": "<p>在单链表中，若已知任意结点的指针，则可以在 $O(1)$ 时间内删除该结点。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "循环链表中一定不存在空指针。",
+          "html": "<p>循环链表中一定不存在空指针。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "在循环双链表中，尾结点的 `next` 指针一定为 `nullptr`。",
+          "html": "<p>在循环双链表中，尾结点的 <code>next</code> 指针一定为 <code>nullptr</code>。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "在带头结点的循环单链表中，判定链表是否为空只需判断头结点的 `next` 是否指向自身。",
+          "html": "<p>在带头结点的循环单链表中，判定链表是否为空只需判断头结点的 <code>next</code> 是否指向自身。</p>\n"
+        }
+      ],
+      "content": "关于单链表、双链表和循环链表，下列说法正确的是（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>关于单链表、双链表和循环链表，下列说法正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\ns -> next = p;\np -> prev = s;\np -> next = s;\ns -> prev = p;\n```",
+          "html": "<pre><code class=\"language-cpp\">s -&gt; next = p;\np -&gt; prev = s;\np -&gt; next = s;\ns -&gt; prev = p;\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\ns -> prev = p;\ns -> next = p -> next;\np -> next -> prev = s;\np -> next = s;\n```",
+          "html": "<pre><code class=\"language-cpp\">s -&gt; prev = p;\ns -&gt; next = p -&gt; next;\np -&gt; next -&gt; prev = s;\np -&gt; next = s;\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\ns -> next = p;\ns -> prev = p->prev;\np -> prev -> next = s;\np -> prev = s;\n```",
+          "html": "<pre><code class=\"language-cpp\">s -&gt; next = p;\ns -&gt; prev = p-&gt;prev;\np -&gt; prev -&gt; next = s;\np -&gt; prev = s;\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\ns -> next = p;\ns -> prev = nullptr;\np -> prev = s;\n```",
+          "html": "<pre><code class=\"language-cpp\">s -&gt; next = p;\ns -&gt; prev = nullptr;\np -&gt; prev = s;\n</code></pre>\n"
+        }
+      ],
+      "content": "双向循环链表中要在结点 $p$ 之前插入新结点 $s$（均非空），以下指针操作正确的是（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>双向循环链表中要在结点 $p$ 之前插入新结点 $s$（均非空），以下指针操作正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`cur = cur->next;`",
+          "html": "<p><code>cur = cur-&gt;next;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`cur->next = del->next;`",
+          "html": "<p><code>cur-&gt;next = del-&gt;next;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`del->next = cur->next;`",
+          "html": "<p><code>del-&gt;next = cur-&gt;next;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`cur->next = nullptr;`",
+          "html": "<p><code>cur-&gt;next = nullptr;</code></p>\n"
+        }
+      ],
+      "content": "下面函数用“哑结点”统一处理删除单向链表中的头结点与中间结点。横线处应填（ ）。\n\n```cpp\nstruct Node{\n    int val;\n    Node* next;\n    Node(int v):val(v),next(nullptr){}\n};\nNode* eraseAll(Node* head, int x){\n    Node dummy(0);\n    dummy.next = head;\n    Node* cur = &dummy;\n    while(cur->next){\n        if(cur->next->val == x){\n            Node* del = cur->next;\n            ______________________\n            delete del;\n        }else cur = cur->next;\n    }\n    return dummy.next;\n}\n```",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下面函数用“哑结点”统一处理删除单向链表中的头结点与中间结点。横线处应填（ ）。</p>\n<pre><code class=\"language-cpp\">struct Node{\n    int val;\n    Node* next;\n    Node(int v):val(v),next(nullptr){}\n};\nNode* eraseAll(Node* head, int x){\n    Node dummy(0);\n    dummy.next = head;\n    Node* cur = &amp;dummy;\n    while(cur-&gt;next){\n        if(cur-&gt;next-&gt;val == x){\n            Node* del = cur-&gt;next;\n            ______________________\n            delete del;\n        }else cur = cur-&gt;next;\n    }\n    return dummy.next;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`gcd(48, 18)` -> `gcd(18, 12)` -> `gcd(12, 6)` -> `gcd(6, 0)`",
+          "html": "<p><code>gcd(48, 18)</code> -&gt; <code>gcd(18, 12)</code> -&gt; <code>gcd(12, 6)</code> -&gt; <code>gcd(6, 0)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`gcd(48, 18)` -> `gcd(30, 18)` -> `gcd(12, 18)`",
+          "html": "<p><code>gcd(48, 18)</code> -&gt; <code>gcd(30, 18)</code> -&gt; <code>gcd(12, 18)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`gcd(48, 18)` -> `gcd(18, 30)` -> `gcd(30, 6)`",
+          "html": "<p><code>gcd(48, 18)</code> -&gt; <code>gcd(18, 30)</code> -&gt; <code>gcd(30, 6)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`gcd(48, 18)` -> `gcd(12, 18)` -> `gcd(6, 12)`",
+          "html": "<p><code>gcd(48, 18)</code> -&gt; <code>gcd(12, 18)</code> -&gt; <code>gcd(6, 12)</code></p>\n"
+        }
+      ],
+      "content": "对如下代码实现的欧几里得算法（辗转相除法），执行 `gcd(48, 18)` 得到的调用序列为（ ）。\n\n```cpp\nint gcd(int a, int b) {\n    return b == 0 ? a : gcd(b, a % b);\n}\n```",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>对如下代码实现的欧几里得算法（辗转相除法），执行 <code>gcd(48, 18)</code> 得到的调用序列为（ ）。</p>\n<pre><code class=\"language-cpp\">int gcd(int a, int b) {\n    return b == 0 ? a : gcd(b, a % b);\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`j <= n`",
+          "html": "<p><code>j &lt;= n</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`j < sqrt(n)`",
+          "html": "<p><code>j &lt; sqrt(n)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`j < primes.size()`",
+          "html": "<p><code>j &lt; primes.size()</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`j < i`",
+          "html": "<p><code>j &lt; i</code></p>\n"
+        }
+      ],
+      "content": "下面代码实现了欧拉（线性）筛，横线处应填写（ ）。\n\n```cpp\nvector<int> euler_sieve(int n) {\n    vector<bool> is_composite(n + 1, false);\n    vector<int> primes;\n    for (int i = 2; i <= n; i++) {\n        if (!is_composite[i])\n            primes.push_back(i);\n        for (int j = 0; __________________________ && (long long)i * primes[j] <= n; j++) {\n            is_composite[i * primes[j]] = true;\n            if (i % primes[j] == 0)\n                break;\n        }\n    }\n    return primes;\n}\n```",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>下面代码实现了欧拉（线性）筛，横线处应填写（ ）。</p>\n<pre><code class=\"language-cpp\">vector&lt;int&gt; euler_sieve(int n) {\n    vector&lt;bool&gt; is_composite(n + 1, false);\n    vector&lt;int&gt; primes;\n    for (int i = 2; i &lt;= n; i++) {\n        if (!is_composite[i])\n            primes.push_back(i);\n        for (int j = 0; __________________________ &amp;&amp; (long long)i * primes[j] &lt;= n; j++) {\n            is_composite[i * primes[j]] = true;\n            if (i % primes[j] == 0)\n                break;\n        }\n    }\n    return primes;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "因为 $2 \\times i$ 一定不是合数",
+          "html": "<p>因为 $2 \\times i$ 一定不是合数</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$i \\times i$ 一定是质数",
+          "html": "<p>$i \\times i$ 一定是质数</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "小于 $i \\times i$ 的 $i$ 的倍数已被更小质因子筛过",
+          "html": "<p>小于 $i \\times i$ 的 $i$ 的倍数已被更小质因子筛过</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "这样可以把时间复杂度降为",
+          "html": "<p>这样可以把时间复杂度降为</p>\n"
+        }
+      ],
+      "content": "埃氏筛中将内层循环从 $j = i \\times i$ 开始而不是 $j = 2 \\times i$ 的主要原因是（ ）。\n\n```cpp\nvector<int> eratosthenes_sieve(int n) {\n    vector<bool> is_composite(n + 1, false);\n    vector<int> primes;\n    for (int i = 2; i <= n; i++) {\n        if (is_composite[i]) continue;\n        primes.push_back(i);\n        for (long long j = (long long)i * i; j <= n; j += i)\n            is_composite[j] = true;\n    }\n    return primes;\n}\n```",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>埃氏筛中将内层循环从 $j = i \\times i$ 开始而不是 $j = 2 \\times i$ 的主要原因是（ ）。</p>\n<pre><code class=\"language-cpp\">vector&lt;int&gt; eratosthenes_sieve(int n) {\n    vector&lt;bool&gt; is_composite(n + 1, false);\n    vector&lt;int&gt; primes;\n    for (int i = 2; i &lt;= n; i++) {\n        if (is_composite[i]) continue;\n        primes.push_back(i);\n        for (long long j = (long long)i * i; j &lt;= n; j += i)\n            is_composite[j] = true;\n    }\n    return primes;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        }
+      ],
+      "content": "下面程序的运行结果为（ ）。\n\n```cpp\nbool check(int n, int a[], int k, int dist) {\n    int cnt = 1;\n    int last = a[0];\n    for (int i = 1; i < n; i++) {\n        if (a[i] - last >= dist) {\n            cnt++;\n            last = a[i];\n        }\n    }\n    return cnt >= k;\n}\nint solve(int n, int a[], int k) {\n    std::sort(a, a + n);\n    int l = 0;\n    int r = a[n - 1] - a[0];\n    while (l < r) {\n        int mid = (l + r + 1) / 2;\n        if (check(n, a, k, mid))\n            l = mid;\n        else\n            r = mid - 1;\n    }\n    return l;\n}\nint main() {\n    int a[] = {1, 2, 8, 4, 9};\n    int n = 5;\n    int k = 3;\n    std::cout << solve(n, a, k) << std::endl;\n    return 0;\n}\n```",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>下面程序的运行结果为（ ）。</p>\n<pre><code class=\"language-cpp\">bool check(int n, int a[], int k, int dist) {\n    int cnt = 1;\n    int last = a[0];\n    for (int i = 1; i &lt; n; i++) {\n        if (a[i] - last &gt;= dist) {\n            cnt++;\n            last = a[i];\n        }\n    }\n    return cnt &gt;= k;\n}\nint solve(int n, int a[], int k) {\n    std::sort(a, a + n);\n    int l = 0;\n    int r = a[n - 1] - a[0];\n    while (l &lt; r) {\n        int mid = (l + r + 1) / 2;\n        if (check(n, a, k, mid))\n            l = mid;\n        else\n            r = mid - 1;\n    }\n    return l;\n}\nint main() {\n    int a[] = {1, 2, 8, 4, 9};\n    int n = 5;\n    int k = 3;\n    std::cout &lt;&lt; solve(n, a, k) &lt;&lt; std::endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`r = mid;`",
+          "html": "<p><code>r = mid;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`r = mid - 1;`",
+          "html": "<p><code>r = mid - 1;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`l = mid;`",
+          "html": "<p><code>l = mid;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`l = mid + 1;`",
+          "html": "<p><code>l = mid + 1;</code></p>\n"
+        }
+      ],
+      "content": "在升序数组中查找第一个大于等于 $x$ 的位置，下面循环中横线应填（ ）。\n\n```cpp\nint lowerBound(const vector<int>& a, int x){\n    int l=0, r=a.size();\n    while(l<r){\n        int mid = l + (r - l)/2;\n        if(a[mid] >= x) _____________;\n        else l = mid + 1;\n    }\n    return l;\n}\n```",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>在升序数组中查找第一个大于等于 $x$ 的位置，下面循环中横线应填（ ）。</p>\n<pre><code class=\"language-cpp\">int lowerBound(const vector&lt;int&gt;&amp; a, int x){\n    int l=0, r=a.size();\n    while(l&lt;r){\n        int mid = l + (r - l)/2;\n        if(a[mid] &gt;= x) _____________;\n        else l = mid + 1;\n    }\n    return l;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "递归调用层次过深时，可能会耗尽栈空间导致栈溢出",
+          "html": "<p>递归调用层次过深时，可能会耗尽栈空间导致栈溢出</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "尾递归函数可以通过编译器优化来避免栈溢出",
+          "html": "<p>尾递归函数可以通过编译器优化来避免栈溢出</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "所有递归函数都可以通过循环结构来改写，从而避免栈溢出",
+          "html": "<p>所有递归函数都可以通过循环结构来改写，从而避免栈溢出</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "栈溢出发生时，程序会抛出异常并可以继续执行后续代码",
+          "html": "<p>栈溢出发生时，程序会抛出异常并可以继续执行后续代码</p>\n"
+        }
+      ],
+      "content": "关于递归函数调用，下列说法错误的是（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>关于递归函数调用，下列说法错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "```cpp\nl = mid + 1;\nr = mid - 1;\n```",
+          "html": "<pre><code class=\"language-cpp\">l = mid + 1;\nr = mid - 1;\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "```cpp\nl = mid - 1;\nr = mid + 1;\n```",
+          "html": "<pre><code class=\"language-cpp\">l = mid - 1;\nr = mid + 1;\n</code></pre>\n"
+        },
+        {
+          "key": "C",
+          "text": "```cpp\nl = mid + 1;\nr = mid;\n```",
+          "html": "<pre><code class=\"language-cpp\">l = mid + 1;\nr = mid;\n</code></pre>\n"
+        },
+        {
+          "key": "D",
+          "text": "```cpp\nl = mid;\nr = mid + 1;\n```",
+          "html": "<pre><code class=\"language-cpp\">l = mid;\nr = mid + 1;\n</code></pre>\n"
+        }
+      ],
+      "content": "给定 $n$ 根木头，第 $i$ 根长度为 $a[i]$。要切成不少于 $m$ 段等长木段，求最大可能长度，则横线上应填写（ ）。\n\n```cpp\nconst int MAXN = 100005;\nlong long a[MAXN];\nint n, m;\nbool check(long long x){\n    long long cnt = 0;\n    for(int i = 1; i <= n; i++){\n        if(x == 0) return true;\n        cnt += a[i] / x;\n        if(cnt >= m) return true;\n    }\n    return false;\n}\nint main(){\n    cin >> n >> m;\n    long long mx = 0;\n    for(int i = 1; i <= n; i++){\n        cin >> a[i];\n        mx = max(mx, a[i]);\n    }\n    long long l = 1, r = mx;\n    long long ans = 0;\n    while(l <= r){\n        long long mid = l + (r - l) / 2;\n        if(check(mid)){\n            ans = mid;\n            ______________________\n        }else{\n            ______________________\n        }\n    }\n    cout << ans << endl;\n    return 0;\n}\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>给定 $n$ 根木头，第 $i$ 根长度为 $a[i]$。要切成不少于 $m$ 段等长木段，求最大可能长度，则横线上应填写（ ）。</p>\n<pre><code class=\"language-cpp\">const int MAXN = 100005;\nlong long a[MAXN];\nint n, m;\nbool check(long long x){\n    long long cnt = 0;\n    for(int i = 1; i &lt;= n; i++){\n        if(x == 0) return true;\n        cnt += a[i] / x;\n        if(cnt &gt;= m) return true;\n    }\n    return false;\n}\nint main(){\n    cin &gt;&gt; n &gt;&gt; m;\n    long long mx = 0;\n    for(int i = 1; i &lt;= n; i++){\n        cin &gt;&gt; a[i];\n        mx = max(mx, a[i]);\n    }\n    long long l = 1, r = mx;\n    long long ans = 0;\n    while(l &lt;= r){\n        long long mid = l + (r - l) / 2;\n        if(check(mid)){\n            ans = mid;\n            ______________________\n        }else{\n            ______________________\n        }\n    }\n    cout &lt;&lt; ans &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面代码用分治求“最大连续子段和”，其时间复杂度为（ ）。\n\n```cpp\nint solve(vector<int>& a, int l, int r){\n    if(l == r) return a[l];\n    int mid = l + (r - l) / 2;\n    int left = solve(a, l, mid);\n    int right = solve(a, mid + 1, r);\n    int sum = 0, lmax = INT_MIN;\n    for(int i = mid; i >= l; i--){\n        sum += a[i];\n        lmax = max(lmax, sum);\n    }\n    sum = 0;\n    int rmax = INT_MIN;\n    for(int i = mid + 1; i <= r; i++){\n        sum += a[i];\n        rmax = max(rmax, sum);\n    }\n    return max({left, right, lmax + rmax});\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面代码用分治求“最大连续子段和”，其时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">int solve(vector&lt;int&gt;&amp; a, int l, int r){\n    if(l == r) return a[l];\n    int mid = l + (r - l) / 2;\n    int left = solve(a, l, mid);\n    int right = solve(a, mid + 1, r);\n    int sum = 0, lmax = INT_MIN;\n    for(int i = mid; i &gt;= l; i--){\n        sum += a[i];\n        lmax = max(lmax, sum);\n    }\n    sum = 0;\n    int rmax = INT_MIN;\n    for(int i = mid + 1; i &lt;= r; i++){\n        sum += a[i];\n        rmax = max(rmax, sum);\n    }\n    return max({left, right, lmax + rmax});\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`A[i] >= B[j]`",
+          "html": "<p><code>A[i] &gt;= B[j]</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`A[i] <= B[j]`",
+          "html": "<p><code>A[i] &lt;= B[j]</code></p>\n"
+        },
+        {
+          "key": "A",
+          "text": "size()) {\n\n```cpp\nresult.push_back(A[i++]);\n}\nwhile (j <\n```\n",
+          "html": "<p>size()) {</p>\n<pre><code class=\"language-cpp\">result.push_back(A[i++]);\n}\nwhile (j &lt;\n</code></pre>\n"
+        },
+        {
+          "key": "B",
+          "text": "size()) {\n\n```cpp\nresult.push_back(B[j++]);\n}\n```\n",
+          "html": "<p>size()) {</p>\n<pre><code class=\"language-cpp\">result.push_back(B[j++]);\n}\n</code></pre>\n"
+        },
+        {
+          "key": "A",
+          "text": "A[i] >= B[j]",
+          "html": "<p>A[i] &gt;= B[j]</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "A[i] <= B[j]",
+          "html": "<p>A[i] &lt;= B[j]</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`i >= j`",
+          "html": "<p><code>i &gt;= j</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`i <= j`",
+          "html": "<p><code>i &lt;= j</code></p>\n"
+        }
+      ],
+      "content": "游戏大赛决赛，两组选手分别按得分从小到大排好队，现在要把他们合并成一个有序排行榜。\nA 组：$A = \\{12, 35, 67, 89\\}$，B 组：$B = \\{20, 45, 55, 78\\}$，下面是归并合并函数的核心循环，横线处应填入（ ）。\n\n```cpp\nint i = 0, j = 0;\nvector<int> result;\nwhile (i <\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>游戏大赛决赛，两组选手分别按得分从小到大排好队，现在要把他们合并成一个有序排行榜。<br />\nA 组：$A = \\{12, 35, 67, 89\\}$，B 组：$B = \\{20, 45, 55, 78\\}$，下面是归并合并函数的核心循环，横线处应填入（ ）。</p>\n<pre><code class=\"language-cpp\">int i = 0, j = 0;\nvector&lt;int&gt; result;\nwhile (i &lt;\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "有 $n$ 位同学的成绩已经从小到大排好序，现在对它执行下面这段以第一个元素为 pivot 的快速排序，请问此次排序的时间复杂度是（ ）。\n\n```cpp\nvoid quicksort(vector<int>& a, int l, int r) {\n    if (l >= r) return;\n    int pivot = a[l];\n    int i = l, j = r;\n    while (i < j) {\n        while (i < j && a[j] >= pivot) j--;\n        while (i < j && a[i] <= pivot) i++;\n        if (i < j) swap(a[i], a[j]);\n    }\n    swap(a[l], a[i]);\n    quicksort(a, l, i - 1);\n    quicksort(a, i + 1, r);\n}\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>有 $n$ 位同学的成绩已经从小到大排好序，现在对它执行下面这段以第一个元素为 pivot 的快速排序，请问此次排序的时间复杂度是（ ）。</p>\n<pre><code class=\"language-cpp\">void quicksort(vector&lt;int&gt;&amp; a, int l, int r) {\n    if (l &gt;= r) return;\n    int pivot = a[l];\n    int i = l, j = r;\n    while (i &lt; j) {\n        while (i &lt; j &amp;&amp; a[j] &gt;= pivot) j--;\n        while (i &lt; j &amp;&amp; a[i] &lt;= pivot) i++;\n        if (i &lt; j) swap(a[i], a[j]);\n    }\n    swap(a[l], a[i]);\n    quicksort(a, l, i - 1);\n    quicksort(a, i + 1, r);\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "冒泡排序和插入排序都是稳定的排序算法",
+          "html": "<p>冒泡排序和插入排序都是稳定的排序算法</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "快速排序和归并排序都是不稳定的排序算法",
+          "html": "<p>快速排序和归并排序都是不稳定的排序算法</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "冒泡排序和插入排序最好时间复杂度均为 $O(n)$",
+          "html": "<p>冒泡排序和插入排序最好时间复杂度均为 $O(n)$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "归并排序在最好、最坏和平均三种情况的时间复杂度均为 $O(n \\log n)$",
+          "html": "<p>归并排序在最好、最坏和平均三种情况的时间复杂度均为 $O(n \\log n)$</p>\n"
+        }
+      ],
+      "content": "下面关于排序算法的描述中，不正确的是( )。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>下面关于排序算法的描述中，不正确的是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`rem /= b;`",
+          "html": "<p><code>rem /= b;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`rem %= b;`",
+          "html": "<p><code>rem %= b;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`rem = b;`",
+          "html": "<p><code>rem = b;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`rem = q;`",
+          "html": "<p><code>rem = q;</code></p>\n"
+        }
+      ],
+      "content": "下面代码实现两个整数除法，其中被除数为一个“大整数”，用字符串表示，除数是一个小整数，用 `int` 表示，则横线处应该填写（ ）。\n\n```cpp\nint main(){\n    string s;\n    int b;\n    cin >> s >> b;\n    vector<int> a;\n    for(char c : s){\n        a.push_back(c - '0');\n    }\n    vector<int> c;\n    long long rem = 0;\n    for(int i = 0; i < a.size(); i++){\n        rem = rem * 10 + a[i];\n        int q = rem / b;\n        c.push_back(q);\n        ______________________\n    }\n    int pos = 0;\n    while(pos < c.size() - 1 && c[pos] == 0) pos++;\n    for(int i = pos; i < c.size(); i++){\n        cout << c[i];\n    }\n    cout << endl;\n    cout << rem << endl;\n    return 0;\n}\n```",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>下面代码实现两个整数除法，其中被除数为一个“大整数”，用字符串表示，除数是一个小整数，用 <code>int</code> 表示，则横线处应该填写（ ）。</p>\n<pre><code class=\"language-cpp\">int main(){\n    string s;\n    int b;\n    cin &gt;&gt; s &gt;&gt; b;\n    vector&lt;int&gt; a;\n    for(char c : s){\n        a.push_back(c - '0');\n    }\n    vector&lt;int&gt; c;\n    long long rem = 0;\n    for(int i = 0; i &lt; a.size(); i++){\n        rem = rem * 10 + a[i];\n        int q = rem / b;\n        c.push_back(q);\n        ______________________\n    }\n    int pos = 0;\n    while(pos &lt; c.size() - 1 &amp;&amp; c[pos] == 0) pos++;\n    for(int i = pos; i &lt; c.size(); i++){\n        cout &lt;&lt; c[i];\n    }\n    cout &lt;&lt; endl;\n    cout &lt;&lt; rem &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "有一个存储了 $n$ 个整数的线性表，分别用数组和单链表两种方式实现。在已知下标（或结点指针）的前提下，数组的随机访问是 $O(1)$，而在链表中已知某结点的指针时，在该结点之后插入一个新结点的操作也是 $O(1)$。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>有一个存储了 $n$ 个整数的线性表，分别用数组和单链表两种方式实现。在已知下标（或结点指针）的前提下，数组的随机访问是 $O(1)$，而在链表中已知某结点的指针时，在该结点之后插入一个新结点的操作也是 $O(1)$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "若数组 $a$ 已按升序排列，则下面代码可以正确实现 “在 $a$ 中查找第一个大于等于 $x$ 的元素的位置”。\n\n```cpp\nint lowerBound(vector<int>& a, int x) {\n    int l = 0, r = a.size();\n    while (l < r) {\n        int mid = (l + r) / 2;\n        if (a[mid] >= x) r = mid;\n        else l = mid + 1;\n    }\n    return l;\n}\n```",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>若数组 $a$ 已按升序排列，则下面代码可以正确实现 “在 $a$ 中查找第一个大于等于 $x$ 的元素的位置”。</p>\n<pre><code class=\"language-cpp\">int lowerBound(vector&lt;int&gt;&amp; a, int x) {\n    int l = 0, r = a.size();\n    while (l &lt; r) {\n        int mid = (l + r) / 2;\n        if (a[mid] &gt;= x) r = mid;\n        else l = mid + 1;\n    }\n    return l;\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "快速排序只要每次都选取中间元素作为枢轴，就一定是稳定排序。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>快速排序只要每次都选取中间元素作为枢轴，就一定是稳定排序。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "若某算法满足递推式： ，则其时间复杂度为 。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>若某算法满足递推式： ，则其时间复杂度为 。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在一个数组中，如果两个元素 $a[i]$ 和 $a[j]$ 满足 $i < j$ 且 $a[i] > a[j]$，则 $a[i]$ 和 $a[j]$ 是一个逆序对。\n下面代码可以正确统计数组 $a$ 区间 $[l,r]$ 内的逆序对总数。\n\n```cpp\nlong long cnt=0;\nvoid merge_count(vector<int>& a, int l, int m, int r){\n    int i = l, j = m + 1;\n    while(i <= m && j <= r) {\n        if(a[i] <= a[j]) i++;\n        else {\n            cnt += (m - i + 1);\n            j++;\n        }\n    }\n}\n```",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>在一个数组中，如果两个元素 $a[i]$ 和 $a[j]$ 满足 $i &lt; j$ 且 $a[i] &gt; a[j]$，则 $a[i]$ 和 $a[j]$ 是一个逆序对。<br />\n下面代码可以正确统计数组 $a$ 区间 $[l,r]$ 内的逆序对总数。</p>\n<pre><code class=\"language-cpp\">long long cnt=0;\nvoid merge_count(vector&lt;int&gt;&amp; a, int l, int m, int r){\n    int i = l, j = m + 1;\n    while(i &lt;= m &amp;&amp; j &lt;= r) {\n        if(a[i] &lt;= a[j]) i++;\n        else {\n            cnt += (m - i + 1);\n            j++;\n        }\n    }\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "根据唯一分解定理，如果大于 $1$ 的整数 $n$ 不能被任何不超其平方根的质数整除，那么 $n$ 必定是质数。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>根据唯一分解定理，如果大于 $1$ 的整数 $n$ 不能被任何不超其平方根的质数整除，那么 $n$ 必定是质数。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "True",
+      "content": "假设数组的值域范围是 $[0, 10^9]$，以下程序的时间复杂度是 $O(n \\log n)$。\n\n```cpp\nbool check(int n, int a[], int k, int dist) {\n    int cnt = 1;\n    int last = a[0];\n    for (int i = 1; i < n; i++) {\n        if (a[i] - last >= dist) {\n            cnt++;\n            last = a[i];\n        }\n    }\n    return cnt >= k;\n}\nint solve(int n, int a[], int k) {\n    std::sort(a, a + n);\n    int l = 0;\n    int r = a[n - 1] - a[0];\n    while (l < r) {\n        int mid = (l + r + 1) / 2;\n        if (check(n, a, k, mid))\n            l = mid;\n        else\n            r = mid - 1;\n    }\n    return l;\n}\nint main() {\n    int a[] = {1, 2, 8, 4, 9};\n    int n = 5;\n    int k = 3;\n    std::cout << solve(n, a, k) << std::endl;\n    return 0;\n}\n```",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>假设数组的值域范围是 $[0, 10^9]$，以下程序的时间复杂度是 $O(n \\log n)$。</p>\n<pre><code class=\"language-cpp\">bool check(int n, int a[], int k, int dist) {\n    int cnt = 1;\n    int last = a[0];\n    for (int i = 1; i &lt; n; i++) {\n        if (a[i] - last &gt;= dist) {\n            cnt++;\n            last = a[i];\n        }\n    }\n    return cnt &gt;= k;\n}\nint solve(int n, int a[], int k) {\n    std::sort(a, a + n);\n    int l = 0;\n    int r = a[n - 1] - a[0];\n    while (l &lt; r) {\n        int mid = (l + r + 1) / 2;\n        if (check(n, a, k, mid))\n            l = mid;\n        else\n            r = mid - 1;\n    }\n    return l;\n}\nint main() {\n    int a[] = {1, 2, 8, 4, 9};\n    int n = 5;\n    int k = 3;\n    std::cout &lt;&lt; solve(n, a, k) &lt;&lt; std::endl;\n    return 0;\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "若一个问题满足最优子结构性质，则一定可以用贪心算法得到最优解。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>若一个问题满足最优子结构性质，则一定可以用贪心算法得到最优解。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "线性筛相比埃氏筛的核心改进在于：埃氏筛中一个合数可能被多个质数重复标记，线性筛通过“每个合数只被其最大质因子筛去”的策略，保证每个合数恰好被标记一次，从而实现 $O(n)$ 的时间复杂度。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>线性筛相比埃氏筛的核心改进在于：埃氏筛中一个合数可能被多个质数重复标记，线性筛通过“每个合数只被其最大质因子筛去”的策略，保证每个合数恰好被标记一次，从而实现 $O(n)$ 的时间复杂度。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "任何递归程序都可以改写为等价的非递归程序，但改写后的非递归程序一定需要显式地使用栈来模拟递归调用过程。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>任何递归程序都可以改写为等价的非递归程序，但改写后的非递归程序一定需要显式地使用栈来模拟递归调用过程。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：有限不循环小数**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n\n若 $\\frac{1}{a}$ 可化为一个有限的，不循环的小数，则称 $a$ 为**终止数**。\n\n请你求出在 $L$ 到 $R$ 中终止数的数量。\n\n\n**输入格式**\n\n\n输入一行，包含两个整数 $L,R$。\n\n**输出格式**\n\n\n输出一行，包含一个整数，表示 $L$ 到 $R$ 中终止数的数量。\n\n**样例输入 #1**\n```\n2 11\n```\n\n**样例输出 #1**\n```\n5\n```\n\n**说明/提示**\n\n\n### 样例解释\n\n在 $[2,11]$ 终止数有 $2$、$4$、$5$、$8$、$10$。\n\n### 数据范围\n\n\n保证 $1 \\le L \\le R \\le 10^6$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：有限不循环小数</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>若 $\\frac{1}{a}$ 可化为一个有限的，不循环的小数，则称 $a$ 为<strong>终止数</strong>。</p>\n<p>请你求出在 $L$ 到 $R$ 中终止数的数量。</p>\n<p><strong>输入格式</strong></p>\n<p>输入一行，包含两个整数 $L,R$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，包含一个整数，表示 $L$ 到 $R$ 中终止数的数量。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>2 11\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>5\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<h3>样例解释</h3>\n<p>在 $[2,11]$ 终止数有 $2$、$4$、$5$、$8$、$10$。</p>\n<h3>数据范围</h3>\n<p>保证 $1 \\le L \\le R \\le 10^6$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：找数**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n\n给定一个包含 $n$ 个互不相同的正整数的数组 $A$ 与一个包含 $m$ 个互不相同的正整数的数组 $B$，请你帮忙计算有多少个数在数组 $A$ 与数组 $B$ 中均出现。\n\n\n**输入格式**\n\n\n第一行包含两个整数 $n,m$。\n\n第二行包含 $n$ 个正整数 $a_1,a_2,\\cdots,a_n$ 表示数组 $A$。\n\n第三行包含 $m$ 个正整数 $b_1,b_2,\\cdots,b_m$ 表示数组 $B$。\n\n**输出格式**\n\n\n输出一个整数，表示在数组 $A$ 与数组 $B$ 中均出现的数的个数。\n\n**样例输入 #1**\n```\n3 5\n4 2 3\n3 1 5 4 6\n```\n\n**样例输出 #1**\n```\n2\n```\n\n**说明/提示**\n\n\n### 样例解释\n\n\n样例 1 中，$4$、$3$ 在数组 $A$ 与 $B$ 中均出现。\n\n\n### 数据范围\n\n对于 $40\\%$ 的数据，保证 $1 \\leq n,m \\leq 1000$。\n\n对于 $100\\%$ 的数据，保证 $1 \\leq n,m \\leq 10^5$，$1 \\leq a_i,b_i \\leq 10^9$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：找数</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>给定一个包含 $n$ 个互不相同的正整数的数组 $A$ 与一个包含 $m$ 个互不相同的正整数的数组 $B$，请你帮忙计算有多少个数在数组 $A$ 与数组 $B$ 中均出现。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含两个整数 $n,m$。</p>\n<p>第二行包含 $n$ 个正整数 $a_1,a_2,\\cdots,a_n$ 表示数组 $A$。</p>\n<p>第三行包含 $m$ 个正整数 $b_1,b_2,\\cdots,b_m$ 表示数组 $B$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一个整数，表示在数组 $A$ 与数组 $B$ 中均出现的数的个数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3 5\n4 2 3\n3 1 5 4 6\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>2\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<h3>样例解释</h3>\n<p>样例 1 中，$4$、$3$ 在数组 $A$ 与 $B$ 中均出现。</p>\n<h3>数据范围</h3>\n<p>对于 $40\\%$ 的数据，保证 $1 \\leq n,m \\leq 1000$。</p>\n<p>对于 $100\\%$ 的数据，保证 $1 \\leq n,m \\leq 10^5$，$1 \\leq a_i,b_i \\leq 10^9$。</p>\n"
+    }
+  ],
+  "id": "2026-03-gesp-5",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2026-03-gesp-5",
+  "version": "30d0326b8f457418",
+  "warnings": [],
+  "objective_score": 50.0
+}

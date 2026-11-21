@@ -1,0 +1,631 @@
+{
+  "title": "2023年9月 GESP C++ 6级",
+  "category": "GESP",
+  "level": "6",
+  "date": "2023-09",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2023年9月 GESP C++ 6级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "输入",
+          "html": "<p>输入</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "输出",
+          "html": "<p>输出</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "控制",
+          "html": "<p>控制</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "记录",
+          "html": "<p>记录</p>\n"
+        }
+      ],
+      "content": "近年来，线上授课变得普遍，很多有助于改善教学效果的设备也逐渐流行，其中包括比较常用的手写板，那么它属于哪类设备？（ ）。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>近年来，线上授课变得普遍，很多有助于改善教学效果的设备也逐渐流行，其中包括比较常用的手写板，那么它属于哪类设备？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`(a >> 3 == b)`",
+          "html": "<p><code>(a &gt;&gt; 3 == b)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`(a - b) % 3 == 0`",
+          "html": "<p><code>(a - b) % 3 == 0</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`(a / b == 3)`",
+          "html": "<p><code>(a / b == 3)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`(a == 3 * b)`",
+          "html": "<p><code>(a == 3 * b)</code></p>\n"
+        }
+      ],
+      "content": "如果 $a$ 和 $b$ 均为 `int` 类型的变量，且 $b$ 的值不为 $0$，那么下列能正确判断“ $a$ 是 $b$ 的 $3$ 倍”的表达式是（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>如果 $a$ 和 $b$ 均为 <code>int</code> 类型的变量，且 $b$ 的值不为 $0$，那么下列能正确判断“ $a$ 是 $b$ 的 $3$ 倍”的表达式是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "C++",
+          "html": "<p>C++</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "Python",
+          "html": "<p>Python</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "Java",
+          "html": "<p>Java</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "C",
+          "html": "<p>C</p>\n"
+        }
+      ],
+      "content": "以下不属于面向对象程序设计语言的是（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>以下不属于面向对象程序设计语言的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "C++ 类实例化时，会执行构造函数。",
+          "html": "<p>C++ 类实例化时，会执行构造函数。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "C++ 自定义类可以通过定义构造函数实现自动类型转换。",
+          "html": "<p>C++ 自定义类可以通过定义构造函数实现自动类型转换。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "C++ 自定义类可以通过重载 `>`、`<` 等运算符实现大小比较。",
+          "html": "<p>C++ 自定义类可以通过重载 <code>&gt;</code>、<code>&lt;</code> 等运算符实现大小比较。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "C++ 自定义类可以包含任意类型的成员。",
+          "html": "<p>C++ 自定义类可以包含任意类型的成员。</p>\n"
+        }
+      ],
+      "content": "下面有关 C++ 类定义的说法，错误的是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>下面有关 C++ 类定义的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "代码 `cout << st << endl;` 会报错，因为没有为 `MyStr` 类重载 `<<` 运算符。",
+          "html": "<p>代码 <code>cout &lt;&lt; st &lt;&lt; endl;</code> 会报错，因为没有为 <code>MyStr</code> 类重载 <code>&lt;&lt;</code> 运算符。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "第 $6$ 行代码的 `data` 是 `MyStr` 类的成员变量。",
+          "html": "<p>第 $6$ 行代码的 <code>data</code> 是 <code>MyStr</code> 类的成员变量。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "代码 `MyStr st(\"ABC\");` 不会报错，将执行构造函数。",
+          "html": "<p>代码 <code>MyStr st(&quot;ABC&quot;);</code> 不会报错，将执行构造函数。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "代码 `cout << st.data << endl;` 可输出 `ABC`。",
+          "html": "<p>代码 <code>cout &lt;&lt; st.data &lt;&lt; endl;</code> 可输出 <code>ABC</code>。</p>\n"
+        }
+      ],
+      "content": "有关下面 C++ 代码的说法，错误的是（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>有关下面 C++ 代码的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "命名空间可以嵌套，例如 `namespace A { namespace B { int i;}}`。",
+          "html": "<p>命名空间可以嵌套，例如 <code>namespace A { namespace B { int i;}}</code>。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "命名空间只可以在全局定义。",
+          "html": "<p>命名空间只可以在全局定义。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "命名空间中可以存放变量和函数。",
+          "html": "<p>命名空间中可以存放变量和函数。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "如果程序中使用了 `using` 命令同时引用了多个命名空间，并且命名空间中存在相同的函数，会出现程序运行错误。",
+          "html": "<p>如果程序中使用了 <code>using</code> 命令同时引用了多个命名空间，并且命名空间中存在相同的函数，会出现程序运行错误。</p>\n"
+        }
+      ],
+      "content": "下列关于命名空间的说法错误的是（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>下列关于命名空间的说法错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "这段代码不能正常运行。",
+          "html": "<p>这段代码不能正常运行。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`ManyData` 类可用于构造队列（Queue）数据结构。",
+          "html": "<p><code>ManyData</code> 类可用于构造队列（Queue）数据结构。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "在上面代码环境，代码 `cout << myData.__data[0] << endl;` 可以增加到代码 `main` 函数末尾（`return 0;` 之前），且不会导致报错。",
+          "html": "<p>在上面代码环境，代码 <code>cout &lt;&lt; myData.__data[0] &lt;&lt; endl;</code> 可以增加到代码 <code>main</code> 函数末尾（<code>return 0;</code> 之前），且不会导致报错。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "可以为 `ManyData` 类的 `push()` 、 `pop()` 函数增加异常处理代码，否则在使用 `ManyData` 类时可能导致运行时错误或逻辑错误（不一定局限于上述代码中的 `main` 函数）。",
+          "html": "<p>可以为 <code>ManyData</code> 类的 <code>push()</code> 、 <code>pop()</code> 函数增加异常处理代码，否则在使用 <code>ManyData</code> 类时可能导致运行时错误或逻辑错误（不一定局限于上述代码中的 <code>main</code> 函数）。</p>\n"
+        }
+      ],
+      "content": "有关下面 C++ 代码的说法，正确的是（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass ManyData {\n    int __data[10];\n    int __size;\npublic:\n    ManyData() : __size(0) {}\n    void push(int val) {\n        __data[__size] = val;\n        __size++;\n    }\n    int pop() {\n        __size--;\n        return __data[__size];\n    }\n    int size() { return __size; }\n};\n\nint main() {\n    ManyData myData;\n    myData.push(1);\n    myData.push(2);\n    myData.push(3);\n    cout << myData.pop() << endl;\n    cout << myData.pop() << endl;\n    cout << myData.pop() << endl;\n    return 0;\n}\n```",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>有关下面 C++ 代码的说法，正确的是（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\n\nclass ManyData {\n    int __data[10];\n    int __size;\npublic:\n    ManyData() : __size(0) {}\n    void push(int val) {\n        __data[__size] = val;\n        __size++;\n    }\n    int pop() {\n        __size--;\n        return __data[__size];\n    }\n    int size() { return __size; }\n};\n\nint main() {\n    ManyData myData;\n    myData.push(1);\n    myData.push(2);\n    myData.push(3);\n    cout &lt;&lt; myData.pop() &lt;&lt; endl;\n    cout &lt;&lt; myData.pop() &lt;&lt; endl;\n    cout &lt;&lt; myData.pop() &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`MoreData` 类可用于构造队列（Queue）数据结构。",
+          "html": "<p><code>MoreData</code> 类可用于构造队列（Queue）数据结构。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "代码第 $29$ 行，连续 `push()` 的用法将导致编译错误。",
+          "html": "<p>代码第 $29$ 行，连续 <code>push()</code> 的用法将导致编译错误。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`__data` 是 `MoreData` 类的私有成员，只能在类内访问。",
+          "html": "<p><code>__data</code> 是 <code>MoreData</code> 类的私有成员，只能在类内访问。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "以上说法均没有错误。",
+          "html": "<p>以上说法均没有错误。</p>\n"
+        }
+      ],
+      "content": "有关下面 C++ 代码的说法，错误的是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>有关下面 C++ 代码的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`10010`",
+          "html": "<p><code>10010</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`10011`",
+          "html": "<p><code>10011</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`10111`",
+          "html": "<p><code>10111</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`10001`",
+          "html": "<p><code>10001</code></p>\n"
+        }
+      ],
+      "content": "某内容仅会出现 ABCDEFG，其对应的出现概率为 $0.40$ 、 $0.30$ 、 $0.15$ 、 $0.05$ 、 $0.04$ 、 $0.03$ 、 $0.03$ ，如下图所⽰。\n按照哈夫曼编码规则，假设 $B$ 的编码为 `11` ，则 $D$ 的编码为（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>某内容仅会出现 ABCDEFG，其对应的出现概率为 $0.40$ 、 $0.30$ 、 $0.15$ 、 $0.05$ 、 $0.04$ 、 $0.03$ 、 $0.03$ ，如下图所⽰。<br />\n按照哈夫曼编码规则，假设 $B$ 的编码为 <code>11</code> ，则 $D$ 的编码为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "在格雷码中，任意两个相邻的代码只有一位二进制数不同。",
+          "html": "<p>在格雷码中，任意两个相邻的代码只有一位二进制数不同。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "格雷码是一种唯一性编码。",
+          "html": "<p>格雷码是一种唯一性编码。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "在格雷码中，最大数和最小数只有一位二进制数不同。",
+          "html": "<p>在格雷码中，最大数和最小数只有一位二进制数不同。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "格雷码是一种可靠性编码。",
+          "html": "<p>格雷码是一种可靠性编码。</p>\n"
+        }
+      ],
+      "content": "下面有关格雷码的说法，错误的是（ ）。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面有关格雷码的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "既是完全二叉树也是满二叉树。",
+          "html": "<p>既是完全二叉树也是满二叉树。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "既是二叉搜索树也是平衡二叉树。",
+          "html": "<p>既是二叉搜索树也是平衡二叉树。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "非平衡二叉树。",
+          "html": "<p>非平衡二叉树。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "以上说法都不正确。",
+          "html": "<p>以上说法都不正确。</p>\n"
+        }
+      ],
+      "content": "有关下图的二叉树，说法正确的是（ ）。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>有关下图的二叉树，说法正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "$n$ 个节点的二叉搜索树，其查找的平均时间复杂度为（ ）。",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>$n$ 个节点的二叉搜索树，其查找的平均时间复杂度为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "递推算法",
+          "html": "<p>递推算法</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "贪心算法",
+          "html": "<p>贪心算法</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "动态规划算法",
+          "html": "<p>动态规划算法</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "分治算法",
+          "html": "<p>分治算法</p>\n"
+        }
+      ],
+      "content": "青蛙每次能跳 $1$ 或 $2$ 步。下面是青蛙跳到第 $N$ 步台阶 C++ 实现代码。该段代码采用的算法是（ ）。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>青蛙每次能跳 $1$ 或 $2$ 步。下面是青蛙跳到第 $N$ 步台阶 C++ 实现代码。该段代码采用的算法是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "$n$ 个节点的双向循环链，在其中查找某个节点的平均时间复杂度是（ ）。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>$n$ 个节点的双向循环链，在其中查找某个节点的平均时间复杂度是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "若对象被定义为常量，则它只能调用以 `const` 修饰的成员函数。",
+          "html": "<p>若对象被定义为常量，则它只能调用以 <code>const</code> 修饰的成员函数。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "所有的常量静态变量都只能在类外进行初始化。",
+          "html": "<p>所有的常量静态变量都只能在类外进行初始化。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "若类 `A` 的对象 $a$ 是类 `B` 的静态成员变量，则 $a$ 在 `main()` 函数调用之前应被初始化。",
+          "html": "<p>若类 <code>A</code> 的对象 $a$ 是类 <code>B</code> 的静态成员变量，则 $a$ 在 <code>main()</code> 函数调用之前应被初始化。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "静态全局对象、常量全局对象都是在 `main` 函数调用之前完成初始化，执行完 `main` 函数后被析构。",
+          "html": "<p>静态全局对象、常量全局对象都是在 <code>main</code> 函数调用之前完成初始化，执行完 <code>main</code> 函数后被析构。</p>\n"
+        }
+      ],
+      "content": "关于 C++ 语⾔，以下说法不正确的是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>关于 C++ 语⾔，以下说法不正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "TCP/IP 的传输层的两个不同的协议分别是 UDP 和 TCP。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>TCP/IP 的传输层的两个不同的协议分别是 UDP 和 TCP。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "5G 网络中，5G 中的 G 表示 Gigabytes/s，其中 1 GB = 1024 MB。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>5G 网络中，5G 中的 G 表示 Gigabytes/s，其中 1 GB = 1024 MB。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在面向对象中，类是对象的实例。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>在面向对象中，类是对象的实例。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 类的定义中，使用 `static` 修饰符定义的静态成员被该类的所有对象共享。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>在 C++ 类的定义中，使用 <code>static</code> 修饰符定义的静态成员被该类的所有对象共享。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 类的定义中，可以定义初始化函数或运算符函数等。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>在 C++ 类的定义中，可以定义初始化函数或运算符函数等。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "DFS 是深度优先算法的英文简写。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>DFS 是深度优先算法的英文简写。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "哈夫曼编码是一种有损压缩算法。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>哈夫曼编码是一种有损压缩算法。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "有些算法或数据结构在 C/C++ 语⾔中使用指针实现，一个典型的例⼦就是链表。因此，链表这一数据结构在 C/C++ 语⾔中只能使用指针来实现。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>有些算法或数据结构在 C/C++ 语⾔中使用指针实现，一个典型的例⼦就是链表。因此，链表这一数据结构在 C/C++ 语⾔中只能使用指针来实现。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "如果节点数为 $n$，广度搜索算法的最差时间复杂度为 $O(n)$。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>如果节点数为 $n$，广度搜索算法的最差时间复杂度为 $O(n)$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "二叉搜索树的左右⼦树也是二叉搜索树。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>二叉搜索树的左右⼦树也是二叉搜索树。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：小杨买饮料**\n\n> 时间限制：1.0 s | 内存限制：128.0 MB\n\n**题目描述**\n\n小杨来到了一家商店，打算购买一些饮料。这家商店总共出售 $N$ 种饮料，编号从 $0$ 至 $N-1$，其中编号为 $i$ 的饮料售价 $c_i$ 元，容量 $l_i$ 毫升。\n\n小杨的需求有如下几点：\n\n1. 小杨想要尽可能尝试不同种类的饮料，因此他希望每种饮料至多购买 $1$ 瓶；\n\n2. 小杨很渴，所以他想要购买总容量不低于 $L$ 的饮料；\n\n3. 小杨勤俭节约，所以在 $1$ 和 $2$ 的前提下，他希望使用尽可能少的费用。\n\n方便起见，你只需要输出最少花费的费用即可。特别地，如果不能满足小杨的要求，则输出 `no solution`。\n\n**输入格式**\n\n第一行两个整数 $N,L$。\n\n接下来 $N$行，依次描述第 $i=0,1,\\cdots,N-1$ 种饮料：每行两个整数 $c_i,l_i$。\n\n**输出格式**\n\n输出一行一个整数，表示最少需要花费多少钱，才能满足小杨的要求。特别地，如果不能满足要求，则输出 `no solution`。\n\n**样例输入 #1**\n```\n5 100\n100 2000\n2 50\n4 40\n5 30\n3 20\n```\n\n**样例输出 #1**\n```\n9\n```\n\n**样例输入 #2**\n```\n5 141\n100 2000\n2 50\n4 40\n5 30\n3 20\n```\n\n**样例输出 #2**\n```\n100\n```\n\n**样例输入 #3**\n```\n4 141\n2 50\n4 40\n5 30\n3 20\n```\n\n**样例输出 #3**\n```\nno solution\n```\n\n**说明/提示**\n\n**样例 1 解释**\n\n小杨可以购买 $2,3,5$ 号饮料，总计获得 $50+40+20=110$ 毫升饮料，花费 $2+4+3=9$ 元。\n\n如果只考虑前两项需求，小杨也可以购买 $2,4,5$ 号饮料，它们的容量总和为 $50+30+20=100$ 毫升，恰好可以满足需求。但遗憾的是，这个方案需要花费 $2+5+3=10$ 元。\n\n**样例 2 解释**\n\n$1,2,3,4$ 号饮料总计 $140$ 毫升，如每种饮料至多购买 $1$ 瓶，则恰好无法满足需求，因此只能花费 $100$ 元购买 $0$ 号饮料。\n\n**数据规模**\n\n对于 $40\\%$ 的测试点，保证 $N \\le 20;1\\le L \\le 100; l_i \\le 100$。\n\n对于 $70\\%$ 的测试点，保证 $l_i \\le 100$。\n\n对于 $100\\%$ 的测试点，保证 $1\\le N \\le 500;1\\le L \\le 2000; 1\\le c_i,l_i \\le 10^6$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：小杨买饮料</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：128.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨来到了一家商店，打算购买一些饮料。这家商店总共出售 $N$ 种饮料，编号从 $0$ 至 $N-1$，其中编号为 $i$ 的饮料售价 $c_i$ 元，容量 $l_i$ 毫升。</p>\n<p>小杨的需求有如下几点：</p>\n<ol>\n<li>\n<p>小杨想要尽可能尝试不同种类的饮料，因此他希望每种饮料至多购买 $1$ 瓶；</p>\n</li>\n<li>\n<p>小杨很渴，所以他想要购买总容量不低于 $L$ 的饮料；</p>\n</li>\n<li>\n<p>小杨勤俭节约，所以在 $1$ 和 $2$ 的前提下，他希望使用尽可能少的费用。</p>\n</li>\n</ol>\n<p>方便起见，你只需要输出最少花费的费用即可。特别地，如果不能满足小杨的要求，则输出 <code>no solution</code>。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行两个整数 $N,L$。</p>\n<p>接下来 $N$行，依次描述第 $i=0,1,\\cdots,N-1$ 种饮料：每行两个整数 $c_i,l_i$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行一个整数，表示最少需要花费多少钱，才能满足小杨的要求。特别地，如果不能满足要求，则输出 <code>no solution</code>。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5 100\n100 2000\n2 50\n4 40\n5 30\n3 20\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>9\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>5 141\n100 2000\n2 50\n4 40\n5 30\n3 20\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>100\n</code></pre>\n<p><strong>样例输入 #3</strong></p>\n<pre><code>4 141\n2 50\n4 40\n5 30\n3 20\n</code></pre>\n<p><strong>样例输出 #3</strong></p>\n<pre><code>no solution\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p><strong>样例 1 解释</strong></p>\n<p>小杨可以购买 $2,3,5$ 号饮料，总计获得 $50+40+20=110$ 毫升饮料，花费 $2+4+3=9$ 元。</p>\n<p>如果只考虑前两项需求，小杨也可以购买 $2,4,5$ 号饮料，它们的容量总和为 $50+30+20=100$ 毫升，恰好可以满足需求。但遗憾的是，这个方案需要花费 $2+5+3=10$ 元。</p>\n<p><strong>样例 2 解释</strong></p>\n<p>$1,2,3,4$ 号饮料总计 $140$ 毫升，如每种饮料至多购买 $1$ 瓶，则恰好无法满足需求，因此只能花费 $100$ 元购买 $0$ 号饮料。</p>\n<p><strong>数据规模</strong></p>\n<p>对于 $40\\%$ 的测试点，保证 $N \\le 20;1\\le L \\le 100; l_i \\le 100$。</p>\n<p>对于 $70\\%$ 的测试点，保证 $l_i \\le 100$。</p>\n<p>对于 $100\\%$ 的测试点，保证 $1\\le N \\le 500;1\\le L \\le 2000; 1\\le c_i,l_i \\le 10^6$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：小杨的握手问题**\n\n> 时间限制：1.0 s | 内存限制：128.0 MB\n\n**题目描述**\n\n小杨的班级里共有 $N$ 名同学，学号从 $0$ 至 $N-1$。\n\n某节课上，老师安排全班同学进行一次握手游戏，具体规则如下：老师安排了一个顺序，让全班 $N$ 名同学依次进入教室。每位同学进入教室时，需要和 **已经在教室内** 且 **学号小于自己** 的同学握手。\n\n现在，小杨想知道，整个班级总共会进行多少次握手。\n\n**提示：可以考虑使用归并排序进行降序排序，并在此过程中求解。**\n\n**输入格式**\n\n输入包含 $2$ 行。第一行一个整数 $N$ ，表示同学的个数；第二行 $N$ 个用单个空格隔开的整数，依次描述同学们进入教室的顺序，每个整数在 $0 \\sim N-1$ 之间，表示该同学的学号。\n\n保证每位同学会且只会进入教室一次。\n\n\n**输出格式**\n\n输出一行一个整数，表示全班握手的总次数。\n\n**样例输入 #1**\n```\n4\n2 1 3 0\n```\n\n**样例输出 #1**\n```\n2\n```\n\n**样例输入 #2**\n```\n6\n0 1 2 3 4 5\n```\n\n**样例输出 #2**\n```\n15\n```\n\n**说明/提示**\n\n**样例解释 1**:\n\n$2$ 号同学进入教室，此时教室里没有其他同学。\n\n$1$ 号同学进入教室，此时教室里有 $2$ 号同学。$1$ 号同学的学号小于 $2$ 号同学，因此他们之间不需要握手。\n\n$3$ 号同学进入教室，此时教室里有 $1,2$ 号同学。$3$ 号同学的学号比他们都大，因此 $3$ 号同学需要分别和另外两位同学握手。\n\n$0$ 号同学进入教室，此时教室里有 $1,2,3$ 号同学。$0$ 号同学的学号比他们都小，因此 $0$ 号同学不需要与其他同学握手。\n\n**样例解释2：**\n\n全班所有同学之间都会进行握手，因为每位同学来到教室时，都会发现他的学号是当前教室里最大的，所以他需要和教室里的每位其他同学进行握手。\n\n对于 $30\\%$ 的测试点，保证 $N\\le100$。\n\n对于所有测试点，保证 $2\\le N\\le3\\times10^5$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：小杨的握手问题</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：128.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨的班级里共有 $N$ 名同学，学号从 $0$ 至 $N-1$。</p>\n<p>某节课上，老师安排全班同学进行一次握手游戏，具体规则如下：老师安排了一个顺序，让全班 $N$ 名同学依次进入教室。每位同学进入教室时，需要和 <strong>已经在教室内</strong> 且 <strong>学号小于自己</strong> 的同学握手。</p>\n<p>现在，小杨想知道，整个班级总共会进行多少次握手。</p>\n<p><strong>提示：可以考虑使用归并排序进行降序排序，并在此过程中求解。</strong></p>\n<p><strong>输入格式</strong></p>\n<p>输入包含 $2$ 行。第一行一个整数 $N$ ，表示同学的个数；第二行 $N$ 个用单个空格隔开的整数，依次描述同学们进入教室的顺序，每个整数在 $0 \\sim N-1$ 之间，表示该同学的学号。</p>\n<p>保证每位同学会且只会进入教室一次。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行一个整数，表示全班握手的总次数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4\n2 1 3 0\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>2\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>6\n0 1 2 3 4 5\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>15\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p><strong>样例解释 1</strong>:</p>\n<p>$2$ 号同学进入教室，此时教室里没有其他同学。</p>\n<p>$1$ 号同学进入教室，此时教室里有 $2$ 号同学。$1$ 号同学的学号小于 $2$ 号同学，因此他们之间不需要握手。</p>\n<p>$3$ 号同学进入教室，此时教室里有 $1,2$ 号同学。$3$ 号同学的学号比他们都大，因此 $3$ 号同学需要分别和另外两位同学握手。</p>\n<p>$0$ 号同学进入教室，此时教室里有 $1,2,3$ 号同学。$0$ 号同学的学号比他们都小，因此 $0$ 号同学不需要与其他同学握手。</p>\n<p><strong>样例解释2：</strong></p>\n<p>全班所有同学之间都会进行握手，因为每位同学来到教室时，都会发现他的学号是当前教室里最大的，所以他需要和教室里的每位其他同学进行握手。</p>\n<p>对于 $30\\%$ 的测试点，保证 $N\\le100$。</p>\n<p>对于所有测试点，保证 $2\\le N\\le3\\times10^5$。</p>\n"
+    }
+  ],
+  "id": "2023-09-gesp-6",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2023-09-gesp-6",
+  "version": "2aa7ed88e58c84a7",
+  "warnings": [],
+  "objective_score": 50.0
+}

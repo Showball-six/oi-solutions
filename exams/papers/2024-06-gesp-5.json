@@ -1,0 +1,631 @@
+{
+  "title": "2024年6月 GESP C++ 5级",
+  "category": "GESP",
+  "level": "5",
+  "date": "2024-06",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2024年6月 GESP C++ 5级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "枚举算法",
+          "html": "<p>枚举算法</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "贪心算法",
+          "html": "<p>贪心算法</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "迭代算法",
+          "html": "<p>迭代算法</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "递归算法",
+          "html": "<p>递归算法</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码用于求斐波那契数列，该数列第 $1$ 、$2$ 项为 $1$ ，以后各项均是前两项之和。函数 `fibo()` 属于( )。\n\n```cpp\nint fibo(int n) {\n    if (n <= 0)\n        return 0;\n    if (n == 1 || n == 2)\n        return 1;\n    int a = 1, b = 1, next;\n    for (int i = 3; i <= n; i++) {\n        next = a + b;\n        a = b;\n        b = next;\n    }\n    return next;\n}\n```",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码用于求斐波那契数列，该数列第 $1$ 、$2$ 项为 $1$ ，以后各项均是前两项之和。函数 <code>fibo()</code> 属于( )。</p>\n<pre><code class=\"language-cpp\">int fibo(int n) {\n    if (n &lt;= 0)\n        return 0;\n    if (n == 1 || n == 2)\n        return 1;\n    int a = 1, b = 1, next;\n    for (int i = 3; i &lt;= n; i++) {\n        next = a + b;\n        a = b;\n        b = next;\n    }\n    return next;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "枚举算法",
+          "html": "<p>枚举算法</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "贪心算法",
+          "html": "<p>贪心算法</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "迭代算法",
+          "html": "<p>迭代算法</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "递归算法",
+          "html": "<p>递归算法</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码用于将输入金额换成最少币种组合方案，其实现算法是( )。\n\n```cpp\n#include <iostream>\nusing namespace std;\n#define N_COINS 7\nint coins[N_COINS] = {100, 50, 20, 10, 5, 2, 1}; //货币面值，单位相同\nint coins_used[N_COINS];\nvoid find_coins(int money) {\n    for (int i = 0; i < N_COINS; i++) {\n        coins_used[i] = money / coins[i];\n        money = money % coins[i];\n    }\n    return;\n}\nint main() {\n    int money;\n    cin >> money; //输入要换算的金额\n    find_coins(money);\n    for (int i = 0; i < N_COINS; i++)\n        cout << coins_used[i] << endl;\n    return 0;\n}\n```",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码用于将输入金额换成最少币种组合方案，其实现算法是( )。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\n#define N_COINS 7\nint coins[N_COINS] = {100, 50, 20, 10, 5, 2, 1}; //货币面值，单位相同\nint coins_used[N_COINS];\nvoid find_coins(int money) {\n    for (int i = 0; i &lt; N_COINS; i++) {\n        coins_used[i] = money / coins[i];\n        money = money % coins[i];\n    }\n    return;\n}\nint main() {\n    int money;\n    cin &gt;&gt; money; //输入要换算的金额\n    find_coins(money);\n    for (int i = 0; i &lt; N_COINS; i++)\n        cout &lt;&lt; coins_used[i] &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "小杨采用如下双链表结构保存他喜欢的歌曲列表：\n\n```cpp\nstruct dl_node {\n    string song;\n    dl_node* next;\n    dl_node* prev;\n};\n```\n\n小杨想在头指针为 $head$ 的双链表中查找他喜欢的某首歌曲，采用如下查询函数，该操作的时间复杂度为（ ）。\n\n```cpp\ndl_node* search(dl_node* head, string my_song) {\n    dl_node* temp = head;\n    while (temp != nullptr) {\n        if (temp->song == my_song)\n            return temp;\n        temp = temp->next;\n    }\n    return nullptr;\n}\n```",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>小杨采用如下双链表结构保存他喜欢的歌曲列表：</p>\n<pre><code class=\"language-cpp\">struct dl_node {\n    string song;\n    dl_node* next;\n    dl_node* prev;\n};\n</code></pre>\n<p>小杨想在头指针为 $head$ 的双链表中查找他喜欢的某首歌曲，采用如下查询函数，该操作的时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">dl_node* search(dl_node* head, string my_song) {\n    dl_node* temp = head;\n    while (temp != nullptr) {\n        if (temp-&gt;song == my_song)\n            return temp;\n        temp = temp-&gt;next;\n    }\n    return nullptr;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`head->next->prev = p;`",
+          "html": "<p><code>head-&gt;next-&gt;prev = p;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`head->next = p;`",
+          "html": "<p><code>head-&gt;next = p;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`head->prev = p;`",
+          "html": "<p><code>head-&gt;prev = p;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "触发异常，不能对空指针进行操作。",
+          "html": "<p>触发异常，不能对空指针进行操作。</p>\n"
+        }
+      ],
+      "content": "小杨想在如上题所述的双向链表中加入一首新歌曲。为了能快速找到该歌曲，他将其作为链表的第一首歌曲，则下面横线上应填入的代码为（ ）。\n\n```cpp\nvoid insert(dl_node *head, string my_song) {\n    p = new dl_node;\n    p->song = my_song;\n    p->prev = nullptr;\n    p->next = head;\n    if (head != nullptr) {\n        ________________________________ // 在此处填入代码\n    }\n    head = p;\n}\n```",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>小杨想在如上题所述的双向链表中加入一首新歌曲。为了能快速找到该歌曲，他将其作为链表的第一首歌曲，则下面横线上应填入的代码为（ ）。</p>\n<pre><code class=\"language-cpp\">void insert(dl_node *head, string my_song) {\n    p = new dl_node;\n    p-&gt;song = my_song;\n    p-&gt;prev = nullptr;\n    p-&gt;next = head;\n    if (head != nullptr) {\n        ________________________________ // 在此处填入代码\n    }\n    head = p;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "最小公倍数",
+          "html": "<p>最小公倍数</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "最大公共质因子",
+          "html": "<p>最大公共质因子</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "最大公约数",
+          "html": "<p>最大公约数</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "最小公共质因子",
+          "html": "<p>最小公共质因子</p>\n"
+        }
+      ],
+      "content": "下面是根据欧几里得算法编写的函数，它计算的是 $a$ 与 $b$ 的（ ）。\n\n```cpp\nint gcd(int a, int b) {\n    while (b != 0) {\n        int temp = b;\n        b = a % b;\n        a = temp;\n    }\n    return a;\n}\n```",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>下面是根据欧几里得算法编写的函数，它计算的是 $a$ 与 $b$ 的（ ）。</p>\n<pre><code class=\"language-cpp\">int gcd(int a, int b) {\n    while (b != 0) {\n        int temp = b;\n        b = a % b;\n        a = temp;\n    }\n    return a;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "本题的 `gcd()` 实现为递归方式。",
+          "html": "<p>本题的 <code>gcd()</code> 实现为递归方式。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "本题的 `gcd()` 代码量少，更容易理解其辗转相除的思想。",
+          "html": "<p>本题的 <code>gcd()</code> 代码量少，更容易理解其辗转相除的思想。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "当 $a$ 较大时，本题的 `gcd()` 实现会多次调用自身，需要较多额外的辅助空间。",
+          "html": "<p>当 $a$ 较大时，本题的 <code>gcd()</code> 实现会多次调用自身，需要较多额外的辅助空间。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "当 $a$ 较大时，相比上题中的 `gcd()` 的实现，本题的 `gcd()` 执行效率更高。",
+          "html": "<p>当 $a$ 较大时，相比上题中的 <code>gcd()</code> 的实现，本题的 <code>gcd()</code> 执行效率更高。</p>\n"
+        }
+      ],
+      "content": "欧几里得算法还可以写成如下形式：\n\n```cpp\nint gcd(int a, int b) {\n    return b == 0 ? a : gcd(b, a % b);\n}\n```\n\n下面有关说法，错误的是（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>欧几里得算法还可以写成如下形式：</p>\n<pre><code class=\"language-cpp\">int gcd(int a, int b) {\n    return b == 0 ? a : gcd(b, a % b);\n}\n</code></pre>\n<p>下面有关说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`for (int j = 0; j < primes.size() && i * primes[j] <= n; j++)`",
+          "html": "<p><code>for (int j = 0; j &lt; primes.size() &amp;&amp; i * primes[j] &lt;= n; j++)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`for (int j = 0; j <= sqrt(n) && i * primes[j] <= n; j++)`",
+          "html": "<p><code>for (int j = 0; j &lt;= sqrt(n) &amp;&amp; i * primes[j] &lt;= n; j++)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`for (int j = 0; j <= n; j++)`",
+          "html": "<p><code>for (int j = 0; j &lt;= n; j++)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`for (int j = 1; j <= sqrt(n); j++)`",
+          "html": "<p><code>for (int j = 1; j &lt;= sqrt(n); j++)</code></p>\n"
+        }
+      ],
+      "content": "下述代码实现素数表的线性筛法，筛选出所有小于等于 $n$ 的素数，则横线上应填的代码是( )。\n\n```cpp\nvector<int> linear_sieve(int n) {\n    vector<bool> is_prime(n + 1, true);\n    vector<int> primes;\n    is_prime[0] = is_prime[1] = 0; //0和1两个数特殊处理\n    for (int i = 2; i <= n; ++i) {\n        if (is_prime[i]) {\n            primes.push_back(i);\n        }\n        ________________________________ { // 在此处填入代码\n            is_prime[i * primes[j]] = 0;\n            if (i % primes[j] == 0)\n                break;\n        }\n    }\n    return primes;\n}\n```",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>下述代码实现素数表的线性筛法，筛选出所有小于等于 $n$ 的素数，则横线上应填的代码是( )。</p>\n<pre><code class=\"language-cpp\">vector&lt;int&gt; linear_sieve(int n) {\n    vector&lt;bool&gt; is_prime(n + 1, true);\n    vector&lt;int&gt; primes;\n    is_prime[0] = is_prime[1] = 0; //0和1两个数特殊处理\n    for (int i = 2; i &lt;= n; ++i) {\n        if (is_prime[i]) {\n            primes.push_back(i);\n        }\n        ________________________________ { // 在此处填入代码\n            is_prime[i * primes[j]] = 0;\n            if (i % primes[j] == 0)\n                break;\n        }\n    }\n    return primes;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "上题代码的时间复杂度是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>上题代码的时间复杂度是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`while (i <= mid)`",
+          "html": "<p><code>while (i &lt;= mid)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`while (i < mid)`",
+          "html": "<p><code>while (i &lt; mid)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`while (i < j)`",
+          "html": "<p><code>while (i &lt; j)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`while (i <= j)`",
+          "html": "<p><code>while (i &lt;= j)</code></p>\n"
+        }
+      ],
+      "content": "为了正确实现快速排序，下面横线上的代码应为（ ）。\n\n```cpp\nvoid qsort(vector<int>& arr, int left, int right) {\n    int i, j, mid;\n    int pivot;\n    i = left;\n    j = right;\n    mid = (left + right) / 2; // 计算中间元素的索引\n    pivot = arr[mid]; // 选择中间元素作为基准值\n    do {\n        while (arr[i] < pivot) i++;\n        while (arr[j] > pivot) j--;\n        if (i <= j) {\n            swap(arr[i], arr[j]); // 交换两个元素\n            i++; j--;\n        }\n    } ________________________________; // 在此处填入代码\n    if (left < j) qsort(arr, left, j); // 对左子数组进行快速排序\n    if (i < right) qsort(arr, i, right); // 对右子数组进行快速排序\n}\n```",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>为了正确实现快速排序，下面横线上的代码应为（ ）。</p>\n<pre><code class=\"language-cpp\">void qsort(vector&lt;int&gt;&amp; arr, int left, int right) {\n    int i, j, mid;\n    int pivot;\n    i = left;\n    j = right;\n    mid = (left + right) / 2; // 计算中间元素的索引\n    pivot = arr[mid]; // 选择中间元素作为基准值\n    do {\n        while (arr[i] &lt; pivot) i++;\n        while (arr[j] &gt; pivot) j--;\n        if (i &lt;= j) {\n            swap(arr[i], arr[j]); // 交换两个元素\n            i++; j--;\n        }\n    } ________________________________; // 在此处填入代码\n    if (left &lt; j) qsort(arr, left, j); // 对左子数组进行快速排序\n    if (i &lt; right) qsort(arr, i, right); // 对右子数组进行快速排序\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "分治算法将问题分成子问题，然后分别解决子问题，最后合并结果。",
+          "html": "<p>分治算法将问题分成子问题，然后分别解决子问题，最后合并结果。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "归并排序不是分治算法的应用。",
+          "html": "<p>归并排序不是分治算法的应用。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "分治算法通常用于解决小规模问题。",
+          "html": "<p>分治算法通常用于解决小规模问题。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "分治算法的时间复杂度总是优于 。",
+          "html": "<p>分治算法的时间复杂度总是优于 。</p>\n"
+        }
+      ],
+      "content": "关于分治算法，以下哪个说法正确？",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>关于分治算法，以下哪个说法正确？</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$52$，$61$，$81$，$90$",
+          "html": "<p>$52$，$61$，$81$，$90$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$52$，$79$，$90$，$81$",
+          "html": "<p>$52$，$79$，$90$，$81$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$39$，$79$，$90$，$81$",
+          "html": "<p>$39$，$79$，$90$，$81$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$39$，$79$，$90$",
+          "html": "<p>$39$，$79$，$90$</p>\n"
+        }
+      ],
+      "content": "根据下述二分查找法，在排好序的数组 $1$，$3$，$6$，$9$，$17$，$31$，$39$，$52$，$61$，$79$，$81$，$90$，$96$ 中查找数值 $82$，和 $82$ 比较的数组元素分别是（ ）。\n\n```cpp\nint binary_search(vector<int>& nums, int target) {\n    int left = 0;\n    int right = nums.size() - 1;\n    while (left <= right) {\n        int mid = (left + right) / 2;\n        if (nums[mid] == target) {\n            return mid;\n        } else if (nums[mid] < target) {\n            left = mid + 1;\n        } else {\n            right = mid - 1;\n        }\n    }\n    return -1; // 如果找不到目标元素，返回-1\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>根据下述二分查找法，在排好序的数组 $1$，$3$，$6$，$9$，$17$，$31$，$39$，$52$，$61$，$79$，$81$，$90$，$96$ 中查找数值 $82$，和 $82$ 比较的数组元素分别是（ ）。</p>\n<pre><code class=\"language-cpp\">int binary_search(vector&lt;int&gt;&amp; nums, int target) {\n    int left = 0;\n    int right = nums.size() - 1;\n    while (left &lt;= right) {\n        int mid = (left + right) / 2;\n        if (nums[mid] == target) {\n            return mid;\n        } else if (nums[mid] &lt; target) {\n            left = mid + 1;\n        } else {\n            right = mid - 1;\n        }\n    }\n    return -1; // 如果找不到目标元素，返回-1\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`a[i + 1]--;`",
+          "html": "<p><code>a[i + 1]--;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`a[i]--;`",
+          "html": "<p><code>a[i]--;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`b[i + 1]--;`",
+          "html": "<p><code>b[i + 1]--;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`b[i]--;`",
+          "html": "<p><code>b[i]--;</code></p>\n"
+        }
+      ],
+      "content": "要实现一个高精度减法函数，则下面代码中加划线应该填写的代码为（ ）。\n\n```cpp\n// 假设 a 和 b 均为正数，且 a 表示的数比 b 大\nvector<int> minus(vector<int> a, vector<int> b) {\n    vector<int> c;\n    int len1 = a.size();\n    int len2 = b.size();\n    int i, t;\n    for (i = 0; i < len2; i++) {\n        if (a[i] < b[i]) { // 借位\n            _____________ // 在此处填入代码\n            a[i] += 10;\n        }\n        t = a[i] - b[i];\n        c.push_back(t);\n    }\n    for (; i < len1; i++)\n        c.push_back(a[i]);\n    len3 = c.size();\n    while (c[len3 - 1] == 0) { // 去除前导 0\n        c.pop_back();\n        len3--;\n    }\n    return c;\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>要实现一个高精度减法函数，则下面代码中加划线应该填写的代码为（ ）。</p>\n<pre><code class=\"language-cpp\">// 假设 a 和 b 均为正数，且 a 表示的数比 b 大\nvector&lt;int&gt; minus(vector&lt;int&gt; a, vector&lt;int&gt; b) {\n    vector&lt;int&gt; c;\n    int len1 = a.size();\n    int len2 = b.size();\n    int i, t;\n    for (i = 0; i &lt; len2; i++) {\n        if (a[i] &lt; b[i]) { // 借位\n            _____________ // 在此处填入代码\n            a[i] += 10;\n        }\n        t = a[i] - b[i];\n        c.push_back(t);\n    }\n    for (; i &lt; len1; i++)\n        c.push_back(a[i]);\n    len3 = c.size();\n    while (c[len3 - 1] == 0) { // 去除前导 0\n        c.pop_back();\n        len3--;\n    }\n    return c;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "设 $A$ 和 $B$ 是两个长度为 $n$ 的有序数组，现将 $A$ 和 $B$ 合并成一个有序数组，归并排序算法在最坏情况下至少要做（ ）次比较。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>设 $A$ 和 $B$ 是两个长度为 $n$ 的有序数组，现将 $A$ 和 $B$ 合并成一个有序数组，归并排序算法在最坏情况下至少要做（ ）次比较。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$21$",
+          "html": "<p>$21$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$-11$",
+          "html": "<p>$-11$</p>\n"
+        }
+      ],
+      "content": "给定如下函数：\n\n```cpp\nint fun(int n) {\n    if (n == 1) return 1;\n    if (n == 2) return 2;\n    return fun(n - 2) - fun(n - 1);\n}\n```\n则当 $n = 6$ 时，函数返回值为（ ）。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>给定如下函数：</p>\n<pre><code class=\"language-cpp\">int fun(int n) {\n    if (n == 1) return 1;\n    if (n == 2) return 2;\n    return fun(n - 2) - fun(n - 1);\n}\n</code></pre>\n<p>则当 $n = 6$ 时，函数返回值为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "4 3 2 1",
+          "html": "<p>4 3 2 1</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "1 2 3 4",
+          "html": "<p>1 2 3 4</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "4 2 3 1 2",
+          "html": "<p>4 2 3 1 2</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "4 2 3 2 1",
+          "html": "<p>4 2 3 2 1</p>\n"
+        }
+      ],
+      "content": "给定如下函数（函数功能同上题，增加输出打印）：\n\n```cpp\nint fun(int n) {\n    cout << n << \" \";\n    if (n == 1) return 1;\n    if (n == 2) return 2;\n    return fun(n - 2) - fun(n - 1);\n}\n```\n则当 $n = 4$ 时，屏幕上输出序列为（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>给定如下函数（函数功能同上题，增加输出打印）：</p>\n<pre><code class=\"language-cpp\">int fun(int n) {\n    cout &lt;&lt; n &lt;&lt; &quot; &quot;;\n    if (n == 1) return 1;\n    if (n == 2) return 2;\n    return fun(n - 2) - fun(n - 1);\n}\n</code></pre>\n<p>则当 $n = 4$ 时，屏幕上输出序列为（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "如果将双向链表的最后一个结点的下一项指针指向第一个结点，第一个结点的前一项指针指向最后一个结点，则该双向链表构成循环链表。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>如果将双向链表的最后一个结点的下一项指针指向第一个结点，第一个结点的前一项指针指向最后一个结点，则该双向链表构成循环链表。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "数组和链表都是线性表，链表的优点是插入删除不需要移动元素，并且能随机查找。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>数组和链表都是线性表，链表的优点是插入删除不需要移动元素，并且能随机查找。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "链表的存储空间物理上可以连续，也可以不连续。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>链表的存储空间物理上可以连续，也可以不连续。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "找出自然数 $n$ 以内的所有质数，常用算法有埃拉托斯特尼（埃氏）筛法和线性筛法，其中埃氏筛法效率更高。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>找出自然数 $n$ 以内的所有质数，常用算法有埃拉托斯特尼（埃氏）筛法和线性筛法，其中埃氏筛法效率更高。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "唯一分解定理表明任何一个大于 $1$ 的整数都可以唯一地表示为一系列质数的乘积，即质因数分解是唯一的。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>唯一分解定理表明任何一个大于 $1$ 的整数都可以唯一地表示为一系列质数的乘积，即质因数分解是唯一的。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "贪心算法通过每一步选择局部最优解来获得全局最优解，但并不一定能找到最优解。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>贪心算法通过每一步选择局部最优解来获得全局最优解，但并不一定能找到最优解。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "归并排序和快速排序都采用递归实现，也都是不稳定排序。（ ）",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>归并排序和快速排序都采用递归实现，也都是不稳定排序。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "插入排序有时比快速排序时间复杂度更低。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>插入排序有时比快速排序时间复杂度更低。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在进行全国人口普查时，将其分解为对每个省市县乡来进行普查和统计。这是典型的分治策略。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>在进行全国人口普查时，将其分解为对每个省市县乡来进行普查和统计。这是典型的分治策略。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在下面 C++ 代码中，由于删除了变量 `ptr` ，因此 `ptr` 所对应的数据也随之删除，故执行下述代码时，将报错。\n\n```cpp\nint* ptr = new int(10);\ncout << *ptr << endl;\ndelete ptr;\ncout << ptr << endl;\n```",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>在下面 C++ 代码中，由于删除了变量 <code>ptr</code> ，因此 <code>ptr</code> 所对应的数据也随之删除，故执行下述代码时，将报错。</p>\n<pre><code class=\"language-cpp\">int* ptr = new int(10);\ncout &lt;&lt; *ptr &lt;&lt; endl;\ndelete ptr;\ncout &lt;&lt; ptr &lt;&lt; endl;\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：黑白格**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨有一个 $n$ 行 $m$ 列的网格图，其中每个格子要么是白色，要么是黑色。\n\n小杨想知道至少包含 $k$ 个黑色格子的最小子矩形包含了多少个格子。\n\n**输入格式**\n\n第一行包含三个正整数 $n,m,k$，含义如题面所示。\n\n之后 $n$ 行，每行⼀个长度为 $m$ 的 $\\texttt{01}$ 串，代表网格图第 $i$ 行格子的颜色，如果为 $\\texttt{0}$，则对应格子为白色，否则为黑色。\n\n**输出格式**\n\n输出一个整数，代表至少包含 $k$ 个黑色格子的最小子矩形包含格子的数量，如果不存在则输出 $0$。\n\n**样例输入 #1**\n```\n4 5 5\n00000\n01111\n00011\n00011\n```\n\n**样例输出 #1**\n```\n6\n```\n\n**说明/提示**\n\n#### 样例解释\n\n对于样例 $1$，假设 $(i,j)$ 代表第 $i$ 行第 $j$ 列，至少包含 $5$ 个黑色格子的最小子矩形的四个顶点为 $(2,4)$，$(2,5)$，$(4,4)$，$(4,5)$，共包含 $6$ 个格子。\n\n#### 数据范围\n\n对于全部数据，保证有 $1\\le n,m\\le 100$，$1\\le k\\le n\\times m$。\n\n| 子任务编号 | 得分 | $n,m$ |\n| :--: | :--: | :--: |\n| $1$ | $20$ | $\\le 10$  |\n| $2$ | $40$ | $n=1$，$1\\le m\\le 100$ |\n| $3$ | $40$ | $\\le 100$|\n\nUpdate on 2024/7/9：添加了若干组 hack 数据，感谢 @cff_0102 的贡献。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：黑白格</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨有一个 $n$ 行 $m$ 列的网格图，其中每个格子要么是白色，要么是黑色。</p>\n<p>小杨想知道至少包含 $k$ 个黑色格子的最小子矩形包含了多少个格子。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含三个正整数 $n,m,k$，含义如题面所示。</p>\n<p>之后 $n$ 行，每行⼀个长度为 $m$ 的 $\\texttt{01}$ 串，代表网格图第 $i$ 行格子的颜色，如果为 $\\texttt{0}$，则对应格子为白色，否则为黑色。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一个整数，代表至少包含 $k$ 个黑色格子的最小子矩形包含格子的数量，如果不存在则输出 $0$。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4 5 5\n00000\n01111\n00011\n00011\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>6\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<h4>样例解释</h4>\n<p>对于样例 $1$，假设 $(i,j)$ 代表第 $i$ 行第 $j$ 列，至少包含 $5$ 个黑色格子的最小子矩形的四个顶点为 $(2,4)$，$(2,5)$，$(4,4)$，$(4,5)$，共包含 $6$ 个格子。</p>\n<h4>数据范围</h4>\n<p>对于全部数据，保证有 $1\\le n,m\\le 100$，$1\\le k\\le n\\times m$。</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\">子任务编号</th>\n<th style=\"text-align:center\">得分</th>\n<th style=\"text-align:center\">$n,m$</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">$1$</td>\n<td style=\"text-align:center\">$20$</td>\n<td style=\"text-align:center\">$\\le 10$</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$2$</td>\n<td style=\"text-align:center\">$40$</td>\n<td style=\"text-align:center\">$n=1$，$1\\le m\\le 100$</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$3$</td>\n<td style=\"text-align:center\">$40$</td>\n<td style=\"text-align:center\">$\\le 100$</td>\n</tr>\n</tbody>\n</table>\n<p>Update on 2024/7/9：添加了若干组 hack 数据，感谢 @cff_0102 的贡献。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：小杨的幸运数字**\n\n> 时间限制：1.0 s | 内存限制：500.0 MB\n\n**题目描述**\n\n小杨认为他的幸运数字应该恰好有两种不同的质因子，例如，$12=2\\times 2\\times 3$ 的质因子有 $2,3$，恰好为两种不同的质因子，因此 $12$ 是幸运数字，而 $30=2\\times3\\times5$ 的质因子有 $2,3,5$，不符合要求，不为幸运数字。\n\n小杨现在有 $n$ 个正整数，他想知道每个正整数是否是他的幸运数字。\n\n**输入格式**\n\n第一行包含一个正整数 $n$，代表正整数个数。\n\n之后 $n$ 行，每行一个正整数。\n\n**输出格式**\n\n输出 $n$ 行，对于每个正整数，如果是幸运数字，输出 $1$，否则输出 $0$。\n\n\n**样例输入 #1**\n```\n3\n7\n12\n30\n```\n\n**样例输出 #1**\n```\n0\n1\n0\n```\n\n**说明/提示**\n\n### 样例解释\n\n$7$ 的质因子有 $7$，只有一种。\n\n$12$ 的质因子有 $2,3$，恰好有两种。\n\n$30$ 的质因子有 $2,3,5$，有三种。\n\n\n### 数据范围\n\n子任务编号|数据点占比|$n$|正整数值域\n:-:|:-:|:-:|:-:\n$1$|$40\\%$|$\\leq 100$|$\\leq 10^5$\n$2$|$60\\%$|$\\leq 10^4$|$\\leq 10^6$\n\n对于全部数据，保证有 $1\\leq n\\leq 10^4$，每个正整数 $a_i$ 满足 $2\\leq a_i\\leq 10^6$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：小杨的幸运数字</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：500.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨认为他的幸运数字应该恰好有两种不同的质因子，例如，$12=2\\times 2\\times 3$ 的质因子有 $2,3$，恰好为两种不同的质因子，因此 $12$ 是幸运数字，而 $30=2\\times3\\times5$ 的质因子有 $2,3,5$，不符合要求，不为幸运数字。</p>\n<p>小杨现在有 $n$ 个正整数，他想知道每个正整数是否是他的幸运数字。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含一个正整数 $n$，代表正整数个数。</p>\n<p>之后 $n$ 行，每行一个正整数。</p>\n<p><strong>输出格式</strong></p>\n<p>输出 $n$ 行，对于每个正整数，如果是幸运数字，输出 $1$，否则输出 $0$。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3\n7\n12\n30\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>0\n1\n0\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<h3>样例解释</h3>\n<p>$7$ 的质因子有 $7$，只有一种。</p>\n<p>$12$ 的质因子有 $2,3$，恰好有两种。</p>\n<p>$30$ 的质因子有 $2,3,5$，有三种。</p>\n<h3>数据范围</h3>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\">子任务编号</th>\n<th style=\"text-align:center\">数据点占比</th>\n<th style=\"text-align:center\">$n$</th>\n<th style=\"text-align:center\">正整数值域</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">$1$</td>\n<td style=\"text-align:center\">$40\\%$</td>\n<td style=\"text-align:center\">$\\leq 100$</td>\n<td style=\"text-align:center\">$\\leq 10^5$</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$2$</td>\n<td style=\"text-align:center\">$60\\%$</td>\n<td style=\"text-align:center\">$\\leq 10^4$</td>\n<td style=\"text-align:center\">$\\leq 10^6$</td>\n</tr>\n</tbody>\n</table>\n<p>对于全部数据，保证有 $1\\leq n\\leq 10^4$，每个正整数 $a_i$ 满足 $2\\leq a_i\\leq 10^6$。</p>\n"
+    }
+  ],
+  "id": "2024-06-gesp-5",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2024-06-gesp-5",
+  "version": "d37df8b6af10b1eb",
+  "warnings": [],
+  "objective_score": 50.0
+}

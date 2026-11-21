@@ -1,0 +1,631 @@
+{
+  "title": "2024年6月 GESP C++ 8级",
+  "category": "GESP",
+  "level": "8",
+  "date": "2024-06",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2024年6月 GESP C++ 8级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$24$",
+          "html": "<p>$24$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$48$",
+          "html": "<p>$48$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$32$",
+          "html": "<p>$32$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$12$",
+          "html": "<p>$12$</p>\n"
+        }
+      ],
+      "content": "GESP 活动期间，举办方从获胜者 ABCDE 五个⼈中选出三个⼈排成一队升国旗，其中 A 不能排在队首，请问有多少种排法？",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>GESP 活动期间，举办方从获胜者 ABCDE 五个⼈中选出三个⼈排成一队升国旗，其中 A 不能排在队首，请问有多少种排法？</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$11121$",
+          "html": "<p>$11121$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$11122$",
+          "html": "<p>$11122$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$11211$",
+          "html": "<p>$11211$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$11112$",
+          "html": "<p>$11112$</p>\n"
+        }
+      ],
+      "content": "$7$ 进制数 $235$ 转换成 $3$ 进制数是（ ）。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>$7$ 进制数 $235$ 转换成 $3$ 进制数是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$180$",
+          "html": "<p>$180$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$120$",
+          "html": "<p>$120$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$80$",
+          "html": "<p>$80$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$100$",
+          "html": "<p>$100$</p>\n"
+        }
+      ],
+      "content": "$0$,$1$,$2$,$3$,$4$,$5$ 这些数字组成一个三位数，请问没有重复数字的情况下，有多少种组法（ ）。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>$0$,$1$,$2$,$3$,$4$,$5$ 这些数字组成一个三位数，请问没有重复数字的情况下，有多少种组法（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "有 $V$ 个顶点、$E$ 条边的图的深度优先搜索遍历时间复杂度为（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>有 $V$ 个顶点、$E$ 条边的图的深度优先搜索遍历时间复杂度为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "一对夫妻生男生女的概率相同。已知这对夫妻有两个孩子，其中一个是女孩，另一个是男孩的概率是多少？",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>一对夫妻生男生女的概率相同。已知这对夫妻有两个孩子，其中一个是女孩，另一个是男孩的概率是多少？</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$544$",
+          "html": "<p>$544$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$546$",
+          "html": "<p>$546$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$564$",
+          "html": "<p>$564$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$602$",
+          "html": "<p>$602$</p>\n"
+        }
+      ],
+      "content": "从 $1$ 到 $2024$ 这 $2024$ 个数中，共有（ ）个包含数字 $6$ 的数。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>从 $1$ 到 $2024$ 这 $2024$ 个数中，共有（ ）个包含数字 $6$ 的数。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$4.25$",
+          "html": "<p>$4.25$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$4.125$",
+          "html": "<p>$4.125$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$4.5$",
+          "html": "<p>$4.5$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$4.75$",
+          "html": "<p>$4.75$</p>\n"
+        }
+      ],
+      "content": "二进制数 $100.001$ 转换成十进制数是（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>二进制数 $100.001$ 转换成十进制数是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`void BubbleSort(char a[][], int n);`",
+          "html": "<p><code>void BubbleSort(char a[][], int n);</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`void BubbleSort(char a[][20], int n);`",
+          "html": "<p><code>void BubbleSort(char a[][20], int n);</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`void BubbleSort(char a[10][], int n);`",
+          "html": "<p><code>void BubbleSort(char a[10][], int n);</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`void BubbleSort(char[,] a, int n);`",
+          "html": "<p><code>void BubbleSort(char[,] a, int n);</code></p>\n"
+        }
+      ],
+      "content": "以下函数声明，哪个是符合 C++ 语法的？（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>以下函数声明，哪个是符合 C++ 语法的？（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "两个参数个数不同的函数可以重名。",
+          "html": "<p>两个参数个数不同的函数可以重名。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "两个参数类型不同的函数可以重名。",
+          "html": "<p>两个参数类型不同的函数可以重名。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "两个类的方法可以重名。",
+          "html": "<p>两个类的方法可以重名。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "所有 C++ 运算符均可以重载。",
+          "html": "<p>所有 C++ 运算符均可以重载。</p>\n"
+        }
+      ],
+      "content": "下面有关 C++ 重载的说法，错误的是（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>下面有关 C++ 重载的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "如果 $n$ 是质数，那么 $\\varphi(n) = n - 1$ 。",
+          "html": "<p>如果 $n$ 是质数，那么 $\\varphi(n) = n - 1$ 。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "两个质数一定是互质数。",
+          "html": "<p>两个质数一定是互质数。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "两个相邻的数一定是互质数。",
+          "html": "<p>两个相邻的数一定是互质数。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "相邻的两个质数不一定是互质数。",
+          "html": "<p>相邻的两个质数不一定是互质数。</p>\n"
+        }
+      ],
+      "content": "小于或等于给定正整数 $n$ 的数中，与 $n$ 互质的数的个数，我们称为欧拉函数，记作 $\\varphi(n)$ 。下面说法错误的是（ ）。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>小于或等于给定正整数 $n$ 的数中，与 $n$ 互质的数的个数，我们称为欧拉函数，记作 $\\varphi(n)$ 。下面说法错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        }
+      ],
+      "content": "已知一棵二叉树有 $10$ 个节点，则其中至多有（ ）个节点有 $2$ 个子节点。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>已知一棵二叉树有 $10$ 个节点，则其中至多有（ ）个节点有 $2$ 个子节点。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$9$",
+          "html": "<p>$9$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$8$",
+          "html": "<p>$8$</p>\n"
+        }
+      ],
+      "content": "二项展开式的系数，正好满足杨辉三角的规律。当 $n = 5$ 时，二项式展开式中 $x^3$ 项的系数是（ ）。",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>二项展开式的系数，正好满足杨辉三角的规律。当 $n = 5$ 时，二项式展开式中 $x^3$ 项的系数是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面程序的时间复杂度为（ ）。\n\n```cpp\nbool notPrime[N] = {false};\nvoid sieve() {\n    for (int n = 2; n * n < N; n++)\n        if (!notPrime[n])\n            for (int i = n * n; i < N; i += n)\n                notPrime[i] = true;\n}\n```",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>下面程序的时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">bool notPrime[N] = {false};\nvoid sieve() {\n    for (int n = 2; n * n &lt; N; n++)\n        if (!notPrime[n])\n            for (int i = n * n; i &lt; N; i += n)\n                notPrime[i] = true;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面程序的最差时间复杂度为（ ）。\n\n```cpp\nint gcd(int m, int n) {\n    if (m == 0)\n        return n;\n    return gcd(n % m, m);\n}\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>下面程序的最差时间复杂度为（ ）。</p>\n<pre><code class=\"language-cpp\">int gcd(int m, int n) {\n    if (m == 0)\n        return n;\n    return gcd(n % m, m);\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$90$",
+          "html": "<p>$90$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$91$",
+          "html": "<p>$91$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$710$",
+          "html": "<p>$710$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$711$",
+          "html": "<p>$711$</p>\n"
+        }
+      ],
+      "content": "下面程序的输出为（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int cnt = 0;\n    for (int x = 0; x <= 10; x++)\n        for (int y = 0; y <= 10; y++)\n            for (int z = 0; z <= 10; z++)\n                if (x + y + z <= 15)\n                    cnt++;\n    cout << cnt << endl;\n    return 0;\n}\n```",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>下面程序的输出为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint main() {\n    int cnt = 0;\n    for (int x = 0; x &lt;= 10; x++)\n        for (int y = 0; y &lt;= 10; y++)\n            for (int z = 0; z &lt;= 10; z++)\n                if (x + y + z &lt;= 15)\n                    cnt++;\n    cout &lt;&lt; cnt &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "$A$ $B$ $C$ $D$ $E$ 五个小朋友，排成一队跑步，其中 $A$ $B$ 两人必须排在一起，一共有 $48$ 种排法。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>$A$ $B$ $C$ $D$ $E$ 五个小朋友，排成一队跑步，其中 $A$ $B$ 两人必须排在一起，一共有 $48$ 种排法。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "False",
+      "content": "已知 `double` 类型的变量 $a$ 和 $b$，则执行语句 `a = a + b; b = a - b; a = a - b;` 后，变量 $a$ 和 $b$ 的值会互换。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>已知 <code>double</code> 类型的变量 $a$ 和 $b$，则执行语句 <code>a = a + b; b = a - b; a = a - b;</code> 后，变量 $a$ 和 $b$ 的值会互换。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "一个袋子中有 $3$ 个完全相同的红色小球、$2$ 个完全相同的蓝色小球。每次从中取出 $1$ 个，再放回袋子，这样进行 $3$ 次后，可能的颜色顺序有 $8$ 种。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>一个袋子中有 $3$ 个完全相同的红色小球、$2$ 个完全相同的蓝色小球。每次从中取出 $1$ 个，再放回袋子，这样进行 $3$ 次后，可能的颜色顺序有 $8$ 种。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "已知 `int` 类型的变量 $a$ 和 $b$ 中分别存储着一个直角三角形的两条直角边的长度，则斜边的长度可以通过表达式 `sqrt(a * a + b * b)` 求得。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>已知 <code>int</code> 类型的变量 $a$ 和 $b$ 中分别存储着一个直角三角形的两条直角边的长度，则斜边的长度可以通过表达式 <code>sqrt(a * a + b * b)</code> 求得。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在一个包含 $v$ 个顶点、$e$ 条边的带权连通简单有向图上使用 Dijkstra 算法求最短路径，时间复杂度为 $O(v^2)$，可进一步优化至 $O(e + v \\log v)$。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>在一个包含 $v$ 个顶点、$e$ 条边的带权连通简单有向图上使用 Dijkstra 算法求最短路径，时间复杂度为 $O(v^2)$，可进一步优化至 $O(e + v \\log v)$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 $n$ 个元素的二叉排序树中查找一个元素，最差情况的时间复杂度是 $O(n)$。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>在 $n$ 个元素的二叉排序树中查找一个元素，最差情况的时间复杂度是 $O(n)$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 语言中，可以为同一个类定义多个析构函数。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>C++ 语言中，可以为同一个类定义多个析构函数。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "使用单链表和使用双向链表，查找元素的时间复杂度相同。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>使用单链表和使用双向链表，查找元素的时间复杂度相同。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "为解决哈希函数冲突，可以使用不同的哈希函数为每个表项各建立一个子哈希表，用来管理该表项的所有冲突元素。这些子哈希表一定不会发生冲突。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>为解决哈希函数冲突，可以使用不同的哈希函数为每个表项各建立一个子哈希表，用来管理该表项的所有冲突元素。这些子哈希表一定不会发生冲突。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "要判断无向图的连通性，在深度优先搜索和广度优先搜索中选择，深度优先的平均时间复杂度更低。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>要判断无向图的连通性，在深度优先搜索和广度优先搜索中选择，深度优先的平均时间复杂度更低。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：最远点对**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨有一棵包含 $n$ 个节点的树，这棵树上的任意一个节点要么是白色，要么是黑色。\n\n小杨想知道相距最远的一对不同颜色节点的距离是多少。\n\n**输入格式**\n\n第一行包含一个正整数 $n$，代表树的节点数。\n\n第二行包含 $n$ 个非负整数 $a_1,a_2,\\cdots,a_n$（对于所有的 $1\\le i\\le n$，均有 $a_i$ 等于 $0$ 或 $1$），其中如果 $a_i=0$，则节点 $i$ 的颜色为白色；如果 $a_i=1$，则节点 $i$ 的颜色为黑色。\n\n之后 $(n-1)$ 行，每行包含两个正整数 $x_i,y_i$，代表存在一条连接节点 $x_i$ 和 $y_i$ 的边。\n\n保证输入的树中存在不同颜色的点。\n\n**输出格式**\n\n输出一个整数，代表相距最远的一对不同颜色节点的距离。\n\n**样例输入 #1**\n```\n5\n0 1 0 1 0\n1 2\n1 3\n3 4\n3 5\n```\n\n**样例输出 #1**\n```\n3\n```\n\n**说明/提示**\n\n#### 样例解释\n\n相距最远的不同颜色的一对节点为节点 $2$ 和 $5$。\n\n#### 数据范围\n\n**本题采用捆绑测试。**\n\n| 子任务编号 | 得分 | $n$ | $a_i$ | 特殊条件 |\n| :--: | :--: | :--: | :--: | :--: |\n| $1$ |  $30$ | $\\le 10^5$ | $0\\le a_i\\le 1$ | 树的形态为一条链 |\n| $2$ | $30$ | $\\le 10^3$ | $0\\le a_i\\le 1$ | |\t\n| $3$ | $40$ | $\\le 10^5$ | $0\\le a_i\\le 1$ | |\t\n\n对于全部数据，保证有 $1\\le n\\le 10^5$，$0\\le a_i\\le 1$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：最远点对</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨有一棵包含 $n$ 个节点的树，这棵树上的任意一个节点要么是白色，要么是黑色。</p>\n<p>小杨想知道相距最远的一对不同颜色节点的距离是多少。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含一个正整数 $n$，代表树的节点数。</p>\n<p>第二行包含 $n$ 个非负整数 $a_1,a_2,\\cdots,a_n$（对于所有的 $1\\le i\\le n$，均有 $a_i$ 等于 $0$ 或 $1$），其中如果 $a_i=0$，则节点 $i$ 的颜色为白色；如果 $a_i=1$，则节点 $i$ 的颜色为黑色。</p>\n<p>之后 $(n-1)$ 行，每行包含两个正整数 $x_i,y_i$，代表存在一条连接节点 $x_i$ 和 $y_i$ 的边。</p>\n<p>保证输入的树中存在不同颜色的点。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一个整数，代表相距最远的一对不同颜色节点的距离。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5\n0 1 0 1 0\n1 2\n1 3\n3 4\n3 5\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>3\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<h4>样例解释</h4>\n<p>相距最远的不同颜色的一对节点为节点 $2$ 和 $5$。</p>\n<h4>数据范围</h4>\n<p><strong>本题采用捆绑测试。</strong></p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\">子任务编号</th>\n<th style=\"text-align:center\">得分</th>\n<th style=\"text-align:center\">$n$</th>\n<th style=\"text-align:center\">$a_i$</th>\n<th style=\"text-align:center\">特殊条件</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">$1$</td>\n<td style=\"text-align:center\">$30$</td>\n<td style=\"text-align:center\">$\\le 10^5$</td>\n<td style=\"text-align:center\">$0\\le a_i\\le 1$</td>\n<td style=\"text-align:center\">树的形态为一条链</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$2$</td>\n<td style=\"text-align:center\">$30$</td>\n<td style=\"text-align:center\">$\\le 10^3$</td>\n<td style=\"text-align:center\">$0\\le a_i\\le 1$</td>\n<td style=\"text-align:center\"></td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$3$</td>\n<td style=\"text-align:center\">$40$</td>\n<td style=\"text-align:center\">$\\le 10^5$</td>\n<td style=\"text-align:center\">$0\\le a_i\\le 1$</td>\n<td style=\"text-align:center\"></td>\n</tr>\n</tbody>\n</table>\n<p>对于全部数据，保证有 $1\\le n\\le 10^5$，$0\\le a_i\\le 1$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：空间跳跃**\n\n> 时间限制：1.0 s | 内存限制：500.0 MB\n\n**题目描述**\n\n小杨在二维空间中有 $n$ 个水平挡板，并且挡板之间彼此不重叠，其中第 $i$ 个挡板处于水平高度 $h_i$，左右端点分别位于 $l_i$ 与 $r_i$。\n\n小杨可以在挡板上左右移动，当小杨移动到右端点时，如果再向右移动会竖直掉落，从而落到下方第一个挡板上，移动到左端点时同理。小杨在挡板上每移动 $1$ 个单位长度会耗费 $1$ 个单位时间，掉落时每掉落 $1$ 个单位高度也会耗费 $1$ 个单位时间。\n\n小杨想知道，从第 $s$ 个挡板上的左端点出发到第 $t$ 个挡板需要耗费的最少时间是多少？\n\n注意：可能无法从第 $s$ 个挡板到达到第 $t$ 个挡板。\n\n**输入格式**\n\n第一行包含一个正整数 $n$，代表挡板数量。\n\n第二行包含两个正整数 $s,t$，含义如题面所示。\n\n之后 $n$ 行，每行包含三个正整数 $l_i,r_i,h_i$，代表第 $i$ 个挡板的左右端点位置与高度。\n\n\n**输出格式**\n\n输出一个整数代表需要耗费的最少时间，如果无法到达则输出 $-1$。\n\n\n**样例输入 #1**\n```\n3\n3 1\n5 6 3\n3 5 6\n1 4 100000\n```\n\n**样例输出 #1**\n```\n100001\n```\n\n**说明/提示**\n\n### 样例解释\n\n耗费时间最少的移动方案为，从第 $3$ 个挡板左端点移动到右端点，耗费 $3$ 个单位时间，然后向右移动掉落到第 $2$ 个挡板上，耗费 $100000-6=99994$ 个单位时间，之后再向右移动 $1$ 个单位长度，耗费 $1$ 个单位时间，最后向右移动掉落到第 $1$ 个挡板上，耗费 $3$ 个单位时间。共耗费 $100001$ 个单位时间。\n\n### 数据范围\n\n子任务编号|数据点占比|$n$|特殊条件\n:-:|:-:|:-:|:-:\n$1$|$20\\%$|$\\leq 1000$|$l_i=1$\n$2$|$40\\%$|$\\leq 1000$|$l_i=i,r_i=i+1$\n$3$|$40\\%$|$\\leq 1000$|\n\n对于全部数据，保证有 $1\\leq n\\leq 1000$，$1\\leq l_i\\leq r_i\\leq 10^5$，$1\\leq h_i\\leq 10^5$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：空间跳跃</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：500.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨在二维空间中有 $n$ 个水平挡板，并且挡板之间彼此不重叠，其中第 $i$ 个挡板处于水平高度 $h_i$，左右端点分别位于 $l_i$ 与 $r_i$。</p>\n<p>小杨可以在挡板上左右移动，当小杨移动到右端点时，如果再向右移动会竖直掉落，从而落到下方第一个挡板上，移动到左端点时同理。小杨在挡板上每移动 $1$ 个单位长度会耗费 $1$ 个单位时间，掉落时每掉落 $1$ 个单位高度也会耗费 $1$ 个单位时间。</p>\n<p>小杨想知道，从第 $s$ 个挡板上的左端点出发到第 $t$ 个挡板需要耗费的最少时间是多少？</p>\n<p>注意：可能无法从第 $s$ 个挡板到达到第 $t$ 个挡板。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含一个正整数 $n$，代表挡板数量。</p>\n<p>第二行包含两个正整数 $s,t$，含义如题面所示。</p>\n<p>之后 $n$ 行，每行包含三个正整数 $l_i,r_i,h_i$，代表第 $i$ 个挡板的左右端点位置与高度。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一个整数代表需要耗费的最少时间，如果无法到达则输出 $-1$。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3\n3 1\n5 6 3\n3 5 6\n1 4 100000\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>100001\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<h3>样例解释</h3>\n<p>耗费时间最少的移动方案为，从第 $3$ 个挡板左端点移动到右端点，耗费 $3$ 个单位时间，然后向右移动掉落到第 $2$ 个挡板上，耗费 $100000-6=99994$ 个单位时间，之后再向右移动 $1$ 个单位长度，耗费 $1$ 个单位时间，最后向右移动掉落到第 $1$ 个挡板上，耗费 $3$ 个单位时间。共耗费 $100001$ 个单位时间。</p>\n<h3>数据范围</h3>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\">子任务编号</th>\n<th style=\"text-align:center\">数据点占比</th>\n<th style=\"text-align:center\">$n$</th>\n<th style=\"text-align:center\">特殊条件</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">$1$</td>\n<td style=\"text-align:center\">$20\\%$</td>\n<td style=\"text-align:center\">$\\leq 1000$</td>\n<td style=\"text-align:center\">$l_i=1$</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$2$</td>\n<td style=\"text-align:center\">$40\\%$</td>\n<td style=\"text-align:center\">$\\leq 1000$</td>\n<td style=\"text-align:center\">$l_i=i,r_i=i+1$</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$3$</td>\n<td style=\"text-align:center\">$40\\%$</td>\n<td style=\"text-align:center\">$\\leq 1000$</td>\n<td style=\"text-align:center\"></td>\n</tr>\n</tbody>\n</table>\n<p>对于全部数据，保证有 $1\\leq n\\leq 1000$，$1\\leq l_i\\leq r_i\\leq 10^5$，$1\\leq h_i\\leq 10^5$。</p>\n"
+    }
+  ],
+  "id": "2024-06-gesp-8",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2024-06-gesp-8",
+  "version": "15490f34f3cf15ae",
+  "warnings": [],
+  "objective_score": 50.0
+}

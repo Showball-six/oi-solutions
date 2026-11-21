@@ -1,0 +1,631 @@
+{
+  "title": "2024年3月 GESP C++ 3级",
+  "category": "GESP",
+  "level": "3",
+  "date": "2024-03",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2024年3月 GESP C++ 3级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "1005",
+          "html": "<p>1005</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "1006",
+          "html": "<p>1006</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "FFFA",
+          "html": "<p>FFFA</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "FFFB",
+          "html": "<p>FFFB</p>\n"
+        }
+      ],
+      "content": "整数 $-5$ 的 16 位补码表示是( )。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>整数 $-5$ 的 16 位补码表示是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "FF04",
+          "html": "<p>FF04</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "FFFA",
+          "html": "<p>FFFA</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "FFFC",
+          "html": "<p>FFFC</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "FFFH",
+          "html": "<p>FFFH</p>\n"
+        }
+      ],
+      "content": "如果 $16$ 位短整数 $-2$ 的二进制是 \"FFFE\"，则短整数 $-4$ 的十六进制是( )。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>如果 $16$ 位短整数 $-2$ 的二进制是 &quot;FFFE&quot;，则短整数 $-4$ 的十六进制是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$16$",
+          "html": "<p>$16$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$19$",
+          "html": "<p>$19$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$48$",
+          "html": "<p>$48$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后的输出是( )。\n\n```cpp\nint main()\n{\n    cout << (3|16) << endl;\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的输出是( )。</p>\n<pre><code class=\"language-cpp\">int main()\n{\n    cout &lt;&lt; (3|16) &lt;&lt; endl;\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$0$",
+          "html": "<p>$0$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$-5$",
+          "html": "<p>$-5$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        }
+      ],
+      "content": "定义整数 `int x = -5`，则执行 C++ 代码 `cout << (x == (x << 1 >> 1))` 输出是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>定义整数 <code>int x = -5</code>，则执行 C++ 代码 <code>cout &lt;&lt; (x == (x &lt;&lt; 1 &gt;&gt; 1))</code> 输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$58$",
+          "html": "<p>$58$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$154$",
+          "html": "<p>$154$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$316$",
+          "html": "<p>$316$</p>\n"
+        }
+      ],
+      "content": "已知字符 `'0'` 的 ASCII 编码的十进制表示为 $48$，则执行下面 C++ 代码后，输出是（ ）。\n\n```cpp\nint main()\n{\n    string s=\"316\";\n    int n=s.length();\n    int x=0;\n    for(int i = 0; i < n; i++)\n        x += s[i];\n    cout << x << endl;\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>已知字符 <code>'0'</code> 的 ASCII 编码的十进制表示为 $48$，则执行下面 C++ 代码后，输出是（ ）。</p>\n<pre><code class=\"language-cpp\">int main()\n{\n    string s=&quot;316&quot;;\n    int n=s.length();\n    int x=0;\n    for(int i = 0; i &lt; n; i++)\n        x += s[i];\n    cout &lt;&lt; x &lt;&lt; endl;\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$2$ 的倍数",
+          "html": "<p>$2$ 的倍数</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$3$ 的倍数",
+          "html": "<p>$3$ 的倍数</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "能被 $2$ 或 $3$ 整除的数",
+          "html": "<p>能被 $2$ 或 $3$ 整除的数</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "能被 $2$ 和 $3$ 同时整除的数",
+          "html": "<p>能被 $2$ 和 $3$ 同时整除的数</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后数组中大于 $0$ 的数的特征是（ ）。\n\n```cpp\nint main()\n{\n    int a[20], i;\n    for (i = 0; i < 20; i++)\n        a[i] = i + 1;\n    for (int i = 0; i < 20; i++)\n        if ((a[i] % 2) && (a[i] % 3))\n            a[i] = 0;\n    for (i = 0; i < 20; i++)\n        if (a[i])\n            cout << a[i] << \" \";\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后数组中大于 $0$ 的数的特征是（ ）。</p>\n<pre><code class=\"language-cpp\">int main()\n{\n    int a[20], i;\n    for (i = 0; i &lt; 20; i++)\n        a[i] = i + 1;\n    for (int i = 0; i &lt; 20; i++)\n        if ((a[i] % 2) &amp;&amp; (a[i] % 3))\n            a[i] = 0;\n    for (i = 0; i &lt; 20; i++)\n        if (a[i])\n            cout &lt;&lt; a[i] &lt;&lt; &quot; &quot;;\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$20$",
+          "html": "<p>$20$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$19$",
+          "html": "<p>$19$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "不确定",
+          "html": "<p>不确定</p>\n"
+        }
+      ],
+      "content": "执行下面 C++ 代码后输出的第一个数是（ ）。\n\n```cpp\nint main()\n{\n    int a[20], i;\n    for(i = 0; i < 20; i++)\n        a[i] = i+1;\n    for( ; i > 0; i--)\n        cout << a[i-1] << \" \";\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>执行下面 C++ 代码后输出的第一个数是（ ）。</p>\n<pre><code class=\"language-cpp\">int main()\n{\n    int a[20], i;\n    for(i = 0; i &lt; 20; i++)\n        a[i] = i+1;\n    for( ; i &gt; 0; i--)\n        cout &lt;&lt; a[i-1] &lt;&lt; &quot; &quot;;\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`str[i] += 'a' - 'A'`",
+          "html": "<p><code>str[i] += 'a' - 'A'</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`str[i] += 20`",
+          "html": "<p><code>str[i] += 20</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`str[i] += 'A' - 'a'`",
+          "html": "<p><code>str[i] += 'A' - 'a'</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "无法实现",
+          "html": "<p>无法实现</p>\n"
+        }
+      ],
+      "content": "在下列代码的横线处填写（ ），可以使得输出是 GESP IS INTERESTING。\n\n```cpp\nint main()\n{\n    string str=\"gEsP is Interesting\";\n    int x = str.length();\n    for(int i = 0; i < x; i++)\n        if ((str[i]>='a') && (str[i]<='z'))\n            ________________________;\n    cout << str << endl;\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>在下列代码的横线处填写（ ），可以使得输出是 GESP IS INTERESTING。</p>\n<pre><code class=\"language-cpp\">int main()\n{\n    string str=&quot;gEsP is Interesting&quot;;\n    int x = str.length();\n    for(int i = 0; i &lt; x; i++)\n        if ((str[i]&gt;='a') &amp;&amp; (str[i]&lt;='z'))\n            ________________________;\n    cout &lt;&lt; str &lt;&lt; endl;\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        }
+      ],
+      "content": "假设英文句子由若干词构成。下面 C++ 代码统计输出的词数是（ ）。\n\n```cpp\nint main()\n{\n    string str=\"gEsP is Interesting !\";\n    int x = str.length();\n    int nwords = 0;\n    for(int i = 0; i < x; i++)\n        if (str[i]==' '){\n            nwords++;\n            while(str[++i]==' ') ;\n        }\n    cout << nwords << endl;\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>假设英文句子由若干词构成。下面 C++ 代码统计输出的词数是（ ）。</p>\n<pre><code class=\"language-cpp\">int main()\n{\n    string str=&quot;gEsP is Interesting !&quot;;\n    int x = str.length();\n    int nwords = 0;\n    for(int i = 0; i &lt; x; i++)\n        if (str[i]==' '){\n            nwords++;\n            while(str[++i]==' ') ;\n        }\n    cout &lt;&lt; nwords &lt;&lt; endl;\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$100$",
+          "html": "<p>$100$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$075$",
+          "html": "<p>$075$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$0x70$",
+          "html": "<p>$0x70$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$0x60$",
+          "html": "<p>$0x60$</p>\n"
+        }
+      ],
+      "content": "C++ 的字符变量的码值是整数，下面字面量形式的字符码值最大的是（ ）。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>C++ 的字符变量的码值是整数，下面字面量形式的字符码值最大的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$12$",
+          "html": "<p>$12$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 程序执行的结果是（ ）。\n\n```cpp\nint main()\n{\n    int a[20], i;\n    int cnt = 0;\n    for (i = 0; i < 20; i++)\n        a[i] = i + 1;\n    for ( ; i > 1; i--)\n        if ((a[i - 1] + a[i - 2]) % 3)\n            cnt++;\n    cout << cnt << endl;\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面 C++ 程序执行的结果是（ ）。</p>\n<pre><code class=\"language-cpp\">int main()\n{\n    int a[20], i;\n    int cnt = 0;\n    for (i = 0; i &lt; 20; i++)\n        a[i] = i + 1;\n    for ( ; i &gt; 1; i--)\n        if ((a[i - 1] + a[i - 2]) % 3)\n            cnt++;\n    cout &lt;&lt; cnt &lt;&lt; endl;\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$5$",
+          "html": "<p>$5$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$19$",
+          "html": "<p>$19$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$20$",
+          "html": "<p>$20$</p>\n"
+        }
+      ],
+      "content": "定义字符数组 `char str[20] = {'G', 'E', 'S', 'P'};`，则 `str` 的字符串长度为（ ）。",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>定义字符数组 <code>char str[20] = {'G', 'E', 'S', 'P'};</code>，则 <code>str</code> 的字符串长度为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "大于",
+          "html": "<p>大于</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "等于",
+          "html": "<p>等于</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "小于",
+          "html": "<p>小于</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "等于或小于",
+          "html": "<p>等于或小于</p>\n"
+        }
+      ],
+      "content": "定义整型变量 `int a = 3, b = 16`，则 `a | b` 的值和 `a + b` 的关系是（ ）。",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>定义整型变量 <code>int a = 3, b = 16</code>，则 <code>a | b</code> 的值和 <code>a + b</code> 的关系是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "小程序",
+          "html": "<p>小程序</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "计时器",
+          "html": "<p>计时器</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "操作系统",
+          "html": "<p>操作系统</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "神话人物",
+          "html": "<p>神话人物</p>\n"
+        }
+      ],
+      "content": "小杨的父母最近刚刚给他买了一块华为手表，他说手表上跑的是鸿蒙，这个鸿蒙是（ ）。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>小杨的父母最近刚刚给他买了一块华为手表，他说手表上跑的是鸿蒙，这个鸿蒙是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "制造自动驾驶汽车",
+          "html": "<p>制造自动驾驶汽车</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "创立培训学校",
+          "html": "<p>创立培训学校</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "发明汉字激光照排系统",
+          "html": "<p>发明汉字激光照排系统</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "成立方正公司",
+          "html": "<p>成立方正公司</p>\n"
+        }
+      ],
+      "content": "中国计算机学会（CCF）在 2024 年 1 月 27 日的颁奖典礼上颁布了王选奖，王选先生的重大贡献是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>中国计算机学会（CCF）在 2024 年 1 月 27 日的颁奖典礼上颁布了王选奖，王选先生的重大贡献是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "任意整数 $a$ 的二进制反码与补码都有 $1$ 位不同。 ( )",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>任意整数 $a$ 的二进制反码与补码都有 $1$ 位不同。 ( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "对整型变量 `int a = 3`，执行 C++ 代码 `a << 2` 将把 $2$ 输出到 $a$ 中。( )",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>对整型变量 <code>int a = 3</code>，执行 C++ 代码 <code>a &lt;&lt; 2</code> 将把 $2$ 输出到 $a$ 中。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "下面 C++ 代码可以计算 $1$ 到 $100$ 的累加和，采用的是穷举法。\n\n```cpp\nint main()\n{\n    int i, sum = 0;\n    for (int i = 1; i <= 100; i++)\n        sum += i;\n    cout << sum << endl;\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码可以计算 $1$ 到 $100$ 的累加和，采用的是穷举法。</p>\n<pre><code class=\"language-cpp\">int main()\n{\n    int i, sum = 0;\n    for (int i = 1; i &lt;= 100; i++)\n        sum += i;\n    cout &lt;&lt; sum &lt;&lt; endl;\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "一个 `int` 类型变量 $a$，执行操作 `(a << 2 >> 2)` 后的值一定是 $a$。（ ）",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>一个 <code>int</code> 类型变量 $a$，执行操作 <code>(a &lt;&lt; 2 &gt;&gt; 2)</code> 后的值一定是 $a$。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 语言中，`(010 << 1)` 执行结果是 `100`。（ ）",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，<code>(010 &lt;&lt; 1)</code> 执行结果是 <code>100</code>。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "False",
+      "content": "执行下面 C++ 代码后将输出 $2$。（ ）\n\n```cpp\nint main()\n{\n    string str=\"gEsP is Interesting\";\n    int x = str.find(\"s\");\n    cout << x << endl;\n    cout << endl;\n    return 0;\n}\n```",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>执行下面 C++ 代码后将输出 $2$。（ ）</p>\n<pre><code class=\"language-cpp\">int main()\n{\n    string str=&quot;gEsP is Interesting&quot;;\n    int x = str.find(&quot;s&quot;);\n    cout &lt;&lt; x &lt;&lt; endl;\n    cout &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 语言中，字符数组被定义时，它的大小可以调整。（ ）",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，字符数组被定义时，它的大小可以调整。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "对定义的数组 `int a[7] = {2, 0, 2, 4, 3, 1, 6}`，可以用简单循环就找到其中最小的整数。（ ）",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>对定义的数组 <code>int a[7] = {2, 0, 2, 4, 3, 1, 6}</code>，可以用简单循环就找到其中最小的整数。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "True",
+      "content": "小杨今年春节回奶奶家了，奶奶家的数字电视要设置 ip 地址并接入到 WIFI 盒子才能收看节目，那这个 WIFI 盒子具有路由器的功能。（ ）",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>小杨今年春节回奶奶家了，奶奶家的数字电视要设置 ip 地址并接入到 WIFI 盒子才能收看节目，那这个 WIFI 盒子具有路由器的功能。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "任何一个 `for` 循环都可以转化为等价的 `while` 循环（ ）。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>任何一个 <code>for</code> 循环都可以转化为等价的 <code>while</code> 循环（ ）。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：字母求和**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨同学发明了一种新型密码，对于每一个小写英文字母，该小写字母代表了一个正整数，即该字母在字母顺序中的位置，例如字母 `a` 代表了正整数 $1$，字母 `b` 代表了正整数 $2$；对于每一个大写英文字母，该大写字母代表了一个负整数，即该字母的 ASCII 码的相反数，例如字母 `A` 代表了负整数 $-65$。小杨同学利用这种放缩对一个整数进行了加密并得到了一个由大写字母和小写字母组成的字符串，该字符串中每个字母所代表数字的总和即为加密前的整数，例如 `aAc` 对应的加密前的整数为 $1+(-65)+3=-61$。\n\n对于给定的字符串，请你计算出它对应的加密前的整数是多少。\n\n**输入格式**\n\n第一行一个正整数 $n$，表示字符串中字母的个数。  \n第二行一个由大写字母和小写字母的字符串 `T`，代表加密后得到的字符串。\n\n**输出格式**\n\n输出一行一个整数，代表加密前的整数。\n\n**样例输入 #1**\n```\n3\naAc\n```\n\n**样例输出 #1**\n```\n-61\n```\n\n**说明/提示**\n\n对全部的测试数据，保证 $1 \\leq n \\leq 10^5$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：字母求和</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨同学发明了一种新型密码，对于每一个小写英文字母，该小写字母代表了一个正整数，即该字母在字母顺序中的位置，例如字母 <code>a</code> 代表了正整数 $1$，字母 <code>b</code> 代表了正整数 $2$；对于每一个大写英文字母，该大写字母代表了一个负整数，即该字母的 ASCII 码的相反数，例如字母 <code>A</code> 代表了负整数 $-65$。小杨同学利用这种放缩对一个整数进行了加密并得到了一个由大写字母和小写字母组成的字符串，该字符串中每个字母所代表数字的总和即为加密前的整数，例如 <code>aAc</code> 对应的加密前的整数为 $1+(-65)+3=-61$。</p>\n<p>对于给定的字符串，请你计算出它对应的加密前的整数是多少。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行一个正整数 $n$，表示字符串中字母的个数。<br />\n第二行一个由大写字母和小写字母的字符串 <code>T</code>，代表加密后得到的字符串。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行一个整数，代表加密前的整数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3\naAc\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>-61\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对全部的测试数据，保证 $1 \\leq n \\leq 10^5$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：完全平方数**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨同学有一个包含 $n$ 个非负整数的序列 $A$，他想要知道其中有多少对下标组合 $\\langle i,j\\rangle$（$1 \\leq i < j \\leq n$），使得 $A_i + A_j$ 是完全平方数。\n\n如果 $x$ 是完全平方数，则存在非负整数 $y$ 使得 $y \\times y = x$。\n\n**输入格式**\n\n第一行一个非负整数 $n$，表示非负整数个数。  \n第二入行包含 $n$ 个非负整数 $A_1, A_2, \\dots A_n$，表示序列 $A$ 包含的非负整数。\n\n**输出格式**\n\n输出一行一个整数表示答案。\n\n**样例输入 #1**\n```\n5\n1 4 3 3 5\n```\n\n**样例输出 #1**\n```\n3\n```\n\n**说明/提示**\n\n对全部的测试数据，保证 $1 \\leq n \\leq 1000$，$0 \\leq A_i \\leq 10^5$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：完全平方数</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨同学有一个包含 $n$ 个非负整数的序列 $A$，他想要知道其中有多少对下标组合 $\\langle i,j\\rangle$（$1 \\leq i &lt; j \\leq n$），使得 $A_i + A_j$ 是完全平方数。</p>\n<p>如果 $x$ 是完全平方数，则存在非负整数 $y$ 使得 $y \\times y = x$。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行一个非负整数 $n$，表示非负整数个数。<br />\n第二入行包含 $n$ 个非负整数 $A_1, A_2, \\dots A_n$，表示序列 $A$ 包含的非负整数。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行一个整数表示答案。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5\n1 4 3 3 5\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>3\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对全部的测试数据，保证 $1 \\leq n \\leq 1000$，$0 \\leq A_i \\leq 10^5$。</p>\n"
+    }
+  ],
+  "id": "2024-03-gesp-3",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2024-03-gesp-3",
+  "version": "ab176bdf01abc71d",
+  "warnings": [],
+  "objective_score": 50.0
+}

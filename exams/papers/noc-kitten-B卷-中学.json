@@ -1,0 +1,607 @@
+{
+  "title": "2021年NOC B卷模拟考（中学Kitten）",
+  "category": "其他赛事",
+  "level": "NOC",
+  "date": "2021",
+  "time_limit": 120,
+  "total_score": 100,
+  "description": "NOC 全国青少年编程能力竞赛模拟考 · ",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 3.0,
+      "answer": "A",
+      "content": "⻆色“色块”有4个造型,当运行当前脚本后,⻆色“色块”会处于()造型。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q1_0.png)\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "蓝色色块",
+          "html": "<p>蓝色色块</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "⻩色色块",
+          "html": "<p>⻩色色块</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "绿色色块",
+          "html": "<p>绿色色块</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "黑色色块",
+          "html": "<p>黑色色块</p>\n"
+        }
+      ],
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>⻆色“色块”有4个造型,当运行当前脚本后,⻆色“色块”会处于()造型。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q1_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 3.0,
+      "answer": "C",
+      "content": "运行下列哪段积木后可以绘制出如下图形?( )\n![img](../assets/images/noc/noc-kitten-B卷-中学/q2_0.png)\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q2_1.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q2_1.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q2_2.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q2_2.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q2_3.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q2_3.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q2_4.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q2_4.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>运行下列哪段积木后可以绘制出如下图形?( )<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q2_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 3.0,
+      "answer": "A",
+      "content": "运行下面这段程序,最终打印出来的文字是()。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q3_0.png)\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "过必考逢",
+          "html": "<p>过必考逢</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "必过逢考",
+          "html": "<p>必过逢考</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "逢考必过",
+          "html": "<p>逢考必过</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "过必逢考",
+          "html": "<p>过必逢考</p>\n"
+        }
+      ],
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>运行下面这段程序,最终打印出来的文字是()。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q3_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 3.0,
+      "answer": "B",
+      "content": "运行当前脚本,最终新建对话框显示的内容是( )。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q4_0.png)\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "23",
+          "html": "<p>23</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "24",
+          "html": "<p>24</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "42",
+          "html": "<p>42</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "32",
+          "html": "<p>32</p>\n"
+        }
+      ],
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>运行当前脚本,最终新建对话框显示的内容是( )。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q4_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 3.0,
+      "answer": "C",
+      "content": "以下（）组积⽊可以实现⿏标按下，⻆⾊⼀直向上移动，否则⻆⾊⼀直向下掉落。\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q5_0.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q5_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q5_1.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q5_1.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q5_2.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q5_2.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q5_3.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q5_3.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>以下（）组积⽊可以实现⿏标按下，⻆⾊⼀直向上移动，否则⻆⾊⼀直向下掉落。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 3.0,
+      "answer": "D",
+      "content": "运行当前脚本,最终新建对话框显示的内容是( )。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q6_0.png)\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "0+0+1+2+3+4+5+6+7+8+9",
+          "html": "<p>0+0+1+2+3+4+5+6+7+8+9</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "0+1+2+3+4+5+6+7+8+9+10",
+          "html": "<p>0+1+2+3+4+5+6+7+8+9+10</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "45",
+          "html": "<p>45</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "55",
+          "html": "<p>55</p>\n"
+        }
+      ],
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>运行当前脚本,最终新建对话框显示的内容是( )。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q6_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 3.0,
+      "answer": "C",
+      "content": "下图为“雷电猴”的脚本。运⾏该脚本，则舞台区显示的是（）。\n注：克隆体可以全部显示在舞台上\n![img](../assets/images/noc/noc-kitten-B卷-中学/q7_0.png)\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q7_1.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q7_1.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q7_2.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q7_2.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q7_3.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q7_3.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q7_4.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q7_4.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>下图为“雷电猴”的脚本。运⾏该脚本，则舞台区显示的是（）。<br />\n注：克隆体可以全部显示在舞台上<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q7_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 3.0,
+      "answer": "A",
+      "content": "下面的脚本运行后,角色说出的结果是( )。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q8_0.png)\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q8_1.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q8_1.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q8_2.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q8_2.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q8_3.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q8_3.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q8_4.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q8_4.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下面的脚本运行后,角色说出的结果是( )。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q8_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 3.0,
+      "answer": "B",
+      "content": "小可编辑了一个程序,想要实现按照顺序输出结果分别是“2.变量 A 和 B 有一个不为true”;“3.变量 A 和 B 都为 true,或其中一个变量为 true”;“5.变量 A 和 B 都为 false,或其中一个变量为false”,那在下列程序问号处填入( )积木能帮助小可实现这个效果。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q9_0.png)![img](../assets/images/noc/noc-kitten-B卷-中学/q9_1.png)\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q9_2.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q9_2.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q9_3.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q9_3.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q9_4.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q9_4.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q9_5.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q9_5.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>小可编辑了一个程序,想要实现按照顺序输出结果分别是“2.变量 A 和 B 有一个不为true”;“3.变量 A 和 B 都为 true,或其中一个变量为 true”;“5.变量 A 和 B 都为 false,或其中一个变量为false”,那在下列程序问号处填入( )积木能帮助小可实现这个效果。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q9_0.png\" alt=\"\" loading=\"lazy\" /><img src=\"assets/images/noc/noc-kitten-B卷-中学/q9_1.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 3.0,
+      "answer": "C",
+      "content": "如果弹幕仓库里一共有9条准备好的弹幕,要实现将9条弹幕依次从弹幕仓库显示到舞台区的效果,修改下列积木脚本中( )才能实现对应的效果。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q10_0.png)\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "当“弹出字幕”⻆色离开边缘后,应该使变量项数增加9",
+          "html": "<p>当“弹出字幕”⻆色离开边缘后,应该使变量项数增加9</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "如果“项数”变量大于“弹幕仓库的⻓度”条件成立,应该要设置变量“项数”的值为9",
+          "html": "<p>如果“项数”变量大于“弹幕仓库的⻓度”条件成立,应该要设置变量“项数”的值为9</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "不需要修改",
+          "html": "<p>不需要修改</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "当“弹出字幕”⻆色离开边缘后,应该使变量项数减少1",
+          "html": "<p>当“弹出字幕”⻆色离开边缘后,应该使变量项数减少1</p>\n"
+        }
+      ],
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>如果弹幕仓库里一共有9条准备好的弹幕,要实现将9条弹幕依次从弹幕仓库显示到舞台区的效果,修改下列积木脚本中( )才能实现对应的效果。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q10_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "multi_choice",
+      "id": 11,
+      "score": 4.0,
+      "answer": "AC",
+      "content": "以下是“灰灰鼠”⻆色的脚本,运行此程序脚本后,灰灰鼠的坐标不可能是( )选项。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q11_0.png)\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "(89,227)",
+          "html": "<p>(89,227)</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "(95,163)",
+          "html": "<p>(95,163)</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "(103,95)",
+          "html": "<p>(103,95)</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "(76,189)",
+          "html": "<p>(76,189)</p>\n"
+        }
+      ],
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>以下是“灰灰鼠”⻆色的脚本,运行此程序脚本后,灰灰鼠的坐标不可能是( )选项。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q11_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "multi_choice",
+      "id": 12,
+      "score": 4.0,
+      "answer": "AC",
+      "content": "运行下面脚本,新建对话框输出的值可能是( )。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q12_0.png)\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "150",
+          "html": "<p>150</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "200",
+          "html": "<p>200</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "3",
+          "html": "<p>3</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "-200",
+          "html": "<p>-200</p>\n"
+        }
+      ],
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>运行下面脚本,新建对话框输出的值可能是( )。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q12_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "multi_choice",
+      "id": 13,
+      "score": 4.0,
+      "answer": "ABC",
+      "content": "观察图片,编程猫和终点都是⻆色,那么可以利用( )方法侦测编程猫是否碰到终点?\n![img](../assets/images/noc/noc-kitten-B卷-中学/q13_0.png)\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "通过颜色侦测",
+          "html": "<p>通过颜色侦测</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "通过坐标侦测",
+          "html": "<p>通过坐标侦测</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "通过⻆色碰撞侦测",
+          "html": "<p>通过⻆色碰撞侦测</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "通过按键侦测",
+          "html": "<p>通过按键侦测</p>\n"
+        }
+      ],
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>观察图片,编程猫和终点都是⻆色,那么可以利用( )方法侦测编程猫是否碰到终点?<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q13_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "multi_choice",
+      "id": 14,
+      "score": 4.0,
+      "answer": "ABD",
+      "content": "下列哪个程序能找出列表中的最大值?\n![img](../assets/images/noc/noc-kitten-B卷-中学/q14_0.png)\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q14_1.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q14_1.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q14_2.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q14_2.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q14_3.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q14_3.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "![img](../assets/images/noc/noc-kitten-B卷-中学/q14_4.png)",
+          "html": "<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q14_4.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+        }
+      ],
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>下列哪个程序能找出列表中的最大值?<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q14_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "multi_choice",
+      "id": 15,
+      "score": 4.0,
+      "answer": "BCD",
+      "content": "运行下列程序脚本,输入( )数值对话框会显示“YES“。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q15_0.png)\n",
+      "options": [
+        {
+          "key": "A",
+          "text": "152",
+          "html": "<p>152</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "153",
+          "html": "<p>153</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "370",
+          "html": "<p>370</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "371",
+          "html": "<p>371</p>\n"
+        }
+      ],
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>运行下列程序脚本,输入( )数值对话框会显示“YES“。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q15_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "fill",
+      "id": 16,
+      "score": 5.0,
+      "answer": "3",
+      "content": "下列为“钻石”⻆色的脚本,当运行程序后,舞台上“钻石”的数量最多有__________个。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q16_0.png)\n",
+      "options": [],
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>下列为“钻石”⻆色的脚本,当运行程序后,舞台上“钻石”的数量最多有__________个。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q16_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "fill",
+      "id": 17,
+      "score": 5.0,
+      "answer": "7",
+      "content": "下图是某⻆色的脚本。运行脚本,新建对话框输出的数值为 ____________。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q17_0.png)\n",
+      "options": [],
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>下图是某⻆色的脚本。运行脚本,新建对话框输出的数值为 ____________。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q17_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "fill",
+      "id": 18,
+      "score": 5.0,
+      "answer": "100",
+      "content": "下图是某⻆色的脚本。运行脚本,该⻆色的X坐标为 ____________。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q18_0.png)\n",
+      "options": [],
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>下图是某⻆色的脚本。运行脚本,该⻆色的X坐标为 ____________。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q18_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "fill",
+      "id": 19,
+      "score": 5.0,
+      "answer": "120",
+      "content": "某⻆色脚本如下。运行脚本,该⻆色X坐标最大为________。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q19_0.png)\n",
+      "options": [],
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>某⻆色脚本如下。运行脚本,该⻆色X坐标最大为________。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q19_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "fill",
+      "id": 20,
+      "score": 5.0,
+      "answer": "2212211",
+      "content": "运行以下脚本,则最终对话框输出的结果是________。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q20_0.png)\n",
+      "options": [],
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>运行以下脚本,则最终对话框输出的结果是________。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q20_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "fill",
+      "id": 21,
+      "score": 5.0,
+      "answer": "20",
+      "content": "运行下图所示的脚本,新建对话框输出的内容为__________。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q21_0.png)\n",
+      "options": [],
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>运行下图所示的脚本,新建对话框输出的内容为__________。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q21_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "fill",
+      "id": 22,
+      "score": 5.0,
+      "answer": "6",
+      "content": "已知列表“奇数库”和“偶数库”都是空列表,运行下面积木后,“偶数库”储存了__________个偶数。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q22_0.png)\n\n![img](../assets/images/noc/noc-kitten-B卷-中学/q22_1.png)\n",
+      "options": [],
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>已知列表“奇数库”和“偶数库”都是空列表,运行下面积木后,“偶数库”储存了__________个偶数。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q22_0.png\" alt=\"\" loading=\"lazy\" /></p>\n<p><img src=\"assets/images/noc/noc-kitten-B卷-中学/q22_1.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "fill",
+      "id": 23,
+      "score": 5.0,
+      "answer": "6",
+      "content": "已知下图脚本运行之后,新建对话框显示64,则“?”处应填写____。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q23_0.png)\n",
+      "options": [],
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>已知下图脚本运行之后,新建对话框显示64,则“?”处应填写____。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q23_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "fill",
+      "id": 24,
+      "score": 5.0,
+      "answer": "4",
+      "content": "已知某⻆色初始面向⻆度为0度,想要使用下列脚本绘制出如下的图形,则“?”处应填写___________。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q24_0.png)\n",
+      "options": [],
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>已知某⻆色初始面向⻆度为0度,想要使用下列脚本绘制出如下的图形,则“?”处应填写___________。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q24_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    },
+    {
+      "type": "fill",
+      "id": 25,
+      "score": 5.0,
+      "answer": "5",
+      "content": "某⻆色脚本如下,运行脚本,则新建对话框输出的内容是________。\n![img](../assets/images/noc/noc-kitten-B卷-中学/q25_0.png)\n",
+      "options": [],
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>某⻆色脚本如下,运行脚本,则新建对话框输出的内容是________。<br />\n<img src=\"assets/images/noc/noc-kitten-B卷-中学/q25_0.png\" alt=\"\" loading=\"lazy\" /></p>\n"
+    }
+  ],
+  "id": "noc-kitten-B卷-中学",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/noc-kitten-B卷-中学",
+  "version": "7784d5b8dfb451ae",
+  "warnings": [],
+  "objective_score": 100.0
+}

@@ -1,0 +1,642 @@
+{
+  "title": "2024年3月 GESP C++ 7级",
+  "category": "GESP",
+  "level": "7",
+  "date": "2024-03",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2024年3月 GESP C++ 7级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "B",
+      "content": "下列关于排序的说法，正确的是( )。",
+      "options": [
+        {
+          "key": "A",
+          "text": "冒泡排序是最快的排序算法之一。",
+          "html": "<p>冒泡排序是最快的排序算法之一。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "快速排序通常是不稳定的。",
+          "html": "<p>快速排序通常是不稳定的。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "最差情况，$n$ 个元素做归并排序的时间复杂度为 $O(n \\log n)$。",
+          "html": "<p>最差情况，$n$ 个元素做归并排序的时间复杂度为 $O(n \\log n)$。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "以上均不正确。",
+          "html": "<p>以上均不正确。</p>\n"
+        }
+      ],
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>下列关于排序的说法，正确的是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "C",
+      "content": "下面的程序属于哪种算法( )。\n\n```cpp\nint pos[8];\nvoid queen(int n) {\n    for (int i = 0; i < 8; i++) {\n        pos[n] = i;\n        bool attacked = false;\n        for (int j = 0; j < n; j++)\n            if (pos[n] == pos[j] || pos[n] + n == pos[j] + j || pos[n] - n == pos[j] - j) {\n                attacked = true;\n                break;\n            }\n        if (attacked)\n            continue;\n        if (n == 7) {\n            return;\n        } else {\n            queen(n + 1);\n        }\n    }\n}\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "贪心算法",
+          "html": "<p>贪心算法</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "动态规划",
+          "html": "<p>动态规划</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "深度优先搜索",
+          "html": "<p>深度优先搜索</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "广度优先搜索",
+          "html": "<p>广度优先搜索</p>\n"
+        }
+      ],
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>下面的程序属于哪种算法( )。</p>\n<pre><code class=\"language-cpp\">int pos[8];\nvoid queen(int n) {\n    for (int i = 0; i &lt; 8; i++) {\n        pos[n] = i;\n        bool attacked = false;\n        for (int j = 0; j &lt; n; j++)\n            if (pos[n] == pos[j] || pos[n] + n == pos[j] + j || pos[n] - n == pos[j] - j) {\n                attacked = true;\n                break;\n            }\n        if (attacked)\n            continue;\n        if (n == 7) {\n            return;\n        } else {\n            queen(n + 1);\n        }\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "D",
+      "content": "下面有关 C++ 类的说法，错误的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "C++ 类对象销毁时，会执行析构函数。",
+          "html": "<p>C++ 类对象销毁时，会执行析构函数。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "C++ 类可以通过定义构造函数实现自动类型转换。",
+          "html": "<p>C++ 类可以通过定义构造函数实现自动类型转换。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "C++ 类可以通过重载 `[]` 运算符实现通过给定下标访问数组成员的元素。",
+          "html": "<p>C++ 类可以通过重载 <code>[]</code> 运算符实现通过给定下标访问数组成员的元素。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "C++ 类可以包含任意类型的成员变量。",
+          "html": "<p>C++ 类可以包含任意类型的成员变量。</p>\n"
+        }
+      ],
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下面有关 C++ 类的说法，错误的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "C",
+      "content": "一个连通的简单无向图，共有 $28$ 条边，则该图至少有( )个顶点。",
+      "options": [
+        {
+          "key": "A",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$7$",
+          "html": "<p>$7$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$8$",
+          "html": "<p>$8$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$9$",
+          "html": "<p>$9$</p>\n"
+        }
+      ],
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>一个连通的简单无向图，共有 $28$ 条边，则该图至少有( )个顶点。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "D",
+      "content": "以下哪个方案不能合理解决或缓解哈希表冲突（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "在每个哈希表项处，使用单链表管理该表项的冲突元素。",
+          "html": "<p>在每个哈希表项处，使用单链表管理该表项的冲突元素。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "建立额外的单链表，用来管理所有发生冲突的元素。",
+          "html": "<p>建立额外的单链表，用来管理所有发生冲突的元素。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "使用不同的哈希函数再建立一个哈希表，用来管理所有发生冲突的元素。",
+          "html": "<p>使用不同的哈希函数再建立一个哈希表，用来管理所有发生冲突的元素。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "用新元素覆盖发生冲突的哈希表项。",
+          "html": "<p>用新元素覆盖发生冲突的哈希表项。</p>\n"
+        }
+      ],
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>以下哪个方案不能合理解决或缓解哈希表冲突（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "content": "已知一颗二叉树的中序遍历序列为：{C F B A E D G}，后序遍历序列为：{F C B E G D A}，则下列说法中正确的是( )。",
+      "options": [
+        {
+          "key": "A",
+          "text": "该树是平衡二叉树。",
+          "html": "<p>该树是平衡二叉树。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "该树的高为 $4$ 。",
+          "html": "<p>该树的高为 $4$ 。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "该树有 $4$ 个叶节点。",
+          "html": "<p>该树有 $4$ 个叶节点。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "以上说法都不对。",
+          "html": "<p>以上说法都不对。</p>\n"
+        }
+      ],
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>已知一颗二叉树的中序遍历序列为：{C F B A E D G}，后序遍历序列为：{F C B E G D A}，则下列说法中正确的是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "A",
+      "content": "以下关于二叉排序树的说法，正确的是（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "二叉排序树的中序遍历序列一定是有序的。",
+          "html": "<p>二叉排序树的中序遍历序列一定是有序的。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "在含 $n$ 个节点的二叉排序树中查找元素，最差情况的时间复杂度为 $O(n)$。",
+          "html": "<p>在含 $n$ 个节点的二叉排序树中查找元素，最差情况的时间复杂度为 $O(n)$。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "二叉排序树一定是二叉平衡树。",
+          "html": "<p>二叉排序树一定是二叉平衡树。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "以上说法都不对。",
+          "html": "<p>以上说法都不对。</p>\n"
+        }
+      ],
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>以下关于二叉排序树的说法，正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "content": "已知 $x$ 为 `double` 类型的变量，且值大于 $0$，则下列表达式的值一定大于 $0$ 的是( )。",
+      "options": [
+        {
+          "key": "A",
+          "text": "`sin(x) / x`",
+          "html": "<p><code>sin(x) / x</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`exp(x) - x`",
+          "html": "<p><code>exp(x) - x</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`log(x) - x`",
+          "html": "<p><code>log(x) - x</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`x * x - x`",
+          "html": "<p><code>x * x - x</code></p>\n"
+        }
+      ],
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>已知 $x$ 为 <code>double</code> 类型的变量，且值大于 $0$，则下列表达式的值一定大于 $0$ 的是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "content": "一个简单有向图有 $10$ 个结点、$30$ 条边。再增加多少条边可以成为完全图。（ ）",
+      "options": [
+        {
+          "key": "A",
+          "text": "$60$",
+          "html": "<p>$60$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$70$",
+          "html": "<p>$70$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$15$",
+          "html": "<p>$15$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$20$",
+          "html": "<p>$20$</p>\n"
+        }
+      ],
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>一个简单有向图有 $10$ 个结点、$30$ 条边。再增加多少条边可以成为完全图。（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "C",
+      "content": "下列选项中，哪个可能是下图的深度优先遍历序列（ ）。",
+      "options": [
+        {
+          "key": "A",
+          "text": "$8$, $6$, $1$, $5$, $3$, $4$, $2$, $10$, $7$, $12$, $11$, $9$",
+          "html": "<p>$8$, $6$, $1$, $5$, $3$, $4$, $2$, $10$, $7$, $12$, $11$, $9$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$7$, $8$, $6$, $4$, $2$, $1$, $5$, $3$, $12$, $9$, $11$, $10$。",
+          "html": "<p>$7$, $8$, $6$, $4$, $2$, $1$, $5$, $3$, $12$, $9$, $11$, $10$。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$8$, $10$, $12$, $9$, $11$, $4$, $5$, $3$, $2$, $1$, $6$, $7$",
+          "html": "<p>$8$, $10$, $12$, $9$, $11$, $4$, $5$, $3$, $2$, $1$, $6$, $7$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$7$, $8$, $10$, $9$, $11$, $12$, $4$, $5$, $1$, $2$, $3$, $6$。",
+          "html": "<p>$7$, $8$, $10$, $9$, $11$, $12$, $4$, $5$, $1$, $2$, $3$, $6$。</p>\n"
+        }
+      ],
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下列选项中，哪个可能是下图的深度优先遍历序列（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "content": "下面 `schedule` 函数的时间复杂度为( )。\n\n```cpp\n#include <algorithm>\nusing namespace std;\nstruct activity {\n    int id, start, end;\n};\nbool compare(activity a, activity b) {\n    return a.end < b.end;\n}\nint schedule(int n, activity * p) {\n    sort(p, p + n, compare);\n    int cnt = 0, end = 0;\n    for (int i = 0; i < n; i++) {\n        if (p[i].start >= end) {\n            end = p[i].end;\n            cnt++;\n        }\n    }\n    return cnt;\n}\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下面 <code>schedule</code> 函数的时间复杂度为( )。</p>\n<pre><code class=\"language-cpp\">#include &lt;algorithm&gt;\nusing namespace std;\nstruct activity {\n    int id, start, end;\n};\nbool compare(activity a, activity b) {\n    return a.end &lt; b.end;\n}\nint schedule(int n, activity * p) {\n    sort(p, p + n, compare);\n    int cnt = 0, end = 0;\n    for (int i = 0; i &lt; n; i++) {\n        if (p[i].start &gt;= end) {\n            end = p[i].end;\n            cnt++;\n        }\n    }\n    return cnt;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "B",
+      "content": "下面 `search` 函数的平均时间复杂度为( )。\n\n```cpp\nint search(int n, int * p, int target) {\n    int low = 0, high = n;\n    while (low <= high) {\n        int middle = (low + high) / 2;\n        if (target == p[middle]) {\n            return middle;\n        } else if (target > p[middle]) {\n            low = middle + 1;\n        } else {\n            high = middle - 1;\n        }\n    }\n    return -1;\n}\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "可能无法返回",
+          "html": "<p>可能无法返回</p>\n"
+        }
+      ],
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>下面 <code>search</code> 函数的平均时间复杂度为( )。</p>\n<pre><code class=\"language-cpp\">int search(int n, int * p, int target) {\n    int low = 0, high = n;\n    while (low &lt;= high) {\n        int middle = (low + high) / 2;\n        if (target == p[middle]) {\n            return middle;\n        } else if (target &gt; p[middle]) {\n            low = middle + 1;\n        } else {\n            high = middle - 1;\n        }\n    }\n    return -1;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "C",
+      "content": "下面 `count_triple` 函数的时间复杂度为( )。\n\n```cpp\nint count_triple(int n) {\n    int cnt = 0;\n    for (int a = 1; a <= n; a++)\n        for (int b = a; a + b <= n; b++)\n            for (int c = b; a + b + c <= n; c++)\n                if (a * a + b * b == c * c)\n                    cnt++;\n    return cnt;\n}\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>下面 <code>count_triple</code> 函数的时间复杂度为( )。</p>\n<pre><code class=\"language-cpp\">int count_triple(int n) {\n    int cnt = 0;\n    for (int a = 1; a &lt;= n; a++)\n        for (int b = a; a + b &lt;= n; b++)\n            for (int c = b; a + b + c &lt;= n; c++)\n                if (a * a + b * b == c * c)\n                    cnt++;\n    return cnt;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "A",
+      "content": "下面程序的输出为（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\nint down(int n) {\n    if (n <= 1)\n        return n;\n    return down(n - 1) + down(n - 2) + down(n - 3);\n}\nint main() {\n    cout << down(6) << endl;\n    return 0;\n}\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$13$",
+          "html": "<p>$13$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$20$",
+          "html": "<p>$20$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "无法正常结束。",
+          "html": "<p>无法正常结束。</p>\n"
+        }
+      ],
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>下面程序的输出为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint down(int n) {\n    if (n &lt;= 1)\n        return n;\n    return down(n - 1) + down(n - 2) + down(n - 3);\n}\nint main() {\n    cout &lt;&lt; down(6) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "B",
+      "content": "下面的程序使用邻接矩阵表达的带权无向图，则从顶点 $0$ 到顶点 $3$ 的最短距离为（ ）。\n\n```cpp\nint weight[4][4] = {\n    {0, 2, 5, 8},\n    {2, 0, 1, 7},\n    {5, 1, 0, 4},\n    {8, 7, 4, 0}};\n```",
+      "options": [
+        {
+          "key": "A",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$7$",
+          "html": "<p>$7$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$8$",
+          "html": "<p>$8$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$9$",
+          "html": "<p>$9$</p>\n"
+        }
+      ],
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>下面的程序使用邻接矩阵表达的带权无向图，则从顶点 $0$ 到顶点 $3$ 的最短距离为（ ）。</p>\n<pre><code class=\"language-cpp\">int weight[4][4] = {\n    {0, 2, 5, 8},\n    {2, 0, 1, 7},\n    {5, 1, 0, 4},\n    {8, 7, 4, 0}};\n</code></pre>\n"
+    },
+    {
+      "type": "judge",
+      "id": 1,
+      "score": 2.0,
+      "answer": "",
+      "content": "祖冲之是南北朝时期杰出的数学家、天文学家，其主要贡献在数学、天文历法和机械制造三方面。他首次将“圆周率”精算到小数第七位，即在 $3.1415926$ 和 $3.1415927$ 之间。",
+      "uid": "q16",
+      "gradable": false,
+      "html": "<p>祖冲之是南北朝时期杰出的数学家、天文学家，其主要贡献在数学、天文历法和机械制造三方面。他首次将“圆周率”精算到小数第七位，即在 $3.1415926$ 和 $3.1415927$ 之间。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 2,
+      "score": 2.0,
+      "answer": "",
+      "content": "C++ 语言中，表达式 `2 ^ 3` 的结果类型为 `int`、值为 $8$。( )",
+      "uid": "q17",
+      "gradable": false,
+      "html": "<p>C++ 语言中，表达式 <code>2 ^ 3</code> 的结果类型为 <code>int</code>、值为 $8$。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 3,
+      "score": 2.0,
+      "answer": "",
+      "content": "一棵有 $n$ 个节点的完全二叉树，则树的深度为 $\\lfloor \\log_2 n \\rfloor + 1$。( )",
+      "uid": "q18",
+      "gradable": false,
+      "html": "<p>一棵有 $n$ 个节点的完全二叉树，则树的深度为 $\\lfloor \\log_2 n \\rfloor + 1$。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 4,
+      "score": 2.0,
+      "answer": "",
+      "content": "能用动态规划解决的问题，一般也可以用贪心法解决，但动态规划的效率更高。( )",
+      "uid": "q19",
+      "gradable": false,
+      "html": "<p>能用动态规划解决的问题，一般也可以用贪心法解决，但动态规划的效率更高。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 5,
+      "score": 2.0,
+      "answer": "",
+      "content": "使用 `math.h` 或 `cmath` 头文件中的正弦函数，表达式 `sin(30)` 的结果类型为 `double`、值约为 $0.5$。( )",
+      "uid": "q20",
+      "gradable": false,
+      "html": "<p>使用 <code>math.h</code> 或 <code>cmath</code> 头文件中的正弦函数，表达式 <code>sin(30)</code> 的结果类型为 <code>double</code>、值约为 $0.5$。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 6,
+      "score": 2.0,
+      "answer": "",
+      "content": "要求出简单有向图中从顶点 $A$ 到顶点 $B$ 的最短路径，在深度优先搜索和广度优先搜索中选择，广度优先更适合。( )",
+      "uid": "q21",
+      "gradable": false,
+      "html": "<p>要求出简单有向图中从顶点 $A$ 到顶点 $B$ 的最短路径，在深度优先搜索和广度优先搜索中选择，广度优先更适合。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 7,
+      "score": 2.0,
+      "answer": "",
+      "content": "某 $N$ 个表项的哈希表，在发生哈希函数冲突时采用向后寻找空位的方法解决冲突。其查找操作的平均时间复杂度为 $O(1)$，即使当该哈希表的每个表项都有元素时，查找操作的平均时间复杂度仍为 $O(1)$。( )",
+      "uid": "q22",
+      "gradable": false,
+      "html": "<p>某 $N$ 个表项的哈希表，在发生哈希函数冲突时采用向后寻找空位的方法解决冲突。其查找操作的平均时间复杂度为 $O(1)$，即使当该哈希表的每个表项都有元素时，查找操作的平均时间复杂度仍为 $O(1)$。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 8,
+      "score": 2.0,
+      "answer": "",
+      "content": "动态规划有递推实现和递归实现，有时两种实现的时间复杂度不同。( )",
+      "uid": "q23",
+      "gradable": false,
+      "html": "<p>动态规划有递推实现和递归实现，有时两种实现的时间复杂度不同。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 9,
+      "score": 2.0,
+      "answer": "",
+      "content": "围棋游戏中，判断落下一枚棋子后是否会提掉对方的子，可以使用泛洪算法来实现。( )",
+      "uid": "q24",
+      "gradable": false,
+      "html": "<p>围棋游戏中，判断落下一枚棋子后是否会提掉对方的子，可以使用泛洪算法来实现。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 10,
+      "score": 2.0,
+      "answer": "",
+      "content": "类 `B` 继承了抽象类 `A`，但未实现类 `A` 中的纯虚函数 `f`，则类 `B` 不能直接实例化。( )",
+      "uid": "q25",
+      "gradable": false,
+      "html": "<p>类 <code>B</code> 继承了抽象类 <code>A</code>，但未实现类 <code>A</code> 中的纯虚函数 <code>f</code>，则类 <code>B</code> 不能直接实例化。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 16,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：交流问题**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n来自两所学校 $A$、$B$ 的 $n$ 名同学聚在一起相互交流。为了方便起见，我们把这些同学从 $1$ 至 $n$ 编号。他们共进行了 $m$ 次交流，第 $i$ 次交流中，编号为 $u_i, v_i$ 的同学相互探讨了他们感兴趣的话题，并结交成为了新的朋友。\n\n由于这次交流会的目的是促进两校友谊，因此只有不同学校的同学之间会交流。同校同学并不会互相交流。\n\n作为 $A$ 校顾问，你对 $B$ 校的规模非常感兴趣，你希望求出 $B$ 校至少有几名同学、至多有几名同学。\n\n**输入格式**\n\n第一行两个正整数，表示同学的人数 $n$、交流的次数 $m$。  \n接下来 $m$ 行，每行两个整数 $u_i, v_i$，表示一次交流。  \n\n**输出格式**\n\n输出一行两个整数，用单个空格隔开，分别表示 $B$ 校至少有几名同学、至多有几名同学。\n\n**样例输入 #1**\n```\n4 3\n1 2\n2 3\n4 2\n\n```\n\n**样例输出 #1**\n```\n1 3\n```\n\n**样例输入 #2**\n```\n7 5\n1 2\n2 3\n4 2\n5 6\n6 7\n\n```\n\n**样例输出 #2**\n```\n2 5\n```\n\n**说明/提示**\n\n### 数据规模与约定\n\n- 对 $30\\%$ 的数据，保证 $n \\leq 17$，$m \\leq 50$。\n- 对 $60\\%$ 的数据，保证 $n \\leq 500$，$m \\leq 2000$。\n- 对全部的测试数据，保证 $1 \\leq u_i, v_i \\leq n \\leq 10^5$，$1 \\leq m \\leq 2\\times 10^5$，输入是合法的，即交流一定是跨校开展的。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：交流问题</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>来自两所学校 $A$、$B$ 的 $n$ 名同学聚在一起相互交流。为了方便起见，我们把这些同学从 $1$ 至 $n$ 编号。他们共进行了 $m$ 次交流，第 $i$ 次交流中，编号为 $u_i, v_i$ 的同学相互探讨了他们感兴趣的话题，并结交成为了新的朋友。</p>\n<p>由于这次交流会的目的是促进两校友谊，因此只有不同学校的同学之间会交流。同校同学并不会互相交流。</p>\n<p>作为 $A$ 校顾问，你对 $B$ 校的规模非常感兴趣，你希望求出 $B$ 校至少有几名同学、至多有几名同学。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行两个正整数，表示同学的人数 $n$、交流的次数 $m$。<br />\n接下来 $m$ 行，每行两个整数 $u_i, v_i$，表示一次交流。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行两个整数，用单个空格隔开，分别表示 $B$ 校至少有几名同学、至多有几名同学。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4 3\n1 2\n2 3\n4 2\n\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>1 3\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>7 5\n1 2\n2 3\n4 2\n5 6\n6 7\n\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>2 5\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<h3>数据规模与约定</h3>\n<ul>\n<li>对 $30\\%$ 的数据，保证 $n \\leq 17$，$m \\leq 50$。</li>\n<li>对 $60\\%$ 的数据，保证 $n \\leq 500$，$m \\leq 2000$。</li>\n<li>对全部的测试数据，保证 $1 \\leq u_i, v_i \\leq n \\leq 10^5$，$1 \\leq m \\leq 2\\times 10^5$，输入是合法的，即交流一定是跨校开展的。</li>\n</ul>\n"
+    },
+    {
+      "type": "program",
+      "id": 17,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：俄罗斯方块**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小杨同学用不同种类的俄罗斯方块填满了一个大小为 $n \\times m$ 的网格图。\n\n网格图由 $n \\times m$ 个带颜色方块构成。小杨同学现在将这个网格图交给了你，请你计算出网格图中俄罗斯方块的种类数。  \n如果两个同色方块是四连通（即上下左右四个相邻的位置）的，则称两个同色方块直接连通；若两个同色方块同时与另一个同色方块直接或间接连通，则称两个同色方块间接连通。一个俄罗斯方块由一个方块和所有与其直接或间接连接的同色方块组成。定义两个俄罗斯方块的种类相同当且仅当通过**平移**其中一个俄罗斯方块可以和另一个俄罗斯方块重合；如果两个俄罗斯方块颜色不同，仍然视为同一种俄罗斯方块。\n\n例如，在如下情况中，方块 $1$ 和方块 $2$ 是同一种俄罗斯方块，而方块 $1$ 和方块 $3$ **不是**同一种俄罗斯方块。\n\n![](https://cdn.luogu.com.cn/upload/image_hosting/ttv3nmgs.png)\n\n**输入格式**\n\n第一行包含两个正整数 $n$ 和 $m$，表示网格图的大小。  \n对于之后的 $n$ 行，第 $i$ 行包含 $m$ 个正整数 $a_{i1}, a_{i2}, \\dots a_{im}$，表示该行 $m$ 个方块的颜色。\n\n\n**输出格式**\n\n\n输出一行一个整数表示答案。\n\n**样例输入 #1**\n```\n5 6\n1 2 3 4 4 5\n1 2 3 3 4 5\n1 2 2 3 4 5\n1 6 6 7 7 8\n6 6 7 7 8 8\n\n```\n\n**样例输出 #1**\n```\n7\n```\n\n**说明/提示**\n\n| 子任务 | 分数 | $n,m \\leq$ | 特殊约定 | \n| :-: | :-: | :-: | :-: |\n| $1$ | $30$ | $20$ | 所有俄罗斯方块大小不超过 $5 \\times 5$ |\n| $2$ | $30$ | $500$ | 所有俄罗斯方块大小均为 $1 \\times x$ 或 $x \\times 1$ 类型，其中 $x$ 是任意正整数|\n| $3$ | $40$ | $500$ | 无 |\n\n对全部的测试数据，保证 $1 \\leq n, m \\leq 500$，$1 \\leq a_{i,j} \\leq n \\times m$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：俄罗斯方块</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小杨同学用不同种类的俄罗斯方块填满了一个大小为 $n \\times m$ 的网格图。</p>\n<p>网格图由 $n \\times m$ 个带颜色方块构成。小杨同学现在将这个网格图交给了你，请你计算出网格图中俄罗斯方块的种类数。<br />\n如果两个同色方块是四连通（即上下左右四个相邻的位置）的，则称两个同色方块直接连通；若两个同色方块同时与另一个同色方块直接或间接连通，则称两个同色方块间接连通。一个俄罗斯方块由一个方块和所有与其直接或间接连接的同色方块组成。定义两个俄罗斯方块的种类相同当且仅当通过<strong>平移</strong>其中一个俄罗斯方块可以和另一个俄罗斯方块重合；如果两个俄罗斯方块颜色不同，仍然视为同一种俄罗斯方块。</p>\n<p>例如，在如下情况中，方块 $1$ 和方块 $2$ 是同一种俄罗斯方块，而方块 $1$ 和方块 $3$ <strong>不是</strong>同一种俄罗斯方块。</p>\n<p><img src=\"external/db0278943ce08c4ce97bc5a0.png\" alt=\"\" loading=\"lazy\" /></p>\n<p><strong>输入格式</strong></p>\n<p>第一行包含两个正整数 $n$ 和 $m$，表示网格图的大小。<br />\n对于之后的 $n$ 行，第 $i$ 行包含 $m$ 个正整数 $a_{i1}, a_{i2}, \\dots a_{im}$，表示该行 $m$ 个方块的颜色。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行一个整数表示答案。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5 6\n1 2 3 4 4 5\n1 2 3 3 4 5\n1 2 2 3 4 5\n1 6 6 7 7 8\n6 6 7 7 8 8\n\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>7\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\">子任务</th>\n<th style=\"text-align:center\">分数</th>\n<th style=\"text-align:center\">$n,m \\leq$</th>\n<th style=\"text-align:center\">特殊约定</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">$1$</td>\n<td style=\"text-align:center\">$30$</td>\n<td style=\"text-align:center\">$20$</td>\n<td style=\"text-align:center\">所有俄罗斯方块大小不超过 $5 \\times 5$</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$2$</td>\n<td style=\"text-align:center\">$30$</td>\n<td style=\"text-align:center\">$500$</td>\n<td style=\"text-align:center\">所有俄罗斯方块大小均为 $1 \\times x$ 或 $x \\times 1$ 类型，其中 $x$ 是任意正整数</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">$3$</td>\n<td style=\"text-align:center\">$40$</td>\n<td style=\"text-align:center\">$500$</td>\n<td style=\"text-align:center\">无</td>\n</tr>\n</tbody>\n</table>\n<p>对全部的测试数据，保证 $1 \\leq n, m \\leq 500$，$1 \\leq a_{i,j} \\leq n \\times m$。</p>\n"
+    }
+  ],
+  "id": "2024-03-gesp-7",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2024-03-gesp-7",
+  "version": "f50a6caaed2d0ca8",
+  "warnings": [
+    "q16: 答案缺失或格式不适用，暂不自动评分",
+    "q17: 答案缺失或格式不适用，暂不自动评分",
+    "q18: 答案缺失或格式不适用，暂不自动评分",
+    "q19: 答案缺失或格式不适用，暂不自动评分",
+    "q20: 答案缺失或格式不适用，暂不自动评分",
+    "q21: 答案缺失或格式不适用，暂不自动评分",
+    "q22: 答案缺失或格式不适用，暂不自动评分",
+    "q23: 答案缺失或格式不适用，暂不自动评分",
+    "q24: 答案缺失或格式不适用，暂不自动评分",
+    "q25: 答案缺失或格式不适用，暂不自动评分"
+  ],
+  "objective_score": 30.0
+}

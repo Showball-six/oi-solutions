@@ -1,0 +1,631 @@
+{
+  "title": "2025年12月 GESP C++ 8级",
+  "category": "GESP",
+  "level": "8",
+  "date": "2025-12",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年12月 GESP C++ 8级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1,440,000$",
+          "html": "<p>$1,440,000$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$2,160,000$",
+          "html": "<p>$2,160,000$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$2,535,000$",
+          "html": "<p>$2,535,000$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$8,640,000$",
+          "html": "<p>$8,640,000$</p>\n"
+        }
+      ],
+      "content": "某平台生成“取件码”由 $6$ 个字符组成：前 $4$ 位为数字（$0$–$9$），后 $2$ 位为大写字母（A–Z），其中字母不能为 I、O。假设数字和字母均可重复使用，要求整个取件码中恰好有 $2$ 个数字为奇数。共有多少种不同取件码？（ ）",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>某平台生成“取件码”由 $6$ 个字符组成：前 $4$ 位为数字（$0$–$9$），后 $2$ 位为大写字母（A–Z），其中字母不能为 I、O。假设数字和字母均可重复使用，要求整个取件码中恰好有 $2$ 个数字为奇数。共有多少种不同取件码？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`merge_sort(a, mid, right)`",
+          "html": "<p><code>merge_sort(a, mid, right)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`merge_sort(a, mid + 1, right)`",
+          "html": "<p><code>merge_sort(a, mid + 1, right)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`merge_sort(a, left, mid + 1)`",
+          "html": "<p><code>merge_sort(a, left, mid + 1)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`merge_sort(a, mid - 1, right)`",
+          "html": "<p><code>merge_sort(a, mid - 1, right)</code></p>\n"
+        }
+      ],
+      "content": "下列代码实现了归并排序（Merge Sort）的分治部分。为了正确地将数组 $a$ 的 $[\\text{left}, \\text{right}]$ 区间进行排序，横线处应该填入的是（ ）。\n\n```cpp\nvoid merge_sort(int a[], int left, int right) {\n    if (left >= right) return;\n    int mid = (left + right) / 2;\n    merge_sort(a, left, mid);\n    ________; // 在此处填入选项\n    merge(a, left, mid, right); // 合并操作\n}\n```",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>下列代码实现了归并排序（Merge Sort）的分治部分。为了正确地将数组 $a$ 的 $[\\text{left}, \\text{right}]$ 区间进行排序，横线处应该填入的是（ ）。</p>\n<pre><code class=\"language-cpp\">void merge_sort(int a[], int left, int right) {\n    if (left &gt;= right) return;\n    int mid = (left + right) / 2;\n    merge_sort(a, left, mid);\n    ________; // 在此处填入选项\n    merge(a, left, mid, right); // 合并操作\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "12012",
+          "html": "<p>12012</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "11844",
+          "html": "<p>11844</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "12474",
+          "html": "<p>12474</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "11025",
+          "html": "<p>11025</p>\n"
+        }
+      ],
+      "content": "某社团有男生 $8$ 人、女生 $7$ 人。现需选出 $1$ 名队长（性别不限）、$1$ 名副队长（性别不限）、$2$ 名宣传委员（两人无角色区别，且必须至少 $1$ 名女生）。假如一人不能兼任多职，共有多少种不同选法？（ ）",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>某社团有男生 $8$ 人、女生 $7$ 人。现需选出 $1$ 名队长（性别不限）、$1$ 名副队长（性别不限）、$2$ 名宣传委员（两人无角色区别，且必须至少 $1$ 名女生）。假如一人不能兼任多职，共有多少种不同选法？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$-7168$",
+          "html": "<p>$-7168$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$7168$",
+          "html": "<p>$7168$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$-1792$",
+          "html": "<p>$-1792$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$1792$",
+          "html": "<p>$1792$</p>\n"
+        }
+      ],
+      "content": "二项式 $(x - 2)^8$ 的展开式中 $x^5$ 项的系数为（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>二项式 $(x - 2)^8$ 的展开式中 $x^5$ 项的系数为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`dis[j] < dis[u] + graph[u][j]`",
+          "html": "<p><code>dis[j] &lt; dis[u] + graph[u][j]</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`dis[j] > dis[u] + graph[u][j]`",
+          "html": "<p><code>dis[j] &gt; dis[u] + graph[u][j]</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`graph[u][j] > dis[u] + dis[j]`",
+          "html": "<p><code>graph[u][j] &gt; dis[u] + dis[j]</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`dis[j] > graph[u][j]`",
+          "html": "<p><code>dis[j] &gt; graph[u][j]</code></p>\n"
+        }
+      ],
+      "content": "下面是使用邻接矩阵实现的 Dijkstra 算法的核心片段，用于求单源最短路径。在找到当前距离起点最近的顶点 $u$ 后，需要更新其邻接点 $j$ 的距离。横线处应填入的代码是（ ）。\n\n```cpp\nfor (int j = 1; j <= n; j++) {\n    if (!visited[j] && graph[u][j] < INF) {\n        if (________) { // 在此处填入选项\n            dis[j] = dis[u] + graph[u][j];\n        }\n    }\n}\n```",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>下面是使用邻接矩阵实现的 Dijkstra 算法的核心片段，用于求单源最短路径。在找到当前距离起点最近的顶点 $u$ 后，需要更新其邻接点 $j$ 的距离。横线处应填入的代码是（ ）。</p>\n<pre><code class=\"language-cpp\">for (int j = 1; j &lt;= n; j++) {\n    if (!visited[j] &amp;&amp; graph[u][j] &lt; INF) {\n        if (________) { // 在此处填入选项\n            dis[j] = dis[u] + graph[u][j];\n        }\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`dp[i][j] = dp[i - 1][j] + dp[i][j - 1];`",
+          "html": "<p><code>dp[i][j] = dp[i - 1][j] + dp[i][j - 1];</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`dp[i][j] = min(dp[i - 1][j], dp[i][j - 1]);`",
+          "html": "<p><code>dp[i][j] = min(dp[i - 1][j], dp[i][j - 1]);</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);`",
+          "html": "<p><code>dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]) + 1;`",
+          "html": "<p><code>dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]) + 1;</code></p>\n"
+        }
+      ],
+      "content": "下面程序使用动态规划求两个字符串的最长公共子序列（LCS）长度，横线处应填入的是（ ）。\n\n```cpp\n#include <algorithm>\n#include <string>\n#include <vector>\nusing namespace std;\nint lcs_len(const string &a, const string &b) {\n    int n = (int)a.size(), m = (int)b.size();\n    vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));\n    for (int i = 1; i <= n; i++)\n        for (int j = 1; j <= m; j++)\n            if (a[i - 1] == b[j - 1])\n                dp[i][j] = dp[i - 1][j - 1] + 1;\n            else\n                ________; // 在此处填入选项\n    return dp[n][m];\n}\n```",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>下面程序使用动态规划求两个字符串的最长公共子序列（LCS）长度，横线处应填入的是（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;algorithm&gt;\n#include &lt;string&gt;\n#include &lt;vector&gt;\nusing namespace std;\nint lcs_len(const string &amp;a, const string &amp;b) {\n    int n = (int)a.size(), m = (int)b.size();\n    vector&lt;vector&lt;int&gt;&gt; dp(n + 1, vector&lt;int&gt;(m + 1, 0));\n    for (int i = 1; i &lt;= n; i++)\n        for (int j = 1; j &lt;= m; j++)\n            if (a[i - 1] == b[j - 1])\n                dp[i][j] = dp[i - 1][j - 1] + 1;\n            else\n                ________; // 在此处填入选项\n    return dp[n][m];\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`sqrt((x1 - x2) ^ 2 + (y1 - y2) ^ 2)`",
+          "html": "<p><code>sqrt((x1 - x2) ^ 2 + (y1 - y2) ^ 2)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2))`",
+          "html": "<p><code>sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2))</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`pow(x1 - x2, 2) + pow(y1 - y2, 2)`",
+          "html": "<p><code>pow(x1 - x2, 2) + pow(y1 - y2, 2)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`abs(x1 - x2) + abs(y1 - y2)`",
+          "html": "<p><code>abs(x1 - x2) + abs(y1 - y2)</code></p>\n"
+        }
+      ],
+      "content": "已知两个点 $(x_1, y_1)$ 和 $(x_2, y_2)$ 在平面直角坐标系中的坐标。下列 C++ 表达式中，能正确计算这两点之间直线距离的是（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>已知两个点 $(x_1, y_1)$ 和 $(x_2, y_2)$ 在平面直角坐标系中的坐标。下列 C++ 表达式中，能正确计算这两点之间直线距离的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$20$",
+          "html": "<p>$20$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$30$",
+          "html": "<p>$30$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "编译错误",
+          "html": "<p>编译错误</p>\n"
+        }
+      ],
+      "content": "已知 `int a = 10;`，执行 `int &b = a; b = 20;` 后，变量 $a$ 的值是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>已知 <code>int a = 10;</code>，执行 <code>int &amp;b = a; b = 20;</code> 后，变量 $a$ 的值是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下列代码的时间复杂度（以 $n$ 为自变量，忽略常数与低阶项）是（ ）。\n\n```cpp\nlong long s = 0;\nfor (int i = 1; i <= n; i++) {\n    for (int j = 1; j * j <= i; j++) {\n        s += j;\n    }\n}\n```",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>下列代码的时间复杂度（以 $n$ 为自变量，忽略常数与低阶项）是（ ）。</p>\n<pre><code class=\"language-cpp\">long long s = 0;\nfor (int i = 1; i &lt;= n; i++) {\n    for (int j = 1; j * j &lt;= i; j++) {\n        s += j;\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`i + primes[j] == n`",
+          "html": "<p><code>i + primes[j] == n</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`primes[j] > i`",
+          "html": "<p><code>primes[j] &gt; i</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`i % primes[j] == 0`",
+          "html": "<p><code>i % primes[j] == 0</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`i % primes[j] != 0`",
+          "html": "<p><code>i % primes[j] != 0</code></p>\n"
+        }
+      ],
+      "content": "下列程序实现了线性筛法（欧拉筛），用于在 $O(n)$ 时间内求出 $1$ 到 $n$ 之间的所有质数。为了保证每个合数只被其最小质因⼦筛掉，横线处应填入的语句是（ ）。\n\n```cpp\nfor (int i = 2; i <= n; i++) {\n    if (!not_prime[i]) primes[++cnt] = i;\n    for (int j = 1; j <= cnt && i * primes[j] <= n; j++) {\n        not_prime[i * primes[j]] = true;\n        if (________) break; // 在此处填入选项\n    }\n}\n```",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下列程序实现了线性筛法（欧拉筛），用于在 $O(n)$ 时间内求出 $1$ 到 $n$ 之间的所有质数。为了保证每个合数只被其最小质因⼦筛掉，横线处应填入的语句是（ ）。</p>\n<pre><code class=\"language-cpp\">for (int i = 2; i &lt;= n; i++) {\n    if (!not_prime[i]) primes[++cnt] = i;\n    for (int j = 1; j &lt;= cnt &amp;&amp; i * primes[j] &lt;= n; j++) {\n        not_prime[i * primes[j]] = true;\n        if (________) break; // 在此处填入选项\n    }\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "派生类可以访问基类的 `private` 成员。",
+          "html": "<p>派生类可以访问基类的 <code>private</code> 成员。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "基类的 `protected` 成员在私有继承（`private` inheritance）后，在派生类中变为 `public`。",
+          "html": "<p>基类的 <code>protected</code> 成员在私有继承（<code>private</code> inheritance）后，在派生类中变为 <code>public</code>。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "派生类对象在创建时，会先调用基类的构造函数，再调用派生类自⼰的构造函数。",
+          "html": "<p>派生类对象在创建时，会先调用基类的构造函数，再调用派生类自⼰的构造函数。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "派生类对象在销毁时，会先调用基类的析构函数，再调用派生类自⼰的析构函数。",
+          "html": "<p>派生类对象在销毁时，会先调用基类的析构函数，再调用派生类自⼰的析构函数。</p>\n"
+        }
+      ],
+      "content": "在 C++ 语⾔中，关于类的继承和访问权限，下列说法正确的是（ ）。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>在 C++ 语⾔中，关于类的继承和访问权限，下列说法正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$14$",
+          "html": "<p>$14$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$27$",
+          "html": "<p>$27$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$28$",
+          "html": "<p>$28$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$15$",
+          "html": "<p>$15$</p>\n"
+        }
+      ],
+      "content": "当输入 $6$ 时，下列程序的输出结果为（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\nint f(int n) {\n    if (n <= 3) return n;\n    return f(n - 1) + f(n - 2) + 2 * f(n - 3);\n}\nint main() {\n    int n;\n    cin >> n;\n    cout << f(n) << endl;\n    return 0;\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>当输入 $6$ 时，下列程序的输出结果为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint f(int n) {\n    if (n &lt;= 3) return n;\n    return f(n - 1) + f(n - 2) + 2 * f(n - 3);\n}\nint main() {\n    int n;\n    cin &gt;&gt; n;\n    cout &lt;&lt; f(n) &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$243$",
+          "html": "<p>$243$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$271$",
+          "html": "<p>$271$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$300$",
+          "html": "<p>$300$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$333$",
+          "html": "<p>$333$</p>\n"
+        }
+      ],
+      "content": "从 $1$ 到 $999$ 这 $999$ 个正整数中，十进制表示中数字 $5$ 恰好出现一次的数有多少个？（ ）",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>从 $1$ 到 $999$ 这 $999$ 个正整数中，十进制表示中数字 $5$ 恰好出现一次的数有多少个？（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$7$",
+          "html": "<p>$7$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$8$",
+          "html": "<p>$8$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$9$",
+          "html": "<p>$9$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$11$",
+          "html": "<p>$11$</p>\n"
+        }
+      ],
+      "content": "当输入 $2023$ 时，下列程序的输出结果为（ ）。\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int x, ans = 0;\n    cin >> x;\n    while (x != 0) {\n        x -= x & -x;\n        ans++;\n    }\n    cout << ans << endl;\n    return 0;\n}\n```",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>当输入 $2023$ 时，下列程序的输出结果为（ ）。</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint main() {\n    int x, ans = 0;\n    cin &gt;&gt; x;\n    while (x != 0) {\n        x -= x &amp; -x;\n        ans++;\n    }\n    cout &lt;&lt; ans &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "必须选入 MST，否则可能不连通。",
+          "html": "<p>必须选入 MST，否则可能不连通。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "一定不能选入 MST（在此扫描顺序下）。",
+          "html": "<p>一定不能选入 MST（在此扫描顺序下）。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "若后续出现更大的边权，可以回溯改选 $e$。",
+          "html": "<p>若后续出现更大的边权，可以回溯改选 $e$。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "只有当 $e$ 是当前最小边时才能舍弃。",
+          "html": "<p>只有当 $e$ 是当前最小边时才能舍弃。</p>\n"
+        }
+      ],
+      "content": "对连通无向图执行 Kruskal 算法。已按边权从小到大依次扫描到某条边 $e$。此时在已经构建的部分 MST 结构中，$e$ 的两个端点已在同一连通块内。关于边 $e$ 的处理，下列说法正确的是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>对连通无向图执行 Kruskal 算法。已按边权从小到大依次扫描到某条边 $e$。此时在已经构建的部分 MST 结构中，$e$ 的两个端点已在同一连通块内。关于边 $e$ 的处理，下列说法正确的是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "若一项任务可用两种互斥方案完成：方案 A 有 $m$ 种做法，方案 B 有 $n$ 种做法，则总做法数为 $m + n$。",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>若一项任务可用两种互斥方案完成：方案 A 有 $m$ 种做法，方案 B 有 $n$ 种做法，则总做法数为 $m + n$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在 C++ 语言中，引用一旦被初始化，就不能再改为引用另一个变量。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，引用一旦被初始化，就不能再改为引用另一个变量。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "快速排序和归并排序的平均时间复杂度都是 $O(n \\log n)$，但快速排序是不稳定的排序算法，归并排序是稳定的排序算法。",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>快速排序和归并排序的平均时间复杂度都是 $O(n \\log n)$，但快速排序是不稳定的排序算法，归并排序是稳定的排序算法。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "使用 `math.h` 或 `cmath` 头文件中的函数，表达式 `sqrt(4)` 的结果类型为 `double`。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>使用 <code>math.h</code> 或 <code>cmath</code> 头文件中的函数，表达式 <code>sqrt(4)</code> 的结果类型为 <code>double</code>。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在杨辉三角形中，第 $n$ 行（从 $0$ 开始计数，即第 $n$ 行有 $n+1$ 个数）的所有数字之和等于 $2^n$。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>在杨辉三角形中，第 $n$ 行（从 $0$ 开始计数，即第 $n$ 行有 $n+1$ 个数）的所有数字之和等于 $2^n$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "使用二叉堆优化的 Dijkstra 最短路算法，在某些特殊情况下时间复杂度不如朴素实现的。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>使用二叉堆优化的 Dijkstra 最短路算法，在某些特殊情况下时间复杂度不如朴素实现的。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "$n$ 个不同元素依次入栈的出栈序列数与将 $n$ 个不同元素划分成若干非空子集的方案数相等。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>$n$ 个不同元素依次入栈的出栈序列数与将 $n$ 个不同元素划分成若干非空子集的方案数相等。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "快速排序在最坏情况下的时间复杂度为 $O(n^2)$，可以通过随机化选择基准值（pivot）的方法完全避免退化。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>快速排序在最坏情况下的时间复杂度为 $O(n^2)$，可以通过随机化选择基准值（pivot）的方法完全避免退化。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 语言中，一个类可以拥有多个构造函数，也可以拥有多个析构函数。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>在 C++ 语言中，一个类可以拥有多个构造函数，也可以拥有多个析构函数。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "False",
+      "content": "求两个序列的最长公共子序列（LCS）时，使用滚动数组优化空间后，仍然可以还原出具体的 LCS 序列。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>求两个序列的最长公共子序列（LCS）时，使用滚动数组优化空间后，仍然可以还原出具体的 LCS 序列。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：猫和老鼠**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n猫和老鼠所在的庄园可以视为一张由 $n$ 个点和 $m$ 条带权无向边构成的连通图。结点依次以 $1,2,\\ldots,n$ 编号，结点 $i$（$1\\le i\\le n$）有价值为 $c_i$ 的奶酪。在 $m$ 条带权无向边中，第 $i$（$1\\le i\\le m$）条无向边连接结点 $u_i$ 与结点 $v_i$，边权 $w_i$ 表示猫和老鼠通过这条边所需的时间。\n\n猫窝位于结点 $a$，老鼠洞位于结点 $b$。对于老鼠而言，结点 $u$ 是**安全的**当且仅当：\n\n- 老鼠能规划一条从结点 $u$ 出发逃往老鼠洞的路径，使得对于路径上任意结点 $x$（包括结点 $u$ 与老鼠洞）都有：猫从猫窝出发到结点 $x$ 的最短时间**严格大于**老鼠从结点 $u$ **沿这条路径**前往结点 $x$ 所需的时间。\n\n老鼠在拿取安全结点的奶酪时不存在被猫抓住的可能，但在拿取不是安全结点的奶酪时则不一定。为了确保万无一失，老鼠决定只拿取安全结点放置的奶酪。请你计算老鼠所能拿到的奶酪价值之和。\n\n**输入格式**\n\n第一行，两个正整数 $n,m$，分别表示图的结点数与边数。\n\n第二行，两个正整数 $a,b$，分别表示猫窝的结点编号，以及老鼠洞的结点编号。\n\n第三行，$n$ 个正整数 $c_1,c_2,\\ldots,c_n$，表示各个结点的奶酪价值。\n\n接下来 $m$ 行中的第 $i$ 行（$1\\le i\\le m$）包含三个正整数 $u_i,v_i,w_i$，表示图中连接结点 $u_i$ 与结点 $v_i$ 的边，边权为 $w_i$。\n\n**输出格式**\n\n输出一行，一个整数，表示老鼠所能拿到的奶酪价值之和。\n\n**样例输入 #1**\n```\n5 5\n1 2\n1 2 4 8 16\n1 2 4\n2 3 3\n3 4 1\n2 5 2\n3 1 8\n```\n\n**样例输出 #1**\n```\n22\n```\n\n**样例输入 #2**\n```\n6 10\n3 4\n1 1 1 1 1 1\n1 2 6\n2 3 3\n3 1 4\n3 4 5\n4 5 8\n5 6 2\n6 4 1\n3 2 4\n5 4 4\n3 3 6\n```\n\n**样例输出 #2**\n```\n3\n```\n\n**说明/提示**\n\n对于 $40\\%$ 的测试点，保证 $1\\le n\\le 500$，$1\\le m\\le 500$。\n\n对于所有测试点，保证 $1\\le n\\le 10^5$，$1\\le m\\le 10^5$，$1\\le a,b\\le n$ 且 $a\\neq b$，$1\\le u_i,v_i\\le n$，$1\\le w_i\\le 10^9$。\n\n注：GESP 原题缺失 $c_i$ 范围，可按 $1 \\le c_i \\le 10^9$ 计算。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：猫和老鼠</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>猫和老鼠所在的庄园可以视为一张由 $n$ 个点和 $m$ 条带权无向边构成的连通图。结点依次以 $1,2,\\ldots,n$ 编号，结点 $i$（$1\\le i\\le n$）有价值为 $c_i$ 的奶酪。在 $m$ 条带权无向边中，第 $i$（$1\\le i\\le m$）条无向边连接结点 $u_i$ 与结点 $v_i$，边权 $w_i$ 表示猫和老鼠通过这条边所需的时间。</p>\n<p>猫窝位于结点 $a$，老鼠洞位于结点 $b$。对于老鼠而言，结点 $u$ 是<strong>安全的</strong>当且仅当：</p>\n<ul>\n<li>老鼠能规划一条从结点 $u$ 出发逃往老鼠洞的路径，使得对于路径上任意结点 $x$（包括结点 $u$ 与老鼠洞）都有：猫从猫窝出发到结点 $x$ 的最短时间<strong>严格大于</strong>老鼠从结点 $u$ <strong>沿这条路径</strong>前往结点 $x$ 所需的时间。</li>\n</ul>\n<p>老鼠在拿取安全结点的奶酪时不存在被猫抓住的可能，但在拿取不是安全结点的奶酪时则不一定。为了确保万无一失，老鼠决定只拿取安全结点放置的奶酪。请你计算老鼠所能拿到的奶酪价值之和。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，两个正整数 $n,m$，分别表示图的结点数与边数。</p>\n<p>第二行，两个正整数 $a,b$，分别表示猫窝的结点编号，以及老鼠洞的结点编号。</p>\n<p>第三行，$n$ 个正整数 $c_1,c_2,\\ldots,c_n$，表示各个结点的奶酪价值。</p>\n<p>接下来 $m$ 行中的第 $i$ 行（$1\\le i\\le m$）包含三个正整数 $u_i,v_i,w_i$，表示图中连接结点 $u_i$ 与结点 $v_i$ 的边，边权为 $w_i$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，一个整数，表示老鼠所能拿到的奶酪价值之和。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>5 5\n1 2\n1 2 4 8 16\n1 2 4\n2 3 3\n3 4 1\n2 5 2\n3 1 8\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>22\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>6 10\n3 4\n1 1 1 1 1 1\n1 2 6\n2 3 3\n3 1 4\n3 4 5\n4 5 8\n5 6 2\n6 4 1\n3 2 4\n5 4 4\n3 3 6\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>3\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $40\\%$ 的测试点，保证 $1\\le n\\le 500$，$1\\le m\\le 500$。</p>\n<p>对于所有测试点，保证 $1\\le n\\le 10^5$，$1\\le m\\le 10^5$，$1\\le a,b\\le n$ 且 $a\\neq b$，$1\\le u_i,v_i\\le n$，$1\\le w_i\\le 10^9$。</p>\n<p>注：GESP 原题缺失 $c_i$ 范围，可按 $1 \\le c_i \\le 10^9$ 计算。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：宝石项链**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n小 A 有一串包含 $n$ 枚宝石的宝石项链，这些宝石按照在项链中的顺序依次以 $1,2,\\ldots,n$ 编号，第 $n$ 枚宝石与第 $1$ 枚宝石相邻。项链由 $m$ 种宝石组成，其中第 $i$ 枚宝石种类为 $t_i$。\n\n小 A 想将宝石项链分给他的好朋友们。具体而言，小 A 会将项链划分为若干**连续段**，并且需要保证每段都包含全部 $m$ 种宝石。请帮小 A 计算在满足条件的前提下，宝石项链最多可以划分为多少段。\n\n**输入格式**\n\n第一行，两个正整数 $n,m$，分别表示宝石项链中的宝石的数量与种类数。\n\n第二行，$n$ 个正整数 $t_1,t_2,\\ldots,t_n$，表示每枚宝石的种类。\n\n**输出格式**\n\n输出一行，一个整数，表示宝石项链最多可以划分的段数。\n\n**样例输入 #1**\n```\n6 2\n1 2 1 2 1 2\n```\n\n**样例输出 #1**\n```\n3\n```\n\n**样例输入 #2**\n```\n7 3\n3 1 3 1 2 1 2\n```\n\n**样例输出 #2**\n```\n2\n```\n\n**说明/提示**\n\n对于 $40\\%$ 的测试点，保证 $2\\le n\\le 1000$。\n\n对于所有测试点，保证 $2\\le n\\le 10^5$，$2\\le m\\le n$，$1\\le t_i\\le m$，保证 $1,2,\\ldots,m$ 均在 $t_1,t_2,\\ldots,t_n$ 中出现。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：宝石项链</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>小 A 有一串包含 $n$ 枚宝石的宝石项链，这些宝石按照在项链中的顺序依次以 $1,2,\\ldots,n$ 编号，第 $n$ 枚宝石与第 $1$ 枚宝石相邻。项链由 $m$ 种宝石组成，其中第 $i$ 枚宝石种类为 $t_i$。</p>\n<p>小 A 想将宝石项链分给他的好朋友们。具体而言，小 A 会将项链划分为若干<strong>连续段</strong>，并且需要保证每段都包含全部 $m$ 种宝石。请帮小 A 计算在满足条件的前提下，宝石项链最多可以划分为多少段。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，两个正整数 $n,m$，分别表示宝石项链中的宝石的数量与种类数。</p>\n<p>第二行，$n$ 个正整数 $t_1,t_2,\\ldots,t_n$，表示每枚宝石的种类。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，一个整数，表示宝石项链最多可以划分的段数。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>6 2\n1 2 1 2 1 2\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>3\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>7 3\n3 1 3 1 2 1 2\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>2\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于 $40\\%$ 的测试点，保证 $2\\le n\\le 1000$。</p>\n<p>对于所有测试点，保证 $2\\le n\\le 10^5$，$2\\le m\\le n$，$1\\le t_i\\le m$，保证 $1,2,\\ldots,m$ 均在 $t_1,t_2,\\ldots,t_n$ 中出现。</p>\n"
+    }
+  ],
+  "id": "2025-12-gesp-8",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-12-gesp-8",
+  "version": "64631f16b34df99c",
+  "warnings": [],
+  "objective_score": 50.0
+}

@@ -1,0 +1,631 @@
+{
+  "title": "2023年12月 GESP C++ 4级",
+  "category": "GESP",
+  "level": "4",
+  "date": "2023-12",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2023年12月 GESP C++ 4级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "函数参数传递时，主函数当中采用值传递方式将参数传递给子函数时，若子函数将参数值改变，主函数当中的参数值不变。",
+          "html": "<p>函数参数传递时，主函数当中采用值传递方式将参数传递给子函数时，若子函数将参数值改变，主函数当中的参数值不变。</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "函数参数传递时，主函数当中采用值传递方式将参数传递给子函数时，若子函数将参数值改变，主函数当中的参数值将随子函数一样改变而改变。",
+          "html": "<p>函数参数传递时，主函数当中采用值传递方式将参数传递给子函数时，若子函数将参数值改变，主函数当中的参数值将随子函数一样改变而改变。</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "函数参数传递时，主函数如果将参数的地址传递给子函数，若子函数将参数值改变，主函数当中的参数值将不改变。",
+          "html": "<p>函数参数传递时，主函数如果将参数的地址传递给子函数，若子函数将参数值改变，主函数当中的参数值将不改变。</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "函数参数传递可以不满足子函数的参数个数要求。",
+          "html": "<p>函数参数传递可以不满足子函数的参数个数要求。</p>\n"
+        }
+      ],
+      "content": "下面有关函数参数的说法，正确的是( )。",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>下面有关函数参数的说法，正确的是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "chen",
+          "html": "<p>chen</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "c",
+          "html": "<p>c</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "chen a dai",
+          "html": "<p>chen a dai</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "dai",
+          "html": "<p>dai</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后，输出的是( )。",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后，输出的是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$4$",
+          "html": "<p>$4$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码最后执行后输出是( )。",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码最后执行后输出是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "B",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "C",
+          "text": "",
+          "html": ""
+        },
+        {
+          "key": "D",
+          "text": "",
+          "html": ""
+        }
+      ],
+      "content": "下面 C++ 代码执行后的结果是( )。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后的结果是( )。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$, $2$, $3$",
+          "html": "<p>$1$, $2$, $3$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后输出是（ ）。",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后输出是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "`0x6ffe11`",
+          "html": "<p><code>0x6ffe11</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`0x6ffe14`",
+          "html": "<p><code>0x6ffe14</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`0x6ffe18`",
+          "html": "<p><code>0x6ffe18</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`0x6ffe15`",
+          "html": "<p><code>0x6ffe15</code></p>\n"
+        }
+      ],
+      "content": "如果变量 $x$ 的地址是 `0x6ffe14`，下面 C++ 代码执行以后输出的是（ ）。",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>如果变量 $x$ 的地址是 <code>0x6ffe14</code>，下面 C++ 代码执行以后输出的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$400$",
+          "html": "<p>$400$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$200$",
+          "html": "<p>$200$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$20$",
+          "html": "<p>$20$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$100$",
+          "html": "<p>$100$</p>\n"
+        }
+      ],
+      "content": "在 C++ 中，执行下面代码后，输出的是（ ）。",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>在 C++ 中，执行下面代码后，输出的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`3 && false`",
+          "html": "<p><code>3 &amp;&amp; false</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`5 && 2`",
+          "html": "<p><code>5 &amp;&amp; 2</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`101 && 000`",
+          "html": "<p><code>101 &amp;&amp; 000</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`4 & true`",
+          "html": "<p><code>4 &amp; true</code></p>\n"
+        }
+      ],
+      "content": "下列 C++ 语句执行以后结果是 `true` 的是（ ）。",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>下列 C++ 语句执行以后结果是 <code>true</code> 的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`alpha[i] = alpha[i - 1] + 1;`",
+          "html": "<p><code>alpha[i] = alpha[i - 1] + 1;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`alpha[i] = alpha[i] + 1;`",
+          "html": "<p><code>alpha[i] = alpha[i] + 1;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`alpha[i + 1] = alpha[i] + 1;`",
+          "html": "<p><code>alpha[i + 1] = alpha[i] + 1;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`alpha[i - 1] = alpha[i] + 1;`",
+          "html": "<p><code>alpha[i - 1] = alpha[i] + 1;</code></p>\n"
+        }
+      ],
+      "content": "在如下的 C++ 代码中实现了对字符串中出现的 26 个字母的个数统计，横线处应填入是（ ）。",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>在如下的 C++ 代码中实现了对字符串中出现的 26 个字母的个数统计，横线处应填入是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$16$",
+          "html": "<p>$16$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$40$",
+          "html": "<p>$40$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$24$",
+          "html": "<p>$24$</p>\n"
+        }
+      ],
+      "content": "下面 C++ 代码执行后生成的文件其字节数为（ ）。",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>下面 C++ 代码执行后生成的文件其字节数为（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$#$4$#",
+          "html": "<p>$1$#$4$#</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$1$#$3$#",
+          "html": "<p>$1$#$3$#</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$1$#$2$#$3$#$4$#",
+          "html": "<p>$1$#$2$#$3$#$4$#</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$1$#$2$#$3$#$4$",
+          "html": "<p>$1$#$2$#$3$#$4$</p>\n"
+        }
+      ],
+      "content": "下列 C++ 代码输入 $1$ , $2$ , $3$ , $4$ ，执行后，将输出的是（ ）。",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>下列 C++ 代码输入 $1$ , $2$ , $3$ , $4$ ，执行后，将输出的是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`if(n % i == 0)`",
+          "html": "<p><code>if(n % i == 0)</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`if(n / i == 0)`",
+          "html": "<p><code>if(n / i == 0)</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`if(n % i != 0)`",
+          "html": "<p><code>if(n % i != 0)</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`if(n / i != 0)`",
+          "html": "<p><code>if(n / i != 0)</code></p>\n"
+        }
+      ],
+      "content": "以下 C++ 代码用于实现每个整数对应的因数，如输入 $12$ ，则输出 $1$ $2$ $3$ $4$ $6$ $12$ ；如输入 $18$ ，则输出 $1$ $3$ $6$ $9$ $18$ 。横线处应填入代码是（ ）。",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>以下 C++ 代码用于实现每个整数对应的因数，如输入 $12$ ，则输出 $1$ $2$ $3$ $4$ $6$ $12$ ；如输入 $18$ ，则输出 $1$ $3$ $6$ $9$ $18$ 。横线处应填入代码是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "麦克风",
+          "html": "<p>麦克风</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "扬声器",
+          "html": "<p>扬声器</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "油量表",
+          "html": "<p>油量表</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "传感器",
+          "html": "<p>传感器</p>\n"
+        }
+      ],
+      "content": "某公司新出了一款无人驾驶的小汽车，通过声控智能驾驶系统，乘客只要告诉汽车目的地，车子就能自动选择一条优化路线，告诉乘客后驶达那里。请问下面哪项不是驾驶系统完成选路所必须的。（ ）",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>某公司新出了一款无人驾驶的小汽车，通过声控智能驾驶系统，乘客只要告诉汽车目的地，车子就能自动选择一条优化路线，告诉乘客后驶达那里。请问下面哪项不是驾驶系统完成选路所必须的。（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "艾伦·图灵",
+          "html": "<p>艾伦·图灵</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "冯·诺依曼",
+          "html": "<p>冯·诺依曼</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "阿塔纳索夫",
+          "html": "<p>阿塔纳索夫</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "埃克特-莫克利",
+          "html": "<p>埃克特-莫克利</p>\n"
+        }
+      ],
+      "content": "现代计算机是指电子计算机，它所基于的是（ ）体系结构。",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>现代计算机是指电子计算机，它所基于的是（ ）体系结构。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`for(i=1;i<N;i++) if(!(N%i) && !(N%(i+1))) printf(\"(%d,%d)\\n\", i, i+1);`",
+          "html": "<p><code>for(i=1;i&lt;N;i++) if(!(N%i) &amp;&amp; !(N%(i+1))) printf(&quot;(%d,%d)\\n&quot;, i, i+1);</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`for(i=2;i<N;i++) if(!(N%i) && !(N%(i+1))) printf(\"(%d,%d)\\n\", i, i+1);`",
+          "html": "<p><code>for(i=2;i&lt;N;i++) if(!(N%i) &amp;&amp; !(N%(i+1))) printf(&quot;(%d,%d)\\n&quot;, i, i+1);</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`for(i=2;i<N/2;i++) if(!(N%(i-1)) && !(N%i)) printf(\"(%d,%d)\\n\", i-1, i);`",
+          "html": "<p><code>for(i=2;i&lt;N/2;i++) if(!(N%(i-1)) &amp;&amp; !(N%i)) printf(&quot;(%d,%d)\\n&quot;, i-1, i);</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`for(i=1;i<N/2;i++) if(!(N%i) && !(N%(i+1))) printf(\"(%d,%d)\\n\", i, i+1);`",
+          "html": "<p><code>for(i=1;i&lt;N/2;i++) if(!(N%i) &amp;&amp; !(N%(i+1))) printf(&quot;(%d,%d)\\n&quot;, i, i+1);</code></p>\n"
+        }
+      ],
+      "content": "输入一个正整数 $N$（$N \\geq 7$），想找出它所有相邻的因数对，比如，输入 $12$，因数对有 $(1,2)$、$(2,3)$、$(3,4)$。下面哪段代码找不到所有的因数对？()",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>输入一个正整数 $N$（$N \\geq 7$），想找出它所有相邻的因数对，比如，输入 $12$，因数对有 $(1,2)$、$(2,3)$、$(3,4)$。下面哪段代码找不到所有的因数对？()</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "True",
+      "content": "C++ 的内置函数 `sort()` 支持数组的局部排序。例如 `int a[] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1}`，可以用 `sort(a, a + 5)`，排序成 `{6, 7, 8, 9, 10, 5, 4, 3, 2, 1}`。( )",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>C++ 的内置函数 <code>sort()</code> 支持数组的局部排序。例如 <code>int a[] = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1}</code>，可以用 <code>sort(a, a + 5)</code>，排序成 <code>{6, 7, 8, 9, 10, 5, 4, 3, 2, 1}</code>。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "用递归法求 $n$ 的阶乘，时间复杂度是 $O(n)$。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p>用递归法求 $n$ 的阶乘，时间复杂度是 $O(n)$。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "True",
+      "content": "`[(1,2)*2]*3` 在 C++ 中是合法的表达式。( )",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p><code>[(1,2)*2]*3</code> 在 C++ 中是合法的表达式。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在下面的 C++ 代码中，将对 `1.txt` 文件写入 `hello`。( )",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p>在下面的 C++ 代码中，将对 <code>1.txt</code> 文件写入 <code>hello</code>。( )</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "文本文件 `1.txt` 第 1 行由 `01234` 共 5 个字符组成其间没有空格，当用 C++ 代码正常打开文件成功并执行如下代码以后，第 1 行长度为 5（ ）",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p>文本文件 <code>1.txt</code> 第 1 行由 <code>01234</code> 共 5 个字符组成其间没有空格，当用 C++ 代码正常打开文件成功并执行如下代码以后，第 1 行长度为 5（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "执行 C++ 代码 `cout << (5 || 2);` 后将输出 $1$。（ ）",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p>执行 C++ 代码 <code>cout &lt;&lt; (5 || 2);</code> 后将输出 $1$。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 中，两个字符串相加的运算符 `+` 相当于字符串的合并运算。下面 C++ 代码执行后，将输出 chenadai。（ ）",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p>在 C++ 中，两个字符串相加的运算符 <code>+</code> 相当于字符串的合并运算。下面 C++ 代码执行后，将输出 chenadai。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 内置函数 `sort()` 可以对整数、浮点数、字符数组进行从大到小，从小到大，局部排序。（ ）",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>C++ 内置函数 <code>sort()</code> 可以对整数、浮点数、字符数组进行从大到小，从小到大，局部排序。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "小杨最近在准备考 GESP，他用的 Dev C++ 来练习和运行程序，所以 Dev C++ 也是一个小型操作系统。（ ）",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>小杨最近在准备考 GESP，他用的 Dev C++ 来练习和运行程序，所以 Dev C++ 也是一个小型操作系统。（ ）</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "任何一个 `while` 循环都可以转化为等价的 `for` 循环（ ）。",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>任何一个 <code>while</code> 循环都可以转化为等价的 <code>for</code> 循环（ ）。</p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：小杨的字典**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n在遥远的星球，有两个国家 A 国和 B 国，他们使用着不同的语言：A 语言和 B 语言。小杨是 B 国的翻译官，他的工作是将 A 语言的文章翻译成 B 语言的文章。\n\n为了顺利完成工作，小杨制作了一本字典，里面记录了 $N$ 个 A 语言单词对应的 B 语言单词，巧合的是，这些单词都由地球上的 26 个小写英文字母组成。\n\n小杨希望你写一个程序，帮助他根据这本字典翻译一段 A 语言文章。这段文章由标点符号 `!()-[]{}\\|;:'\",./?<>` 和一些 A 语言单词构成，每个单词之间必定由至少一个标点符号分割，你的程序需要把这段话中的所有 A 语言单词替换成它的 B 语言翻译。特别地，如果遇到不在字典中的单词，请使用大写 UNK 来替换它。\n\n例如，小杨的字典中包含 $2$ 个 A 语言单词 `abc` 和 `d`，它们的 B 语言翻译分别为 `a` 和 `def`，那么我们可以把 A 语言文章 `abc.d.d.abc.abcd.` 翻译成 B 语言文章 `a.def.def.a.UNK.` 其中，单词 `abcd` 不在词典内，因此我们需要使用 UNK 来替换它。\n\n**输入格式**\n\n第一行一个整数 $N$，表示词典中的条目数。保证  $N \\le 100$。\n\n接下来  $N$ 行，每行两个用单个空格隔开的字符串  $A$， $B$ ,分别表示字典中的一个 A 语言单词以及它对应的 B 语言翻译。保证所有 $A$ 不重复；保证 $A$ 和 $B$ 的长度不超过 $10$。\n\n最后一行一个字符串 $S$ ，表示需要翻译的 A 语言文章。保证字符串 $S$ 的长度不超过 $1000$，保证字符串 $S$ 只包含小写字母以及标点符号 `!()-[]{}\\|;:'\",./?<>` 。\n\n**输出格式**\n\n输出一行，表示翻译后的结果。\n\n**样例输入 #1**\n```\n2\nabc a\nd def\nabc.d.d.abc.abcd\n```\n\n**样例输出 #1**\n```\na.def.def.a.UNK\n```\n\n**样例输入 #2**\n```\n3\nabc a\nd def\nabcd xxxx\nabc,(d)d!-abc?abcd\n```\n\n**样例输出 #2**\n```\na,(def)def!-a?xxxx\n```\n\n**样例输入 #3**\n```\n1\nabcdefghij klmnopqrst\n!()-[]{}\\|;:'\",./?<>abcdefghijklmnopqrstuvwxyz\n```\n\n**样例输出 #3**\n```\n!()-[]{}\\|;:'\",./?<>UNK\n```",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：小杨的字典</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>在遥远的星球，有两个国家 A 国和 B 国，他们使用着不同的语言：A 语言和 B 语言。小杨是 B 国的翻译官，他的工作是将 A 语言的文章翻译成 B 语言的文章。</p>\n<p>为了顺利完成工作，小杨制作了一本字典，里面记录了 $N$ 个 A 语言单词对应的 B 语言单词，巧合的是，这些单词都由地球上的 26 个小写英文字母组成。</p>\n<p>小杨希望你写一个程序，帮助他根据这本字典翻译一段 A 语言文章。这段文章由标点符号 <code>!()-[]{}\\|;:'&quot;,./?&lt;&gt;</code> 和一些 A 语言单词构成，每个单词之间必定由至少一个标点符号分割，你的程序需要把这段话中的所有 A 语言单词替换成它的 B 语言翻译。特别地，如果遇到不在字典中的单词，请使用大写 UNK 来替换它。</p>\n<p>例如，小杨的字典中包含 $2$ 个 A 语言单词 <code>abc</code> 和 <code>d</code>，它们的 B 语言翻译分别为 <code>a</code> 和 <code>def</code>，那么我们可以把 A 语言文章 <code>abc.d.d.abc.abcd.</code> 翻译成 B 语言文章 <code>a.def.def.a.UNK.</code> 其中，单词 <code>abcd</code> 不在词典内，因此我们需要使用 UNK 来替换它。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行一个整数 $N$，表示词典中的条目数。保证  $N \\le 100$。</p>\n<p>接下来  $N$ 行，每行两个用单个空格隔开的字符串  $A$， $B$ ,分别表示字典中的一个 A 语言单词以及它对应的 B 语言翻译。保证所有 $A$ 不重复；保证 $A$ 和 $B$ 的长度不超过 $10$。</p>\n<p>最后一行一个字符串 $S$ ，表示需要翻译的 A 语言文章。保证字符串 $S$ 的长度不超过 $1000$，保证字符串 $S$ 只包含小写字母以及标点符号 <code>!()-[]{}\\|;:'&quot;,./?&lt;&gt;</code> 。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，表示翻译后的结果。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>2\nabc a\nd def\nabc.d.d.abc.abcd\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>a.def.def.a.UNK\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>3\nabc a\nd def\nabcd xxxx\nabc,(d)d!-abc?abcd\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>a,(def)def!-a?xxxx\n</code></pre>\n<p><strong>样例输入 #3</strong></p>\n<pre><code>1\nabcdefghij klmnopqrst\n!()-[]{}\\|;:'&quot;,./?&lt;&gt;abcdefghijklmnopqrstuvwxyz\n</code></pre>\n<p><strong>样例输出 #3</strong></p>\n<pre><code>!()-[]{}\\|;:'&quot;,./?&lt;&gt;UNK\n</code></pre>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：田忌赛马**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n你要和田忌赛马。你们各自有 $N$ 匹马，并且要进行 $N$ 轮比赛，每轮比赛，你们都要各派出一匹马决出胜负。\n\n你的马匹的速度分别为 $u_1,u_2,\\cdots，u_n$，田忌的马匹的速度分别为 $v_1,v_2,\\cdots,v_n$。田忌会按顺序派出他的马匹，请问你要如何排兵布阵，才能赢得最多轮次的比赛？巧合的是，你和田忌的所有马匹的速度两两不同，因此不可能出现平局。\n\n**输入格式**\n\n第一行一个整数 $N$。保证 $1\\le N \\le 5\\times 10^4$\n\n接下来一行 $N$ 个用空格隔开的整数，依次为 $u_1,u_2,\\cdots,u_n$，表示你的马匹们的速度。保证 $1\\le u_i\\le 2N$。\n\n接下来一行 $N$ 个用空格隔开的整数，依次为 $v_1,v_2,\\cdots,v_n$，表示田忌的马匹们的速度。保证 $1\\le v_i\\le 2N$。\n\n**输出格式**\n\n输出一行，表示你最多能获胜几轮。\n\n**样例输入 #1**\n```\n3\n1 3 5\n2 4 6\n```\n\n**样例输出 #1**\n```\n2\n```\n\n**样例输入 #2**\n```\n5\n10 3 5 8 7\n4 6 1 2 9\n```\n\n**样例输出 #2**\n```\n5\n```\n\n**说明/提示**\n\n**样例解释 1**\n\n第 1 轮，田忌派出速度为 2 的马匹，你可以派出速度为 3 的马匹迎战，本轮你获胜。\n\n第 2 轮，田忌派出速度为 4 的马匹，你可以派出速度为 5 的马匹迎战，本轮你获胜。\n\n第 3 轮，田忌派出速度为 6 的马匹，你可以派出速度为 1 的马匹迎战，本轮田忌获胜。\n\n如此，你可以赢得 2 轮比赛。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：田忌赛马</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>你要和田忌赛马。你们各自有 $N$ 匹马，并且要进行 $N$ 轮比赛，每轮比赛，你们都要各派出一匹马决出胜负。</p>\n<p>你的马匹的速度分别为 $u_1,u_2,\\cdots，u_n$，田忌的马匹的速度分别为 $v_1,v_2,\\cdots,v_n$。田忌会按顺序派出他的马匹，请问你要如何排兵布阵，才能赢得最多轮次的比赛？巧合的是，你和田忌的所有马匹的速度两两不同，因此不可能出现平局。</p>\n<p><strong>输入格式</strong></p>\n<p>第一行一个整数 $N$。保证 $1\\le N \\le 5\\times 10^4$</p>\n<p>接下来一行 $N$ 个用空格隔开的整数，依次为 $u_1,u_2,\\cdots,u_n$，表示你的马匹们的速度。保证 $1\\le u_i\\le 2N$。</p>\n<p>接下来一行 $N$ 个用空格隔开的整数，依次为 $v_1,v_2,\\cdots,v_n$，表示田忌的马匹们的速度。保证 $1\\le v_i\\le 2N$。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，表示你最多能获胜几轮。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>3\n1 3 5\n2 4 6\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>2\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>5\n10 3 5 8 7\n4 6 1 2 9\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>5\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p><strong>样例解释 1</strong></p>\n<p>第 1 轮，田忌派出速度为 2 的马匹，你可以派出速度为 3 的马匹迎战，本轮你获胜。</p>\n<p>第 2 轮，田忌派出速度为 4 的马匹，你可以派出速度为 5 的马匹迎战，本轮你获胜。</p>\n<p>第 3 轮，田忌派出速度为 6 的马匹，你可以派出速度为 1 的马匹迎战，本轮田忌获胜。</p>\n<p>如此，你可以赢得 2 轮比赛。</p>\n"
+    }
+  ],
+  "id": "2023-12-gesp-4",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2023-12-gesp-4",
+  "version": "e4b4f2f5329c5444",
+  "warnings": [],
+  "objective_score": 50.0
+}

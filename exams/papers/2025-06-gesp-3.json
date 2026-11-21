@@ -1,0 +1,631 @@
+{
+  "title": "2025年6月 GESP C++ 3级",
+  "category": "GESP",
+  "level": "3",
+  "date": "2025-06",
+  "time_limit": 60,
+  "total_score": 100,
+  "description": "2025年6月 GESP C++ 3级认证考试真题（含编程操作题部分）",
+  "questions": [
+    {
+      "type": "choice",
+      "id": 1,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$-127$",
+          "html": "<p>$-127$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$-128$",
+          "html": "<p>$-128$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$-255$",
+          "html": "<p>$-255$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$-256$",
+          "html": "<p>$-256$</p>\n"
+        }
+      ],
+      "content": "$8$ 位二进制原码能表示的最小整数是：（ ）",
+      "uid": "q1",
+      "gradable": true,
+      "html": "<p>$8$ 位二进制原码能表示的最小整数是：（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 2,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$ 种",
+          "html": "<p>$1$ 种</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$2$ 种",
+          "html": "<p>$2$ 种</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$8$ 种",
+          "html": "<p>$8$ 种</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$16$ 种",
+          "html": "<p>$16$ 种</p>\n"
+        }
+      ],
+      "content": "反码表示中，零的表示形式有：",
+      "uid": "q2",
+      "gradable": true,
+      "html": "<p>反码表示中，零的表示形式有：</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 3,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$-69$",
+          "html": "<p>$-69$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$-59$",
+          "html": "<p>$-59$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$-68$",
+          "html": "<p>$-68$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$-58$",
+          "html": "<p>$-58$</p>\n"
+        }
+      ],
+      "content": "补码 `1011 1011` 对应的真值是( )",
+      "uid": "q3",
+      "gradable": true,
+      "html": "<p>补码 <code>1011 1011</code> 对应的真值是( )</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 4,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`0000 0101`",
+          "html": "<p><code>0000 0101</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`1000 0101`",
+          "html": "<p><code>1000 0101</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`0000 0101` 或 `1000 0101`",
+          "html": "<p><code>0000 0101</code> 或 <code>1000 0101</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "算术右移后结果取决于符号位",
+          "html": "<p>算术右移后结果取决于符号位</p>\n"
+        }
+      ],
+      "content": "若 $X$ 的 $8$ 位补码为 `0000 1010`，则 $X/2$ 的补码是（ ）。",
+      "uid": "q4",
+      "gradable": true,
+      "html": "<p>若 $X$ 的 $8$ 位补码为 <code>0000 1010</code>，则 $X/2$ 的补码是（ ）。</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 5,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$13.625$",
+          "html": "<p>$13.625$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$12.75$",
+          "html": "<p>$12.75$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$11.875$",
+          "html": "<p>$11.875$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$14.5$",
+          "html": "<p>$14.5$</p>\n"
+        }
+      ],
+      "content": "二进制数 $1101.101$ 对应的十进制数是( )",
+      "uid": "q5",
+      "gradable": true,
+      "html": "<p>二进制数 $1101.101$ 对应的十进制数是( )</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 6,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "结果正确",
+          "html": "<p>结果正确</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "发生上溢",
+          "html": "<p>发生上溢</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "发生下溢",
+          "html": "<p>发生下溢</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "结果符号位错误",
+          "html": "<p>结果符号位错误</p>\n"
+        }
+      ],
+      "content": "补码加法中，若符号位无进位而次高位有进位，则说明（）",
+      "uid": "q6",
+      "gradable": true,
+      "html": "<p>补码加法中，若符号位无进位而次高位有进位，则说明（）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 7,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "$29.75$",
+          "html": "<p>$29.75$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$28.5$",
+          "html": "<p>$28.5$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$27.625$",
+          "html": "<p>$27.625$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$30.25$",
+          "html": "<p>$30.25$</p>\n"
+        }
+      ],
+      "content": "八进制数 $35.6$ 对应的十进制数是( )",
+      "uid": "q7",
+      "gradable": true,
+      "html": "<p>八进制数 $35.6$ 对应的十进制数是( )</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 8,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`1000`",
+          "html": "<p><code>1000</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`1110`",
+          "html": "<p><code>1110</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`1010`",
+          "html": "<p><code>1010</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`1100`",
+          "html": "<p><code>1100</code></p>\n"
+        }
+      ],
+      "content": "二进制数 `1010 | 1100` 的结果是（ ）",
+      "uid": "q8",
+      "gradable": true,
+      "html": "<p>二进制数 <code>1010 | 1100</code> 的结果是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 9,
+      "score": 2.0,
+      "answer": "A",
+      "options": [
+        {
+          "key": "A",
+          "text": "`a = a ^ b; b = a ^ b; a = a ^ b;`",
+          "html": "<p><code>a = a ^ b; b = a ^ b; a = a ^ b;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`a = a & b; b = a | b; a = a & b;`",
+          "html": "<p><code>a = a &amp; b; b = a | b; a = a &amp; b;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`a = a | b; b = a ^ b; a = a ^ b;`",
+          "html": "<p><code>a = a | b; b = a ^ b; a = a ^ b;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`a = ~a; b = ~b; a = ~a;`",
+          "html": "<p><code>a = ~a; b = ~b; a = ~a;</code></p>\n"
+        }
+      ],
+      "content": "以下哪个位运算可以交换两个变量的值（无需临时变量）( )",
+      "uid": "q9",
+      "gradable": true,
+      "html": "<p>以下哪个位运算可以交换两个变量的值（无需临时变量）( )</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 10,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "`int array = new int[5];`",
+          "html": "<p><code>int array = new int[5];</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`array int[5];`",
+          "html": "<p><code>array int[5];</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`int[] array = {1,2,3,4,5};`",
+          "html": "<p><code>int[] array = {1,2,3,4,5};</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`int array[5];`",
+          "html": "<p><code>int array[5];</code></p>\n"
+        }
+      ],
+      "content": "如何正确定义一个长度为 $5$ 的整型数组( )",
+      "uid": "q10",
+      "gradable": true,
+      "html": "<p>如何正确定义一个长度为 $5$ 的整型数组( )</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 11,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`int b = (i / 10) / 10;`",
+          "html": "<p><code>int b = (i / 10) / 10;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`int b = (i / 10) % 10;`",
+          "html": "<p><code>int b = (i / 10) % 10;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`int b = (i % 10) / 10;`",
+          "html": "<p><code>int b = (i % 10) / 10;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`int b = (i % 10) % 10;`",
+          "html": "<p><code>int b = (i % 10) % 10;</code></p>\n"
+        }
+      ],
+      "content": "以下程序使用枚举法（穷举法）求解满足条件的三位数，横线处应该填入的是（）\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int count = 0;\n    for (int i = 100; i <= 999; i++) {\n        int a = i / 100;\n        ————————————————————\n        int c = i % 10;\n        if (a * a + b * b == c * c) {\n            count++;\n        }\n    }\n    cout << count << endl;\n    return 0;\n}\n```",
+      "uid": "q11",
+      "gradable": true,
+      "html": "<p>以下程序使用枚举法（穷举法）求解满足条件的三位数，横线处应该填入的是（）</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint main() {\n    int count = 0;\n    for (int i = 100; i &lt;= 999; i++) {\n        int a = i / 100;\n        ————————————————————\n        int c = i % 10;\n        if (a * a + b * b == c * c) {\n            count++;\n        }\n    }\n    cout &lt;&lt; count &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 12,
+      "score": 2.0,
+      "answer": "B",
+      "options": [
+        {
+          "key": "A",
+          "text": "`distance += height/2;`",
+          "html": "<p><code>distance += height/2;</code></p>\n"
+        },
+        {
+          "key": "B",
+          "text": "`distance += height;`",
+          "html": "<p><code>distance += height;</code></p>\n"
+        },
+        {
+          "key": "C",
+          "text": "`distance += height*2;`",
+          "html": "<p><code>distance += height*2;</code></p>\n"
+        },
+        {
+          "key": "D",
+          "text": "`distance += height+1;`",
+          "html": "<p><code>distance += height+1;</code></p>\n"
+        }
+      ],
+      "content": "以下程序模拟了一个简单的小球反弹过程，横线处应该填入的是（）\n\n```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int height = 10;\n    int distance = 0;\n    for (int i = 1; i <= 5; i++) { // 模拟5次落地\n        ——————————————————————\n        height /= 2;\n        distance += height;\n    }\n    cout << distance << endl;\n    return 0;\n}\n```",
+      "uid": "q12",
+      "gradable": true,
+      "html": "<p>以下程序模拟了一个简单的小球反弹过程，横线处应该填入的是（）</p>\n<pre><code class=\"language-cpp\">#include &lt;iostream&gt;\nusing namespace std;\nint main() {\n    int height = 10;\n    int distance = 0;\n    for (int i = 1; i &lt;= 5; i++) { // 模拟5次落地\n        ——————————————————————\n        height /= 2;\n        distance += height;\n    }\n    cout &lt;&lt; distance &lt;&lt; endl;\n    return 0;\n}\n</code></pre>\n"
+    },
+    {
+      "type": "choice",
+      "id": 13,
+      "score": 2.0,
+      "answer": "D",
+      "options": [
+        {
+          "key": "A",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$8$",
+          "html": "<p>$8$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$8$ 或 $10$",
+          "html": "<p>$8$ 或 $10$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "取决于计算机采用什么编码",
+          "html": "<p>取决于计算机采用什么编码</p>\n"
+        }
+      ],
+      "content": "C++ 代码 `string s = \"GESP考试\";`，$s$ 占据的字节数是（ ）",
+      "uid": "q13",
+      "gradable": true,
+      "html": "<p>C++ 代码 <code>string s = &quot;GESP考试&quot;;</code>，$s$ 占据的字节数是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 14,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1$",
+          "html": "<p>$1$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$2$",
+          "html": "<p>$2$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "$3$",
+          "html": "<p>$3$</p>\n"
+        }
+      ],
+      "content": "C++ 语句 `string s = \"Gesp Test\";` 执行 `s.rfind(\"e\")` 以后，输出的是（ ）",
+      "uid": "q14",
+      "gradable": true,
+      "html": "<p>C++ 语句 <code>string s = &quot;Gesp Test&quot;;</code> 执行 <code>s.rfind(&quot;e&quot;)</code> 以后，输出的是（ ）</p>\n"
+    },
+    {
+      "type": "choice",
+      "id": 15,
+      "score": 2.0,
+      "answer": "C",
+      "options": [
+        {
+          "key": "A",
+          "text": "$10$",
+          "html": "<p>$10$</p>\n"
+        },
+        {
+          "key": "B",
+          "text": "$8$",
+          "html": "<p>$8$</p>\n"
+        },
+        {
+          "key": "C",
+          "text": "$6$",
+          "html": "<p>$6$</p>\n"
+        },
+        {
+          "key": "D",
+          "text": "字符数多少取决于编码",
+          "html": "<p>字符数多少取决于编码</p>\n"
+        }
+      ],
+      "content": "字符串 \"Gesp考试\"，字符数是（ ）。",
+      "uid": "q15",
+      "gradable": true,
+      "html": "<p>字符串 &quot;Gesp考试&quot;，字符数是（ ）。</p>\n"
+    },
+    {
+      "type": "judge",
+      "id": 16,
+      "score": 2.0,
+      "answer": "False",
+      "content": "C++ 中 `string` 的 `==` 运算符比较的是字符串的内存地址，而非内容",
+      "uid": "q16",
+      "gradable": true,
+      "html": "<p>C++ 中 <code>string</code> 的 <code>==</code> 运算符比较的是字符串的内存地址，而非内容</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 17,
+      "score": 2.0,
+      "answer": "True",
+      "content": "`string` 的 `substr(1, 3)` 返回从下标 $1$ 开始的 $3$ 个字符的子串。",
+      "uid": "q17",
+      "gradable": true,
+      "html": "<p><code>string</code> 的 <code>substr(1, 3)</code> 返回从下标 $1$ 开始的 $3$ 个字符的子串。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 18,
+      "score": 2.0,
+      "answer": "False",
+      "content": "$x$ 是浮点数，`(x >> 1)` 等价于 `x / 2`",
+      "uid": "q18",
+      "gradable": true,
+      "html": "<p>$x$ 是浮点数，<code>(x &gt;&gt; 1)</code> 等价于 <code>x / 2</code></p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 19,
+      "score": 2.0,
+      "answer": "True",
+      "content": "`string(\"hello\") == \"hello\"` 的比较结果为 `true`。",
+      "uid": "q19",
+      "gradable": true,
+      "html": "<p><code>string(&quot;hello&quot;) == &quot;hello&quot;</code> 的比较结果为 <code>true</code>。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 20,
+      "score": 2.0,
+      "answer": "False",
+      "content": "`sort` 可以直接用于排序 `set` 中的元素。",
+      "uid": "q20",
+      "gradable": true,
+      "html": "<p><code>sort</code> 可以直接用于排序 <code>set</code> 中的元素。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 21,
+      "score": 2.0,
+      "answer": "True",
+      "content": "`(x & 1) == 0` 可以判断整数 $x$ 是否为偶数。",
+      "uid": "q21",
+      "gradable": true,
+      "html": "<p><code>(x &amp; 1) == 0</code> 可以判断整数 $x$ 是否为偶数。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 22,
+      "score": 2.0,
+      "answer": "False",
+      "content": "`string` 的 `substr(2, 10)` 在字符串长度不足时会抛出异常。",
+      "uid": "q22",
+      "gradable": true,
+      "html": "<p><code>string</code> 的 <code>substr(2, 10)</code> 在字符串长度不足时会抛出异常。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 23,
+      "score": 2.0,
+      "answer": "True",
+      "content": "在数学纸面计算中，`pow(2, 3)` 的计算结果一定是 $8$，但是在 C++ 中，如果遇到数据类型是浮点数，那就不一定正确。",
+      "uid": "q23",
+      "gradable": true,
+      "html": "<p>在数学纸面计算中，<code>pow(2, 3)</code> 的计算结果一定是 $8$，但是在 C++ 中，如果遇到数据类型是浮点数，那就不一定正确。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 24,
+      "score": 2.0,
+      "answer": "False",
+      "content": "在 C++ 中，枚举的底层类型可以是非整型（如 `float` 或 `double`）。",
+      "uid": "q24",
+      "gradable": true,
+      "html": "<p>在 C++ 中，枚举的底层类型可以是非整型（如 <code>float</code> 或 <code>double</code>）。</p>\n",
+      "options": []
+    },
+    {
+      "type": "judge",
+      "id": 25,
+      "score": 2.0,
+      "answer": "True",
+      "content": "函数声明 `double f();` 返回 `int` 时，会自动转换为 `double`",
+      "uid": "q25",
+      "gradable": true,
+      "html": "<p>函数声明 <code>double f();</code> 返回 <code>int</code> 时，会自动转换为 <code>double</code></p>\n",
+      "options": []
+    },
+    {
+      "type": "program",
+      "id": 26,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：奇偶校验**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n数据在传输过程中可能出错，因此接收方收到数据后通常会校验传输的数据是否正确，奇偶校验是经典的校验方式之一。\n\n给定 $n$ 个非负整数 $c_1, c_2, \\ldots, c_n$ 代表所传输的数据，它们的校验码取决于这些整数在二进制下 1 的数量之和的奇偶性。如果这些整数在二进制下共有奇数个 1，那么校验码为 1；否则校验码为 0。你能求出这些整数的校验码吗？\n\n**输入格式**\n\n第一行，一个正整数 $n$，表示所传输的数据量。\n\n第二行，$n$ 个非负整数 $c_1, c_2, \\ldots, c_n$，表示所传输的数据。\n\n**输出格式**\n\n输出一行，两个整数，以一个空格分隔：\n\n第一个整数表示 $c_1, c_2, \\ldots, c_n$ 在二进制下 1 的总数量；\n\n第二个整数表示校验码（0 或 1）。\n\n**样例输入 #1**\n```\n4\n71 69 83 80\n```\n\n**样例输出 #1**\n```\n13 1\n```\n\n**样例输入 #2**\n```\n6\n1 2 4 8 16 32\n```\n\n**样例输出 #2**\n```\n6 0\n```\n\n**说明/提示**\n\n对于所有测试点，保证 $1 \\leq n \\leq 100$，$0 \\leq c_i \\leq 255$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q26",
+      "gradable": false,
+      "html": "<p><strong>试题名称：奇偶校验</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>数据在传输过程中可能出错，因此接收方收到数据后通常会校验传输的数据是否正确，奇偶校验是经典的校验方式之一。</p>\n<p>给定 $n$ 个非负整数 $c_1, c_2, \\ldots, c_n$ 代表所传输的数据，它们的校验码取决于这些整数在二进制下 1 的数量之和的奇偶性。如果这些整数在二进制下共有奇数个 1，那么校验码为 1；否则校验码为 0。你能求出这些整数的校验码吗？</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，一个正整数 $n$，表示所传输的数据量。</p>\n<p>第二行，$n$ 个非负整数 $c_1, c_2, \\ldots, c_n$，表示所传输的数据。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，两个整数，以一个空格分隔：</p>\n<p>第一个整数表示 $c_1, c_2, \\ldots, c_n$ 在二进制下 1 的总数量；</p>\n<p>第二个整数表示校验码（0 或 1）。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4\n71 69 83 80\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>13 1\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>6\n1 2 4 8 16 32\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>6 0\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于所有测试点，保证 $1 \\leq n \\leq 100$，$0 \\leq c_i \\leq 255$。</p>\n"
+    },
+    {
+      "type": "program",
+      "id": 27,
+      "score": 25.0,
+      "answer": "",
+      "content": "**试题名称：分糖果**\n\n> 时间限制：1.0 s | 内存限制：512.0 MB\n\n**题目描述**\n\n有 $n$ 位小朋友排成一队等待老师分糖果。第 $i$ 位小朋友想要至少 $a_i$ 颗糖果，并且分给他的糖果数量必须比分给前一位小朋友的糖果数量更多，不然他就会不开心。\n\n老师想知道至少需要准备多少颗糖果才能让所有小朋友都开心。你能帮帮老师吗？\n\n**输入格式**\n\n第一行，一个正整数 $n$，表示小朋友的人数。\n\n第二行，$n$ 个正整数 $a_1, a_2, \\ldots, a_n$，依次表示每位小朋友至少需要的糖果数量。\n\n**输出格式**\n\n输出一行，一个整数，表示最少需要准备的糖果数量。\n\n**样例输入 #1**\n```\n4\n1 4 3 3\n```\n\n**样例输出 #1**\n```\n16\n```\n\n**样例输入 #2**\n```\n15\n314 15926 53589793 238462643 383279502 8 8 4 1 9 7 1 6 9 3\n```\n\n**样例输出 #2**\n```\n4508143253\n```\n\n**说明/提示**\n\n对于所有测试点，保证 $1 \\leq n \\leq 1000$，$1 \\leq a_i \\leq 10^9$。",
+      "options": [],
+      "section": "GESP 编程操作题",
+      "uid": "q27",
+      "gradable": false,
+      "html": "<p><strong>试题名称：分糖果</strong></p>\n<blockquote>\n<p>时间限制：1.0 s | 内存限制：512.0 MB</p>\n</blockquote>\n<p><strong>题目描述</strong></p>\n<p>有 $n$ 位小朋友排成一队等待老师分糖果。第 $i$ 位小朋友想要至少 $a_i$ 颗糖果，并且分给他的糖果数量必须比分给前一位小朋友的糖果数量更多，不然他就会不开心。</p>\n<p>老师想知道至少需要准备多少颗糖果才能让所有小朋友都开心。你能帮帮老师吗？</p>\n<p><strong>输入格式</strong></p>\n<p>第一行，一个正整数 $n$，表示小朋友的人数。</p>\n<p>第二行，$n$ 个正整数 $a_1, a_2, \\ldots, a_n$，依次表示每位小朋友至少需要的糖果数量。</p>\n<p><strong>输出格式</strong></p>\n<p>输出一行，一个整数，表示最少需要准备的糖果数量。</p>\n<p><strong>样例输入 #1</strong></p>\n<pre><code>4\n1 4 3 3\n</code></pre>\n<p><strong>样例输出 #1</strong></p>\n<pre><code>16\n</code></pre>\n<p><strong>样例输入 #2</strong></p>\n<pre><code>15\n314 15926 53589793 238462643 383279502 8 8 4 1 9 7 1 6 9 3\n</code></pre>\n<p><strong>样例输出 #2</strong></p>\n<pre><code>4508143253\n</code></pre>\n<p><strong>说明/提示</strong></p>\n<p>对于所有测试点，保证 $1 \\leq n \\leq 1000$，$1 \\leq a_i \\leq 10^9$。</p>\n"
+    }
+  ],
+  "id": "2025-06-gesp-3",
+  "revision": "aa1326aad53a790a58b670f0b1f3fc26802cee01",
+  "source_url": "https://github.com/sirwym/olympiad-practice-system/tree/aa1326aad53a790a58b670f0b1f3fc26802cee01/papers/2025-06-gesp-3",
+  "version": "de38625495cea542",
+  "warnings": [],
+  "objective_score": 50.0
+}

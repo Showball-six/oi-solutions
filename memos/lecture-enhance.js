@@ -1,13 +1,79 @@
 // 本文件由 script.py polish 自动生成，请勿手改（改 script.py 里的 _ENHANCE_JS_TEMPLATE）
 (function () {
+  'use strict';
+  const article = document.querySelector('#write') || document.querySelector('.typora-export') || document.querySelector('.container');
+  if (!article || document.documentElement.dataset.lecEnhanced === '1') return;
+  document.documentElement.dataset.lecEnhanced = '1';
+  if (!article.id) article.id = 'write';
+  document.body.classList.add('lec-page');
+  const mainTitle=article.querySelector('h1');
+  if(mainTitle){const ink=document.createElement('span');ink.className='lec-title-ink';while(mainTitle.firstChild)ink.append(mainTitle.firstChild);mainTitle.append(ink);}
+  const status=document.createElement('div');status.className='lec-status';status.setAttribute('role','status');status.setAttribute('aria-live','polite');document.body.append(status);
+  article.querySelectorAll('p').forEach(p=>{if(!p.textContent.trim()&&!p.querySelector('img,svg,iframe,video,audio,canvas,mjx-container,.MathJax,.katex,.mathjax-block,br'))p.classList.add('lec-spacer');});
+  const headings=Array.from(article.querySelectorAll('h2,h3'));
+  // 继承 Markdown 已渲染的行内结构；不把标题压成纯文本。
+  function copyHeadingContent(heading, link, index) {
+    const copy=heading.cloneNode(true);
+    copy.removeAttribute('id');
+    const renderedMath=copy.querySelector('mjx-container,.MathJax,.katex');
+    copy.querySelectorAll('script,style,button,input,textarea,select').forEach(node=>{
+      if(!renderedMath && node.tagName==='SCRIPT' && /^math\/tex/.test(node.type))node.replaceWith(document.createTextNode(node.textContent));
+      else node.remove();
+    });
+    // TOC 项本身就是链接，标题中的链接只保留内容，避免嵌套链接。
+    copy.querySelectorAll('a').forEach(node=>node.replaceWith(...node.childNodes));
+    const ids=new Map();const used=new Set();
+    copy.querySelectorAll('[id]').forEach((node,n)=>{
+      const old=node.id;let id='lec-toc-'+index+'-'+n;
+      while(document.getElementById(id)||used.has(id))id+='-';
+      used.add(id);if(!ids.has(old))ids.set(old,id);node.id=id;
+    });
+    copy.querySelectorAll('*').forEach(node=>{
+      for(const attribute of Array.from(node.attributes)){
+        if(/^on/i.test(attribute.name)||['tabindex','contenteditable'].includes(attribute.name)){node.removeAttribute(attribute.name);continue;}
+        let value=attribute.value;
+        if((attribute.localName==='href')&&value.startsWith('#')&&ids.has(value.slice(1)))value='#'+ids.get(value.slice(1));
+        if(['aria-labelledby','aria-describedby'].includes(attribute.name))value=value.split(/\s+/).map(id=>ids.get(id)||id).join(' ');
+        value=value.replace(/url\((['"]?)#([^)'"]+)\1\)/g,(all,quote,id)=>ids.has(id)?'url(#'+ids.get(id)+')':all);
+        if(value!==attribute.value){if(attribute.namespaceURI)node.setAttributeNS(attribute.namespaceURI,attribute.name,value);else node.setAttribute(attribute.name,value);}
+      }
+    });
+    link.replaceChildren(...copy.childNodes);
+  }
+  const tocLinks=[];
+  if(headings.length){
+    const outline=document.createElement('details');outline.className='lec-outline';
+    const summary=document.createElement('summary');summary.textContent='本讲目录';
+    const nav=document.createElement('nav');nav.setAttribute('aria-label','本讲目录');
+    let section=0;
+    headings.forEach((heading,index)=>{
+      if(!heading.id || document.getElementById(heading.id)!==heading){let id='lec-section-'+(index+1);while(document.getElementById(id))id+='-';heading.id=id;}
+      if(heading.tagName==='H2'){section++;if(!/^(?:\d+(?:[.．、\s]|$)|[一二三四五六七八九十]+[、．.\s]|第.{1,8}[章节])/.test(heading.textContent.trim()))heading.dataset.lecSection=String(section).padStart(2,'0');}
+      const link=document.createElement('a');link.href='#'+encodeURIComponent(heading.id);link.dataset.level=heading.tagName.slice(1);copyHeadingContent(heading,link,index);
+      link.addEventListener('click',()=>{if(!matchMedia('(min-width:1200px)').matches)outline.open=false;});nav.append(link);tocLinks.push(link);
+      // MathJax 异步完成时同步目录公式，观察范围不包含目录自身。
+      let pending=false;
+      new MutationObserver(()=>{if(!pending){pending=true;queueMicrotask(()=>{pending=false;copyHeadingContent(heading,link,index);});}}).observe(heading,{childList:true,subtree:true,characterData:true});
+    });
+    outline.append(summary,nav);document.body.prepend(outline);document.body.classList.add('lec-has-outline');
+    const wide=matchMedia('(min-width:1200px)');const resize=()=>{outline.open=wide.matches;};resize();wide.addEventListener('change',resize);
+    summary.addEventListener('click',event=>{if(wide.matches)event.preventDefault();});
+    article.querySelectorAll('.md-toc').forEach(toc=>toc.hidden=true);
+  }
   // 1. 阅读进度条
   const bar = document.createElement('div');
   bar.id = 'lec-progress';
   document.body.prepend(bar);
-  window.addEventListener('scroll', function () {
-    const pct = window.scrollY / (document.body.scrollHeight - innerHeight) * 100;
-    bar.style.width = Math.min(pct, 100) + '%';
-  });
+  let queued=false;
+  function updateReading(){
+    queued=false;
+    const distance=Math.max(1,document.documentElement.scrollHeight-innerHeight);
+    bar.style.width=Math.max(0,Math.min(100,window.scrollY/distance*100))+'%';
+    let current=0;headings.forEach((heading,index)=>{if(heading.getBoundingClientRect().top<=40)current=index;});
+    tocLinks.forEach((link,index)=>{if(index===current)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
+  }
+  const queueReading=()=>{if(!queued){queued=true;requestAnimationFrame(updateReading);}};
+  window.addEventListener('scroll',queueReading,{passive:true});window.addEventListener('resize',queueReading);queueReading();
 
   // 从开头的文本节点里删掉已变成标签/徽标的前缀，避免「注意」出现两次。
   // 前缀可能被 <span>/<strong>/<a> 拆成多个文本节点，所以要跨节点删。
@@ -166,7 +232,7 @@
   }
 
   document.querySelectorAll('#write pre, .typora-export pre').forEach(function (pre) {
-    if (pre.closest('.CodeMirror')) return;
+    if (pre.closest('.CodeMirror') || pre.closest('.lec-code-wrap')) return;
 
     const cmLines = pre.querySelectorAll('.CodeMirror-line');
     const cmCodeLines = pre.querySelectorAll('.CodeMirror-code pre');
@@ -222,9 +288,11 @@
 
     const toggleBtn = document.createElement('button');
     toggleBtn.className = 'lec-header-btn';
+    toggleBtn.type='button';
 
     const copyBtn = document.createElement('button');
     copyBtn.className = 'lec-header-btn';
+    copyBtn.type='button';
     copyBtn.textContent = '复制';
     copyBtn.addEventListener('click', function (e) {
       e.stopPropagation();                  // 别连带触发 header 的折叠
@@ -233,14 +301,15 @@
       const text = src && src.length
         ? Array.from(src).map(function (l) { return l.textContent.replace(/​/g, '').replace(/ /g, ' '); }).join('\n')
         : code ? code.textContent : '';
-      navigator.clipboard.writeText(text).then(function () {
+      Promise.resolve().then(()=>navigator.clipboard.writeText(text)).then(function () {
         copyBtn.textContent = '已复制';
         copyBtn.classList.add('is-done');
         setTimeout(function () {
           copyBtn.textContent = '复制';
           copyBtn.classList.remove('is-done');
         }, 2000);
-      });
+        status.textContent='代码已复制';
+      }).catch(function(){copyBtn.textContent='复制失败';status.textContent='无法访问剪贴板，请手动选择代码复制';setTimeout(()=>copyBtn.textContent='复制',2000);});
     });
 
     actions.appendChild(toggleBtn);
@@ -249,6 +318,8 @@
 
     const inner = document.createElement('div');
     inner.className = 'lec-code-inner';
+    inner.id='lec-code-'+document.querySelectorAll('.lec-code-wrap').length;
+    toggleBtn.setAttribute('aria-controls',inner.id);
 
     // 组装：先把 wrap 插入正确位置，再移动 pre
     const wrap = document.createElement('div');
@@ -261,7 +332,8 @@
 
     function setOpen(open, animate) {
       wrap.classList.toggle('is-open', open);
-      toggleBtn.textContent = open ? '▲ 收起' : '▼ 展开';
+      toggleBtn.textContent = open ? '收起' : '展开';
+      toggleBtn.setAttribute('aria-expanded',String(open));
       if (!open) {
         // 收起：先钉住当前高度再回 0，否则 none → 0 不过渡
         inner.classList.remove('is-settled');
@@ -328,7 +400,7 @@
       new ResizeObserver(fit).observe(doc.querySelector('.app') || doc.body);
     });
 
-    if (frame.contentDocument && frame.contentDocument.readyState === 'complete') fit();
+    try{if (frame.contentDocument && frame.contentDocument.readyState === 'complete') fit();}catch{}
     window.addEventListener('resize', fit);
   });
 })();
